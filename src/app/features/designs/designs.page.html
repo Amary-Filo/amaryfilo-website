@@ -1,0 +1,14 @@
+<section>
+  <h1>{{ 'designs.title' | t }}</h1>
+
+  @if (vm().isFallback) {
+  <div class="notice notice--info">
+    {{ 'banner.fallback' | t: {
+    lang: vm().requestedLang,
+    usedLang: vm().usedLang
+    } }}
+  </div>
+  }
+
+  <pre>{{ data() | json }}</pre>
+</section>
