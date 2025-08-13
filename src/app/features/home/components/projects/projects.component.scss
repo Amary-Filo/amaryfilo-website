@@ -1,0 +1,50 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.projects {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(mx.rem(450), mx.rem(760)) minmax(
+        mx.rem(280),
+        1fr
+      );
+    grid-gap: mx.rem(30);
+
+    @include mx.b(desktop) {
+      grid-gap: mx.rem(20);
+    }
+
+    @include mx.b(tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: mx.rem(30);
+
+      padding: mx.rem(30);
+      border-radius: mx.rem(40);
+
+      background-color: rgba(140, 140, 140, 0.15);
+
+      @include mx.b(desktop) {
+        padding: mx.rem(25);
+        grid-gap: mx.rem(15);
+      }
+
+      @include mx.b(tablet) {
+        margin-top: mx.rem(20);
+        padding: mx.rem(20);
+      }
+
+      @include mx.b(mobile) {
+        grid-template-columns: 1fr;
+        grid-gap: mx.rem(10);
+
+        padding: 0;
+        background-color: transparent;
+      }
+    }
+  }
+}

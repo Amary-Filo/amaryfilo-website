@@ -1,4 +1,5 @@
 {
   "designs.title": "Design works!",
-  "banner.fallback": "Not available in {{lang}} — showing {{usedLang}}"
+  "banner.fallback": "Not available in {{lang}} — showing {{usedLang}}",
+  "blog.article.title": "Read article {{title}}"
 }

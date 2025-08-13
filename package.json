@@ -2,6 +2,7 @@
   "name": "amaryfilo-website",
   "version": "0.0.0",
   "scripts": {
+    "prebuild": "node tools/build-designs.mjs",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

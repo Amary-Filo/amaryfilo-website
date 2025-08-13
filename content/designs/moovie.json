@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "slug": "moovie",
+    "date": "11.05.2019",
+    "category": ["website"],
+    "thumbnail": "moovie-thumb.png"
+  },
+  "base": {
+    "title": "Moovie",
+    "description": "Design for online cinemas, where new films and series are shown. In addition, there is a new film and other useful media information.",
+    "links":[{
+      "title": "Behance",
+      "url": "https://behance.co"
+    }, {
+      "icon": "globe",
+      "color": "green",
+      "title": "My Designs",
+      "url": "https://md.co"
+    }, {
+      "title": "Twitter",
+      "url": "https://twitter.com",
+      "is_active": false
+    }],
+    "images": ["moovie-1.png","moovie-2.png","moovie-3.png","moovie-4.png"]
+  },
+  "data": {
+    "en": {},
+    "ru": {
+      "title": "Мууви",
+      "description": "Дизайн для онлайн кинотеатров, там показывают новые фильмы и сериалы. Помимо этого там имеется новострая лента и другая полезная медиаинформация.",
+      "images": ["moovie-1-ru.png","moovie-2-ru.png","moovie-3-ru.png"],
+      "links": [
+        {
+          "title": "Behance",
+          "url": "https://behance.co"
+        }
+      ]
+    },
+    "es": {
+      "description": "Diseño para cines online, donde se proyectan nuevas películas y series. Además, incluye una película nueva y otra información multimedia útil.",
+      "thumbnail": "moovie-thumb-es.png",
+      "images": ["moovie-1-es.png","moovie-2-es.png","moovie-3-es.png","moovie-4-es.png"]
+    },
+    "de": {
+      "description": "Design für Online-Kinos, in denen neue Filme und Serien gezeigt werden. Zusätzlich gibt es einen neuen Film und weitere nützliche Medieninformationen.",
+      "images": ["moovie-2-de.png","moovie-4-de.png"]
+    }
+  }
+}

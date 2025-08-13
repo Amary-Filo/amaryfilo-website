@@ -1,4 +1,5 @@
 {
   "designs.title": "Дизайн-проекты!",
-  "banner.fallback": "Нет перевода на {{lang}}, показываем {{usedLang}}"
+  "banner.fallback": "Нет перевода на {{lang}}, показываем {{usedLang}}",
+  "blog.article.title": "Прочесть {{title}} статью"
 }

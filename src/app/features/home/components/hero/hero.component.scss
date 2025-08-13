@@ -1,0 +1,180 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+.hero {
+  margin-top: mx.rem(40);
+  padding: mx.rem(20);
+
+  @include mx.b(desktop) {
+    margin-top: mx.rem(20);
+  }
+
+  @include mx.b(600) {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .container {
+    --container-width: #{mx.rem(1400)};
+
+    border-radius: mx.rem(30);
+    padding: mx.rem(5);
+
+    background-image: linear-gradient(
+        var(--body-bg-color),
+        var(--body-bg-color)
+      ),
+      radial-gradient(circle at top left, #86acb9, #eddbc3);
+    background-clip: content-box, border-box;
+    box-shadow: 0 mx.rem(8) mx.rem(16) 0 rgba(var(--cl-cmain-rgb), 0.2);
+
+    @include mx.b(desktop) {
+      justify-content: center;
+    }
+
+    @include mx.b(tablet) {
+      background-image: none;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    @include mx.b(600) {
+      height: 90vh;
+    }
+  }
+
+  .info {
+    margin: mx.rem(150) auto;
+    text-align: center;
+
+    @include mx.b(desktop) {
+      margin: mx.rem(120) auto;
+      padding: 0 mx.rem(30);
+    }
+
+    @include mx.b(tablet) {
+      margin: mx.rem(80) auto;
+    }
+
+    @include mx.b(600) {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .logo {
+      font-size: mx.rem(65);
+      margin-left: mx.rem(-20);
+
+      @include mx.b(desktop) {
+        font-size: mx.rem(55);
+      }
+
+      @include mx.b(tablet) {
+        font-size: mx.rem(80);
+        margin-bottom: mx.rem(30);
+      }
+    }
+
+    .pos {
+      font-family: var(--title-font);
+      font-size: mx.rem(30);
+      font-weight: 800;
+
+      opacity: 0.4;
+
+      @include mx.b(desktop) {
+        font-size: mx.rem(25);
+      }
+
+      @include mx.b(tablet) {
+        font-size: mx.rem(30);
+      }
+    }
+
+    .name {
+      margin-top: mx.rem(-15);
+
+      font-size: mx.rem(65);
+      font-weight: 800;
+
+      @include mx.b(desktop) {
+        font-size: mx.rem(50);
+      }
+
+      @include mx.b(tablet) {
+        margin-top: mx.rem(-5);
+        font-size: mx.rem(55);
+      }
+
+      @include mx.b(600) {
+        margin-bottom: mx.rem(10);
+      }
+    }
+
+    .sphere {
+      .btn {
+        @include mx.theme("dark", true) {
+          color: rgba(var(--cl-caccent-rgb), 1);
+        }
+
+        @include mx.b(600) {
+          padding: mx.rem(10) mx.rem(8);
+        }
+      }
+    }
+
+    .social {
+      position: absolute;
+      bottom: mx.rem(30);
+      right: mx.rem(30);
+
+      @include mx.b(tablet) {
+        position: relative;
+        margin-top: mx.rem(50);
+        bottom: 0;
+        right: 0;
+      }
+
+      .btn {
+        padding: mx.rem(6);
+        margin: mx.rem(4);
+        opacity: 0.7;
+
+        @include mx.b(tablet) {
+          padding: mx.rem(10);
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .avatar {
+    padding-left: 7%;
+
+    @include mx.b(desktop) {
+      padding-left: mx.rem(30);
+      max-width: mx.rem(340);
+    }
+
+    @include mx.b(tablet) {
+      display: none;
+    }
+
+    .bg {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .img {
+      position: absolute;
+      transform: rotateZ(15deg);
+
+      @include mx.b(desktop) {
+        width: mx.rem(130);
+        height: auto;
+      }
+    }
+  }
+}

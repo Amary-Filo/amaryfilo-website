@@ -19,12 +19,16 @@ export const serverRoutes: ServerRoute[] = [
     path: 'designs/:slug',
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
-      const idxPath = join(process.cwd(), 'src/assets/data/designs/index.en.json');
-      const list = JSON.parse(readFileSync(idxPath, 'utf8')) as Array<{ slug: string }>;
-      return list.map(x => ({ slug: x.slug }));
+      const idxPath = join(process.cwd(), 'src/assets/designs/index.json');
+      const list = JSON.parse(readFileSync(idxPath, 'utf8')) as Array<string>;
+      
+      return (Array.isArray(list) ? list : [])
+        .filter((s) => typeof s === 'string' && s.trim().length > 0)
+        .map((slug) => ({ slug }));
+      // return list.map(x => ({ slug: x.slug }));
     },
   },
-
+  
   // Всё остальное — CSR (SPA), чтобы не плодить лишних HTML
   { path: '**', renderMode: RenderMode.Client },
 ];

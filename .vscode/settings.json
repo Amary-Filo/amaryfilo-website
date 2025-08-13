@@ -1,49 +1,58 @@
 {
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "files.autoSave": "off",
-  "scss.validate": true,
-  "css.validate": true,
-  "html.validate.styles": true,
-  "html-css-class-completion.includeGlobPattern": "**/styles/**/*.scss",
-  "html-css-class-completion.enableEmmetSupport": true,
-  "eslint.enable": true,
-  "eslint.workingDirectories": ["src"],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "files.exclude": {
-    "node_modules": true,
-    "Builds": true,
-    "dist": true
-  },
-  "search.exclude": {
-    "node_modules": true,
-    "Builds": true,
-    "dist": true
-  },
-  "terminal.integrated.defaultProfile.linux": "fish",
-  "terminal.integrated.profiles.linux": {
-    "fish": {
-      "path": "/opt/homebrew/bin/fish"
-    }
-  },
-  "typescript.preferences.quoteStyle": "single",
-  "javascript.preferences.quoteStyle": "single",
-  "html.format.wrapAttributesIndentSize": 120,
-  "html.format.wrapLineLength": 0,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 300,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.stylelint": "always"
-  },
-  "stylelint.validate": ["css", "scss", "less"],
-  "stylelint.enable": true
+  // "files.autoSave": "off",
+  // "scss.validate": true,
+  // "css.validate": true,
+  // "html.validate.styles": true,
+  // "html-css-class-completion.includeGlobPattern": "**/styles/**/*.scss",
+  // "html-css-class-completion.enableEmmetSupport": true,
+  // "eslint.enable": true,
+  // "eslint.workingDirectories": ["src"],
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[scss]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[css]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[html]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "files.exclude": {
+  //   "node_modules": true,
+  //   "Builds": true,
+  //   "dist": true
+  // },
+  // "search.exclude": {
+  //   "node_modules": true,
+  //   "Builds": true,
+  //   "dist": true
+  // },
+  // "terminal.integrated.defaultProfile.linux": "fish",
+  // "terminal.integrated.profiles.linux": {
+  //   "fish": {
+  //     "path": "/opt/homebrew/bin/fish"
+  //   }
+  // },
+  // "typescript.preferences.quoteStyle": "single",
+  // "javascript.preferences.quoteStyle": "single",
+  // "html.format.wrapAttributesIndentSize": 120,
+  // "html.format.wrapLineLength": 0,
+  // "editor.wordWrap": "bounded",
+  // "editor.wordWrapColumn": 300,
+  // "stylelint.validate": ["css", "scss", "less"],
+  // "stylelint.enable": true,
+
+  // NEW
+  // "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": "explicit"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  // },
 }

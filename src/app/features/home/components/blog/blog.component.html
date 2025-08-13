@@ -1,0 +1,169 @@
+<section class="sc blog">
+  <div class="container">
+    <div class="head-section fl fl-dc hs-part">
+      <h2 class="title ls-2 t-gr ls t-u cl-g-blog">Blog</h2>
+      <p class="text op-7 ls fw-b">
+        I enjoy developing products and sharing my experiences. Perhaps you can
+        find useful information.
+      </p>
+    </div>
+
+    @for (item of latestPost(); track item.slug) {
+    <article [class]="$first ? 'landscape' : ''">
+      <a
+        [class]="'cd cd-atc fl fl-dc cl-' + item.icon"
+        href="#"
+        target="_blank"
+        [attr.title]="'blog.article.title' | t : { title: item.title }"
+      >
+        <div class="top fl-sbc">
+          <span [class]="'fl ic nm ic-' + item.icon"></span>
+          <time class="ls op-6" [attr.datetime]="item.date">{{
+            item.date | date
+          }}</time>
+        </div>
+        <div class="info">
+          <h3 class="title">{{ item.title }}</h3>
+          <p class="text op-6">{{ item.anonce }}</p>
+        </div>
+      </a>
+    </article>
+    }
+
+    <article class="landscape">
+      <a
+        class="cd cd-atc fl fl-dc cl-angular"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-angular"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain</h3>
+          <p class="text op-6">
+            Interaction with smart contracts, connecting various user wallets
+            and blockchain networks to the project.
+          </p>
+        </div>
+      </a>
+    </article>
+
+    <article>
+      <a
+        class="cd cd-atc fl fl-dc cl-react"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain and smart contracts"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-react"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain and smart contracts</h3>
+          <p class="text op-6">
+            Interaction with smart contracts and setting up the application for
+            loading various blockchain networks.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article>
+      <a
+        class="cd cd-atc fl fl-dc cl-nodejs"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-nodejs"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain</h3>
+          <p class="text op-6">
+            Connecting various user wallets to the project.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article>
+      <a
+        class="cd cd-atc fl fl-dc cl-swiftui"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-swiftui"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain</h3>
+          <p class="text op-6">
+            Interaction with smart contracts, connecting various user wallets
+            and blockchain networks to the project.
+          </p>
+        </div>
+      </a>
+    </article>
+    <article>
+      <a
+        class="cd cd-atc fl fl-dc cl-ionic"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-ionic"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain</h3>
+        </div>
+      </a>
+    </article>
+    <article>
+      <a
+        class="cd cd-atc fl fl-dc cl-typescript"
+        href="#"
+        target="_blank"
+        title="Read article How to work with blockchain"
+      >
+        <div class="top fl-sbc">
+          <span class="fl ic nm ic-typescript"></span
+          ><time class="ls op-6" datetime="2022-08-07T19:39:22.000+00:00"
+            >aug 07, 2022</time
+          >
+        </div>
+        <div class="info">
+          <h3 class="title">How to work with blockchain</h3>
+          <p class="text op-6">
+            Connecting various user wallets to the project.
+          </p>
+        </div>
+      </a>
+    </article>
+    <a
+      class="btn btn-pad fl-dc g-bg g-a w-100 cl-g-blog"
+      href="#"
+      target="_blank"
+      ><span class="title fl-cc fl-dc fz-md fw-b ic-hash"
+        >View all articles</span
+      ></a
+    >
+  </div>
+</section>

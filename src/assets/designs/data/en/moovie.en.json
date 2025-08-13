@@ -1,0 +1,26 @@
+{
+  "description": "Design for online cinemas, where new films and series are shown. In addition, there is a new film and other useful media information.",
+  "images": [
+    "moovie-1.png",
+    "moovie-2.png",
+    "moovie-3.png",
+    "moovie-4.png"
+  ],
+  "links": [
+    {
+      "title": "Behance",
+      "url": "https://behance.co"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "title": "My Designs",
+      "url": "https://md.co"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com",
+      "is_active": false
+    }
+  ]
+}

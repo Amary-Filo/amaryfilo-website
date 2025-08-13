@@ -1,0 +1,107 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.development {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: mx.rem(35);
+
+    margin-bottom: mx.rem(50);
+
+    @include mx.b(desktop) {
+      margin-top: mx.rem(30);
+    }
+
+    @include mx.b(tablet) {
+      grid-template-columns: 1fr;
+      grid-template-areas: "info" "cards";
+      grid-gap: 0;
+    }
+  }
+
+  .info {
+    padding: 0 mx.rem(40);
+
+    @include mx.b(desktop) {
+      padding: 0 mx.rem(20);
+    }
+
+    @include mx.b(tablet) {
+      grid-area: info;
+      padding: mx.rem(10);
+      text-align: center;
+    }
+
+    .head-title {
+      @include mx.b(tablet) {
+        display: none;
+      }
+
+      .btn {
+        padding: mx.rem(7);
+
+        @include mx.b(tablet) {
+          display: none;
+        }
+      }
+
+      .title {
+        margin: 0 0 0 mx.rem(15);
+
+        font-size: mx.rem(35);
+        font-weight: 800;
+
+        @include mx.b(desktop) {
+          font-size: mx.rem(28);
+        }
+
+        @include mx.b(tablet) {
+          margin: 0;
+        }
+      }
+    }
+
+    .text {
+      max-width: mx.rem(450);
+
+      font-size: mx.rem(20);
+      font-weight: 500;
+      line-height: 1.6;
+
+      @include mx.b(desktop) {
+        font-size: mx.rem(18);
+      }
+
+      @include mx.b(tablet) {
+        margin: mx.rem(15) auto;
+      }
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(mx.rem(170), 1fr));
+    grid-gap: mx.rem(30);
+
+    @include mx.b(desktop) {
+      grid-gap: mx.rem(10);
+    }
+
+    @include mx.b(tablet) {
+      grid-area: cards;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .w-base {
+    margin: mx.rem(100) auto 0 auto;
+    padding: mx.rem(15) mx.rem(25);
+
+    border: none;
+    font-size: mx.rem(16);
+
+    @include mx.b(tablet) {
+      margin-top: mx.rem(50);
+    }
+  }
+}

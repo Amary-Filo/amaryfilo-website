@@ -1,6 +1,6 @@
 import { ResolveFn, ActivatedRouteSnapshot } from '@angular/router';
 import { inject } from '@angular/core';
-import { DesignsApi } from '@data-access/designs.api';
+import { DesignsApi } from '@core/data/designs.api';
 
 export const designResolver: ResolveFn<any> = (route: ActivatedRouteSnapshot) => {
   const api = inject(DesignsApi);

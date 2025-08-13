@@ -1,0 +1,44 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.design {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: mx.rem(25);
+
+    @include mx.b(desktop) {
+      grid-gap: mx.rem(10);
+    }
+
+    @include mx.b(tablet) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: mx.rem(15);
+    }
+
+    @include mx.b(mobile) {
+      grid-gap: mx.rem(5);
+    }
+
+    .head-section {
+      @include mx.b(tablet) {
+        grid-column-end: span 2;
+      }
+    }
+
+    .cd {
+      max-width: mx.rem(370);
+
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    .btn {
+      max-width: mx.rem(370);
+
+      @include mx.b(tablet) {
+        max-width: 100%;
+        grid-column: 1/3;
+      }
+    }
+  }
+}

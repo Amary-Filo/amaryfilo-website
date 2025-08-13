@@ -1,0 +1,8 @@
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "bracketSameLine": true,
+  "htmlWhitespaceSensitivity": "strict",
+  "singleAttributePerLine": true,
+  "prettier.singleAttributePerLine": true
+}
