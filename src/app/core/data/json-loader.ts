@@ -8,7 +8,11 @@ export async function safeGetJson<T>(path: string): Promise<T | null> {
   if (!res.ok) return null;
   const ct = res.headers.get('content-type') ?? '';
   if (!ct.includes('application/json')) return null;
-  try { return await res.json() as T; } catch { return null; }
+  try {
+    return (await res.json()) as T;
+  } catch {
+    return null;
+  }
 }
 
 export function buildAssetsUrl(rel: string) {

@@ -64,7 +64,7 @@ export class DesignsApi {
     langOverride?: string
   ): Promise<DesignsResult<DesignDetail>> {
     const requested = (langOverride ?? this.i18n()) as Lang;
-    const primaryUrl = `/assets/designs/data/${requested}/${slug}.json`;
+    const primaryUrl = `/assets/designs/data/${requested}/${slug}.${requested}.json`;
 
     try {
       const items = await firstValueFrom(
@@ -73,7 +73,7 @@ export class DesignsApi {
       return { items, lang: requested, isFallback: false };
     } catch {
       const fallback = DEFAULT_LANG as Lang;
-      const fbUrl = `/assets/designs/data/${fallback}/${slug}.json`;
+      const fbUrl = `/assets/designs/data/${fallback}/${slug}.${fallback}.json`;
       const items = await firstValueFrom(this.http.get<DesignDetail[]>(fbUrl));
       return {
         items,
