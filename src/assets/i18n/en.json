@@ -1,5 +1,7 @@
 {
   "designs.title": "Design works!",
   "banner.fallback": "Not available in {{lang}} — showing {{usedLang}}",
-  "blog.article.title": "Read article {{title}}"
+  "blog.article.title": "Read article {{title}}",
+  "under.construction.title": "Website Under Restoration",
+  "under.construction.text": "This website is currently being restored after a long break. Only part of the pages are available, and the data shown is for demonstration purposes only and not clickable. Full functionality will be gradually restored."
 }
