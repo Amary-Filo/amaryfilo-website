@@ -1,0 +1,153 @@
+@use 'sass:math';
+@use 'sass:color';
+
+@mixin rem($size) {
+  font-size: math.div($size, 16) + rem;
+}
+
+@function rem($size) {
+  @return math.div($size, 16) + rem;
+}
+
+@mixin textCut($col, $height) {
+  display: -webkit-box;
+  -webkit-line-clamp: $col;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: $height;
+}
+
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $font-weight,
+  $style: normal,
+  $asset-pipeline: false
+) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $style;
+    font-display: swap;
+
+    @if $asset-pipeline==true {
+      src: 
+        url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.ttf') format('truetype');
+    } @else {
+      src: local('#{ $font-family }'),
+        url('#{$file-path}.woff') format('woff'),
+        url('#{$file-path}.ttf') format('truetype');
+    }
+  }
+}
+
+@mixin theme($name, $global: false) {
+  @if $global {
+    @at-root body##{$name} & {
+      @content;
+    }
+  }
+
+  &.#{$name} {
+    @content;
+  }
+}
+
+@mixin colors($colors) {
+  @each $name, $color in $colors {
+    .cl-#{$name},
+    .ic-#{$name} {
+      --cl-main: #{$color};
+      --cl-main-rgb: #{HexToRGB($color)};
+
+      --cl-accent: #{color.adjust($color, $lightness: -30%)};
+      --cl-text: #{text-contrast($color)};
+      --cl-text-rgb: #{HexToRGB(text-contrast($color))};
+
+      @include theme('dark', true) {
+        --cl-text: #{text-contrast(text-contrast($color))};
+        --cl-text-rgb: #{HexToRGB(text-contrast(text-contrast($color)))};
+      }
+    }
+
+    :root {
+      --cl-#{$name}: #{$color};
+      --cl-#{$name}-rgb: #{HexToRGB($color)};
+    }
+  }
+}
+
+@mixin gradient-animation($start, $end) {
+  background-size: 100%;
+  background-image: linear-gradient(45deg, $start, $end);
+  position: relative;
+  z-index: 100;
+
+  &:before {
+    background-image: linear-gradient(35deg, $end, $start);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 1s;
+  }
+
+  &::after {
+    background-image: linear-gradient(-15deg, $end, $start);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -100;
+    transition: opacity 0.6s;
+  
+  }
+  &.g-a {
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+    &:active {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@mixin gcolors($colors) {
+  @each $name, $fcolor, $scolor in $colors {
+    .cl-g-#{$name} {
+      &.g-bg {
+        @include gradient-animation($fcolor, $scolor);
+      }
+
+      --cl-main: #{$fcolor};
+      --cl-main-rgb: #{HexToRGB($fcolor)};
+
+      --cl-accent: #{$scolor};
+      --cl-text-rgb: #{HexToRGB(text-contrast($fcolor))};
+    }
+  }
+}
+
+@function HexToRGB($color) {
+  @return #{color.channel($color, 'red', $space: rgb)},
+    #{color.channel($color, 'green', $space: rgb)},
+    #{color.channel($color, 'blue', $space: rgb)};
+}
+
+@function text-contrast($color) {
+  @return if(color.channel($color, 'lightness', $space: hsl) > 50%, #000, #fff);
+}

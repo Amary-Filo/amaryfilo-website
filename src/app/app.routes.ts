@@ -4,7 +4,7 @@ import { designsIndexResolver } from './features/designs/designs.resolver';
 import { designResolver } from './features/designs/design/design.resolver';
 
 const children: Routes = [
-  // { path: '', loadComponent: () => import('./features/home/home.page').then(m => m.HomePage), title: 'Amary Filo' },
+  { path: '', loadComponent: () => import('./features/home/home.page').then(m => m.HomePage), title: 'Amary Filo' },
   { path: 'about', loadComponent: () => import('./features/about/about.page').then(m => m.AboutPage), title: 'About' },
   { path: 'areas', loadComponent: () => import('./features/areas/areas.page').then(m => m.AreasPage), title: 'Areas' },
   // { path: 'areas/:slug', loadComponent: () => import('./features/areas/area.page').then(m => m.AreaPage) },

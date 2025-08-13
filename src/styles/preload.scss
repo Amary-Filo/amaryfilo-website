@@ -1,40 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-@use './styles/mixins/mixins.scss' as mx;
-@use './styles/fonts.scss';
-@use './styles/ui.scss';
+@use 'mixins/mixins' as mx;
+@use 'themes/theme';
 
-:root {
-  // Font
-  --title-font: 'Nunito', sans-serif;
-  --text-font: 'Space Grotesk', sans-serif;
-  
-  // Colors
-  --body-bg-color: #fff;
-  --body-bg-color-rgb: 255, 255, 255;
-  --body-text-color: #000;
-  --body-text-color-alt: #fff;
-  
-  --accent-gray-color: #727272;
-  --accent-gray-color-rgb: 114, 114, 114;
-  
-  --text-color:  var(--accent-gray-color);
-  --text-color-rgb: var(--accent-gray-color-rgb);
-}
-
-body#dark {
-  // colors
-  --body-bg-color: #1c1727;
-  --body-bg-color-rgb: 28, 23, 39;
-  --body-text-color: #fff;
-  --body-text-color-alt: #000;
-  
-  --accent-gray-color: #b3b3b3cc;
-  --accent-gray-color-rgb: 179, 179, 179;
-  
-  --text-color: var(--accent-gray-color);
-  --text-color-rgb: var(--accent-gray-color-rgb);
-}
-
+// Main
 
 *,
 *::before,
