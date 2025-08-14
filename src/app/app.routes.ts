@@ -3,6 +3,7 @@ import { langMatcher } from '@core/i18n/lang.matcher';
 import { designsIndexResolver } from './features/designs/designs.resolver';
 import { designResolver } from './features/designs/design/design.resolver';
 import { homeLatestResolver } from './features/home/home.resolver';
+import { aboutResolver } from './features/about/about.resolver';
 
 const children: Routes = [
   {
@@ -16,10 +17,7 @@ const children: Routes = [
     path: 'about',
     loadComponent: () =>
       import('./features/about/about.page').then((m) => m.AboutPage),
-    resolve: {
-      about: () =>
-        import('./features/about/about.resolver').then((m) => m.aboutResolver),
-    },
+    resolve: { about: aboutResolver },
 
     title: 'About',
   },
