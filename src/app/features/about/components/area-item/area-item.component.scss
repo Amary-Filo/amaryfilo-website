@@ -1,0 +1,53 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+.cd {
+  padding: mx.rem(20) mx.rem(30) mx.rem(30) mx.rem(30);
+  border-color: rgba(140, 140, 140, 0.1);
+
+  @include mx.b(mobile) {
+    display: grid;
+    grid-template-columns: mx.rem(65) 1fr;
+
+    border-radius: mx.rem(20);
+
+    padding: mx.rem(15);
+    text-align: left;
+  }
+
+  &:hover {
+    border-color: rgba(140, 140, 140, 0.25);
+  }
+
+  .ic {
+    display: block;
+    margin-bottom: mx.rem(10);
+    font-size: mx.rem(40);
+
+    @include mx.b(mobile) {
+      grid-column: 1;
+      grid-row: 1/3;
+
+      font-size: mx.rem(30);
+      margin-bottom: 0;
+    }
+  }
+
+  .title {
+    @include mx.b(mobile) {
+      grid-column: 2;
+      grid-row: 1;
+
+      margin-bottom: mx.rem(0);
+      font-size: mx.rem(20);
+    }
+  }
+
+  .text {
+    @include mx.b(mobile) {
+      grid-column: 2;
+      grid-row: 2;
+
+      margin-top: mx.rem(0);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "icon": "frontend",
+    "title": "Фронтенд",
+    "skills": [
+      "Angular"
+    ]
+  },
+  {
+    "icon": "blockchain",
+    "title": "Блокчейн",
+    "skills": [
+      "DeFi",
+      "Wallets"
+    ]
+  },
+  {
+    "icon": "backend",
+    "title": "Бекенд",
+    "skills": [
+      "NodeJs",
+      "Databases"
+    ]
+  },
+  {
+    "icon": "design",
+    "title": "Дизайн (UI/UX)",
+    "skills": [
+      "Web",
+      "Mobile"
+    ]
+  }
+]

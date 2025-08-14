@@ -1,0 +1,9 @@
+<div [class]="'cd t-c cl-' + (area()?.color || area()?.icon)">
+  <span [class]="'ic ic-' + area()?.icon"></span>
+  <h3 class="title fz-md">{{ area()?.title }}</h3>
+  <div class="fl-cc">
+    @for (item of area()?.skills; track $index) {
+    <span class="btn m">{{ item }}</span>
+    }
+  </div>
+</div>

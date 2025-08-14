@@ -16,6 +16,11 @@ const children: Routes = [
     path: 'about',
     loadComponent: () =>
       import('./features/about/about.page').then((m) => m.AboutPage),
+    resolve: {
+      about: () =>
+        import('./features/about/about.resolver').then((m) => m.aboutResolver),
+    },
+
     title: 'About',
   },
   {

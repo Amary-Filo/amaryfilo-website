@@ -1,0 +1,20 @@
+<div class="cd item fl fl-dc" [ngClass]="{ 'cl-warn': isLast() }">
+  <h3 class="title fz-md ls fl-cb" [attr.data-date]="item()?.date_start">
+    {{ item()?.title }}
+  </h3>
+  <div class="fl-cb fl-w">
+    @for (position of item()?.positions; track $index) {
+    <span class="pos fw-b m op-7">{{ position }}</span>
+    }
+  </div>
+</div>
+
+@if (item()?.areas?.length) {
+<div class="things">
+  <ul class="list">
+    @for (area of item()?.areas; track $index) {
+    <li>{{ area }}</li>
+    }
+  </ul>
+</div>
+}

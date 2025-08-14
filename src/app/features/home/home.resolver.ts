@@ -1,15 +1,20 @@
+import { SectionApi } from '@core/data/section.api';
+import { Lang } from '@core/i18n/i18n.model';
 import { ResolveFn } from '@angular/router';
 import { inject } from '@angular/core';
-import { HomeLatestApi } from '@core/data/home-latest.api';
 
 export const homeLatestResolver: ResolveFn<Promise<any>> = async () => {
-  const api = inject(HomeLatestApi);
+  const api = inject(SectionApi);
+  const build = (name: string) => (l: Lang) =>
+    `/assets/${name}/latest.${l}.json`;
+
   const [designs, blog, projects, solutions, sandbox] = await Promise.all([
-    api.latest('designs'),
-    api.latest('blog'),
-    api.latest('projects'),
-    api.latest('solutions'),
-    api.latest('sandbox'),
+    api.list(build('designs')),
+    api.list(build('blog')),
+    api.list(build('projects')),
+    api.list(build('solutions')),
+    api.list(build('sandbox')),
   ]);
+
   return { designs, blog, projects, solutions, sandbox };
 };

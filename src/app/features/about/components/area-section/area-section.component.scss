@@ -1,0 +1,20 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.area {
+  .cards {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(mx.rem(215), 1fr));
+    grid-gap: mx.rem(30);
+
+    @include mx.b(desktop) {
+      grid-gap: mx.rem(15);
+    }
+
+    @include mx.b(mobile) {
+      grid-template-columns: 1fr;
+      grid-gap: mx.rem(10);
+    }
+  }
+}

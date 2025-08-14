@@ -1,0 +1,25 @@
+<section class="sc area">
+  <div class="container fl-cc fl-dc">
+    <div class="head-section fl-cc fl-dc">
+      <h2 class="title ls-2 t-gr ls t-u cl-g-type">
+        {{ "page.about.areas.title" | t }}
+      </h2>
+      <p class="text op-7 ls fw-b">
+        {{ "page.about.areas.text" | t }}
+      </p>
+    </div>
+    <div class="cards">
+      @defer (when areas()) {
+      <div class="cards">
+        @for (area of areas(); track $index) {
+        <app-area-item [area]="area" />
+        }
+      </div>
+      } @placeholder {
+      <div class="cards">
+        <!-- skeleton... -->
+      </div>
+      }
+    </div>
+  </div>
+</section>

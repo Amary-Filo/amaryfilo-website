@@ -1,0 +1,20 @@
+<section class="sc skills">
+  <div class="container head-section fl-cc fl-dc">
+    <h2 class="title ls-2 t-gr ls t-u cl-g-instruments">
+      {{ "page.about.skills.title" | t }}
+    </h2>
+    <p class="text op-7 ls fw-b">
+      {{ "page.about.skills.text" | t }}
+    </p>
+  </div>
+
+  @defer (when skills()) { @for (item of skills(); track $index) {
+  <app-skills-item [skills]="item" />
+  } } @placeholder {
+  <h2>skeleton</h2>
+  } @loading {
+  <h2>skeleton while network in flight</h2>
+  } @error {
+  <h2>error</h2>
+  }
+</section>

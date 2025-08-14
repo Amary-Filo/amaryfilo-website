@@ -1,0 +1,224 @@
+[
+  {
+    "id": 1,
+    "icon": "gallery",
+    "title": "Frontend",
+    "description": "Frontend spec. and frameworks for create web/mobile applications.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Angular",
+        "icon": "angular"
+      },
+      {
+        "id": 2,
+        "title": "React",
+        "icon": "react"
+      },
+      {
+        "id": 3,
+        "title": "Vue",
+        "icon": "vue"
+      },
+      {
+        "id": 4,
+        "title": "Ionic",
+        "icon": "ionic"
+      },
+      {
+        "id": 5,
+        "title": "HTML",
+        "icon": "html5"
+      },
+      {
+        "id": 6,
+        "title": "Css",
+        "icon": "css3"
+      },
+      {
+        "id": 7,
+        "title": "Sass",
+        "icon": "sass"
+      },
+      {
+        "id": 8,
+        "title": "Pug",
+        "icon": "pug"
+      },
+      {
+        "id": 9,
+        "title": "RxJs",
+        "icon": "rxjs"
+      },
+      {
+        "id": 10,
+        "title": "NgRx",
+        "icon": "rxjs"
+      },
+      {
+        "id": 11,
+        "title": "Gulp",
+        "icon": "gulp"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "feature",
+    "title": "Blockchain",
+    "description": "Packages and technologies used in applications.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "Web3Js",
+        "icon": "web3js"
+      },
+      {
+        "id": 2,
+        "title": "Amfi Connect",
+        "icon": "amaryfilo"
+      },
+      {
+        "id": 3,
+        "title": "Wallet Connect",
+        "icon": "walletconnect"
+      },
+      {
+        "id": 4,
+        "title": "Metamask",
+        "icon": "metamask"
+      },
+      {
+        "id": 5,
+        "title": "Wallets",
+        "icon": "wallet"
+      },
+      {
+        "id": 6,
+        "title": "Staking",
+        "icon": "coins"
+      },
+      {
+        "id": 7,
+        "title": "Bridges",
+        "icon": "bitcoin"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "images",
+    "title": "Backend",
+    "description": "Technologies for create server-side (backend) api. CMS for websites. Databases and server optimization.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "NodeJs",
+        "icon": "nodejs"
+      },
+      {
+        "id": 2,
+        "title": "API",
+        "icon": "api"
+      },
+      {
+        "id": 3,
+        "title": "REST",
+        "icon": "rest"
+      },
+      {
+        "id": 4,
+        "title": "GraphQL",
+        "icon": "graphql"
+      },
+      {
+        "id": 5,
+        "title": "PHP",
+        "icon": "php"
+      },
+      {
+        "id": 6,
+        "title": "Laravel",
+        "icon": "laravel"
+      },
+      {
+        "id": 7,
+        "title": "Postgres",
+        "icon": "postgres"
+      },
+      {
+        "id": 8,
+        "title": "MySql",
+        "icon": "mysql"
+      },
+      {
+        "id": 9,
+        "title": "MongoDb",
+        "icon": "mongodb"
+      },
+      {
+        "id": 10,
+        "title": "Apache",
+        "icon": "apache"
+      },
+      {
+        "id": 11,
+        "title": "Nginx",
+        "icon": "nginx"
+      },
+      {
+        "id": 12,
+        "title": "Winter CMS",
+        "icon": "wintercms"
+      },
+      {
+        "id": 13,
+        "title": "October CMS",
+        "icon": "octobercms"
+      },
+      {
+        "id": 14,
+        "title": "Custom CMS",
+        "icon": "customcms"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "icon": "done",
+    "title": "Other",
+    "description": "CI/CD, programms and additional information.",
+    "skills": [
+      {
+        "id": 1,
+        "title": "GitHub",
+        "icon": "github"
+      },
+      {
+        "id": 2,
+        "title": "Git",
+        "icon": "git"
+      },
+      {
+        "id": 3,
+        "title": "Bitbucket",
+        "icon": "bitbucket"
+      },
+      {
+        "id": 4,
+        "title": "Git Flow",
+        "icon": "gitflow"
+      },
+      {
+        "id": 5,
+        "title": "Npmjs",
+        "icon": "npm"
+      },
+      {
+        "id": 6,
+        "title": "GH Action",
+        "icon": "github"
+      }
+    ]
+  }
+]

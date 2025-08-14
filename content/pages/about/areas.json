@@ -1,0 +1,38 @@
+{
+  "base": [
+    {
+      "icon": "frontend",
+      "title": "Frontend",
+      "skills": ["Angular"]
+    }, {
+      "icon": "blockchain",
+      "title": "Blockchain",
+      "skills": ["DeFi", "Wallets"]
+    }, {
+      "icon": "backend",
+      "title": "Backend",
+      "skills": ["NodeJs", "Databases"]
+    }, {
+      "icon": "design",
+      "title": "Design (UI/UX)",
+      "skills": ["Web", "Mobile"]
+    }
+  ],
+  "data": {
+    "ru": [{ "title": "Фронтенд" },
+      { "title": "Блокчейн" },
+      { "title": "Бекенд" },
+      { "title": "Дизайн (UI/UX)" }
+    ],
+    "es": [{ "title": "Frontend" },
+      { "title": "Blockchain" },
+      { "title": "Backend" },
+      { "title": "Design (UI/UX)" }
+    ],
+    "de": [{ "title": "Frontend" },
+      { "title": "Blockchain" },
+      { "title": "Backend" },
+      { "title": "Design (UI/UX)" }
+    ]
+  }
+}

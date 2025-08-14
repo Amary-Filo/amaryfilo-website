@@ -1,0 +1,27 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.work {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(mx.rem(280), 1fr) minmax(
+        mx.rem(450),
+        mx.rem(760)
+      );
+    grid-gap: mx.rem(30);
+
+    @include mx.b(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .head-wrap {
+    position: relative;
+    height: 100%;
+
+    .head-section {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 70px;
+    }
+  }
+}

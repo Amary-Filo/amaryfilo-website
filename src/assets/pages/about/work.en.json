@@ -1,0 +1,108 @@
+[
+  {
+    "id": 1,
+    "title": "Start career",
+    "positions": [
+      "Junior Web Developer"
+    ],
+    "date_start": "01.09.2014",
+    "date_end": "30.09.2016",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Grand Media Service",
+    "positions": [
+      "Web Developer",
+      "Middle Web Developer"
+    ],
+    "date_start": "16.09.2016",
+    "date_end": "31.08.2019",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Wallarm",
+    "positions": [
+      "Middle Web Developer"
+    ],
+    "date_start": "01.02.2019",
+    "date_end": "31.08.2019",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Rock'n'Block",
+    "positions": [
+      "Front-end TeamLead",
+      "Software Engeneer"
+    ],
+    "date_start": "11.11.2019",
+    "date_end": "31.01.2022",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Nodamatics",
+    "positions": [
+      "Senior Front-end TeamLead"
+    ],
+    "date_start": "15.02.2022",
+    "date_end": "31.05.2022",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Unlimit",
+    "positions": [
+      "Front-end Blockchain Senior Engineer",
+      "Front-end TeamLead",
+      "Senior Front-end Developer"
+    ],
+    "date_start": "29.08.2022",
+    "date_end": "31.08.2025",
+    "areas": [
+      "Create first landing pages with my build-on-develop design.",
+      "Learn Web JavaScript for manipulating elememts and etc.",
+      "Learn basic PHP for send Forms and another data by mail.",
+      "Learning HTML and CSS as basic things for create website pages."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Open To Work",
+    "positions": [
+      "Front-end Blockchain Senior Engineer",
+      "Front-end TeamLead",
+      "Senior Front-end Developer"
+    ],
+    "date_start": "31.08.2025",
+    "date_end": "31.12.2099",
+    "areas": []
+  }
+]

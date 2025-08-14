@@ -2,7 +2,7 @@
   <section class="head-hero">
     <div class="container fl-cc fl-dc">
       <span class="logo ic-amaryfilo t-gr fz-xxl"></span>
-      <b class="pos t-u ls fz-md fw-800">Software Developer</b>
+      <b class="pos t-u ls fz-nd fw-800">{{ "base.developer" | t }}</b>
       <h1 class="name ls t-gr fw-800">Amary Filo</h1>
       <div class="sphere fl-cc fl-w">
         <span class="btn m" title="Web develop area">Web</span>
@@ -53,53 +53,9 @@
 
   <app-subscribe />
 
-  <section class="sc area">
-    <div class="container fl-cc fl-dc">
-      <div class="head-section fl-cc fl-dc">
-        <h2 class="title ls-2 t-gr ls t-u cl-g-type">Interest areas</h2>
-        <p class="text op-7 ls fw-b">
-          Areas that I want to learn something and work for a while.
-        </p>
-      </div>
-      <div class="cards">
-        <div class="cd t-c cl-frontend">
-          <span class="ic ic-frontend"></span>
-          <h3 class="title fz-md">Frontend</h3>
-          <p class="text op-6">Angular</p>
-        </div>
-        <div class="cd t-c cl-blockchain">
-          <span class="ic ic-blockchain"></span>
-          <h3 class="title fz-md">Blockchain</h3>
-          <p class="text op-6">DeFi, wallets</p>
-        </div>
-        <div class="cd t-c cl-backend">
-          <span class="ic ic-backend"></span>
-          <h3 class="title fz-md">Backend</h3>
-          <p class="text op-6">NodeJs, Databases</p>
-        </div>
-        <div class="cd t-c cl-design">
-          <span class="ic ic-design"></span>
-          <h3 class="title fz-md">Design</h3>
-          <p class="text op-6">Web, mobile</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sc skills">
-    <div class="container head-section fl-cc fl-dc">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-instruments">Skills</h2>
-      <p class="text op-7 ls fw-b">
-        Areas, frameworks, technologies, cms and packages.
-      </p>
-    </div>
-
-    @for (item of skills; track $index) {
-    <app-skills [skills]="item" />
-    }
-  </section>
-
-  <app-work />
+  <app-area-section [areas]="areas()" />
+  <app-skills-section [skills]="skills()" />
+  <app-work-section [items]="work()" />
 
   <app-form-order />
 </main>

@@ -9,7 +9,6 @@ import {
   SolutionLatest,
   SandboxLatest,
 } from '@core/data/latest.model';
-// import { TranslatePipe } from '@core/i18n/translate.pipe';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { SubscribeComponent, FormOrderComponent } from '@shared/components';
@@ -23,7 +22,6 @@ import { UnderConstructionComponent } from '@shared/components/under-constructio
   selector: 'app-home-page',
   imports: [
     CommonModule,
-    // TranslatePipe,
     HeroComponent,
     AboutComponent,
     SubscribeComponent,

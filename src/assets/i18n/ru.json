@@ -1,4 +1,5 @@
 {
+  "base.developer": "Software Developer",
   "designs.title": "Дизайн-проекты!",
   "banner.fallback": "Нет перевода на {{lang}}, показываем {{usedLang}}",
   "blog.article.title": "Прочесть {{title}} статью",
@@ -11,5 +12,11 @@
   "page.about.info.tagline.title": "Tagline",
   "page.about.info.tagline.text": "'Nothing is impossible in programming. In any case, there is always search engine at hand.' - amaryfilo",
   "page.about.info.hobbies.title": "Hobbies",
-  "page.about.info.hobbies.text": "I create web and mobile designs. Some of this I use in my in projects. Rarely I'm playing games and stream it on Twitch or in Game Live Stream."
+  "page.about.info.hobbies.text": "I create web and mobile designs. Some of this I use in my in projects. Rarely I'm playing games and stream it on Twitch or in Game Live Stream.",
+  "page.about.skills.title": "Skills",
+  "page.about.skills.text": "Areas, frameworks, technologies, cms and packages.",
+  "page.about.work.title": "Career",
+  "page.about.work.text": "My work, career and skills on timeline.",
+  "page.about.areas.title": "Interest areas",
+  "page.about.areas.text": "Areas that I want to learn something and work for a while."
 }

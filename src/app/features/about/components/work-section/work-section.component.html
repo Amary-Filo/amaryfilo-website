@@ -1,0 +1,25 @@
+<section class="sc work">
+  <div class="container">
+    <div class="head-wrap">
+      <div class="head-section fl-bc fl-dc hs-part">
+        <h2 class="title ls-2 t-gr ls t-u cl-g-work">
+          {{ "page.about.work.title" | t }}
+        </h2>
+        <p class="text op-7 ls fw-b">
+          {{ "page.about.work.text" | t }}
+        </p>
+      </div>
+    </div>
+    <div class="info fl fl-dc">
+      @defer (when items()) { @for (item of items(); track $index) {
+      <app-work-item [item]="item" [isLast]="$last" />
+      } } @placeholder {
+      <h2>skeleton</h2>
+      } @loading {
+      <h2>skeleton while network in flight</h2>
+      } @error {
+      <h2>error</h2>
+      }
+    </div>
+  </div>
+</section>
