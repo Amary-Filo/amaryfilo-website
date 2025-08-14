@@ -3,5 +3,13 @@
   "banner.fallback": "Not available in {{lang}} — showing {{usedLang}}",
   "blog.article.title": "Read article {{title}}",
   "under.construction.title": "Website Under Restoration",
-  "under.construction.text": "This website is currently being restored after a long break. Only part of the pages are available, and the data shown is for demonstration purposes only and not clickable. Full functionality will be gradually restored."
+  "under.construction.text": "This website is currently being restored after a long break. Only part of the pages are available, and the data shown is for demonstration purposes only and not clickable. Full functionality will be gradually restored.",
+  "page.about.info.intro.title": "Introduction",
+  "page.about.info.intro.text": "I am full stack web developer and work in IT for 5 years. I have a lot of completed projects from web to mobile applications. But I choose one main sphere: Front-end. Nowadays I closely working with blockchain.",
+  "page.about.info.pseudonym.title": "Pseudonym",
+  "page.about.info.pseudonym.text": "Amary Filo don't have defenition. It's just random things which created from animal Llama 🦙, so they become to my logo.",
+  "page.about.info.tagline.title": "Tagline",
+  "page.about.info.tagline.text": "'Nothing is impossible in programming. In any case, there is always search engine at hand.' - amaryfilo",
+  "page.about.info.hobbies.title": "Hobbies",
+  "page.about.info.hobbies.text": "I create web and mobile designs. Some of this I use in my in projects. Rarely I'm playing games and stream it on Twitch or in Game Live Stream."
 }

@@ -1,0 +1,125 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+section.work {
+  .container {
+    display: grid;
+    grid-template-columns: minmax(mx.rem(280), 1fr) minmax(
+        mx.rem(450),
+        mx.rem(760)
+      );
+    grid-gap: mx.rem(30);
+
+    @include mx.b(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .head-wrap {
+    position: relative;
+    height: 100%;
+
+    .head-section {
+      position: sticky;
+      position: -webkit-sticky;
+      top: 70px;
+    }
+  }
+
+  .things {
+    border-left: mx.rem(4) dotted rgba(140, 140, 140, 0.25);
+    padding: mx.rem(20) mx.rem(0) mx.rem(20) mx.rem(40);
+    margin: mx.rem(15) 0 mx.rem(15) mx.rem(40);
+
+    @include mx.b(mobile) {
+      padding: mx.rem(5) mx.rem(10) mx.rem(5) mx.rem(20);
+      margin: mx.rem(15) 0 mx.rem(15) mx.rem(10);
+    }
+  }
+
+  .list {
+    padding-left: 0;
+
+    li {
+      width: max-content;
+      max-width: fit-content;
+
+      padding: mx.rem(10) mx.rem(15);
+      margin-bottom: mx.rem(15);
+
+      list-style: none;
+      border-radius: mx.rem(15);
+
+      font-weight: 500;
+      line-height: 1.4;
+
+      background-color: rgba(173, 173, 173, 0.1);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include mx.b(tablet) {
+        width: 100%;
+        font-size: mx.rem(14);
+      }
+
+      @include mx.b(mobile) {
+        margin-bottom: mx.rem(10);
+      }
+    }
+  }
+
+  .item {
+    padding-left: mx.rem(30);
+    position: relative;
+
+    @include mx.b(mobile) {
+      padding: mx.rem(15);
+      border-radius: mx.rem(20);
+    }
+
+    .title {
+      margin-bottom: mx.rem(10);
+      margin-top: mx.rem(10);
+
+      @include mx.b(tablet) {
+        font-size: mx.rem(20);
+      }
+
+      @include mx.b(mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &::before {
+        content: attr(data-date);
+        font-family: var(--title-font);
+        font-size: mx.rem(12);
+        margin-right: mx.rem(10);
+        opacity: 0.6;
+        font-weight: bold;
+
+        @include mx.b(mobile) {
+          margin-bottom: mx.rem(5);
+        }
+      }
+    }
+
+    .pos {
+      width: max-content;
+      background-color: rgba(173, 173, 173, 0.1);
+      padding: mx.rem(10) mx.rem(15);
+      border-radius: mx.rem(15);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include mx.b(tablet) {
+        font-size: mx.rem(12);
+        border-radius: mx.rem(10);
+        padding: mx.rem(10);
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+.ways {
+  display: grid;
+  grid-template-columns: minmax(mx.rem(300), 1fr) minmax(
+      mx.rem(450),
+      mx.rem(760)
+    );
+  grid-template-areas: "head info";
+  grid-gap: mx.rem(30);
+
+  margin-bottom: mx.rem(50);
+
+  @include mx.b(desktop) {
+    grid-gap: mx.rem(20);
+  }
+
+  @include mx.b(tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "head" "info";
+  }
+
+  &:last-child {
+    margin-bottom: mx.rem(0);
+  }
+
+  .info {
+    flex-wrap: wrap;
+    grid-area: info;
+  }
+
+  .item {
+    background-color: rgba(173, 173, 173, 0.1);
+    padding: mx.rem(12) mx.rem(15);
+    border-radius: mx.rem(15);
+    border: mx.rem(2) solid transparent;
+    transition: 0.4s ease;
+
+    @include mx.b(mobile) {
+      font-size: mx.rem(14);
+      padding: mx.rem(10) mx.rem(10);
+      border-radius: mx.rem(10);
+    }
+
+    .ic {
+      &-walletconnect {
+        &::before {
+          font-size: mx.rem(16);
+          margin-right: mx.rem(21);
+        }
+      }
+    }
+
+    &:hover {
+      border-color: var(--cl-main);
+
+      .ic {
+        &::before {
+          transition: 0.2s ease;
+          color: var(--cl-main);
+        }
+      }
+    }
+  }
+}

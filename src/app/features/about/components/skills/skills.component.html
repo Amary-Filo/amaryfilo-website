@@ -1,0 +1,17 @@
+<div class="container ways">
+  <div class="head-section fl-bc fl-dc hs-part">
+    <h2 [class]="'title ls-2 t-gr ls t-u cl-g-' + skills()?.icon">
+      {{ skills()?.title }}
+    </h2>
+    <p class="text op-7 ls fw-b">
+      {{ skills()?.description }}
+    </p>
+  </div>
+  <div class="info fl-bc">
+    @for (skill of skills()?.skills; track $index) {
+    <div [class]="'item m cl-' + skill.icon">
+      <span [class]="'ic fw-b op-7 ic-' + skill.icon">{{ skill.title }}</span>
+    </div>
+    }
+  </div>
+</div>
