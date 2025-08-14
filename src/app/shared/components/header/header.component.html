@@ -33,12 +33,19 @@
       <div class="fl header-btns">
         <div class="fl">
           <span class="m btn ic-globe t" id="lang" data-modal="modal-lang"
-            >EN</span
-          ><span
-            class="m btn ic-moon"
+            >EN
+          </span>
+          <span
             id="theme-color"
-            data-theme="light"
-          ></span>
+            [class]="
+              'm btn ic-' + (theme.theme() === 'dark' ? 'moon' : 'light-up')
+            "
+            (click)="theme.toggle()"
+            [attr.title]="
+              theme.theme() === 'dark' ? 'Light theme' : 'Dark theme'
+            "
+          >
+          </span>
         </div>
       </div>
     </div>

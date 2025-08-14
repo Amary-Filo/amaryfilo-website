@@ -1,8 +1,24 @@
-import { APP_INITIALIZER, ApplicationConfig, inject, LOCALE_ID, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection, WritableSignal } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withInMemoryScrolling } from '@angular/router';
+import {
+  APP_INITIALIZER,
+  ApplicationConfig,
+  inject,
+  LOCALE_ID,
+  provideAppInitializer,
+  provideBrowserGlobalErrorListeners,
+  provideZonelessChangeDetection,
+  WritableSignal,
+} from '@angular/core';
+import {
+  provideRouter,
+  withComponentInputBinding,
+  withInMemoryScrolling,
+} from '@angular/router';
 
 import { routes } from './app.routes';
-import { provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import {
+  provideClientHydration,
+  withEventReplay,
+} from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { CURRENT_LANG } from '@core/i18n/i18n.tokens';
 
@@ -13,6 +29,7 @@ import localeDe from '@angular/common/locales/de';
 import { registerLocaleData } from '@angular/common';
 import { TranslateService } from '@core/i18n/translate.service';
 import { Lang } from '@core/i18n/i18n.model';
+import { ThemeService } from '@core/services/theme.service';
 
 registerLocaleData(localeRu);
 registerLocaleData(localeEn);
@@ -21,6 +38,7 @@ registerLocaleData(localeDe);
 
 export const appConfig: ApplicationConfig = {
   providers: [
+    provideAppInitializer(() => inject(ThemeService).init()),
     provideClientHydration(withEventReplay()),
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
@@ -31,12 +49,12 @@ export const appConfig: ApplicationConfig = {
         const translate = inject(TranslateService);
         const currentLang = inject(CURRENT_LANG);
         return () => translate.load(currentLang());
-      }
+      },
     },
     {
       provide: LOCALE_ID,
       deps: [CURRENT_LANG],
-      useFactory: (i18n: WritableSignal<Lang>) => i18n()
+      useFactory: (i18n: WritableSignal<Lang>) => i18n(),
     },
     provideHttpClient(withFetch()),
     provideRouter(
@@ -44,8 +62,8 @@ export const appConfig: ApplicationConfig = {
       withComponentInputBinding(),
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
-        anchorScrolling: 'enabled'
+        anchorScrolling: 'enabled',
       })
-    ), 
-  ]
+    ),
+  ],
 };

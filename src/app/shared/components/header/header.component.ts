@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
+import { ThemeService } from '@core/services/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -9,4 +10,6 @@ import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive
   styleUrl: './header.component.scss',
   standalone: true,
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  theme = inject(ThemeService);
+}
