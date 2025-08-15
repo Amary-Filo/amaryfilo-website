@@ -1,14 +1,59 @@
-<section>
-  <h1>{{ 'designs.title' | t }}</h1>
+<main class="pg-designs">
+  <section class="sc head-section pg-hd">
+    <div class="container info fl-cc fl-dc t-c">
+      <h1 class="title ls-2 t-gr ls t-u cl-g-design">Designs</h1>
+      <p class="text op-7 ls fw-b">
+        All designs from landing pages to mobile created by me.
+      </p>
+    </div>
+  </section>
 
-  @if (vm().isFallback) {
-  <div class="notice notice--info">
-    {{ 'banner.fallback' | t: {
-    lang: vm().requestedLang,
-    usedLang: vm().usedLang
-    } }}
-  </div>
-  }
+  <section class="sc list">
+    <div class="container">
+      <span class="title fz-nm op-7">What are you looking for?</span>
+      <div class="fl fl-w lists">
+        @for (item of filters(); track item) {
+        <button
+          type="button"
+          class="btn m"
+          [class.active]="selectedFilter() === item"
+          (click)="filterData(item)"
+          [title]="item"
+        >
+          {{ item }}
+        </button>
+        }
+      </div>
+    </div>
+  </section>
 
-  <pre>{{ data() | json }}</pre>
-</section>
+  <section class="sc designs">
+    <div class="container cl-design">
+      @for (design of filteredItems(); track design.slug) {
+      <a
+        class="cl-design cd cd-ds bd-h btn-anm"
+        [title]="'Open design ' + design.title"
+        [routerLinkWithLang]="['designs', design.slug]"
+      >
+        <picture class="img fl fl-dc">
+          <source
+            type="image/webp"
+            [srcset]="'assets/designs/images/' + design.thumbnail + '.webp'"
+          />
+          <img
+            loading="lazy"
+            [src]="'assets/designs/images/' + design.thumbnail + '.png'"
+            [alt]="'Thumbnail of Amary Filo ' + design.title + ' design'"
+          />
+        </picture>
+        <h3 class="btn fill t-cw" [title]="'Open design ' + design.title">
+          {{ design.title }}
+        </h3>
+      </a>
+      }
+    </div>
+  </section>
+
+  <app-subscribe />
+  <app-form-order />
+</main>

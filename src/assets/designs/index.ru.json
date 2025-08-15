@@ -3,9 +3,36 @@
     "slug": "moovie",
     "date": "11.05.2019",
     "category": [
-      "website"
+      "Website", "Partial"
     ],
     "title": "Мууви",
-    "thumbnail": "moovie-thumb.png"
+    "thumbnail": "moovie-thumb"
+  },
+    {
+    "slug": "moovie2",
+    "date": "11.05.2019",
+    "category": [
+      "Website"
+    ],
+    "title": "Мууви 2",
+    "thumbnail": "moovie-thumb"
+  },
+    {
+    "slug": "moovie1",
+    "date": "11.05.2019",
+    "category": [
+      "Landing"
+    ],
+    "title": "Мууви 1",
+    "thumbnail": "moovie-thumb"
+  },
+    {
+    "slug": "moovie3",
+    "date": "11.05.2019",
+    "category": [
+      "Website", "E-Commerce"
+    ],
+    "title": "Мууви 3",
+    "thumbnail": "moovie-thumb"
   }
 ]

@@ -58,6 +58,7 @@
   width: max-content;
 
   color: rgba(var(--btn-text-color), 1);
+  cursor: pointer;
 
   &:active {
     border-radius: var(--btn-border-radius-active, mx.rem(9));

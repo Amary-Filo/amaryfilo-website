@@ -1,4 +1,4 @@
-@use '../../../../styles/mixins/mixins.scss' as mx;
+@use "../../../../styles/mixins/mixins.scss" as mx;
 
 header {
   position: fixed;
@@ -124,7 +124,7 @@ header {
     }
   }
 
-  #menu-bars {
+  .menu-bars {
     display: none;
     position: absolute;
     top: mx.rem(15);
@@ -134,11 +134,13 @@ header {
     }
   }
 
-  #lang::before {
+  .lang::before {
     margin-right: mx.rem(5);
   }
-  #theme-color,
-  #lang {
+
+  .menu-bars,
+  .theme-color,
+  .lang {
     cursor: pointer;
   }
 }

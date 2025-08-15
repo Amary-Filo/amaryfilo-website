@@ -1,44 +1,62 @@
-<header>
+<header [class]="headerClass()">
   <div class="container">
-    <span class="btn ic-menu fz-md" id="menu-bars" data-menu="show"></span>
+    <span
+      class="btn fz-md"
+      [class]="'menu-bars btn fz-md ' + iconClass()"
+      (click)="toggleMenu()"
+      title="Toggle menu"
+    ></span>
     <div class="header">
       <a
         class="fl-cc fl-dc ic-amaryfilo t-main t-gr fw-800"
         d-text="Amary Filo"
         routerLink="/"
+        (click)="onNavClick()"
       ></a>
       <nav class="fl">
-        <a class="btn m" title="Open About page" routerLinkWithLang="about"
+        <a
+          class="btn m"
+          title="Open About page"
+          routerLinkWithLang="about"
+          (click)="onNavClick()"
           >About</a
         >
-        <a class="btn m" title="Open Design page" routerLinkWithLang="designs"
+        <a
+          class="btn m"
+          title="Open Design page"
+          routerLinkWithLang="designs"
+          (click)="onNavClick()"
           >Design</a
         >
         <a
           class="btn m"
           title="Open Projects page"
           routerLinkWithLang="projects"
+          (click)="onNavClick()"
           >Projects</a
         >
         <a
           class="btn m"
           title="Open Solutions page"
           routerLinkWithLang="solutions"
+          (click)="onNavClick()"
           >Solutions</a
         >
-        <a class="btn m" title="Open Sandbox page" routerLinkWithLang="sandbox"
+        <a
+          class="btn m"
+          title="Open Sandbox page"
+          routerLinkWithLang="sandbox"
+          (click)="onNavClick()"
           >Sandbox</a
         >
       </nav>
       <div class="fl header-btns">
         <div class="fl">
-          <span class="m btn ic-globe t" id="lang" data-modal="modal-lang"
-            >EN
-          </span>
+          <span class="lang m btn ic-globe t">EN </span>
           <span
-            id="theme-color"
             [class]="
-              'm btn ic-' + (theme.theme() === 'dark' ? 'moon' : 'light-up')
+              'theme-color m btn ic-' +
+              (theme.theme() === 'dark' ? 'moon' : 'light-up')
             "
             (click)="theme.toggle()"
             [attr.title]="

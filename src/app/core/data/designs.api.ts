@@ -8,6 +8,7 @@ import { DEFAULT_LANG, Lang } from '@core/i18n/i18n.model';
 export interface DesignIndexItem {
   slug: string;
   title: string;
+  category: string[];
   date: string;
   thumbnail?: string;
 }
