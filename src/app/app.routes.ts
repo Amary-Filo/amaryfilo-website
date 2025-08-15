@@ -5,6 +5,7 @@ import { designResolver } from './features/designs/design/design.resolver';
 import { homeLatestResolver } from './features/home/home.resolver';
 import { aboutResolver } from './features/about/about.resolver';
 import { ExistsGuard } from '@core/guards/exists.guard';
+import { projectsIndexResolver } from './features/projects/projects.resolver';
 
 const children: Routes = [
   {
@@ -48,6 +49,31 @@ const children: Routes = [
             (m) => m.DesignPage
           ),
         resolve: { design: designResolver },
+      },
+    ],
+  },
+
+  {
+    path: 'projects',
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/projects/projects.page').then(
+            (m) => m.ProjectsPage
+          ),
+        resolve: { index: projectsIndexResolver },
+        title: 'Amary Filo | Projects',
+      },
+      {
+        path: ':slug',
+        canActivate: [ExistsGuard],
+        data: { page: 'projects' },
+        loadComponent: () =>
+          import('./features/projects/project/project.page').then(
+            (m) => m.ProjectPage
+          ),
+        // resolve: { design: projectResolver },
       },
     ],
   },

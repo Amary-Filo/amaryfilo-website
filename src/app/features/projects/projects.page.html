@@ -1,1 +1,67 @@
-<p>projects works!</p>
+<main class="pg-projects">
+  <section class="sc head-section pg-hd">
+    <div class="container info fl-cc fl-dc t-c">
+      <h1 class="title ls-2 t-gr ls t-u cl-g-project">Projects</h1>
+      <p class="text op-7 ls fw-b">
+        All projects created by me or in which I participated.
+      </p>
+    </div>
+  </section>
+
+  <section class="sc list">
+    <div class="container">
+      <span class="title fz-nm op-7">What do you want?</span>
+      <div class="fl fl-w lists">
+        @for (item of filters(); track item) {
+        <button
+          type="button"
+          class="btn m"
+          [class.active]="selectedFilter() === item"
+          (click)="filterData(item)"
+          [title]="item"
+        >
+          {{ item }}
+        </button>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="sc projects">
+    <div class="container cl-project">
+      @for (project of filteredItems(); track project.slug) {
+      <div class="cd cd-pj bd-h bd-t btn-anm fl fl-dc">
+        <time class="fz-xs op-6" [attr.datetime]="project">{{
+          project.date | date
+        }}</time>
+        <a
+          class="link"
+          [routerLinkWithLang]="['projects', project.slug]"
+          [title]="'Open project ' + project.title"
+        >
+          <h2 class="title">{{ project.title }}</h2>
+        </a>
+        <p class="text op-7">
+          {{ project.anonce }}
+        </p>
+        <div class="instruments fl fl-w">
+          @for (instrument of project.instruments; track $index) {
+          <span [class]="'ic-' + instrument.icon"></span>
+          }
+        </div>
+        <a
+          class="btn fill t-cw"
+          [routerLinkWithLang]="['projects', project.slug]"
+          [title]="'Open project ' + project.title"
+        >
+          View
+        </a>
+      </div>
+
+      }
+    </div>
+  </section>
+
+  <app-subscribe />
+  <app-form-order />
+</main>

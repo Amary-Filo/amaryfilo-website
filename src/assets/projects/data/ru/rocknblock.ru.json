@@ -1,0 +1,78 @@
+{
+  "slug": "rocknblock",
+  "title": "Rock'n'Block Website",
+  "date": "11.05.2019",
+  "category": [
+    "Website"
+  ],
+  "anonce": "Corporate website with a variety of forms, landings and integrations.",
+  "description": "Development of an informational website for the rocknblock company.<br><br>It was necessary to create a site with the ability to manage all pages, components and data through the administrative panel. Implement good SEO by optimizing images and code. Integrate third-party services to receive applications from the site. Create a blog for company articles.",
+  "logo": "rocknblock-logo",
+  "instruments": [
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "gulp",
+      "color": "",
+      "title": "Gulp"
+    },
+    {
+      "icon": "wintercms",
+      "color": "",
+      "title": "Winter CMS"
+    },
+    {
+      "icon": "laravel",
+      "color": "",
+      "title": "Laravel"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "pug",
+      "color": "",
+      "title": "Pug"
+    },
+    {
+      "icon": "seo",
+      "color": "",
+      "title": "SEO"
+    }
+  ],
+  "images": [
+    "rocknblock-1",
+    "rocknblock-2",
+    "rocknblock-3",
+    "rocknblock-4"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "title": "Behance",
+      "url": "https://github.com"
+    },
+    {
+      "icon": "link",
+      "color": "green",
+      "title": "My Designs",
+      "url": "https://md.co",
+      "is_active": false
+    }
+  ]
+}

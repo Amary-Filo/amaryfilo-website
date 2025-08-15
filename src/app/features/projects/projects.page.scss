@@ -1,0 +1,45 @@
+@use "../../../styles/mixins/mixins.scss" as mx;
+
+// Page
+.pg-projects {
+  section.projects {
+    margin-top: mx.rem(50);
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(mx.rem(300), 1fr));
+      grid-gap: mx.rem(20);
+
+      @include mx.b(tablet) {
+        grid-gap: mx.rem(10);
+      }
+    }
+
+    .cd {
+      background-color: rgba(140, 140, 140, 0.1);
+    }
+  }
+
+  // Section: List
+
+  section.list {
+    margin-top: mx.rem(100);
+    @include mx.b(mobile) {
+      text-align: center;
+    }
+
+    .lists {
+      margin-top: mx.rem(15);
+      @include mx.b(mobile) {
+        justify-content: center;
+      }
+
+      .btn {
+        &.active {
+          background-color: var(--cl-caccent);
+          color: #000;
+        }
+      }
+    }
+  }
+}
