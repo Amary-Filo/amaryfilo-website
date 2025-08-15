@@ -2,18 +2,19 @@ import { CommonModule } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { TranslatePipe } from '@core/i18n/translate.pipe';
+// import { TranslatePipe } from '@core/i18n/translate.pipe';
 import { FormOrderComponent, SubscribeComponent } from '@shared/components';
-import { DesignIndexItem } from '@core/data/designs.api';
 import { SectionResult } from '@core/data/section.api';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
+import { DesignIndexItem } from './designs.model';
+import { getImagePath } from '@helpers/index';
 
 @Component({
   selector: 'app-designs-page',
   standalone: true,
   imports: [
     CommonModule,
-    TranslatePipe,
+    // TranslatePipe,
     FormOrderComponent,
     SubscribeComponent,
     RouterLinkWithLangDirective,
@@ -33,6 +34,7 @@ export class DesignsPage {
 
   readonly filters = computed<string[]>(() => {
     const set = new Set<string>(['ALL']);
+
     for (const it of this.allItems())
       (it.category ?? []).forEach((c) => c && set.add(c));
     return Array.from(set);
@@ -43,7 +45,9 @@ export class DesignsPage {
   readonly filteredItems = computed<DesignIndexItem[]>(() => {
     const sel = this.selectedFilter();
     const items = this.allItems();
+
     if (!sel || sel === 'ALL') return items;
+
     const needle = sel.toLowerCase();
     return items.filter((it) =>
       (it.category ?? []).some((c) => c?.toLowerCase() === needle)
@@ -52,5 +56,9 @@ export class DesignsPage {
 
   filterData(filter: string) {
     this.selectedFilter.set(filter);
+  }
+
+  imagePath(item: DesignIndexItem): string {
+    return getImagePath(item.thumbnail, item.slug);
   }
 }

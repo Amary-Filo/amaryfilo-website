@@ -1,10 +1,17 @@
 {
+  "slug": "moovie",
+  "title": "Мууви",
+  "date": "11.05.2019",
+  "category": [
+    "Website"
+  ],
+  "thumbnail": "moovie-thumb",
   "description": "Дизайн для онлайн кинотеатров, там показывают новые фильмы и сериалы. Помимо этого там имеется новострая лента и другая полезная медиаинформация.",
   "images": [
-    "moovie-1-ru.png",
-    "moovie-2-ru.png",
-    "moovie-3-ru.png",
-    "moovie-4.png"
+    "moovie-1-ru",
+    "moovie-2-ru",
+    "moovie-3-ru",
+    "moovie-4"
   ],
   "links": [
     {

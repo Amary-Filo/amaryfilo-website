@@ -1,1 +1,94 @@
-<p>design works!</p>
+<main class="pg-design">
+  <section class="hero">
+    <div class="container">
+      <div class="image">
+        <picture class="img fl fl-dc">
+          <source
+            type="image/webp"
+            [srcset]="imagePath(design()?.thumbnail) + '.webp'"
+          />
+          <img
+            loading="lazy"
+            [src]="imagePath(design()?.thumbnail) + '.png'"
+            [alt]="'Thumbnail of Amary Filo ' + design()?.title + ' design'"
+          />
+        </picture>
+      </div>
+      <div class="info fl-cc fl-dc">
+        <span class="ls-2 t-gr cl-g-design fz-xxl fw-800 t-u">Design</span>
+        <h1 class="title ls fw-800 fz-xxl">
+          {{ design()?.title }}
+        </h1>
+        <p class="text op-7">
+          {{ design()?.description }}
+        </p>
+        <time class="fz-sm ls op-6 fw-800" [attr.datetime]="design()?.date">{{
+          design()?.date | date
+        }}</time>
+      </div>
+    </div>
+  </section>
+
+  <app-subscribe />
+
+  <section class="sc image-grid">
+    <div class="container">
+      <div class="head-section hs-part fl-bc fl-dc">
+        <h2 class="title ls-2 t-gr ls t-u cl-g-gallery">Gallery</h2>
+        <p class="text op-7 ls fw-b">
+          Gallery of images or parts included in this design.
+        </p>
+      </div>
+
+      @for (item of design()?.images; track $index) {
+      <div
+        class="cl-gallery cd cd-ds bd-h btn-anm"
+        title="Open design Minimal landing page for studios"
+      >
+        <picture class="img fl fl-dc">
+          <source type="image/webp" [srcset]="imagePath(item) + '.webp'" />
+          <img
+            loading="lazy"
+            [src]="imagePath(item) + '.png'"
+            [alt]="
+              'Thumbnail ' +
+              ($index + 1) +
+              ' of Amary Filo ' +
+              design()?.title +
+              ' design'
+            "
+          />
+        </picture>
+      </div>
+      }
+    </div>
+  </section>
+
+  @if(design()?.links?.length) {
+  <section class="sc links">
+    <div class="container fl-cc fl-dc">
+      <div class="head-section fl-cc fl-dc">
+        <h2 class="title ls-2 t-gr ls t-u cl-g-links">Links</h2>
+        <p class="text op-7 ls fw-b">
+          Find this design in Full resolution by click on links below 🥡
+        </p>
+      </div>
+
+      <div class="fl-cc links">
+        @for (item of design()?.links; track $index) {
+        <a
+          [class]="'btn m ic-' + item.icon"
+          [href]="item.url"
+          [title]="'Open in ' + item.title"
+          rel="nofollow norefferer"
+          target="_blank"
+        ></a>
+        }
+      </div>
+    </div>
+  </section>
+  }
+
+  <app-share />
+  <app-form-order />
+</main>

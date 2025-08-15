@@ -1,13 +1,21 @@
 {
+  "slug": "moovie",
+  "title": "Moovie",
+  "date": "11.05.2019",
+  "category": [
+    "Website"
+  ],
+  "thumbnail": "moovie-thumb",
   "description": "Design für Online-Kinos, in denen neue Filme und Serien gezeigt werden. Zusätzlich gibt es einen neuen Film und weitere nützliche Medieninformationen.",
   "images": [
-    "moovie-1.png",
-    "moovie-2-de.png",
-    "moovie-3.png",
-    "moovie-4-de.png"
+    "moovie-1",
+    "moovie-2-de",
+    "moovie-3",
+    "moovie-4-de"
   ],
   "links": [
     {
+      "icon": "behance",
       "title": "Behance",
       "url": "https://behance.co"
     },

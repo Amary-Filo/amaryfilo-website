@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
 import {
@@ -38,39 +38,47 @@ import { UnderConstructionComponent } from '@shared/components/under-constructio
 })
 export class HomePage {
   private route = inject(ActivatedRoute);
+  private data = toSignal(this.route.data, { initialValue: {} as any });
 
-  data = toSignal(this.route.data, { initialValue: {} as any });
-  vm = () =>
-    this.data()['home'] as {
-      designs: {
-        items: DesignsLatest[];
-        usedLang: string;
-        requestedLang?: string;
-        isFallback?: boolean;
-      };
-      projects: {
-        items: ProjectLatest[];
-        usedLang: string;
-        requestedLang?: string;
-        isFallback?: boolean;
-      };
-      blog: {
-        items: BlogLatest[];
-        usedLang: string;
-        requestedLang?: string;
-        isFallback?: boolean;
-      };
-      solutions: {
-        items: SolutionLatest[];
-        usedLang: string;
-        requestedLang?: string;
-        isFallback?: boolean;
-      };
-      sandbox: {
-        items: SandboxLatest[];
-        usedLang: string;
-        requestedLang?: string;
-        isFallback?: boolean;
-      };
-    };
+  vm = computed(
+    () =>
+      this.data()['home'] as {
+        designs: {
+          items: DesignsLatest[];
+          usedLang: string;
+          requestedLang?: string;
+          isFallback?: boolean;
+        };
+        projects: {
+          items: ProjectLatest[];
+          usedLang: string;
+          requestedLang?: string;
+          isFallback?: boolean;
+        };
+        blog: {
+          items: BlogLatest[];
+          usedLang: string;
+          requestedLang?: string;
+          isFallback?: boolean;
+        };
+        solutions: {
+          items: SolutionLatest[];
+          usedLang: string;
+          requestedLang?: string;
+          isFallback?: boolean;
+        };
+        sandbox: {
+          items: SandboxLatest[];
+          usedLang: string;
+          requestedLang?: string;
+          isFallback?: boolean;
+        };
+      }
+  );
+
+  designs = computed(() => this.vm()?.designs ?? null);
+  blog = computed(() => this.vm()?.blog ?? null);
+  projects = computed(() => this.vm()?.projects ?? null);
+  sandbox = computed(() => this.vm()?.sandbox ?? null);
+  solutions = computed(() => this.vm()?.solutions ?? null);
 }

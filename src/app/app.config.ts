@@ -18,6 +18,8 @@ import { routes } from './app.routes';
 import {
   provideClientHydration,
   withEventReplay,
+  withHttpTransferCacheOptions,
+  withI18nSupport,
 } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { CURRENT_LANG } from '@core/i18n/i18n.tokens';
@@ -39,7 +41,11 @@ registerLocaleData(localeDe);
 export const appConfig: ApplicationConfig = {
   providers: [
     provideAppInitializer(() => inject(ThemeService).init()),
-    provideClientHydration(withEventReplay()),
+    provideClientHydration(
+      withEventReplay(),
+      withHttpTransferCacheOptions({}),
+      withI18nSupport()
+    ),
     provideBrowserGlobalErrorListeners(),
     provideZonelessChangeDetection(),
     {

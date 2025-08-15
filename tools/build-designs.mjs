@@ -15,7 +15,8 @@ const OUT_INDEX = join(OUT_ROOT, 'index.json');
 // per-lang
 const OUT_INDEX_LANG = (lang) => join(OUT_ROOT, `index.${lang}.json`);
 const OUT_LATEST_LANG = (lang) => join(OUT_ROOT, `latest.${lang}.json`);
-const OUT_DETAIL_LANG = (lang, slug) => join(OUT_ROOT, 'data', lang, `${slug}.${lang}.json`);
+const OUT_DETAIL_LANG = (lang, slug) =>
+  join(OUT_ROOT, 'data', lang, `${slug}.${lang}.json`);
 
 function ensureDate(d) {
   // Поддержим "dd.mm.yyyy" и ISO
@@ -29,8 +30,10 @@ function ensureDate(d) {
 }
 
 function extractOrdinal(name) {
-  // вытаскиваем номер кадра перед расширением: ...-2.png, ...-4-de.webp, ..._12@2x.jpg
-  const m = /(?:-|_)(\d+)(?:-[a-z]{2,}|@[\dx]+)?\.[a-z0-9]+$/i.exec(name || '');
+  // поддержка имени без расширения и с ним
+  const s = String(name || '');
+  const m =
+    /(?:-|_)(\d+)(?:-[a-z]{2,}|@[\dx]+)?(?:\.[a-z0-9]+)?$/i.exec(s);
   return m ? parseInt(m[1], 10) : NaN;
 }
 
@@ -49,7 +52,8 @@ function overlayImages(baseArr = [], langArr = []) {
   if (overrides.size === 0) {
     const maxLen = Math.max(baseArr.length, langArr.length);
     const res = new Array(maxLen);
-    for (let i = 0; i < maxLen; i++) res[i] = langArr[i] ?? baseArr[i] ?? null;
+    for (let i = 0; i < maxLen; i++)
+      res[i] = langArr[i] ?? baseArr[i] ?? null;
     return res.filter(Boolean);
   }
 
@@ -62,7 +66,7 @@ function overlayImages(baseArr = [], langArr = []) {
     }
   }
 
-  // (опционально) добавить локальные изображения, у которых нет номера или номер не найден в базе — в конец
+  // добавить локальные изображения без номера в конец
   for (const f of langArr) {
     const n = extractOrdinal(f);
     if (Number.isNaN(n)) result.push(f);
@@ -82,11 +86,27 @@ async function writeJson(path, obj) {
   await fs.writeFile(path, json, 'utf8');
 }
 
+function localizedMeta(data, lang) {
+  const meta = data?.metadata ?? {};
+  const base = data?.base ?? {};
+  const langData = data?.data?.[lang] ?? {};
+
+  return {
+    slug: meta.slug || '',
+    date: meta.date || '',
+    category: Array.isArray(meta.category) ? meta.category : [],
+    title: (langData.title ?? base.title) || '',
+    thumbnail: (langData.thumbnail ?? meta.thumbnail) || ''
+  };
+}
+
 async function build() {
   // 1) собрать все файлы дизайнов
   let files = [];
   try {
-    files = (await fs.readdir(CONTENT_DIR)).filter((f) => f.endsWith('.json'));
+    files = (await fs.readdir(CONTENT_DIR)).filter((f) =>
+      f.endsWith('.json')
+    );
   } catch (e) {
     console.error('[build-designs] Content folder not found:', CONTENT_DIR);
     process.exit(1);
@@ -103,37 +123,41 @@ async function build() {
 
       items.push({ file, full, data, slug, isActive });
     } catch (e) {
-      console.warn('[build-designs] skip invalid JSON:', file, e.message);
+      console.warn(
+        '[build-designs] skip invalid JSON:',
+        file,
+        e.message
+      );
     }
   }
 
   // 2) index.json (только slug активных)
-  const activeSlugs = items.filter(x => x.isActive).map(x => x.slug);
+  const activeSlugs = items.filter((x) => x.isActive).map((x) => x.slug);
   await writeJson(OUT_INDEX, activeSlugs);
 
   // 3) per-lang индексы и latest
   for (const lang of SUPPORTED_LANGS) {
     // Сформировать карточки
     const cards = items.map(({ data, slug, isActive }) => {
-      const meta = data?.metadata ?? {};
-      const base = data?.base ?? {};
-      const langData = data?.data?.[lang] ?? {};
-
-      const title = (langData.title ?? base.title) || '';
-      const thumb = (langData.thumbnail ?? meta.thumbnail) || '';
-      const date = meta.date || '';
-      const category = Array.isArray(meta.category) ? meta.category : [];
-
-      const card = { slug, date, category, title, thumbnail: thumb };
+      const meta = localizedMeta(data, lang);
+      const card = {
+        slug,
+        date: meta.date,
+        category: meta.category,
+        title: meta.title,
+        thumbnail: meta.thumbnail
+      };
       if (isActive === false) card.is_active = false;
       return card;
     });
 
-    // отфильтровать неактивные для индекса (как ты указал)
-    const cardsActive = cards.filter(c => c.is_active !== false);
+    // отфильтровать неактивные для индекса
+    const cardsActive = cards.filter((c) => c.is_active !== false);
 
     // сортировка по дате desc
-    cardsActive.sort((a, b) => +ensureDate(b.date) - +ensureDate(a.date));
+    cardsActive.sort(
+      (a, b) => +ensureDate(b.date) - +ensureDate(a.date)
+    );
 
     await writeJson(OUT_INDEX_LANG(lang), cardsActive);
 
@@ -152,18 +176,34 @@ async function build() {
 
     for (const lang of SUPPORTED_LANGS) {
       const langData = data?.data?.[lang] ?? {};
+      const meta = localizedMeta(data, lang);
 
       const description = langData.description ?? baseDesc;
-      const images = overlayImages(baseImages, Array.isArray(langData.images) ? langData.images : []);
-      const links = Array.isArray(langData.links) ? langData.links : baseLinks;
+      const images = overlayImages(
+        baseImages,
+        Array.isArray(langData.images) ? langData.images : []
+      );
+      const links = Array.isArray(langData.links)
+        ? langData.links
+        : baseLinks;
 
-      const detail = { description, images, links };
+      const detail = {
+        slug: meta.slug || slug,
+        title: meta.title,
+        date: meta.date,
+        category: meta.category,
+        thumbnail: meta.thumbnail,
+        description,
+        images,
+        links
+      };
 
       await writeJson(OUT_DETAIL_LANG(lang, slug), detail);
     }
   }
 
-  console.log('[build-designs] OK:',
+  console.log(
+    '[build-designs] OK:',
     `index.json=${activeSlugs.length},`,
     `index.{${SUPPORTED_LANGS.join(',')}}.json,`,
     `latest.*, details.* generated → ${OUT_ROOT}`

@@ -36,13 +36,10 @@
         [routerLinkWithLang]="['designs', design.slug]"
       >
         <picture class="img fl fl-dc">
-          <source
-            type="image/webp"
-            [srcset]="'assets/designs/images/' + design.thumbnail + '.webp'"
-          />
+          <source type="image/webp" [srcset]="imagePath(design) + '.webp'" />
           <img
             loading="lazy"
-            [src]="'assets/designs/images/' + design.thumbnail + '.png'"
+            [src]="imagePath(design) + '.png'"
             [alt]="'Thumbnail of Amary Filo ' + design.title + ' design'"
           />
         </picture>

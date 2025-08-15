@@ -1,0 +1,9 @@
+@use "../../../styles/mixins/mixins.scss" as mx;
+
+// Page
+
+.pg-not-found {
+  .title {
+    font-size: mx.rem(90);
+  }
+}

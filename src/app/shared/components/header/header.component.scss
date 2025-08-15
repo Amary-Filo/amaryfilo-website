@@ -106,9 +106,22 @@ header {
     border-radius: mx.rem(10);
 
     background: var(--body-bg-color);
+  }
 
+  .t-main {
     &::before {
       margin: 0;
+    }
+
+    &::before,
+    &::after {
+      background: linear-gradient(
+        45deg,
+        var(--cl-main, #eddbc3),
+        var(--cl-accent, #86acb9)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     @include mx.b(tablet) {

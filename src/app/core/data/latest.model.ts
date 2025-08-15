@@ -1,7 +1,5 @@
-// src/app/core/data/latest.model.ts
 import { Lang } from '@core/i18n/i18n.model';
 
-// общий каркас
 export interface LatestBase {
   slug: string;
   title: string;
@@ -17,7 +15,6 @@ export interface BlogLatest extends LatestBase {
   icon: string;
   color?: string;
   date: string;
-  // anonce, slug, title — как в base
 }
 
 // Projects
@@ -36,7 +33,7 @@ export interface SolutionLatest extends LatestBase {
   color: string;
   icon: string;
   chip?: SolutionChip[];
-  thumbnail: string; // для solutions ты указал что thumbnail обязателен
+  thumbnail: string;
 }
 
 // Sandbox
@@ -60,7 +57,6 @@ export interface DesignsLatest {
   thumbnail?: string;
 }
 
-// сопоставление секции -> тип элемента
 export interface LatestMap {
   designs: DesignsLatest;
   blog: BlogLatest;

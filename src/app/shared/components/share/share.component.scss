@@ -1,0 +1,14 @@
+@use "../../../../styles/mixins/mixins.scss" as mx;
+
+section.links {
+  .head-section {
+    margin-bottom: mx.rem(40);
+  }
+
+  .links {
+    .btn {
+      padding: mx.rem(15);
+      font-size: mx.rem(25);
+    }
+  }
+}

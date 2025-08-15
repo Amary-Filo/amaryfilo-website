@@ -9,6 +9,7 @@
     "title": "Moovie",
     "description": "Design for online cinemas, where new films and series are shown. In addition, there is a new film and other useful media information.",
     "links":[{
+      "icon": "behance",
       "title": "Behance",
       "url": "https://behance.co"
     }, {

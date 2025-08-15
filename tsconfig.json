@@ -17,6 +17,7 @@
     "module": "preserve",
     "paths": {
       "@core/*": ["app/core/*"],
+      "@helpers/*": ["app/helpers/*"],
       "@services/*": ["app/services/*"],
       "@data-access/*": ["app/data-access/*"],
       "@shared/*": ["app/shared/*"],

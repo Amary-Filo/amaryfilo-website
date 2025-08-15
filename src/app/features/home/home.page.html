@@ -7,7 +7,7 @@
   <section class="sc">
     <app-under-construction />
   </section>
-  @defer (when vm().blog.items.length) {
+  @defer (when blog().items.length) {
   <app-blog
     [latestPost]="vm().blog.items"
     [isFallback]="vm().blog.isFallback"
@@ -18,10 +18,15 @@
   <h2>skeleton while network in flight</h2>
   } @error {
   <h2>error</h2>
+  } @defer (when projects().items.length) {
+  <app-projects [projects]="projects().items" />
+  } @placeholder {
+  <h2>skeleton</h2>
+  } @defer (when designs().items.length) {
+  <app-designs [designs]="designs().items" />
+  } @placeholder {
+  <h2>skeleton</h2>
   }
-
-  <app-projects />
-  <app-designs />
   <section class="sc">
     <app-under-construction />
   </section>

@@ -4,6 +4,7 @@ import { designsIndexResolver } from './features/designs/designs.resolver';
 import { designResolver } from './features/designs/design/design.resolver';
 import { homeLatestResolver } from './features/home/home.resolver';
 import { aboutResolver } from './features/about/about.resolver';
+import { ExistsGuard } from '@core/guards/exists.guard';
 
 const children: Routes = [
   {
@@ -11,21 +12,20 @@ const children: Routes = [
     loadComponent: () =>
       import('./features/home/home.page').then((m) => m.HomePage),
     resolve: { home: homeLatestResolver },
-    title: 'Amary Filo',
+    title: 'Amary Filo | Software Developer',
   },
   {
     path: 'about',
     loadComponent: () =>
       import('./features/about/about.page').then((m) => m.AboutPage),
     resolve: { about: aboutResolver },
-
-    title: 'About',
+    title: 'Amary Filo | About Me',
   },
   {
     path: 'areas',
     loadComponent: () =>
       import('./features/areas/areas.page').then((m) => m.AreasPage),
-    title: 'Areas',
+    title: 'Amary Filo | Develop Areas',
   },
   // { path: 'areas/:slug', loadComponent: () => import('./features/areas/area.page').then(m => m.AreaPage) },
 
@@ -37,15 +37,17 @@ const children: Routes = [
         loadComponent: () =>
           import('./features/designs/designs.page').then((m) => m.DesignsPage),
         resolve: { index: designsIndexResolver },
-        title: 'Designs',
+        title: 'Amary Filo | Designs',
       },
       {
         path: ':slug',
+        canActivate: [ExistsGuard],
+        data: { page: 'designs' },
         loadComponent: () =>
           import('./features/designs/design/design.page').then(
             (m) => m.DesignPage
           ),
-        resolve: { index: designResolver },
+        resolve: { design: designResolver },
       },
     ],
   },
@@ -94,8 +96,13 @@ const children: Routes = [
 
   // { path: 'contact', loadComponent: () => import('./features/contact/contact.page').then(m => m.ContactPage), title: 'Contact' },
 
-  // { path: '404', loadComponent: () => import('./features/not-found/not-found.page').then(m => m.NotFoundPage), title: 'Not found' },
-  // { path: '**', redirectTo: '404' }
+  {
+    path: '404',
+    loadComponent: () =>
+      import('./features/not-found/not-found.page').then((m) => m.NotFoundPage),
+    title: 'Oops... Not found',
+  },
+  { path: '**', redirectTo: '404' },
 ];
 
 export const routes: Routes = [

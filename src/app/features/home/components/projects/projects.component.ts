@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { ProjectLatest } from '@core/data/latest.model';
 
 @Component({
   selector: 'app-projects',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss',
   standalone: true,
 })
-export class ProjectsComponent {}
+export class ProjectsComponent {
+  projects = input<ProjectLatest[]>();
+}
