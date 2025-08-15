@@ -35,6 +35,6 @@ export class DesignPage {
   requestedLang = computed(() => this.vm()?.requestedLang);
 
   imagePath(name: string | undefined): string {
-    return getImagePath(name, this.design()?.slug);
+    return getImagePath(name, this.design()?.slug, 'designs');
   }
 }

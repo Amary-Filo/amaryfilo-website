@@ -15,6 +15,10 @@ export interface ProjectDetail extends ProjectIndexItem {
   description: string;
   images: string[];
   logo: string;
+  features: Array<{
+    title: string;
+    description: string;
+  }>;
   links: Array<{
     title?: string;
     url: string;

@@ -14,6 +14,6 @@ export class DesignsComponent {
   designs = input<DesignsLatest[]>();
 
   imagePath(item: DesignsLatest): string {
-    return getImagePath(item.thumbnail, item.slug);
+    return getImagePath(item.thumbnail, item.slug, 'designs');
   }
 }

@@ -2,10 +2,10 @@
   <section class="hero">
     <div class="container fl-cc fl-dc">
       <span class="ls t-gr cl-g-project fz-xl fw-800 t-u">Project</span>
-      <h1 class="title ls fz-xxl2 t-c">Rock’n’Block Website</h1>
-      <time class="fz-sm ls op-6 fw-b" datetime="2022-08-07T19:39:22.000+00:00"
-        >aug 07, 2022</time
-      >
+      <h1 class="title ls fz-xxl2 t-c">{{ project()?.title }}</h1>
+      <time class="fz-sm ls op-6 fw-b" [attr.datetime]="project()?.date">
+        {{ project()?.date | date }}
+      </time>
     </div>
   </section>
 
@@ -13,53 +13,20 @@
     <div class="container">
       <div class="cd-st fl-cc fl-dc t-c image">
         <img
-          src="/img/rocknblock.svg"
-          alt="Rock’n’Block Website"
+          [src]="imagePath(project()?.logo) + '.svg'"
+          [alt]="project()?.title"
           height="100%"
           width="100%"
         />
       </div>
       <div class="cd-st fl-cc fl-dc t-c about">
         <h2 class="title ls t-gr t-u cl-g-about">About</h2>
-        <p class="text fz-nm op-7 ls">
-          Development of an informational website for the rocknblock company.
-          <br /><br />It was necessary to create a site with the ability to
-          manage all pages, components and data through the administrative
-          panel. Implement good SEO by optimizing images and code. Integrate
-          third-party services to receive applications from the site. Create a
-          blog for company articles.
-        </p>
+        <p class="text fz-nm op-7 ls" [innerHTML]="project()?.description"></p>
       </div>
       <div class="cd-st fl-cc fl-dc t-c type">
         <h2 class="title ls t-gr t-u cl-g-type">Type</h2>
-        <p class="text op-7 ls fw-900">Website on CMS with plugins</p>
-        <a class="btn g-bg w-100 g-a cl-g-type" href="#" target="_blank"
-          >I want this!</a
-        >
-      </div>
-    </div>
-  </section>
-
-  <section class="sc feature">
-    <div class="container">
-      <div class="head-section hs-part fl-bc fl-dc">
-        <h2 class="title ls-2 t-gr ls t-u cl-g-feature">Feature</h2>
-        <p class="text op-7 ls fw-b">
-          Modules, plug-ins and various integrations in the project.
-        </p>
-      </div>
-      <div class="info fl-bc fl-w">
-        <span class="item m fw-b op-7">Blog (categoty, article) plugin</span
-        ><span class="item m fw-b op-7">Portfolio plugin</span
-        ><span class="item m fw-b op-7">Feedback plugin</span
-        ><span class="item m fw-b op-7">CMS</span
-        ><span class="item m fw-b op-7">CRM integration</span
-        ><span class="item m fw-b op-7">SEO optimisation</span
-        ><span class="item m fw-b op-7">Template and layout</span
-        ><span class="item m fw-b op-7">UI</span
-        ><span class="item m fw-b op-7">Sitemap</span
-        ><span class="item m fw-b op-7">Robots.txt</span
-        ><span class="item m fw-b op-7">Server optimisation</span>
+        <p class="text op-7 ls fw-900">{{ project()?.category }}</p>
+        <a class="btn g-bg w-100 g-a cl-g-type"> I want this! </a>
       </div>
     </div>
   </section>
@@ -67,33 +34,13 @@
   <section class="sc instruments">
     <div class="container">
       <div class="info fl-cc fl-w">
+        @for (item of project()?.instruments; track $index) {
         <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-typescript">TS</span>
+          <span [class]="'title ls ic fl-cb ic-' + item.icon">{{
+            item.title
+          }}</span>
         </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-gulp">Gulp</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-wintercms">Winter CMS</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-laravel">Laravel</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-sass">SCSS</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-css3">CSS</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-html5">HTML</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-pug">Pug</span>
-        </div>
-        <div class="cd bd-t m">
-          <span class="title ls ic fl-cb ic-seo">SEO</span>
-        </div>
+        }
       </div>
       <div class="head-section hs-part fl-bc fl-dc">
         <h2 class="title ls-2 t-gr ls t-u cl-g-instruments">Instruments</h2>
@@ -106,93 +53,21 @@
 
   <section class="sc done">
     <div class="container head-section fl-cc fl-dc h-mb">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-done">Release</h2>
-      <p class="text op-7 ls fw-b">What has been done in this project.</p>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-feature">Feature</h2>
+      <p class="text op-7 ls fw-b">
+        What has been done in this project. Modules, plug-ins and various
+        integrations in the project.
+      </p>
     </div>
     <div class="container cards">
+      @for (item of project()?.features; track $index) {
       <div class="cd">
-        <h3 class="title fz-md">Landings</h3>
+        <h3 class="title fz-md">{{ item.title }}</h3>
         <p class="text op-7">
-          I created about 10 landings from scratch: Launchpad, Tools, SafeMoon,
-          GameF, DEX, Metaverse, Security Audit, Consulting, No Code Solutions,
-          Rust, Marketing, Property Tokenization.
+          {{ item.description }}
         </p>
       </div>
-      <div class="cd">
-        <h3 class="title fz-md">Blog plugin</h3>
-        <p class="text op-7">
-          Implementation of the blog in the project. Create different categories
-          and specify articles for them. Conclusion of related articles.
-          Convenient text editor. Indication of data for SEO, including links to
-          twitter and original articles.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">Portfolio plugin</h3>
-        <p class="text op-7">
-          Plugin for adding developed projects of the company in two sections:
-          web development and mobile.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">Feedback plugin</h3>
-        <p class="text op-7">
-          Plugin for working with applications from the pages of the site. In
-          order to have access and not lose important applications - they are
-          all stored in the CMS itself.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">Template</h3>
-        <p class="text op-7">
-          A convenient site template was developed for editing and adding new
-          components. All components are private, so they can be used anywhere
-          on the site.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">React -&gt; CMS</h3>
-        <p class="text op-7">
-          The site was originally built with React. According to the task, it
-          was necessary to make a website with an administrative panel. The
-          project was completely transferred from the framework to Winter CMS.
-          All styles, markup and functionality have been preserved.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">Optimisation</h3>
-        <p class="text op-7">
-          Redesigned site styles and removed unnecessary classes. Updated page
-          code. Tags and their classes were removed and optimized by name. All
-          images have been optimized and minified.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">CRM integration</h3>
-        <p class="text op-7">
-          Integration of a third-party CRM system to receive applications from
-          the site. Each page has a name, so a registration system was made for
-          applications indicating pages and certain data, without violating the
-          general structure of the form on the pages.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">SEO</h3>
-        <p class="text op-7">
-          Optimization of all project pages for SEO. Headlines, text, image
-          captions and links have been redesigned. Search robots read all the
-          data correctly due to additional information in the HEAD section and
-          microdata.
-        </p>
-      </div>
-      <div class="cd">
-        <h3 class="title fz-md">Server</h3>
-        <p class="text op-7">
-          The server has been optimized for the project. Pages have caching and
-          fast loading by increasing performance and disabling unnecessary
-          server modules.
-        </p>
-      </div>
+      }
     </div>
   </section>
 
@@ -205,117 +80,19 @@
       </p>
     </div>
     <div class="container images">
-      <picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-1.webp" />
+      @for (item of project()?.images; track $index) {
+      <picture class="img fl fl-dc">
+        <source type="image/webp" [srcset]="imagePath(item) + '.webp'" />
         <img
           loading="lazy"
-          src="img/project/rocknblock-1.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-2.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-2.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-3.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-3.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-4.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-4.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-5.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-5.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-6.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-6.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-7.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-7.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-8.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-8.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-9.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-9.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-10.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-10.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-11.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-11.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-12.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-12.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-13.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-13.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-14.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-14.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-15.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-15.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-16.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-16.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-17.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-17.png"
-          alt="Design title" /></picture
-      ><picture class="img fl fl-dc"
-        ><source type="image/webp" srcset="img/project/rocknblock-18.webp" />
-        <img
-          loading="lazy"
-          src="img/project/rocknblock-18.png"
-          alt="Design title"
-      /></picture>
+          [src]="imagePath(item) + '.png'"
+          [alt]="project()?.title + ' project image ' + ($index + 1)"
+        />
+      </picture>
+      }
     </div>
   </section>
+
   <section class="sc warn">
     <div class="container">
       <div class="content cl-warn">
@@ -340,20 +117,17 @@
         </p>
       </div>
       <div class="fl-cc links">
+        @for (item of project()?.links; track $index) {
         <a
-          class="btn ic-github m"
-          href="#"
+          [class]="'btn m ic-' + item.icon"
+          [href]="item.url"
+          [title]="
+            'Open project ' + project()?.title + ' code in ' + item.title
+          "
           rel="nofollow norefferer"
           target="blank"
-          title="Open project code in github"
-        ></a
-        ><a
-          class="btn ic-link m"
-          href="#"
-          rel="nofollow norefferer"
-          target="blank"
-          title="Open Website"
         ></a>
+        }
       </div>
     </div>
   </section>

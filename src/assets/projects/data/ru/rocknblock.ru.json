@@ -59,7 +59,21 @@
     "rocknblock-1",
     "rocknblock-2",
     "rocknblock-3",
-    "rocknblock-4"
+    "rocknblock-4",
+    "rocknblock-5",
+    "rocknblock-6",
+    "rocknblock-7",
+    "rocknblock-8",
+    "rocknblock-9",
+    "rocknblock-10",
+    "rocknblock-11",
+    "rocknblock-12",
+    "rocknblock-13",
+    "rocknblock-14",
+    "rocknblock-15",
+    "rocknblock-16",
+    "rocknblock-17",
+    "rocknblock-18"
   ],
   "links": [
     {
@@ -73,6 +87,48 @@
       "title": "My Designs",
       "url": "https://md.co",
       "is_active": false
+    }
+  ],
+  "features": [
+    {
+      "title": "Landings",
+      "description": "I created about 10 landings from scratch: Launchpad, Tools, SafeMoon, GameF, DEX, Metaverse, Security Audit, Consulting, No Code Solutions, Rust, Marketing, Property Tokenization."
+    },
+    {
+      "title": "Blog plugin",
+      "description": "Implementation of the blog in the project. Create different categories and specify articles for them. Conclusion of related articles. Convenient text editor. Indication of data for SEO, including links to twitter and original articles."
+    },
+    {
+      "title": "Portfolio plugin",
+      "description": "Plugin for adding developed projects of the company in two sections: web development and mobile."
+    },
+    {
+      "title": "Feedback plugin",
+      "description": "Plugin for working with applications from the pages of the site. In order to have access and not lose important applications - they are all stored in the CMS itself."
+    },
+    {
+      "title": "Template",
+      "description": "A convenient site template was developed for editing and adding new components. All components are private, so they can be used anywhere on the site."
+    },
+    {
+      "title": "React -> CMS",
+      "description": "The site was originally built with React. According to the task, it was necessary to make a website with an administrative panel. The project was completely transferred from the framework to Winter CMS. All styles, markup and functionality have been preserved."
+    },
+    {
+      "title": "Optimization",
+      "description": "Redesigned site styles and removed unnecessary classes. Updated page code. Tags and their classes were removed and optimized by name. All images have been optimized and minified."
+    },
+    {
+      "title": "CRM integration",
+      "description": "Integration of a third-party CRM system to receive applications from the site. Each page has a name, so a registration system was made for applications indicating pages and certain data, without violating the general structure of the form on the pages."
+    },
+    {
+      "title": "SEO",
+      "description": "Optimization of all project pages for SEO. Headlines, text, image captions and links have been redesigned. Search robots read all the data correctly due to additional information in the HEAD section and microdata."
+    },
+    {
+      "title": "Server",
+      "description": "The server has been optimized for the project. Pages have caching and fast loading by increasing performance and disabling unnecessary server modules."
     }
   ]
 }

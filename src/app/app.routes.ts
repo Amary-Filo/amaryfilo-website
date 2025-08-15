@@ -6,6 +6,7 @@ import { homeLatestResolver } from './features/home/home.resolver';
 import { aboutResolver } from './features/about/about.resolver';
 import { ExistsGuard } from '@core/guards/exists.guard';
 import { projectsIndexResolver } from './features/projects/projects.resolver';
+import { projectResolver } from './features/projects/project/project.resolver';
 
 const children: Routes = [
   {
@@ -73,7 +74,7 @@ const children: Routes = [
           import('./features/projects/project/project.page').then(
             (m) => m.ProjectPage
           ),
-        // resolve: { design: projectResolver },
+        resolve: { project: projectResolver },
       },
     ],
   },
@@ -91,28 +92,6 @@ const children: Routes = [
   //       path: ':slug',
   //       loadComponent: () => import('./features/blog/article/article.page').then(m => m.ArticlePage),
   //       resolve: { post: () => import('./features/blog/post.resolver').then(m => m.postResolver) }
-  //     }
-  //   ]
-  // },
-
-  // {
-  //   path: 'projects',
-  //   children: [
-  //     {
-  //       path: '',
-  //       loadComponent: () => import('./features/projects/projects.page').then(m => m.ProjectsPage),
-  //       resolve: { index: () => import('./features/projects/projects.resolver').then(m => m.projectsIndexResolver) },
-  //       title: 'Projects'
-  //     },
-  //     {
-  //       path: ':slug',
-  //       loadComponent: () => import('./features/projects/project.page').then(m => m.ProjectPage),
-  //       resolve: { project: () => import('./features/projects/project.resolver').then(m => m.projectResolver) }
-  //     },
-  //     {
-  //       path: ':slug/:article',
-  //       loadComponent: () => import('./features/projects/project-article.page').then(m => m.ProjectArticlePage),
-  //       resolve: { article: () => import('./features/projects/project-article.resolver').then(m => m.projectArticleResolver) }
   //     }
   //   ]
   // },

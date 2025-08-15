@@ -59,6 +59,6 @@ export class DesignsPage {
   }
 
   imagePath(item: DesignIndexItem): string {
-    return getImagePath(item.thumbnail, item.slug);
+    return getImagePath(item.thumbnail, item.slug, 'designs');
   }
 }

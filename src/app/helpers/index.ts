@@ -1,6 +1,7 @@
 export const getImagePath = (
   name: string | undefined,
-  slug: string | undefined
+  slug: string | undefined,
+  path: string
 ): string => {
-  return `assets/designs/images/${slug}/${name}`;
+  return `assets/${path}/images/${slug}/${name}`;
 };

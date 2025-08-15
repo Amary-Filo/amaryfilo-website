@@ -125,7 +125,8 @@ async function build() {
         logo: meta.logo,
         instruments: meta.instruments,
         images: Array.isArray(base.images) ? base.images : [],
-        links: Array.isArray(base.links) ? base.links : []
+        links: Array.isArray(base.links) ? base.links : [],
+        features: Array.isArray(base.features) ? base.features : []
       };
 
       await writeJson(OUT_DETAIL_LANG(lang, slug), detail);
