@@ -1,15 +1,16 @@
-import { Injectable, inject, NgZone } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { CURRENT_LANG } from '@core/i18n/i18n.tokens';
 import { TranslateService } from '@core/i18n/translate.service';
 import { Lang } from '@core/i18n/i18n.model';
+
+const SUP = ['en', 'ru', 'es', 'de'] as const;
 
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
   private langSig = inject(CURRENT_LANG);
   private t = inject(TranslateService);
   private router = inject(Router);
-  private zone = inject(NgZone);
 
   get current() {
     return this.langSig();
@@ -18,18 +19,31 @@ export class LanguageService {
   async switch(lang: Lang) {
     if (this.langSig() === lang) return;
 
-    await this.t.load(lang);
+    // 1) мгновенно обновляем сигнал (UI сразу подхватит текущий язык)
+    this.langSig.set(lang);
 
+    // 2) грузим переводы параллельно (не блокируя навигацию)
+    const loadPromise = this.t.load(lang).catch(() => {
+      /* no-op fallback */
+    });
+
+    // 3) аккуратно перестраиваем URL с префиксом языка
     const tree = this.router.parseUrl(this.router.url);
-    const segs = tree.root.children['primary']?.segments ?? [];
-    if (segs.length && ['en', 'ru', 'es', 'de'].includes(segs[0].path)) {
-      segs[0].path = lang;
-      const newUrl = '/' + segs.map((s) => s.path).join('/');
-      await this.router.navigateByUrl(newUrl, { replaceUrl: true });
+    const primary = tree.root.children['primary'];
+    const segs = primary?.segments ?? [];
+
+    let commands: any[];
+    if (segs.length && SUP.includes(segs[0].path as Lang)) {
+      // заменяем существующий префикс
+      commands = ['/', lang, ...segs.slice(1).map((s) => s.path)];
+    } else {
+      // добавляем префикс
+      commands = ['/', lang, ...segs.map((s) => s.path)];
     }
 
-    queueMicrotask(() => {
-      this.zone.run(() => this.langSig.set(lang));
-    });
+    await this.router.navigate(commands, { replaceUrl: true });
+
+    // 4) дожидаемся перевода (к этому времени UI уже на нужном URL)
+    await loadPromise;
   }
 }
