@@ -1,0 +1,8 @@
+{
+  "slug": "nodejs",
+  "title": "Node.js",
+  "description": "Среда выполнения JavaScript для быстрых серверных приложений.",
+  "icon": "nodejs",
+  "color": "nodejs",
+  "count": 2
+}

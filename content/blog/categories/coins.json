@@ -1,0 +1,20 @@
+{
+  "slug": "coins",
+  "base": {
+    "title": "Coins",
+    "description": "Cryptocurrencies and tokens across various chains.",
+    "icon": "coins",
+    "color": "coins"
+  },
+  "data": {
+    "ru": {
+      "description": "Криптовалюты и токены в различных сетях."
+    },
+    "es": {
+      "description": "Criptomonedas y tokens en diferentes cadenas."
+    },
+    "de": {
+      "description": "Kryptowährungen und Tokens auf verschiedenen Chains."
+    }
+  }
+}

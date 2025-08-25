@@ -3,7 +3,7 @@
     <div class="container fl-cc fl-dc">
       <span class="ls t-gr cl-g-project fz-xl fw-800 t-u">Project</span>
       <h1 class="title ls fz-xxl2 t-c">{{ project()?.title }}</h1>
-      <time class="fz-sm ls op-6 fw-b" [attr.datetime]="project()?.date">
+      <time class="fz-sm ls op-6 fw-b" [attr.datetime]="project()?.date | date">
         {{ project()?.date | date }}
       </time>
     </div>

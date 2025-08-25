@@ -1,0 +1,8 @@
+{
+  "slug": "gitflow",
+  "title": "Git Flow",
+  "description": "Модель ветвления для управления релизами, фичами и хотфикcами.",
+  "icon": "gitflow",
+  "color": "gitflow",
+  "count": 1
+}

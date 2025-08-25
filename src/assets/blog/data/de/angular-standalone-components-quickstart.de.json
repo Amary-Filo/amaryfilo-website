@@ -1,0 +1,105 @@
+{
+  "slug": "angular-standalone-components-quickstart",
+  "title": "Angular Standalone Components: Schnellstart",
+  "date": "2023-02-10",
+  "updates": [
+    "2024-01-12"
+  ],
+  "anonce": "Standalone‑Komponenten ohne NgModules.",
+  "thumbnail": "",
+  "category": "angular",
+  "category_list": [
+    "typescript",
+    "rxjs"
+  ],
+  "icon": "angular",
+  "color": "angular",
+  "tags": [
+    "angular",
+    "standalone",
+    "components",
+    "signals"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "create-standalone",
+      "title": "Standalone‑Komponente erstellen",
+      "level": 2
+    },
+    {
+      "id": "bootstrap",
+      "title": "Bootstrap the App",
+      "level": 2
+    },
+    {
+      "id": "signals-rxjs",
+      "title": "Signals & RxJS Together",
+      "level": 2
+    },
+    {
+      "id": "bridge",
+      "title": "Bridge utilities",
+      "level": 3
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Standalone components simplify bootstrapping and feature modules."
+    },
+    {
+      "type": "h2",
+      "text": "Standalone‑Komponente erstellen",
+      "id": "create-standalone"
+    },
+    {
+      "type": "code",
+      "lang": "bash",
+      "code": "ng g c hello --standalone"
+    },
+    {
+      "type": "p",
+      "text": "Angular generates a component with `standalone: true` and imports declared inline."
+    },
+    {
+      "type": "h2",
+      "text": "Bootstrap the App",
+      "id": "bootstrap"
+    },
+    {
+      "type": "code",
+      "lang": "typescript",
+      "code": "bootstrapApplication(AppComponent, { providers: [] });"
+    },
+    {
+      "type": "p",
+      "text": "Use `bootstrapApplication` instead of `platformBrowserDynamic().bootstrapModule`."
+    },
+    {
+      "type": "h2",
+      "text": "Signals & RxJS Together",
+      "id": "signals-rxjs"
+    },
+    {
+      "type": "h3",
+      "text": "Bridge utilities",
+      "id": "bridge"
+    },
+    {
+      "type": "p",
+      "html": "Use <code>toSignal</code> to consume Observables in templates without subscriptions."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Tip",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Prefer computed signals for derived state."
+        }
+      ]
+    }
+  ]
+}

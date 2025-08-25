@@ -1,0 +1,20 @@
+{
+  "slug": "nodejs",
+  "base": {
+    "title": "Node.js",
+    "description": "JavaScript runtime for building fast server‑side apps.",
+    "icon": "nodejs",
+    "color": "nodejs"
+  },
+  "data": {
+    "ru": {
+      "description": "Среда выполнения JavaScript для быстрых серверных приложений."
+    },
+    "es": {
+      "description": "Entorno de ejecución de JavaScript para apps del lado del servidor rápidas."
+    },
+    "de": {
+      "description": "JavaScript‑Laufzeitumgebung für schnelle Server‑Anwendungen."
+    }
+  }
+}

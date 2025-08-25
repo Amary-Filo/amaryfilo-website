@@ -1,0 +1,20 @@
+{
+  "slug": "gitflow",
+  "base": {
+    "title": "Git Flow",
+    "description": "Branching model for managing releases, features and hotfixes.",
+    "icon": "gitflow",
+    "color": "gitflow"
+  },
+  "data": {
+    "ru": {
+      "description": "Модель ветвления для управления релизами, фичами и хотфикcами."
+    },
+    "es": {
+      "description": "Modelo de ramificación para gestionar lanzamientos, funciones y hotfixes."
+    },
+    "de": {
+      "description": "Branching‑Modell für Releases, Features und Hotfixes."
+    }
+  }
+}

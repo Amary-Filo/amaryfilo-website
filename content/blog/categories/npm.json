@@ -1,0 +1,20 @@
+{
+  "slug": "npm",
+  "base": {
+    "title": "npm",
+    "description": "JavaScript package manager and registry.",
+    "icon": "npm",
+    "color": "npm"
+  },
+  "data": {
+    "ru": {
+      "description": "Менеджер пакетов и реестр для JavaScript."
+    },
+    "es": {
+      "description": "Gestor de paquetes y registro para JavaScript."
+    },
+    "de": {
+      "description": "Paketmanager und Registry für JavaScript."
+    }
+  }
+}

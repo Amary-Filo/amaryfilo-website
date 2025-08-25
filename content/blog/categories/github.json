@@ -1,0 +1,20 @@
+{
+  "slug": "github",
+  "base": {
+    "title": "GitHub",
+    "description": "Code hosting and collaboration platform with Actions CI.",
+    "icon": "github",
+    "color": "github"
+  },
+  "data": {
+    "ru": {
+      "description": "Платформа хостинга кода и совместной разработки с CI Actions."
+    },
+    "es": {
+      "description": "Plataforma de alojamiento de código y colaboración con Actions CI."
+    },
+    "de": {
+      "description": "Plattform für Code‑Hosting und Zusammenarbeit mit Actions CI."
+    }
+  }
+}

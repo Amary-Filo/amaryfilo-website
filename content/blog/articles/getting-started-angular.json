@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Getting Started with Angular",
+    "slug": "getting-started-angular",
+    "date": "2025-08-25",
+    "updates": [],
+    "category": "angular",
+    "category_list": ["angular"],
+    "tags": ["angular", "frontend", "typescript"]
+  },
+  "base": {
+    "anonce": "An article about getting started with angular.",
+    "content": [
+      {
+        "type": "p",
+        "text": "This is a short introduction paragraph."
+      },
+      {
+        "type": "h2",
+        "text": "Main Section",
+        "id": "main-section"
+      },
+      {
+        "type": "p",
+        "text": "Detailed explanation goes here."
+      },
+      {
+        "type": "h3",
+        "text": "Subsection",
+        "id": "subsection"
+      },
+      {
+        "type": "p",
+        "text": "Additional information in subsection."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Getting Started with Angular",
+      "anonce": "Короткое описание для Getting Started with Angular",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Раздел",
+          "id": "razdel"
+        },
+        {
+          "type": "p",
+          "text": "Локализованный параграф…"
+        }
+      ]
+    },
+    "es": {
+      "title": "Getting Started with Angular",
+      "anonce": "Breve resumen para Getting Started with Angular",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Sección",
+          "id": "seccion"
+        },
+        {
+          "type": "p",
+          "text": "Párrafo localizado…"
+        }
+      ]
+    },
+    "de": {
+      "title": "Getting Started with Angular",
+      "anonce": "Kurze Zusammenfassung für Getting Started with Angular",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Abschnitt",
+          "id": "abschnitt"
+        },
+        {
+          "type": "p",
+          "text": "Lokalisierter Absatz…"
+        }
+      ]
+    }
+  }
+}

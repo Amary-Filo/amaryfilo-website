@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "title": "Node.js: fetch vs axios in 2025",
+    "slug": "nodejs-fetch-vs-axios",
+    "date": "2024-10-12",
+    "updates": [],
+    "category": "nodejs",
+    "category_list": ["api", "rest"],
+    "tags": ["nodejs", "fetch", "axios", "http"]
+  },
+  "base": {
+    "anonce": "Built‑in fetch is often enough now.",
+    "content": [
+      {
+        "type": "p",
+        "text": "`undici` powers native fetch in Node.js and it’s solid."
+      },
+
+      { "type": "h2", "text": "Ergonomics", "id": "ergonomics" },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "const res = await fetch(url, { headers: { 'accept': 'application/json' }});"
+      },
+
+      { "type": "h2", "text": "When axios still wins", "id": "axios-wins" },
+      { "type": "p", "text": "Interceptors, transforms, older codebases." },
+
+      { "type": "h2", "text": "TL;DR", "id": "tldr" }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Node.js: fetch vs axios в 2025",
+      "anonce": "Стандартный fetch часто хватает.",
+      "content": []
+    },
+    "es": {
+      "title": "Node.js: fetch vs axios en 2025",
+      "anonce": "El fetch nativo suele bastar.",
+      "content": []
+    },
+    "de": {
+      "title": "Node.js: fetch vs axios 2025",
+      "anonce": "Meist reicht fetch.",
+      "content": []
+    }
+  }
+}

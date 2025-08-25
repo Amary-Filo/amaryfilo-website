@@ -1,0 +1,8 @@
+{
+  "slug": "rxjs",
+  "title": "RxJS",
+  "description": "Reactive programming with Observables for JavaScript.",
+  "icon": "rxjs",
+  "color": "rxjs",
+  "count": 4
+}

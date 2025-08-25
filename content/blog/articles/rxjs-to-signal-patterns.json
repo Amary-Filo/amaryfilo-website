@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "RxJS → Signal patterns in Angular",
+    "slug": "rxjs-to-signal-patterns",
+    "date": "2024-03-05",
+    "updates": [],
+    "category": "rxjs",
+    "category_list": ["angular", "typescript"],
+    "tags": ["rxjs", "signals", "angular"]
+  },
+  "base": {
+    "anonce": "Bridge Observables to Signals safely.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Signals shine for template reactivity; RxJS remains great for async composition."
+      },
+
+      { "type": "h2", "text": "toSignal Basics", "id": "tosignal" },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "users$ // Observable<User[]>\nconst users = toSignal(users$, { initialValue: [] });"
+      },
+
+      { "type": "h2", "text": "Computed from Streams", "id": "computed" },
+      {
+        "type": "p",
+        "text": "Use computed for derived state instead of map in template."
+      },
+
+      { "type": "h2", "text": "Cleanup & Errors", "id": "cleanup" },
+      { "type": "h3", "text": "Error handling", "id": "errors" },
+      {
+        "type": "p",
+        "text": "Pass an initial value and handle fallback in UI."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Шаблоны RxJS → Signals в Angular",
+      "anonce": "Безопасный мост Observables к Signals.",
+      "content": [
+        { "type": "h2", "text": "Основа toSignal", "id": "tosignal" },
+        {
+          "type": "p",
+          "text": "Передаём initialValue и избегаем NPE в шаблоне."
+        }
+      ]
+    },
+    "es": {
+      "title": "Patrones RxJS → Signals en Angular",
+      "anonce": "Conecta Observables con Signals.",
+      "content": []
+    },
+    "de": {
+      "title": "RxJS → Signal‑Muster in Angular",
+      "anonce": "Sicherer Bridge.",
+      "content": []
+    }
+  }
+}

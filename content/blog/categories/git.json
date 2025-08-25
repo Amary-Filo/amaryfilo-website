@@ -1,0 +1,20 @@
+{
+  "slug": "git",
+  "base": {
+    "title": "Git",
+    "description": "Distributed version control system for source code.",
+    "icon": "git",
+    "color": "git"
+  },
+  "data": {
+    "ru": {
+      "description": "Распределённая система контроля версий для исходного кода."
+    },
+    "es": {
+      "description": "Sistema de control de versiones distribuido para código fuente."
+    },
+    "de": {
+      "description": "Verteiltes Versionskontrollsystem für Quellcode."
+    }
+  }
+}

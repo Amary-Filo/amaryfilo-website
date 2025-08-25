@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "title": "NgRx SignalStore: tiny state with signals",
+    "slug": "ngrx-signal-store-intro",
+    "date": "2024-07-09",
+    "updates": [],
+    "category": "ngrx",
+    "category_list": ["angular", "typescript"],
+    "tags": ["ngrx", "signal-store", "state"]
+  },
+  "base": {
+    "anonce": "Use NgRx SignalStore for lightweight state.",
+    "content": [
+      {
+        "type": "p",
+        "text": "SignalStore provides state + computed + updaters with minimal boilerplate."
+      },
+
+      { "type": "h2", "text": "Define store", "id": "define" },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "export const CounterStore = signalStore(withState({count:0}));"
+      },
+
+      { "type": "h2", "text": "Use in component", "id": "use" },
+      { "type": "p", "text": "Inject the store and read signals in template." },
+
+      { "type": "h2", "text": "When to prefer classic NgRx", "id": "classic" }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "NgRx SignalStore: лёгкий стейт на сигналах",
+      "anonce": "Минимум бойлерплейта.",
+      "content": []
+    },
+    "es": {
+      "title": "NgRx SignalStore: estado ligero",
+      "anonce": "Señales everywhere.",
+      "content": []
+    },
+    "de": {
+      "title": "NgRx SignalStore: leichter State",
+      "anonce": "Wenig Boilerplate.",
+      "content": []
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "backend",
+  "base": {
+    "title": "Backend",
+    "description": "Server‑side development, APIs, databases and infrastructure.",
+    "icon": "backend",
+    "color": "backend"
+  },
+  "data": {
+    "ru": {
+      "description": "Серверная разработка: API, базы данных и инфраструктура."
+    },
+    "es": {
+      "description": "Desarrollo del lado del servidor: APIs, bases de datos e infraestructura."
+    },
+    "de": {
+      "description": "Serverseitige Entwicklung: APIs, Datenbanken und Infrastruktur."
+    }
+  }
+}

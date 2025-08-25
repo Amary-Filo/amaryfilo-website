@@ -31,7 +31,7 @@
     <div class="container cl-project">
       @for (project of filteredItems(); track project.slug) {
       <div class="cd cd-pj bd-h bd-t btn-anm fl fl-dc">
-        <time class="fz-xs op-6" [attr.datetime]="project">{{
+        <time class="fz-xs op-6" [attr.datetime]="project.date | date">{{
           project.date | date
         }}</time>
         <a

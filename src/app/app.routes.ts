@@ -7,6 +7,8 @@ import { aboutResolver } from './features/about/about.resolver';
 import { ExistsGuard } from '@core/guards/exists.guard';
 import { projectsIndexResolver } from './features/projects/projects.resolver';
 import { projectResolver } from './features/projects/project/project.resolver';
+import { blogIndexResolver } from './features/blog/blog.resolver';
+import { articleResolver } from './features/blog/article/article.resolver';
 
 const children: Routes = [
   {
@@ -23,12 +25,12 @@ const children: Routes = [
     resolve: { about: aboutResolver },
     title: 'Amary Filo | About Me',
   },
-  {
-    path: 'areas',
-    loadComponent: () =>
-      import('./features/areas/areas.page').then((m) => m.AreasPage),
-    title: 'Amary Filo | Develop Areas',
-  },
+  // {
+  //   path: 'areas',
+  //   loadComponent: () =>
+  //     import('./features/areas/areas.page').then((m) => m.AreasPage),
+  //   title: 'Amary Filo | Develop Areas',
+  // },
   // { path: 'areas/:slug', loadComponent: () => import('./features/areas/area.page').then(m => m.AreaPage) },
 
   {
@@ -79,22 +81,46 @@ const children: Routes = [
     ],
   },
 
-  // {
-  //   path: 'blog',
-  //   children: [
-  //     {
-  //       path: '',
-  //       loadComponent: () => import('./features/blog/blog.page').then(m => m.BlogPage),
-  //       resolve: { index: () => import('./features/blog/blog.resolver').then(m => m.blogIndexResolver) },
-  //       title: 'Blog'
-  //     },
-  //     {
-  //       path: ':slug',
-  //       loadComponent: () => import('./features/blog/article/article.page').then(m => m.ArticlePage),
-  //       resolve: { post: () => import('./features/blog/post.resolver').then(m => m.postResolver) }
-  //     }
-  //   ]
-  // },
+  {
+    path: 'blog',
+    children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('./features/blog/blog.page').then((m) => m.BlogPage),
+        title: 'Amary Filo | Blog',
+        resolve: { index: blogIndexResolver },
+      },
+      {
+        path: ':slug',
+        canActivate: [ExistsGuard],
+        loadComponent: () =>
+          import('./features/blog/article/article.page').then(
+            (m) => m.ArticlePage
+          ),
+        resolve: { article: articleResolver },
+      },
+      // {
+      //   path: 'category',
+      //   loadComponent: () =>
+      //     import('./features/blog/article/article.page').then(
+      //       (m) => m.ArticlePage
+      //     ),
+      //   // resolve: { article: articleResolver },
+      //   children: [
+      //     {
+      //       path: ':slug',
+      //       canActivate: [ExistsGuard],
+      //       loadComponent: () =>
+      //         import('./features/blog/article/article.page').then(
+      //           (m) => m.ArticlePage
+      //         ),
+      //       // resolve: { category: categoryResolver },
+      //     },
+      //   ],
+      // },
+    ],
+  },
 
   // { path: 'solutions', loadComponent: () => import('./features/solutions/solutions.page').then(m => m.SolutionsPage), title: 'Solutions' },
   // { path: 'sandbox', loadComponent: () => import('./features/sandbox/sandbox.page').then(m => m.SandboxPage), title: 'Sandbox' },

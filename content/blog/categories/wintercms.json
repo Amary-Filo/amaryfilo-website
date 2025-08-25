@@ -1,0 +1,20 @@
+{
+  "slug": "wintercms",
+  "base": {
+    "title": "Winter CMS",
+    "description": "Modern fork of October CMS with long‑term support and enhancements.",
+    "icon": "wintercms",
+    "color": "wintercms"
+  },
+  "data": {
+    "ru": {
+      "description": "Современный форк October CMS с долгосрочной поддержкой и улучшениями."
+    },
+    "es": {
+      "description": "Bifurcación moderna de October CMS con soporte a largo plazo y mejoras."
+    },
+    "de": {
+      "description": "Moderner Fork von October CMS mit langfristigem Support und Verbesserungen."
+    }
+  }
+}

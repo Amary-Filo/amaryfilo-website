@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Using Pug Template Engine",
+    "slug": "pug-template-engine",
+    "date": "2025-08-25",
+    "updates": [],
+    "category": "pug",
+    "category_list": ["pug"],
+    "tags": ["pug", "templates", "html"]
+  },
+  "base": {
+    "anonce": "An article about using pug template engine.",
+    "content": [
+      {
+        "type": "p",
+        "text": "This is a short introduction paragraph."
+      },
+      {
+        "type": "h2",
+        "text": "Main Section",
+        "id": "main-section"
+      },
+      {
+        "type": "p",
+        "text": "Detailed explanation goes here."
+      },
+      {
+        "type": "h3",
+        "text": "Subsection",
+        "id": "subsection"
+      },
+      {
+        "type": "p",
+        "text": "Additional information in subsection."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Using Pug Template Engine",
+      "anonce": "Короткое описание для Using Pug Template Engine",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Раздел",
+          "id": "razdel"
+        },
+        {
+          "type": "p",
+          "text": "Локализованный параграф…"
+        }
+      ]
+    },
+    "es": {
+      "title": "Using Pug Template Engine",
+      "anonce": "Breve resumen para Using Pug Template Engine",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Sección",
+          "id": "seccion"
+        },
+        {
+          "type": "p",
+          "text": "Párrafo localizado…"
+        }
+      ]
+    },
+    "de": {
+      "title": "Using Pug Template Engine",
+      "anonce": "Kurze Zusammenfassung für Using Pug Template Engine",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Abschnitt",
+          "id": "abschnitt"
+        },
+        {
+          "type": "p",
+          "text": "Lokalisierter Absatz…"
+        }
+      ]
+    }
+  }
+}

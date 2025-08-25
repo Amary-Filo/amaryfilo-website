@@ -1,0 +1,12 @@
+{
+  "slug": "os",
+  "base": {
+    "title": "OS",
+    "description": "Operation Systems",
+    "icon": "os",
+    "color": "os"
+  },
+  "data": {
+    "ru": { "description": "Операционные системы" }
+  }
+}

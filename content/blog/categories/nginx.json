@@ -1,0 +1,20 @@
+{
+  "slug": "nginx",
+  "base": {
+    "title": "Nginx",
+    "description": "High‑performance web server and reverse proxy for modern apps.",
+    "icon": "nginx",
+    "color": "nginx"
+  },
+  "data": {
+    "ru": {
+      "description": "Высокопроизводительный веб‑сервер и реверс‑прокси для современных приложений."
+    },
+    "es": {
+      "description": "Servidor web y proxy inverso de alto rendimiento para aplicaciones modernas."
+    },
+    "de": {
+      "description": "Hochperformanter Webserver und Reverse‑Proxy für moderne Anwendungen."
+    }
+  }
+}

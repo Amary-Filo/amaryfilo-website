@@ -1,0 +1,20 @@
+{
+  "slug": "angular",
+  "base": {
+    "title": "Angular",
+    "description": "TypeScript‑based framework for scalable web apps.",
+    "icon": "angular",
+    "color": "angular"
+  },
+  "data": {
+    "ru": {
+      "description": "Фреймворк на TypeScript для масштабируемых веб‑приложений."
+    },
+    "es": {
+      "description": "Framework basado en TypeScript para apps web escalables."
+    },
+    "de": {
+      "description": "TypeScript‑Framework für skalierbare Webanwendungen."
+    }
+  }
+}

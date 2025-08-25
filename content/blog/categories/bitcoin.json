@@ -1,0 +1,20 @@
+{
+  "slug": "bitcoin",
+  "base": {
+    "title": "Bitcoin",
+    "description": "Peer‑to‑peer digital currency and first blockchain network.",
+    "icon": "bitcoin",
+    "color": "bitcoin"
+  },
+  "data": {
+    "ru": {
+      "description": "Децентрализованная цифровая валюта и первая блокчейн‑сеть."
+    },
+    "es": {
+      "description": "Moneda digital P2P y la primera red blockchain."
+    },
+    "de": {
+      "description": "Dezentrale digitale Währung und erstes Blockchain‑Netzwerk."
+    }
+  }
+}

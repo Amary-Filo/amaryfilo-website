@@ -1,0 +1,8 @@
+{
+  "slug": "git",
+  "title": "Git",
+  "description": "Sistema de control de versiones distribuido para código fuente.",
+  "icon": "git",
+  "color": "git",
+  "count": 1
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "react",
+  "base": {
+    "title": "React",
+    "description": "Library for building component‑based UIs.",
+    "icon": "react",
+    "color": "react"
+  },
+  "data": {
+    "ru": {
+      "description": "Библиотека для создания компонентных интерфейсов."
+    },
+    "es": {
+      "description": "Librería para construir interfaces basadas en componentes."
+    },
+    "de": {
+      "description": "Bibliothek zum Erstellen komponentenbasierter UIs."
+    }
+  }
+}

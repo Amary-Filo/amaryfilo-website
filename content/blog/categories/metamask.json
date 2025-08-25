@@ -1,0 +1,20 @@
+{
+  "slug": "metamask",
+  "base": {
+    "title": "MetaMask",
+    "description": "Popular browser wallet for Ethereum and EVM networks.",
+    "icon": "metamask",
+    "color": "metamask"
+  },
+  "data": {
+    "ru": {
+      "description": "Популярный браузерный кошелёк для Ethereum и EVM‑сетей."
+    },
+    "es": {
+      "description": "Billetera de navegador para Ethereum y redes EVM."
+    },
+    "de": {
+      "description": "Beliebte Browser‑Wallet für Ethereum und EVM‑Netzwerke."
+    }
+  }
+}

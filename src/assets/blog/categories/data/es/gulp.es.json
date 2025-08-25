@@ -1,0 +1,8 @@
+{
+  "slug": "gulp",
+  "title": "Gulp",
+  "description": "Sistema de build por streaming para flujos frontend.",
+  "icon": "gulp",
+  "color": "gulp",
+  "count": 1
+}

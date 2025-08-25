@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "Angular Standalone Components: Quickstart",
+    "slug": "angular-standalone-components-quickstart",
+    "date": "2023-02-10",
+    "updates": ["2024-01-12"],
+    "category": "angular",
+    "category_list": ["typescript", "rxjs"],
+    "tags": ["angular", "standalone", "components", "signals"]
+  },
+  "base": {
+    "anonce": "Start using Angular standalone components without NgModules.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Standalone components simplify bootstrapping and feature modules."
+      },
+
+      {
+        "type": "h2",
+        "text": "Create a Standalone Component",
+        "id": "create-standalone"
+      },
+      { "type": "code", "lang": "bash", "code": "ng g c hello --standalone" },
+      {
+        "type": "p",
+        "text": "Angular generates a component with `standalone: true` and imports declared inline."
+      },
+
+      { "type": "h2", "text": "Bootstrap the App", "id": "bootstrap" },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "bootstrapApplication(AppComponent, { providers: [] });"
+      },
+      {
+        "type": "p",
+        "text": "Use `bootstrapApplication` instead of `platformBrowserDynamic().bootstrapModule`."
+      },
+
+      { "type": "h2", "text": "Signals & RxJS Together", "id": "signals-rxjs" },
+      { "type": "h3", "text": "Bridge utilities", "id": "bridge" },
+      {
+        "type": "p",
+        "html": "Use <code>toSignal</code> to consume Observables in templates without subscriptions."
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Tip",
+        "blocks": [
+          { "type": "p", "text": "Prefer computed signals for derived state." }
+        ]
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Angular Standalone Components: быстрый старт",
+      "anonce": "Используем standalone‑компоненты без NgModules.",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Создание standalone‑компонента",
+          "id": "create-standalone"
+        },
+        {
+          "type": "p",
+          "text": "Генерируется компонент с `standalone: true` и локальными импортами."
+        }
+      ]
+    },
+    "es": {
+      "title": "Angular Standalone Components: inicio rápido",
+      "anonce": "Usa componentes standalone sin NgModules.",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Crear un componente standalone",
+          "id": "create-standalone"
+        },
+        {
+          "type": "p",
+          "text": "Se genera con `standalone: true` e imports locales."
+        }
+      ]
+    },
+    "de": {
+      "title": "Angular Standalone Components: Schnellstart",
+      "anonce": "Standalone‑Komponenten ohne NgModules.",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Standalone‑Komponente erstellen",
+          "id": "create-standalone"
+        },
+        { "type": "p", "text": "Mit `standalone: true` und lokalen Imports." }
+      ]
+    }
+  }
+}

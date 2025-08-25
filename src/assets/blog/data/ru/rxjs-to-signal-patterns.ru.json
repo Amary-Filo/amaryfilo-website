@@ -1,0 +1,82 @@
+{
+  "slug": "rxjs-to-signal-patterns",
+  "title": "Шаблоны RxJS → Signals в Angular",
+  "date": "2024-03-05",
+  "updates": [],
+  "anonce": "Безопасный мост Observables к Signals.",
+  "thumbnail": "",
+  "category": "rxjs",
+  "category_list": [
+    "angular",
+    "typescript"
+  ],
+  "icon": "rxjs",
+  "color": "rxjs",
+  "tags": [
+    "rxjs",
+    "signals",
+    "angular"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "tosignal",
+      "title": "Основа toSignal",
+      "level": 2
+    },
+    {
+      "id": "computed",
+      "title": "Computed from Streams",
+      "level": 2
+    },
+    {
+      "id": "cleanup",
+      "title": "Cleanup & Errors",
+      "level": 2
+    },
+    {
+      "id": "errors",
+      "title": "Error handling",
+      "level": 3
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Signals shine for template reactivity; RxJS remains great for async composition."
+    },
+    {
+      "type": "h2",
+      "text": "Основа toSignal",
+      "id": "tosignal"
+    },
+    {
+      "type": "code",
+      "lang": "typescript",
+      "code": "users$ // Observable<User[]>\nconst users = toSignal(users$, { initialValue: [] });"
+    },
+    {
+      "type": "h2",
+      "text": "Computed from Streams",
+      "id": "computed"
+    },
+    {
+      "type": "p",
+      "text": "Use computed for derived state instead of map in template."
+    },
+    {
+      "type": "h2",
+      "text": "Cleanup & Errors",
+      "id": "cleanup"
+    },
+    {
+      "type": "h3",
+      "text": "Error handling",
+      "id": "errors"
+    },
+    {
+      "type": "p",
+      "text": "Pass an initial value and handle fallback in UI."
+    }
+  ]
+}

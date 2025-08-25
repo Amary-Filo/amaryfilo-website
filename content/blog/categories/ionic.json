@@ -1,0 +1,20 @@
+{
+  "slug": "ionic",
+  "base": {
+    "title": "Ionic",
+    "description": "Cross‑platform UI toolkit for mobile and web apps.",
+    "icon": "ionic",
+    "color": "ionic"
+  },
+  "data": {
+    "ru": {
+      "description": "Кроссплатформенный UI‑набор для мобильных и веб‑приложений."
+    },
+    "es": {
+      "description": "Kit UI multiplataforma para apps móviles y web."
+    },
+    "de": {
+      "description": "Plattformübergreifendes UI‑Toolkit für Mobile‑ und Web‑Apps."
+    }
+  }
+}

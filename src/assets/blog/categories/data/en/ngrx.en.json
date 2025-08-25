@@ -1,0 +1,8 @@
+{
+  "slug": "ngrx",
+  "title": "NgRx",
+  "description": "Reactive state management for Angular apps.",
+  "icon": "ngrx",
+  "color": "ngrx",
+  "count": 1
+}

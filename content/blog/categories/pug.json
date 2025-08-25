@@ -1,0 +1,20 @@
+{
+  "slug": "pug",
+  "base": {
+    "title": "Pug",
+    "description": "Template engine that compiles to HTML.",
+    "icon": "pug",
+    "color": "pug"
+  },
+  "data": {
+    "ru": {
+      "description": "Шаблонизатор, компилирующийся в HTML."
+    },
+    "es": {
+      "description": "Motor de plantillas que compila a HTML."
+    },
+    "de": {
+      "description": "Template‑Engine, die zu HTML kompiliert."
+    }
+  }
+}

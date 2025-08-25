@@ -1,0 +1,73 @@
+{
+  "slug": "npm-semver-and-release-flow",
+  "title": "NPM SemVer & Release Flow",
+  "date": "2019-06-26",
+  "updates": [
+    "2021-06-26"
+  ],
+  "anonce": "Sinnvolle Versionen.",
+  "thumbnail": "",
+  "category": "npm",
+  "category_list": [
+    "git",
+    "github"
+  ],
+  "icon": "npm",
+  "color": "npm",
+  "tags": [
+    "npm",
+    "semver",
+    "release"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "cc",
+      "title": "Conventional Commits",
+      "level": 2
+    },
+    {
+      "id": "pre",
+      "title": "Pre-releases",
+      "level": 3
+    },
+    {
+      "id": "dist",
+      "title": "Dist Tags",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Follow MAJOR.MINOR.PATCH and conventional commits."
+    },
+    {
+      "type": "h2",
+      "text": "Conventional Commits",
+      "id": "cc"
+    },
+    {
+      "type": "p",
+      "text": "Automate changelogs and version bumps."
+    },
+    {
+      "type": "h3",
+      "text": "Pre-releases",
+      "id": "pre"
+    },
+    {
+      "type": "p",
+      "text": "Use -alpha.-beta tags to test features."
+    },
+    {
+      "type": "h2",
+      "text": "Dist Tags",
+      "id": "dist"
+    },
+    {
+      "type": "p",
+      "text": "latest, next and custom channels."
+    }
+  ]
+}

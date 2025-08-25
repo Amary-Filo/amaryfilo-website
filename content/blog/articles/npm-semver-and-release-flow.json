@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "title": "NPM SemVer & Release Flow",
+    "slug": "npm-semver-and-release-flow",
+    "date": "2019-06-26",
+    "updates": ["2021-06-26"],
+    "category": "npm",
+    "category_list": ["git", "github"],
+    "tags": ["npm", "semver", "release"]
+  },
+  "base": {
+    "anonce": "Keep versions meaningful.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Follow MAJOR.MINOR.PATCH and conventional commits."
+      },
+      { "type": "h2", "text": "Conventional Commits", "id": "cc" },
+      { "type": "p", "text": "Automate changelogs and version bumps." },
+      { "type": "h3", "text": "Pre-releases", "id": "pre" },
+      { "type": "p", "text": "Use -alpha.-beta tags to test features." },
+      { "type": "h2", "text": "Dist Tags", "id": "dist" },
+      { "type": "p", "text": "latest, next and custom channels." }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "NPM: SemVer и релиз‑флоу",
+      "anonce": "Делаем версии осмысленными."
+    },
+    "es": {
+      "title": "NPM: SemVer y releases",
+      "anonce": "Versiones con sentido."
+    },
+    "de": {
+      "title": "NPM SemVer & Release Flow",
+      "anonce": "Sinnvolle Versionen."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "php",
+  "base": {
+    "title": "PHP",
+    "description": "General‑purpose scripting language for web backends.",
+    "icon": "php",
+    "color": "php"
+  },
+  "data": {
+    "ru": {
+      "description": "Скриптовый язык общего назначения для веб‑бэкенда."
+    },
+    "es": {
+      "description": "Lenguaje de scripting de propósito general para backends web."
+    },
+    "de": {
+      "description": "Skriptsprache für Web‑Backends."
+    }
+  }
+}

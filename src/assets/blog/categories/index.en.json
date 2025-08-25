@@ -1,0 +1,346 @@
+[
+  {
+    "slug": "angular",
+    "title": "Angular",
+    "description": "TypeScript‑based framework for scalable web apps.",
+    "icon": "angular",
+    "color": "angular",
+    "count": 6
+  },
+  {
+    "slug": "apache",
+    "title": "Apache HTTP Server",
+    "description": "Popular open‑source web server with rich module ecosystem.",
+    "icon": "apache",
+    "color": "apache",
+    "count": 0
+  },
+  {
+    "slug": "api",
+    "title": "API",
+    "description": "Application Programming Interfaces for integrating services.",
+    "icon": "api",
+    "color": "api",
+    "count": 1
+  },
+  {
+    "slug": "backend",
+    "title": "Backend",
+    "description": "Server‑side development, APIs, databases and infrastructure.",
+    "icon": "backend",
+    "color": "backend",
+    "count": 0
+  },
+  {
+    "slug": "bitbucket",
+    "title": "Bitbucket",
+    "description": "Hosted Git repositories and CI/CD for teams.",
+    "icon": "bitbucket",
+    "color": "bitbucket",
+    "count": 0
+  },
+  {
+    "slug": "bitcoin",
+    "title": "Bitcoin",
+    "description": "Peer‑to‑peer digital currency and first blockchain network.",
+    "icon": "bitcoin",
+    "color": "bitcoin",
+    "count": 1
+  },
+  {
+    "slug": "blockchain",
+    "title": "Blockchain",
+    "description": "Distributed ledger technology and smart‑contract platforms.",
+    "icon": "blockchain",
+    "color": "blockchain",
+    "count": 1
+  },
+  {
+    "slug": "coins",
+    "title": "Coins",
+    "description": "Cryptocurrencies and tokens across various chains.",
+    "icon": "coins",
+    "color": "coins",
+    "count": 0
+  },
+  {
+    "slug": "css3",
+    "title": "CSS3",
+    "description": "Modern CSS features and layout techniques.",
+    "icon": "css3",
+    "color": "css3",
+    "count": 3
+  },
+  {
+    "slug": "customcms",
+    "title": "Custom CMS",
+    "description": "Home‑grown content management system tailored to specific project needs.",
+    "icon": "customcms",
+    "color": "customcms",
+    "count": 0
+  },
+  {
+    "slug": "frontend",
+    "title": "Frontend",
+    "description": "UI development for web and mobile clients.",
+    "icon": "frontend",
+    "color": "frontend",
+    "count": 0
+  },
+  {
+    "slug": "git",
+    "title": "Git",
+    "description": "Distributed version control system for source code.",
+    "icon": "git",
+    "color": "git",
+    "count": 1
+  },
+  {
+    "slug": "gitflow",
+    "title": "Git Flow",
+    "description": "Branching model for managing releases, features and hotfixes.",
+    "icon": "gitflow",
+    "color": "gitflow",
+    "count": 1
+  },
+  {
+    "slug": "github",
+    "title": "GitHub",
+    "description": "Code hosting and collaboration platform with Actions CI.",
+    "icon": "github",
+    "color": "github",
+    "count": 1
+  },
+  {
+    "slug": "graphql",
+    "title": "GraphQL",
+    "description": "Query language and runtime for APIs with typed schema.",
+    "icon": "graphql",
+    "color": "graphql",
+    "count": 1
+  },
+  {
+    "slug": "gulp",
+    "title": "Gulp",
+    "description": "Streaming build system for front‑end workflows.",
+    "icon": "gulp",
+    "color": "gulp",
+    "count": 1
+  },
+  {
+    "slug": "html5",
+    "title": "HTML5",
+    "description": "Markup standard for modern web applications.",
+    "icon": "html5",
+    "color": "html5",
+    "count": 2
+  },
+  {
+    "slug": "ionic",
+    "title": "Ionic",
+    "description": "Cross‑platform UI toolkit for mobile and web apps.",
+    "icon": "ionic",
+    "color": "ionic",
+    "count": 0
+  },
+  {
+    "slug": "javascript",
+    "title": "JavaScript",
+    "description": "Programming language of the web and cross‑platform apps.",
+    "icon": "javascript",
+    "color": "javascript",
+    "count": 1
+  },
+  {
+    "slug": "laravel",
+    "title": "Laravel",
+    "description": "PHP web framework focused on elegance and developer productivity.",
+    "icon": "laravel",
+    "color": "laravel",
+    "count": 1
+  },
+  {
+    "slug": "metamask",
+    "title": "MetaMask",
+    "description": "Popular browser wallet for Ethereum and EVM networks.",
+    "icon": "metamask",
+    "color": "metamask",
+    "count": 0
+  },
+  {
+    "slug": "mongodb",
+    "title": "MongoDB",
+    "description": "Document‑oriented NoSQL database for flexible schemas.",
+    "icon": "mongodb",
+    "color": "mongodb",
+    "count": 0
+  },
+  {
+    "slug": "mysql",
+    "title": "MySQL",
+    "description": "Widely used relational database for web and enterprise apps.",
+    "icon": "mysql",
+    "color": "mysql",
+    "count": 0
+  },
+  {
+    "slug": "nginx",
+    "title": "Nginx",
+    "description": "High‑performance web server and reverse proxy for modern apps.",
+    "icon": "nginx",
+    "color": "nginx",
+    "count": 0
+  },
+  {
+    "slug": "ngrx",
+    "title": "NgRx",
+    "description": "Reactive state management for Angular apps.",
+    "icon": "ngrx",
+    "color": "ngrx",
+    "count": 1
+  },
+  {
+    "slug": "nodejs",
+    "title": "Node.js",
+    "description": "JavaScript runtime for building fast server‑side apps.",
+    "icon": "nodejs",
+    "color": "nodejs",
+    "count": 2
+  },
+  {
+    "slug": "npm",
+    "title": "npm",
+    "description": "JavaScript package manager and registry.",
+    "icon": "npm",
+    "color": "npm",
+    "count": 1
+  },
+  {
+    "slug": "octobercms",
+    "title": "October CMS",
+    "description": "Laravel‑based CMS for building flexible websites and back‑offices.",
+    "icon": "octobercms",
+    "color": "octobercms",
+    "count": 0
+  },
+  {
+    "slug": "os",
+    "title": "OS",
+    "description": "Operation Systems",
+    "icon": "os",
+    "color": "os",
+    "count": 0
+  },
+  {
+    "slug": "php",
+    "title": "PHP",
+    "description": "General‑purpose scripting language for web backends.",
+    "icon": "php",
+    "color": "php",
+    "count": 0
+  },
+  {
+    "slug": "postgres",
+    "title": "PostgreSQL",
+    "description": "Advanced open‑source relational database with strong SQL features.",
+    "icon": "postgres",
+    "color": "postgres",
+    "count": 0
+  },
+  {
+    "slug": "pug",
+    "title": "Pug",
+    "description": "Template engine that compiles to HTML.",
+    "icon": "pug",
+    "color": "pug",
+    "count": 2
+  },
+  {
+    "slug": "react",
+    "title": "React",
+    "description": "Library for building component‑based UIs.",
+    "icon": "react",
+    "color": "react",
+    "count": 2
+  },
+  {
+    "slug": "rest",
+    "title": "REST",
+    "description": "Representational State Transfer — architectural style for APIs.",
+    "icon": "rest",
+    "color": "rest",
+    "count": 1
+  },
+  {
+    "slug": "rxjs",
+    "title": "RxJS",
+    "description": "Reactive programming with Observables for JavaScript.",
+    "icon": "rxjs",
+    "color": "rxjs",
+    "count": 4
+  },
+  {
+    "slug": "sass",
+    "title": "Sass",
+    "description": "CSS preprocessor with variables, mixins and nesting.",
+    "icon": "sass",
+    "color": "sass",
+    "count": 2
+  },
+  {
+    "slug": "swiftui",
+    "title": "SwiftUI",
+    "description": "Declarative UI framework for Apple platforms.",
+    "icon": "swiftui",
+    "color": "swiftui",
+    "count": 1
+  },
+  {
+    "slug": "typescript",
+    "title": "TypeScript",
+    "description": "Typed superset of JavaScript for large codebases.",
+    "icon": "typescript",
+    "color": "typescript",
+    "count": 6
+  },
+  {
+    "slug": "vue",
+    "title": "Vue",
+    "description": "Progressive framework for building user interfaces.",
+    "icon": "vue",
+    "color": "vue",
+    "count": 1
+  },
+  {
+    "slug": "wallet",
+    "title": "Wallet",
+    "description": "Digital crypto wallet apps, security and UX.",
+    "icon": "wallet",
+    "color": "wallet",
+    "count": 0
+  },
+  {
+    "slug": "walletconnect",
+    "title": "WalletConnect",
+    "description": "Protocol to connect wallets with dApps securely.",
+    "icon": "walletconnect",
+    "color": "walletconnect",
+    "count": 0
+  },
+  {
+    "slug": "web3js",
+    "title": "Web3.js",
+    "description": "JavaScript library to interact with Ethereum nodes.",
+    "icon": "web3js",
+    "color": "web3js",
+    "count": 0
+  },
+  {
+    "slug": "wintercms",
+    "title": "Winter CMS",
+    "description": "Modern fork of October CMS with long‑term support and enhancements.",
+    "icon": "wintercms",
+    "color": "wintercms",
+    "count": 0
+  }
+]

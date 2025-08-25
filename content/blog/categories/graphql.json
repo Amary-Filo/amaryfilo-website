@@ -1,0 +1,20 @@
+{
+  "slug": "graphql",
+  "base": {
+    "title": "GraphQL",
+    "description": "Query language and runtime for APIs with typed schema.",
+    "icon": "graphql",
+    "color": "graphql"
+  },
+  "data": {
+    "ru": {
+      "description": "Язык запросов и рантайм для API с типизированной схемой."
+    },
+    "es": {
+      "description": "Lenguaje de consultas y runtime para APIs con esquema tipado."
+    },
+    "de": {
+      "description": "Abfragesprache und Laufzeit für APIs mit typisiertem Schema."
+    }
+  }
+}

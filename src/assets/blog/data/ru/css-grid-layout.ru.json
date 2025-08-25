@@ -1,0 +1,66 @@
+{
+  "slug": "css-grid-layout",
+  "title": "Understanding CSS Grid Layout",
+  "date": "2025-08-25",
+  "updates": [],
+  "anonce": "Короткое описание для Understanding CSS Grid Layout",
+  "thumbnail": "",
+  "category": "css3",
+  "category_list": [
+    "css3"
+  ],
+  "icon": "css3",
+  "color": "css3",
+  "tags": [
+    "css3",
+    "frontend",
+    "design"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "main-section",
+      "title": "Main Section",
+      "level": 2
+    },
+    {
+      "id": "subsection",
+      "title": "Subsection",
+      "level": 3
+    },
+    {
+      "id": "razdel",
+      "title": "Раздел",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "This is a short introduction paragraph."
+    },
+    {
+      "type": "h2",
+      "text": "Main Section",
+      "id": "main-section"
+    },
+    {
+      "type": "p",
+      "text": "Detailed explanation goes here."
+    },
+    {
+      "type": "h3",
+      "text": "Subsection",
+      "id": "subsection"
+    },
+    {
+      "type": "p",
+      "text": "Additional information in subsection."
+    },
+    {
+      "type": "h2",
+      "text": "Раздел",
+      "id": "razdel"
+    }
+  ]
+}

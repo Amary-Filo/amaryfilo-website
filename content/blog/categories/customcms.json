@@ -1,0 +1,20 @@
+{
+  "slug": "customcms",
+  "base": {
+    "title": "Custom CMS",
+    "description": "Home‑grown content management system tailored to specific project needs.",
+    "icon": "customcms",
+    "color": "customcms"
+  },
+  "data": {
+    "ru": {
+      "description": "Самописная система управления контентом, адаптированная под нужды проекта."
+    },
+    "es": {
+      "description": "Sistema de gestión de contenidos propio, adaptado a las necesidades del proyecto."
+    },
+    "de": {
+      "description": "Eigenentwickeltes Content‑Management‑System, zugeschnitten auf Projektanforderungen."
+    }
+  }
+}

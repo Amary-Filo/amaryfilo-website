@@ -1,0 +1,69 @@
+{
+  "slug": "pug-templating-snippets",
+  "title": "Pug templating: handy snippets",
+  "date": "2021-09-01",
+  "updates": [],
+  "anonce": "Short mixins that save time.",
+  "thumbnail": "",
+  "category": "pug",
+  "category_list": [
+    "html5",
+    "gulp"
+  ],
+  "icon": "pug",
+  "color": "pug",
+  "tags": [
+    "pug",
+    "mixins",
+    "templates"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "card",
+      "title": "Card mixin",
+      "level": 2
+    },
+    {
+      "id": "loops",
+      "title": "Loops",
+      "level": 2
+    },
+    {
+      "id": "not-to-use",
+      "title": "When not to use",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Pug shines with mixins and includes."
+    },
+    {
+      "type": "h2",
+      "text": "Card mixin",
+      "id": "card"
+    },
+    {
+      "type": "code",
+      "lang": "pug",
+      "code": "mixin card(title)\n  .card\n    h3= title\n    block"
+    },
+    {
+      "type": "h2",
+      "text": "Loops",
+      "id": "loops"
+    },
+    {
+      "type": "code",
+      "lang": "pug",
+      "code": "ul\n  each item in items\n    li= item"
+    },
+    {
+      "type": "h2",
+      "text": "When not to use",
+      "id": "not-to-use"
+    }
+  ]
+}

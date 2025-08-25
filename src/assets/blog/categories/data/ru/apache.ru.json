@@ -1,0 +1,8 @@
+{
+  "slug": "apache",
+  "title": "Apache HTTP Server",
+  "description": "Популярный веб‑сервер с открытым кодом и богатой экосистемой модулей.",
+  "icon": "apache",
+  "color": "apache",
+  "count": 0
+}

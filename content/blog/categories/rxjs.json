@@ -1,0 +1,20 @@
+{
+  "slug": "rxjs",
+  "base": {
+    "title": "RxJS",
+    "description": "Reactive programming with Observables for JavaScript.",
+    "icon": "rxjs",
+    "color": "rxjs"
+  },
+  "data": {
+    "ru": {
+      "description": "Реактивное программирование на базе Observable для JavaScript."
+    },
+    "es": {
+      "description": "Programación reactiva con Observables para JavaScript."
+    },
+    "de": {
+      "description": "Reaktive Programmierung mit Observables für JavaScript."
+    }
+  }
+}

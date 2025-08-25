@@ -1,0 +1,20 @@
+{
+  "slug": "css3",
+  "base": {
+    "title": "CSS3",
+    "description": "Modern CSS features and layout techniques.",
+    "icon": "css3",
+    "color": "css3"
+  },
+  "data": {
+    "ru": {
+      "description": "Современные возможности CSS и техники верстки."
+    },
+    "es": {
+      "description": "Funciones modernas de CSS y técnicas de maquetación."
+    },
+    "de": {
+      "description": "Moderne CSS‑Funktionen und Layout‑Techniken."
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "slug": "react-server-components-notes",
+  "title": "React Server Components: заметки для Angular‑разработчика",
+  "date": "2023-11-18",
+  "updates": [
+    "2024-02-01"
+  ],
+  "anonce": "RSC vs SSR vs SPA за минуту.",
+  "thumbnail": "",
+  "category": "react",
+  "category_list": [
+    "javascript"
+  ],
+  "icon": "react",
+  "color": "react",
+  "tags": [
+    "react",
+    "rsc",
+    "ssr"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "model",
+      "title": "Mental model",
+      "level": 2
+    },
+    {
+      "id": "when",
+      "title": "When to use",
+      "level": 2
+    },
+    {
+      "id": "content-heavy",
+      "title": "Content heavy apps",
+      "level": 3
+    },
+    {
+      "id": "compare",
+      "title": "Angular comparison",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "RSC renders components on the server and streams payload to the client."
+    },
+    {
+      "type": "h2",
+      "text": "Mental model",
+      "id": "model"
+    },
+    {
+      "type": "p",
+      "text": "Server/Client boundaries are explicit; hooks differ."
+    },
+    {
+      "type": "h2",
+      "text": "When to use",
+      "id": "when"
+    },
+    {
+      "type": "h3",
+      "text": "Content heavy apps",
+      "id": "content-heavy"
+    },
+    {
+      "type": "p",
+      "text": "Great for CMS/feeds; less for realtime dashboards."
+    },
+    {
+      "type": "h2",
+      "text": "Angular comparison",
+      "id": "compare"
+    }
+  ]
+}

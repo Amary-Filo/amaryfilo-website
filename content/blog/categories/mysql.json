@@ -1,0 +1,20 @@
+{
+  "slug": "mysql",
+  "base": {
+    "title": "MySQL",
+    "description": "Widely used relational database for web and enterprise apps.",
+    "icon": "mysql",
+    "color": "mysql"
+  },
+  "data": {
+    "ru": {
+      "description": "Широко используемая реляционная СУБД для веб‑ и корпоративных приложений."
+    },
+    "es": {
+      "description": "Base de datos relacional ampliamente utilizada para aplicaciones web y empresariales."
+    },
+    "de": {
+      "description": "Weit verbreitete relationale Datenbank für Web‑ und Unternehmensanwendungen."
+    }
+  }
+}

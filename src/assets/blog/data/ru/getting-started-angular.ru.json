@@ -1,0 +1,66 @@
+{
+  "slug": "getting-started-angular",
+  "title": "Getting Started with Angular",
+  "date": "2025-08-25",
+  "updates": [],
+  "anonce": "Короткое описание для Getting Started with Angular",
+  "thumbnail": "",
+  "category": "angular",
+  "category_list": [
+    "angular"
+  ],
+  "icon": "angular",
+  "color": "angular",
+  "tags": [
+    "angular",
+    "frontend",
+    "typescript"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "main-section",
+      "title": "Main Section",
+      "level": 2
+    },
+    {
+      "id": "subsection",
+      "title": "Subsection",
+      "level": 3
+    },
+    {
+      "id": "razdel",
+      "title": "Раздел",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "This is a short introduction paragraph."
+    },
+    {
+      "type": "h2",
+      "text": "Main Section",
+      "id": "main-section"
+    },
+    {
+      "type": "p",
+      "text": "Detailed explanation goes here."
+    },
+    {
+      "type": "h3",
+      "text": "Subsection",
+      "id": "subsection"
+    },
+    {
+      "type": "p",
+      "text": "Additional information in subsection."
+    },
+    {
+      "type": "h2",
+      "text": "Раздел",
+      "id": "razdel"
+    }
+  ]
+}

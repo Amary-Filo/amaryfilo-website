@@ -1,0 +1,103 @@
+{
+  "slug": "angular-standalone-components-basics",
+  "title": "Standalone‑компоненты в Angular: основы",
+  "date": "2023-03-12",
+  "updates": [
+    "2024-06-15"
+  ],
+  "anonce": "Почему standalone упрощают модули и запуск.",
+  "thumbnail": "",
+  "category": "angular",
+  "category_list": [
+    "typescript",
+    "rxjs"
+  ],
+  "icon": "angular",
+  "color": "angular",
+  "tags": [
+    "angular",
+    "standalone",
+    "components"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "what-is-standalone",
+      "title": "What Is a Standalone Component?",
+      "level": 2
+    },
+    {
+      "id": "routing",
+      "title": "Routing With Standalone",
+      "level": 3
+    },
+    {
+      "id": "when-to-use",
+      "title": "When to Use",
+      "level": 2
+    },
+    {
+      "id": "chto-takoe-standalone",
+      "title": "Что такое standalone‑компонент?",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Standalone components remove the need for NgModules in many cases and streamline setup."
+    },
+    {
+      "type": "h2",
+      "text": "What Is a Standalone Component?",
+      "id": "what-is-standalone"
+    },
+    {
+      "type": "p",
+      "text": "It declares its own imports and can be bootstrapped directly."
+    },
+    {
+      "type": "code",
+      "lang": "typescript",
+      "code": "bootstrapApplication(AppComponent, { providers: [] });"
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Tip",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Use 'imports' in @Component to bring pipes and directives."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Routing With Standalone",
+      "id": "routing"
+    },
+    {
+      "type": "p",
+      "text": "Use provideRouter with lazy 'loadComponent' instead of modules."
+    },
+    {
+      "type": "h2",
+      "text": "When to Use",
+      "id": "when-to-use"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "New apps",
+        "Feature islands",
+        "Library examples"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Что такое standalone‑компонент?",
+      "id": "chto-takoe-standalone"
+    }
+  ]
+}

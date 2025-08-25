@@ -1,0 +1,76 @@
+@let blk = block(); @if (isP(blk)) {
+<p>
+  @if (blk.text) { {{ blk.text }} } @else {
+  <span [innerHTML]="blk.html | safeHtml"></span> }
+</p>
+} @else if (isH2(blk)) {
+<h2>
+  <a class="to-link" [attr.id]="blk.id" [attr.href]="'#' + blk.id"></a
+  >{{ blk.text }}
+</h2>
+} @else if (isH3(blk)) {
+<h3>
+  <a class="to-link" [attr.id]="blk.id" [attr.href]="'#' + blk.id"></a
+  >{{ blk.text }}
+</h3>
+} @else if (isImage(blk)) {
+<picture [class.wide]="blk.wide" loading="lazy">
+  <source
+    loading="lazy"
+    type="image/webp"
+    [srcset]="imagePath(blk.src) + '.webp'"
+  />
+  <img
+    loading="lazy"
+    [src]="imagePath(blk.src) + '.png'"
+    [alt]="blk.alt || ''"
+  />
+</picture>
+} @else if (isCode(blk)) {
+<pre
+  [class.wide]="blk.wide"
+  [class]="'cl-' + blk.lang"
+  [attr.data-lang]="blk.lang"
+>
+    <code [class]="'language-'+(blk.lang||'text')">{{ blk.code }}</code>
+  </pre>
+} @else if (isNote(blk)) {
+<aside class="note" [class.wide]="blk.wide" [class]="'note note-' + blk.kind">
+  @if (blk.title) { <span class="title">{{ blk.title }}</span> } @for (c of
+  blk.blocks; track $index) {
+  <app-article-block [slug]="slug()" [block]="c" /> }
+</aside>
+} @else if (isUl(blk)) {
+<ul>
+  @for (it of blk.items; track $index) {
+  <li>{{ it }}</li>
+  }
+</ul>
+} @else if (isOl(blk)) {
+<ol>
+  @for (it of blk.items; track $index) {
+  <li>{{ it }}</li>
+  }
+</ol>
+} @else if (isDl(blk)) {
+<dl>
+  @for (it of blk.items; track $index) {
+  <dt>{{ it.dt }}</dt>
+  <dd>{{ it.dd }}</dd>
+  }
+</dl>
+} @else if (isQuote(blk)) {
+<blockquote>
+  {{ blk.text }} @if (blk.cite) { <cite>{{ blk.cite }}</cite> }
+</blockquote>
+} @else if (isEmbedCodepen(blk)) {
+<div>
+  <p
+    class="codepen"
+    [attr.data-default-tab]="'result'"
+    [attr.data-slug-hash]="blk.slug"
+    [attr.data-preview]="blk.preview ?? false ? 'true' : 'false'"
+    [attr.data-theme-id]="blk.theme || 'light'"
+  ></p>
+</div>
+}

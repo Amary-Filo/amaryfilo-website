@@ -1,0 +1,20 @@
+{
+  "slug": "vue",
+  "base": {
+    "title": "Vue",
+    "description": "Progressive framework for building user interfaces.",
+    "icon": "vue",
+    "color": "vue"
+  },
+  "data": {
+    "ru": {
+      "description": "Прогрессивный фреймворк для создания пользовательских интерфейсов."
+    },
+    "es": {
+      "description": "Framework progresivo para construir interfaces de usuario."
+    },
+    "de": {
+      "description": "Progressives Framework zum Erstellen von Benutzeroberflächen."
+    }
+  }
+}

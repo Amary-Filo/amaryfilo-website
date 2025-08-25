@@ -1,0 +1,20 @@
+{
+  "slug": "web3js",
+  "base": {
+    "title": "Web3.js",
+    "description": "JavaScript library to interact with Ethereum nodes.",
+    "icon": "web3js",
+    "color": "web3js"
+  },
+  "data": {
+    "ru": {
+      "description": "JS‑библиотека для работы с узлами Ethereum."
+    },
+    "es": {
+      "description": "Librería de JavaScript para interactuar con nodos de Ethereum."
+    },
+    "de": {
+      "description": "JavaScript‑Bibliothek zur Interaktion mit Ethereum‑Nodes."
+    }
+  }
+}

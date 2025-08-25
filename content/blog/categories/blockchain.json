@@ -1,0 +1,20 @@
+{
+  "slug": "blockchain",
+  "base": {
+    "title": "Blockchain",
+    "description": "Distributed ledger technology and smart‑contract platforms.",
+    "icon": "blockchain",
+    "color": "blockchain"
+  },
+  "data": {
+    "ru": {
+      "description": "Распределённые реестры и платформы смарт‑контрактов."
+    },
+    "es": {
+      "description": "Tecnología de registros distribuidos y plataformas de contratos inteligentes."
+    },
+    "de": {
+      "description": "Verteilte Ledger‑Technologie und Smart‑Contract‑Plattformen."
+    }
+  }
+}

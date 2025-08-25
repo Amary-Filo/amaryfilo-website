@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "title": "React Server Components: notes for Angular devs",
+    "slug": "react-server-components-notes",
+    "date": "2023-11-18",
+    "updates": ["2024-02-01"],
+    "category": "react",
+    "category_list": ["javascript"],
+    "tags": ["react", "rsc", "ssr"]
+  },
+  "base": {
+    "anonce": "RSC vs SSR vs SPA in 60 seconds.",
+    "content": [
+      {
+        "type": "p",
+        "text": "RSC renders components on the server and streams payload to the client."
+      },
+
+      { "type": "h2", "text": "Mental model", "id": "model" },
+      {
+        "type": "p",
+        "text": "Server/Client boundaries are explicit; hooks differ."
+      },
+
+      { "type": "h2", "text": "When to use", "id": "when" },
+      { "type": "h3", "text": "Content heavy apps", "id": "content-heavy" },
+      {
+        "type": "p",
+        "text": "Great for CMS/feeds; less for realtime dashboards."
+      },
+
+      { "type": "h2", "text": "Angular comparison", "id": "compare" }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "React Server Components: заметки для Angular‑разработчика",
+      "anonce": "RSC vs SSR vs SPA за минуту.",
+      "content": []
+    },
+    "es": {
+      "title": "RSC: notas para devs de Angular",
+      "anonce": "RSC vs SSR vs SPA.",
+      "content": []
+    },
+    "de": {
+      "title": "RSC: Notizen für Angular‑Devs",
+      "anonce": "Kurzüberblick.",
+      "content": []
+    }
+  }
+}

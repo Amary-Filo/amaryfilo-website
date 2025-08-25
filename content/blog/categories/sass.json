@@ -1,0 +1,20 @@
+{
+  "slug": "sass",
+  "base": {
+    "title": "Sass",
+    "description": "CSS preprocessor with variables, mixins and nesting.",
+    "icon": "sass",
+    "color": "sass"
+  },
+  "data": {
+    "ru": {
+      "description": "CSS‑препроцессор с переменными, миксинами и вложенностью."
+    },
+    "es": {
+      "description": "Preprocesador CSS con variables, mixins y anidación."
+    },
+    "de": {
+      "description": "CSS‑Präprozessor mit Variablen, Mixins und Verschachtelung."
+    }
+  }
+}

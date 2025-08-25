@@ -1,0 +1,20 @@
+{
+  "slug": "frontend",
+  "base": {
+    "title": "Frontend",
+    "description": "UI development for web and mobile clients.",
+    "icon": "frontend",
+    "color": "frontend"
+  },
+  "data": {
+    "ru": {
+      "description": "Разработка пользовательских интерфейсов для web и мобильных клиентов."
+    },
+    "es": {
+      "description": "Desarrollo de interfaces de usuario para web y móvil."
+    },
+    "de": {
+      "description": "UI‑Entwicklung für Web‑ und Mobile‑Clients."
+    }
+  }
+}

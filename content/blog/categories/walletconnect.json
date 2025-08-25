@@ -1,0 +1,20 @@
+{
+  "slug": "walletconnect",
+  "base": {
+    "title": "WalletConnect",
+    "description": "Protocol to connect wallets with dApps securely.",
+    "icon": "walletconnect",
+    "color": "walletconnect"
+  },
+  "data": {
+    "ru": {
+      "description": "Протокол безопасного подключения кошельков к dApp."
+    },
+    "es": {
+      "description": "Protocolo para conectar billeteras con dApps de forma segura."
+    },
+    "de": {
+      "description": "Protokoll zur sicheren Verbindung von Wallets mit dApps."
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "postgres",
+  "title": "PostgreSQL",
+  "description": "Продвинутая открытая реляционная СУБД с мощным SQL‑функционалом.",
+  "icon": "postgres",
+  "color": "postgres",
+  "count": 0
+}

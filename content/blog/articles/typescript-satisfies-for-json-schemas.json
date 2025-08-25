@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "title": "TypeScript `satisfies` for JSON content schemas",
+    "slug": "typescript-satisfies-for-json-schemas",
+    "date": "2024-05-02",
+    "updates": [],
+    "category": "typescript",
+    "category_list": ["json", "tools"],
+    "tags": ["typescript", "satisfies", "schema"]
+  },
+  "base": {
+    "anonce": "Validate JSON shape at compile time.",
+    "content": [
+      {
+        "type": "p",
+        "text": "`satisfies` helps check that objects conform to a type without widening."
+      },
+
+      { "type": "h2", "text": "Why `satisfies`?", "id": "why" },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "const cfg = {\n  lang: 'en',\n  items: ['a','b']\n} as const satisfies { lang: 'en'|'ru'; items: readonly string[] };"
+      },
+
+      { "type": "h2", "text": "Avoid `as` casts", "id": "avoid-as" },
+      { "type": "p", "text": "Casts hide mistakes; `satisfies` reports them." },
+
+      {
+        "type": "h2",
+        "text": "Works great with content builders",
+        "id": "builders"
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "TypeScript `satisfies` для JSON‑схем",
+      "anonce": "Проверка формы JSON на этапе компиляции.",
+      "content": []
+    },
+    "es": {
+      "title": "`satisfies` de TypeScript para esquemas JSON",
+      "anonce": "Valida la forma de objetos.",
+      "content": []
+    },
+    "de": {
+      "title": "TypeScript `satisfies` für JSON‑Schemata",
+      "anonce": "Compile‑time‑Validierung.",
+      "content": []
+    }
+  }
+}

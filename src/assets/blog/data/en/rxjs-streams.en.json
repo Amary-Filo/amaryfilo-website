@@ -1,0 +1,56 @@
+{
+  "slug": "rxjs-streams",
+  "title": "Working with RxJS Streams",
+  "date": "2025-08-25",
+  "updates": [],
+  "anonce": "An article about working with rxjs streams.",
+  "thumbnail": "",
+  "category": "rxjs",
+  "category_list": [
+    "rxjs"
+  ],
+  "icon": "rxjs",
+  "color": "rxjs",
+  "tags": [
+    "rxjs",
+    "angular",
+    "observables"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "main-section",
+      "title": "Main Section",
+      "level": 2
+    },
+    {
+      "id": "subsection",
+      "title": "Subsection",
+      "level": 3
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "This is a short introduction paragraph."
+    },
+    {
+      "type": "h2",
+      "text": "Main Section",
+      "id": "main-section"
+    },
+    {
+      "type": "p",
+      "text": "Detailed explanation goes here."
+    },
+    {
+      "type": "h3",
+      "text": "Subsection",
+      "id": "subsection"
+    },
+    {
+      "type": "p",
+      "text": "Additional information in subsection."
+    }
+  ]
+}

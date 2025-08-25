@@ -1,1 +1,60 @@
-<p>article works!</p>
+@if (article()) {
+<main class="pg-article">
+  <section class="sc article-content">
+    <div class="container">
+      <!-- Aside: меню -->
+      <aside class="aside">
+        <div class="cd-st adv"></div>
+        <nav
+          class="fl fl-dc"
+          (click)="toggleMenu()"
+          [class.open]="menuOpen()"
+          id="article-nav"
+        >
+          <span class="article-nav-open ic-menu op-7"></span>
+          <span class="fw-800 t-u ls-2 title-head">Article content</span>
+
+          @for (g of menuGrouped(); track g.h2.id) {
+          <a class="title" [href]="'#' + g.h2.id">{{ g.h2.title }}</a>
+          @if (g.subs.length) {
+          <div class="subnav">
+            @for (s of g.subs; track s.id) {
+            <a class="title" [href]="'#' + s.id">{{ s.title }}</a>
+            }
+          </div>
+          } }
+        </nav>
+      </aside>
+
+      <div class="article-main">
+        <div class="cd-st">
+          <h1 class="fz-xxl fw-800">{{ article()?.title }}</h1>
+          @if (article()?.anonce) {
+          <p class="desc op-8">{{ article()?.anonce }}</p>
+          } @if (article()?.links?.length) {
+          <div class="links fl">
+            @for (link of article()?.links; track link.id) {
+            <a
+              class="m btn"
+              [ngClass]="link.icon ? 'ic-' + link.icon : null"
+              [href]="link.url"
+              target="_blank"
+              rel="noopener"
+              [title]="link.title || 'Link'"
+            >
+            </a>
+            }
+          </div>
+          }
+        </div>
+      </div>
+
+      <article class="article cd-st">
+        @for (block of content(); track $index) {
+        <app-article-block [slug]="article()!.slug" [block]="block" />
+        }
+      </article>
+    </div>
+  </section>
+</main>
+}

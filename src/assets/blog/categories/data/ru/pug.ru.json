@@ -1,0 +1,8 @@
+{
+  "slug": "pug",
+  "title": "Pug",
+  "description": "Шаблонизатор, компилирующийся в HTML.",
+  "icon": "pug",
+  "color": "pug",
+  "count": 2
+}

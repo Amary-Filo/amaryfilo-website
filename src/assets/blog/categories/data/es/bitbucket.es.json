@@ -1,0 +1,8 @@
+{
+  "slug": "bitbucket",
+  "title": "Bitbucket",
+  "description": "Repositorios Git alojados y CI/CD para equipos.",
+  "icon": "bitbucket",
+  "color": "bitbucket",
+  "count": 0
+}

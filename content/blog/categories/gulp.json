@@ -1,0 +1,20 @@
+{
+  "slug": "gulp",
+  "base": {
+    "title": "Gulp",
+    "description": "Streaming build system for front‑end workflows.",
+    "icon": "gulp",
+    "color": "gulp"
+  },
+  "data": {
+    "ru": {
+      "description": "Стриминговая система сборки для фронтенд‑процессов."
+    },
+    "es": {
+      "description": "Sistema de build por streaming para flujos frontend."
+    },
+    "de": {
+      "description": "Streaming‑Build‑System für Frontend‑Workflows."
+    }
+  }
+}

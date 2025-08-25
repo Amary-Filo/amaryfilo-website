@@ -1,0 +1,20 @@
+{
+  "slug": "javascript",
+  "base": {
+    "title": "JavaScript",
+    "description": "Programming language of the web and cross‑platform apps.",
+    "icon": "javascript",
+    "color": "javascript"
+  },
+  "data": {
+    "ru": {
+      "description": "Язык программирования веба и кроссплатформенных приложений."
+    },
+    "es": {
+      "description": "Lenguaje de programación de la web y apps multiplataforma."
+    },
+    "de": {
+      "description": "Programmiersprache des Webs und für plattformübergreifende Apps."
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "html5",
+  "base": {
+    "title": "HTML5",
+    "description": "Markup standard for modern web applications.",
+    "icon": "html5",
+    "color": "html5"
+  },
+  "data": {
+    "ru": {
+      "description": "Стандарт разметки для современных веб‑приложений."
+    },
+    "es": {
+      "description": "Estándar de marcado para aplicaciones web modernas."
+    },
+    "de": {
+      "description": "Markup‑Standard für moderne Webanwendungen."
+    }
+  }
+}

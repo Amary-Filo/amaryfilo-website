@@ -1,0 +1,20 @@
+{
+  "slug": "laravel",
+  "base": {
+    "title": "Laravel",
+    "description": "PHP web framework focused on elegance and developer productivity.",
+    "icon": "laravel",
+    "color": "laravel"
+  },
+  "data": {
+    "ru": {
+      "description": "PHP‑фреймворк, ориентированный на элегантность и продуктивность."
+    },
+    "es": {
+      "description": "Framework web de PHP centrado en la elegancia y la productividad."
+    },
+    "de": {
+      "description": "PHP‑Webframework mit Fokus auf Eleganz und Produktivität."
+    }
+  }
+}

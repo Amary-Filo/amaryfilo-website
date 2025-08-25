@@ -1,0 +1,8 @@
+{
+  "slug": "npm",
+  "title": "npm",
+  "description": "Менеджер пакетов и реестр для JavaScript.",
+  "icon": "npm",
+  "color": "npm",
+  "count": 1
+}

@@ -1,0 +1,357 @@
+{
+  "slug": "how-to-install-homebrew",
+  "title": "Как установить Homebrew",
+  "date": "2021-07-15",
+  "updates": [
+    "2024-08-01"
+  ],
+  "anonce": "Короткий анонс…",
+  "thumbnail": "",
+  "category": "angular",
+  "category_list": [
+    "angular",
+    "tools"
+  ],
+  "icon": "angular",
+  "color": "angular",
+  "tags": [
+    "macos",
+    "homebrew",
+    "software",
+    "tools"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "Fourth-Created-Wont-Lights-Whose-Firmament-He",
+      "title": "Fourth Created Won't Lights Whose Firmament He",
+      "level": 2
+    },
+    {
+      "id": "There-Creature-Good-Hath-Meat-Appear-Deep",
+      "title": "There Creature Good Hath Meat Appear Deep",
+      "level": 3
+    },
+    {
+      "id": "Give",
+      "title": "Give",
+      "level": 3
+    },
+    {
+      "id": "Waters",
+      "title": "Waters",
+      "level": 3
+    },
+    {
+      "id": "Living-Above-Our",
+      "title": "Living Above Our",
+      "level": 2
+    },
+    {
+      "id": "Own",
+      "title": "Own",
+      "level": 2
+    },
+    {
+      "id": "Beginning-Tree",
+      "title": "Beginning Tree",
+      "level": 3
+    },
+    {
+      "id": "End-is-happen",
+      "title": "End is happen",
+      "level": 2
+    },
+    {
+      "id": "razdel-1",
+      "title": "Раздел 1",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Said fly waters place…"
+    },
+    {
+      "type": "h2",
+      "text": "Fourth Created Won't Lights Whose Firmament He",
+      "id": "Fourth-Created-Wont-Lights-Whose-Firmament-He"
+    },
+    {
+      "type": "p",
+      "text": "It all. Seas fruitful said…"
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "wide": true,
+      "code": "/* Simple css code */\n*, *::before, *::after { content: ''; }\n\n/* Margin example */\n* { margin: 0; }"
+    },
+    {
+      "type": "p",
+      "html": "Cattle… <em>fill male divided</em> …"
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Random note",
+      "wide": true,
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Multiply all a greater forth…"
+        },
+        {
+          "type": "p",
+          "html": "… <code>&lsaquo;em&rsaquo;</code> …"
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "There Creature Good Hath Meat Appear Deep",
+      "id": "There-Creature-Good-Hath-Meat-Appear-Deep"
+    },
+    {
+      "type": "p",
+      "html": "Him. Void… <i>Winged in moving</i>…"
+    },
+    {
+      "type": "image",
+      "src": "blog-image-1",
+      "alt": "Subdue Whose…",
+      "wide": false
+    },
+    {
+      "type": "image",
+      "src": "blog-image-1",
+      "alt": "Subdue Whose…",
+      "wide": true
+    },
+    {
+      "type": "p",
+      "text": "Every void said from moved…"
+    },
+    {
+      "type": "embed",
+      "provider": "codepen",
+      "slug": "sJpDj",
+      "theme": "dark",
+      "preview": true
+    },
+    {
+      "type": "p",
+      "text": "Him. Void… said you'll created:"
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "wide": true,
+      "code": "*, *::before, *::after {\n  content: '';\n}"
+    },
+    {
+      "type": "p",
+      "text": "Firmament for. Made…"
+    },
+    {
+      "type": "p",
+      "html": "<b>This is a must-have rule,</b><a class=\"link\" href=\"#\">in my opinion.</a> It makes CSS <i>significantly</i> nicer…"
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "title": "Wow content",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Fourth above isn't darkness…"
+        },
+        {
+          "type": "code",
+          "lang": "css",
+          "code": "html {\n  margin: 0;\n}\n\n*, *:before, *:after {\n  content: '';\n}"
+        },
+        {
+          "type": "code",
+          "lang": "typescript",
+          "code": "import $ from \"jquery\";\nimport hljs from \"highlight.js/lib/common\";\n// …"
+        },
+        {
+          "type": "p",
+          "text": "Life so lights good…"
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Give",
+      "id": "Give"
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "wide": true,
+      "code": "* {\n  padding: 0;\n}"
+    },
+    {
+      "type": "p",
+      "text": "Tree gathering seed…"
+    },
+    {
+      "type": "p",
+      "html": "… <code>light give</code> … <a href=\"#\">said fruitful</a> …"
+    },
+    {
+      "type": "h3",
+      "text": "Waters",
+      "id": "Waters"
+    },
+    {
+      "type": "p",
+      "text": "Was called the first air…"
+    },
+    {
+      "type": "note",
+      "kind": "warn",
+      "title": "OUCH",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Rule lesser…"
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Made meat forth divide…"
+    },
+    {
+      "type": "h2",
+      "text": "Living Above Our",
+      "id": "Living-Above-Our"
+    },
+    {
+      "type": "note",
+      "kind": "att",
+      "title": "What's wrong?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Earth. Years…"
+        },
+        {
+          "type": "image",
+          "src": "blog-image-1",
+          "alt": "Subdue Whose…"
+        },
+        {
+          "type": "p",
+          "text": "Place it multiply…"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Own",
+      "id": "Own"
+    },
+    {
+      "type": "quote",
+      "text": "The only thing permanent in life is impermanence.",
+      "cite": "Thor in Endgame"
+    },
+    {
+      "type": "p",
+      "text": "Image to fowl first…"
+    },
+    {
+      "type": "image",
+      "src": "blog-image-1",
+      "alt": "Subdue Whose…"
+    },
+    {
+      "type": "h3",
+      "text": "Beginning Tree",
+      "id": "Beginning-Tree"
+    },
+    {
+      "type": "p",
+      "html": "Earth thing… <b>Multiply together</b> …"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Lorem ipsum… Sapiente, hic!",
+        "Lorem ipsum dolor sit amet.",
+        "Lorem ipsum… fugit ex pariatur…",
+        "Lorem ipsum… Veniam."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Day image multiply…"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Lorem ipsum… Sapiente, hic!",
+        "Lorem ipsum dolor sit amet.",
+        "Lorem ipsum… fugit ex pariatur…",
+        "Lorem ipsum… Veniam."
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "End is happen",
+      "id": "End-is-happen"
+    },
+    {
+      "type": "p",
+      "text": "Over earth fourth god…"
+    },
+    {
+      "type": "dl",
+      "items": [
+        {
+          "dt": "Width:",
+          "dd": "826 mm"
+        },
+        {
+          "dt": "Height:",
+          "dd": "523 mm"
+        },
+        {
+          "dt": "Guarantee:",
+          "dd": "12 months"
+        },
+        {
+          "dt": "Additionally:",
+          "dd": "RAM 1 GB, USB 2.0x2, internal memory 4 GB, documentation, remote control, desktop stand"
+        }
+      ]
+    },
+    {
+      "type": "dl",
+      "items": [
+        {
+          "dt": "Beginning His Good Air Morning You",
+          "dd": "Void, female his fill…"
+        },
+        {
+          "dt": "What else?",
+          "dd": "Upon were years… living tree place in our, the fourth evening."
+        },
+        {
+          "dt": "Loot?",
+          "dd": "Seas yielding above created…"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Раздел 1",
+      "id": "razdel-1"
+    }
+  ]
+}

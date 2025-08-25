@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Introduction to Vue 3",
+    "slug": "vue3-introduction",
+    "date": "2025-08-25",
+    "updates": [],
+    "category": "vue",
+    "category_list": ["vue"],
+    "tags": ["vue", "frontend"]
+  },
+  "base": {
+    "anonce": "An article about introduction to vue 3.",
+    "content": [
+      {
+        "type": "p",
+        "text": "This is a short introduction paragraph."
+      },
+      {
+        "type": "h2",
+        "text": "Main Section",
+        "id": "main-section"
+      },
+      {
+        "type": "p",
+        "text": "Detailed explanation goes here."
+      },
+      {
+        "type": "h3",
+        "text": "Subsection",
+        "id": "subsection"
+      },
+      {
+        "type": "p",
+        "text": "Additional information in subsection."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Introduction to Vue 3",
+      "anonce": "Короткое описание для Introduction to Vue 3",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Раздел",
+          "id": "razdel"
+        },
+        {
+          "type": "p",
+          "text": "Локализованный параграф…"
+        }
+      ]
+    },
+    "es": {
+      "title": "Introduction to Vue 3",
+      "anonce": "Breve resumen para Introduction to Vue 3",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Sección",
+          "id": "seccion"
+        },
+        {
+          "type": "p",
+          "text": "Párrafo localizado…"
+        }
+      ]
+    },
+    "de": {
+      "title": "Introduction to Vue 3",
+      "anonce": "Kurze Zusammenfassung für Introduction to Vue 3",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Abschnitt",
+          "id": "abschnitt"
+        },
+        {
+          "type": "p",
+          "text": "Lokalisierter Absatz…"
+        }
+      ]
+    }
+  }
+}

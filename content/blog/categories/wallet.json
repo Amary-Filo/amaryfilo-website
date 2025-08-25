@@ -1,0 +1,20 @@
+{
+  "slug": "wallet",
+  "base": {
+    "title": "Wallet",
+    "description": "Digital crypto wallet apps, security and UX.",
+    "icon": "wallet",
+    "color": "wallet"
+  },
+  "data": {
+    "ru": {
+      "description": "Криптокошельки, безопасность и пользовательский опыт."
+    },
+    "es": {
+      "description": "Billeteras cripto, seguridad y experiencia de usuario."
+    },
+    "de": {
+      "description": "Krypto‑Wallets, Sicherheit und Nutzererlebnis."
+    }
+  }
+}

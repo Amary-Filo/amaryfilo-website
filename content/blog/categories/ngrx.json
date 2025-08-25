@@ -1,0 +1,20 @@
+{
+  "slug": "ngrx",
+  "base": {
+    "title": "NgRx",
+    "description": "Reactive state management for Angular apps.",
+    "icon": "ngrx",
+    "color": "ngrx"
+  },
+  "data": {
+    "ru": {
+      "description": "Реактивное управление состоянием для приложений Angular."
+    },
+    "es": {
+      "description": "Gestión de estado reactiva para apps Angular."
+    },
+    "de": {
+      "description": "Reaktives State‑Management für Angular‑Apps."
+    }
+  }
+}

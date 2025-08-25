@@ -1,0 +1,69 @@
+{
+  "slug": "nodejs-fetch-vs-axios",
+  "title": "Node.js: fetch vs axios 2025",
+  "date": "2024-10-12",
+  "updates": [],
+  "anonce": "Meist reicht fetch.",
+  "thumbnail": "",
+  "category": "nodejs",
+  "category_list": [
+    "api",
+    "rest"
+  ],
+  "icon": "nodejs",
+  "color": "nodejs",
+  "tags": [
+    "nodejs",
+    "fetch",
+    "axios",
+    "http"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "ergonomics",
+      "title": "Ergonomics",
+      "level": 2
+    },
+    {
+      "id": "axios-wins",
+      "title": "When axios still wins",
+      "level": 2
+    },
+    {
+      "id": "tldr",
+      "title": "TL;DR",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "`undici` powers native fetch in Node.js and it’s solid."
+    },
+    {
+      "type": "h2",
+      "text": "Ergonomics",
+      "id": "ergonomics"
+    },
+    {
+      "type": "code",
+      "lang": "typescript",
+      "code": "const res = await fetch(url, { headers: { 'accept': 'application/json' }});"
+    },
+    {
+      "type": "h2",
+      "text": "When axios still wins",
+      "id": "axios-wins"
+    },
+    {
+      "type": "p",
+      "text": "Interceptors, transforms, older codebases."
+    },
+    {
+      "type": "h2",
+      "text": "TL;DR",
+      "id": "tldr"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "title": "Sass utility classes you’ll actually use",
+    "slug": "sass-utility-classes",
+    "date": "2020-12-15",
+    "updates": ["2023-09-10"],
+    "category": "sass",
+    "category_list": ["css3"],
+    "tags": ["sass", "utilities"]
+  },
+  "base": {
+    "anonce": "Tiny helpers for spacing, flex and text.",
+    "content": [
+      { "type": "p", "text": "A small set beats huge frameworks." },
+
+      { "type": "h2", "text": "Spacing", "id": "spacing" },
+      {
+        "type": "code",
+        "lang": "scss",
+        "code": ".m-1{margin:.25rem}.p-1{padding:.25rem}"
+      },
+
+      { "type": "h2", "text": "Flex", "id": "flex" },
+      {
+        "type": "code",
+        "lang": "scss",
+        "code": ".fl{display:flex}.fl-cc{align-items:center;justify-content:center}"
+      },
+
+      { "type": "h2", "text": "Typography", "id": "typo" }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Sass: реально полезные utility‑классы",
+      "anonce": "Про отступы, flex и текст.",
+      "content": []
+    },
+    "es": {
+      "title": "Sass: utilidades útiles",
+      "anonce": "Espaciado, flex y texto.",
+      "content": []
+    },
+    "de": {
+      "title": "Sass‑Utilities, die man nutzt",
+      "anonce": "Abstand, Flex, Text.",
+      "content": []
+    }
+  }
+}

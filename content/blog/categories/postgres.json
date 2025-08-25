@@ -1,0 +1,20 @@
+{
+  "slug": "postgres",
+  "base": {
+    "title": "PostgreSQL",
+    "description": "Advanced open‑source relational database with strong SQL features.",
+    "icon": "postgres",
+    "color": "postgres"
+  },
+  "data": {
+    "ru": {
+      "description": "Продвинутая открытая реляционная СУБД с мощным SQL‑функционалом."
+    },
+    "es": {
+      "description": "Base de datos relacional de código abierto con potentes características SQL."
+    },
+    "de": {
+      "description": "Fortschrittliche Open‑Source‑Datenbank mit umfangreichen SQL‑Funktionen."
+    }
+  }
+}

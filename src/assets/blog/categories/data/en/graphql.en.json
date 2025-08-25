@@ -1,0 +1,8 @@
+{
+  "slug": "graphql",
+  "title": "GraphQL",
+  "description": "Query language and runtime for APIs with typed schema.",
+  "icon": "graphql",
+  "color": "graphql",
+  "count": 1
+}

@@ -1,0 +1,8 @@
+{
+  "slug": "rest",
+  "title": "REST",
+  "description": "Архитектурный стиль API «Representational State Transfer».",
+  "icon": "rest",
+  "color": "rest",
+  "count": 1
+}

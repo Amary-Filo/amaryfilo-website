@@ -31,14 +31,5 @@ section.design {
       margin: 0 auto;
       padding: 0;
     }
-
-    .btn {
-      max-width: mx.rem(370);
-
-      @include mx.b(tablet) {
-        max-width: 100%;
-        grid-column: 1/3;
-      }
-    }
   }
 }

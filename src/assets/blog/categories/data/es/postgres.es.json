@@ -1,0 +1,8 @@
+{
+  "slug": "postgres",
+  "title": "PostgreSQL",
+  "description": "Base de datos relacional de código abierto con potentes características SQL.",
+  "icon": "postgres",
+  "color": "postgres",
+  "count": 0
+}

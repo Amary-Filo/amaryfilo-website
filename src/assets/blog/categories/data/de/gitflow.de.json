@@ -1,0 +1,8 @@
+{
+  "slug": "gitflow",
+  "title": "Git Flow",
+  "description": "Branching‑Modell für Releases, Features und Hotfixes.",
+  "icon": "gitflow",
+  "color": "gitflow",
+  "count": 1
+}

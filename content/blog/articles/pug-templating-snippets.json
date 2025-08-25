@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "title": "Pug templating: handy snippets",
+    "slug": "pug-templating-snippets",
+    "date": "2021-09-01",
+    "updates": [],
+    "category": "pug",
+    "category_list": ["html5", "gulp"],
+    "tags": ["pug", "mixins", "templates"]
+  },
+  "base": {
+    "anonce": "Short mixins that save time.",
+    "content": [
+      { "type": "p", "text": "Pug shines with mixins and includes." },
+
+      { "type": "h2", "text": "Card mixin", "id": "card" },
+      {
+        "type": "code",
+        "lang": "pug",
+        "code": "mixin card(title)\n  .card\n    h3= title\n    block"
+      },
+
+      { "type": "h2", "text": "Loops", "id": "loops" },
+      {
+        "type": "code",
+        "lang": "pug",
+        "code": "ul\n  each item in items\n    li= item"
+      },
+
+      { "type": "h2", "text": "When not to use", "id": "not-to-use" }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Pug: полезные сниппеты",
+      "anonce": "Короткие mixin'ы.",
+      "content": []
+    },
+    "es": {
+      "title": "Pug: snippets útiles",
+      "anonce": "Mixins cortos.",
+      "content": []
+    },
+    "de": {
+      "title": "Pug: praktische Snippets",
+      "anonce": "Kurze Mixins.",
+      "content": []
+    }
+  }
+}

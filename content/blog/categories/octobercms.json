@@ -1,0 +1,20 @@
+{
+  "slug": "octobercms",
+  "base": {
+    "title": "October CMS",
+    "description": "Laravel‑based CMS for building flexible websites and back‑offices.",
+    "icon": "octobercms",
+    "color": "octobercms"
+  },
+  "data": {
+    "ru": {
+      "description": "CMS на базе Laravel для гибких сайтов и админ‑панелей."
+    },
+    "es": {
+      "description": "CMS basado en Laravel para crear sitios web y paneles de administración flexibles."
+    },
+    "de": {
+      "description": "Auf Laravel basierendes CMS für flexible Websites und Backoffices."
+    }
+  }
+}

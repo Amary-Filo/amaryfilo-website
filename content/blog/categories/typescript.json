@@ -1,0 +1,20 @@
+{
+  "slug": "typescript",
+  "base": {
+    "title": "TypeScript",
+    "description": "Typed superset of JavaScript for large codebases.",
+    "icon": "typescript",
+    "color": "typescript"
+  },
+  "data": {
+    "ru": {
+      "description": "Типизированное надмножество JavaScript для крупных проектов."
+    },
+    "es": {
+      "description": "Superconjunto tipado de JavaScript para proyectos grandes."
+    },
+    "de": {
+      "description": "Getypte Obermenge von JavaScript für große Codebasen."
+    }
+  }
+}

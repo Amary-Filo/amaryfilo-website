@@ -1,0 +1,20 @@
+{
+  "slug": "apache",
+  "base": {
+    "title": "Apache HTTP Server",
+    "description": "Popular open‑source web server with rich module ecosystem.",
+    "icon": "apache",
+    "color": "apache"
+  },
+  "data": {
+    "ru": {
+      "description": "Популярный веб‑сервер с открытым кодом и богатой экосистемой модулей."
+    },
+    "es": {
+      "description": "Servidor web de código abierto muy popular con un rico ecosistema de módulos."
+    },
+    "de": {
+      "description": "Beliebter Open‑Source‑Webserver mit umfangreichem Modul‑Ökosystem."
+    }
+  }
+}

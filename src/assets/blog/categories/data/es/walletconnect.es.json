@@ -1,0 +1,8 @@
+{
+  "slug": "walletconnect",
+  "title": "WalletConnect",
+  "description": "Protocolo para conectar billeteras con dApps de forma segura.",
+  "icon": "walletconnect",
+  "color": "walletconnect",
+  "count": 0
+}

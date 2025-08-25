@@ -1,0 +1,20 @@
+{
+  "slug": "rest",
+  "base": {
+    "title": "REST",
+    "description": "Representational State Transfer — architectural style for APIs.",
+    "icon": "rest",
+    "color": "rest"
+  },
+  "data": {
+    "ru": {
+      "description": "Архитектурный стиль API «Representational State Transfer»."
+    },
+    "es": {
+      "description": "Estilo arquitectónico de APIs: Representational State Transfer."
+    },
+    "de": {
+      "description": "Architekturstil für APIs: Representational State Transfer."
+    }
+  }
+}

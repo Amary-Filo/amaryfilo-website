@@ -1,14 +1,15 @@
 @use "../mixins/mixins" as mx;
 
 .btn-pad {
-  border: none;
-  border-radius: var(--btn-pad-bdr, mx.rem(30)) !important;
+  border: none !important;
+  border-radius: var(--btn-pad-bdr, mx.rem(20)) !important;
 
   @include mx.b(tablet) {
+    min-height: mx.rem(60);
     max-width: 100% !important;
     grid-column-end: span 2;
 
-    margin-top: mx.rem(30);
+    margin: mx.rem(30) auto 0 auto;
     padding: mx.rem(13);
 
     border-radius: mx.rem(10) !important;

@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "GraphQL vs REST: Key Differences",
+    "slug": "graphql-vs-rest",
+    "date": "2025-08-25",
+    "updates": [],
+    "category": "graphql",
+    "category_list": ["graphql"],
+    "tags": ["graphql", "rest", "api"]
+  },
+  "base": {
+    "anonce": "An article about graphql vs rest: key differences.",
+    "content": [
+      {
+        "type": "p",
+        "text": "This is a short introduction paragraph."
+      },
+      {
+        "type": "h2",
+        "text": "Main Section",
+        "id": "main-section"
+      },
+      {
+        "type": "p",
+        "text": "Detailed explanation goes here."
+      },
+      {
+        "type": "h3",
+        "text": "Subsection",
+        "id": "subsection"
+      },
+      {
+        "type": "p",
+        "text": "Additional information in subsection."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "GraphQL vs REST: Key Differences",
+      "anonce": "Короткое описание для GraphQL vs REST: Key Differences",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Раздел",
+          "id": "razdel"
+        },
+        {
+          "type": "p",
+          "text": "Локализованный параграф…"
+        }
+      ]
+    },
+    "es": {
+      "title": "GraphQL vs REST: Key Differences",
+      "anonce": "Breve resumen para GraphQL vs REST: Key Differences",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Sección",
+          "id": "seccion"
+        },
+        {
+          "type": "p",
+          "text": "Párrafo localizado…"
+        }
+      ]
+    },
+    "de": {
+      "title": "GraphQL vs REST: Key Differences",
+      "anonce": "Kurze Zusammenfassung für GraphQL vs REST: Key Differences",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Abschnitt",
+          "id": "abschnitt"
+        },
+        {
+          "type": "p",
+          "text": "Lokalisierter Absatz…"
+        }
+      ]
+    }
+  }
+}

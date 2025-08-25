@@ -1,1 +1,57 @@
-<p>blog works!</p>
+<main class="pg-blog">
+  <section class="sc head-section pg-hd">
+    <div class="container info fl-cc fl-dc t-c">
+      <h1 class="title ls-2 t-gr ls t-u cl-g-blog">Blog</h1>
+      <p class="text op-7 ls fw-b">
+        All articles sorted by creating/editing date.
+      </p>
+    </div>
+  </section>
+
+  <section class="sc list">
+    <div class="container">
+      <span class="title fz-nm op-7">What do you want?</span>
+      <div class="fl fl-w lists">
+        @for (item of filters(); track item) {
+        <button
+          type="button"
+          class="btn m"
+          [class.active]="selectedFilter() === item"
+          (click)="filterData(item)"
+          [title]="item"
+        >
+          {{ item }}
+        </button>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="sc articles">
+    <div class="container">
+      @for (item of filteredItems(); track item.slug) {
+      <article [class]="$first ? 'landscape' : ''">
+        <a
+          [class]="'cd cd-atc fl fl-dc cl-' + (item.color || item.icon)"
+          [attr.title]="'blog.article.title' | t : { title: item.title }"
+          [routerLinkWithLang]="['blog', item.slug]"
+        >
+          <div class="top fl-sbc">
+            <span [class]="'fl ic nm ic-' + item.icon"></span>
+            <time class="ls op-6" [attr.datetime]="item.date | date">
+              {{ item.date | date }}
+            </time>
+          </div>
+          <div class="info">
+            <h3 class="title">{{ item.title }}</h3>
+            <p class="text op-6">{{ item.anonce }}</p>
+          </div>
+        </a>
+      </article>
+      }
+    </div>
+  </section>
+
+  <app-subscribe />
+  <app-form-order />
+</main>

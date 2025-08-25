@@ -1,0 +1,71 @@
+{
+  "slug": "css-grid-autofill-gallery",
+  "title": "CSS Grid: Galerie per autofill",
+  "date": "2022-06-22",
+  "updates": [
+    "2024-04-02"
+  ],
+  "anonce": "Responsive in einer Zeile.",
+  "thumbnail": "",
+  "category": "css3",
+  "category_list": [
+    "html5"
+  ],
+  "icon": "css3",
+  "color": "css3",
+  "tags": [
+    "css",
+    "grid",
+    "layout"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "markup",
+      "title": "Markup",
+      "level": 2
+    },
+    {
+      "id": "styles",
+      "title": "Styles",
+      "level": 2
+    },
+    {
+      "id": "gaps",
+      "title": "Gaps & Breakpoints",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "Use `repeat(auto-fill, minmax(300px, 1fr))` for fluid columns."
+    },
+    {
+      "type": "h2",
+      "text": "Markup",
+      "id": "markup"
+    },
+    {
+      "type": "code",
+      "lang": "html",
+      "code": "<div class='grid'>\n  <img/>\n</div>"
+    },
+    {
+      "type": "h2",
+      "text": "Styles",
+      "id": "styles"
+    },
+    {
+      "type": "code",
+      "lang": "css",
+      "wide": true,
+      "code": ".grid{display:grid;grid-gap:15px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));}"
+    },
+    {
+      "type": "h2",
+      "text": "Gaps & Breakpoints",
+      "id": "gaps"
+    }
+  ]
+}

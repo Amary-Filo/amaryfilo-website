@@ -11,16 +11,14 @@
     @for (item of latestPost(); track item.slug) {
     <article [class]="$first ? 'landscape' : ''">
       <a
-        [class]="'cd cd-atc fl fl-dc cl-' + item.icon"
-        href="#"
-        target="_blank"
+        [class]="'cd cd-atc fl fl-dc cl-' + (item.color || item.icon)"
         [attr.title]="'blog.article.title' | t : { title: item.title }"
       >
         <div class="top fl-sbc">
           <span [class]="'fl ic nm ic-' + item.icon"></span>
-          <time class="ls op-6" [attr.datetime]="item.date">{{
-            item.date | date
-          }}</time>
+          <time class="ls op-6" [attr.datetime]="item.date | date">
+            {{ item.date | date }}</time
+          >
         </div>
         <div class="info">
           <h3 class="title">{{ item.title }}</h3>
@@ -31,12 +29,10 @@
     }
 
     <a
-      class="btn btn-pad fl-dc g-bg g-a w-100 cl-g-blog"
-      href="#"
-      target="_blank"
-      ><span class="title fl-cc fl-dc fz-md fw-b ic-hash"
-        >View all articles</span
-      ></a
+      class="btn-pad btn g-bg w-100 g-a title fz-md cl-g-blog"
+      routerLinkWithLang="blog"
     >
+      View articles
+    </a>
   </div>
 </section>

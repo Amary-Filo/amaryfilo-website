@@ -1,0 +1,20 @@
+{
+  "slug": "swiftui",
+  "base": {
+    "title": "SwiftUI",
+    "description": "Declarative UI framework for Apple platforms.",
+    "icon": "swiftui",
+    "color": "swiftui"
+  },
+  "data": {
+    "ru": {
+      "description": "Декларативный UI‑фреймворк для платформ Apple."
+    },
+    "es": {
+      "description": "Framework de UI declarativo para plataformas de Apple."
+    },
+    "de": {
+      "description": "Deklaratives UI‑Framework für Apple‑Plattformen."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "ngrx-signal-store-intro",
+  "title": "NgRx SignalStore: лёгкий стейт на сигналах",
+  "date": "2024-07-09",
+  "updates": [],
+  "anonce": "Минимум бойлерплейта.",
+  "thumbnail": "",
+  "category": "ngrx",
+  "category_list": [
+    "angular",
+    "typescript"
+  ],
+  "icon": "ngrx",
+  "color": "ngrx",
+  "tags": [
+    "ngrx",
+    "signal-store",
+    "state"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "define",
+      "title": "Define store",
+      "level": 2
+    },
+    {
+      "id": "use",
+      "title": "Use in component",
+      "level": 2
+    },
+    {
+      "id": "classic",
+      "title": "When to prefer classic NgRx",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "SignalStore provides state + computed + updaters with minimal boilerplate."
+    },
+    {
+      "type": "h2",
+      "text": "Define store",
+      "id": "define"
+    },
+    {
+      "type": "code",
+      "lang": "typescript",
+      "code": "export const CounterStore = signalStore(withState({count:0}));"
+    },
+    {
+      "type": "h2",
+      "text": "Use in component",
+      "id": "use"
+    },
+    {
+      "type": "p",
+      "text": "Inject the store and read signals in template."
+    },
+    {
+      "type": "h2",
+      "text": "When to prefer classic NgRx",
+      "id": "classic"
+    }
+  ]
+}

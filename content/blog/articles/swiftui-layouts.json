@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Building Layouts in SwiftUI",
+    "slug": "swiftui-layouts",
+    "date": "2025-08-25",
+    "updates": [],
+    "category": "swiftui",
+    "category_list": ["swiftui"],
+    "tags": ["swiftui", "ios", "apple"]
+  },
+  "base": {
+    "anonce": "An article about building layouts in swiftui.",
+    "content": [
+      {
+        "type": "p",
+        "text": "This is a short introduction paragraph."
+      },
+      {
+        "type": "h2",
+        "text": "Main Section",
+        "id": "main-section"
+      },
+      {
+        "type": "p",
+        "text": "Detailed explanation goes here."
+      },
+      {
+        "type": "h3",
+        "text": "Subsection",
+        "id": "subsection"
+      },
+      {
+        "type": "p",
+        "text": "Additional information in subsection."
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Building Layouts in SwiftUI",
+      "anonce": "Короткое описание для Building Layouts in SwiftUI",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Раздел",
+          "id": "razdel"
+        },
+        {
+          "type": "p",
+          "text": "Локализованный параграф…"
+        }
+      ]
+    },
+    "es": {
+      "title": "Building Layouts in SwiftUI",
+      "anonce": "Breve resumen para Building Layouts in SwiftUI",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Sección",
+          "id": "seccion"
+        },
+        {
+          "type": "p",
+          "text": "Párrafo localizado…"
+        }
+      ]
+    },
+    "de": {
+      "title": "Building Layouts in SwiftUI",
+      "anonce": "Kurze Zusammenfassung für Building Layouts in SwiftUI",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Abschnitt",
+          "id": "abschnitt"
+        },
+        {
+          "type": "p",
+          "text": "Lokalisierter Absatz…"
+        }
+      ]
+    }
+  }
+}

@@ -1,35 +1,39 @@
 {
   "metadata": {
     "slug": "moovie",
-    "date": "11.05.2019",
+    "date": "2019-05-11",
     "category": ["Website"],
     "thumbnail": "moovie-thumb"
   },
   "base": {
     "title": "Moovie",
     "description": "Design for online cinemas, where new films and series are shown. In addition, there is a new film and other useful media information.",
-    "links":[{
-      "icon": "behance",
-      "title": "Behance",
-      "url": "https://behance.co"
-    }, {
-      "icon": "globe",
-      "color": "green",
-      "title": "My Designs",
-      "url": "https://md.co"
-    }, {
-      "title": "Twitter",
-      "url": "https://twitter.com",
-      "is_active": false
-    }],
-    "images": ["moovie-1","moovie-2","moovie-3","moovie-4"]
+    "links": [
+      {
+        "icon": "behance",
+        "title": "Behance",
+        "url": "https://behance.co"
+      },
+      {
+        "icon": "globe",
+        "color": "green",
+        "title": "My Designs",
+        "url": "https://md.co"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com",
+        "is_active": false
+      }
+    ],
+    "images": ["moovie-1", "moovie-2", "moovie-3", "moovie-4"]
   },
   "data": {
     "en": {},
     "ru": {
       "title": "Мууви",
       "description": "Дизайн для онлайн кинотеатров, там показывают новые фильмы и сериалы. Помимо этого там имеется новострая лента и другая полезная медиаинформация.",
-      "images": ["moovie-1-ru","moovie-2-ru","moovie-3-ru"],
+      "images": ["moovie-1-ru", "moovie-2-ru", "moovie-3-ru"],
       "links": [
         {
           "title": "Behance",
@@ -40,11 +44,11 @@
     "es": {
       "description": "Diseño para cines online, donde se proyectan nuevas películas y series. Además, incluye una película nueva y otra información multimedia útil.",
       "thumbnail": "moovie-thumb-es",
-      "images": ["moovie-1-es","moovie-2-es","moovie-3-es","moovie-4-es"]
+      "images": ["moovie-1-es", "moovie-2-es", "moovie-3-es", "moovie-4-es"]
     },
     "de": {
       "description": "Design für Online-Kinos, in denen neue Filme und Serien gezeigt werden. Zusätzlich gibt es einen neuen Film und weitere nützliche Medieninformationen.",
-      "images": ["moovie-2-de","moovie-4-de"]
+      "images": ["moovie-2-de", "moovie-4-de"]
     }
   }
 }

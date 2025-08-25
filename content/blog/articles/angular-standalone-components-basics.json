@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "title": "Angular Standalone Components: Basics",
+    "slug": "angular-standalone-components-basics",
+    "date": "2023-03-12",
+    "updates": ["2024-06-15"],
+    "category": "angular",
+    "category_list": ["typescript", "rxjs"],
+    "tags": ["angular", "standalone", "components"]
+  },
+  "base": {
+    "anonce": "How standalone components simplify modules and bootstrapping.",
+    "content": [
+      {
+        "type": "p",
+        "text": "Standalone components remove the need for NgModules in many cases and streamline setup."
+      },
+      {
+        "type": "h2",
+        "text": "What Is a Standalone Component?",
+        "id": "what-is-standalone"
+      },
+      {
+        "type": "p",
+        "text": "It declares its own imports and can be bootstrapped directly."
+      },
+      {
+        "type": "code",
+        "lang": "typescript",
+        "code": "bootstrapApplication(AppComponent, { providers: [] });"
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Tip",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Use 'imports' in @Component to bring pipes and directives."
+          }
+        ]
+      },
+      { "type": "h3", "text": "Routing With Standalone", "id": "routing" },
+      {
+        "type": "p",
+        "text": "Use provideRouter with lazy 'loadComponent' instead of modules."
+      },
+      { "type": "h2", "text": "When to Use", "id": "when-to-use" },
+      {
+        "type": "ul",
+        "items": ["New apps", "Feature islands", "Library examples"]
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Standalone‑компоненты в Angular: основы",
+      "anonce": "Почему standalone упрощают модули и запуск.",
+      "content": [
+        {
+          "type": "h2",
+          "text": "Что такое standalone‑компонент?",
+          "id": "chto-takoe-standalone"
+        },
+        {
+          "type": "p",
+          "text": "Компонент сам объявляет импорты и может быть загружен напрямую."
+        }
+      ]
+    },
+    "es": {},
+    "de": {}
+  }
+}

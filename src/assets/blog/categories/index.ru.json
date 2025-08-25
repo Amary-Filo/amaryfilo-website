@@ -1,0 +1,346 @@
+[
+  {
+    "slug": "angular",
+    "title": "Angular",
+    "description": "Фреймворк на TypeScript для масштабируемых веб‑приложений.",
+    "icon": "angular",
+    "color": "angular",
+    "count": 6
+  },
+  {
+    "slug": "apache",
+    "title": "Apache HTTP Server",
+    "description": "Популярный веб‑сервер с открытым кодом и богатой экосистемой модулей.",
+    "icon": "apache",
+    "color": "apache",
+    "count": 0
+  },
+  {
+    "slug": "api",
+    "title": "API",
+    "description": "Программные интерфейсы для интеграции сервисов.",
+    "icon": "api",
+    "color": "api",
+    "count": 1
+  },
+  {
+    "slug": "backend",
+    "title": "Backend",
+    "description": "Серверная разработка: API, базы данных и инфраструктура.",
+    "icon": "backend",
+    "color": "backend",
+    "count": 0
+  },
+  {
+    "slug": "bitbucket",
+    "title": "Bitbucket",
+    "description": "Хостинг Git‑репозиториев и CI/CD для команд.",
+    "icon": "bitbucket",
+    "color": "bitbucket",
+    "count": 0
+  },
+  {
+    "slug": "bitcoin",
+    "title": "Bitcoin",
+    "description": "Децентрализованная цифровая валюта и первая блокчейн‑сеть.",
+    "icon": "bitcoin",
+    "color": "bitcoin",
+    "count": 1
+  },
+  {
+    "slug": "blockchain",
+    "title": "Blockchain",
+    "description": "Распределённые реестры и платформы смарт‑контрактов.",
+    "icon": "blockchain",
+    "color": "blockchain",
+    "count": 1
+  },
+  {
+    "slug": "coins",
+    "title": "Coins",
+    "description": "Криптовалюты и токены в различных сетях.",
+    "icon": "coins",
+    "color": "coins",
+    "count": 0
+  },
+  {
+    "slug": "css3",
+    "title": "CSS3",
+    "description": "Современные возможности CSS и техники верстки.",
+    "icon": "css3",
+    "color": "css3",
+    "count": 3
+  },
+  {
+    "slug": "customcms",
+    "title": "Custom CMS",
+    "description": "Самописная система управления контентом, адаптированная под нужды проекта.",
+    "icon": "customcms",
+    "color": "customcms",
+    "count": 0
+  },
+  {
+    "slug": "frontend",
+    "title": "Frontend",
+    "description": "Разработка пользовательских интерфейсов для web и мобильных клиентов.",
+    "icon": "frontend",
+    "color": "frontend",
+    "count": 0
+  },
+  {
+    "slug": "git",
+    "title": "Git",
+    "description": "Распределённая система контроля версий для исходного кода.",
+    "icon": "git",
+    "color": "git",
+    "count": 1
+  },
+  {
+    "slug": "gitflow",
+    "title": "Git Flow",
+    "description": "Модель ветвления для управления релизами, фичами и хотфикcами.",
+    "icon": "gitflow",
+    "color": "gitflow",
+    "count": 1
+  },
+  {
+    "slug": "github",
+    "title": "GitHub",
+    "description": "Платформа хостинга кода и совместной разработки с CI Actions.",
+    "icon": "github",
+    "color": "github",
+    "count": 1
+  },
+  {
+    "slug": "graphql",
+    "title": "GraphQL",
+    "description": "Язык запросов и рантайм для API с типизированной схемой.",
+    "icon": "graphql",
+    "color": "graphql",
+    "count": 1
+  },
+  {
+    "slug": "gulp",
+    "title": "Gulp",
+    "description": "Стриминговая система сборки для фронтенд‑процессов.",
+    "icon": "gulp",
+    "color": "gulp",
+    "count": 1
+  },
+  {
+    "slug": "html5",
+    "title": "HTML5",
+    "description": "Стандарт разметки для современных веб‑приложений.",
+    "icon": "html5",
+    "color": "html5",
+    "count": 2
+  },
+  {
+    "slug": "ionic",
+    "title": "Ionic",
+    "description": "Кроссплатформенный UI‑набор для мобильных и веб‑приложений.",
+    "icon": "ionic",
+    "color": "ionic",
+    "count": 0
+  },
+  {
+    "slug": "javascript",
+    "title": "JavaScript",
+    "description": "Язык программирования веба и кроссплатформенных приложений.",
+    "icon": "javascript",
+    "color": "javascript",
+    "count": 1
+  },
+  {
+    "slug": "laravel",
+    "title": "Laravel",
+    "description": "PHP‑фреймворк, ориентированный на элегантность и продуктивность.",
+    "icon": "laravel",
+    "color": "laravel",
+    "count": 1
+  },
+  {
+    "slug": "metamask",
+    "title": "MetaMask",
+    "description": "Популярный браузерный кошелёк для Ethereum и EVM‑сетей.",
+    "icon": "metamask",
+    "color": "metamask",
+    "count": 0
+  },
+  {
+    "slug": "mongodb",
+    "title": "MongoDB",
+    "description": "Документно‑ориентированная NoSQL‑база данных для гибких схем.",
+    "icon": "mongodb",
+    "color": "mongodb",
+    "count": 0
+  },
+  {
+    "slug": "mysql",
+    "title": "MySQL",
+    "description": "Широко используемая реляционная СУБД для веб‑ и корпоративных приложений.",
+    "icon": "mysql",
+    "color": "mysql",
+    "count": 0
+  },
+  {
+    "slug": "nginx",
+    "title": "Nginx",
+    "description": "Высокопроизводительный веб‑сервер и реверс‑прокси для современных приложений.",
+    "icon": "nginx",
+    "color": "nginx",
+    "count": 0
+  },
+  {
+    "slug": "ngrx",
+    "title": "NgRx",
+    "description": "Реактивное управление состоянием для приложений Angular.",
+    "icon": "ngrx",
+    "color": "ngrx",
+    "count": 1
+  },
+  {
+    "slug": "nodejs",
+    "title": "Node.js",
+    "description": "Среда выполнения JavaScript для быстрых серверных приложений.",
+    "icon": "nodejs",
+    "color": "nodejs",
+    "count": 2
+  },
+  {
+    "slug": "npm",
+    "title": "npm",
+    "description": "Менеджер пакетов и реестр для JavaScript.",
+    "icon": "npm",
+    "color": "npm",
+    "count": 1
+  },
+  {
+    "slug": "octobercms",
+    "title": "October CMS",
+    "description": "CMS на базе Laravel для гибких сайтов и админ‑панелей.",
+    "icon": "octobercms",
+    "color": "octobercms",
+    "count": 0
+  },
+  {
+    "slug": "os",
+    "title": "OS",
+    "description": "Операционные системы",
+    "icon": "os",
+    "color": "os",
+    "count": 0
+  },
+  {
+    "slug": "php",
+    "title": "PHP",
+    "description": "Скриптовый язык общего назначения для веб‑бэкенда.",
+    "icon": "php",
+    "color": "php",
+    "count": 0
+  },
+  {
+    "slug": "postgres",
+    "title": "PostgreSQL",
+    "description": "Продвинутая открытая реляционная СУБД с мощным SQL‑функционалом.",
+    "icon": "postgres",
+    "color": "postgres",
+    "count": 0
+  },
+  {
+    "slug": "pug",
+    "title": "Pug",
+    "description": "Шаблонизатор, компилирующийся в HTML.",
+    "icon": "pug",
+    "color": "pug",
+    "count": 2
+  },
+  {
+    "slug": "react",
+    "title": "React",
+    "description": "Библиотека для создания компонентных интерфейсов.",
+    "icon": "react",
+    "color": "react",
+    "count": 2
+  },
+  {
+    "slug": "rest",
+    "title": "REST",
+    "description": "Архитектурный стиль API «Representational State Transfer».",
+    "icon": "rest",
+    "color": "rest",
+    "count": 1
+  },
+  {
+    "slug": "rxjs",
+    "title": "RxJS",
+    "description": "Реактивное программирование на базе Observable для JavaScript.",
+    "icon": "rxjs",
+    "color": "rxjs",
+    "count": 4
+  },
+  {
+    "slug": "sass",
+    "title": "Sass",
+    "description": "CSS‑препроцессор с переменными, миксинами и вложенностью.",
+    "icon": "sass",
+    "color": "sass",
+    "count": 2
+  },
+  {
+    "slug": "swiftui",
+    "title": "SwiftUI",
+    "description": "Декларативный UI‑фреймворк для платформ Apple.",
+    "icon": "swiftui",
+    "color": "swiftui",
+    "count": 1
+  },
+  {
+    "slug": "typescript",
+    "title": "TypeScript",
+    "description": "Типизированное надмножество JavaScript для крупных проектов.",
+    "icon": "typescript",
+    "color": "typescript",
+    "count": 6
+  },
+  {
+    "slug": "vue",
+    "title": "Vue",
+    "description": "Прогрессивный фреймворк для создания пользовательских интерфейсов.",
+    "icon": "vue",
+    "color": "vue",
+    "count": 1
+  },
+  {
+    "slug": "wallet",
+    "title": "Wallet",
+    "description": "Криптокошельки, безопасность и пользовательский опыт.",
+    "icon": "wallet",
+    "color": "wallet",
+    "count": 0
+  },
+  {
+    "slug": "walletconnect",
+    "title": "WalletConnect",
+    "description": "Протокол безопасного подключения кошельков к dApp.",
+    "icon": "walletconnect",
+    "color": "walletconnect",
+    "count": 0
+  },
+  {
+    "slug": "web3js",
+    "title": "Web3.js",
+    "description": "JS‑библиотека для работы с узлами Ethereum.",
+    "icon": "web3js",
+    "color": "web3js",
+    "count": 0
+  },
+  {
+    "slug": "wintercms",
+    "title": "Winter CMS",
+    "description": "Современный форк October CMS с долгосрочной поддержкой и улучшениями.",
+    "icon": "wintercms",
+    "color": "wintercms",
+    "count": 0
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "slug": "apache",
+  "title": "Apache HTTP Server",
+  "description": "Servidor web de código abierto muy popular con un rico ecosistema de módulos.",
+  "icon": "apache",
+  "color": "apache",
+  "count": 0
+}

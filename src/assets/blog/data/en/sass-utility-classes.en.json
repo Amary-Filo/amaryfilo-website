@@ -1,0 +1,69 @@
+{
+  "slug": "sass-utility-classes",
+  "title": "Sass utility classes you’ll actually use",
+  "date": "2020-12-15",
+  "updates": [
+    "2023-09-10"
+  ],
+  "anonce": "Tiny helpers for spacing, flex and text.",
+  "thumbnail": "",
+  "category": "sass",
+  "category_list": [
+    "css3"
+  ],
+  "icon": "sass",
+  "color": "sass",
+  "tags": [
+    "sass",
+    "utilities"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "spacing",
+      "title": "Spacing",
+      "level": 2
+    },
+    {
+      "id": "flex",
+      "title": "Flex",
+      "level": 2
+    },
+    {
+      "id": "typo",
+      "title": "Typography",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "p",
+      "text": "A small set beats huge frameworks."
+    },
+    {
+      "type": "h2",
+      "text": "Spacing",
+      "id": "spacing"
+    },
+    {
+      "type": "code",
+      "lang": "scss",
+      "code": ".m-1{margin:.25rem}.p-1{padding:.25rem}"
+    },
+    {
+      "type": "h2",
+      "text": "Flex",
+      "id": "flex"
+    },
+    {
+      "type": "code",
+      "lang": "scss",
+      "code": ".fl{display:flex}.fl-cc{align-items:center;justify-content:center}"
+    },
+    {
+      "type": "h2",
+      "text": "Typography",
+      "id": "typo"
+    }
+  ]
+}

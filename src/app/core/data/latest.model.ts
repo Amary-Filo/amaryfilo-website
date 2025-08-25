@@ -12,9 +12,10 @@ export interface LatestBase {
 
 // Blog
 export interface BlogLatest extends LatestBase {
-  icon: string;
-  color?: string;
-  date: string;
+  updates: string[];
+  category: string;
+  category_list: string[];
+  tags: string[];
 }
 
 // Projects

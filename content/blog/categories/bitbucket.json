@@ -1,0 +1,20 @@
+{
+  "slug": "bitbucket",
+  "base": {
+    "title": "Bitbucket",
+    "description": "Hosted Git repositories and CI/CD for teams.",
+    "icon": "bitbucket",
+    "color": "bitbucket"
+  },
+  "data": {
+    "ru": {
+      "description": "Хостинг Git‑репозиториев и CI/CD для команд."
+    },
+    "es": {
+      "description": "Repositorios Git alojados y CI/CD para equipos."
+    },
+    "de": {
+      "description": "Gehostete Git‑Repos und CI/CD für Teams."
+    }
+  }
+}

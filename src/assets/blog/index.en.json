@@ -1,0 +1,534 @@
+[
+  {
+    "slug": "bitcoin-intro",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Introduction to Bitcoin",
+    "anonce": "An article about introduction to bitcoin.",
+    "thumbnail": "",
+    "category": "bitcoin",
+    "category_list": [
+      "bitcoin"
+    ],
+    "icon": "bitcoin",
+    "color": "bitcoin",
+    "tags": [
+      "bitcoin",
+      "crypto"
+    ]
+  },
+  {
+    "slug": "blockchain-basics",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Blockchain Basics Explained",
+    "anonce": "An article about blockchain basics explained.",
+    "thumbnail": "",
+    "category": "blockchain",
+    "category_list": [
+      "blockchain"
+    ],
+    "icon": "blockchain",
+    "color": "blockchain",
+    "tags": [
+      "blockchain",
+      "crypto"
+    ]
+  },
+  {
+    "slug": "css-grid-layout",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Understanding CSS Grid Layout",
+    "anonce": "An article about understanding css grid layout.",
+    "thumbnail": "",
+    "category": "css3",
+    "category_list": [
+      "css3"
+    ],
+    "icon": "css3",
+    "color": "css3",
+    "tags": [
+      "css3",
+      "frontend",
+      "design"
+    ]
+  },
+  {
+    "slug": "getting-started-angular",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Getting Started with Angular",
+    "anonce": "An article about getting started with angular.",
+    "thumbnail": "",
+    "category": "angular",
+    "category_list": [
+      "angular"
+    ],
+    "icon": "angular",
+    "color": "angular",
+    "tags": [
+      "angular",
+      "frontend",
+      "typescript"
+    ]
+  },
+  {
+    "slug": "gitflow-workflow",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Understanding Gitflow Workflow",
+    "anonce": "An article about understanding gitflow workflow.",
+    "thumbnail": "",
+    "category": "gitflow",
+    "category_list": [
+      "gitflow"
+    ],
+    "icon": "gitflow",
+    "color": "gitflow",
+    "tags": [
+      "git",
+      "workflow"
+    ]
+  },
+  {
+    "slug": "graphql-vs-rest",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "GraphQL vs REST: Key Differences",
+    "anonce": "An article about graphql vs rest: key differences.",
+    "thumbnail": "",
+    "category": "graphql",
+    "category_list": [
+      "graphql"
+    ],
+    "icon": "graphql",
+    "color": "graphql",
+    "tags": [
+      "graphql",
+      "rest",
+      "api"
+    ]
+  },
+  {
+    "slug": "laravel-setup",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Setting up Laravel Project",
+    "anonce": "An article about setting up laravel project.",
+    "thumbnail": "",
+    "category": "laravel",
+    "category_list": [
+      "laravel"
+    ],
+    "icon": "laravel",
+    "color": "laravel",
+    "tags": [
+      "php",
+      "laravel",
+      "backend"
+    ]
+  },
+  {
+    "slug": "mastering-typescript",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Mastering TypeScript Basics",
+    "anonce": "An article about mastering typescript basics.",
+    "thumbnail": "",
+    "category": "typescript",
+    "category_list": [
+      "typescript"
+    ],
+    "icon": "typescript",
+    "color": "typescript",
+    "tags": [
+      "typescript",
+      "frontend"
+    ]
+  },
+  {
+    "slug": "nodejs-api-server",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Building a REST API with Node.js",
+    "anonce": "An article about building a rest api with node.js.",
+    "thumbnail": "",
+    "category": "nodejs",
+    "category_list": [
+      "nodejs"
+    ],
+    "icon": "nodejs",
+    "color": "nodejs",
+    "tags": [
+      "nodejs",
+      "backend",
+      "api"
+    ]
+  },
+  {
+    "slug": "pug-template-engine",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Using Pug Template Engine",
+    "anonce": "An article about using pug template engine.",
+    "thumbnail": "",
+    "category": "pug",
+    "category_list": [
+      "pug"
+    ],
+    "icon": "pug",
+    "color": "pug",
+    "tags": [
+      "pug",
+      "templates",
+      "html"
+    ]
+  },
+  {
+    "slug": "react-hooks-guide",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Beginner's Guide to React Hooks",
+    "anonce": "An article about beginner's guide to react hooks.",
+    "thumbnail": "",
+    "category": "react",
+    "category_list": [
+      "react"
+    ],
+    "icon": "react",
+    "color": "react",
+    "tags": [
+      "react",
+      "frontend"
+    ]
+  },
+  {
+    "slug": "rxjs-streams",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Working with RxJS Streams",
+    "anonce": "An article about working with rxjs streams.",
+    "thumbnail": "",
+    "category": "rxjs",
+    "category_list": [
+      "rxjs"
+    ],
+    "icon": "rxjs",
+    "color": "rxjs",
+    "tags": [
+      "rxjs",
+      "angular",
+      "observables"
+    ]
+  },
+  {
+    "slug": "sass-tips",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Sass Tips and Tricks",
+    "anonce": "An article about sass tips and tricks.",
+    "thumbnail": "",
+    "category": "sass",
+    "category_list": [
+      "sass"
+    ],
+    "icon": "sass",
+    "color": "sass",
+    "tags": [
+      "sass",
+      "css",
+      "frontend"
+    ]
+  },
+  {
+    "slug": "swiftui-layouts",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Building Layouts in SwiftUI",
+    "anonce": "An article about building layouts in swiftui.",
+    "thumbnail": "",
+    "category": "swiftui",
+    "category_list": [
+      "swiftui"
+    ],
+    "icon": "swiftui",
+    "color": "swiftui",
+    "tags": [
+      "swiftui",
+      "ios",
+      "apple"
+    ]
+  },
+  {
+    "slug": "vue3-introduction",
+    "date": "2025-08-25",
+    "updates": [],
+    "title": "Introduction to Vue 3",
+    "anonce": "An article about introduction to vue 3.",
+    "thumbnail": "",
+    "category": "vue",
+    "category_list": [
+      "vue"
+    ],
+    "icon": "vue",
+    "color": "vue",
+    "tags": [
+      "vue",
+      "frontend"
+    ]
+  },
+  {
+    "slug": "nodejs-fetch-vs-axios",
+    "date": "2024-10-12",
+    "updates": [],
+    "title": "Node.js: fetch vs axios in 2025",
+    "anonce": "Built‑in fetch is often enough now.",
+    "thumbnail": "",
+    "category": "nodejs",
+    "category_list": [
+      "api",
+      "rest"
+    ],
+    "icon": "nodejs",
+    "color": "nodejs",
+    "tags": [
+      "nodejs",
+      "fetch",
+      "axios",
+      "http"
+    ]
+  },
+  {
+    "slug": "how-to-install-homebrew",
+    "date": "2021-07-15",
+    "updates": [
+      "2024-08-01"
+    ],
+    "title": "How to install Homebrew on MacOS",
+    "anonce": "Short summary…",
+    "thumbnail": "",
+    "category": "angular",
+    "category_list": [
+      "angular",
+      "tools"
+    ],
+    "icon": "angular",
+    "color": "angular",
+    "tags": [
+      "macos",
+      "homebrew",
+      "software",
+      "tools"
+    ]
+  },
+  {
+    "slug": "ngrx-signal-store-intro",
+    "date": "2024-07-09",
+    "updates": [],
+    "title": "NgRx SignalStore: tiny state with signals",
+    "anonce": "Use NgRx SignalStore for lightweight state.",
+    "thumbnail": "",
+    "category": "ngrx",
+    "category_list": [
+      "angular",
+      "typescript"
+    ],
+    "icon": "ngrx",
+    "color": "ngrx",
+    "tags": [
+      "ngrx",
+      "signal-store",
+      "state"
+    ]
+  },
+  {
+    "slug": "angular-standalone-components-basics",
+    "date": "2023-03-12",
+    "updates": [
+      "2024-06-15"
+    ],
+    "title": "Angular Standalone Components: Basics",
+    "anonce": "How standalone components simplify modules and bootstrapping.",
+    "thumbnail": "",
+    "category": "angular",
+    "category_list": [
+      "typescript",
+      "rxjs"
+    ],
+    "icon": "angular",
+    "color": "angular",
+    "tags": [
+      "angular",
+      "standalone",
+      "components"
+    ]
+  },
+  {
+    "slug": "typescript-satisfies-for-json-schemas",
+    "date": "2024-05-02",
+    "updates": [],
+    "title": "TypeScript `satisfies` for JSON content schemas",
+    "anonce": "Validate JSON shape at compile time.",
+    "thumbnail": "",
+    "category": "typescript",
+    "category_list": [
+      "json",
+      "tools"
+    ],
+    "icon": "typescript",
+    "color": "typescript",
+    "tags": [
+      "typescript",
+      "satisfies",
+      "schema"
+    ]
+  },
+  {
+    "slug": "css-grid-autofill-gallery",
+    "date": "2022-06-22",
+    "updates": [
+      "2024-04-02"
+    ],
+    "title": "CSS Grid: autofill gallery layout",
+    "anonce": "A responsive gallery with one line of CSS.",
+    "thumbnail": "",
+    "category": "css3",
+    "category_list": [
+      "html5"
+    ],
+    "icon": "css3",
+    "color": "css3",
+    "tags": [
+      "css",
+      "grid",
+      "layout"
+    ]
+  },
+  {
+    "slug": "rxjs-to-signal-patterns",
+    "date": "2024-03-05",
+    "updates": [],
+    "title": "RxJS → Signal patterns in Angular",
+    "anonce": "Bridge Observables to Signals safely.",
+    "thumbnail": "",
+    "category": "rxjs",
+    "category_list": [
+      "angular",
+      "typescript"
+    ],
+    "icon": "rxjs",
+    "color": "rxjs",
+    "tags": [
+      "rxjs",
+      "signals",
+      "angular"
+    ]
+  },
+  {
+    "slug": "react-server-components-notes",
+    "date": "2023-11-18",
+    "updates": [
+      "2024-02-01"
+    ],
+    "title": "React Server Components: notes for Angular devs",
+    "anonce": "RSC vs SSR vs SPA in 60 seconds.",
+    "thumbnail": "",
+    "category": "react",
+    "category_list": [
+      "javascript"
+    ],
+    "icon": "react",
+    "color": "react",
+    "tags": [
+      "react",
+      "rsc",
+      "ssr"
+    ]
+  },
+  {
+    "slug": "angular-standalone-components-quickstart",
+    "date": "2023-02-10",
+    "updates": [
+      "2024-01-12"
+    ],
+    "title": "Angular Standalone Components: Quickstart",
+    "anonce": "Start using Angular standalone components without NgModules.",
+    "thumbnail": "",
+    "category": "angular",
+    "category_list": [
+      "typescript",
+      "rxjs"
+    ],
+    "icon": "angular",
+    "color": "angular",
+    "tags": [
+      "angular",
+      "standalone",
+      "components",
+      "signals"
+    ]
+  },
+  {
+    "slug": "sass-utility-classes",
+    "date": "2020-12-15",
+    "updates": [
+      "2023-09-10"
+    ],
+    "title": "Sass utility classes you’ll actually use",
+    "anonce": "Tiny helpers for spacing, flex and text.",
+    "thumbnail": "",
+    "category": "sass",
+    "category_list": [
+      "css3"
+    ],
+    "icon": "sass",
+    "color": "sass",
+    "tags": [
+      "sass",
+      "utilities"
+    ]
+  },
+  {
+    "slug": "pug-templating-snippets",
+    "date": "2021-09-01",
+    "updates": [],
+    "title": "Pug templating: handy snippets",
+    "anonce": "Short mixins that save time.",
+    "thumbnail": "",
+    "category": "pug",
+    "category_list": [
+      "html5",
+      "gulp"
+    ],
+    "icon": "pug",
+    "color": "pug",
+    "tags": [
+      "pug",
+      "mixins",
+      "templates"
+    ]
+  },
+  {
+    "slug": "npm-semver-and-release-flow",
+    "date": "2019-06-26",
+    "updates": [
+      "2021-06-26"
+    ],
+    "title": "NPM SemVer & Release Flow",
+    "anonce": "Keep versions meaningful.",
+    "thumbnail": "",
+    "category": "npm",
+    "category_list": [
+      "git",
+      "github"
+    ],
+    "icon": "npm",
+    "color": "npm",
+    "tags": [
+      "npm",
+      "semver",
+      "release"
+    ]
+  }
+]

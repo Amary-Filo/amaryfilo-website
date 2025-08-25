@@ -1,0 +1,20 @@
+{
+  "slug": "mongodb",
+  "base": {
+    "title": "MongoDB",
+    "description": "Document‑oriented NoSQL database for flexible schemas.",
+    "icon": "mongodb",
+    "color": "mongodb"
+  },
+  "data": {
+    "ru": {
+      "description": "Документно‑ориентированная NoSQL‑база данных для гибких схем."
+    },
+    "es": {
+      "description": "Base de datos NoSQL orientada a documentos con esquemas flexibles."
+    },
+    "de": {
+      "description": "Dokumentenorientierte NoSQL‑Datenbank für flexible Schemata."
+    }
+  }
+}
