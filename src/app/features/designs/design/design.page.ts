@@ -10,6 +10,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { DesignDetail } from '../designs.model';
 import { SectionItemResult } from '@core/data/section.api';
 import { getImagePath } from '@helpers/index';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 
 @Component({
   selector: 'app-design-page',
@@ -18,6 +19,7 @@ import { getImagePath } from '@helpers/index';
     ShareComponent,
     SubscribeComponent,
     CommonModule,
+    TranslatePipe,
   ],
   templateUrl: './design.page.html',
   styleUrl: './design.page.scss',

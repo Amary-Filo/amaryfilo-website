@@ -1,23 +1,24 @@
 <section class="sc design">
   <div class="container">
     <div class="head-section fl-bc fl-dc hs-part">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-design">Design</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-design">
+        {{ "page.home.design.title" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        I enjoy developing products and sharing my experiences. Perhaps you can
-        find useful information.
+        {{ "page.home.design.description" | t }}
       </p>
       <button
         class="cl-g-design btn g-bg w-base g-a"
         [routerLinkWithLang]="['designs']"
       >
-        View designs
+        {{ "page.home.design.button" | t }}
       </button>
     </div>
 
     @for (item of designs(); track $index) {
     <a
       class="cl-design cd cd-ds bd-h btn-anm"
-      [title]="'Open design ' + item.title"
+      [title]="'page.home.design.open' | t : { title: item.title }"
       [routerLinkWithLang]="['designs', item.slug]"
     >
       <picture class="img fl fl-dc">
@@ -25,10 +26,13 @@
         <img
           loading="lazy"
           [src]="imagePath(item) + '.png'"
-          [alt]="'Thumbnail of Amary Filo ' + item.title + ' design'"
+          [alt]="'page.home.design.description' | t : { title: item.title }"
         />
       </picture>
-      <h3 class="btn fill t-cw" [title]="'Open design ' + item.title">
+      <h3
+        class="btn fill t-cw"
+        [title]="'page.home.design.open' | t : { title: item.title }"
+      >
         {{ item.title }}
       </h3>
     </a>

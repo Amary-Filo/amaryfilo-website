@@ -6,6 +6,7 @@ import { ProjectIndexItem } from './projects.model';
 import { FormOrderComponent, SubscribeComponent } from '@shared/components';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 
 @Component({
   selector: 'app-projects-page',
@@ -14,6 +15,7 @@ import { CommonModule } from '@angular/common';
     SubscribeComponent,
     RouterLinkWithLangDirective,
     CommonModule,
+    TranslatePipe,
   ],
   templateUrl: './projects.page.html',
   styleUrl: './projects.page.scss',

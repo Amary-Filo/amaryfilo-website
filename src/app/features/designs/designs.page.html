@@ -1,16 +1,20 @@
 <main class="pg-designs">
   <section class="sc head-section pg-hd">
     <div class="container info fl-cc fl-dc t-c">
-      <h1 class="title ls-2 t-gr ls t-u cl-g-design">Designs</h1>
+      <h1 class="title ls-2 t-gr ls t-u cl-g-design">
+        {{ "page.designs.title" | t }}
+      </h1>
       <p class="text op-7 ls fw-b">
-        All designs from landing pages to mobile created by me.
+        {{ "page.designs.description" | t }}
       </p>
     </div>
   </section>
 
   <section class="sc list">
     <div class="container">
-      <span class="title fz-nm op-7">What are you looking for?</span>
+      <span class="title fz-nm op-7">{{
+        "page.designs.filter.title" | t
+      }}</span>
       <div class="fl fl-w lists">
         @for (item of filters(); track item) {
         <button
@@ -18,7 +22,7 @@
           class="btn m"
           [class.active]="selectedFilter() === item"
           (click)="filterData(item)"
-          [title]="item"
+          [title]="'page.designs.filter.select' | t : { title: item }"
         >
           {{ item }}
         </button>
@@ -32,7 +36,7 @@
       @for (design of filteredItems(); track design.slug) {
       <a
         class="cl-design cd cd-ds bd-h btn-anm"
-        [title]="'Open design ' + design.title"
+        [title]="'page.designs.item.title' | t : { title: design.title }"
         [routerLinkWithLang]="['designs', design.slug]"
       >
         <picture class="img fl fl-dc">
@@ -40,10 +44,13 @@
           <img
             loading="lazy"
             [src]="imagePath(design) + '.png'"
-            [alt]="'Thumbnail of Amary Filo ' + design.title + ' design'"
+            [alt]="'page.designs.item.thumbnail' | t : { title: design.title }"
           />
         </picture>
-        <h3 class="btn fill t-cw" [title]="'Open design ' + design.title">
+        <h3
+          class="btn fill t-cw"
+          [title]="'page.designs.item.title' | t : { title: design.title }"
+        >
           {{ design.title }}
         </h3>
       </a>

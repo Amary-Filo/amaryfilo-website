@@ -1,11 +1,12 @@
 import { Component, input } from '@angular/core';
 import { DesignsLatest } from '@core/data/latest.model';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
 import { getImagePath } from '@helpers/index';
 
 @Component({
   selector: 'app-designs',
-  imports: [RouterLinkWithLangDirective],
+  imports: [RouterLinkWithLangDirective, TranslatePipe],
   templateUrl: './designs.component.html',
   styleUrl: './designs.component.scss',
   standalone: true,

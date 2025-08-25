@@ -10,12 +10,14 @@
           <img
             loading="lazy"
             [src]="imagePath(design()?.thumbnail) + '.png'"
-            [alt]="'Thumbnail of Amary Filo ' + design()?.title + ' design'"
+            [alt]="'page.design.thumbnail' | t : { title: design()?.title }"
           />
         </picture>
       </div>
       <div class="info fl-cc fl-dc">
-        <span class="ls-2 t-gr cl-g-design fz-xxl fw-800 t-u">Design</span>
+        <span class="ls-2 t-gr cl-g-design fz-xxl fw-800 t-u">
+          {{ "page.design.title" | t }}
+        </span>
         <h1 class="title ls fw-800 fz-xxl">
           {{ design()?.title }}
         </h1>
@@ -41,21 +43,15 @@
       </div>
 
       @for (item of design()?.images; track $index) {
-      <div
-        class="cl-gallery cd cd-ds bd-h btn-anm"
-        title="Open design Minimal landing page for studios"
-      >
+      <div class="cl-gallery cd cd-ds bd-h btn-anm">
         <picture class="img fl fl-dc">
           <source type="image/webp" [srcset]="imagePath(item) + '.webp'" />
           <img
             loading="lazy"
             [src]="imagePath(item) + '.png'"
             [alt]="
-              'Thumbnail ' +
-              ($index + 1) +
-              ' of Amary Filo ' +
-              design()?.title +
-              ' design'
+              'page.design.images.thumbnail'
+                | t : { index: $index + 1, title: design()?.title }
             "
           />
         </picture>
@@ -68,9 +64,11 @@
   <section class="sc links">
     <div class="container fl-cc fl-dc">
       <div class="head-section fl-cc fl-dc">
-        <h2 class="title ls-2 t-gr ls t-u cl-g-links">Links</h2>
+        <h2 class="title ls-2 t-gr ls t-u cl-g-links">
+          {{ "page.design.links.title" | t }}
+        </h2>
         <p class="text op-7 ls fw-b">
-          Find this design in Full resolution by click on links below 🥡
+          {{ "page.design.links.description" | t }}
         </p>
       </div>
 
@@ -79,7 +77,7 @@
         <a
           [class]="'btn m ic-' + item.icon"
           [href]="item.url"
-          [title]="'Open in ' + item.title"
+          [title]="'page.design.links.button' | t : { title: item.title }"
           rel="nofollow norefferer"
           target="_blank"
         ></a>

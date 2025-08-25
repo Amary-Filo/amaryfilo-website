@@ -6,7 +6,7 @@
         <a
           class="link"
           [routerLinkWithLang]="['projects', project.slug]"
-          [title]="'Open project ' + project.title"
+          [title]="'page.home.projects.open' | t : { title: project.title }"
         >
           <h2 class="title">{{ project.title }}</h2>
         </a>
@@ -16,25 +16,26 @@
         <a
           class="btn fill t-cw"
           [routerLinkWithLang]="['projects', project.slug]"
-          [title]="'Open project ' + project.title"
+          [title]="'page.home.projects.open' | t : { title: project.title }"
         >
-          View
+          {{ "page.home.projects.open.title" | t }}
         </a>
       </div>
       }
     </div>
     <div class="head-section fl-bc fl-dc hs-part">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-project">Projects</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-project">
+        {{ "page.home.projects.title" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        Recent completed projects in the areas of blockchain, frontend and
-        backend.
+        {{ "page.home.projects.description" | t }}
       </p>
       <a
         class="cl-g-project btn g-bg w-base g-a"
         [routerLinkWithLang]="['projects']"
-        title="Open all projects"
+        [title]="'page.home.projects.button.title' | t"
       >
-        View projects
+        {{ "page.home.projects.button" | t }}
       </a>
     </div>
   </div>

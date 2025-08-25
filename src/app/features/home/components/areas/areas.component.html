@@ -1,64 +1,62 @@
 <div class="container areas">
   <div class="areas-wrap">
     <div class="container head-section fl-cc fl-dc">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-development">Areas</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-development">
+        {{ "page.home.areas.title" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        Find more informations about my areas of work.
+        {{ "page.home.areas.description" | t }}
       </p>
     </div>
     <div class="areas-cards">
       <div class="area cd cd-area btn-anm bd-h cl-frontend">
-        <h3 class="title ls ic fl-cb ic-frontend">Frontend</h3>
+        <h3 class="title ls ic fl-cb ic-frontend">
+          {{ "page.home.areas.one.title" | t }}
+        </h3>
         <p class="text op-7">
-          Convenient interfaces, integrations, architecture.
+          {{ "page.home.areas.one.description" | t }}
         </p>
         <a
           class="btn fill t-cw"
-          href="#"
-          rel="nofollow norefferer"
-          target="blank"
-          title="Open page about frontend"
-          >Open</a
+          [title]="'page.home.area.one.button' | t : { title: 'frontend' }"
+          >{{ "page.home.area.one.button" | t }}</a
         >
       </div>
       <div class="area cd cd-area btn-anm bd-h cl-blockchain">
-        <h3 class="title ls ic fl-cb ic-blockchain">Blockchain</h3>
-        <p class="text op-7">Tokens, smart contracts, connect user accounts.</p>
+        <h3 class="title ls ic fl-cb ic-blockchain">
+          {{ "page.home.areas.two.title" | t }}
+        </h3>
+        <p class="text op-7">{{ "page.home.areas.two.description" | t }}</p>
         <a
           class="btn fill t-cw"
-          href="#"
-          rel="nofollow norefferer"
-          target="blank"
-          title="Open page about blockchain"
-          >View</a
+          [title]="'page.home.area.one.button' | t : { title: 'blockchain' }"
+          >{{ "page.home.area.one.button" | t }}</a
         >
       </div>
       <div class="area cd cd-area btn-anm bd-h cl-backend">
-        <h3 class="title ls ic fl-cb ic-backend">Backend</h3>
+        <h3 class="title ls ic fl-cb ic-backend">
+          {{ "page.home.areas.three.title" | t }}
+        </h3>
         <p class="text op-7">
-          API, architecture, services, integrations and databases.
+          {{ "page.home.areas.three.description" | t }}
         </p>
         <a
           class="btn fill t-cw"
-          href="#"
-          rel="nofollow norefferer"
-          target="blank"
-          title="Open page about backend"
-          >More</a
+          [title]="'page.home.area.one.button' | t : { title: 'backend' }"
+          >{{ "page.home.area.one.button" | t }}</a
         >
       </div>
       <div class="area cd cd-area btn-anm bd-h cl-design">
-        <h3 class="title ls ic fl-cb ic-design">Design</h3>
+        <h3 class="title ls ic fl-cb ic-design">
+          {{ "page.home.areas.four.title" | t }}
+        </h3>
         <p class="text op-7">
-          UI/UX, landings, mobile, e-commerce and web pages.
+          {{ "page.home.areas.four.description" | t }}
         </p>
         <a
           class="btn fill t-cw"
-          href="#"
-          rel="nofollow norefferer"
-          target="blank"
-          title="Open page about design"
-          >Learn</a
+          [title]="'page.home.area.one.button' | t : { title: 'design' }"
+          >{{ "page.home.area.one.button" | t }}</a
         >
       </div>
     </div>

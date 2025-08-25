@@ -1,16 +1,18 @@
 <main class="pg-projects">
   <section class="sc head-section pg-hd">
     <div class="container info fl-cc fl-dc t-c">
-      <h1 class="title ls-2 t-gr ls t-u cl-g-project">Projects</h1>
+      <h1 class="title ls-2 t-gr ls t-u cl-g-project">
+        {{ "page.projects.title" | t }}
+      </h1>
       <p class="text op-7 ls fw-b">
-        All projects created by me or in which I participated.
+        {{ "page.projects.description" | t }}
       </p>
     </div>
   </section>
 
   <section class="sc list">
     <div class="container">
-      <span class="title fz-nm op-7">What do you want?</span>
+      <span class="title fz-nm op-7">{{ "page.projects.filter" | t }}</span>
       <div class="fl fl-w lists">
         @for (item of filters(); track item) {
         <button
@@ -37,7 +39,7 @@
         <a
           class="link"
           [routerLinkWithLang]="['projects', project.slug]"
-          [title]="'Open project ' + project.title"
+          [title]="'page.projects.button.title' | t : { title: project.title }"
         >
           <h2 class="title">{{ project.title }}</h2>
         </a>
@@ -52,9 +54,9 @@
         <a
           class="btn fill t-cw"
           [routerLinkWithLang]="['projects', project.slug]"
-          [title]="'Open project ' + project.title"
+          [title]="'page.projects.button.title' | t : { title: project.title }"
         >
-          View
+          {{ "page.projects.button" | t }}
         </a>
       </div>
 

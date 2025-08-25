@@ -2,7 +2,6 @@
 <main class="pg-article">
   <section class="sc article-content">
     <div class="container">
-      <!-- Aside: меню -->
       <aside class="aside">
         <div class="cd-st adv"></div>
         <nav
@@ -12,7 +11,9 @@
           id="article-nav"
         >
           <span class="article-nav-open ic-menu op-7"></span>
-          <span class="fw-800 t-u ls-2 title-head">Article content</span>
+          <span class="fw-800 t-u ls-2 title-head">{{
+            "page.article.menu" | t
+          }}</span>
 
           @for (g of menuGrouped(); track g.h2.id) {
           <a class="title" [href]="'#' + g.h2.id">{{ g.h2.title }}</a>

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-// import { TranslatePipe } from '@core/i18n/translate.pipe';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 import { FormOrderComponent, SubscribeComponent } from '@shared/components';
 import { SectionResult } from '@core/data/section.api';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
@@ -14,7 +14,7 @@ import { getImagePath } from '@helpers/index';
   standalone: true,
   imports: [
     CommonModule,
-    // TranslatePipe,
+    TranslatePipe,
     FormOrderComponent,
     SubscribeComponent,
     RouterLinkWithLangDirective,

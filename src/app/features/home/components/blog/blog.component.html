@@ -1,10 +1,11 @@
 <section class="sc blog">
   <div class="container">
     <div class="head-section fl fl-dc hs-part">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-blog">Blog</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-blog">
+        {{ "page.home.blog.title" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        I enjoy developing products and sharing my experiences. Perhaps you can
-        find useful information.
+        {{ "page.home.blog.description" | t }}
       </p>
     </div>
 
@@ -33,7 +34,7 @@
       class="btn-pad btn g-bg w-100 g-a title fz-md cl-g-blog"
       routerLinkWithLang="blog"
     >
-      View articles
+      {{ "page.home.blog.button" | t }}
     </a>
   </div>
 </section>
