@@ -1,5 +1,5 @@
 <div class="cd item fl fl-dc" [ngClass]="{ 'cl-warn': isLast() }">
-  <h3 class="title fz-md ls fl-cb" [attr.data-date]="item()?.date_start">
+  <h3 class="title fz-md ls fl-cb" [attr.data-date]="item()?.date_start | date">
     {{ item()?.title }}
   </h3>
   <div class="fl-cb fl-w">
