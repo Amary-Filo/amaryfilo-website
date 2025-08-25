@@ -1,4 +1,5 @@
 import {
+  ChangeDetectorRef,
   Directive,
   HostBinding,
   HostListener,
@@ -24,6 +25,7 @@ export class RouterLinkWithLangDirective implements OnChanges, OnDestroy {
   private router = inject(Router);
   private serializer = inject(UrlSerializer);
   private location = inject(Location);
+  private cdr = inject(ChangeDetectorRef);
 
   @Input('routerLinkWithLang') link!: Cmds;
   @Input() queryParams?: Record<string, any>;
@@ -34,7 +36,6 @@ export class RouterLinkWithLangDirective implements OnChanges, OnDestroy {
   private sub: Subscription;
 
   constructor() {
-    // language or current url could change after init
     this.sub = this.router.events
       .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
       .subscribe(() => this.updateHref());
@@ -52,7 +53,6 @@ export class RouterLinkWithLangDirective implements OnChanges, OnDestroy {
 
   @HostListener('click', ['$event'])
   onClick(ev: MouseEvent) {
-    // allow new tab / window / copy link
     if (ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || ev.button !== 0)
       return;
     ev.preventDefault();
@@ -71,9 +71,17 @@ export class RouterLinkWithLangDirective implements OnChanges, OnDestroy {
         fragment: this.fragment,
       });
       const serialized = this.serializer.serialize(tree);
-      this.href = this.location.prepareExternalUrl(serialized);
+      const prepared = this.location.prepareExternalUrl(serialized);
+
+      setTimeout(() => {
+        this.href = prepared;
+        this.cdr.markForCheck();
+      }, 0);
     } catch {
-      this.href = undefined;
+      setTimeout(() => {
+        this.href = undefined;
+        this.cdr.markForCheck();
+      }, 0);
     }
   }
 

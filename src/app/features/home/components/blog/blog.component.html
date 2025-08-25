@@ -11,6 +11,7 @@
     @for (item of latestPost(); track item.slug) {
     <article [class]="$first ? 'landscape' : ''">
       <a
+        [routerLinkWithLang]="['blog', item.slug]"
         [class]="'cd cd-atc fl fl-dc cl-' + (item.color || item.icon)"
         [attr.title]="'blog.article.title' | t : { title: item.title }"
       >

@@ -45,6 +45,11 @@ header {
       @include mx.b(desktop) {
         margin-left: mx.rem(30);
       }
+
+      @include mx.b(800) {
+        margin-left: mx.rem(10);
+      }
+
       @include mx.b(tablet) {
         flex-direction: column;
         margin-left: mx.rem(0);
@@ -62,6 +67,10 @@ header {
           margin-right: 0;
         }
 
+        @include mx.b(desktop) {
+          margin: mx.rem(0) mx.rem(4);
+        }
+
         @include mx.b(tablet) {
           min-width: mx.rem(150);
           margin: 0 0 mx.rem(10) 0;
@@ -72,8 +81,11 @@ header {
     }
 
     &-btns {
+      --btn-padding-icon: 5px;
       justify-content: end;
+
       @include mx.b(tablet) {
+        --btn-padding-icon: initial;
         justify-content: space-evenly;
       }
 

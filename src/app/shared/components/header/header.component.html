@@ -59,7 +59,13 @@
       </nav>
       <div class="fl header-btns">
         <div class="fl">
-          <span class="lang m btn ic-globe t">EN </span>
+          <button
+            class="lang m btn ic-globe t"
+            type="button"
+            (click)="openLangModal()"
+          >
+            {{ currentLangName() }}
+          </button>
           <span
             [class]="
               'theme-color m btn ic-' +
@@ -76,3 +82,39 @@
     </div>
   </div>
 </header>
+
+<!-- Простая модалка выбора языка -->
+@if (langModalOpen()) {
+<div class="modal fl-cc fl-dc" id="modal-lang">
+  <div (click)="closeLangModal()" class="backdrop"></div>
+  <div class="modal-wrap">
+    <button
+      (click)="closeLangModal()"
+      aria-label="Close"
+      class="modal-close btn ic-cancel-1 link-hover"
+    ></button>
+    <div class="modal-top">
+      <h2 class="title fz-xxl cl-amaryfilo t-gr">Choose language</h2>
+      <p class="text op-6">
+        Website have different languages that must help you to understand
+        content in your native language for best experience.
+      </p>
+      <div class="clearfix"></div>
+    </div>
+    <div class="modal-content">
+      <div class="modal-lang">
+        @for (l of langs; track l) {
+        <button
+          class="btn w-100"
+          [class.active]="l === langSvc.current"
+          (click)="pickLang(l)"
+        >
+          {{ langNames[l] || l.toUpperCase() }}
+        </button>
+        }
+      </div>
+    </div>
+    <div class="modal-bottom"></div>
+  </div>
+</div>
+}
