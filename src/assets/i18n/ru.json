@@ -108,5 +108,25 @@
   "page.projects.title": "Проекты",
   "page.projects.description": "Все проекты, созданные мной или при моём участии.",
   "page.projects.button.title": "Открыть проект {{title}}",
-  "page.projects.button": "Открыть проект"
+  "page.projects.button": "Открыть проект",
+
+  "page.project.title": "Проект",
+  "page.project.description": "Все проекты, созданные мной или при моём участии.",
+  "page.project.thumbnail": "Логотип проекта {{title}}",
+  "page.project.about": "О проекте",
+  "page.project.type": "Тип",
+  "page.project.button": "Хочу это!",
+
+  "page.project.instruments": "Инструменты",
+  "page.project.instruments.description": "Технологии и разработки, использованные в проекте.",
+  "page.project.feature": "Особенности",
+  "page.project.feature.description": "Что было сделано в этом проекте: модули, плагины и различные интеграции.",
+  "page.project.images": "Изображения",
+  "page.project.images.thumbnail": "Изображение {{index}} проекта {{project}}",
+  "page.project.images.description": "Изображения проекта на момент разработки. Все страницы представлены в оригинальном и готовом виде.",
+  "page.project.warn": "Минутку!",
+  "page.project.warn.description": "Дальнейшая разработка проекта могла привести к отличиям от моей версии. На этой странице представлены скриншоты и описание проекта на момент моего участия.",
+  "page.project.links": "Ссылки",
+  "page.project.links.description": "Вы можете найти все релизы и превью этого проекта по ссылкам ниже.",
+  "page.project.link.title": "Открыть код проекта {{project}} в {{title}}"
 }

@@ -108,5 +108,25 @@
   "page.projects.title": "Proyectos",
   "page.projects.description": "Todos los proyectos creados por mí o en los que participé.",
   "page.projects.button.title": "Abrir proyecto {{title}}",
-  "page.projects.button": "Abrir proyecto"
+  "page.projects.button": "Abrir proyecto",
+
+  "page.project.title": "Proyecto",
+  "page.project.description": "Todos los proyectos creados por mí o en los que participé.",
+  "page.project.thumbnail": "Logo del proyecto {{title}}",
+  "page.project.about": "Acerca de",
+  "page.project.type": "Tipo",
+  "page.project.button": "¡Lo quiero!",
+
+  "page.project.instruments": "Herramientas",
+  "page.project.instruments.description": "Tecnologías y desarrollos que se usaron en el proyecto.",
+  "page.project.feature": "Características",
+  "page.project.feature.description": "Lo que se hizo en este proyecto: módulos, complementos e integraciones varias.",
+  "page.project.images": "Imágenes",
+  "page.project.images.thumbnail": "Imagen {{index}} del proyecto {{project}}",
+  "page.project.images.description": "Imágenes del proyecto en el momento de desarrollo. Todas las páginas se presentan en forma original y finalizada.",
+  "page.project.warn": "Un momento, por favor.",
+  "page.project.warn.description": "El desarrollo posterior del proyecto podría haber traído diferencias con respecto a mi versión. Esta página contiene capturas de pantalla y una descripción del proyecto en el momento de mi participación.",
+  "page.project.links": "Enlaces",
+  "page.project.links.description": "Puedes encontrar todas las versiones y vistas previas de este proyecto haciendo clic en los enlaces de abajo.",
+  "page.project.link.title": "Abrir el código del proyecto {{project}} en {{title}}"
 }

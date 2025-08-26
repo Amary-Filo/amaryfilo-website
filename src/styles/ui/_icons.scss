@@ -1,4 +1,4 @@
-@use '../mixins/mixins' as mx;
+@use "../mixins/mixins" as mx;
 
 .ic {
   &::before {
@@ -8,7 +8,7 @@
     margin-right: mx.rem(10);
     margin-left: 0.2em;
 
-    font-family: 'CIcons', sans-serif;
+    font-family: "CIcons", sans-serif;
     text-align: center;
     font-size: 120%;
     line-height: 1em;
@@ -27,14 +27,14 @@
   &-mobile {
     @extend .ic;
     &::before {
-      content: '\e800';
+      content: "\e800";
     }
   }
 
   &-telegram {
     @extend .ic;
     &::before {
-      content: '\f2c6';
+      content: "\f2c6";
     }
   }
 
@@ -46,28 +46,28 @@
   &-picture {
     @extend .ic;
     &::before {
-      content: '\e802';
+      content: "\e802";
     }
   }
 
   &-globe {
     @extend .ic;
     &::before {
-      content: '\e803';
+      content: "\e803";
     }
   }
 
   &-leaf {
     @extend .ic;
     &::before {
-      content: '\e804';
+      content: "\e804";
     }
   }
 
   &-camera {
     @extend .ic;
     &::before {
-      content: '\e805';
+      content: "\e805";
     }
   }
 
@@ -79,28 +79,29 @@
   &-lock {
     @extend .ic;
     &::before {
-      content: '\e807';
+      content: "\e807";
     }
   }
 
-  &-tag {
+  &-tag,
+  &-json {
     @extend .ic;
     &::before {
-      content: '\e808';
+      content: "\e808";
     }
   }
 
   &-hash {
     @extend .ic;
     &::before {
-      content: '\e809';
+      content: "\e809";
     }
   }
 
   &-bookmark {
     @extend .ic;
     &::before {
-      content: '\e80a';
+      content: "\e80a";
     }
   }
 
@@ -112,7 +113,7 @@
   &-link {
     @extend .ic;
     &::before {
-      content: '\e80c';
+      content: "\e80c";
     }
   }
 
@@ -129,56 +130,56 @@
   &-amaryfilo {
     @extend .ic;
     &::before {
-      content: '\e80f';
+      content: "\e80f";
     }
   }
 
   &-calendar {
     @extend .ic;
     &::before {
-      content: '\e810';
+      content: "\e810";
     }
   }
 
   &-cancel-1 {
     @extend .ic;
     &::before {
-      content: '\e811';
+      content: "\e811";
     }
   }
 
   &-angular {
     @extend .ic;
     &::before {
-      content: '\e812';
+      content: "\e812";
     }
   }
 
   &-coins {
     @extend .ic;
     &::before {
-      content: '\e813';
+      content: "\e813";
     }
   }
 
   &-nodejs {
     @extend .ic;
     &::before {
-      content: '\e814';
+      content: "\e814";
     }
   }
 
   &-light-up {
     @extend .ic;
     &::before {
-      content: '\e815';
+      content: "\e815";
     }
   }
 
   &-react {
     @extend .ic;
     &::before {
-      content: '\e816';
+      content: "\e816";
     }
   }
 
@@ -190,14 +191,14 @@
   &-ionic {
     @extend .ic;
     &::before {
-      content: '\e839';
+      content: "\e839";
     }
   }
 
   &-gulp {
     @extend .ic;
     &::before {
-      content: '\e83a';
+      content: "\e83a";
     }
   }
 
@@ -205,63 +206,63 @@
   &-rxjs {
     @extend .ic;
     &::before {
-      content: '\e83b';
+      content: "\e83b";
     }
   }
 
   &-pug {
     @extend .ic;
     &::before {
-      content: '\e83c';
+      content: "\e83c";
     }
   }
 
   &-typescript {
     @extend .ic;
     &::before {
-      content: '\e83e';
+      content: "\e83e";
     }
   }
 
   &-sass {
     @extend .ic;
     &::before {
-      content: '\e83f';
+      content: "\e83f";
     }
   }
 
   &-vue {
     @extend .ic;
     &::before {
-      content: '\e840';
+      content: "\e840";
     }
   }
 
   &-metamask {
     @extend .ic;
     &::before {
-      content: '\e842';
+      content: "\e842";
     }
   }
 
   &-wallet {
     @extend .ic;
     &::before {
-      content: '\e843';
+      content: "\e843";
     }
   }
 
   &-walletconnect {
     @extend .ic;
     &::before {
-      content: '\e846';
+      content: "\e846";
     }
   }
 
   &-web3js {
     @extend .ic;
     &::before {
-      content: '\e847';
+      content: "\e847";
     }
   }
 
@@ -269,84 +270,84 @@
   &-blockchain {
     @extend .ic;
     &::before {
-      content: '\e848';
+      content: "\e848";
     }
   }
 
   &-graphql {
     @extend .ic;
     &::before {
-      content: '\e849';
+      content: "\e849";
     }
   }
 
   &-laravel {
     @extend .ic;
     &::before {
-      content: '\e84a';
+      content: "\e84a";
     }
   }
 
   &-php {
     @extend .ic;
     &::before {
-      content: '\e84b';
+      content: "\e84b";
     }
   }
 
   &-rest {
     @extend .ic;
     &::before {
-      content: '\e84c';
+      content: "\e84c";
     }
   }
 
   &-gitflow {
     @extend .ic;
     &::before {
-      content: '\e84d';
+      content: "\e84d";
     }
   }
 
   &-npm {
     @extend .ic;
     &::before {
-      content: '\e84e';
+      content: "\e84e";
     }
   }
 
   &-apache {
     @extend .ic;
     &::before {
-      content: '\e84f';
+      content: "\e84f";
     }
   }
 
   &-nginx {
     @extend .ic;
     &::before {
-      content: '\e850';
+      content: "\e850";
     }
   }
 
   &-mongodb {
     @extend .ic;
     &::before {
-      content: '\e851';
+      content: "\e851";
     }
   }
 
   &-mysql {
     @extend .ic;
     &::before {
-      content: '\e852';
+      content: "\e852";
     }
   }
 
   &-postgres {
     @extend .ic;
     &::before {
-      content: '\e853';
+      content: "\e853";
     }
   }
 
@@ -358,14 +359,14 @@
   &-wintercms {
     @extend .ic;
     &::before {
-      content: '\e855';
+      content: "\e855";
     }
   }
 
   &-customcms {
     @extend .ic;
     &::before {
-      content: '\e856';
+      content: "\e856";
     }
   }
 
@@ -377,14 +378,14 @@
   &-cms {
     @extend .ic;
     &::before {
-      content: '\e858';
+      content: "\e858";
     }
   }
 
   &-link-ext {
     @extend .ic;
     &::before {
-      content: '\f08e';
+      content: "\f08e";
     }
   }
 
@@ -396,42 +397,43 @@
   &-twitter {
     @extend .ic;
     &::before {
-      content: '\f099';
+      content: "\f099";
     }
   }
 
   &-facebook {
     @extend .ic;
     &::before {
-      content: '\f09a';
+      content: "\f09a";
     }
   }
 
   &-github {
     @extend .ic;
     &::before {
-      content: '\f09b';
+      content: "\f09b";
     }
   }
 
   &-filter {
     @extend .ic;
     &::before {
-      content: '\f0b0';
+      content: "\f0b0";
     }
   }
 
-  &-magic {
+  &-magic,
+  &-tools {
     @extend .ic;
     &::before {
-      content: '\f0d0';
+      content: "\f0d0";
     }
   }
 
   &-pinterest-circled {
     @extend .ic;
     &::before {
-      content: '\f0d2';
+      content: "\f0d2";
     }
   }
 
@@ -443,21 +445,21 @@
   &-mail-alt {
     @extend .ic;
     &::before {
-      content: '\f0e0';
+      content: "\f0e0";
     }
   }
 
   &-linkedin {
     @extend .ic;
     &::before {
-      content: '\f0e1';
+      content: "\f0e1";
     }
   }
 
   &-download-cloud {
     @extend .ic;
     &::before {
-      content: '\f0ed';
+      content: "\f0ed";
     }
   }
 
@@ -474,14 +476,14 @@
   &-desktop {
     @extend .ic;
     &::before {
-      content: '\f108';
+      content: "\f108";
     }
   }
 
   &-gamepad {
     @extend .ic;
     &::before {
-      content: '\f11b';
+      content: "\f11b";
     }
   }
 
@@ -489,84 +491,84 @@
   &-frontend {
     @extend .ic;
     &::before {
-      content: '\f121';
+      content: "\f121";
     }
   }
 
   &-info {
     @extend .ic;
     &::before {
-      content: '\f129';
+      content: "\f129";
     }
   }
 
   &-html5 {
     @extend .ic;
     &::before {
-      content: '\f13b';
+      content: "\f13b";
     }
   }
 
   &-css3 {
     @extend .ic;
     &::before {
-      content: '\f13c';
+      content: "\f13c";
     }
   }
 
   &-lock-open-alt {
     @extend .ic;
     &::before {
-      content: '\f13e';
+      content: "\f13e";
     }
   }
 
   &-bitcoin {
     @extend .ic;
     &::before {
-      content: '\f15a';
+      content: "\f15a";
     }
   }
 
   &-youtube {
     @extend .ic;
     &::before {
-      content: '\f16a';
+      content: "\f16a";
     }
   }
 
   &-instagram {
     @extend .ic;
     &::before {
-      content: '\f16d';
+      content: "\f16d";
     }
   }
 
   &-bitbucket {
     @extend .ic;
     &::before {
-      content: '\f171';
+      content: "\f171";
     }
   }
 
   &-moon {
     @extend .ic;
     &::before {
-      content: '\f186';
+      content: "\f186";
     }
   }
 
   &-vk {
     @extend .ic;
     &::before {
-      content: '\f189';
+      content: "\f189";
     }
   }
 
   &-behance {
     @extend .ic;
     &::before {
-      content: '\f1b4';
+      content: "\f1b4";
     }
   }
 
@@ -578,14 +580,14 @@
   &-database {
     @extend .ic;
     &::before {
-      content: '\f1c0';
+      content: "\f1c0";
     }
   }
 
   &-git {
     @extend .ic;
     &::before {
-      content: '\f1d3';
+      content: "\f1d3";
     }
   }
 
@@ -593,7 +595,7 @@
   &-seo {
     @extend .ic;
     &::before {
-      content: '\f1ea';
+      content: "\f1ea";
     }
   }
 
@@ -601,7 +603,7 @@
   &-design {
     @extend .ic;
     &::before {
-      content: '\f1fc';
+      content: "\f1fc";
     }
   }
 
@@ -609,7 +611,7 @@
   &-backend {
     @extend .ic;
     &::before {
-      content: '\f233';
+      content: "\f233";
     }
   }
 
@@ -617,21 +619,21 @@
   &-octobercms {
     @extend .ic;
     &::before {
-      content: '\f299';
+      content: "\f299";
     }
   }
 
   &-snapchat-ghost {
     @extend .ic;
     &::before {
-      content: '\f2ac';
+      content: "\f2ac";
     }
   }
 
   &-menu {
     @extend .ic;
     &::before {
-      content: '\e818';
+      content: "\e818";
     }
   }
 
@@ -653,7 +655,7 @@
   &-swiftui {
     @extend .ic;
     &::before {
-      content: '\e85d';
+      content: "\e85d";
     }
   }
 
@@ -665,7 +667,7 @@
   &-dribble {
     @extend .ic;
     &::before {
-      content: '\f17d';
+      content: "\f17d";
     }
   }
 }

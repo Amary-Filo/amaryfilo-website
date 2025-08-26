@@ -6,10 +6,16 @@ import { getImagePath } from '@helpers/index';
 import { SubscribeComponent, FormOrderComponent } from '@shared/components';
 import { ProjectDetail } from '../projects.model';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 
 @Component({
   selector: 'app-project-page',
-  imports: [SubscribeComponent, FormOrderComponent, CommonModule],
+  imports: [
+    SubscribeComponent,
+    FormOrderComponent,
+    CommonModule,
+    TranslatePipe,
+  ],
   templateUrl: './project.page.html',
   styleUrl: './project.page.scss',
   standalone: true,

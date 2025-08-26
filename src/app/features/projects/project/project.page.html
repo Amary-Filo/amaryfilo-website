@@ -1,7 +1,9 @@
 <main class="pg-project">
   <section class="hero">
     <div class="container fl-cc fl-dc">
-      <span class="ls t-gr cl-g-project fz-xl fw-800 t-u">Project</span>
+      <span class="ls t-gr cl-g-project fz-xl fw-800 t-u">{{
+        "page.project.title" | t
+      }}</span>
       <h1 class="title ls fz-xxl2 t-c">{{ project()?.title }}</h1>
       <time class="fz-sm ls op-6 fw-b" [attr.datetime]="project()?.date | date">
         {{ project()?.date | date }}
@@ -14,19 +16,25 @@
       <div class="cd-st fl-cc fl-dc t-c image">
         <img
           [src]="imagePath(project()?.logo) + '.svg'"
-          [alt]="project()?.title"
+          [alt]="'page.project.thumbnail' | t : { title: project()?.title }"
           height="100%"
           width="100%"
         />
       </div>
       <div class="cd-st fl-cc fl-dc t-c about">
-        <h2 class="title ls t-gr t-u cl-g-about">About</h2>
+        <h2 class="title ls t-gr t-u cl-g-about">
+          {{ "page.project.about" | t }}
+        </h2>
         <p class="text fz-nm op-7 ls" [innerHTML]="project()?.description"></p>
       </div>
       <div class="cd-st fl-cc fl-dc t-c type">
-        <h2 class="title ls t-gr t-u cl-g-type">Type</h2>
+        <h2 class="title ls t-gr t-u cl-g-type">
+          {{ "page.project.type" | t }}
+        </h2>
         <p class="text op-7 ls fw-900">{{ project()?.category }}</p>
-        <a class="btn g-bg w-100 g-a cl-g-type"> I want this! </a>
+        <a class="btn g-bg w-100 g-a cl-g-type"
+          >{{ "page.project.button" | t }}
+        </a>
       </div>
     </div>
   </section>
@@ -43,9 +51,11 @@
         }
       </div>
       <div class="head-section hs-part fl-bc fl-dc">
-        <h2 class="title ls-2 t-gr ls t-u cl-g-instruments">Instruments</h2>
+        <h2 class="title ls-2 t-gr ls t-u cl-g-instruments">
+          {{ "page.project.instruments" | t }}
+        </h2>
         <p class="text op-7 ls fw-b">
-          Technologies and developments that were used in the project.
+          {{ "page.project.instruments.description" | t }}
         </p>
       </div>
     </div>
@@ -53,10 +63,11 @@
 
   <section class="sc done">
     <div class="container head-section fl-cc fl-dc h-mb">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-feature">Feature</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-feature">
+        {{ "page.project.feature" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        What has been done in this project. Modules, plug-ins and various
-        integrations in the project.
+        {{ "page.project.feature.description" | t }}
       </p>
     </div>
     <div class="container cards">
@@ -73,10 +84,11 @@
 
   <section class="sc image-grid">
     <div class="container head-section fl-cc fl-dc h-mb">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-images">Images</h2>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-images">
+        {{ "page.project.images" | t }}
+      </h2>
       <p class="text op-7 ls fw-b">
-        Images of the project at the time of development. All pages are
-        presented in original and finished form.
+        {{ "page.project.images.description" | t }}
       </p>
     </div>
     <div class="container images">
@@ -86,7 +98,10 @@
         <img
           loading="lazy"
           [src]="imagePath(item) + '.png'"
-          [alt]="project()?.title + ' project image ' + ($index + 1)"
+          [alt]="
+            'page.project.images.thumbnail'
+              | t : { project: project()?.title, index: $index + 1 }
+          "
         />
       </picture>
       }
@@ -96,12 +111,9 @@
   <section class="sc warn">
     <div class="container">
       <div class="content cl-warn">
-        <h2 class="fz-xl title">One moment, please.</h2>
+        <h2 class="fz-xl title">{{ "page.project.warn" | t }}</h2>
         <p class="text op-7">
-          Further development of the project could bring to it various
-          differences from the one I created. This page contains screenshots, a
-          description of the project at the time of my participation in its
-          development.
+          {{ "page.project.warn.description" | t }}
         </p>
       </div>
     </div>
@@ -110,10 +122,11 @@
   <section class="sc links">
     <div class="container fl-cc fl-dc">
       <div class="head-section fl-cc fl-dc">
-        <h2 class="title ls-2 t-gr ls t-u cl-g-links">Links</h2>
+        <h2 class="title ls-2 t-gr ls t-u cl-g-links">
+          {{ "page.project.links" | t }}
+        </h2>
         <p class="text op-7 ls fw-b">
-          You can find all releases and previews for this project by click on
-          links below.
+          {{ "page.project.links.description" | t }}
         </p>
       </div>
       <div class="fl-cc links">
@@ -122,7 +135,8 @@
           [class]="'btn m ic-' + item.icon"
           [href]="item.url"
           [title]="
-            'Open project ' + project()?.title + ' code in ' + item.title
+            'page.project.link.title'
+              | t : { project: project()?.title, title: item.title }
           "
           rel="nofollow norefferer"
           target="blank"

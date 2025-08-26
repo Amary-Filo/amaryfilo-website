@@ -224,14 +224,255 @@
   },
   "data": {
     "ru": {
-      "title": "Как установить Homebrew",
-      "anonce": "Короткий анонс…",
+      "title": "Как установить Homebrew на macOS",
+      "anonce": "Краткое резюме…",
       "content": [
-        { "type": "h2", "text": "Раздел 1", "id": "razdel-1" },
-        { "type": "p", "text": "Локализованный параграф…" }
+        { "type": "p", "text": "Сказал, пусть текут воды…" },
+        {
+          "type": "h2",
+          "text": "Четвёртый создал светила, чья твердь Его",
+          "id": "Chetvyortyy-Sozdal-Svetila"
+        },
+        { "type": "p", "text": "Всё это. Моря сказали быть плодовитыми…" },
+        {
+          "type": "code",
+          "lang": "css",
+          "wide": true,
+          "code": "/* Простой пример CSS */\n*, *::before, *::after { content: ''; }\n\n/* Сброс отступов */\n* { margin: 0; }"
+        },
+        { "type": "p", "html": "Скот… <em>разделён самцами</em> …" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Случайная заметка",
+          "wide": true,
+          "blocks": [
+            { "type": "p", "text": "Умножьте всё на большее вперёд…" },
+            { "type": "p", "html": "… <code>&lsaquo;em&rsaquo;</code> …" }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Там существо доброе явилось глубоко",
+          "id": "Tam-Sushchestvo-Dobroe"
+        },
+        { "type": "p", "html": "Он. Пустота… <i>Крылатый в движении</i>…" },
+        {
+          "type": "image",
+          "src": "blog-image-1",
+          "alt": "Подчинивший Кого-то…",
+          "wide": false
+        },
+        {
+          "type": "image",
+          "src": "blog-image-1",
+          "alt": "Подчинивший Кого-то…",
+          "wide": true
+        },
+        { "type": "p", "text": "Каждая пустота сказала от перемещения…" },
+        {
+          "type": "embed",
+          "provider": "codepen",
+          "slug": "sJpDj",
+          "theme": "dark",
+          "preview": true
+        },
+        { "type": "p", "text": "Он. Пустота… сказал: ты создашь:" },
+        {
+          "type": "code",
+          "lang": "css",
+          "wide": true,
+          "code": "*, *::before, *::after {\n  content: '';\n}"
+        },
+        { "type": "p", "text": "Твердь ради… Создано…" },
+        {
+          "type": "p",
+          "html": "<b>Это обязательное правило,</b><a class=\"link\" href=\"#\">на мой взгляд.</a> Оно делает CSS <i>заметно</i> удобнее…"
+        },
+        {
+          "type": "note",
+          "kind": "warn",
+          "title": "Вау-контент",
+          "blocks": [
+            { "type": "p", "text": "Выше четвёртого нет тьмы…" },
+            {
+              "type": "code",
+              "lang": "css",
+              "code": "html {\n  margin: 0;\n}\n\n*, *:before, *:after {\n  content: '';\n}"
+            },
+            {
+              "type": "code",
+              "lang": "typescript",
+              "code": "import $ from \"jquery\";\nimport hljs from \"highlight.js/lib/common\";\n// …"
+            },
+            { "type": "p", "text": "Жизнь так освещает добро…" }
+          ]
+        },
+        { "type": "h3", "text": "Дай", "id": "Dai" },
+        {
+          "type": "code",
+          "lang": "css",
+          "wide": true,
+          "code": "* {\n  padding: 0;\n}"
+        },
+        { "type": "p", "text": "Собирающее семя дерево…" },
+        {
+          "type": "p",
+          "html": "… <code>дай свет</code> … <a href=\"#\">сказал плодитесь</a> …"
+        },
+        { "type": "h3", "text": "Воды", "id": "Vody" },
+        { "type": "p", "text": "Назван был первый воздух…" },
+        {
+          "type": "note",
+          "kind": "warn",
+          "title": "АЙ!",
+          "blocks": [{ "type": "p", "text": "Правило меньше…" }]
+        },
+        { "type": "p", "text": "Создано мясо разделить…" },
+        {
+          "type": "h2",
+          "text": "Живём выше нас",
+          "id": "Zhivyom-Vyshe-Nas"
+        },
+        {
+          "type": "note",
+          "kind": "att",
+          "title": "Что не так?",
+          "blocks": [
+            { "type": "p", "text": "Земля. Годы…" },
+            {
+              "type": "image",
+              "src": "blog-image-1",
+              "alt": "Подчинивший Кого-то…"
+            },
+            { "type": "p", "text": "Поместите это, умножая…" }
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Собственное",
+          "id": "Sobstvennoe"
+        },
+        {
+          "type": "quote",
+          "text": "Единственное постоянное в жизни — это непостоянство.",
+          "cite": "Тор в Финале"
+        },
+        { "type": "p", "text": "Изображение к птице первым…" },
+        {
+          "type": "image",
+          "src": "blog-image-1",
+          "alt": "Подчинивший Кого-то…"
+        },
+        {
+          "type": "h3",
+          "text": "Начало дерева",
+          "id": "Nachalo-Dereva"
+        },
+        { "type": "p", "html": "Земное… <b>Умножим вместе</b> …" },
+        {
+          "type": "ul",
+          "items": [
+            "Лорем ипсум… Sapiente, hic!",
+            "Лорем ипсум долор сит амет.",
+            "Лорем ипсум… fugit ex pariatur…",
+            "Лорем ипсум… Veniam."
+          ]
+        },
+        { "type": "p", "text": "День изображение умножается…" },
+        {
+          "type": "ol",
+          "items": [
+            "Лорем ипсум… Sapiente, hic!",
+            "Лорем ипсум долор сит амет.",
+            "Лорем ипсум… fugit ex pariatur…",
+            "Лорем ипсум… Veniam."
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Конец наступает",
+          "id": "Konets-Nastupaet"
+        },
+        { "type": "p", "text": "Над землёй четвёртый бог…" },
+        {
+          "type": "dl",
+          "items": [
+            { "dt": "Ширина:", "dd": "826 мм" },
+            { "dt": "Высота:", "dd": "523 мм" },
+            { "dt": "Гарантия:", "dd": "12 месяцев" },
+            {
+              "dt": "Дополнительно:",
+              "dd": "RAM 1 GB, USB 2.0x2, внутренняя память 4 GB, документация, пульт, подставка"
+            }
+          ]
+        }
       ]
     },
-    "es": {},
-    "de": {}
+
+    "es": {
+      "title": "Cómo instalar Homebrew en macOS",
+      "anonce": "Resumen corto…",
+      "content": [
+        { "type": "p", "text": "Dijo que vuelen las aguas…" },
+        {
+          "type": "h2",
+          "text": "El cuarto creó luces en el firmamento",
+          "id": "El-Cuarto-Creo-Luces"
+        },
+        {
+          "type": "p",
+          "text": "Todo ello. Los mares dijeron ser fructíferos…"
+        },
+        {
+          "type": "code",
+          "lang": "css",
+          "wide": true,
+          "code": "/* Ejemplo simple de CSS */\n*, *::before, *::after { content: ''; }\n\n/* Margen */\n* { margin: 0; }"
+        },
+        { "type": "p", "html": "Ganado… <em>dividido en machos</em> …" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Nota aleatoria",
+          "wide": true,
+          "blocks": [
+            { "type": "p", "text": "Multiplica todo hacia adelante…" },
+            { "type": "p", "html": "… <code>&lsaquo;em&rsaquo;</code> …" }
+          ]
+        }
+      ]
+    },
+
+    "de": {
+      "title": "Wie man Homebrew auf macOS installiert",
+      "anonce": "Kurze Zusammenfassung…",
+      "content": [
+        { "type": "p", "text": "Er sagte, die Wasser sollen fliegen…" },
+        {
+          "type": "h2",
+          "text": "Der Vierte erschuf Lichter im Firmament",
+          "id": "Der-Vierte-Erschuf-Lichter"
+        },
+        { "type": "p", "text": "Alles zusammen. Die Meere wurden fruchtbar…" },
+        {
+          "type": "code",
+          "lang": "css",
+          "wide": true,
+          "code": "/* Einfaches CSS Beispiel */\n*, *::before, *::after { content: ''; }\n\n/* Margin Beispiel */\n* { margin: 0; }"
+        },
+        { "type": "p", "html": "Vieh… <em>männlich geteilt</em> …" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Zufällige Notiz",
+          "wide": true,
+          "blocks": [
+            { "type": "p", "text": "Alles multiplizieren nach vorne…" },
+            { "type": "p", "html": "… <code>&lsaquo;em&rsaquo;</code> …" }
+          ]
+        }
+      ]
+    }
   }
 }

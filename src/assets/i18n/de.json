@@ -108,5 +108,25 @@
   "page.projects.title": "Projekte",
   "page.projects.description": "Alle Projekte, die ich erstellt habe oder an denen ich beteiligt war.",
   "page.projects.button.title": "Projekt {{title}} öffnen",
-  "page.projects.button": "Projekt öffnen"
+  "page.projects.button": "Projekt öffnen",
+
+  "page.project.title": "Projekt",
+  "page.project.description": "Alle Projekte, die ich erstellt habe oder an denen ich beteiligt war.",
+  "page.project.thumbnail": "Logo des Projekts {{title}}",
+  "page.project.about": "Über",
+  "page.project.type": "Typ",
+  "page.project.button": "Das will ich!",
+
+  "page.project.instruments": "Werkzeuge",
+  "page.project.instruments.description": "Technologien und Entwicklungen, die im Projekt verwendet wurden.",
+  "page.project.feature": "Funktionen",
+  "page.project.feature.description": "Was in diesem Projekt gemacht wurde: Module, Plugins und verschiedene Integrationen.",
+  "page.project.images": "Bilder",
+  "page.project.images.thumbnail": "Bild {{index}} des Projekts {{project}}",
+  "page.project.images.description": "Bilder des Projekts zum Zeitpunkt der Entwicklung. Alle Seiten sind in ursprünglicher und fertiger Form dargestellt.",
+  "page.project.warn": "Einen Moment bitte.",
+  "page.project.warn.description": "Die Weiterentwicklung des Projekts könnte Unterschiede zu meiner Version gebracht haben. Diese Seite enthält Screenshots und eine Beschreibung des Projekts zum Zeitpunkt meiner Beteiligung.",
+  "page.project.links": "Links",
+  "page.project.links.description": "Alle Releases und Vorschauen für dieses Projekt findest du über die Links unten.",
+  "page.project.link.title": "Projektcode {{project}} in {{title}} öffnen"
 }

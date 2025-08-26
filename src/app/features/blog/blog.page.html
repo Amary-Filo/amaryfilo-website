@@ -17,7 +17,7 @@
         @for (item of filters(); track item) {
         <button
           type="button"
-          class="btn m"
+          [class]="'btn m t ic-' + item + ' cl-' + item"
           [class.active]="selectedFilter() === item"
           (click)="filterData(item)"
           [title]="item"

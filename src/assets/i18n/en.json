@@ -108,5 +108,25 @@
   "page.projects.title": "Projects",
   "page.projects.description": "All projects created by me or in which I participated.",
   "page.projects.button.title": "Open project {{title}}",
-  "page.projects.button": "Open project"
+  "page.projects.button": "Open project",
+
+  "page.project.title": "Project",
+  "page.project.description": "All projects created by me or in which I participated.",
+  "page.project.thumbnail": "Project {{title}} logo",
+  "page.project.about": "About",
+  "page.project.type": "Type",
+  "page.project.button": "I want this!",
+
+  "page.project.instruments": "Instruments",
+  "page.project.instruments.description": "Technologies and developments that were used in the project.",
+  "page.project.feature": "Feature",
+  "page.project.feature.description": "What has been done in this project. Modules, plug-ins and various integrations in the project.",
+  "page.project.images": "Images",
+  "page.project.images.thumbnail": "{{project}} project image {{index}}",
+  "page.project.images.description": "Images of the project at the time of development. All pages are presented in original and finished form.",
+  "page.project.warn": "One moment, please.",
+  "page.project.warn.description": "Further development of the project could bring to it various differences from the one I created. This page contains screenshots, a description of the project at the time of my participation in its development.",
+  "page.project.links": "Links",
+  "page.project.links.description": "You can find all releases and previews for this project by click on links below.",
+  "page.project.link.title": "Open project {{project}} code in {{title}}"
 }
