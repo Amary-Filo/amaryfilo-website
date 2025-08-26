@@ -1,11 +1,11 @@
 {
   "slug": "how-to-install-homebrew",
-  "title": "How to install Homebrew on MacOS",
+  "title": "Cómo instalar Homebrew en macOS",
   "date": "2021-07-15",
   "updates": [
     "2024-08-01"
   ],
-  "anonce": "Short summary…",
+  "anonce": "Resumen corto…",
   "thumbnail": "",
   "category": "angular",
   "category_list": [
@@ -60,6 +60,11 @@
     {
       "id": "End-is-happen",
       "title": "End is happen",
+      "level": 2
+    },
+    {
+      "id": "El-Cuarto-Creo-Luces",
+      "title": "El cuarto creó luces en el firmamento",
       "level": 2
     }
   ],
@@ -342,6 +347,11 @@
           "dd": "Seas yielding above created…"
         }
       ]
+    },
+    {
+      "type": "h2",
+      "text": "El cuarto creó luces en el firmamento",
+      "id": "El-Cuarto-Creo-Luces"
     }
   ]
 }

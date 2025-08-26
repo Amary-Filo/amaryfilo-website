@@ -109,6 +109,7 @@
   "page.projects.description": "Все проекты, созданные мной или при моём участии.",
   "page.projects.button.title": "Открыть проект {{title}}",
   "page.projects.button": "Открыть проект",
+  "page.projects.filter": "Что вы ищете?",
 
   "page.project.title": "Проект",
   "page.project.description": "Все проекты, созданные мной или при моём участии.",

@@ -101,6 +101,7 @@
   "page.home.projects.button.title": "Alle Projekte öffnen",
   "page.home.projects.open": "Projekt {{title}} öffnen",
   "page.home.projects.open.title": "Projekt öffnen",
+  "page.projects.filter": "Wonach suchen Sie?",
 
   "page.notfound.description.one": "Du hast das Internet kaputt gemacht. Zufrieden jetzt?",
   "page.notfound.description.two": "Die Seite, die du suchst, fehlt. Aber ich glaube immer noch an dich. Versuch es nochmal?",

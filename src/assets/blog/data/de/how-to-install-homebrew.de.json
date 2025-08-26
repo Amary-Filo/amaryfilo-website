@@ -1,11 +1,11 @@
 {
   "slug": "how-to-install-homebrew",
-  "title": "How to install Homebrew on MacOS",
+  "title": "Wie man Homebrew auf macOS installiert",
   "date": "2021-07-15",
   "updates": [
     "2024-08-01"
   ],
-  "anonce": "Short summary…",
+  "anonce": "Kurze Zusammenfassung…",
   "thumbnail": "",
   "category": "angular",
   "category_list": [
@@ -60,6 +60,11 @@
     {
       "id": "End-is-happen",
       "title": "End is happen",
+      "level": 2
+    },
+    {
+      "id": "Der-Vierte-Erschuf-Lichter",
+      "title": "Der Vierte erschuf Lichter im Firmament",
       "level": 2
     }
   ],
@@ -342,6 +347,11 @@
           "dd": "Seas yielding above created…"
         }
       ]
+    },
+    {
+      "type": "h2",
+      "text": "Der Vierte erschuf Lichter im Firmament",
+      "id": "Der-Vierte-Erschuf-Lichter"
     }
   ]
 }

@@ -3,11 +3,11 @@
     "id": 1,
     "icon": "gallery",
     "title": "Фронтенд",
-    "description": "Фронтенд‑стек и фреймворки для web/mobile.",
+    "description": "Фронтенд-стек и фреймворки для web/mobile.",
     "skills": [
       {
         "id": 1,
-        "title": "Ангуляр",
+        "title": "Angular",
         "icon": "angular"
       },
       {
@@ -42,7 +42,7 @@
       },
       {
         "id": 8,
-        "title": "Паг",
+        "title": "Pug",
         "icon": "pug"
       },
       {
@@ -57,7 +57,7 @@
       },
       {
         "id": 11,
-        "title": "Галп",
+        "title": "Gulp",
         "icon": "gulp"
       }
     ]
@@ -65,8 +65,8 @@
   {
     "id": 2,
     "icon": "feature",
-    "title": "Blockchain",
-    "description": "Packages and technologies used in applications.",
+    "title": "Блокчейн",
+    "description": "Пакеты и технологии, используемые в приложениях.",
     "skills": [
       {
         "id": 1,
@@ -186,8 +186,8 @@
   {
     "id": 4,
     "icon": "done",
-    "title": "Other",
-    "description": "CI/CD, programms and additional information.",
+    "title": "Другое",
+    "description": "CI/CD, программы и дополнительная информация.",
     "skills": [
       {
         "id": 1,

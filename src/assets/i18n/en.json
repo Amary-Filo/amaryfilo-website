@@ -116,6 +116,7 @@
   "page.project.about": "About",
   "page.project.type": "Type",
   "page.project.button": "I want this!",
+  "page.projects.filter": "What are you looking for?",
 
   "page.project.instruments": "Instruments",
   "page.project.instruments.description": "Technologies and developments that were used in the project.",

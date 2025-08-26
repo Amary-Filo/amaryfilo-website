@@ -1,11 +1,11 @@
 {
   "slug": "how-to-install-homebrew",
-  "title": "Как установить Homebrew",
+  "title": "Как установить Homebrew на macOS",
   "date": "2021-07-15",
   "updates": [
     "2024-08-01"
   ],
-  "anonce": "Короткий анонс…",
+  "anonce": "Краткое резюме…",
   "thumbnail": "",
   "category": "angular",
   "category_list": [
@@ -63,8 +63,43 @@
       "level": 2
     },
     {
-      "id": "razdel-1",
-      "title": "Раздел 1",
+      "id": "Chetvyortyy-Sozdal-Svetila",
+      "title": "Четвёртый создал светила, чья твердь Его",
+      "level": 2
+    },
+    {
+      "id": "Tam-Sushchestvo-Dobroe",
+      "title": "Там существо доброе явилось глубоко",
+      "level": 3
+    },
+    {
+      "id": "Dai",
+      "title": "Дай",
+      "level": 3
+    },
+    {
+      "id": "Vody",
+      "title": "Воды",
+      "level": 3
+    },
+    {
+      "id": "Zhivyom-Vyshe-Nas",
+      "title": "Живём выше нас",
+      "level": 2
+    },
+    {
+      "id": "Sobstvennoe",
+      "title": "Собственное",
+      "level": 2
+    },
+    {
+      "id": "Nachalo-Dereva",
+      "title": "Начало дерева",
+      "level": 3
+    },
+    {
+      "id": "Konets-Nastupaet",
+      "title": "Конец наступает",
       "level": 2
     }
   ],
@@ -350,8 +385,43 @@
     },
     {
       "type": "h2",
-      "text": "Раздел 1",
-      "id": "razdel-1"
+      "text": "Четвёртый создал светила, чья твердь Его",
+      "id": "Chetvyortyy-Sozdal-Svetila"
+    },
+    {
+      "type": "h3",
+      "text": "Там существо доброе явилось глубоко",
+      "id": "Tam-Sushchestvo-Dobroe"
+    },
+    {
+      "type": "h3",
+      "text": "Дай",
+      "id": "Dai"
+    },
+    {
+      "type": "h3",
+      "text": "Воды",
+      "id": "Vody"
+    },
+    {
+      "type": "h2",
+      "text": "Живём выше нас",
+      "id": "Zhivyom-Vyshe-Nas"
+    },
+    {
+      "type": "h2",
+      "text": "Собственное",
+      "id": "Sobstvennoe"
+    },
+    {
+      "type": "h3",
+      "text": "Начало дерева",
+      "id": "Nachalo-Dereva"
+    },
+    {
+      "type": "h2",
+      "text": "Конец наступает",
+      "id": "Konets-Nastupaet"
     }
   ]
 }
