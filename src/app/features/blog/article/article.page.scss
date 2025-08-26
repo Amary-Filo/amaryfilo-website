@@ -3,6 +3,10 @@
 
 // page
 .pg-article {
+  .article [id] {
+    scroll-margin-top: 80px;
+  }
+
   .article-content {
     margin-top: mx.rem(100);
     @include mx.b(tablet) {
@@ -67,6 +71,7 @@
       }
 
       .title {
+        max-width: max-content;
         font-size: mx.rem(15);
         margin-top: mx.rem(5);
         font-weight: 800;
@@ -75,6 +80,7 @@
 
         &:hover {
           opacity: 1;
+          color: var(--cl-main);
         }
 
         &-head {
@@ -90,9 +96,9 @@
         }
 
         &.active {
-          color: var(--cl-cmain);
+          color: var(--cl-main, var(--cl-cmain));
           @include mx.theme("dark", true) {
-            color: var(--cl-caccent);
+            color: var(--cl-main, var(--cl-caccent));
           }
         }
       }
@@ -113,6 +119,25 @@
 
   #article-nav {
     position: relative;
+  }
+
+  article {
+    position: relative;
+  }
+
+  .scroll-top {
+    --btn-bgc-rgb: var(--cl-main-rgb);
+    --btn-bgc-opacity: 0.7;
+    --btn-bgc-opacity-hover: 0.9;
+    --btn-text-color: 255, 255, 255;
+    --btn-padding: #{mx.rem(7)} #{mx.rem(15)};
+
+    position: fixed;
+    bottom: mx.rem(20);
+    right: mx.rem(20);
+    cursor: pointer;
+    box-shadow: 0 mx.rem(6) mx.rem(16) rgba(0, 0, 0, 0.25);
+    z-index: 999;
   }
 
   .article {
@@ -164,28 +189,38 @@
           var(--body-bg-color),
           var(--body-bg-color)
         ),
-        radial-gradient(circle at top left, #698ea8, #9adffa);
+        radial-gradient(
+          circle at top left,
+          var(--cl-main, #698ea8),
+          var(--cl-main, #9adffa)
+        );
       background-clip: content-box, border-box;
       box-shadow: 0 mx.rem(8) mx.rem(16) 0 rgba(var(--cl-blog-rgb), 0.2);
 
       @include mx.b(desktop) {
         grid-column: 1;
       }
+
       @include mx.theme("dark", true) {
         background-image: linear-gradient(
             var(--body-bg-color),
             var(--body-bg-color)
           ),
-          radial-gradient(circle at top left, #dbaa6a, #eddbc3);
+          radial-gradient(
+            circle at top left,
+            var(--cl-main, #dbaa6a),
+            var(--cl-main, #eddbc3)
+          );
         box-shadow: 0 mx.rem(8) mx.rem(16) 0 rgba(237, 219, 195, 0.2);
         background-clip: content-box, border-box;
       }
 
       h1 {
         margin-bottom: mx.rem(15);
-        color: var(--cl-cmain);
+        color: var(--cl-main, var(--cl-cmain));
+
         @include mx.theme("dark", true) {
-          color: var(--cl-caccent);
+          color: var(--cl-main, var(--cl-caccent));
         }
       }
 

@@ -1,13 +1,16 @@
-import { Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import { DEFAULT_LANG, Lang } from './i18n.model';
 
 @Injectable({ providedIn: 'root' })
 export class TranslateService {
   private translations: Record<string, string> = {};
+  private time = +new Date();
 
   async load(lang: Lang): Promise<any> {
     try {
-      this.translations = await fetch(`/assets/i18n/${lang}.json`).then(r => r.json());
+      this.translations = await fetch(
+        `/assets/i18n/${lang}.json` + `?d=${this.time}`
+      ).then((r) => r.json());
     } catch {
       if (lang !== DEFAULT_LANG) {
         return this.load(DEFAULT_LANG);

@@ -1,26 +1,34 @@
 @if (article()) {
 <main class="pg-article">
-  <section class="sc article-content">
+  <section [class]="'sc article-content cl-' + article()?.icon">
     <div class="container">
       <aside class="aside">
         <div class="cd-st adv"></div>
-        <nav
-          class="fl fl-dc"
-          (click)="toggleMenu()"
-          [class.open]="menuOpen()"
-          id="article-nav"
-        >
-          <span class="article-nav-open ic-menu op-7"></span>
+        <nav class="fl fl-dc" [class.open]="menuOpen()" id="article-nav">
+          <span
+            [class]="'article-nav-open op-7 ' + iconClass()"
+            (click)="toggleMenu()"
+          ></span>
           <span class="fw-800 t-u ls-2 title-head">{{
             "page.article.menu" | t
           }}</span>
 
           @for (g of menuGrouped(); track g.h2.id) {
-          <a class="title" [href]="'#' + g.h2.id">{{ g.h2.title }}</a>
+          <a
+            class="title"
+            [class.active]="activeId() === g.h2.id"
+            (click)="goTo(g.h2.id, $event)"
+            >{{ g.h2.title }}</a
+          >
           @if (g.subs.length) {
           <div class="subnav">
             @for (s of g.subs; track s.id) {
-            <a class="title" [href]="'#' + s.id">{{ s.title }}</a>
+            <a
+              class="title"
+              [class.active]="activeId() === s.id"
+              (click)="goTo(s.id, $event)"
+              >{{ s.title }}</a
+            >
             }
           </div>
           } }
@@ -56,6 +64,16 @@
         }
       </article>
     </div>
+    @if (showTopButton()) {
+    <button
+      class="btn title scroll-top"
+      (click)="scrollTop()"
+      title="Back to top"
+      aria-label="Scroll to top"
+    >
+      Back to top
+    </button>
+    }
   </section>
 </main>
 }

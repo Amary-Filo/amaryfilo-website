@@ -15,10 +15,16 @@ h4,
 h5,
 .title {
   font-weight: 800;
-  color: var(--cl-cmain);
+  // color: var(--cl-cmain);
+
+  // @include mx.theme("dark", true) {
+  //   color: var(--cl-caccent);
+  // }
+
+  color: var(--cl-main, var(--cl-cmain));
 
   @include mx.theme("dark", true) {
-    color: var(--cl-caccent);
+    color: var(--cl-main, var(--cl-caccent));
   }
 }
 
@@ -235,16 +241,16 @@ pre {
   border-radius: mx.rem(20);
   border: mx.rem(2) solid var(--cl-main, rgba(140, 140, 140, 0.3));
   box-shadow: 0 mx.rem(0) mx.rem(16) mx.rem(-1) rgba(140, 140, 140, 0.2);
-  overflow: hidden;
 
   &:before {
     content: attr(data-lang);
     position: absolute;
     right: mx.rem(15);
-    top: mx.rem(15);
+    top: mx.rem(-15);
     padding: mx.rem(3) mx.rem(5);
     border-radius: mx.rem(5);
-    background-color: rgba(var(--cl-main-rgb, 140, 140, 140), 0.2);
+    background-color: rgba(var(--cl-main-rgb, (140, 140, 140)), 1);
+    color: var(--cl-text);
   }
 
   @include mx.b(mobile) {
@@ -257,8 +263,9 @@ pre {
     height: 100%;
     min-height: 100%;
     margin: 0;
-
-    padding: mx.rem(20) mx.rem(40);
+    border-radius: 1.25rem;
+    text-wrap: auto;
+    padding: mx.rem(20);
     background-color: var(--body-bg-color);
   }
 }

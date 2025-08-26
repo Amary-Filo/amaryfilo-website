@@ -9,7 +9,10 @@
           name="username"
           required="required"
           placeholder=" "
-        /><label class="form-label" for="username">Your Name</label>
+        />
+        <label class="form-label" for="username">{{
+          "form.order.name" | t
+        }}</label>
       </div>
       <div class="form-group">
         <select class="form-select" id="project-type" name="project-type">
@@ -18,14 +21,20 @@
           <option value="swap">Swap</option>
           <option value="template">Template</option>
           <option value="cms">CMS</option>
-          <option value="custom">Custom</option></select
-        ><label class="form-label" for="project-type">Project Type</label>
+          <option value="custom">Custom</option>
+        </select>
+        <label class="form-label" for="project-type">{{
+          "form.order.project" | t
+        }}</label>
       </div>
       <div class="form-group">
         <select class="form-select" id="contact-type" name="contact-type">
           <option value="telegram">Telegram</option>
-          <option value="email">Email</option></select
-        ><label class="form-label" for="contact-type">Contact Type</label>
+          <option value="email">Email</option>
+        </select>
+        <label class="form-label" for="contact-type">{{
+          "form.order.contact.title" | t
+        }}</label>
       </div>
       <div class="form-group">
         <input
@@ -35,7 +44,10 @@
           name="contact"
           required="required"
           placeholder=" "
-        /><label class="form-label" for="contact">Your Contact</label>
+        />
+        <label class="form-label" for="contact">{{
+          "form.order.contact" | t
+        }}</label>
       </div>
       <div class="form-group">
         <textarea
@@ -45,8 +57,10 @@
           cols="30"
           rows="5"
           placeholder=" "
-        ></textarea
-        ><label class="form-label" for="description">Description</label>
+        ></textarea>
+        <label class="form-label" for="description">{{
+          "form.order.text" | t
+        }}</label>
       </div>
       <div class="form-group">
         <div class="check">
@@ -56,7 +70,10 @@
             id="design"
             name="design"
             value="design"
-          /><label class="label op-7" for="design">I have a design</label>
+          />
+          <label class="label op-7" for="design">{{
+            "form.order.design" | t
+          }}</label>
         </div>
         <div class="check">
           <input
@@ -65,9 +82,10 @@
             id="smart-contracts"
             name="smart-contracts"
             value="smart-contract"
-          /><label class="label op-7" for="smart-contracts"
-            >I have smart contracts</label
-          >
+          />
+          <label class="label op-7" for="smart-contracts">
+            {{ "form.order.contracts" | t }}
+          </label>
         </div>
         <div class="check">
           <input
@@ -76,7 +94,10 @@
             id="backend"
             name="backend"
             value="backend"
-          /><label class="label op-7" for="backend">I have a server</label>
+          />
+          <label class="label op-7" for="backend">{{
+            "form.order.server" | t
+          }}</label>
         </div>
         <div class="check">
           <input
@@ -85,33 +106,33 @@
             id="api"
             name="api"
             value="api"
-          /><label class="label op-7" for="api"
-            >I have a REST/GraphQl API</label
-          >
+          />
+          <label class="label op-7" for="api">{{ "form.order.api" | t }}</label>
         </div>
       </div>
       <div class="form-btn">
-        <a class="btn g-bg w-100 g-a cl-g-order" href="#" target="_blank"
-          >Submit order</a
-        >
+        <a class="btn g-bg w-100 g-a cl-g-order" href="#" target="_blank">
+          {{ "form.order.button" | t }}
+        </a>
         <div class="form-text">
           <p class="text">
-            By clicking on the button you agree <br />
-            to <a href="#">the privacy policy </a>and
-            <a href="#">terms of data transfer.</a>
+            {{ "form.info.one" | t }}<br />
+            {{ "form.info.two" | t }}
+            <a href="#">{{ "form.info.privacy" | t }}</a>
+            {{ "form.info.three" | t }}
+            <a href="#">{{ "form.info.terms" | t }}</a>
           </p>
         </div>
       </div>
     </form>
     <div class="head-section fl-bc fl-dc hs-part">
-      <h2 class="title ls-2 t-gr ls t-u cl-g-order">Order</h2>
-      <p class="text op-7 ls fw-b">
-        Compose your application for the development of your own project.
-        <br />
-        <br />
-        Perhaps you already have a design, smart contracts and backend, or
-        perhaps you need to create everything anew.
-      </p>
+      <h2 class="title ls-2 t-gr ls t-u cl-g-order">
+        {{ "form.order.title" | t }}
+      </h2>
+      <p
+        class="text op-7 ls fw-b"
+        [innerHTML]="'form.order.description' | t"
+      ></p>
     </div>
   </div>
 </section>

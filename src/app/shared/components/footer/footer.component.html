@@ -3,31 +3,48 @@
     <span class="logo ic-amaryfilo t-gr"></span>
     <div class="cleatfix"></div>
     <nav class="fl-cc">
-      <a class="btn m" title="Open About page" routerLinkWithLang="about"
-        >About</a
-      >
-      <a class="btn m" title="Open Blog page" routerLinkWithLang="blog">Blog</a>
-      <a class="btn m" title="Open Design page" routerLinkWithLang="designs"
-        >Design</a
-      >
-      <a class="btn m" title="Open Projects page" routerLinkWithLang="projects"
-        >Projects</a
+      <a
+        class="btn m"
+        [title]="'menu.open' | t : { title: ('menu.about' | t) }"
+        routerLinkWithLang="about"
+        >{{ "menu.about" | t }}</a
       >
       <a
         class="btn m"
-        title="Open Solutions page"
-        routerLinkWithLang="solutions"
-        >Solutions</a
+        [title]="'menu.open' | t : { title: ('menu.blog' | t) }"
+        routerLinkWithLang="blog"
+        >{{ "menu.blog" | t }}</a
       >
-      <a class="btn m" title="Open Sandbox page" routerLinkWithLang="sandbox"
-        >Sandbox</a
+      <a
+        class="btn m"
+        [title]="'menu.open' | t : { title: ('menu.designs' | t) }"
+        routerLinkWithLang="designs"
+        >{{ "menu.designs" | t }}</a
+      >
+      <a
+        class="btn m"
+        [title]="'menu.open' | t : { title: ('menu.projects' | t) }"
+        routerLinkWithLang="projects"
+        >{{ "menu.projects" | t }}</a
+      >
+      <a
+        class="btn m"
+        [title]="'menu.open' | t : { title: ('menu.solutions' | t) }"
+        routerLinkWithLang="solutions"
+        >{{ "menu.solutions" | t }}</a
+      >
+      <a
+        class="btn m"
+        [title]="'menu.open' | t : { title: ('menu.sandbox' | t) }"
+        routerLinkWithLang="sandbox"
+        >{{ "menu.sandbox" | t }}</a
       >
     </nav>
     <div class="social-links fl fl-w">
       <app-social-links />
     </div>
     <div class="clearfix"></div>
-    <b class="ft-creater ls">Created by Amary Filo</b>
-    <span class="ft-copyright">all rights received (c) 2022</span>
+    <b class="ft-creater ls">{{ "footer.copyrights" | t }}</b>
+    <span class="ft-copyright">{{ "footer.rights" | t : { year } }}</span>
   </div>
 </footer>

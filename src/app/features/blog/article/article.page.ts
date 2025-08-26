@@ -25,9 +25,13 @@ import { ArticleBlockComponent } from './components/article-block/article-block.
 })
 export class ArticlePage {
   private static readonly MOBILE_BP = 1025;
+  private static readonly STICKY_OFFSET = 120; // подгони под высоту шапки
 
   private route = inject(ActivatedRoute);
   private data = toSignal(this.route.data, { initialValue: {} as any });
+
+  activeId = signal<string>('');
+  showTopButton = signal(false);
 
   menuOpen = signal(false);
   isDesktop = signal(
@@ -47,6 +51,7 @@ export class ArticlePage {
     const menu = (this.article()?.menu ?? []) as BlogArticleMenu[];
     const groups: Array<{ h2: BlogArticleMenu; subs: BlogArticleMenu[] }> = [];
     let current: { h2: BlogArticleMenu; subs: BlogArticleMenu[] } | null = null;
+
     for (const m of menu) {
       if (m.level === 2) {
         current = { h2: m, subs: [] };
@@ -62,6 +67,7 @@ export class ArticlePage {
         current.subs.push(m);
       }
     }
+
     return groups;
   });
 
@@ -79,5 +85,33 @@ export class ArticlePage {
 
   toggleMenu() {
     if (!this.isDesktop()) this.menuOpen.update((v) => !v);
+  }
+
+  goTo(id: string, ev: Event) {
+    ev.preventDefault();
+    this.activeId.set(id);
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const top =
+      el.getBoundingClientRect().top +
+      window.scrollY -
+      ArticlePage.STICKY_OFFSET;
+    window.scrollTo({ top, behavior: 'smooth' });
+
+    if (!this.isDesktop()) this.menuOpen.set(false);
+
+    // history.replaceState(null, '', `#${id}`);
+  }
+
+  @HostListener('window:scroll')
+  onScroll() {
+    if (typeof window === 'undefined') return;
+    this.showTopButton.set(window.scrollY > 300);
+  }
+
+  scrollTop() {
+    this.activeId.set('');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

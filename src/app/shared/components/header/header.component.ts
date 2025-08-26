@@ -13,12 +13,13 @@ import {
   SUPPORTED_LANGS,
 } from '@core/i18n/i18n.model';
 import { LanguageService } from '@core/i18n/language.service';
+import { TranslatePipe } from '@core/i18n/translate.pipe';
 import { RouterLinkWithLangDirective } from '@core/i18n/with-lang-link.directive';
 import { ThemeService } from '@core/services/theme.service';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterModule, RouterLinkWithLangDirective],
+  imports: [RouterModule, RouterLinkWithLangDirective, TranslatePipe],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
   standalone: true,

@@ -4,7 +4,7 @@
       class="btn fz-md"
       [class]="'menu-bars btn fz-md ' + iconClass()"
       (click)="toggleMenu()"
-      title="Toggle menu"
+      [title]="'menu.toggle' | t"
     ></span>
     <div class="header">
       <a
@@ -16,45 +16,45 @@
       <nav class="fl">
         <a
           class="btn m"
-          title="Open About page"
+          [title]="'menu.open' | t : { title: ('menu.about' | t) }"
           routerLinkWithLang="about"
           (click)="onNavClick()"
-          >About</a
+          >{{ "menu.about" | t }}</a
         >
         <a
           class="btn m"
-          title="Open Blog page"
+          [title]="'menu.open' | t : { title: ('menu.blog' | t) }"
           routerLinkWithLang="blog"
           (click)="onNavClick()"
-          >Blog</a
+          >{{ "menu.blog" | t }}</a
         >
         <a
           class="btn m"
-          title="Open Design page"
+          [title]="'menu.open' | t : { title: ('menu.designs' | t) }"
           routerLinkWithLang="designs"
           (click)="onNavClick()"
-          >Design</a
+          >{{ "menu.designs" | t }}</a
         >
         <a
           class="btn m"
-          title="Open Projects page"
+          [title]="'menu.open' | t : { title: ('menu.projects' | t) }"
           routerLinkWithLang="projects"
           (click)="onNavClick()"
-          >Projects</a
+          >{{ "menu.projects" | t }}</a
         >
         <a
           class="btn m"
-          title="Open Solutions page"
+          [title]="'menu.open' | t : { title: ('menu.solutions' | t) }"
           routerLinkWithLang="solutions"
           (click)="onNavClick()"
-          >Solutions</a
+          >{{ "menu.solutions" | t }}</a
         >
         <a
           class="btn m"
-          title="Open Sandbox page"
+          [title]="'menu.open' | t : { title: ('menu.sandbox' | t) }"
           routerLinkWithLang="sandbox"
           (click)="onNavClick()"
-          >Sandbox</a
+          >{{ "menu.sandbox" | t }}</a
         >
       </nav>
       <div class="fl header-btns">
@@ -73,7 +73,9 @@
             "
             (click)="theme.toggle()"
             [attr.title]="
-              theme.theme() === 'dark' ? 'Light theme' : 'Dark theme'
+              theme.theme() === 'dark'
+                ? ('menu.theme.light' | t)
+                : ('menu.theme.dark' | t)
             "
           >
           </span>
@@ -83,21 +85,21 @@
   </div>
 </header>
 
-<!-- Простая модалка выбора языка -->
 @if (langModalOpen()) {
 <div class="modal fl-cc fl-dc" id="modal-lang">
   <div (click)="closeLangModal()" class="backdrop"></div>
   <div class="modal-wrap">
     <button
       (click)="closeLangModal()"
-      aria-label="Close"
+      [attr.aria-label]="'menu.modal.close' | t"
       class="modal-close btn ic-cancel-1 link-hover"
     ></button>
     <div class="modal-top">
-      <h2 class="title fz-xxl cl-amaryfilo t-gr">Choose language</h2>
+      <h2 class="title fz-xxl cl-amaryfilo t-gr">
+        {{ "menu.modal.title" | t }}
+      </h2>
       <p class="text op-6">
-        Website have different languages that must help you to understand
-        content in your native language for best experience.
+        {{ "menu.modal.description" | t }}
       </p>
       <div class="clearfix"></div>
     </div>

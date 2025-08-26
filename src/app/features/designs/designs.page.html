@@ -39,7 +39,7 @@
         [title]="'page.designs.item.title' | t : { title: design.title }"
         [routerLinkWithLang]="['designs', design.slug]"
       >
-        <picture class="img fl fl-dc">
+        <picture class="img fl fl-dc" loading="lazy">
           <source type="image/webp" [srcset]="imagePath(design) + '.webp'" />
           <img
             loading="lazy"

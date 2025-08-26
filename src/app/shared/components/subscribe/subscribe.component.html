@@ -2,8 +2,10 @@
   <div class="container">
     <div class="cd cl-subscribe">
       <div class="head-section fl-bc fl-dc">
-        <h2 class="ls t-gr cl-g-subscribe fz-xxl2 fw-800 t-u">Get news!</h2>
-        <p class="text op-7">No spam, just new blog posts and updates!</p>
+        <h2 class="ls t-gr cl-g-subscribe fz-xxl2 fw-800 t-u">
+          {{ "subscribe.title" | t }}
+        </h2>
+        <p class="text op-7">{{ "subscribe.description" | t }}</p>
       </div>
       <form class="form">
         <div class="form-group">
@@ -15,21 +17,25 @@
             required="required"
             placeholder=" "
           />
-          <label class="form-label" for="subscribe">Your Email</label>
+          <label class="form-label" for="subscribe">{{
+            "subscribe.email" | t
+          }}</label>
           <a
             class="btn fill t-cw md"
             href="#"
             rel="nofollow norefferer"
             target="blank"
-            title="Subscribe on news"
-            >GO!</a
+            [title]="'subscribe.button.title' | t"
+            >{{ "subscribe.button" | t }}</a
           >
         </div>
         <div class="form-text">
           <p class="text">
-            By clicking on the button you agree <br />
-            to <a href="#">the privacy policy </a>and
-            <a href="#">terms of data transfer.</a>
+            {{ "form.info.one" | t }}<br />
+            {{ "form.info.two" | t }}
+            <a href="#">{{ "form.info.privacy" | t }}</a>
+            {{ "form.info.three" | t }}
+            <a href="#">{{ "form.info.terms" | t }}</a>
           </p>
         </div>
       </form>
