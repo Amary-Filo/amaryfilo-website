@@ -8,10 +8,11 @@
     "date_start": "2014-09-01",
     "date_end": "2016-09-30",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Learning development tools.",
+      "Building my first web pages with custom designs.",
+      "Studying basic JavaScript for DOM manipulation.",
+      "Learning PHP basics: sending forms, handling email, and working with databases.",
+      "Learning HTML & CSS fundamentals."
     ]
   },
   {
@@ -24,10 +25,22 @@
     "date_start": "2016-09-16",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Using OctoberCMS as the main framework for e-commerce and websites.",
+      "Creating responsive and reusable email templates.",
+      "Website maintenance and administration.",
+      "Learning web and mobile design.",
+      "Designing online stores, landing pages, mobile apps, and business card sites.",
+      "Project management with independent framework choice.",
+      "Image optimization for size and quality.",
+      "Server optimization: configuring Apache and Nginx.",
+      "Website performance optimization: images, styles, structure, and code.",
+      "Learning TypeScript and Vue.js.",
+      "Using preprocessors for JS, CSS, and HTML.",
+      "Building e-commerce websites with online orders and payments.",
+      "Integrating bank acquiring/payment gateways.",
+      "Integrating Google Analytics, Yandex Metrica, and E-commerce tracking.",
+      "Developing various landing pages and application forms.",
+      "Working with multiple CMS platforms."
     ]
   },
   {
@@ -39,10 +52,11 @@
     "date_start": "2019-02-01",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Integrating Contentful CMS.",
+      "Implementing and customizing analytics across websites.",
+      "Working with Less and Pug preprocessors.",
+      "Building HubSpot pages and integrating forms.",
+      "Migrating and supporting websites on WordPress."
     ]
   },
   {
@@ -50,15 +64,24 @@
     "title": "Rock'n'Block",
     "positions": [
       "Front-end TeamLead",
-      "Software Engeneer"
+      "Software Engineer"
     ],
     "date_start": "2019-11-11",
     "date_end": "2022-01-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Leading the frontend team and direction.",
+      "Developing package solutions and reusable components.",
+      "Adjusting and refining UI design and layouts.",
+      "Estimating projects and delivery timelines.",
+      "Building projects on Nuxt.js, Angular, and React.",
+      "Setting up CI/CD automation with GitHub Actions.",
+      "Project management and task distribution.",
+      "Connecting crypto wallets for DeFi projects.",
+      "Integrating smart contracts.",
+      "Developing DeFi apps with Web3.js and Ethers.js.",
+      "Learning and applying React, Swift, SwiftUI, Ionic, and Angular.",
+      "Developing mobile apps and Cordova plugins.",
+      "Researching blockchain technology."
     ]
   },
   {
@@ -70,10 +93,13 @@
     "date_start": "2022-02-15",
     "date_end": "2022-05-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Leading frontend development.",
+      "Contributing to a web-based crypto platform.",
+      "Building services for cryptocurrency operations.",
+      "Creating landing pages and informational websites.",
+      "Design reviews and UX/UI improvements.",
+      "Working with gRPC.",
+      "Configuring and working with Nginx."
     ]
   },
   {
@@ -87,10 +113,21 @@
     "date_start": "2022-08-29",
     "date_end": "2025-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Developing and supporting the main platform on Angular 14.",
+      "Migrating the platform to Angular 16 and then to 17 with the new Signals syntax.",
+      "Building a reusable UI Kit for multiple projects.",
+      "Refactoring a complex internal admin panel on Angular.",
+      "Reworking the admin panel from Angular 14 to Angular 17 in two days using Signals.",
+      "Developing a crypto browser extension for Chrome and Firefox.",
+      "Implementing wallet authorization via WebSocket and QR code through a banking app.",
+      "Creating a browser API for DeFi and DEX projects.",
+      "Integrating WalletConnect and Smart Wallets into the main Angular platform.",
+      "Researching and integrating Smart Wallets (Biconomy → ZeroDev).",
+      "Implementing crypto payments, balance retrieval, and batch transactions.",
+      "Participating in design development and reviews.",
+      "Hiring and conducting technical interviews for TeamLead and Senior Frontend roles.",
+      "Establishing a strong frontend workspace and writing blockchain documentation.",
+      "International communication in English on calls."
     ]
   },
   {

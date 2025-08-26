@@ -8,10 +8,11 @@
     "date_start": "2014-09-01",
     "date_end": "2016-09-30",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Erlernen von Entwicklungstools.",
+      "Erstellung meiner ersten Webseiten mit eigenen Designs.",
+      "Grundlagen von JavaScript für DOM-Manipulation.",
+      "Grundlagen von PHP: Formulare, E-Mails, Datenbanken.",
+      "Grundlagen von HTML & CSS."
     ]
   },
   {
@@ -24,10 +25,22 @@
     "date_start": "2016-09-16",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Einsatz von OctoberCMS als Hauptframework für Online-Shops und Websites.",
+      "Erstellung responsiver und wiederverwendbarer E-Mail-Vorlagen.",
+      "Wartung und Administration von Websites.",
+      "Erlernen von Web- und Mobile-Design.",
+      "Design von Online-Shops, Landing Pages und Apps.",
+      "Projektmanagement mit freier Framework-Auswahl.",
+      "Bildoptimierung für Größe und Qualität.",
+      "Serveroptimierung: Apache und Nginx Konfiguration.",
+      "Website-Optimierung: Bilder, Styles, Struktur und Code.",
+      "Erlernen von TypeScript und Vue.js.",
+      "Einsatz von Präprozessoren für JS, CSS und HTML.",
+      "Entwicklung von E-Commerce-Websites mit Bestellungen und Zahlungen.",
+      "Integration von Bank-Payment-Gateways.",
+      "Integration von Google Analytics, Yandex Metrica und E-Commerce.",
+      "Erstellung von Landing Pages und Formularen.",
+      "Arbeiten mit verschiedenen CMS."
     ]
   },
   {
@@ -39,10 +52,11 @@
     "date_start": "2019-02-01",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Integration von Contentful CMS.",
+      "Einrichtung und Anpassung von Analytics auf Websites.",
+      "Arbeiten mit Less- und Pug-Präprozessoren.",
+      "Erstellung von HubSpot-Seiten und Formularen.",
+      "Migration und Support von WordPress-Seiten."
     ]
   },
   {
@@ -50,15 +64,24 @@
     "title": "Rock'n'Block",
     "positions": [
       "Front-end TeamLead",
-      "Software Engeneer"
+      "Software Engineer"
     ],
     "date_start": "2019-11-11",
     "date_end": "2022-01-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Leitung des Frontend-Teams.",
+      "Entwicklung von Paketlösungen und wiederverwendbaren Komponenten.",
+      "Anpassung und Optimierung von UI-Designs.",
+      "Projekt- und Zeitabschätzungen.",
+      "Erstellung von Projekten mit Nuxt.js, Angular und React.",
+      "CI/CD-Automatisierung mit GitHub Actions.",
+      "Projektmanagement und Aufgabenverteilung.",
+      "Integration von Krypto-Wallets für DeFi-Projekte.",
+      "Integration von Smart Contracts.",
+      "Entwicklung von DeFi-Anwendungen mit Web3.js und Ethers.js.",
+      "Erlernen und Nutzung von React, Swift, SwiftUI, Ionic und Angular.",
+      "Entwicklung von Mobile-Apps und Cordova-Plugins.",
+      "Forschung im Bereich Blockchain-Technologie."
     ]
   },
   {
@@ -70,10 +93,13 @@
     "date_start": "2022-02-15",
     "date_end": "2022-05-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Leitung der Frontend-Entwicklung.",
+      "Mitarbeit an einer Krypto-Plattform im Web.",
+      "Entwicklung von Services für Kryptowährungen.",
+      "Erstellung von Info-Webseiten und Landing Pages.",
+      "Design-Reviews und UX/UI-Optimierungen.",
+      "Arbeiten mit gRPC.",
+      "Arbeiten mit Nginx."
     ]
   },
   {
@@ -87,10 +113,21 @@
     "date_start": "2022-08-29",
     "date_end": "2025-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Entwicklung und Support der Hauptplattform mit Angular 14.",
+      "Migration auf Angular 16 und 17 mit Signals-Syntax.",
+      "Erstellung eines wiederverwendbaren UI Kits.",
+      "Refactoring eines komplexen Admin-Panels in Angular.",
+      "Umstellung von Angular 14 auf 17 in zwei Tagen mit Signals.",
+      "Entwicklung einer Krypto-Browser-Erweiterung für Chrome und Firefox.",
+      "Wallet-Login via WebSocket und QR-Code mit Banking-App.",
+      "Entwicklung einer Browser-API für DeFi- und DEX-Projekte.",
+      "Integration von WalletConnect und Smart Wallets.",
+      "Studium und Integration von Smart Wallets (Biconomy → ZeroDev).",
+      "Umsetzung von Krypto-Zahlungen, Balances und Batch-Transaktionen.",
+      "Mitarbeit an Design und Reviews.",
+      "Rekrutierung und technische Interviews für Senior-Rollen.",
+      "Aufbau eines Frontend-Teams und Blockchain-Dokumentation.",
+      "Internationale Kommunikation auf Englisch."
     ]
   },
   {

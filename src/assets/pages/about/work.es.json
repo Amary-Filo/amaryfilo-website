@@ -8,10 +8,11 @@
     "date_start": "2014-09-01",
     "date_end": "2016-09-30",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Aprendizaje de herramientas de desarrollo.",
+      "Creación de mis primeras páginas web con diseños propios.",
+      "Estudio de JavaScript básico para manipulación del DOM.",
+      "Aprendizaje de PHP básico: envío de formularios, correo electrónico y bases de datos.",
+      "Fundamentos de HTML y CSS."
     ]
   },
   {
@@ -24,10 +25,22 @@
     "date_start": "2016-09-16",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Uso de OctoberCMS como framework principal para tiendas online y sitios web.",
+      "Creación de plantillas de correo adaptables y reutilizables.",
+      "Mantenimiento y administración de sitios web.",
+      "Aprendizaje de diseño web y móvil.",
+      "Diseño de tiendas online, landing pages y aplicaciones.",
+      "Gestión de proyectos con libertad de elección de frameworks.",
+      "Optimización de imágenes para tamaño y calidad.",
+      "Optimización de servidores: configuración de Apache y Nginx.",
+      "Optimización del rendimiento web: imágenes, estilos, estructura y código.",
+      "Aprendizaje de TypeScript y Vue.js.",
+      "Uso de preprocesadores para JS, CSS y HTML.",
+      "Desarrollo de tiendas online con pedidos y pagos.",
+      "Integración de pasarelas de pago bancarias.",
+      "Integración de Google Analytics, Yandex Metrica y e-commerce.",
+      "Creación de landing pages y formularios de contacto.",
+      "Trabajo con diferentes CMS."
     ]
   },
   {
@@ -39,10 +52,11 @@
     "date_start": "2019-02-01",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Integración de Contentful CMS.",
+      "Configuración y personalización de analítica web.",
+      "Trabajo con preprocesadores Less y Pug.",
+      "Creación de páginas y formularios en HubSpot.",
+      "Migración y soporte de sitios en WordPress."
     ]
   },
   {
@@ -50,15 +64,24 @@
     "title": "Rock'n'Block",
     "positions": [
       "Front-end TeamLead",
-      "Software Engeneer"
+      "Software Engineer"
     ],
     "date_start": "2019-11-11",
     "date_end": "2022-01-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Liderar el equipo frontend.",
+      "Desarrollo de soluciones empaquetadas y componentes reutilizables.",
+      "Ajustes y mejoras en diseño UI.",
+      "Estimación de proyectos y plazos de entrega.",
+      "Creación de proyectos con Nuxt.js, Angular y React.",
+      "Automatización CI/CD con GitHub Actions.",
+      "Gestión de proyectos y distribución de tareas.",
+      "Conexión de billeteras cripto en proyectos DeFi.",
+      "Integración de contratos inteligentes.",
+      "Desarrollo de aplicaciones DeFi con Web3.js y Ethers.js.",
+      "Aprendizaje y uso de React, Swift, SwiftUI, Ionic y Angular.",
+      "Desarrollo de aplicaciones móviles y plugins de Cordova.",
+      "Investigación de tecnología blockchain."
     ]
   },
   {
@@ -70,10 +93,13 @@
     "date_start": "2022-02-15",
     "date_end": "2022-05-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Liderar el desarrollo frontend.",
+      "Participación en una plataforma cripto web.",
+      "Desarrollo de servicios relacionados con criptomonedas.",
+      "Creación de sitios informativos y landing pages.",
+      "Revisión de diseño y mejoras UX/UI.",
+      "Trabajo con gRPC.",
+      "Configuración y trabajo con Nginx."
     ]
   },
   {
@@ -87,10 +113,21 @@
     "date_start": "2022-08-29",
     "date_end": "2025-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Desarrollo y soporte de la plataforma principal en Angular 14.",
+      "Migración a Angular 16 y 17 con la nueva sintaxis Signals.",
+      "Creación de un UI Kit reutilizable para distintos proyectos.",
+      "Refactorización de un panel de administración complejo en Angular.",
+      "Reescritura del panel de Angular 14 a 17 en dos días con Signals.",
+      "Desarrollo de una extensión cripto para Chrome y Firefox.",
+      "Autenticación de billeteras mediante WebSocket y QR con app bancaria.",
+      "Desarrollo de un API de navegador para proyectos DeFi y DEX.",
+      "Integración de WalletConnect y Smart Wallets en la plataforma.",
+      "Estudio e integración de Smart Wallets (Biconomy → ZeroDev).",
+      "Implementación de pagos cripto, balances y transacciones por lotes.",
+      "Participación en el diseño y su revisión.",
+      "Contratación y entrevistas técnicas para roles senior.",
+      "Organización del equipo frontend y documentación en blockchain.",
+      "Comunicación internacional en inglés."
     ]
   },
   {

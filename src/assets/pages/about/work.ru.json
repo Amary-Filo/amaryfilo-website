@@ -8,10 +8,11 @@
     "date_start": "2014-09-01",
     "date_end": "2016-09-30",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Изучение инструментов разработки.",
+      "Создание первых веб-страниц с собственным дизайном.",
+      "Изучение основ JavaScript для работы с DOM.",
+      "Изучение основ PHP: отправка форм, работа с почтой и базами данных.",
+      "Изучение основ HTML и CSS."
     ]
   },
   {
@@ -24,10 +25,22 @@
     "date_start": "2016-09-16",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Использование OctoberCMS как основного фреймворка для интернет-магазинов и сайтов.",
+      "Создание адаптивных и повторно используемых email-шаблонов.",
+      "Администрирование и поддержка сайтов.",
+      "Изучение веб- и мобильного дизайна.",
+      "Разработка дизайнов для интернет-магазинов, лендингов и приложений.",
+      "Управление проектами и выбор фреймворков.",
+      "Оптимизация изображений по размеру и качеству.",
+      "Оптимизация серверов: настройка Apache и Nginx.",
+      "Оптимизация сайтов: изображения, стили, структура и код.",
+      "Изучение TypeScript и Vue.js.",
+      "Использование препроцессоров для JS, CSS и HTML.",
+      "Разработка интернет-магазинов с заказами и оплатой.",
+      "Интеграция банковских платежных систем.",
+      "Интеграция Google Analytics, Яндекс.Метрики и e-commerce.",
+      "Создание различных лендингов и форм заявок.",
+      "Работа с разными CMS."
     ]
   },
   {
@@ -39,10 +52,11 @@
     "date_start": "2019-02-01",
     "date_end": "2019-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Интеграция Contentful CMS.",
+      "Настройка и кастомизация аналитики на сайтах.",
+      "Работа с препроцессорами Less и Pug.",
+      "Разработка страниц и форм в HubSpot.",
+      "Миграция и поддержка сайтов на WordPress."
     ]
   },
   {
@@ -50,15 +64,24 @@
     "title": "Rock'n'Block",
     "positions": [
       "Front-end TeamLead",
-      "Software Engeneer"
+      "Software Engineer"
     ],
     "date_start": "2019-11-11",
     "date_end": "2022-01-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Руководство фронтенд-направлением.",
+      "Разработка пакетных решений и компонентов.",
+      "Адаптация и улучшение UI-дизайна.",
+      "Оценка проектов и сроков разработки.",
+      "Создание проектов на Nuxt.js, Angular и React.",
+      "Настройка CI/CD через GitHub Actions.",
+      "Управление проектами и распределение задач.",
+      "Подключение криптокошельков для DeFi-проектов.",
+      "Интеграция смарт-контрактов.",
+      "Разработка DeFi-приложений с Web3.js и Ethers.js.",
+      "Изучение и применение React, Swift, SwiftUI, Ionic и Angular.",
+      "Разработка мобильных приложений и плагинов для Cordova.",
+      "Изучение и исследование блокчейн-технологий."
     ]
   },
   {
@@ -70,10 +93,13 @@
     "date_start": "2022-02-15",
     "date_end": "2022-05-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Руководство фронтенд-разработкой.",
+      "Разработка криптоплатформы для Web.",
+      "Создание сервисов для работы с криптовалютой.",
+      "Создание лендингов и информационных сайтов.",
+      "Оценка и правки в дизайне.",
+      "Работа с gRPC.",
+      "Настройка и работа с Nginx."
     ]
   },
   {
@@ -87,10 +113,21 @@
     "date_start": "2022-08-29",
     "date_end": "2025-08-31",
     "areas": [
-      "Create first landing pages with my build-on-develop design.",
-      "Learn Web JavaScript for manipulating elememts and etc.",
-      "Learn basic PHP for send Forms and another data by mail.",
-      "Learning HTML and CSS as basic things for create website pages."
+      "Разработка и поддержка основной платформы на Angular 14.",
+      "Миграция платформы на Angular 16 и 17 с использованием Signals.",
+      "Создание UI Kit для повторного использования в разных проектах.",
+      "Рефакторинг сложной админки на Angular.",
+      "Переписывание админки с Angular 14 на Angular 17 за два дня.",
+      "Разработка крипто-расширения для Chrome и Firefox.",
+      "Авторизация кошельков через WebSocket и QR-код в банковском приложении.",
+      "Разработка браузерного API для DeFi и DEX проектов.",
+      "Интеграция WalletConnect и Smart Wallets в платформу.",
+      "Изучение Smart Wallets (Biconomy → ZeroDev) и интеграция.",
+      "Реализация крипто-платежей, получение балансов и батч-транзакций.",
+      "Участие в дизайне и его доработке.",
+      "Найм сотрудников и проведение тех. интервью на TeamLead и Senior позиции.",
+      "Организация фронтенд-команды и написание документации по блокчейну.",
+      "Международная коммуникация на английском."
     ]
   },
   {

@@ -7,10 +7,11 @@
       "date_start": "2014-09-01",
       "date_end": "2016-09-30",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Learning development tools.",
+        "Building my first web pages with custom designs.",
+        "Studying basic JavaScript for DOM manipulation.",
+        "Learning PHP basics: sending forms, handling email, and working with databases.",
+        "Learning HTML & CSS fundamentals."
       ]
     },
     {
@@ -20,10 +21,22 @@
       "date_start": "2016-09-16",
       "date_end": "2019-08-31",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Using OctoberCMS as the main framework for e-commerce and websites.",
+        "Creating responsive and reusable email templates.",
+        "Website maintenance and administration.",
+        "Learning web and mobile design.",
+        "Designing online stores, landing pages, mobile apps, and business card sites.",
+        "Project management with independent framework choice.",
+        "Image optimization for size and quality.",
+        "Server optimization: configuring Apache and Nginx.",
+        "Website performance optimization: images, styles, structure, and code.",
+        "Learning TypeScript and Vue.js.",
+        "Using preprocessors for JS, CSS, and HTML.",
+        "Building e-commerce websites with online orders and payments.",
+        "Integrating bank acquiring/payment gateways.",
+        "Integrating Google Analytics, Yandex Metrica, and E-commerce tracking.",
+        "Developing various landing pages and application forms.",
+        "Working with multiple CMS platforms."
       ]
     },
     {
@@ -33,23 +46,33 @@
       "date_start": "2019-02-01",
       "date_end": "2019-08-31",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Integrating Contentful CMS.",
+        "Implementing and customizing analytics across websites.",
+        "Working with Less and Pug preprocessors.",
+        "Building HubSpot pages and integrating forms.",
+        "Migrating and supporting websites on WordPress."
       ]
     },
     {
       "id": 4,
       "title": "Rock'n'Block",
-      "positions": ["Front-end TeamLead", "Software Engeneer"],
+      "positions": ["Front-end TeamLead", "Software Engineer"],
       "date_start": "2019-11-11",
       "date_end": "2022-01-31",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Leading the frontend team and direction.",
+        "Developing package solutions and reusable components.",
+        "Adjusting and refining UI design and layouts.",
+        "Estimating projects and delivery timelines.",
+        "Building projects on Nuxt.js, Angular, and React.",
+        "Setting up CI/CD automation with GitHub Actions.",
+        "Project management and task distribution.",
+        "Connecting crypto wallets for DeFi projects.",
+        "Integrating smart contracts.",
+        "Developing DeFi apps with Web3.js and Ethers.js.",
+        "Learning and applying React, Swift, SwiftUI, Ionic, and Angular.",
+        "Developing mobile apps and Cordova plugins.",
+        "Researching blockchain technology."
       ]
     },
     {
@@ -59,10 +82,13 @@
       "date_start": "2022-02-15",
       "date_end": "2022-05-31",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Leading frontend development.",
+        "Contributing to a web-based crypto platform.",
+        "Building services for cryptocurrency operations.",
+        "Creating landing pages and informational websites.",
+        "Design reviews and UX/UI improvements.",
+        "Working with gRPC.",
+        "Configuring and working with Nginx."
       ]
     },
     {
@@ -76,10 +102,21 @@
       "date_start": "2022-08-29",
       "date_end": "2025-08-31",
       "areas": [
-        "Create first landing pages with my build-on-develop design.",
-        "Learn Web JavaScript for manipulating elememts and etc.",
-        "Learn basic PHP for send Forms and another data by mail.",
-        "Learning HTML and CSS as basic things for create website pages."
+        "Developing and supporting the main platform on Angular 14.",
+        "Migrating the platform to Angular 16 and then to 17 with the new Signals syntax.",
+        "Building a reusable UI Kit for multiple projects.",
+        "Refactoring a complex internal admin panel on Angular.",
+        "Reworking the admin panel from Angular 14 to Angular 17 in two days using Signals.",
+        "Developing a crypto browser extension for Chrome and Firefox.",
+        "Implementing wallet authorization via WebSocket and QR code through a banking app.",
+        "Creating a browser API for DeFi and DEX projects.",
+        "Integrating WalletConnect and Smart Wallets into the main Angular platform.",
+        "Researching and integrating Smart Wallets (Biconomy → ZeroDev).",
+        "Implementing crypto payments, balance retrieval, and batch transactions.",
+        "Participating in design development and reviews.",
+        "Hiring and conducting technical interviews for TeamLead and Senior Frontend roles.",
+        "Establishing a strong frontend workspace and writing blockchain documentation.",
+        "International communication in English on calls."
       ]
     },
     {
@@ -100,64 +137,92 @@
       {
         "id": 1,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Изучение инструментов разработки.",
+          "Создание первых веб-страниц с собственным дизайном.",
+          "Изучение основ JavaScript для работы с DOM.",
+          "Изучение основ PHP: отправка форм, работа с почтой и базами данных.",
+          "Изучение основ HTML и CSS."
         ]
       },
       {
         "id": 2,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Использование OctoberCMS как основного фреймворка для интернет-магазинов и сайтов.",
+          "Создание адаптивных и повторно используемых email-шаблонов.",
+          "Администрирование и поддержка сайтов.",
+          "Изучение веб- и мобильного дизайна.",
+          "Разработка дизайнов для интернет-магазинов, лендингов и приложений.",
+          "Управление проектами и выбор фреймворков.",
+          "Оптимизация изображений по размеру и качеству.",
+          "Оптимизация серверов: настройка Apache и Nginx.",
+          "Оптимизация сайтов: изображения, стили, структура и код.",
+          "Изучение TypeScript и Vue.js.",
+          "Использование препроцессоров для JS, CSS и HTML.",
+          "Разработка интернет-магазинов с заказами и оплатой.",
+          "Интеграция банковских платежных систем.",
+          "Интеграция Google Analytics, Яндекс.Метрики и e-commerce.",
+          "Создание различных лендингов и форм заявок.",
+          "Работа с разными CMS."
         ]
       },
       {
         "id": 3,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Интеграция Contentful CMS.",
+          "Настройка и кастомизация аналитики на сайтах.",
+          "Работа с препроцессорами Less и Pug.",
+          "Разработка страниц и форм в HubSpot.",
+          "Миграция и поддержка сайтов на WordPress."
         ]
       },
       {
         "id": 4,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Руководство фронтенд-направлением.",
+          "Разработка пакетных решений и компонентов.",
+          "Адаптация и улучшение UI-дизайна.",
+          "Оценка проектов и сроков разработки.",
+          "Создание проектов на Nuxt.js, Angular и React.",
+          "Настройка CI/CD через GitHub Actions.",
+          "Управление проектами и распределение задач.",
+          "Подключение криптокошельков для DeFi-проектов.",
+          "Интеграция смарт-контрактов.",
+          "Разработка DeFi-приложений с Web3.js и Ethers.js.",
+          "Изучение и применение React, Swift, SwiftUI, Ionic и Angular.",
+          "Разработка мобильных приложений и плагинов для Cordova.",
+          "Изучение и исследование блокчейн-технологий."
         ]
       },
       {
         "id": 5,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Руководство фронтенд-разработкой.",
+          "Разработка криптоплатформы для Web.",
+          "Создание сервисов для работы с криптовалютой.",
+          "Создание лендингов и информационных сайтов.",
+          "Оценка и правки в дизайне.",
+          "Работа с gRPC.",
+          "Настройка и работа с Nginx."
         ]
       },
       {
         "id": 6,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
-        ]
-      },
-      {
-        "id": 6,
-        "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Разработка и поддержка основной платформы на Angular 14.",
+          "Миграция платформы на Angular 16 и 17 с использованием Signals.",
+          "Создание UI Kit для повторного использования в разных проектах.",
+          "Рефакторинг сложной админки на Angular.",
+          "Переписывание админки с Angular 14 на Angular 17 за два дня.",
+          "Разработка крипто-расширения для Chrome и Firefox.",
+          "Авторизация кошельков через WebSocket и QR-код в банковском приложении.",
+          "Разработка браузерного API для DeFi и DEX проектов.",
+          "Интеграция WalletConnect и Smart Wallets в платформу.",
+          "Изучение Smart Wallets (Biconomy → ZeroDev) и интеграция.",
+          "Реализация крипто-платежей, получение балансов и батч-транзакций.",
+          "Участие в дизайне и его доработке.",
+          "Найм сотрудников и проведение тех. интервью на TeamLead и Senior позиции.",
+          "Организация фронтенд-команды и написание документации по блокчейну.",
+          "Международная коммуникация на английском."
         ]
       }
     ],
@@ -165,64 +230,92 @@
       {
         "id": 1,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Aprendizaje de herramientas de desarrollo.",
+          "Creación de mis primeras páginas web con diseños propios.",
+          "Estudio de JavaScript básico para manipulación del DOM.",
+          "Aprendizaje de PHP básico: envío de formularios, correo electrónico y bases de datos.",
+          "Fundamentos de HTML y CSS."
         ]
       },
       {
         "id": 2,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Uso de OctoberCMS como framework principal para tiendas online y sitios web.",
+          "Creación de plantillas de correo adaptables y reutilizables.",
+          "Mantenimiento y administración de sitios web.",
+          "Aprendizaje de diseño web y móvil.",
+          "Diseño de tiendas online, landing pages y aplicaciones.",
+          "Gestión de proyectos con libertad de elección de frameworks.",
+          "Optimización de imágenes para tamaño y calidad.",
+          "Optimización de servidores: configuración de Apache y Nginx.",
+          "Optimización del rendimiento web: imágenes, estilos, estructura y código.",
+          "Aprendizaje de TypeScript y Vue.js.",
+          "Uso de preprocesadores para JS, CSS y HTML.",
+          "Desarrollo de tiendas online con pedidos y pagos.",
+          "Integración de pasarelas de pago bancarias.",
+          "Integración de Google Analytics, Yandex Metrica y e-commerce.",
+          "Creación de landing pages y formularios de contacto.",
+          "Trabajo con diferentes CMS."
         ]
       },
       {
         "id": 3,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Integración de Contentful CMS.",
+          "Configuración y personalización de analítica web.",
+          "Trabajo con preprocesadores Less y Pug.",
+          "Creación de páginas y formularios en HubSpot.",
+          "Migración y soporte de sitios en WordPress."
         ]
       },
       {
         "id": 4,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Liderar el equipo frontend.",
+          "Desarrollo de soluciones empaquetadas y componentes reutilizables.",
+          "Ajustes y mejoras en diseño UI.",
+          "Estimación de proyectos y plazos de entrega.",
+          "Creación de proyectos con Nuxt.js, Angular y React.",
+          "Automatización CI/CD con GitHub Actions.",
+          "Gestión de proyectos y distribución de tareas.",
+          "Conexión de billeteras cripto en proyectos DeFi.",
+          "Integración de contratos inteligentes.",
+          "Desarrollo de aplicaciones DeFi con Web3.js y Ethers.js.",
+          "Aprendizaje y uso de React, Swift, SwiftUI, Ionic y Angular.",
+          "Desarrollo de aplicaciones móviles y plugins de Cordova.",
+          "Investigación de tecnología blockchain."
         ]
       },
       {
         "id": 5,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Liderar el desarrollo frontend.",
+          "Participación en una plataforma cripto web.",
+          "Desarrollo de servicios relacionados con criptomonedas.",
+          "Creación de sitios informativos y landing pages.",
+          "Revisión de diseño y mejoras UX/UI.",
+          "Trabajo con gRPC.",
+          "Configuración y trabajo con Nginx."
         ]
       },
       {
         "id": 6,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
-        ]
-      },
-      {
-        "id": 6,
-        "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Desarrollo y soporte de la plataforma principal en Angular 14.",
+          "Migración a Angular 16 y 17 con la nueva sintaxis Signals.",
+          "Creación de un UI Kit reutilizable para distintos proyectos.",
+          "Refactorización de un panel de administración complejo en Angular.",
+          "Reescritura del panel de Angular 14 a 17 en dos días con Signals.",
+          "Desarrollo de una extensión cripto para Chrome y Firefox.",
+          "Autenticación de billeteras mediante WebSocket y QR con app bancaria.",
+          "Desarrollo de un API de navegador para proyectos DeFi y DEX.",
+          "Integración de WalletConnect y Smart Wallets en la plataforma.",
+          "Estudio e integración de Smart Wallets (Biconomy → ZeroDev).",
+          "Implementación de pagos cripto, balances y transacciones por lotes.",
+          "Participación en el diseño y su revisión.",
+          "Contratación y entrevistas técnicas para roles senior.",
+          "Organización del equipo frontend y documentación en blockchain.",
+          "Comunicación internacional en inglés."
         ]
       }
     ],
@@ -230,64 +323,92 @@
       {
         "id": 1,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Erlernen von Entwicklungstools.",
+          "Erstellung meiner ersten Webseiten mit eigenen Designs.",
+          "Grundlagen von JavaScript für DOM-Manipulation.",
+          "Grundlagen von PHP: Formulare, E-Mails, Datenbanken.",
+          "Grundlagen von HTML & CSS."
         ]
       },
       {
         "id": 2,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Einsatz von OctoberCMS als Hauptframework für Online-Shops und Websites.",
+          "Erstellung responsiver und wiederverwendbarer E-Mail-Vorlagen.",
+          "Wartung und Administration von Websites.",
+          "Erlernen von Web- und Mobile-Design.",
+          "Design von Online-Shops, Landing Pages und Apps.",
+          "Projektmanagement mit freier Framework-Auswahl.",
+          "Bildoptimierung für Größe und Qualität.",
+          "Serveroptimierung: Apache und Nginx Konfiguration.",
+          "Website-Optimierung: Bilder, Styles, Struktur und Code.",
+          "Erlernen von TypeScript und Vue.js.",
+          "Einsatz von Präprozessoren für JS, CSS und HTML.",
+          "Entwicklung von E-Commerce-Websites mit Bestellungen und Zahlungen.",
+          "Integration von Bank-Payment-Gateways.",
+          "Integration von Google Analytics, Yandex Metrica und E-Commerce.",
+          "Erstellung von Landing Pages und Formularen.",
+          "Arbeiten mit verschiedenen CMS."
         ]
       },
       {
         "id": 3,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Integration von Contentful CMS.",
+          "Einrichtung und Anpassung von Analytics auf Websites.",
+          "Arbeiten mit Less- und Pug-Präprozessoren.",
+          "Erstellung von HubSpot-Seiten und Formularen.",
+          "Migration und Support von WordPress-Seiten."
         ]
       },
       {
         "id": 4,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Leitung des Frontend-Teams.",
+          "Entwicklung von Paketlösungen und wiederverwendbaren Komponenten.",
+          "Anpassung und Optimierung von UI-Designs.",
+          "Projekt- und Zeitabschätzungen.",
+          "Erstellung von Projekten mit Nuxt.js, Angular und React.",
+          "CI/CD-Automatisierung mit GitHub Actions.",
+          "Projektmanagement und Aufgabenverteilung.",
+          "Integration von Krypto-Wallets für DeFi-Projekte.",
+          "Integration von Smart Contracts.",
+          "Entwicklung von DeFi-Anwendungen mit Web3.js und Ethers.js.",
+          "Erlernen und Nutzung von React, Swift, SwiftUI, Ionic und Angular.",
+          "Entwicklung von Mobile-Apps und Cordova-Plugins.",
+          "Forschung im Bereich Blockchain-Technologie."
         ]
       },
       {
         "id": 5,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Leitung der Frontend-Entwicklung.",
+          "Mitarbeit an einer Krypto-Plattform im Web.",
+          "Entwicklung von Services für Kryptowährungen.",
+          "Erstellung von Info-Webseiten und Landing Pages.",
+          "Design-Reviews und UX/UI-Optimierungen.",
+          "Arbeiten mit gRPC.",
+          "Arbeiten mit Nginx."
         ]
       },
       {
         "id": 6,
         "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
-        ]
-      },
-      {
-        "id": 6,
-        "areas": [
-          "Create first landing pages with my build-on-develop design.",
-          "Learn Web JavaScript for manipulating elememts and etc.",
-          "Learn basic PHP for send Forms and another data by mail.",
-          "Learning HTML and CSS as basic things for create website pages."
+          "Entwicklung und Support der Hauptplattform mit Angular 14.",
+          "Migration auf Angular 16 und 17 mit Signals-Syntax.",
+          "Erstellung eines wiederverwendbaren UI Kits.",
+          "Refactoring eines komplexen Admin-Panels in Angular.",
+          "Umstellung von Angular 14 auf 17 in zwei Tagen mit Signals.",
+          "Entwicklung einer Krypto-Browser-Erweiterung für Chrome und Firefox.",
+          "Wallet-Login via WebSocket und QR-Code mit Banking-App.",
+          "Entwicklung einer Browser-API für DeFi- und DEX-Projekte.",
+          "Integration von WalletConnect und Smart Wallets.",
+          "Studium und Integration von Smart Wallets (Biconomy → ZeroDev).",
+          "Umsetzung von Krypto-Zahlungen, Balances und Batch-Transaktionen.",
+          "Mitarbeit an Design und Reviews.",
+          "Rekrutierung und technische Interviews für Senior-Rollen.",
+          "Aufbau eines Frontend-Teams und Blockchain-Dokumentation.",
+          "Internationale Kommunikation auf Englisch."
         ]
       }
     ]

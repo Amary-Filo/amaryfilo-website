@@ -4,151 +4,75 @@
       "id": 1,
       "icon": "gallery",
       "title": "Frontend",
-      "description": "Frontend spec. and frameworks for create web/mobile applications.",
+      "description": "Core frontend frameworks and tools for building modern web and mobile apps.",
       "skills": [
-        { "id": 1, "title": "Angular", "icon": "angular" },
-        { "id": 2, "title": "React", "icon": "react" },
-        { "id": 3, "title": "Vue", "icon": "vue" },
-        { "id": 4, "title": "Ionic", "icon": "ionic" },
-        { "id": 5, "title": "HTML", "icon": "html5" },
-        { "id": 6, "title": "Css", "icon": "css3" },
-        { "id": 7, "title": "Sass", "icon": "sass" },
-        { "id": 8, "title": "Pug", "icon": "pug" },
-        { "id": 9, "title": "RxJs", "icon": "rxjs" },
-        { "id": 10, "title": "NgRx", "icon": "rxjs" },
-        { "id": 11, "title": "Gulp", "icon": "gulp" }
+        { "id": 1, "title": "Angular 20+", "icon": "angular" },
+        { "id": 2, "title": "RxJs", "icon": "rxjs" },
+        { "id": 3, "title": "NgRx", "icon": "rxjs" },
+        { "id": 4, "title": "TypeScript", "icon": "typescript" },
+        { "id": 5, "title": "React (experience)", "icon": "react" },
+        { "id": 6, "title": "Ionic", "icon": "ionic" },
+        { "id": 7, "title": "HTML", "icon": "html5" },
+        { "id": 8, "title": "CSS / Sass", "icon": "css3" },
+        { "id": 9, "title": "TailwindCSS", "icon": "css3" }
       ]
     },
     {
       "id": 2,
       "icon": "feature",
       "title": "Blockchain",
-      "description": "Packages and technologies used in applications.",
+      "description": "Technologies and frameworks for Web3, wallets, and DeFi integrations.",
       "skills": [
-        { "id": 1, "title": "Web3Js", "icon": "web3js" },
-        { "id": 2, "title": "Amfi Connect", "icon": "amaryfilo" },
-        { "id": 3, "title": "Wallet Connect", "icon": "walletconnect" },
+        { "id": 1, "title": "Web3.js", "icon": "web3js" },
+        { "id": 2, "title": "Ethers.js", "icon": "web3js" },
+        { "id": 3, "title": "WalletConnect", "icon": "walletconnect" },
         { "id": 4, "title": "Metamask", "icon": "metamask" },
-        { "id": 5, "title": "Wallets", "icon": "wallet" },
-        { "id": 6, "title": "Staking", "icon": "coins" },
-        { "id": 7, "title": "Bridges", "icon": "bitcoin" }
+        {
+          "id": 5,
+          "title": "Smart Wallets (Biconomy, ZeroDev)",
+          "icon": "wallet"
+        },
+        { "id": 6, "title": "DeFi Integrations", "icon": "coins" },
+        { "id": 7, "title": "Solidity (integration)", "icon": "coins" },
+        { "id": 8, "title": "Amfi Connect (own product)", "icon": "amaryfilo" }
       ]
     },
     {
       "id": 3,
       "icon": "images",
       "title": "Backend",
-      "description": "Technologies for create server-side (backend) api. CMS for websites. Databases and server optimization.",
+      "description": "Server-side frameworks, APIs, databases, and CMS platforms.",
       "skills": [
-        { "id": 1, "title": "NodeJs", "icon": "nodejs" },
-        { "id": 2, "title": "API", "icon": "api" },
-        { "id": 3, "title": "REST", "icon": "rest" },
-        { "id": 4, "title": "GraphQL", "icon": "graphql" },
-        { "id": 5, "title": "PHP", "icon": "php" },
-        { "id": 6, "title": "Laravel", "icon": "laravel" },
-        { "id": 7, "title": "Postgres", "icon": "postgres" },
-        { "id": 8, "title": "MySql", "icon": "mysql" },
-        { "id": 9, "title": "MongoDb", "icon": "mongodb" },
+        { "id": 1, "title": "Node.js", "icon": "nodejs" },
+        { "id": 2, "title": "Express.js", "icon": "nodejs" },
+        { "id": 3, "title": "NestJS", "icon": "nodejs" },
+        { "id": 4, "title": "REST", "icon": "rest" },
+        { "id": 5, "title": "GraphQL", "icon": "graphql" },
+        { "id": 6, "title": "Postgres", "icon": "postgres" },
+        { "id": 7, "title": "MySQL", "icon": "mysql" },
+        { "id": 8, "title": "MongoDB", "icon": "mongodb" },
+        { "id": 9, "title": "Nginx", "icon": "nginx" },
         { "id": 10, "title": "Apache", "icon": "apache" },
-        { "id": 11, "title": "Nginx", "icon": "nginx" },
-        { "id": 12, "title": "Winter CMS", "icon": "wintercms" },
-        { "id": 13, "title": "October CMS", "icon": "octobercms" },
-        { "id": 14, "title": "Custom CMS", "icon": "customcms" }
+        { "id": 11, "title": "Winter CMS", "icon": "wintercms" },
+        { "id": 12, "title": "October CMS", "icon": "octobercms" },
+        { "id": 13, "title": "Custom CMS", "icon": "customcms" },
+        { "id": 14, "title": "Docker", "icon": "docker" }
       ]
     },
     {
       "id": 4,
       "icon": "done",
       "title": "Other",
-      "description": "CI/CD, programms and additional information.",
+      "description": "Version control, CI/CD, cloud, and AI integrations.",
       "skills": [
         { "id": 1, "title": "GitHub", "icon": "github" },
         { "id": 2, "title": "Git", "icon": "git" },
-        { "id": 3, "title": "Bitbucket", "icon": "bitbucket" },
-        { "id": 4, "title": "Git Flow", "icon": "gitflow" },
-        { "id": 5, "title": "Npmjs", "icon": "npm" },
-        { "id": 6, "title": "GH Action", "icon": "github" }
+        { "id": 3, "title": "npm", "icon": "npm" },
+        { "id": 4, "title": "GitHub Actions", "icon": "github" },
+        { "id": 5, "title": "CI/CD", "icon": "github" },
+        { "id": 6, "title": "Cloud (AWS/GCP)", "icon": "cloud" },
+        { "id": 7, "title": "AI Integrations / LLM APIs", "icon": "ai" }
       ]
     }
-  ],
-  "data": {
-    "ru": [
-      {
-        "id": 1,
-        "icon": "gallery",
-        "title": "Фронтенд",
-        "description": "Фронтенд-стек и фреймворки для web/mobile."
-      },
-      {
-        "id": 2,
-        "icon": "feature",
-        "title": "Блокчейн",
-        "description": "Пакеты и технологии, используемые в приложениях."
-      },
-      {
-        "id": 3,
-        "icon": "images",
-        "title": "Бэкенд",
-        "description": "Технологии для серверной разработки, БД и CMS."
-      },
-      {
-        "id": 4,
-        "icon": "done",
-        "title": "Другое",
-        "description": "CI/CD, программы и дополнительная информация."
-      }
-    ],
-    "es": [
-      {
-        "id": 1,
-        "icon": "gallery",
-        "title": "Frontend",
-        "description": "Especificaciones y frameworks de frontend para crear aplicaciones web/móviles."
-      },
-      {
-        "id": 2,
-        "icon": "feature",
-        "title": "Blockchain",
-        "description": "Paquetes y tecnologías utilizadas en aplicaciones."
-      },
-      {
-        "id": 3,
-        "icon": "images",
-        "title": "Backend",
-        "description": "Tecnologías para crear API del lado del servidor, CMS y bases de datos."
-      },
-      {
-        "id": 4,
-        "icon": "done",
-        "title": "Otros",
-        "description": "CI/CD, programas e información adicional."
-      }
-    ],
-    "de": [
-      {
-        "id": 1,
-        "icon": "gallery",
-        "title": "Frontend",
-        "description": "Frontend-Stacks und Frameworks für Web/Mobile-Anwendungen."
-      },
-      {
-        "id": 2,
-        "icon": "feature",
-        "title": "Blockchain",
-        "description": "Pakete und Technologien, die in Anwendungen verwendet werden."
-      },
-      {
-        "id": 3,
-        "icon": "images",
-        "title": "Backend",
-        "description": "Technologien für serverseitige APIs, CMS und Datenbanken."
-      },
-      {
-        "id": 4,
-        "icon": "done",
-        "title": "Sonstiges",
-        "description": "CI/CD, Programme und zusätzliche Informationen."
-      }
-    ]
-  }
+  ]
 }
