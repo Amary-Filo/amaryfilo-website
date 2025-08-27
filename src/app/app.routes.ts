@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { CanMatchFn, Routes } from '@angular/router';
 import { langMatcher } from '@core/i18n/lang.matcher';
 import { designsIndexResolver } from './features/designs/designs.resolver';
 import { designResolver } from './features/designs/design/design.resolver';
@@ -9,6 +9,13 @@ import { projectsIndexResolver } from './features/projects/projects.resolver';
 import { projectResolver } from './features/projects/project/project.resolver';
 import { blogIndexResolver } from './features/blog/blog.resolver';
 import { articleResolver } from './features/blog/article/article.resolver';
+
+const SUP_LANGS = ['en', 'ru', 'es', 'de'] as const;
+
+export const langCanMatch: CanMatchFn = (_route, segments) => {
+  const first = segments[0]?.path;
+  return !!first && (SUP_LANGS as readonly string[]).includes(first);
+};
 
 const children: Routes = [
   {
@@ -25,14 +32,6 @@ const children: Routes = [
     resolve: { about: aboutResolver },
     title: 'Amary Filo | About Me',
   },
-  // {
-  //   path: 'areas',
-  //   loadComponent: () =>
-  //     import('./features/areas/areas.page').then((m) => m.AreasPage),
-  //   title: 'Amary Filo | Develop Areas',
-  // },
-  // { path: 'areas/:slug', loadComponent: () => import('./features/areas/area.page').then(m => m.AreaPage) },
-
   {
     path: 'designs',
     children: [
@@ -55,7 +54,6 @@ const children: Routes = [
       },
     ],
   },
-
   {
     path: 'projects',
     children: [
@@ -80,7 +78,6 @@ const children: Routes = [
       },
     ],
   },
-
   {
     path: 'blog',
     children: [
@@ -88,8 +85,8 @@ const children: Routes = [
         path: '',
         loadComponent: () =>
           import('./features/blog/blog.page').then((m) => m.BlogPage),
-        title: 'Amary Filo | Blog',
         resolve: { index: blogIndexResolver },
+        title: 'Amary Filo | Blog',
       },
       {
         path: ':slug',
@@ -100,42 +97,19 @@ const children: Routes = [
           ),
         resolve: { article: articleResolver },
       },
-      // {
-      //   path: 'category',
-      //   loadComponent: () =>
-      //     import('./features/blog/article/article.page').then(
-      //       (m) => m.ArticlePage
-      //     ),
-      //   // resolve: { article: articleResolver },
-      //   children: [
-      //     {
-      //       path: ':slug',
-      //       canActivate: [ExistsGuard],
-      //       loadComponent: () =>
-      //         import('./features/blog/article/article.page').then(
-      //           (m) => m.ArticlePage
-      //         ),
-      //       // resolve: { category: categoryResolver },
-      //     },
-      //   ],
-      // },
     ],
   },
-
-  // { path: 'solutions', loadComponent: () => import('./features/solutions/solutions.page').then(m => m.SolutionsPage), title: 'Solutions' },
-  // { path: 'sandbox', loadComponent: () => import('./features/sandbox/sandbox.page').then(m => m.SandboxPage), title: 'Sandbox' },
-
   {
     path: '404',
     loadComponent: () =>
       import('./features/not-found/not-found.page').then((m) => m.NotFoundPage),
     title: 'Oops... Not found',
   },
-  { path: '**', redirectTo: '404' },
 ];
 
 export const routes: Routes = [
   { matcher: langMatcher, children },
+  { path: ':lang', canMatch: [langCanMatch], children },
   { path: '', children },
-  { path: '**', redirectTo: '404' },
+  { path: '**', redirectTo: '' },
 ];

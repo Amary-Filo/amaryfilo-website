@@ -2,106 +2,100 @@ import { RenderMode, ServerRoute } from '@angular/ssr';
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
-const LANGS = ['en', 'ru', 'es', 'de'];
+const LANGS = ['en', 'ru', 'es', 'de'] as const;
 type PagePrefix = 'designs' | 'projects' | 'blog';
 
 const langMap = () => LANGS.map((lang) => ({ lang }));
 
-const prerenderParamsWithLang = (page: PagePrefix) => {
-  const idxPath = join(process.cwd(), `src/assets/${page}/index.json`);
-  const list = JSON.parse(readFileSync(idxPath, 'utf8')) as string[];
-  const slugs = (Array.isArray(list) ? list : []).filter(
+const slugs = (page: PagePrefix) => {
+  const p = join(process.cwd(), `src/assets/${page}/index.json`);
+  const list = JSON.parse(readFileSync(p, 'utf8')) as string[];
+  return (Array.isArray(list) ? list : []).filter(
     (s) => typeof s === 'string' && s.trim().length > 0
   );
+};
 
-  const res: Array<Record<string, string>> = [];
-  for (const lang of LANGS) {
-    for (const slug of slugs) res.push({ lang, slug });
-  }
-
+const langSlugParams = (page: PagePrefix) => {
+  const list = slugs(page);
+  const res: Array<{ lang: string; slug: string }> = [];
+  for (const lang of LANGS) for (const slug of list) res.push({ lang, slug });
   return res;
 };
 
-const prerenderParams = (page: PagePrefix) => {
-  const idxPath = join(process.cwd(), `src/assets/${page}/index.json`);
-  const list = JSON.parse(readFileSync(idxPath, 'utf8')) as string[];
-  return (Array.isArray(list) ? list : [])
-    .filter((s) => typeof s === 'string' && s.trim().length > 0)
-    .map((slug) => ({ slug }));
-};
-
 export const serverRoutes: ServerRoute[] = [
+  // без префикса
   { path: '', renderMode: RenderMode.Prerender },
   { path: 'about', renderMode: RenderMode.Prerender },
   { path: 'designs', renderMode: RenderMode.Prerender },
+  { path: 'projects', renderMode: RenderMode.Prerender },
+  { path: 'blog', renderMode: RenderMode.Prerender },
+
   {
     path: 'designs/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParams('designs'),
+    getPrerenderParams: async () => slugs('designs').map((slug) => ({ slug })),
   },
-  { path: 'projects', renderMode: RenderMode.Prerender },
+
   {
     path: 'projects/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParams('projects'),
+    getPrerenderParams: async () => slugs('projects').map((slug) => ({ slug })),
   },
-  { path: 'blog', renderMode: RenderMode.Prerender },
+
   {
     path: 'blog/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParams('blog'),
+    getPrerenderParams: async () => slugs('blog').map((slug) => ({ slug })),
   },
 
-  // LANGUAGE PREFIX
+  // языковые корни
   {
     path: ':lang',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => langMap(),
   },
 
-  // PAGE ABOUT
   {
     path: ':lang/about',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => langMap(),
   },
 
-  // PAGE DESIGNS
   {
     path: ':lang/designs',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => langMap(),
   },
+
   {
     path: ':lang/designs/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParamsWithLang('designs'),
+    getPrerenderParams: async () => langSlugParams('designs'),
   },
 
-  // PAGE PROJECTS
   {
     path: ':lang/projects',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => langMap(),
   },
+
   {
     path: ':lang/projects/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParamsWithLang('projects'),
+    getPrerenderParams: async () => langSlugParams('projects'),
   },
 
-  // PAGE BLOG
   {
     path: ':lang/blog',
     renderMode: RenderMode.Prerender,
     getPrerenderParams: async () => langMap(),
   },
+
   {
     path: ':lang/blog/:slug',
     renderMode: RenderMode.Prerender,
-    getPrerenderParams: async () => prerenderParamsWithLang('blog'),
+    getPrerenderParams: async () => langSlugParams('blog'),
   },
 
-  // OTHER CSR
   { path: '**', renderMode: RenderMode.Client },
 ];
