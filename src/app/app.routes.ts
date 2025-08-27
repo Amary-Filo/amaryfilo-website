@@ -125,8 +125,6 @@ const children: Routes = [
   // { path: 'solutions', loadComponent: () => import('./features/solutions/solutions.page').then(m => m.SolutionsPage), title: 'Solutions' },
   // { path: 'sandbox', loadComponent: () => import('./features/sandbox/sandbox.page').then(m => m.SandboxPage), title: 'Sandbox' },
 
-  // { path: 'contact', loadComponent: () => import('./features/contact/contact.page').then(m => m.ContactPage), title: 'Contact' },
-
   {
     path: '404',
     loadComponent: () =>
@@ -139,5 +137,5 @@ const children: Routes = [
 export const routes: Routes = [
   { matcher: langMatcher, children },
   { path: '', children },
-  { path: '**', redirectTo: '' },
+  { path: '**', redirectTo: '404' },
 ];

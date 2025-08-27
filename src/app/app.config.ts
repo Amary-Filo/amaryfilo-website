@@ -11,6 +11,7 @@ import {
 import {
   provideRouter,
   withComponentInputBinding,
+  withEnabledBlockingInitialNavigation,
   withInMemoryScrolling,
 } from '@angular/router';
 
@@ -69,7 +70,8 @@ export const appConfig: ApplicationConfig = {
       withInMemoryScrolling({
         scrollPositionRestoration: 'enabled',
         anchorScrolling: 'enabled',
-      })
+      }),
+      withEnabledBlockingInitialNavigation()
     ),
   ],
 };
