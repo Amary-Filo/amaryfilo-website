@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, inject, input, PLATFORM_ID } from '@angular/core';
 import {
   CodeBlock,
   ContentBlock,
@@ -16,6 +16,7 @@ import {
 import { CodepenScriptService } from '../../codepen-script.service';
 import { SafeHtmlPipe } from '@shared/pipes';
 import { getImagePath } from '@helpers/index';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-article-block',
@@ -29,6 +30,8 @@ export class ArticleBlockComponent {
   readonly slug = input.required<string>();
 
   private codepen = inject(CodepenScriptService);
+  private platformId = inject(PLATFORM_ID);
+  private isBrowser = isPlatformBrowser(this.platformId);
 
   isP(x: ContentBlock): x is PBlock {
     return x.type === 'p';
@@ -66,7 +69,7 @@ export class ArticleBlockComponent {
 
   ngAfterViewInit(): void {
     const v = this.block();
-    if (v?.type === 'embed' && v.provider === 'codepen') {
+    if (this.isBrowser && v?.type === 'embed' && v.provider === 'codepen') {
       this.codepen.ensureLoaded();
     }
   }

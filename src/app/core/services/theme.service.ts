@@ -23,11 +23,16 @@ export class ThemeService {
       if (t === 'dark') body.id = 'dark';
       else body.removeAttribute('id');
 
+      const meta = this.doc.querySelector<HTMLMetaElement>(
+        'meta[name="theme-color"]'
+      );
+      if (meta) {
+        meta.setAttribute('content', t === 'dark' ? '#1c1727' : '#ffffff');
+      }
+
       try {
         localStorage.setItem(THEME_STORAGE_KEY, t);
-      } catch {
-        /* noop */
-      }
+      } catch {}
     });
   }
 
