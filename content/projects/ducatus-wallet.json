@@ -1,0 +1,209 @@
+{
+  "metadata": {
+    "slug": "ducatus-wallet",
+    "date": "2021-12-10",
+    "category": ["mobile", "angular", "crypto", "ionic"],
+    "title": "Ducatus Wallet"
+  },
+  "base": {
+    "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
+    "description": "Development of an application for the Ducatus blockchain. Adding various modules from activating vouchers to creating deposits. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet for SWAP modules. Integration of both cryptocurrencies through the Moonpay service.",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ],
+    "logo": "ducatus-wallet-logo",
+    "images": [
+      "ducatus-wallet-1",
+      "ducatus-wallet-2",
+      "ducatus-wallet-3",
+      "ducatus-wallet-4",
+      "ducatus-wallet-5",
+      "ducatus-wallet-6",
+      "ducatus-wallet-7",
+      "ducatus-wallet-8"
+    ],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/DucatusX/ducatus-copay",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/DucatusX/ducatus-copay/tree/f51b4e602bc196626b08a512156efc637635c227",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "iOS",
+        "url": "https://apps.apple.com/ru/app/ducatus-wallet-2-0/id1489722627",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "Android",
+        "url": "https://play.google.com/store/apps/details?id=io.ducatus.walnew&hl=ru&gl=US",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Vouchers",
+        "description": ""
+      },
+      {
+        "title": "Mobile iOS/Android",
+        "description": ""
+      },
+      {
+        "title": "Deposits",
+        "description": ""
+      },
+      {
+        "title": "Wallet",
+        "description": ""
+      },
+      {
+        "title": "Transactions",
+        "description": ""
+      },
+      {
+        "title": "Swap",
+        "description": ""
+      },
+      {
+        "title": "Buy crypto by feat",
+        "description": ""
+      },
+      {
+        "title": "Moonpay",
+        "description": ""
+      },
+      {
+        "title": "Duc/DucX",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
+      "description": "Development of an application for the Ducatus blockchain. Adding various modules from activating vouchers to creating deposits. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet for SWAP modules. Integration of both cryptocurrencies through the Moonpay service.",
+      "features": [
+        {
+          "title": "Vouchers",
+          "description": ""
+        },
+        {
+          "title": "Mobile iOS/Android",
+          "description": ""
+        },
+        {
+          "title": "Deposits",
+          "description": ""
+        },
+        {
+          "title": "Wallet",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Swap",
+          "description": ""
+        },
+        {
+          "title": "Buy crypto by feat",
+          "description": ""
+        },
+        {
+          "title": "Moonpay",
+          "description": ""
+        },
+        {
+          "title": "Duc/DucX",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Разработка приложения для блокчейна Ducatus под платформы iOS, Web и Android.",
+      "description": "Разработка приложения для блокчейна Ducatus. Добавление различных модулей от активации ваучеров до создания депозитов. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька для SWAP модулей. Интеграция обена криптовалюты через сервис Moonpay.",
+      "features": [
+        {
+          "title": "Vouchers",
+          "description": ""
+        },
+        {
+          "title": "Mobile iOS/Android",
+          "description": ""
+        },
+        {
+          "title": "Deposits",
+          "description": ""
+        },
+        {
+          "title": "Wallet",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Swap",
+          "description": ""
+        },
+        {
+          "title": "Buy crypto by feat",
+          "description": ""
+        },
+        {
+          "title": "Moonpay",
+          "description": ""
+        },
+        {
+          "title": "Duc/DucX",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

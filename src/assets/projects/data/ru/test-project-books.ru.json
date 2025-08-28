@@ -1,0 +1,85 @@
+{
+  "slug": "test-project-books",
+  "title": "[TEST Project] Books",
+  "date": "2018-01-18",
+  "category": [
+    "vue"
+  ],
+  "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку формы.",
+  "description": "Тестовый проект созданный на Vuejs с использованием Axios. Демонстрирует работу с локальным хранилищем, возможностью валидировать ошибки, добавлять/изменять и удалять книги.",
+  "logo": "test-project-books-logo",
+  "instruments": [
+    {
+      "icon": "vue",
+      "color": "",
+      "title": "VueJs"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    }
+  ],
+  "images": [
+    "test-project-books-1",
+    "test-project-books-2",
+    "test-project-books-3",
+    "test-project-books-4"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/book-test",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "",
+      "title": "Open",
+      "url": "http://tests.amaryfilo.com/book-test/",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "VueJs",
+      "description": ""
+    },
+    {
+      "title": "Forms",
+      "description": ""
+    },
+    {
+      "title": "Localstorage",
+      "description": ""
+    },
+    {
+      "title": "Update info",
+      "description": ""
+    },
+    {
+      "title": "Pages",
+      "description": ""
+    },
+    {
+      "title": "Previews",
+      "description": ""
+    },
+    {
+      "title": "Validates",
+      "description": ""
+    }
+  ]
+}

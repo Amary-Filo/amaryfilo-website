@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "slug": "rubic-exchange",
+    "date": "2020-09-29",
+    "category": ["angular", "crypto"],
+    "title": "Rubic Exchange"
+  },
+  "base": {
+    "anonce": "Development of a cryptocurrency p2p exchange platform.",
+    "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      }
+    ],
+    "logo": "rubic-exchange-logo",
+    "images": [],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Cryptorubic/rubic-app",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/Cryptorubic/rubic-app/tree/43c2c0bcb0be36f3c5d8e2890ff1a6ce0cb82f70",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "View (New)",
+        "url": "https://rubic.exchange",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Web3js",
+        "description": ""
+      },
+      {
+        "title": "Metamask login",
+        "description": ""
+      },
+      {
+        "title": "Cryptocurrency",
+        "description": ""
+      },
+      {
+        "title": "P2P",
+        "description": ""
+      },
+      {
+        "title": "Create Transaction",
+        "description": ""
+      },
+      {
+        "title": "Multi-chain",
+        "description": ""
+      },
+      {
+        "title": "Multi-language",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Development of a cryptocurrency p2p exchange platform.",
+      "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
+      "features": [
+        {
+          "title": "Web3js",
+          "description": ""
+        },
+        {
+          "title": "Metamask login",
+          "description": ""
+        },
+        {
+          "title": "Cryptocurrency",
+          "description": ""
+        },
+        {
+          "title": "P2P",
+          "description": ""
+        },
+        {
+          "title": "Create Transaction",
+          "description": ""
+        },
+        {
+          "title": "Multi-chain",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Разработка p2p платформы по обмену криптовалюты.",
+      "description": "Разработка платформы по обмену криптовалюты. В 2020 году платформа имела первы вариант интерфейса и отличается от нынешнего. Были проведены различные доработки в коде, структуре и дизайне проекта. Основные разделы разработки были на правлены на запуск платформы, ее последущее развитие выделилось в отдельное направление в компании.",
+      "features": [
+        {
+          "title": "Web3js",
+          "description": ""
+        },
+        {
+          "title": "Metamask login",
+          "description": ""
+        },
+        {
+          "title": "Cryptocurrency",
+          "description": ""
+        },
+        {
+          "title": "P2P",
+          "description": ""
+        },
+        {
+          "title": "Create Transaction",
+          "description": ""
+        },
+        {
+          "title": "Multi-chain",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

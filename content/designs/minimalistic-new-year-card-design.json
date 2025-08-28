@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "slug": "minimalistic-new-year-card-design",
+    "date": "2018-12-31",
+    "category": ["postcard"],
+    "thumbnail": "minimalistic-new-year-card-design-thumb"
+  },
+  "base": {
+    "title": "Minimalistic New Year card design",
+    "description": "Minimalistic New Year card design. Created for the New Year 2018/2019.",
+    "links": [
+      {
+        "icon": "behance",
+        "color": "",
+        "title": "Behance",
+        "url": "https://www.behance.net/gallery/103555105/Minimalist-postcard-design",
+        "is_active": true
+      }
+    ],
+    "images": [
+      "minimalistic-new-year-card-design-1",
+      "minimalistic-new-year-card-design-2",
+      "minimalistic-new-year-card-design-3",
+      "minimalistic-new-year-card-design-4"
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Minimalistic New Year card design",
+      "description": "Minimalistic New Year card design. Created for the New Year 2018/2019."
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "slug": "ventuary",
+  "title": "Ventuary",
+  "date": "2020-05-25",
+  "category": [
+    "landing",
+    "vue"
+  ],
+  "anonce": "Layout of the Ventuary website and landing on NuxtJs.",
+  "description": "Layout of the Ventuary website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+  "logo": "ventuary-logo",
+  "instruments": [
+    {
+      "icon": "vue",
+      "color": "",
+      "title": "Vuejs"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    }
+  ],
+  "images": [
+    "ventuary-1",
+    "ventuary-2",
+    "ventuary-3",
+    "ventuary-4",
+    "ventuary-5",
+    "ventuary-6",
+    "ventuary-7",
+    "ventuary-8"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Rock-n-Block/ventuary",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Rock-n-Block/ventuary/tree/9dbb865f19ed914b99c2dc92954d477cd994937c",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://ventuary-app.herokuapp.com",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "NuxtJs",
+      "description": ""
+    },
+    {
+      "title": "Forms",
+      "description": ""
+    },
+    {
+      "title": "Navigation",
+      "description": ""
+    },
+    {
+      "title": "Events",
+      "description": ""
+    },
+    {
+      "title": "Template",
+      "description": ""
+    }
+  ]
+}

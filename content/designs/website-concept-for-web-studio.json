@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "slug": "website-concept-for-web-studio",
+    "date": "2018-12-04",
+    "category": ["web"],
+    "thumbnail": "website-concept-for-web-studio-thumb"
+  },
+  "base": {
+    "title": "Website concept for a web studio",
+    "description": "Design concept for a web studio website in dark colors and minimalist design. The main task was to focus the company's projects on the main screen.",
+    "links": [
+      {
+        "icon": "behance",
+        "color": "",
+        "title": "Behance",
+        "url": "https://www.behance.net/gallery/103218901/Web-design-concept-for-studio",
+        "is_active": true
+      }
+    ],
+    "images": [
+      "website-concept-for-web-studio-1",
+      "website-concept-for-web-studio-2"
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Website concept for a web studio",
+      "description": "Design concept for a web studio website in dark colors and minimalist design. The main task was to focus the company's projects on the main screen."
+    }
+  }
+}

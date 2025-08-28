@@ -4,5 +4,5 @@
   "description": "Servidor web y proxy inverso de alto rendimiento para aplicaciones modernas.",
   "icon": "nginx",
   "color": "nginx",
-  "count": 0
+  "count": 1
 }

@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "slug": "algovest",
+    "date": "2021-03-17",
+    "category": ["angular", "crypto"],
+    "title": "Algovest"
+  },
+  "base": {
+    "anonce": "Crypto platform for exchanging, investing and withdrawing tokens from smart contracts.",
+    "description": "Implementation of the Algovest Staking project from scratch. Working with the blockchain: transactions, getting a list of Stake requests, Withdraw tokens after the expiration of time. Working with a user account through MetaMask, but in a later version, the AMFI Connect package was added to implement account login from any application and device.",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "amaryfilo",
+        "color": "cl-cmain",
+        "title": "AMFI Connect"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ],
+    "logo": "algovest-logo",
+    "images": ["algovest-1", "algovest-2", "algovest-3", "algovest-4"],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Am-Filo/algovest-cp",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/Am-Filo/algovest-cp/tree/fb9c1c63123e15b95d3d79a10b959a78234d6212",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Wallets",
+        "description": ""
+      },
+      {
+        "title": "Transactions",
+        "description": ""
+      },
+      {
+        "title": "Themes",
+        "description": ""
+      },
+      {
+        "title": "Multi-chain",
+        "description": ""
+      },
+      {
+        "title": "Multi-language",
+        "description": ""
+      },
+      {
+        "title": "Smart contratcs",
+        "description": ""
+      },
+      {
+        "title": "Blockchain",
+        "description": ""
+      },
+      {
+        "title": "Staking",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Crypto platform for exchanging, investing and withdrawing tokens from smart contracts.",
+      "description": "Implementation of the Algovest Staking project from scratch. Working with the blockchain: transactions, getting a list of Stake requests, Withdraw tokens after the expiration of time. Working with a user account through MetaMask, but in a later version, the AMFI Connect package was added to implement account login from any application and device.",
+      "features": [
+        {
+          "title": "Wallets",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Themes",
+          "description": ""
+        },
+        {
+          "title": "Multi-chain",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        },
+        {
+          "title": "Smart contratcs",
+          "description": ""
+        },
+        {
+          "title": "Blockchain",
+          "description": ""
+        },
+        {
+          "title": "Staking",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Крипто-платформа для обмена, вложения и вывода токенов со смарт контрактов.",
+      "description": "Реализация Staking проекта Algovest с нуля. Работа с блокчейном: транзакции, получения списка Stake запросов, Withdraw токенов по истечению времени. Работа с аккаунтом пользователя через MetaMask, но в более поздней версии добавлен пакет AMFI Connect для реализации входа в аккаунт с любого приложения и устройства. ",
+      "features": [
+        {
+          "title": "Wallets",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Themes",
+          "description": ""
+        },
+        {
+          "title": "Multi-chain",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        },
+        {
+          "title": "Smart contratcs",
+          "description": ""
+        },
+        {
+          "title": "Blockchain",
+          "description": ""
+        },
+        {
+          "title": "Staking",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,34 +1,23 @@
 {
   "slug": "moovie",
   "title": "Moovie",
-  "date": "2019-05-11",
+  "date": "2017-06-15",
   "category": [
-    "Website"
+    "web"
   ],
   "thumbnail": "moovie-thumb",
-  "description": "Design für Online-Kinos, in denen neue Filme und Serien gezeigt werden. Zusätzlich gibt es einen neuen Film und weitere nützliche Medieninformationen.",
+  "description": "A simple landing page for a streaming service for movies, series and TV shows. The site displays news, traders and ratings for the broadcast content.",
   "images": [
     "moovie-1",
-    "moovie-2-de",
-    "moovie-3",
-    "moovie-4-de"
+    "moovie-2"
   ],
   "links": [
     {
       "icon": "behance",
+      "color": "",
       "title": "Behance",
-      "url": "https://behance.co"
-    },
-    {
-      "icon": "globe",
-      "color": "green",
-      "title": "My Designs",
-      "url": "https://md.co"
-    },
-    {
-      "title": "Twitter",
-      "url": "https://twitter.com",
-      "is_active": false
+      "url": "http://behance.net/gallery/146196693/Moovie",
+      "is_active": true
     }
   ]
 }

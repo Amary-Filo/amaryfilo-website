@@ -1,0 +1,104 @@
+{
+  "slug": "axion-dashboard",
+  "title": "Axion Dashboard",
+  "date": "2021-01-25",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Разработка проекта по управлению балансом криптовалюты Axion.",
+  "description": "Разработка проекта по управлению балансом криптовалюты Axion с нуля на Angular. Множество различных графиков написанных с нуля, работа с API и создание MultiAccount через web3 или MetaMask. Блок новостей и ставок. Два вида цветовой темы: темная и светлая.",
+  "logo": "axion-dashboard-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "Metamask",
+      "color": "",
+      "title": "MM"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "rest",
+      "color": "",
+      "title": "REST"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Rock-n-Block/axion-dashboard",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Rock-n-Block/axion-dashboard/tree/9d4001b676c62ba36a62765bb92900fbf0f89a4a",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Smart Contracts",
+      "description": ""
+    },
+    {
+      "title": "Themes",
+      "description": ""
+    },
+    {
+      "title": "Claim",
+      "description": ""
+    },
+    {
+      "title": "Deposit (Staking)",
+      "description": ""
+    },
+    {
+      "title": "Auction",
+      "description": ""
+    },
+    {
+      "title": "Swap",
+      "description": ""
+    },
+    {
+      "title": "Wallets",
+      "description": ""
+    },
+    {
+      "title": "Rest API",
+      "description": ""
+    },
+    {
+      "title": "Metamask",
+      "description": ""
+    }
+  ]
+}

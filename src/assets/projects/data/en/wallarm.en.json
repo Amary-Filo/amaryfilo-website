@@ -1,0 +1,88 @@
+{
+  "slug": "wallarm",
+  "title": "Wallarm",
+  "date": "2019-08-29",
+  "category": [
+    "cms",
+    "landing"
+  ],
+  "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
+  "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
+  "logo": "wallarm-logo",
+  "instruments": [
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "less",
+      "color": "",
+      "title": "LESS"
+    },
+    {
+      "icon": "pug",
+      "color": "",
+      "title": "Pug"
+    },
+    {
+      "icon": "design",
+      "color": "",
+      "title": "Design"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "globe",
+      "color": "",
+      "title": "Open Wallarm website",
+      "url": "https://wallarm.com",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Pages",
+      "description": ""
+    },
+    {
+      "title": "Landings",
+      "description": ""
+    },
+    {
+      "title": "CMS",
+      "description": ""
+    },
+    {
+      "title": "Contentfull App",
+      "description": ""
+    },
+    {
+      "title": "Integrations",
+      "description": ""
+    },
+    {
+      "title": "Hubspot",
+      "description": ""
+    },
+    {
+      "title": "Forms",
+      "description": ""
+    },
+    {
+      "title": "SEO",
+      "description": ""
+    }
+  ]
+}

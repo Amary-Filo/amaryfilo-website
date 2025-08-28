@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "slug": "ducatus-wallet-client",
+    "date": "2021-08-25",
+    "category": ["crypto"],
+    "title": "Ducatus Wallet Client"
+  },
+  "base": {
+    "anonce": "Server side of the Ducatus Wallet for iOS/Web and Android.",
+    "description": "The back end of the Ducatus Wallet. Adding Ducatus is blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+    "instruments": [
+      {
+        "icon": "nodejs",
+        "color": "",
+        "title": "NodeJs"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ],
+    "logo": "ducatus-wallet-client-logo",
+    "images": [],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/DucatusX/ducatus-bitcore",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/DucatusX/ducatus-bitcore/tree/07a6bf37df2db8266031fba54557128ce0afbef0",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "REST API",
+        "description": ""
+      },
+      {
+        "title": "Modules",
+        "description": ""
+      },
+      {
+        "title": "Custom interfaces for blockchains",
+        "description": ""
+      },
+      {
+        "title": "Transactions",
+        "description": ""
+      },
+      {
+        "title": "Muti-chain",
+        "description": ""
+      },
+      {
+        "title": "HD Wallets",
+        "description": ""
+      },
+      {
+        "title": "Smart Contracts",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Server side of the Ducatus Wallet for iOS/Web and Android.",
+      "description": "The back end of the Ducatus Wallet. Adding Ducatus is blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+      "features": [
+        {
+          "title": "REST API",
+          "description": ""
+        },
+        {
+          "title": "Modules",
+          "description": ""
+        },
+        {
+          "title": "Custom interfaces for blockchains",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Muti-chain",
+          "description": ""
+        },
+        {
+          "title": "HD Wallets",
+          "description": ""
+        },
+        {
+          "title": "Smart Contracts",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Серверная часть кошелька Ducatus Wallet под iOS/Web и Android.",
+      "description": "Серверная часть кошелька Ducatus Wallet. Добавление Ducatus блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+      "features": [
+        {
+          "title": "REST API",
+          "description": ""
+        },
+        {
+          "title": "Modules",
+          "description": ""
+        },
+        {
+          "title": "Custom interfaces for blockchains",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Muti-chain",
+          "description": ""
+        },
+        {
+          "title": "HD Wallets",
+          "description": ""
+        },
+        {
+          "title": "Smart Contracts",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

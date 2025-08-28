@@ -7,8 +7,11 @@
       class="text op-7 ls fw-b"
       [innerHTML]="'page.home.about.description' | t"
     ></p>
-    <a class="cl-g-about btn g-bg w-base g-a" [routerLinkWithLang]="['about']">
+    <button
+      class="cl-g-about btn g-bg w-base g-a"
+      [routerLinkWithLang]="['about']"
+    >
       {{ "page.home.about.button" | t }}
-    </a>
+    </button>
   </div>
 </section>

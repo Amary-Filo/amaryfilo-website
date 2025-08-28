@@ -1,0 +1,85 @@
+{
+  "slug": "ducatus-emperor",
+  "title": "Ducatus Emperor",
+  "date": "2021-08-27",
+  "category": [
+    "landing"
+  ],
+  "anonce": "Development of a landing page for the Ducatus Emperor project.",
+  "description": "Development of a landing page for the Ducatus Emperor project from scratch using React.",
+  "logo": "ducatus-emperor-logo",
+  "instruments": [
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML5"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "react",
+      "color": "",
+      "title": "React"
+    }
+  ],
+  "images": [
+    "ducatus-emperor-1",
+    "ducatus-emperor-2",
+    "ducatus-emperor-3",
+    "ducatus-emperor-4"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/DucatusX/emperor",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/DucatusX/emperor/tree/bbe3927d50a9355f4ac6207d80fb40b80dbb5907",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://emperor-holdings.com",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Pages",
+      "description": ""
+    },
+    {
+      "title": "Modules",
+      "description": ""
+    },
+    {
+      "title": "SEO",
+      "description": ""
+    },
+    {
+      "title": "Adaptive",
+      "description": ""
+    }
+  ]
+}

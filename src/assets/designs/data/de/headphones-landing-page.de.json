@@ -1,0 +1,28 @@
+{
+  "slug": "headphones-landing-page",
+  "title": "Headphones Landing Page",
+  "date": "2017-11-15",
+  "category": [
+    "web",
+    "landing"
+  ],
+  "thumbnail": "headphones-landing-page-thumb",
+  "description": "Minimalistic Beats headphone sale page template. The page contains company news, a description of the headphones, an image gallery, and the products themselves with various marks.",
+  "images": [
+    "headphones-landing-page-1",
+    "headphones-landing-page-2",
+    "headphones-landing-page-3",
+    "headphones-landing-page-4",
+    "headphones-landing-page-5",
+    "headphones-landing-page-6"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "color": "",
+      "title": "Behance",
+      "url": "https://www.behance.net/gallery/108249253/Headphones-Landing-Page",
+      "is_active": true
+    }
+  ]
+}

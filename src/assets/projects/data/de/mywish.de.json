@@ -1,0 +1,75 @@
+{
+  "slug": "mywish",
+  "title": "MyWish",
+  "date": "2020-12-30",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Finalization of the project for the creation of smart contracts.",
+  "description": "Finalization of the project for the creation of smart contracts. Adding various information. The project is written in Angular 1 version, it is difficult to maintain and add new modules.",
+  "logo": "mywish-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "AngularJs"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS/JS"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://mywish.io",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Web3js",
+      "description": ""
+    },
+    {
+      "title": "Navigation",
+      "description": ""
+    },
+    {
+      "title": "Contracts",
+      "description": ""
+    },
+    {
+      "title": "Backend",
+      "description": ""
+    },
+    {
+      "title": "Layout",
+      "description": ""
+    },
+    {
+      "title": "Template",
+      "description": ""
+    }
+  ]
+}

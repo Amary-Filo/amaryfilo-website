@@ -1,0 +1,33 @@
+{
+  "slug": "miet-city-template",
+  "title": "Miet - City template",
+  "date": "2018-06-10",
+  "category": [
+    "web"
+  ],
+  "thumbnail": "miet-city-template-thumb",
+  "description": "The prototype design of the site of urban events is assumed that the site can display all the running future events in the selected city user and find out information about any events and buy tickets.",
+  "images": [
+    "miet-city-template-1",
+    "miet-city-template-2",
+    "miet-city-template-3",
+    "miet-city-template-4",
+    "miet-city-template-5"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "color": "",
+      "title": "Behance",
+      "url": "https://www.behance.net/gallery/102623289/Miet-City-template",
+      "is_active": true
+    },
+    {
+      "icon": "dribble",
+      "color": "",
+      "title": "Dribble",
+      "url": "https://dribbble.com/shots/15848018-Miet-city-template",
+      "is_active": true
+    }
+  ]
+}

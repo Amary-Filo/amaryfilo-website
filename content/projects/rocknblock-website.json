@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "slug": "rocknblock-website",
+    "date": "2022-02-07",
+    "category": ["cms"],
+    "title": "Rocknblock Website"
+  },
+  "base": {
+    "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
+    "description": "Rocknblock website development from scratch. Creation of many landing pages for information about the services provided by the company. Integration of third-party APIs for working with CRM. Page optimization for SEO and loading. Adding a PWA for the entire site. Development of a module for receiving leads from the page through feedback forms and module news.",
+    "instruments": [
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "THML"
+      },
+      {
+        "icon": "pug",
+        "color": "",
+        "title": "Pug"
+      },
+      {
+        "icon": "seo",
+        "color": "",
+        "title": "SEO"
+      }
+    ],
+    "logo": "rocknblock-website-logo",
+    "images": [
+      "rocknblock-website-1",
+      "rocknblock-website-2",
+      "rocknblock-website-3",
+      "rocknblock-website-4",
+      "rocknblock-website-5",
+      "rocknblock-website-6",
+      "rocknblock-website-7",
+      "rocknblock-website-8",
+      "rocknblock-website-9",
+      "rocknblock-website-10",
+      "rocknblock-website-11",
+      "rocknblock-website-12",
+      "rocknblock-website-13",
+      "rocknblock-website-14",
+      "rocknblock-website-15",
+      "rocknblock-website-16",
+      "rocknblock-website-17",
+      "rocknblock-website-18"
+    ],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Rock-n-Block/rocknblock-site",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/Rock-n-Block/rocknblock-site/tree/fe16184cb4dc5b4c9119fa79367cc913382fecd1",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "View",
+        "url": "https://rocknblock.io/",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "REST Api",
+        "description": ""
+      },
+      {
+        "title": "CRM",
+        "description": ""
+      },
+      {
+        "title": "Optimization",
+        "description": ""
+      },
+      {
+        "title": "Server",
+        "description": ""
+      },
+      {
+        "title": "Multiply landing pages",
+        "description": ""
+      },
+      {
+        "title": "Feedbacks",
+        "description": ""
+      },
+      {
+        "title": "Blog",
+        "description": ""
+      },
+      {
+        "title": "Portfolio",
+        "description": ""
+      },
+      {
+        "title": "SEO",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
+      "description": "Rocknblock website development from scratch. Creation of many landing pages for information about the services provided by the company. Integration of third-party APIs for working with CRM. Page optimization for SEO and loading. Adding a PWA for the entire site. Development of a module for receiving leads from the page through feedback forms and module news.",
+      "features": [
+        {
+          "title": "REST Api",
+          "description": ""
+        },
+        {
+          "title": "CRM",
+          "description": ""
+        },
+        {
+          "title": "Optimization",
+          "description": ""
+        },
+        {
+          "title": "Server",
+          "description": ""
+        },
+        {
+          "title": "Multiply landing pages",
+          "description": ""
+        },
+        {
+          "title": "Feedbacks",
+          "description": ""
+        },
+        {
+          "title": "Blog",
+          "description": ""
+        },
+        {
+          "title": "Portfolio",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества целевых страниц, SEO оптимизация и разработка блога.",
+      "description": "Разработка сайта Rocknblock с нуля. Создание множества посадочных страниц для информации о сервисах предоставляемых компанией. Интеграция сторонних API для работы с CRM. Оптимизация страниц по SEO и загрузке. Добавление PWA для всего сайта. Разработка модуля для получения лидов со страницы через формы обратной связи и модуля новости. ",
+      "features": [
+        {
+          "title": "REST Api",
+          "description": ""
+        },
+        {
+          "title": "CRM",
+          "description": ""
+        },
+        {
+          "title": "Optimization",
+          "description": ""
+        },
+        {
+          "title": "Server",
+          "description": ""
+        },
+        {
+          "title": "Multiply landing pages",
+          "description": ""
+        },
+        {
+          "title": "Feedbacks",
+          "description": ""
+        },
+        {
+          "title": "Blog",
+          "description": ""
+        },
+        {
+          "title": "Portfolio",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

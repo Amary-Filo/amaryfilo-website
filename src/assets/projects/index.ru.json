@@ -1,5 +1,861 @@
 [
   {
+    "slug": "amfi-connect",
+    "date": "2022-03-01",
+    "category": [
+      "crypto",
+      "package"
+    ],
+    "title": "AMFI Connect",
+    "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+    "logo": "amfi-connect-logo",
+    "instruments": [
+      {
+        "icon": "rxjs",
+        "color": "",
+        "title": "RxJs"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "npm",
+        "color": "",
+        "title": "NPM"
+      }
+    ]
+  },
+  {
+    "slug": "rocknblock-website",
+    "date": "2022-02-07",
+    "category": [
+      "cms"
+    ],
+    "title": "Rocknblock Website",
+    "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества целевых страниц, SEO оптимизация и разработка блога.",
+    "logo": "rocknblock-website-logo",
+    "instruments": [
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "THML"
+      },
+      {
+        "icon": "pug",
+        "color": "",
+        "title": "Pug"
+      },
+      {
+        "icon": "seo",
+        "color": "",
+        "title": "SEO"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus-wallet",
+    "date": "2021-12-10",
+    "category": [
+      "mobile",
+      "angular",
+      "crypto",
+      "ionic"
+    ],
+    "title": "Ducatus Wallet",
+    "anonce": "Разработка приложения для блокчейна Ducatus под платформы iOS, Web и Android.",
+    "logo": "ducatus-wallet-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus",
+    "date": "2021-11-12",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Ducatus website",
+    "anonce": "Разработка официального веб сайта блокчена Ducatus.",
+    "logo": "ducatus-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      }
+    ]
+  },
+  {
+    "slug": "minto",
+    "date": "2021-11-01",
+    "category": [
+      "crypto"
+    ],
+    "title": "Minto",
+    "anonce": "Платформа для взаимодействия с BTCMT токеном: покупка, депозит, обмен и вывод со смарт контрактов.",
+    "logo": "minto-logo",
+    "instruments": [
+      {
+        "icon": "react",
+        "color": "",
+        "title": "React"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      },
+      {
+        "icon": "amaryfilo",
+        "color": "cl-cmain",
+        "title": "AMFI Connect"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus-centurion",
+    "date": "2021-09-21",
+    "category": [
+      "landing"
+    ],
+    "title": "Ducatus Centurion",
+    "anonce": "Сайт с информацией о проекте Centurion.",
+    "logo": "ducatus-centurion-logo",
+    "instruments": [
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "pug",
+        "color": "",
+        "title": "Pug"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus-emperor",
+    "date": "2021-08-27",
+    "category": [
+      "landing"
+    ],
+    "title": "Ducatus Emperor",
+    "anonce": "Разработка посадочной страницы для проекта Ducatus Emperor.",
+    "logo": "ducatus-emperor-logo",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML5"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "react",
+        "color": "",
+        "title": "React"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus-wallet-client",
+    "date": "2021-08-25",
+    "category": [
+      "crypto"
+    ],
+    "title": "Ducatus Wallet Client",
+    "anonce": "Серверная часть кошелька Ducatus Wallet под iOS/Web и Android.",
+    "logo": "ducatus-wallet-client-logo",
+    "instruments": [
+      {
+        "icon": "nodejs",
+        "color": "",
+        "title": "NodeJs"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ]
+  },
+  {
+    "slug": "algovest",
+    "date": "2021-03-17",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Algovest",
+    "anonce": "Крипто-платформа для обмена, вложения и вывода токенов со смарт контрактов.",
+    "logo": "algovest-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "amaryfilo",
+        "color": "cl-cmain",
+        "title": "AMFI Connect"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ]
+  },
+  {
+    "slug": "axion-dashboard",
+    "date": "2021-01-25",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Axion Dashboard",
+    "anonce": "Разработка проекта по управлению балансом криптовалюты Axion.",
+    "logo": "axion-dashboard-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "Metamask",
+        "color": "",
+        "title": "MM"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      }
+    ]
+  },
+  {
+    "slug": "quras-wallet-client",
+    "date": "2021-01-21",
+    "category": [
+      "crypto"
+    ],
+    "title": "Quras+ Wallet Client",
+    "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android. ",
+    "logo": "quras-wallet-client-logo",
+    "instruments": [
+      {
+        "icon": "nodejs",
+        "color": "",
+        "title": "NodeJS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      }
+    ]
+  },
+  {
+    "slug": "quras-wallet",
+    "date": "2021-01-14",
+    "category": [
+      "mobile",
+      "angular",
+      "crypto",
+      "ionic"
+    ],
+    "title": "Quras Wallet",
+    "anonce": "Разработка приложения для блокчейна Quras для платформ iOS, Web и Android.",
+    "logo": "quras-wallet-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ]
+  },
+  {
+    "slug": "mywish",
+    "date": "2020-12-30",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "MyWish",
+    "anonce": "Доработка проекта по созданию смарт контрактов.",
+    "logo": "mywish-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "AngularJs"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS/JS"
+      }
+    ]
+  },
+  {
+    "slug": "axion",
+    "date": "2020-12-15",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Axion",
+    "anonce": "Разработка веб приложения для обмена старых Axion токенов на новые.",
+    "logo": "axion-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      }
+    ]
+  },
+  {
+    "slug": "rubic-exchange",
+    "date": "2020-09-29",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Rubic Exchange",
+    "anonce": "Разработка p2p платформы по обмену криптовалюты.",
+    "logo": "rubic-exchange-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      }
+    ]
+  },
+  {
+    "slug": "census-wallet",
+    "date": "2020-06-25",
+    "category": [
+      "mobile",
+      "angular",
+      "crypto",
+      "ionic"
+    ],
+    "title": "Сensus Wallet",
+    "anonce": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку.",
+    "logo": "census-wallet-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      }
+    ]
+  },
+  {
+    "slug": "gravity-hub",
+    "date": "2020-05-25",
+    "category": [
+      "landing",
+      "vue"
+    ],
+    "title": "Gravity Hub",
+    "anonce": "Верстка сайта Gravity Hub и посадка на NuxtJs.",
+    "logo": "gravity-hub-logo",
+    "instruments": [
+      {
+        "icon": "vue",
+        "color": "",
+        "title": "NuxtJS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ]
+  },
+  {
+    "slug": "ventuary",
+    "date": "2020-05-25",
+    "category": [
+      "landing",
+      "vue"
+    ],
+    "title": "Ventuary",
+    "anonce": "Верстка сайта Ventuary и посадка на NuxtJs.",
+    "logo": "ventuary-logo",
+    "instruments": [
+      {
+        "icon": "vue",
+        "color": "",
+        "title": "Vuejs"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      }
+    ]
+  },
+  {
+    "slug": "token-protector",
+    "date": "2019-12-29",
+    "category": [
+      "landing",
+      "angular",
+      "crypto"
+    ],
+    "title": "Token Protector",
+    "anonce": "Сервис по сохранению крипто-токенов после истечения указанного срока в смарт-контракте.",
+    "logo": "token-protector-logo",
+    "instruments": [
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "seo",
+        "color": "",
+        "title": "SEO"
+      }
+    ]
+  },
+  {
+    "slug": "wallarm",
+    "date": "2019-08-29",
+    "category": [
+      "cms",
+      "landing"
+    ],
+    "title": "Wallarm",
+    "anonce": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов.",
+    "logo": "wallarm-logo",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "less",
+        "color": "",
+        "title": "LESS"
+      },
+      {
+        "icon": "pug",
+        "color": "",
+        "title": "Pug"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      }
+    ]
+  },
+  {
     "slug": "rocknblock",
     "date": "2019-05-11",
     "category": [
@@ -53,6 +909,355 @@
         "icon": "seo",
         "color": "",
         "title": "SEO"
+      }
+    ]
+  },
+  {
+    "slug": "test-project-stars",
+    "date": "2019-03-06",
+    "category": [
+      "mobile"
+    ],
+    "title": "[Тестовый проект] Stars",
+    "anonce": "Тестовый проект на Swift UI с подключением Google Firebase.",
+    "logo": "test-project-stars-logo",
+    "instruments": [
+      {
+        "icon": "swiftui",
+        "color": "",
+        "title": "SwiftUI"
+      },
+      {
+        "icon": "ios",
+        "color": "",
+        "title": "iOS"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      }
+    ]
+  },
+  {
+    "slug": "performance-group",
+    "date": "2019-01-24",
+    "category": [
+      "cms"
+    ],
+    "title": "Performance Group",
+    "anonce": "Разработка и ведения сайта интернет рекламного агентства полного цикла.",
+    "logo": "performance-group-logo",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      }
+    ]
+  },
+  {
+    "slug": "new-year-landing",
+    "date": "2018-12-20",
+    "category": [
+      "landing"
+    ],
+    "title": "New Year Landing",
+    "anonce": "Лендинг созданный под новогоднее поздравление от группы компаний.",
+    "logo": "new-year-landing-logo",
+    "instruments": [
+      {
+        "icon": "gulp",
+        "color": "",
+        "title": "Gulp"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "Scss"
+      },
+      {
+        "icon": "javascript",
+        "color": "",
+        "title": "JS"
+      }
+    ]
+  },
+  {
+    "slug": "tornhoff",
+    "date": "2018-08-09",
+    "category": [
+      "cms"
+    ],
+    "title": "Tornhoff",
+    "anonce": "Разработка, администрирование и ведение сайта по продаже немецких профилей и дверей.",
+    "logo": "tornhoff-logo",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "php",
+        "color": "",
+        "title": "PHP"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      },
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      }
+    ]
+  },
+  {
+    "slug": "museum-petrovskaya-akvatoria",
+    "date": "2018-05-15",
+    "category": [
+      "cms"
+    ],
+    "title": "Petrovskaya Akvatoria",
+    "anonce": "Разработка и ведение сайта музея. Множество страниц, интерактивные карты, заказ билетов и мультиязычность.",
+    "logo": "museum-petrovskaya-akvatoria-logo",
+    "instruments": [
+      {
+        "icon": "customcms",
+        "color": "",
+        "title": "UmiCMS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "apache",
+        "color": "",
+        "title": "Apache"
+      },
+      {
+        "icon": "php",
+        "color": "",
+        "title": "PHP"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      }
+    ]
+  },
+  {
+    "slug": "test-project-big-menu",
+    "date": "2018-01-30",
+    "category": [
+      "vue"
+    ],
+    "title": "[TEST Project] Big Menus",
+    "anonce": "Тестовый проект на NuxtJs.",
+    "logo": "test-project-big-menu-logo",
+    "instruments": [
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "vue",
+        "color": "",
+        "title": "NuxtJs"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ]
+  },
+  {
+    "slug": "test-project-books",
+    "date": "2018-01-18",
+    "category": [
+      "vue"
+    ],
+    "title": "[TEST Project] Books",
+    "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку формы.",
+    "logo": "test-project-books-logo",
+    "instruments": [
+      {
+        "icon": "vue",
+        "color": "",
+        "title": "VueJs"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ]
+  },
+  {
+    "slug": "plastic-surgeon-mary-volokh",
+    "date": "2017-05-07",
+    "category": [
+      "cms"
+    ],
+    "title": "Plastic surgeon",
+    "anonce": "Официальный сайт пластического хирурга Марии Волох.",
+    "logo": "plastic-surgeon-mary-volokh-logo",
+    "instruments": [
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "php",
+        "color": "",
+        "title": "PHP"
+      },
+      {
+        "icon": "javascript",
+        "color": "",
+        "title": "JS"
+      },
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "October CMS"
+      }
+    ]
+  },
+  {
+    "slug": "online-shop-recuperators",
+    "date": "2016-12-15",
+    "category": [
+      "online shop",
+      "cms"
+    ],
+    "title": "Online shop recuperators",
+    "anonce": "Онлайн магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
+    "logo": "online-shop-recuperators-logo",
+    "instruments": [
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "php",
+        "color": "",
+        "title": "PHP"
       }
     ]
   }

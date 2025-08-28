@@ -1,0 +1,93 @@
+{
+  "slug": "ducatus-centurion",
+  "title": "Ducatus Centurion",
+  "date": "2021-09-21",
+  "category": [
+    "landing"
+  ],
+  "anonce": "Website with information about the Centurion project.",
+  "description": "Website with information about the Centurion project written from scratch. Optimization of project pages for SEO.",
+  "logo": "ducatus-centurion-logo",
+  "instruments": [
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "pug",
+      "color": "",
+      "title": "Pug"
+    }
+  ],
+  "images": [
+    "ducatus-centurion-1",
+    "ducatus-centurion-2",
+    "ducatus-centurion-3",
+    "ducatus-centurion-4",
+    "ducatus-centurion-5",
+    "ducatus-centurion-6",
+    "ducatus-centurion-7",
+    "ducatus-centurion-8",
+    "ducatus-centurion-9",
+    "ducatus-centurion-10",
+    "ducatus-centurion-11",
+    "ducatus-centurion-12"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/DucatusX/centurion",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/DucatusX/centurion/tree/c716e23272cce45667227357cc791a6e0f806168",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://centuriongm.com",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Adaptive",
+      "description": ""
+    },
+    {
+      "title": "SEO",
+      "description": ""
+    },
+    {
+      "title": "Modules",
+      "description": ""
+    },
+    {
+      "title": "Pages",
+      "description": ""
+    }
+  ]
+}

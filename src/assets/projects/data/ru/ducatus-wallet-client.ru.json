@@ -1,0 +1,85 @@
+{
+  "slug": "ducatus-wallet-client",
+  "title": "Ducatus Wallet Client",
+  "date": "2021-08-25",
+  "category": [
+    "crypto"
+  ],
+  "anonce": "Серверная часть кошелька Ducatus Wallet под iOS/Web и Android.",
+  "description": "Серверная часть кошелька Ducatus Wallet. Добавление Ducatus блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+  "logo": "ducatus-wallet-client-logo",
+  "instruments": [
+    {
+      "icon": "nodejs",
+      "color": "",
+      "title": "NodeJs"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "rest",
+      "color": "",
+      "title": "REST"
+    },
+    {
+      "icon": "nginx",
+      "color": "",
+      "title": "Nginx"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/DucatusX/ducatus-bitcore",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/DucatusX/ducatus-bitcore/tree/07a6bf37df2db8266031fba54557128ce0afbef0",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "REST API",
+      "description": ""
+    },
+    {
+      "title": "Modules",
+      "description": ""
+    },
+    {
+      "title": "Custom interfaces for blockchains",
+      "description": ""
+    },
+    {
+      "title": "Transactions",
+      "description": ""
+    },
+    {
+      "title": "Muti-chain",
+      "description": ""
+    },
+    {
+      "title": "HD Wallets",
+      "description": ""
+    },
+    {
+      "title": "Smart Contracts",
+      "description": ""
+    }
+  ]
+}

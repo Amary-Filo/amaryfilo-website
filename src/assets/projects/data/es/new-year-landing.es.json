@@ -1,0 +1,66 @@
+{
+  "slug": "new-year-landing",
+  "title": "New Year Landing",
+  "date": "2018-12-20",
+  "category": [
+    "landing"
+  ],
+  "anonce": "Landing page created for New Year's greetings from a group of companies.",
+  "description": "Landing page created for New Year's greetings from a group of companies. The task was to create a landing page with autorun when a flash drive is connected to a USB port. Designed and completed the project.",
+  "logo": "new-year-landing-logo",
+  "instruments": [
+    {
+      "icon": "gulp",
+      "color": "",
+      "title": "Gulp"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "Scss"
+    },
+    {
+      "icon": "javascript",
+      "color": "",
+      "title": "JS"
+    }
+  ],
+  "images": [
+    "new-year-landing-1",
+    "new-year-landing-2",
+    "new-year-landing-3",
+    "new-year-landing-4"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/winter-gms",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Books",
+      "description": ""
+    },
+    {
+      "title": "Music",
+      "description": ""
+    },
+    {
+      "title": "Video",
+      "description": ""
+    },
+    {
+      "title": "Autoload from flash card",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "slug": "minimal-blog-design",
+    "date": "2018-11-15",
+    "category": ["web", "blog"],
+    "thumbnail": "minimal-blog-design-thumb"
+  },
+  "base": {
+    "title": "Minimal blog design",
+    "description": "Minimalistic design template for personal blogging. Article search, view blog articles and list them on the main page. Two kinds of theme: dark and light.",
+    "links": [
+      {
+        "icon": "behance",
+        "color": "",
+        "title": "Behance",
+        "url": "https://www.behance.net/gallery/102786729/Minimal-blog-design",
+        "is_active": true
+      }
+    ],
+    "images": [
+      "minimal-blog-design-1",
+      "minimal-blog-design-2",
+      "minimal-blog-design-3",
+      "minimal-blog-design-4",
+      "minimal-blog-design-5"
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Minimal blog design",
+      "description": "Minimalistic design template for personal blogging. Article search, view blog articles and list them on the main page. Two kinds of theme: dark and light."
+    }
+  }
+}

@@ -1,12 +1,8 @@
 <main class="pg-main">
-  <app-under-construction />
   <app-hero />
   <app-about />
   <app-subscribe />
   <app-development />
-  <section class="sc">
-    <app-under-construction />
-  </section>
   @defer (when blog().items.length) {
   <app-blog
     [latestPost]="vm().blog.items"
@@ -27,8 +23,5 @@
   } @placeholder {
   <h2>skeleton</h2>
   }
-  <section class="sc">
-    <app-under-construction />
-  </section>
   <app-form-order />
 </main>

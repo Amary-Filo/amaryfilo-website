@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "title": "Sitemap for the website",
+    "slug": "sitemap-website",
+    "date": "2023-04-29",
+    "updates": [],
+    "category": "optimization",
+    "category_list": ["optimization"],
+    "tags": ["optimization", "sitemap", "xml", "html", "seo", "indexing"]
+  },
+  "base": {
+    "anonce": "What is a sitemap and how to set it up. Common practices and example files.",
+    "content": [
+      {
+        "type": "h2",
+        "text": "Introduction",
+        "id": "Introduction"
+      },
+      {
+        "type": "p",
+        "text": "A sitemap is an html page of a site or a special xml file that contains links to all important pages of the site. It is similar to a book table of contents, helping visitors and search robots quickly find pages with minimal transitions."
+      },
+
+      {
+        "type": "h2",
+        "text": "What are sitemaps",
+        "id": "What-are-sitemaps"
+      },
+      {
+        "type": "p",
+        "text": "Search robots index the site gradually, starting from the main page. With deep nesting, indexing all pages can take a long time. A sitemap provides direct links to pages, speeding up the process. There are three types: HTML, XML, and TXT."
+      },
+
+      {
+        "type": "h3",
+        "text": "HTML Sitemap",
+        "id": "HTML-Sitemap"
+      },
+      {
+        "type": "p",
+        "text": "An HTML sitemap is a page listing the most important sections and pages of the site."
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "For people",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "The HTML sitemap is designed for users rather than robots, helping people navigate quickly."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Limit",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Do not place more than 100 links on one HTML sitemap page."
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "text": "HTML sitemaps often use tree structures with sections and subsections. In practice, all footer, header, and body links form an HTML sitemap."
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "SEO value",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "An HTML sitemap has little value to search engines compared to XML."
+          }
+        ]
+      },
+
+      {
+        "type": "h3",
+        "text": "XML Sitemap",
+        "id": "XML-Sitemap"
+      },
+      {
+        "type": "p",
+        "text": "For large sites, it is necessary to use an XML sitemap, which contains structured data about each page."
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Definition",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "An XML sitemap is a file named sitemap.xml at the root of a site. It can contain up to 50,000 links."
+          }
+        ]
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Encoding",
+        "blocks": [
+          { "type": "p", "text": "Sitemap.xml must be UTF-8 encoded." }
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<urlset> – parent tag containing all URLs.",
+          "<url> – information about a specific URL.",
+          "<loc> – specifies the page address."
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          "<lastmod> – last modification date.",
+          "<changefreq> – update frequency.",
+          "<priority> – page priority (0.1–1)."
+        ]
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Splitting",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "If a sitemap exceeds 50,000 links or 10 MB, split it into several files and use <sitemapindex>."
+          }
+        ]
+      },
+
+      {
+        "type": "h3",
+        "text": "TXT Sitemap",
+        "id": "TXT-Sitemap"
+      },
+      {
+        "type": "p",
+        "text": "TXT sitemap is a simple text file listing all links line by line."
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Limitations",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Max 50,000 links, no <lastmod> or priority attributes."
+          }
+        ]
+      },
+
+      {
+        "type": "h2",
+        "text": "Page priorities",
+        "id": "Page-priorities"
+      },
+      {
+        "type": "ul",
+        "items": [
+          "1 – Main page",
+          "0.8 – Main sections",
+          "0.6–0.5 – Categories and subcategories",
+          "0.4 – Other end pages"
+        ]
+      },
+      {
+        "type": "note",
+        "kind": "info",
+        "title": "Reality check",
+        "blocks": [
+          {
+            "type": "p",
+            "text": "Search engines may not strictly follow your set priorities."
+          }
+        ]
+      },
+
+      {
+        "type": "h2",
+        "text": "Creating a sitemap",
+        "id": "Creating-a-sitemap"
+      },
+      {
+        "type": "p",
+        "text": "The sitemap file should be located at the root of the site. Search engines can find it, but you can also provide direct links."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Add in Google Search Console",
+          "Specify in robots.txt",
+          "Generate via CMS or plugins",
+          "Use online generators (e.g. xml-sitemaps.com)",
+          "Build automatically with gulp, webpack, react, vue",
+          "Write manually"
+        ]
+      }
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Карта сайта",
+      "anonce": "Что такое карта сайта и как ее настроить. обычная практика и примеры файлов.",
+      "content": []
+    },
+    "es": {
+      "title": "",
+      "anonce": "",
+      "content": []
+    },
+    "de": {
+      "title": "",
+      "anonce": "",
+      "content": []
+    }
+  }
+}

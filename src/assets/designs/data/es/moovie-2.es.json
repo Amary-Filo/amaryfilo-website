@@ -1,0 +1,34 @@
+{
+  "slug": "moovie-2",
+  "title": "Moovie",
+  "date": "2019-05-11",
+  "category": [
+    "Website"
+  ],
+  "thumbnail": "moovie-thumb-es",
+  "description": "Diseño para cines online, donde se proyectan nuevas películas y series. Además, incluye una película nueva y otra información multimedia útil.",
+  "images": [
+    "moovie-1-es",
+    "moovie-2-es",
+    "moovie-3-es",
+    "moovie-4-es"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "title": "Behance",
+      "url": "https://behance.co"
+    },
+    {
+      "icon": "globe",
+      "color": "green",
+      "title": "My Designs",
+      "url": "https://md.co"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com",
+      "is_active": false
+    }
+  ]
+}

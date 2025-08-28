@@ -1,0 +1,20 @@
+{
+  "slug": "tools",
+  "base": {
+    "title": "Tools",
+    "description": "Application Programming Interfaces for integrating services.",
+    "icon": "tools",
+    "color": "tools"
+  },
+  "data": {
+    "ru": {
+      "description": "Программные интерфейсы для интеграции сервисов."
+    },
+    "es": {
+      "description": "Interfaces de programación para integrar servicios."
+    },
+    "de": {
+      "description": "Programmierschnittstellen zur Integration von Diensten."
+    }
+  }
+}

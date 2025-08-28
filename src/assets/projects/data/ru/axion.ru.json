@@ -1,0 +1,112 @@
+{
+  "slug": "axion",
+  "title": "Axion",
+  "date": "2020-12-15",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Разработка веб приложения для обмена старых Axion токенов на новые.",
+  "description": "Разработка веб приложения для обмена старых Axion на новые токены через Claim. Создание системы аукциона для опоздавших пользователей, где % от суммы Claim отправляется на ежедневный и еженедельный аукцион, где пользователи за Ethereum могут приобрести токены, которые в последствии блокируются и выдаются через определенное время. Создание системы депозитов для увеличения количество токенов и удержания токена. Проект пережил три редизайна, было множетсво работы с API и подсчета времени а так же токенов для обмена в WEI.",
+  "logo": "axion-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "rest",
+      "color": "",
+      "title": "REST"
+    },
+    {
+      "icon": "metamask",
+      "color": "",
+      "title": "MM"
+    }
+  ],
+  "images": [
+    "axion-1",
+    "axion-2",
+    "axion-3",
+    "axion-4",
+    "axion-5",
+    "axion-6"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Rock-n-Block/axion-frontend",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Rock-n-Block/axion-frontend/tree/a39c1259bb8969f63202cecfa8c7fa13fa82a4f8",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Claim tokens",
+      "description": ""
+    },
+    {
+      "title": "Metamask login",
+      "description": ""
+    },
+    {
+      "title": "Auction",
+      "description": ""
+    },
+    {
+      "title": "Deposits",
+      "description": ""
+    },
+    {
+      "title": "Transaction",
+      "description": ""
+    },
+    {
+      "title": "Blockchain",
+      "description": ""
+    },
+    {
+      "title": "Notifications",
+      "description": ""
+    },
+    {
+      "title": "Smart contracts",
+      "description": ""
+    }
+  ]
+}

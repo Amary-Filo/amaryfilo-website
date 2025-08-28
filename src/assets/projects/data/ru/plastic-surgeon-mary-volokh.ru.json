@@ -1,0 +1,107 @@
+{
+  "slug": "plastic-surgeon-mary-volokh",
+  "title": "Plastic surgeon",
+  "date": "2017-05-07",
+  "category": [
+    "cms"
+  ],
+  "anonce": "Официальный сайт пластического хирурга Марии Волох.",
+  "description": "Полное сопровождение и создание сайта с нуля. Разработка дизайна, верстка и посадка сайта на CMS October. Создание различных плагинов, таких как комментарии, услуги, фотографии и блог.",
+  "logo": "plastic-surgeon-mary-volokh-logo",
+  "instruments": [
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "php",
+      "color": "",
+      "title": "PHP"
+    },
+    {
+      "icon": "javascript",
+      "color": "",
+      "title": "JS"
+    },
+    {
+      "icon": "octobercms",
+      "color": "",
+      "title": "October CMS"
+    }
+  ],
+  "images": [
+    "plastic-surgeon-mary-volokh-1",
+    "plastic-surgeon-mary-volokh-2",
+    "plastic-surgeon-mary-volokh-3",
+    "plastic-surgeon-mary-volokh-4",
+    "plastic-surgeon-mary-volokh-5"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/maria-volokh-template",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://www.plasticaspb.ru",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Plugins",
+      "description": ""
+    },
+    {
+      "title": "Optimisation",
+      "description": ""
+    },
+    {
+      "title": "Blog",
+      "description": ""
+    },
+    {
+      "title": "Operations",
+      "description": ""
+    },
+    {
+      "title": "News",
+      "description": ""
+    },
+    {
+      "title": "Order",
+      "description": ""
+    },
+    {
+      "title": "Reviews",
+      "description": ""
+    },
+    {
+      "title": "Feedbacks",
+      "description": ""
+    },
+    {
+      "title": "Admin panel",
+      "description": ""
+    },
+    {
+      "title": "Catalog",
+      "description": ""
+    },
+    {
+      "title": "Category",
+      "description": ""
+    }
+  ]
+}

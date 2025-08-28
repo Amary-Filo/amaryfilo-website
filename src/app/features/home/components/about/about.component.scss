@@ -1,0 +1,7 @@
+@use "../../../../../styles/mixins/mixins.scss" as mx;
+
+.head-section.about {
+  .btn {
+    margin-top: mx.rem(40);
+  }
+}

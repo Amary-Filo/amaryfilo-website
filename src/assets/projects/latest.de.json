@@ -1,38 +1,51 @@
 [
   {
-    "slug": "rocknblock",
-    "date": "2019-05-11",
+    "slug": "amfi-connect",
+    "date": "2022-03-01",
     "category": [
-      "Website"
+      "crypto",
+      "package"
     ],
-    "title": "Rock'n'Block Website",
-    "anonce": "Corporate website with a variety of forms, landings and integrations.",
-    "logo": "rocknblock-logo",
+    "title": "AMFI Connect",
+    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "logo": "amfi-connect-logo",
     "instruments": [
+      {
+        "icon": "rxjs",
+        "color": "",
+        "title": "RxJs"
+      },
       {
         "icon": "typescript",
         "color": "",
         "title": "TS"
       },
       {
-        "icon": "gulp",
+        "icon": "npm",
         "color": "",
-        "title": "Gulp"
+        "title": "NPM"
+      }
+    ]
+  },
+  {
+    "slug": "rocknblock-website",
+    "date": "2022-02-07",
+    "category": [
+      "cms"
+    ],
+    "title": "Rocknblock Website",
+    "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
+    "logo": "rocknblock-website-logo",
+    "instruments": [
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
       },
       {
-        "icon": "wintercms",
+        "icon": "typescript",
         "color": "",
-        "title": "Winter CMS"
-      },
-      {
-        "icon": "laravel",
-        "color": "",
-        "title": "Laravel"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
+        "title": "TS"
       },
       {
         "icon": "css3",
@@ -40,9 +53,14 @@
         "title": "CSS"
       },
       {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
         "icon": "html5",
         "color": "",
-        "title": "HTML"
+        "title": "THML"
       },
       {
         "icon": "pug",
@@ -53,6 +71,99 @@
         "icon": "seo",
         "color": "",
         "title": "SEO"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus-wallet",
+    "date": "2021-12-10",
+    "category": [
+      "mobile",
+      "angular",
+      "crypto",
+      "ionic"
+    ],
+    "title": "Ducatus Wallet",
+    "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
+    "logo": "ducatus-wallet-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ]
+  },
+  {
+    "slug": "ducatus",
+    "date": "2021-11-12",
+    "category": [
+      "angular",
+      "crypto"
+    ],
+    "title": "Ducatus website",
+    "anonce": "Development of the official website of the Ducatus blockchain.",
+    "logo": "ducatus-logo",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "metamask",
+        "color": "",
+        "title": "MM"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
       }
     ]
   }

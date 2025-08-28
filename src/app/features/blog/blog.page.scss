@@ -31,6 +31,10 @@
       }
 
       .btn {
+        &:first-child {
+          color: #000 !important;
+        }
+
         &.active {
           background-color: var(--cl-main, var(--cl-caccent));
           color: #fff;

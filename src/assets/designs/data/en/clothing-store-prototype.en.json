@@ -1,0 +1,30 @@
+{
+  "slug": "clothing-store-prototype",
+  "title": "Clothing store prototype",
+  "date": "2017-08-28",
+  "category": [
+    "web",
+    "shop"
+  ],
+  "thumbnail": "clothing-store-prototype-thumb",
+  "description": "Website design prototype for an online clothing store. The design includes a cart view, product quick view, product page, and lookbook.",
+  "images": [
+    "clothing-store-prototype-1",
+    "clothing-store-prototype-2",
+    "clothing-store-prototype-3",
+    "clothing-store-prototype-4",
+    "clothing-store-prototype-5",
+    "clothing-store-prototype-6",
+    "clothing-store-prototype-7",
+    "clothing-store-prototype-8"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "color": "",
+      "title": "Behance",
+      "url": "https://www.behance.net/gallery/144310565/Clothing-store-prototype",
+      "is_active": true
+    }
+  ]
+}

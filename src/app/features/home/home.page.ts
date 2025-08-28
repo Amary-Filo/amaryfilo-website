@@ -16,7 +16,6 @@ import { DevelopmentComponent } from './components/development/development.compo
 import { BlogComponent } from './components/blog/blog.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { DesignsComponent } from './components/designs/designs.component';
-import { UnderConstructionComponent } from '@shared/components/under-construction/under-construction.component';
 
 @Component({
   selector: 'app-home-page',
@@ -30,7 +29,6 @@ import { UnderConstructionComponent } from '@shared/components/under-constructio
     ProjectsComponent,
     DesignsComponent,
     FormOrderComponent,
-    UnderConstructionComponent,
   ],
   templateUrl: './home.page.html',
   styleUrl: './home.page.scss',

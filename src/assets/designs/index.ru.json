@@ -1,11 +1,108 @@
 [
   {
-    "slug": "moovie",
-    "date": "2019-05-11",
+    "slug": "photographers-personal-website",
+    "date": "2023-04-29",
     "category": [
-      "Website"
+      "web",
+      "landing",
+      "blog"
     ],
-    "title": "Мууви",
+    "title": "Photographer's personal website ✨",
+    "thumbnail": "photographers-personal-website-thumb"
+  },
+  {
+    "slug": "minimalistic-new-year-card-design",
+    "date": "2018-12-31",
+    "category": [
+      "postcard"
+    ],
+    "title": "Minimalistic New Year card design",
+    "thumbnail": "minimalistic-new-year-card-design-thumb"
+  },
+  {
+    "slug": "website-concept-for-web-studio",
+    "date": "2018-12-04",
+    "category": [
+      "web"
+    ],
+    "title": "Website concept for a web studio",
+    "thumbnail": "website-concept-for-web-studio-thumb"
+  },
+  {
+    "slug": "minimal-landing-page-design",
+    "date": "2018-11-20",
+    "category": [
+      "web",
+      "landing"
+    ],
+    "title": "Minimal landing page design",
+    "thumbnail": "minimal-landing-page-design-thumb"
+  },
+  {
+    "slug": "minimal-blog-design",
+    "date": "2018-11-15",
+    "category": [
+      "web",
+      "blog"
+    ],
+    "title": "Minimal blog design",
+    "thumbnail": "minimal-blog-design-thumb"
+  },
+  {
+    "slug": "minimalistic-personal-website-design",
+    "date": "2018-08-14",
+    "category": [
+      "web"
+    ],
+    "title": "Minimalistic personal website design",
+    "thumbnail": "minimalistic-personal-website-design-thumb"
+  },
+  {
+    "slug": "miet-city-template",
+    "date": "2018-06-10",
+    "category": [
+      "web"
+    ],
+    "title": "Miet - City template",
+    "thumbnail": "miet-city-template-thumb"
+  },
+  {
+    "slug": "headphones-landing-page",
+    "date": "2017-11-15",
+    "category": [
+      "web",
+      "landing"
+    ],
+    "title": "Headphones Landing Page",
+    "thumbnail": "headphones-landing-page-thumb"
+  },
+  {
+    "slug": "clothing-store-prototype",
+    "date": "2017-08-28",
+    "category": [
+      "web",
+      "shop"
+    ],
+    "title": "Clothing store prototype",
+    "thumbnail": "clothing-store-prototype-thumb"
+  },
+  {
+    "slug": "moovie",
+    "date": "2017-06-15",
+    "category": [
+      "web"
+    ],
+    "title": "Moovie",
     "thumbnail": "moovie-thumb"
+  },
+  {
+    "slug": "clothing-store-template",
+    "date": "2017-05-18",
+    "category": [
+      "web",
+      "shop"
+    ],
+    "title": "Clothing store template",
+    "thumbnail": "clothing-store-template-thumb"
   }
 ]

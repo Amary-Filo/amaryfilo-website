@@ -1,534 +1,98 @@
 [
   {
-    "slug": "bitcoin-intro",
-    "date": "2025-08-25",
+    "slug": "sitemap-website",
+    "date": "2023-04-29",
     "updates": [],
-    "title": "Introduction to Bitcoin",
-    "anonce": "Kurze Zusammenfassung für Introduction to Bitcoin",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "bitcoin",
+    "category": "optimization",
     "category_list": [
-      "bitcoin"
+      "optimization"
     ],
-    "icon": "bitcoin",
-    "color": "bitcoin",
+    "icon": "seo",
+    "color": "seo",
     "tags": [
-      "bitcoin",
-      "crypto"
+      "optimization",
+      "sitemap",
+      "xml",
+      "html",
+      "seo",
+      "indexing"
     ]
   },
   {
-    "slug": "blockchain-basics",
-    "date": "2025-08-25",
+    "slug": "web-servers-apache-nginx",
+    "date": "2023-03-03",
     "updates": [],
-    "title": "Blockchain Basics Explained",
-    "anonce": "Kurze Zusammenfassung für Blockchain Basics Explained",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "blockchain",
+    "category": "optimization",
     "category_list": [
-      "blockchain"
+      "optimization",
+      "nginx",
+      "apache"
     ],
-    "icon": "blockchain",
-    "color": "blockchain",
+    "icon": "seo",
+    "color": "seo",
     "tags": [
-      "blockchain",
-      "crypto"
+      "optimization",
+      "web server",
+      "apache",
+      "nginx",
+      "htaccess",
+      "conf",
+      "configuration"
     ]
   },
   {
-    "slug": "css-grid-layout",
-    "date": "2025-08-25",
+    "slug": "install-homebrew",
+    "date": "2022-12-18",
     "updates": [],
-    "title": "Understanding CSS Grid Layout",
-    "anonce": "Kurze Zusammenfassung für Understanding CSS Grid Layout",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "css3",
+    "category": "tools",
     "category_list": [
-      "css3"
-    ],
-    "icon": "css3",
-    "color": "css3",
-    "tags": [
-      "css3",
-      "frontend",
-      "design"
-    ]
-  },
-  {
-    "slug": "getting-started-angular",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Getting Started with Angular",
-    "anonce": "Kurze Zusammenfassung für Getting Started with Angular",
-    "thumbnail": "",
-    "category": "angular",
-    "category_list": [
-      "angular"
-    ],
-    "icon": "angular",
-    "color": "angular",
-    "tags": [
-      "angular",
-      "frontend",
-      "typescript"
-    ]
-  },
-  {
-    "slug": "gitflow-workflow",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Understanding Gitflow Workflow",
-    "anonce": "Kurze Zusammenfassung für Understanding Gitflow Workflow",
-    "thumbnail": "",
-    "category": "gitflow",
-    "category_list": [
-      "gitflow"
-    ],
-    "icon": "gitflow",
-    "color": "gitflow",
-    "tags": [
-      "git",
-      "workflow"
-    ]
-  },
-  {
-    "slug": "graphql-vs-rest",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "GraphQL vs REST: Key Differences",
-    "anonce": "Kurze Zusammenfassung für GraphQL vs REST: Key Differences",
-    "thumbnail": "",
-    "category": "graphql",
-    "category_list": [
-      "graphql"
-    ],
-    "icon": "graphql",
-    "color": "graphql",
-    "tags": [
-      "graphql",
-      "rest",
-      "api"
-    ]
-  },
-  {
-    "slug": "laravel-setup",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Setting up Laravel Project",
-    "anonce": "Kurze Zusammenfassung für Setting up Laravel Project",
-    "thumbnail": "",
-    "category": "laravel",
-    "category_list": [
-      "laravel"
-    ],
-    "icon": "laravel",
-    "color": "laravel",
-    "tags": [
-      "php",
-      "laravel",
-      "backend"
-    ]
-  },
-  {
-    "slug": "mastering-typescript",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Mastering TypeScript Basics",
-    "anonce": "Kurze Zusammenfassung für Mastering TypeScript Basics",
-    "thumbnail": "",
-    "category": "typescript",
-    "category_list": [
-      "typescript"
-    ],
-    "icon": "typescript",
-    "color": "typescript",
-    "tags": [
-      "typescript",
-      "frontend"
-    ]
-  },
-  {
-    "slug": "nodejs-api-server",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Building a REST API with Node.js",
-    "anonce": "Kurze Zusammenfassung für Building a REST API with Node.js",
-    "thumbnail": "",
-    "category": "nodejs",
-    "category_list": [
-      "nodejs"
-    ],
-    "icon": "nodejs",
-    "color": "nodejs",
-    "tags": [
-      "nodejs",
-      "backend",
-      "api"
-    ]
-  },
-  {
-    "slug": "pug-template-engine",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Using Pug Template Engine",
-    "anonce": "Kurze Zusammenfassung für Using Pug Template Engine",
-    "thumbnail": "",
-    "category": "pug",
-    "category_list": [
-      "pug"
-    ],
-    "icon": "pug",
-    "color": "pug",
-    "tags": [
-      "pug",
-      "templates",
-      "html"
-    ]
-  },
-  {
-    "slug": "react-hooks-guide",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Beginner's Guide to React Hooks",
-    "anonce": "Kurze Zusammenfassung für Beginner's Guide to React Hooks",
-    "thumbnail": "",
-    "category": "react",
-    "category_list": [
-      "react"
-    ],
-    "icon": "react",
-    "color": "react",
-    "tags": [
-      "react",
-      "frontend"
-    ]
-  },
-  {
-    "slug": "rxjs-streams",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Working with RxJS Streams",
-    "anonce": "Kurze Zusammenfassung für Working with RxJS Streams",
-    "thumbnail": "",
-    "category": "rxjs",
-    "category_list": [
-      "rxjs"
-    ],
-    "icon": "rxjs",
-    "color": "rxjs",
-    "tags": [
-      "rxjs",
-      "angular",
-      "observables"
-    ]
-  },
-  {
-    "slug": "sass-tips",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Sass Tips and Tricks",
-    "anonce": "Kurze Zusammenfassung für Sass Tips and Tricks",
-    "thumbnail": "",
-    "category": "sass",
-    "category_list": [
-      "sass"
-    ],
-    "icon": "sass",
-    "color": "sass",
-    "tags": [
-      "sass",
-      "css",
-      "frontend"
-    ]
-  },
-  {
-    "slug": "swiftui-layouts",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Building Layouts in SwiftUI",
-    "anonce": "Kurze Zusammenfassung für Building Layouts in SwiftUI",
-    "thumbnail": "",
-    "category": "swiftui",
-    "category_list": [
-      "swiftui"
-    ],
-    "icon": "swiftui",
-    "color": "swiftui",
-    "tags": [
-      "swiftui",
-      "ios",
-      "apple"
-    ]
-  },
-  {
-    "slug": "vue3-introduction",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Introduction to Vue 3",
-    "anonce": "Kurze Zusammenfassung für Introduction to Vue 3",
-    "thumbnail": "",
-    "category": "vue",
-    "category_list": [
-      "vue"
-    ],
-    "icon": "vue",
-    "color": "vue",
-    "tags": [
-      "vue",
-      "frontend"
-    ]
-  },
-  {
-    "slug": "nodejs-fetch-vs-axios",
-    "date": "2024-10-12",
-    "updates": [],
-    "title": "Node.js: fetch vs axios 2025",
-    "anonce": "Meist reicht fetch.",
-    "thumbnail": "",
-    "category": "nodejs",
-    "category_list": [
-      "api",
-      "rest"
-    ],
-    "icon": "nodejs",
-    "color": "nodejs",
-    "tags": [
-      "nodejs",
-      "fetch",
-      "axios",
-      "http"
-    ]
-  },
-  {
-    "slug": "how-to-install-homebrew",
-    "date": "2021-07-15",
-    "updates": [
-      "2024-08-01"
-    ],
-    "title": "Wie man Homebrew auf macOS installiert",
-    "anonce": "Kurze Zusammenfassung…",
-    "thumbnail": "",
-    "category": "angular",
-    "category_list": [
-      "angular",
-      "tools"
-    ],
-    "icon": "angular",
-    "color": "angular",
-    "tags": [
+      "tools",
       "macos",
+      "windows",
+      "linux",
+      "homebrew"
+    ],
+    "icon": "tools",
+    "color": "tools",
+    "tags": [
       "homebrew",
-      "software",
-      "tools"
+      "package-manager",
+      "macos",
+      "windows",
+      "wsl",
+      "apple silicon"
     ]
   },
   {
-    "slug": "ngrx-signal-store-intro",
-    "date": "2024-07-09",
+    "slug": "install-postgresql-macos-apple-silicon-m1",
+    "date": "2022-11-14",
     "updates": [],
-    "title": "NgRx SignalStore: leichter State",
-    "anonce": "Wenig Boilerplate.",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "ngrx",
+    "category": "database",
     "category_list": [
-      "angular",
-      "typescript"
+      "database",
+      "macos",
+      "homebrew"
     ],
-    "icon": "ngrx",
-    "color": "ngrx",
+    "icon": "database",
+    "color": "database",
     "tags": [
-      "ngrx",
-      "signal-store",
-      "state"
-    ]
-  },
-  {
-    "slug": "angular-standalone-components-basics",
-    "date": "2023-03-12",
-    "updates": [
-      "2024-06-15"
-    ],
-    "title": "Angular Standalone Components: Basics",
-    "anonce": "How standalone components simplify modules and bootstrapping.",
-    "thumbnail": "",
-    "category": "angular",
-    "category_list": [
-      "typescript",
-      "rxjs"
-    ],
-    "icon": "angular",
-    "color": "angular",
-    "tags": [
-      "angular",
-      "standalone",
-      "components"
-    ]
-  },
-  {
-    "slug": "typescript-satisfies-for-json-schemas",
-    "date": "2024-05-02",
-    "updates": [],
-    "title": "TypeScript `satisfies` für JSON‑Schemata",
-    "anonce": "Compile‑time‑Validierung.",
-    "thumbnail": "",
-    "category": "typescript",
-    "category_list": [
-      "json",
-      "tools"
-    ],
-    "icon": "typescript",
-    "color": "typescript",
-    "tags": [
-      "typescript",
-      "satisfies",
-      "schema"
-    ]
-  },
-  {
-    "slug": "css-grid-autofill-gallery",
-    "date": "2022-06-22",
-    "updates": [
-      "2024-04-02"
-    ],
-    "title": "CSS Grid: Galerie per autofill",
-    "anonce": "Responsive in einer Zeile.",
-    "thumbnail": "",
-    "category": "css3",
-    "category_list": [
-      "html5"
-    ],
-    "icon": "css3",
-    "color": "css3",
-    "tags": [
-      "css",
-      "grid",
-      "layout"
-    ]
-  },
-  {
-    "slug": "rxjs-to-signal-patterns",
-    "date": "2024-03-05",
-    "updates": [],
-    "title": "RxJS → Signal‑Muster in Angular",
-    "anonce": "Sicherer Bridge.",
-    "thumbnail": "",
-    "category": "rxjs",
-    "category_list": [
-      "angular",
-      "typescript"
-    ],
-    "icon": "rxjs",
-    "color": "rxjs",
-    "tags": [
-      "rxjs",
-      "signals",
-      "angular"
-    ]
-  },
-  {
-    "slug": "react-server-components-notes",
-    "date": "2023-11-18",
-    "updates": [
-      "2024-02-01"
-    ],
-    "title": "RSC: Notizen für Angular‑Devs",
-    "anonce": "Kurzüberblick.",
-    "thumbnail": "",
-    "category": "react",
-    "category_list": [
-      "javascript"
-    ],
-    "icon": "react",
-    "color": "react",
-    "tags": [
-      "react",
-      "rsc",
-      "ssr"
-    ]
-  },
-  {
-    "slug": "angular-standalone-components-quickstart",
-    "date": "2023-02-10",
-    "updates": [
-      "2024-01-12"
-    ],
-    "title": "Angular Standalone Components: Schnellstart",
-    "anonce": "Standalone‑Komponenten ohne NgModules.",
-    "thumbnail": "",
-    "category": "angular",
-    "category_list": [
-      "typescript",
-      "rxjs"
-    ],
-    "icon": "angular",
-    "color": "angular",
-    "tags": [
-      "angular",
-      "standalone",
-      "components",
-      "signals"
-    ]
-  },
-  {
-    "slug": "sass-utility-classes",
-    "date": "2020-12-15",
-    "updates": [
-      "2023-09-10"
-    ],
-    "title": "Sass‑Utilities, die man nutzt",
-    "anonce": "Abstand, Flex, Text.",
-    "thumbnail": "",
-    "category": "sass",
-    "category_list": [
-      "css3"
-    ],
-    "icon": "sass",
-    "color": "sass",
-    "tags": [
-      "sass",
-      "utilities"
-    ]
-  },
-  {
-    "slug": "pug-templating-snippets",
-    "date": "2021-09-01",
-    "updates": [],
-    "title": "Pug: praktische Snippets",
-    "anonce": "Kurze Mixins.",
-    "thumbnail": "",
-    "category": "pug",
-    "category_list": [
-      "html5",
-      "gulp"
-    ],
-    "icon": "pug",
-    "color": "pug",
-    "tags": [
-      "pug",
-      "mixins",
-      "templates"
-    ]
-  },
-  {
-    "slug": "npm-semver-and-release-flow",
-    "date": "2019-06-26",
-    "updates": [
-      "2021-06-26"
-    ],
-    "title": "NPM SemVer & Release Flow",
-    "anonce": "Sinnvolle Versionen.",
-    "thumbnail": "",
-    "category": "npm",
-    "category_list": [
-      "git",
-      "github"
-    ],
-    "icon": "npm",
-    "color": "npm",
-    "tags": [
-      "npm",
-      "semver",
-      "release"
+      "postgresql",
+      "macos",
+      "database",
+      "homebrew",
+      "brew"
     ]
   }
 ]

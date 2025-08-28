@@ -1,0 +1,101 @@
+{
+  "slug": "census-wallet",
+  "title": "Сensus Wallet",
+  "date": "2020-06-25",
+  "category": [
+    "mobile",
+    "angular",
+    "crypto",
+    "ionic"
+  ],
+  "anonce": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку.",
+  "description": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку и создания транзакций. Добавление различных модулей, полный редизайн. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция обеих криптовалют через сервис Moonpay. Интеграция Tangem SDK для сканера NFC через создание кастомного плагина для Cordova.",
+  "logo": "census-wallet-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "ionic",
+      "color": "",
+      "title": "Ionic"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Rock-n-Block/census-wallet/tree/master",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Rock-n-Block/census-wallet/tree/a14fb9ee5a1a39ea555c85ecccfc37231ec7f72c",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Tangem",
+      "description": ""
+    },
+    {
+      "title": "Wallet",
+      "description": ""
+    },
+    {
+      "title": "Transactions",
+      "description": ""
+    },
+    {
+      "title": "Multi-language",
+      "description": ""
+    },
+    {
+      "title": "Multi-chain",
+      "description": ""
+    },
+    {
+      "title": "Swap",
+      "description": ""
+    },
+    {
+      "title": "Bridge",
+      "description": ""
+    },
+    {
+      "title": "Buy cryptocurrency",
+      "description": ""
+    },
+    {
+      "title": "Moonpay",
+      "description": ""
+    }
+  ]
+}

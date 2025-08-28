@@ -1,0 +1,84 @@
+{
+  "slug": "amfi-connect",
+  "title": "AMFI Connect",
+  "date": "2022-03-01",
+  "category": [
+    "crypto",
+    "package"
+  ],
+  "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+  "description": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+  "logo": "amfi-connect-logo",
+  "instruments": [
+    {
+      "icon": "rxjs",
+      "color": "",
+      "title": "RxJs"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "npm",
+      "color": "",
+      "title": "NPM"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/amaryfilo/connect-wallet",
+      "is_active": true
+    },
+    {
+      "icon": "npm",
+      "color": "",
+      "title": "Npm",
+      "url": "https://www.npmjs.com/package/@amfi/connect-wallet",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Connect any blockchains",
+      "description": ""
+    },
+    {
+      "title": "Transactions",
+      "description": ""
+    },
+    {
+      "title": "Networks",
+      "description": ""
+    },
+    {
+      "title": "Events",
+      "description": ""
+    },
+    {
+      "title": "WalletConnect",
+      "description": ""
+    },
+    {
+      "title": "Customizable",
+      "description": ""
+    },
+    {
+      "title": "Easy connect",
+      "description": ""
+    },
+    {
+      "title": "NPM package",
+      "description": ""
+    },
+    {
+      "title": "OpenSource",
+      "description": ""
+    }
+  ]
+}

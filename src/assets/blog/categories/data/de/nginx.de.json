@@ -4,5 +4,5 @@
   "description": "Hochperformanter Webserver und Reverse‑Proxy für moderne Anwendungen.",
   "icon": "nginx",
   "color": "nginx",
-  "count": 0
+  "count": 1
 }

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "slug": "photographers-personal-website",
+    "date": "2023-04-29",
+    "category": ["web", "landing", "blog"],
+    "thumbnail": "photographers-personal-website-thumb"
+  },
+  "base": {
+    "title": "Photographer's personal website ✨",
+    "description": "Personal website of a professional photographer for publishing works. In addition to works, contacts are indicated, price list for photo shoots and photographer skills.",
+    "links": [
+      {
+        "icon": "behance",
+        "color": "",
+        "title": "Behance",
+        "url": "https://www.behance.net/gallery/169462139/Photographers-personal-website-",
+        "is_active": true
+      }
+    ],
+    "images": [
+      "photographers-personal-website-1",
+      "photographers-personal-website-2",
+      "photographers-personal-website-3"
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Photographer's personal website ✨",
+      "description": "Personal website of a professional photographer for publishing works. In addition to works, contacts are indicated, price list for photo shoots and photographer skills."
+    }
+  }
+}

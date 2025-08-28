@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "slug": "gravity-hub",
+    "date": "2020-05-25",
+    "category": ["landing", "vue"],
+    "title": "Gravity Hub"
+  },
+  "base": {
+    "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
+    "description": "Layout of the Gravity Hub website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+    "instruments": [
+      {
+        "icon": "vue",
+        "color": "",
+        "title": "NuxtJS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      }
+    ],
+    "logo": "gravity-hub-logo",
+    "images": [],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Rock-n-Block/gravity-hub",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Template",
+        "description": ""
+      },
+      {
+        "title": "Navigation",
+        "description": ""
+      },
+      {
+        "title": "Events",
+        "description": ""
+      },
+      {
+        "title": "Forms",
+        "description": ""
+      },
+      {
+        "title": "SEO",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
+      "description": "Layout of the Gravity Hub website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+      "features": [
+        {
+          "title": "Template",
+          "description": ""
+        },
+        {
+          "title": "Navigation",
+          "description": ""
+        },
+        {
+          "title": "Events",
+          "description": ""
+        },
+        {
+          "title": "Forms",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Верстка сайта Gravity Hub и посадка на NuxtJs.",
+      "description": "Верстка сайта Gravity Hub и посадка на NuxtJs. Создание формы отправки обратной свяви, навигация по страницам сайта, ивенты.",
+      "features": [
+        {
+          "title": "Template",
+          "description": ""
+        },
+        {
+          "title": "Navigation",
+          "description": ""
+        },
+        {
+          "title": "Events",
+          "description": ""
+        },
+        {
+          "title": "Forms",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "slug": "quras-wallet-client",
+    "date": "2021-01-21",
+    "category": ["crypto"],
+    "title": "Quras+ Wallet Client"
+  },
+  "base": {
+    "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
+    "description": "Server side of Quras Wallet+. Adding Quras blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+    "instruments": [
+      {
+        "icon": "nodejs",
+        "color": "",
+        "title": "NodeJS"
+      },
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "rest",
+        "color": "",
+        "title": "REST"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      }
+    ],
+    "logo": "quras-wallet-client-logo",
+    "images": [],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Rock-n-Block/bitcore-quras",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/Rock-n-Block/bitcore-quras/tree/6e9c52c3f02c9b11ea57da58f818412aac52b4ef",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Modules",
+        "description": ""
+      },
+      {
+        "title": "REST API",
+        "description": ""
+      },
+      {
+        "title": "Muti-chain",
+        "description": ""
+      },
+      {
+        "title": "Transactions",
+        "description": ""
+      },
+      {
+        "title": "HD Wallets",
+        "description": ""
+      },
+      {
+        "title": "Smart Contracts",
+        "description": ""
+      },
+      {
+        "title": "Custom interfaces for blockchains",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
+      "description": "Server side of Quras Wallet+. Adding Quras blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+      "features": [
+        {
+          "title": "Modules",
+          "description": ""
+        },
+        {
+          "title": "REST API",
+          "description": ""
+        },
+        {
+          "title": "Muti-chain",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "HD Wallets",
+          "description": ""
+        },
+        {
+          "title": "Smart Contracts",
+          "description": ""
+        },
+        {
+          "title": "Custom interfaces for blockchains",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android. ",
+      "description": "Серверная часть кошелька Quras Wallet+. Добавление Quras блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+      "features": [
+        {
+          "title": "Modules",
+          "description": ""
+        },
+        {
+          "title": "REST API",
+          "description": ""
+        },
+        {
+          "title": "Muti-chain",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "HD Wallets",
+          "description": ""
+        },
+        {
+          "title": "Smart Contracts",
+          "description": ""
+        },
+        {
+          "title": "Custom interfaces for blockchains",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

@@ -1,113 +1,98 @@
 [
   {
-    "slug": "bitcoin-intro",
-    "date": "2025-08-25",
+    "slug": "sitemap-website",
+    "date": "2023-04-29",
     "updates": [],
-    "title": "Introduction to Bitcoin",
-    "anonce": "Kurze Zusammenfassung für Introduction to Bitcoin",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "bitcoin",
+    "category": "optimization",
     "category_list": [
-      "bitcoin"
+      "optimization"
     ],
-    "icon": "bitcoin",
-    "color": "bitcoin",
+    "icon": "seo",
+    "color": "seo",
     "tags": [
-      "bitcoin",
-      "crypto"
+      "optimization",
+      "sitemap",
+      "xml",
+      "html",
+      "seo",
+      "indexing"
     ]
   },
   {
-    "slug": "blockchain-basics",
-    "date": "2025-08-25",
+    "slug": "web-servers-apache-nginx",
+    "date": "2023-03-03",
     "updates": [],
-    "title": "Blockchain Basics Explained",
-    "anonce": "Kurze Zusammenfassung für Blockchain Basics Explained",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "blockchain",
+    "category": "optimization",
     "category_list": [
-      "blockchain"
+      "optimization",
+      "nginx",
+      "apache"
     ],
-    "icon": "blockchain",
-    "color": "blockchain",
+    "icon": "seo",
+    "color": "seo",
     "tags": [
-      "blockchain",
-      "crypto"
+      "optimization",
+      "web server",
+      "apache",
+      "nginx",
+      "htaccess",
+      "conf",
+      "configuration"
     ]
   },
   {
-    "slug": "css-grid-layout",
-    "date": "2025-08-25",
+    "slug": "install-homebrew",
+    "date": "2022-12-18",
     "updates": [],
-    "title": "Understanding CSS Grid Layout",
-    "anonce": "Kurze Zusammenfassung für Understanding CSS Grid Layout",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "css3",
+    "category": "tools",
     "category_list": [
-      "css3"
+      "tools",
+      "macos",
+      "windows",
+      "linux",
+      "homebrew"
     ],
-    "icon": "css3",
-    "color": "css3",
+    "icon": "tools",
+    "color": "tools",
     "tags": [
-      "css3",
-      "frontend",
-      "design"
+      "homebrew",
+      "package-manager",
+      "macos",
+      "windows",
+      "wsl",
+      "apple silicon"
     ]
   },
   {
-    "slug": "getting-started-angular",
-    "date": "2025-08-25",
+    "slug": "install-postgresql-macos-apple-silicon-m1",
+    "date": "2022-11-14",
     "updates": [],
-    "title": "Getting Started with Angular",
-    "anonce": "Kurze Zusammenfassung für Getting Started with Angular",
+    "title": "",
+    "anonce": "",
     "thumbnail": "",
-    "category": "angular",
+    "category": "database",
     "category_list": [
-      "angular"
+      "database",
+      "macos",
+      "homebrew"
     ],
-    "icon": "angular",
-    "color": "angular",
+    "icon": "database",
+    "color": "database",
     "tags": [
-      "angular",
-      "frontend",
-      "typescript"
-    ]
-  },
-  {
-    "slug": "gitflow-workflow",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "Understanding Gitflow Workflow",
-    "anonce": "Kurze Zusammenfassung für Understanding Gitflow Workflow",
-    "thumbnail": "",
-    "category": "gitflow",
-    "category_list": [
-      "gitflow"
-    ],
-    "icon": "gitflow",
-    "color": "gitflow",
-    "tags": [
-      "git",
-      "workflow"
-    ]
-  },
-  {
-    "slug": "graphql-vs-rest",
-    "date": "2025-08-25",
-    "updates": [],
-    "title": "GraphQL vs REST: Key Differences",
-    "anonce": "Kurze Zusammenfassung für GraphQL vs REST: Key Differences",
-    "thumbnail": "",
-    "category": "graphql",
-    "category_list": [
-      "graphql"
-    ],
-    "icon": "graphql",
-    "color": "graphql",
-    "tags": [
-      "graphql",
-      "rest",
-      "api"
+      "postgresql",
+      "macos",
+      "database",
+      "homebrew",
+      "brew"
     ]
   }
 ]

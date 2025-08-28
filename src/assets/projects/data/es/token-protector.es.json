@@ -1,0 +1,129 @@
+{
+  "slug": "token-protector",
+  "title": "Token Protector",
+  "date": "2019-12-29",
+  "category": [
+    "landing",
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Service for saving crypto-tokens after the expiration of the specified period in the smart contract.",
+  "description": "Development of a site for saving tokens after a certain period. Ability to create test contracts by selecting a test network. Request via web3js to provide control of unlimited selected tokens for a contract, without this the contract does not work. Conducting a payment transaction. Connecting custom wallets via MetaMask. View the list of contracts. Contract statuses: Creating/Deploy/Active/Decline/Done.",
+  "logo": "token-protector-logo",
+  "instruments": [
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "metamask",
+      "color": "",
+      "title": "MM"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "seo",
+      "color": "",
+      "title": "SEO"
+    }
+  ],
+  "images": [
+    "token-protector-1",
+    "token-protector-2",
+    "token-protector-3",
+    "token-protector-4",
+    "token-protector-5",
+    "token-protector-6",
+    "token-protector-7"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/swaps-network/tokenprotector-frontend",
+      "is_active": true
+    },
+    {
+      "icon": "github",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/swaps-network/tokenprotector-frontend/tree/884307eb87ec9efaa620e28d78ad75cf723367ab",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://protector.mywish.io",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Web3js Integration",
+      "description": ""
+    },
+    {
+      "title": "Connect smart contracts",
+      "description": ""
+    },
+    {
+      "title": "Connect user wallets",
+      "description": ""
+    },
+    {
+      "title": "Stepper",
+      "description": ""
+    },
+    {
+      "title": "Login via MM/Google/Facebook",
+      "description": ""
+    },
+    {
+      "title": "List tokens",
+      "description": ""
+    },
+    {
+      "title": "Create transactions",
+      "description": ""
+    },
+    {
+      "title": "Multi-language",
+      "description": ""
+    },
+    {
+      "title": "Online Statistics",
+      "description": ""
+    },
+    {
+      "title": "SEO",
+      "description": ""
+    }
+  ]
+}

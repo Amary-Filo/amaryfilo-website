@@ -1,22 +1,23 @@
 {
   "slug": "moovie",
-  "title": "Мууви",
-  "date": "2019-05-11",
+  "title": "Moovie",
+  "date": "2017-06-15",
   "category": [
-    "Website"
+    "web"
   ],
   "thumbnail": "moovie-thumb",
-  "description": "Дизайн для онлайн кинотеатров, там показывают новые фильмы и сериалы. Помимо этого там имеется новострая лента и другая полезная медиаинформация.",
+  "description": "A simple landing page for a streaming service for movies, series and TV shows. The site displays news, traders and ratings for the broadcast content.",
   "images": [
-    "moovie-1-ru",
-    "moovie-2-ru",
-    "moovie-3-ru",
-    "moovie-4"
+    "moovie-1",
+    "moovie-2"
   ],
   "links": [
     {
+      "icon": "behance",
+      "color": "",
       "title": "Behance",
-      "url": "https://behance.co"
+      "url": "http://behance.net/gallery/146196693/Moovie",
+      "is_active": true
     }
   ]
 }

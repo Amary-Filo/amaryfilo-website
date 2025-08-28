@@ -1,0 +1,263 @@
+{
+  "slug": "install-homebrew",
+  "title": "",
+  "date": "2022-12-18",
+  "updates": [],
+  "anonce": "",
+  "thumbnail": "",
+  "category": "tools",
+  "category_list": [
+    "tools",
+    "macos",
+    "windows",
+    "linux",
+    "homebrew"
+  ],
+  "icon": "tools",
+  "color": "tools",
+  "tags": [
+    "homebrew",
+    "package-manager",
+    "macos",
+    "windows",
+    "wsl",
+    "apple silicon"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "Introduction",
+      "title": "Introduction",
+      "level": 2
+    },
+    {
+      "id": "What-is-homebrew",
+      "title": "What is Homebrew?",
+      "level": 3
+    },
+    {
+      "id": "Commands",
+      "title": "Commands",
+      "level": 3
+    },
+    {
+      "id": "Installing-Homebrew",
+      "title": "Installing Homebrew",
+      "level": 2
+    },
+    {
+      "id": "MacOS",
+      "title": "MacOS",
+      "level": 3
+    },
+    {
+      "id": "Apple-Silicon",
+      "title": "Apple Silicon",
+      "level": 3
+    },
+    {
+      "id": "Windows",
+      "title": "Windows",
+      "level": 3
+    },
+    {
+      "id": "Conclusion",
+      "title": "Conclusion",
+      "level": 2
+    }
+  ],
+  "content": [
+    {
+      "type": "h2",
+      "text": "Introduction",
+      "id": "Introduction"
+    },
+    {
+      "type": "p",
+      "text": "When creating applications, you often need additional software that speeds up development and sometimes is essential. Off-the-shelf programs or plugins may include unnecessary resources, so developers created package managers like Homebrew to simplify the process."
+    },
+    {
+      "type": "p",
+      "text": "Homebrew provides packages that save time and effort. The only difficulty might be using console commands, but they are easy to find online."
+    },
+    {
+      "type": "h3",
+      "text": "What is Homebrew?",
+      "id": "What-is-homebrew"
+    },
+    {
+      "type": "image",
+      "src": "homebrew-created-amary-filo",
+      "alt": "Homebrew. Created by Amary Filo"
+    },
+    {
+      "type": "p",
+      "text": "Homebrew is a clean and lightweight package manager that gives access to various programs and libraries via simple commands."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Platforms",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Homebrew is mainly used on Linux and macOS, but it can also run under Windows (via WSL)."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Commands",
+      "id": "Commands"
+    },
+    {
+      "type": "p",
+      "text": "Common Homebrew commands include upgrading, installing, removing packages and managing services."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "`brew upgrade` – upgrade Homebrew itself",
+        "`brew update` – update installed packages",
+        "`brew cleanup` – remove obsolete files",
+        "`brew install [package]` – install package",
+        "`brew uninstall [package]` – remove package",
+        "`brew reinstall [package]` – reinstall package",
+        "`brew services list` – list services",
+        "`brew services start [service]` – start service",
+        "`brew services restart [service]` – restart service",
+        "`brew services stop [service]` – stop service",
+        "`brew link [service]` – link service (e.g., PHP version)",
+        "`brew doctor` – check for errors and fixes"
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Tip",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "To install a package, find it on the official Homebrew site, copy its formula, and paste into terminal."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Installing Homebrew",
+      "id": "Installing-Homebrew"
+    },
+    {
+      "type": "p",
+      "text": "Installing is simple: download from the server and run the install script in terminal."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "About installation",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Installation uses system commands that fetch resources from open or closed sources."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "MacOS",
+      "id": "MacOS"
+    },
+    {
+      "type": "image",
+      "src": "homebrew-macos",
+      "alt": "Homebrew and MacOS. Created by Amary Filo"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Go to the official site: https://brew.sh",
+        "Find the 'Install Homebrew' section",
+        "Open Terminal (`cmd+space` → type 'terminal')",
+        "Copy install command: `/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"`",
+        "Paste into terminal and run",
+        "Restart terminal and run `brew` to confirm installation"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Apple Silicon",
+      "id": "Apple-Silicon"
+    },
+    {
+      "type": "image",
+      "src": "homebrew-apple-silicon",
+      "alt": "Homebrew and Apple Silicon. Created by Amary Filo"
+    },
+    {
+      "type": "p",
+      "html": "Homebrew <a href=\"https://brew.sh/2021/02/05/homebrew-3.0.0/\" target=\"_blank\">supports Apple Silicon</a> (M1/M2, Pro/Max). Installation steps are the same as for macOS."
+    },
+    {
+      "type": "h3",
+      "text": "Windows",
+      "id": "Windows"
+    },
+    {
+      "type": "image",
+      "src": "homebrew-windows",
+      "alt": "Homebrew and Windows. Created by Amary Filo"
+    },
+    {
+      "type": "p",
+      "text": "On Windows, Homebrew runs inside WSL (Windows Subsystem for Linux)."
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Install WSL and Linux distribution",
+        "Install Homebrew inside WSL",
+        "Use Homebrew commands in Linux environment"
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Why WSL?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "With WSL, Linux integrates into Windows, allowing use of Linux tools and packages."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Steps to install Homebrew in WSL:"
+    },
+    {
+      "type": "ol",
+      "items": [
+        "Install Curl and dependencies: `sudo apt-get install build-essential procps curl file git`",
+        "Run: `test -d ~/.linuxbrew && eval \"$(~/.linuxbrew/bin/brew shellenv)\"`",
+        "Run: `test -d /home/linuxbrew/.linuxbrew && eval \"$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)\"`",
+        "Update .bash_profile: `echo \"eval \\\"$($(brew --prefix)/bin/brew shellenv)\\\"\" >> ~/.bash_profile`",
+        "Update .profile: `echo \"eval \\\"$($(brew --prefix)/bin/brew shellenv)\\\"\" >> ~/.profile`",
+        "Restart terminal",
+        "Check with `brew` command"
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Conclusion",
+      "id": "Conclusion"
+    },
+    {
+      "type": "p",
+      "text": "With WSL, Linux can be used on Windows, and Homebrew works just like on macOS."
+    },
+    {
+      "type": "p",
+      "text": "Installing Homebrew is simple and adds powerful features for managing packages, speeding up and simplifying projects."
+    }
+  ]
+}

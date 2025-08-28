@@ -5,7 +5,7 @@
     "description": "Фреймворк на TypeScript для масштабируемых веб‑приложений.",
     "icon": "angular",
     "color": "angular",
-    "count": 6
+    "count": 0
   },
   {
     "slug": "apache",
@@ -13,7 +13,7 @@
     "description": "Популярный веб‑сервер с открытым кодом и богатой экосистемой модулей.",
     "icon": "apache",
     "color": "apache",
-    "count": 0
+    "count": 1
   },
   {
     "slug": "api",
@@ -21,7 +21,7 @@
     "description": "Программные интерфейсы для интеграции сервисов.",
     "icon": "api",
     "color": "api",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "backend",
@@ -45,7 +45,7 @@
     "description": "Децентрализованная цифровая валюта и первая блокчейн‑сеть.",
     "icon": "bitcoin",
     "color": "bitcoin",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "blockchain",
@@ -53,7 +53,7 @@
     "description": "Распределённые реестры и платформы смарт‑контрактов.",
     "icon": "blockchain",
     "color": "blockchain",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "coins",
@@ -69,7 +69,7 @@
     "description": "Современные возможности CSS и техники верстки.",
     "icon": "css3",
     "color": "css3",
-    "count": 3
+    "count": 0
   },
   {
     "slug": "customcms",
@@ -78,6 +78,14 @@
     "icon": "customcms",
     "color": "customcms",
     "count": 0
+  },
+  {
+    "slug": "database",
+    "title": "Database",
+    "description": "Самописная система управления контентом, адаптированная под нужды проекта.",
+    "icon": "database",
+    "color": "database",
+    "count": 1
   },
   {
     "slug": "frontend",
@@ -93,7 +101,7 @@
     "description": "Распределённая система контроля версий для исходного кода.",
     "icon": "git",
     "color": "git",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "gitflow",
@@ -101,7 +109,7 @@
     "description": "Модель ветвления для управления релизами, фичами и хотфикcами.",
     "icon": "gitflow",
     "color": "gitflow",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "github",
@@ -109,7 +117,7 @@
     "description": "Платформа хостинга кода и совместной разработки с CI Actions.",
     "icon": "github",
     "color": "github",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "graphql",
@@ -117,7 +125,7 @@
     "description": "Язык запросов и рантайм для API с типизированной схемой.",
     "icon": "graphql",
     "color": "graphql",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "gulp",
@@ -125,7 +133,7 @@
     "description": "Стриминговая система сборки для фронтенд‑процессов.",
     "icon": "gulp",
     "color": "gulp",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "html5",
@@ -133,7 +141,7 @@
     "description": "Стандарт разметки для современных веб‑приложений.",
     "icon": "html5",
     "color": "html5",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "ionic",
@@ -149,7 +157,7 @@
     "description": "Язык программирования веба и кроссплатформенных приложений.",
     "icon": "javascript",
     "color": "javascript",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "laravel",
@@ -157,7 +165,7 @@
     "description": "PHP‑фреймворк, ориентированный на элегантность и продуктивность.",
     "icon": "laravel",
     "color": "laravel",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "metamask",
@@ -189,7 +197,7 @@
     "description": "Высокопроизводительный веб‑сервер и реверс‑прокси для современных приложений.",
     "icon": "nginx",
     "color": "nginx",
-    "count": 0
+    "count": 1
   },
   {
     "slug": "ngrx",
@@ -197,7 +205,7 @@
     "description": "Реактивное управление состоянием для приложений Angular.",
     "icon": "ngrx",
     "color": "ngrx",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "nodejs",
@@ -205,7 +213,7 @@
     "description": "Среда выполнения JavaScript для быстрых серверных приложений.",
     "icon": "nodejs",
     "color": "nodejs",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "npm",
@@ -213,7 +221,7 @@
     "description": "Менеджер пакетов и реестр для JavaScript.",
     "icon": "npm",
     "color": "npm",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "octobercms",
@@ -222,6 +230,14 @@
     "icon": "octobercms",
     "color": "octobercms",
     "count": 0
+  },
+  {
+    "slug": "optimization",
+    "title": "Optimization",
+    "description": "Программные интерфейсы для интеграции сервисов.",
+    "icon": "seo",
+    "color": "seo",
+    "count": 2
   },
   {
     "slug": "os",
@@ -253,7 +269,7 @@
     "description": "Шаблонизатор, компилирующийся в HTML.",
     "icon": "pug",
     "color": "pug",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "react",
@@ -261,7 +277,7 @@
     "description": "Библиотека для создания компонентных интерфейсов.",
     "icon": "react",
     "color": "react",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "rest",
@@ -269,7 +285,7 @@
     "description": "Архитектурный стиль API «Representational State Transfer».",
     "icon": "rest",
     "color": "rest",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "rxjs",
@@ -277,7 +293,7 @@
     "description": "Реактивное программирование на базе Observable для JavaScript.",
     "icon": "rxjs",
     "color": "rxjs",
-    "count": 4
+    "count": 0
   },
   {
     "slug": "sass",
@@ -285,7 +301,7 @@
     "description": "CSS‑препроцессор с переменными, миксинами и вложенностью.",
     "icon": "sass",
     "color": "sass",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "swiftui",
@@ -293,6 +309,14 @@
     "description": "Декларативный UI‑фреймворк для платформ Apple.",
     "icon": "swiftui",
     "color": "swiftui",
+    "count": 0
+  },
+  {
+    "slug": "tools",
+    "title": "Tools",
+    "description": "Программные интерфейсы для интеграции сервисов.",
+    "icon": "tools",
+    "color": "tools",
     "count": 1
   },
   {
@@ -301,7 +325,7 @@
     "description": "Типизированное надмножество JavaScript для крупных проектов.",
     "icon": "typescript",
     "color": "typescript",
-    "count": 6
+    "count": 0
   },
   {
     "slug": "vue",
@@ -309,7 +333,7 @@
     "description": "Прогрессивный фреймворк для создания пользовательских интерфейсов.",
     "icon": "vue",
     "color": "vue",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "wallet",

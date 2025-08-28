@@ -1,0 +1,20 @@
+{
+  "slug": "server-site-optimization",
+  "title": "Серверная оптимизация сайта",
+  "date": "2023-03-03",
+  "updates": [],
+  "anonce": "Установка и настройка сервера Apache и Nginx для сайта.",
+  "thumbnail": "",
+  "category": "optimization",
+  "category_list": [
+    "optimization"
+  ],
+  "icon": "seo",
+  "color": "seo",
+  "tags": [
+    "optimization"
+  ],
+  "links": [],
+  "menu": [],
+  "content": []
+}

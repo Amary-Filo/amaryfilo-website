@@ -1,0 +1,24 @@
+{
+  "slug": "clothing-store-template",
+  "title": "Clothing store template",
+  "date": "2017-05-18",
+  "category": [
+    "web",
+    "shop"
+  ],
+  "thumbnail": "clothing-store-template-thumb",
+  "description": "Design of an online clothing store. The site presents various collections and sections with clothes for adults.",
+  "images": [
+    "clothing-store-template-1",
+    "clothing-store-template-2"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "color": "",
+      "title": "Behance",
+      "url": "https://www.behance.net/gallery/142825793/Clothing-store-template",
+      "is_active": true
+    }
+  ]
+}

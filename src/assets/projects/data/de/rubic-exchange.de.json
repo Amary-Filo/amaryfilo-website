@@ -1,0 +1,98 @@
+{
+  "slug": "rubic-exchange",
+  "title": "Rubic Exchange",
+  "date": "2020-09-29",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Development of a cryptocurrency p2p exchange platform.",
+  "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
+  "logo": "rubic-exchange-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "metamask",
+      "color": "",
+      "title": "MM"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Cryptorubic/rubic-app",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Cryptorubic/rubic-app/tree/43c2c0bcb0be36f3c5d8e2890ff1a6ce0cb82f70",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View (New)",
+      "url": "https://rubic.exchange",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Web3js",
+      "description": ""
+    },
+    {
+      "title": "Metamask login",
+      "description": ""
+    },
+    {
+      "title": "Cryptocurrency",
+      "description": ""
+    },
+    {
+      "title": "P2P",
+      "description": ""
+    },
+    {
+      "title": "Create Transaction",
+      "description": ""
+    },
+    {
+      "title": "Multi-chain",
+      "description": ""
+    },
+    {
+      "title": "Multi-language",
+      "description": ""
+    }
+  ]
+}

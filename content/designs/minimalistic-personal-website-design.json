@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "slug": "minimalistic-personal-website-design",
+    "date": "2018-08-14",
+    "category": ["web"],
+    "thumbnail": "minimalistic-personal-website-design-thumb"
+  },
+  "base": {
+    "title": "Minimalistic personal website design",
+    "description": "Professional personal website template for blogging, personal information and social networks.",
+    "links": [
+      {
+        "icon": "behance",
+        "color": "",
+        "title": "Behance",
+        "url": "https://www.behance.net/gallery/102664863/Minimalistic-personal-website-design",
+        "is_active": true
+      }
+    ],
+    "images": [
+      "minimalistic-personal-website-design-1",
+      "minimalistic-personal-website-design-2",
+      "minimalistic-personal-website-design-3",
+      "minimalistic-personal-website-design-4",
+      "minimalistic-personal-website-design-5"
+    ]
+  },
+  "data": {
+    "ru": {
+      "title": "Minimalistic personal website design",
+      "description": "Professional personal website template for blogging, personal information and social networks."
+    }
+  }
+}

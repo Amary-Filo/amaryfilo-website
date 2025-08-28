@@ -5,7 +5,7 @@
     "description": "Framework basado en TypeScript para apps web escalables.",
     "icon": "angular",
     "color": "angular",
-    "count": 6
+    "count": 0
   },
   {
     "slug": "apache",
@@ -13,7 +13,7 @@
     "description": "Servidor web de código abierto muy popular con un rico ecosistema de módulos.",
     "icon": "apache",
     "color": "apache",
-    "count": 0
+    "count": 1
   },
   {
     "slug": "api",
@@ -21,7 +21,7 @@
     "description": "Interfaces de programación para integrar servicios.",
     "icon": "api",
     "color": "api",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "backend",
@@ -45,7 +45,7 @@
     "description": "Moneda digital P2P y la primera red blockchain.",
     "icon": "bitcoin",
     "color": "bitcoin",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "blockchain",
@@ -53,7 +53,7 @@
     "description": "Tecnología de registros distribuidos y plataformas de contratos inteligentes.",
     "icon": "blockchain",
     "color": "blockchain",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "coins",
@@ -69,7 +69,7 @@
     "description": "Funciones modernas de CSS y técnicas de maquetación.",
     "icon": "css3",
     "color": "css3",
-    "count": 3
+    "count": 0
   },
   {
     "slug": "customcms",
@@ -78,6 +78,14 @@
     "icon": "customcms",
     "color": "customcms",
     "count": 0
+  },
+  {
+    "slug": "database",
+    "title": "Database",
+    "description": "Sistema de gestión de contenidos propio, adaptado a las necesidades del proyecto.",
+    "icon": "database",
+    "color": "database",
+    "count": 1
   },
   {
     "slug": "frontend",
@@ -93,7 +101,7 @@
     "description": "Sistema de control de versiones distribuido para código fuente.",
     "icon": "git",
     "color": "git",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "gitflow",
@@ -101,7 +109,7 @@
     "description": "Modelo de ramificación para gestionar lanzamientos, funciones y hotfixes.",
     "icon": "gitflow",
     "color": "gitflow",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "github",
@@ -109,7 +117,7 @@
     "description": "Plataforma de alojamiento de código y colaboración con Actions CI.",
     "icon": "github",
     "color": "github",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "graphql",
@@ -117,7 +125,7 @@
     "description": "Lenguaje de consultas y runtime para APIs con esquema tipado.",
     "icon": "graphql",
     "color": "graphql",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "gulp",
@@ -125,7 +133,7 @@
     "description": "Sistema de build por streaming para flujos frontend.",
     "icon": "gulp",
     "color": "gulp",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "html5",
@@ -133,7 +141,7 @@
     "description": "Estándar de marcado para aplicaciones web modernas.",
     "icon": "html5",
     "color": "html5",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "ionic",
@@ -149,7 +157,7 @@
     "description": "Lenguaje de programación de la web y apps multiplataforma.",
     "icon": "javascript",
     "color": "javascript",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "laravel",
@@ -157,7 +165,7 @@
     "description": "Framework web de PHP centrado en la elegancia y la productividad.",
     "icon": "laravel",
     "color": "laravel",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "metamask",
@@ -189,7 +197,7 @@
     "description": "Servidor web y proxy inverso de alto rendimiento para aplicaciones modernas.",
     "icon": "nginx",
     "color": "nginx",
-    "count": 0
+    "count": 1
   },
   {
     "slug": "ngrx",
@@ -197,7 +205,7 @@
     "description": "Gestión de estado reactiva para apps Angular.",
     "icon": "ngrx",
     "color": "ngrx",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "nodejs",
@@ -205,7 +213,7 @@
     "description": "Entorno de ejecución de JavaScript para apps del lado del servidor rápidas.",
     "icon": "nodejs",
     "color": "nodejs",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "npm",
@@ -213,7 +221,7 @@
     "description": "Gestor de paquetes y registro para JavaScript.",
     "icon": "npm",
     "color": "npm",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "octobercms",
@@ -222,6 +230,14 @@
     "icon": "octobercms",
     "color": "octobercms",
     "count": 0
+  },
+  {
+    "slug": "optimization",
+    "title": "Optimization",
+    "description": "Interfaces de programación para integrar servicios.",
+    "icon": "seo",
+    "color": "seo",
+    "count": 2
   },
   {
     "slug": "os",
@@ -253,7 +269,7 @@
     "description": "Motor de plantillas que compila a HTML.",
     "icon": "pug",
     "color": "pug",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "react",
@@ -261,7 +277,7 @@
     "description": "Librería para construir interfaces basadas en componentes.",
     "icon": "react",
     "color": "react",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "rest",
@@ -269,7 +285,7 @@
     "description": "Estilo arquitectónico de APIs: Representational State Transfer.",
     "icon": "rest",
     "color": "rest",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "rxjs",
@@ -277,7 +293,7 @@
     "description": "Programación reactiva con Observables para JavaScript.",
     "icon": "rxjs",
     "color": "rxjs",
-    "count": 4
+    "count": 0
   },
   {
     "slug": "sass",
@@ -285,7 +301,7 @@
     "description": "Preprocesador CSS con variables, mixins y anidación.",
     "icon": "sass",
     "color": "sass",
-    "count": 2
+    "count": 0
   },
   {
     "slug": "swiftui",
@@ -293,6 +309,14 @@
     "description": "Framework de UI declarativo para plataformas de Apple.",
     "icon": "swiftui",
     "color": "swiftui",
+    "count": 0
+  },
+  {
+    "slug": "tools",
+    "title": "Tools",
+    "description": "Interfaces de programación para integrar servicios.",
+    "icon": "tools",
+    "color": "tools",
     "count": 1
   },
   {
@@ -301,7 +325,7 @@
     "description": "Superconjunto tipado de JavaScript para proyectos grandes.",
     "icon": "typescript",
     "color": "typescript",
-    "count": 6
+    "count": 0
   },
   {
     "slug": "vue",
@@ -309,7 +333,7 @@
     "description": "Framework progresivo para construir interfaces de usuario.",
     "icon": "vue",
     "color": "vue",
-    "count": 1
+    "count": 0
   },
   {
     "slug": "wallet",

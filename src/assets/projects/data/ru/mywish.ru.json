@@ -1,0 +1,75 @@
+{
+  "slug": "mywish",
+  "title": "MyWish",
+  "date": "2020-12-30",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Доработка проекта по созданию смарт контрактов.",
+  "description": "Доработка проекта по созданию смарт контрактов. Добавление различной информации. Проект написан на Angular 1 версии, его сложно поддерживать и добавлять новые модули.",
+  "logo": "mywish-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "AngularJs"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS/JS"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://mywish.io",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Web3js",
+      "description": ""
+    },
+    {
+      "title": "Navigation",
+      "description": ""
+    },
+    {
+      "title": "Contracts",
+      "description": ""
+    },
+    {
+      "title": "Backend",
+      "description": ""
+    },
+    {
+      "title": "Layout",
+      "description": ""
+    },
+    {
+      "title": "Template",
+      "description": ""
+    }
+  ]
+}

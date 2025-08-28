@@ -1,0 +1,188 @@
+{
+  "metadata": {
+    "slug": "quras-wallet",
+    "date": "2021-01-14",
+    "category": ["mobile", "angular", "crypto", "ionic"],
+    "title": "Quras Wallet"
+  },
+  "base": {
+    "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
+    "description": "Development of an application for the Quras blockchain. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service.",
+    "instruments": [
+      {
+        "icon": "angular",
+        "color": "",
+        "title": "Angular"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "ionic",
+        "color": "",
+        "title": "Ionic"
+      },
+      {
+        "icon": "web3js",
+        "color": "",
+        "title": "Web3js"
+      }
+    ],
+    "logo": "quras-wallet-logo",
+    "images": [
+      "quras-wallet-1",
+      "quras-wallet-2",
+      "quras-wallet-3",
+      "quras-wallet-4"
+    ],
+    "links": [
+      {
+        "icon": "github",
+        "color": "",
+        "title": "Github",
+        "url": "https://github.com/Rock-n-Block/copay-quras",
+        "is_active": true
+      },
+      {
+        "icon": "hash",
+        "color": "cl-github-2",
+        "title": "Commit LTS",
+        "url": "https://github.com/Rock-n-Block/copay-quras/tree/0e4b10f8282d7d2283506401e5037ef6b388a15a",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "iOS",
+        "url": "https://apps.apple.com/ru/app/quras-wallet/id1546075654",
+        "is_active": true
+      },
+      {
+        "icon": "globe",
+        "color": "cl-ai",
+        "title": "Android",
+        "url": "https://play.google.com/store/apps/details?id=io.quras.plus&hl=en_US&gl=US",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Cordova",
+        "description": ""
+      },
+      {
+        "title": "Tangem cards integration",
+        "description": ""
+      },
+      {
+        "title": "Wallet",
+        "description": ""
+      },
+      {
+        "title": "Moonpay",
+        "description": ""
+      },
+      {
+        "title": "Transactions",
+        "description": ""
+      },
+      {
+        "title": "Backend",
+        "description": ""
+      },
+      {
+        "title": "Buy crypto by feat",
+        "description": ""
+      },
+      {
+        "title": "Subscribe transactions via Tangem Card",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
+      "description": "Development of an application for the Quras blockchain. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service.",
+      "features": [
+        {
+          "title": "Cordova",
+          "description": ""
+        },
+        {
+          "title": "Tangem cards integration",
+          "description": ""
+        },
+        {
+          "title": "Wallet",
+          "description": ""
+        },
+        {
+          "title": "Moonpay",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Backend",
+          "description": ""
+        },
+        {
+          "title": "Buy crypto by feat",
+          "description": ""
+        },
+        {
+          "title": "Subscribe transactions via Tangem Card",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Разработка приложения для блокчейна Quras для платформ iOS, Web и Android.",
+      "description": "Разработка приложения для блокчейна Quras. Добавление различных модулей, полное изменение дизайна. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция обена криптовалюты через сервис Moonpay.",
+      "features": [
+        {
+          "title": "Cordova",
+          "description": ""
+        },
+        {
+          "title": "Tangem cards integration",
+          "description": ""
+        },
+        {
+          "title": "Wallet",
+          "description": ""
+        },
+        {
+          "title": "Moonpay",
+          "description": ""
+        },
+        {
+          "title": "Transactions",
+          "description": ""
+        },
+        {
+          "title": "Backend",
+          "description": ""
+        },
+        {
+          "title": "Buy crypto by feat",
+          "description": ""
+        },
+        {
+          "title": "Subscribe transactions via Tangem Card",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

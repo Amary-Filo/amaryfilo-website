@@ -1,11 +1,51 @@
 [
   {
-    "slug": "moovie",
-    "date": "2019-05-11",
+    "slug": "photographers-personal-website",
+    "date": "2023-04-29",
     "category": [
-      "Website"
+      "web",
+      "landing",
+      "blog"
     ],
-    "title": "Мууви",
-    "thumbnail": "moovie-thumb"
+    "title": "Photographer's personal website ✨",
+    "thumbnail": "photographers-personal-website-thumb"
+  },
+  {
+    "slug": "minimalistic-new-year-card-design",
+    "date": "2018-12-31",
+    "category": [
+      "postcard"
+    ],
+    "title": "Minimalistic New Year card design",
+    "thumbnail": "minimalistic-new-year-card-design-thumb"
+  },
+  {
+    "slug": "website-concept-for-web-studio",
+    "date": "2018-12-04",
+    "category": [
+      "web"
+    ],
+    "title": "Website concept for a web studio",
+    "thumbnail": "website-concept-for-web-studio-thumb"
+  },
+  {
+    "slug": "minimal-landing-page-design",
+    "date": "2018-11-20",
+    "category": [
+      "web",
+      "landing"
+    ],
+    "title": "Minimal landing page design",
+    "thumbnail": "minimal-landing-page-design-thumb"
+  },
+  {
+    "slug": "minimal-blog-design",
+    "date": "2018-11-15",
+    "category": [
+      "web",
+      "blog"
+    ],
+    "title": "Minimal blog design",
+    "thumbnail": "minimal-blog-design-thumb"
   }
 ]

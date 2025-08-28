@@ -1,0 +1,20 @@
+{
+  "slug": "database",
+  "base": {
+    "title": "Database",
+    "description": "Home‑grown content management system tailored to specific project needs.",
+    "icon": "database",
+    "color": "database"
+  },
+  "data": {
+    "ru": {
+      "description": "Самописная система управления контентом, адаптированная под нужды проекта."
+    },
+    "es": {
+      "description": "Sistema de gestión de contenidos propio, adaptado a las necesidades del proyecto."
+    },
+    "de": {
+      "description": "Eigenentwickeltes Content‑Management‑System, zugeschnitten auf Projektanforderungen."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "slug": "test-project-big-menu",
+  "title": "[TEST Project] Big Menus",
+  "date": "2018-01-30",
+  "category": [
+    "vue"
+  ],
+  "anonce": "Test project on NuxtJs.",
+  "description": "Test project on NuxtJs. Nothing remarkable.",
+  "logo": "test-project-big-menu-logo",
+  "instruments": [
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "vue",
+      "color": "",
+      "title": "NuxtJs"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    }
+  ],
+  "images": [
+    "test-project-big-menu-1",
+    "test-project-big-menu-2",
+    "test-project-big-menu-3"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/test-nuxt-bigmenu",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "",
+      "title": "View",
+      "url": "http://tests.amaryfilo.com/bigmenu-test/",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Sliders",
+      "description": ""
+    },
+    {
+      "title": "Menu",
+      "description": ""
+    },
+    {
+      "title": "Adaptive",
+      "description": ""
+    }
+  ]
+}

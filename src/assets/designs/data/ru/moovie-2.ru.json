@@ -1,0 +1,22 @@
+{
+  "slug": "moovie-2",
+  "title": "Мууви",
+  "date": "2019-05-11",
+  "category": [
+    "Website"
+  ],
+  "thumbnail": "moovie-thumb",
+  "description": "Дизайн для онлайн кинотеатров, там показывают новые фильмы и сериалы. Помимо этого там имеется новострая лента и другая полезная медиаинформация.",
+  "images": [
+    "moovie-1-ru",
+    "moovie-2-ru",
+    "moovie-3-ru",
+    "moovie-4"
+  ],
+  "links": [
+    {
+      "title": "Behance",
+      "url": "https://behance.co"
+    }
+  ]
+}

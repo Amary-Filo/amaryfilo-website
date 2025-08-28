@@ -1,0 +1,68 @@
+{
+  "slug": "test-project-stars",
+  "title": "[Тестовый проект] Stars",
+  "date": "2019-03-06",
+  "category": [
+    "mobile"
+  ],
+  "anonce": "Test project on Swift UI with Google Firebase connection.",
+  "description": "Test project on Swift UI. The Google Account module is connected. The ability to log into the application through a Google Account and view the profile. Autologin by sessions.",
+  "logo": "test-project-stars-logo",
+  "instruments": [
+    {
+      "icon": "swiftui",
+      "color": "",
+      "title": "SwiftUI"
+    },
+    {
+      "icon": "ios",
+      "color": "",
+      "title": "iOS"
+    },
+    {
+      "icon": "design",
+      "color": "",
+      "title": "Design"
+    }
+  ],
+  "images": [],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/under-stars",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Google Firebase",
+      "description": ""
+    },
+    {
+      "title": "Google Account",
+      "description": ""
+    },
+    {
+      "title": "Login",
+      "description": ""
+    },
+    {
+      "title": "Logout",
+      "description": ""
+    },
+    {
+      "title": "Autologin",
+      "description": ""
+    },
+    {
+      "title": "Switch Account",
+      "description": ""
+    },
+    {
+      "title": "Account Data",
+      "description": ""
+    }
+  ]
+}

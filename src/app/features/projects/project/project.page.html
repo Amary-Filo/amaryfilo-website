@@ -15,7 +15,7 @@
     <div class="container">
       <div class="cd-st fl-cc fl-dc t-c image">
         <img
-          [src]="imagePath(project()?.logo) + '.svg'"
+          [src]="imagePath(project()?.logo) + '.png'"
           [alt]="'page.project.thumbnail' | t : { title: project()?.title }"
           height="100%"
           width="100%"
@@ -82,6 +82,7 @@
     </div>
   </section>
 
+  @if (project()?.images?.length) {
   <section class="sc image-grid">
     <div class="container head-section fl-cc fl-dc h-mb">
       <h2 class="title ls-2 t-gr ls t-u cl-g-images">
@@ -107,6 +108,7 @@
       }
     </div>
   </section>
+  }
 
   <section class="sc warn">
     <div class="container">

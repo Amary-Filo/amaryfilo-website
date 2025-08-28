@@ -1,0 +1,167 @@
+{
+  "metadata": {
+    "slug": "wallarm",
+    "date": "2019-08-29",
+    "category": ["cms", "landing"],
+    "title": "Wallarm"
+  },
+  "base": {
+    "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
+    "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "html5",
+        "color": "",
+        "title": "HTML"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "less",
+        "color": "",
+        "title": "LESS"
+      },
+      {
+        "icon": "pug",
+        "color": "",
+        "title": "Pug"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      }
+    ],
+    "logo": "wallarm-logo",
+    "images": [],
+    "links": [
+      {
+        "icon": "globe",
+        "color": "",
+        "title": "Open Wallarm website",
+        "url": "https://wallarm.com",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Pages",
+        "description": ""
+      },
+      {
+        "title": "Landings",
+        "description": ""
+      },
+      {
+        "title": "CMS",
+        "description": ""
+      },
+      {
+        "title": "Contentfull App",
+        "description": ""
+      },
+      {
+        "title": "Integrations",
+        "description": ""
+      },
+      {
+        "title": "Hubspot",
+        "description": ""
+      },
+      {
+        "title": "Forms",
+        "description": ""
+      },
+      {
+        "title": "SEO",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
+      "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
+      "features": [
+        {
+          "title": "Pages",
+          "description": ""
+        },
+        {
+          "title": "Landings",
+          "description": ""
+        },
+        {
+          "title": "CMS",
+          "description": ""
+        },
+        {
+          "title": "Contentfull App",
+          "description": ""
+        },
+        {
+          "title": "Integrations",
+          "description": ""
+        },
+        {
+          "title": "Hubspot",
+          "description": ""
+        },
+        {
+          "title": "Forms",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов.",
+      "description": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов. Добавление форм и целевых страниц из сервиса Hubspot. Разработка и публикация русской версии сайта.",
+      "features": [
+        {
+          "title": "Pages",
+          "description": ""
+        },
+        {
+          "title": "Landings",
+          "description": ""
+        },
+        {
+          "title": "CMS",
+          "description": ""
+        },
+        {
+          "title": "Contentfull App",
+          "description": ""
+        },
+        {
+          "title": "Integrations",
+          "description": ""
+        },
+        {
+          "title": "Hubspot",
+          "description": ""
+        },
+        {
+          "title": "Forms",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

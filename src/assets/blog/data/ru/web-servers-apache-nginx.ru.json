@@ -1,0 +1,301 @@
+{
+  "slug": "web-servers-apache-nginx",
+  "title": "Серверная оптимизация сайта",
+  "date": "2023-03-03",
+  "updates": [],
+  "anonce": "Установка и настройка сервера Apache и Nginx для сайта.",
+  "thumbnail": "",
+  "category": "optimization",
+  "category_list": [
+    "optimization",
+    "nginx",
+    "apache"
+  ],
+  "icon": "seo",
+  "color": "seo",
+  "tags": [
+    "optimization",
+    "web server",
+    "apache",
+    "nginx",
+    "htaccess",
+    "conf",
+    "configuration"
+  ],
+  "links": [],
+  "menu": [
+    {
+      "id": "Introduction",
+      "title": "Introduction",
+      "level": 2
+    },
+    {
+      "id": "Web-servers",
+      "title": "Web servers",
+      "level": 2
+    },
+    {
+      "id": "Apache",
+      "title": "Apache",
+      "level": 3
+    },
+    {
+      "id": "Nginx",
+      "title": "Nginx",
+      "level": 3
+    },
+    {
+      "id": "Apache-or-Nginx",
+      "title": "Apache or Nginx?",
+      "level": 3
+    },
+    {
+      "id": "Web-server-setup",
+      "title": "Web server setup",
+      "level": 2
+    },
+    {
+      "id": "Apache-htaccess",
+      "title": "Apache: .htaccess",
+      "level": 3
+    },
+    {
+      "id": "Nginx-conf",
+      "title": "Nginx: .conf",
+      "level": 3
+    }
+  ],
+  "content": [
+    {
+      "type": "h2",
+      "text": "Introduction",
+      "id": "Introduction"
+    },
+    {
+      "type": "p",
+      "text": "Web server is an intermediary between the client and the server. It retrieves content for each request and transmits it to the network."
+    },
+    {
+      "type": "p",
+      "text": "Its main task is to handle multiple requests simultaneously. Properly configuring server files reduces load and improves site performance."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Programming languages",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Web servers process files written in PHP, Python, JavaScript and others."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Simply put: a web server connects server and client."
+    },
+    {
+      "type": "h2",
+      "text": "Web servers",
+      "id": "Web-servers"
+    },
+    {
+      "type": "p",
+      "text": "Today there are many web servers. The most popular are Apache and Nginx."
+    },
+    {
+      "type": "p",
+      "text": "We won’t compare them in detail, but will cover their basics and configuration."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Installed software",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nginx and Apache are software installed on the server."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Apache",
+      "id": "Apache"
+    },
+    {
+      "type": "p",
+      "text": "When a client visits a page, Apache returns requested files (text, images, etc.) using HTTP/HTTPS."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Modules",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Apache is modular and highly customizable."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Modules allow enabling/disabling security, caching, URL editing, authentication and more."
+    },
+    {
+      "type": "p",
+      "text": "Configurations can be set with the .htaccess file."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Placement",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Typically .htaccess is placed in the site root, but it can also be placed in subdirectories."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Nginx",
+      "id": "Nginx"
+    },
+    {
+      "type": "p",
+      "text": "Nginx is a web server and mail proxy, released in 2004. It is efficient for static websites and as a reverse proxy for dynamic ones."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Lightweight",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nginx is fast, reliable and not overloaded with features."
+        }
+      ]
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Serving requests, index files, file lists",
+        "Proxying without caching, load balancing, fault tolerance",
+        "Caching for faster proxying",
+        "Modularity and filters",
+        "Parallel subqueries on one page"
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Apache or Nginx?",
+      "id": "Apache-or-Nginx"
+    },
+    {
+      "type": "p",
+      "text": "Nginx was created to solve the c10k problem (10,000 concurrent connections)."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "10K problem",
+      "blocks": [
+        {
+          "type": "p",
+          "html": "Read more on <a href=\"https://en.wikipedia.org/wiki/C10k_problem\" target=\"_blank\">Wikipedia</a>."
+        }
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Apache uses a threaded structure and may slow under high traffic. Nginx uses an event-driven architecture with a master process and workers."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Scalability",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Nginx distributes requests efficiently across workers, improving scalability."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Smaller sites",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Apache may be easier for small sites thanks to modules and simpler setup."
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": "Web server setup",
+      "id": "Web-server-setup"
+    },
+    {
+      "type": "p",
+      "text": "Configuration files are usually customized per site or framework, but some general settings apply to all."
+    },
+    {
+      "type": "p",
+      "text": "Key modules: URL editing and caching, both important for SEO and performance."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "Compression",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Text compression (gzip) reduces file size and improves speed."
+        }
+      ]
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "URL rules",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Basic setup includes custom error pages and removing .html/.php extensions."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Apache: .htaccess",
+      "id": "Apache-htaccess"
+    },
+    {
+      "type": "p",
+      "text": "All Apache add-ons are written in .htaccess, placed in site root."
+    },
+    {
+      "type": "note",
+      "kind": "info",
+      "title": "File name",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "It must be named exactly .htaccess, not my.htaccess."
+        }
+      ]
+    },
+    {
+      "type": "h3",
+      "text": "Nginx: .conf",
+      "id": "Nginx-conf"
+    },
+    {
+      "type": "p",
+      "text": "Nginx configs are in .conf files with flexible naming (e.g. cache-ng.conf)."
+    }
+  ]
+}

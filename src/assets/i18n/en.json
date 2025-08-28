@@ -1,4 +1,5 @@
 {
+  "COMPONENT.FORM.ORDER": "========================================== COMPONENT.FORM.ORDER ================================================",
   "form.order.name": "Your Name",
   "form.order.project": "Project Type",
   "form.order.contact.title": "Contact Type",
@@ -12,22 +13,38 @@
   "form.order.title": "Order",
   "form.order.description": "Compose your application for the development of your own project.<br /> <br /> Perhaps you already have a design, smart contracts and backend, or perhaps you need to create everything anew.",
 
+  "COMPONENT.FORM.SUBSCRIBE": "========================================== COMPONENT.FORM.SUBSCRIBE ================================================",
+
   "subscribe.title": "Get news!",
   "subscribe.description": "No spam, just new blog posts and updates!",
   "subscribe.email": "Your Email",
   "subscribe.button": "Go!",
   "subscribe.button.title": "Subscribe on news",
+
+  "COMMON.FORM": "========================================== COMMON.FORM ================================================",
+
   "form.info.one": "By clicking on the button you agree",
   "form.info.two": "to ",
   "form.info.three": "and",
   "form.info.privacy": "the privacy policy",
   "form.info.terms": "terms of data transfer.",
+
+  "COMPONENT.SOCIAL": "========================================== COMPONENT.SOCIAL ================================================",
+
   "social.title": "Open Amary Filo {{title}} profile",
+
+  "COMPONENT.SHARE": "========================================== COMPONENT.SHARE ================================================",
+
   "share.title": "Share it!",
   "share.description": "Hey, help me and share that page! Just only one click!",
   "share.link": "Share this page on ",
+
+  "COMPONENT.FOOTER": "========================================== COMPONENT.FOOTER ================================================",
+
   "footer.copyrights": "Created by Amary Filo",
   "footer.rights": "all rights received (c) {{year}}",
+
+  "COMMON.MENU": "========================================== COMMON.MENU ================================================",
 
   "menu.about": "About",
   "menu.blog": "Blog",
@@ -43,53 +60,21 @@
   "menu.modal.description": "Website have different languages that must help you to understand content in your native language for best experience.",
   "menu.modal.close": "Close",
 
+  "COMMON.OTHER": "========================================== COMMON.OTHER ================================================",
+
   "base.developer": "Software Developer",
-  "designs.title": "Design works!",
   "banner.fallback": "Not available in {{lang}} — showing {{usedLang}}",
   "blog.article.title": "Read article {{title}}",
+
+  "COMPONENT.UNDER.CONSTRUCTION": "========================================== COMPONENT.UNDER.CONSTRUCTION ================================================",
+
   "under.construction.title": "Website Under Restoration",
   "under.construction.text": "This website is currently being restored after a long break. Only part of the pages are available, and the data shown is for demonstration purposes only and not clickable. Full functionality will be gradually restored.",
 
-  "page.about.info.intro.title": "Introduction",
-  "page.about.info.intro.text": "I am a software engineer with over 9 years in web development. While I have worked across the full stack — from backend APIs to mobile apps — my focus is front-end engineering. For me, interfaces are not about animation overload, but about clarity, architecture, and usability. Today, my main priority is building blockchain-driven applications and exploring the intersection of web and AI.",
-  "page.about.info.pseudonym.title": "Brand",
-  "page.about.info.pseudonym.text": "Amary Filo is my personal pseudonym and brand. It doesn’t have a strict definition — it’s a creative identity I shaped around simplicity and recognition. The llama 🦙 became my symbol: independent, adaptive, and a little unconventional — just like my approach to development.",
-  "page.about.info.tagline.title": "Principles",
-  "page.about.info.tagline.text": "'Every problem has a solution. Development is about patience, clarity, and the courage to explore new technologies.' - amaryfilo",
-  "page.about.info.hobbies.title": "Beyond Code",
-  "page.about.info.hobbies.text": "Beyond programming, I explore UI/UX design, maintain a personal blog, and share my knowledge with developers through social media and educational content. I enjoy experimenting with new technologies, creating resources for others, and documenting my journey in web and blockchain development. This helps me not only grow as a professional but also contribute to the community.",
-
-  "page.about.skills.title": "Skills",
-  "page.about.skills.text": "Areas, frameworks, technologies, cms and packages.",
-  "page.about.work.title": "Career",
-  "page.about.work.text": "My work, career and skills on timeline.",
-  "page.about.areas.title": "Interest areas",
-  "page.about.areas.text": "Areas that I want to learn something and work for a while.",
-
-  "page.blog.title": "Blog",
-  "page.blog.description": "All articles sorted by creating/editing date.",
-  "page.blog.filter.title": "What do you want?",
-  "page.blog.filter.search": "Find articles",
-  "page.blog.filter.empty": "No articles found.",
-
-  "page.article.menu": "Article content",
-
-  "page.designs.title": "Designs",
-  "page.designs.description": "All designs from landing pages to mobile created by me.",
-  "page.designs.filter.title": "What are you looking for?",
-  "page.designs.filter.select": "Select {{title}} category",
-  "page.designs.item.title": "Open design {{title}}",
-  "page.designs.item.thumbnail": "Thumbnail of Amary Filo {{title}} design",
-
-  "page.design.title": "Design",
-  "page.design.thumbnail": "Thumbnail {{index}} of Amary Filo {{title}} design",
-  "page.design.images.thumbnail": "Thumbnail of Amary Filo {{title}} design",
-  "page.design.links.title": "Links",
-  "page.design.links.description": "Find this design in Full resolution by click on links below 🥡",
-  "page.design.links.button": "Open in {{title}}",
+  "PAGE.HOME": "========================================== PAGE HOME ================================================",
 
   "page.home.about.title": "About Me",
-  "page.home.about.description": "I’m Nikita, a software engineer with 9+ years in web development, specializing in front-end and blockchain. My work spans from intuitive interfaces to crypto integrations and AI-driven solutions. Beyond coding, I design, write, and share knowledge to help others grow in tech.<br /><br />",
+  "page.home.about.description": "I’m Nikita, a software engineer with 9+ years in web development, specializing in front-end and blockchain. My work spans from intuitive interfaces to crypto integrations and AI-driven solutions. Beyond coding, I design, write, and share knowledge to help others grow in tech.",
   "page.home.about.button": "Discover more",
 
   "page.home.areas.title": "Areas",
@@ -147,13 +132,62 @@
   "page.home.projects.open": "Open project {{title}}",
   "page.home.projects.open.title": "Open project",
 
-  "page.notfound.description.one": "You broke the internet. Yeah, so are you happy now? Huh?!",
-  "page.notfound.description.two": "The page you want is missing, but I still believe in you. Maybe try again?",
+  "PAGE.ABOUT": "========================================== PAGE ABOUT ================================================",
+
+  "page.about.info.intro.title": "Introduction",
+  "page.about.info.intro.text": "I am a software engineer with over 9 years in web development. While I have worked across the full stack — from backend APIs to mobile apps — my focus is front-end engineering. For me, interfaces are not about animation overload, but about clarity, architecture, and usability. Today, my main priority is building blockchain-driven applications and exploring the intersection of web and AI.",
+  "page.about.info.pseudonym.title": "Brand",
+  "page.about.info.pseudonym.text": "Amary Filo is my personal pseudonym and brand. It doesn’t have a strict definition — it’s a creative identity I shaped around simplicity and recognition. The llama 🦙 became my symbol: independent, adaptive, and a little unconventional — just like my approach to development.",
+  "page.about.info.tagline.title": "Principles",
+  "page.about.info.tagline.text": "'Every problem has a solution. Development is about patience, clarity, and the courage to explore new technologies.' - amaryfilo",
+  "page.about.info.hobbies.title": "Beyond Code",
+  "page.about.info.hobbies.text": "Beyond programming, I explore UI/UX design, maintain a personal blog, and share my knowledge with developers through social media and educational content. I enjoy experimenting with new technologies, creating resources for others, and documenting my journey in web and blockchain development. This helps me not only grow as a professional but also contribute to the community.",
+
+  "page.about.skills.title": "Skills",
+  "page.about.skills.text": "Areas, frameworks, technologies, cms and packages.",
+  "page.about.work.title": "Career",
+  "page.about.work.text": "My work, career and skills on timeline.",
+  "page.about.areas.title": "Interest areas",
+  "page.about.areas.text": "Areas that I want to learn something and work for a while.",
+
+  "PAGE.BLOG": "========================================== PAGE BLOG ================================================",
+
+  "page.blog.title": "Blog",
+  "page.blog.description": "All articles sorted by creating/editing date.",
+  "page.blog.filter.title": "What do you want?",
+  "page.blog.filter.search": "Find articles",
+  "page.blog.filter.empty": "No articles found.",
+
+  "PAGE.ARTICLE": "========================================== PAGE ARTICLE ================================================",
+
+  "page.article.menu": "Article content",
+
+  "PAGE.DESIGNS": "========================================== PAGE DESIGNS ================================================",
+
+  "page.designs.title": "Designs",
+  "page.designs.description": "All designs from landing pages to mobile created by me.",
+  "page.designs.filter.title": "What are you looking for?",
+  "page.designs.filter.select": "Select {{title}} category",
+  "page.designs.item.title": "Open design {{title}}",
+  "page.designs.item.thumbnail": "Thumbnail of Amary Filo {{title}} design",
+
+  "PAGE.DESIGN": "========================================== PAGE DESIGN ================================================",
+
+  "page.design.title": "Design",
+  "page.design.thumbnail": "Thumbnail {{index}} of Amary Filo {{title}} design",
+  "page.design.images.thumbnail": "Thumbnail of Amary Filo {{title}} design",
+  "page.design.links.title": "Links",
+  "page.design.links.description": "Find this design in Full resolution by click on links below 🥡",
+  "page.design.links.button": "Open in {{title}}",
+
+  "PAGE.PROJECTS": "========================================== PAGE PROJECTS ================================================",
 
   "page.projects.title": "Projects",
   "page.projects.description": "All projects created by me or in which I participated.",
   "page.projects.button.title": "Open project {{title}}",
   "page.projects.button": "Open project",
+
+  "PAGE.PROJECT": "========================================== PAGE PROJECT ================================================",
 
   "page.project.title": "Project",
   "page.project.description": "All projects created by me or in which I participated.",
@@ -174,5 +208,10 @@
   "page.project.warn.description": "Further development of the project could bring to it various differences from the one I created. This page contains screenshots, a description of the project at the time of my participation in its development.",
   "page.project.links": "Links",
   "page.project.links.description": "You can find all releases and previews for this project by click on links below.",
-  "page.project.link.title": "Open project {{project}} code in {{title}}"
+  "page.project.link.title": "Open project {{project}} code in {{title}}",
+
+  "PAGE.NOTFOUND": "========================================== PAGE NOTFOUND ================================================",
+
+  "page.notfound.description.one": "You broke the internet. Yeah, so are you happy now? Huh?!",
+  "page.notfound.description.two": "The page you want is missing, but I still believe in you. Maybe try again?"
 }

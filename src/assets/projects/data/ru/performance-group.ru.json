@@ -1,0 +1,110 @@
+{
+  "slug": "performance-group",
+  "title": "Performance Group",
+  "date": "2019-01-24",
+  "category": [
+    "cms"
+  ],
+  "anonce": "Разработка и ведения сайта интернет рекламного агентства полного цикла.",
+  "description": "Разработка и ведение сайта для рекламного агенства Perfomance-Group. Необходимо было реализовать веб-сайт по дизайну с модулями: обратная связь, каталог, выполненные проекты, предложения и контакты.",
+  "logo": "performance-group-logo",
+  "instruments": [
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "octobercms",
+      "color": "",
+      "title": "OctoberCMS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "nginx",
+      "color": "",
+      "title": "Nginx"
+    },
+    {
+      "icon": "design",
+      "color": "",
+      "title": "Design"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    }
+  ],
+  "images": [
+    "performance-group-1",
+    "performance-group-2",
+    "performance-group-3",
+    "performance-group-4",
+    "performance-group-5",
+    "performance-group-6",
+    "performance-group-7"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/perfomance-group-base-fullsite",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "",
+      "title": "View",
+      "url": "https://perfomance-group.ru/",
+      "is_active": true
+    },
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/perfomance-group-html",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Admin Panel",
+      "description": ""
+    },
+    {
+      "title": "Category",
+      "description": ""
+    },
+    {
+      "title": "Catalog",
+      "description": ""
+    },
+    {
+      "title": "Done projects",
+      "description": ""
+    },
+    {
+      "title": "Feedbacks",
+      "description": ""
+    },
+    {
+      "title": "Orders",
+      "description": ""
+    },
+    {
+      "title": "Pages",
+      "description": ""
+    }
+  ]
+}

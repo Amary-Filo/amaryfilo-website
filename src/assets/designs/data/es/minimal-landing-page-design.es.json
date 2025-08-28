@@ -1,0 +1,24 @@
+{
+  "slug": "minimal-landing-page-design",
+  "title": "Minimal landing page design",
+  "date": "2018-11-20",
+  "category": [
+    "web",
+    "landing"
+  ],
+  "thumbnail": "minimal-landing-page-design-thumb",
+  "description": "Minimalistic design of the main page of the site. The main idea of ​​the site is a personal site development company.",
+  "images": [
+    "minimal-landing-page-design-1",
+    "minimal-landing-page-design-2"
+  ],
+  "links": [
+    {
+      "icon": "behance",
+      "color": "",
+      "title": "Behance",
+      "url": "https://www.behance.net/gallery/103003883/Minimal-landing-page-design",
+      "is_active": true
+    }
+  ]
+}

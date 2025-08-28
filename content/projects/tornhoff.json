@@ -1,0 +1,172 @@
+{
+  "metadata": {
+    "slug": "tornhoff",
+    "date": "2018-08-09",
+    "category": ["cms"],
+    "title": "Tornhoff"
+  },
+  "base": {
+    "anonce": "Development, administration and maintenance of a website for the sale of German profiles and doors.",
+    "description": "Finalization of the site for the sale of German doors. Modules were created to translate the site into different languages ​​and display various data by country. Product view page update. SEO Project Improvement.",
+    "instruments": [
+      {
+        "icon": "typescript",
+        "color": "",
+        "title": "TS"
+      },
+      {
+        "icon": "css3",
+        "color": "",
+        "title": "CSS"
+      },
+      {
+        "icon": "sass",
+        "color": "",
+        "title": "SCSS"
+      },
+      {
+        "icon": "php",
+        "color": "",
+        "title": "PHP"
+      },
+      {
+        "icon": "design",
+        "color": "",
+        "title": "Design"
+      },
+      {
+        "icon": "octobercms",
+        "color": "",
+        "title": "OctoberCMS"
+      },
+      {
+        "icon": "nginx",
+        "color": "",
+        "title": "Nginx"
+      }
+    ],
+    "logo": "tornhoff-logo",
+    "images": [
+      "tornhoff-1",
+      "tornhoff-2",
+      "tornhoff-3",
+      "tornhoff-4",
+      "tornhoff-5",
+      "tornhoff-6",
+      "tornhoff-7",
+      "tornhoff-8",
+      "tornhoff-9",
+      "tornhoff-10",
+      "tornhoff-11"
+    ],
+    "links": [
+      {
+        "icon": "globe",
+        "color": "ic-ai",
+        "title": "View",
+        "url": "https://tornhoff.com",
+        "is_active": true
+      }
+    ],
+    "features": [
+      {
+        "title": "Admin panel",
+        "description": ""
+      },
+      {
+        "title": "News",
+        "description": ""
+      },
+      {
+        "title": "Catalog",
+        "description": ""
+      },
+      {
+        "title": "Multi-language",
+        "description": ""
+      },
+      {
+        "title": "SEO",
+        "description": ""
+      },
+      {
+        "title": "Page generator",
+        "description": ""
+      },
+      {
+        "title": "Navigation",
+        "description": ""
+      }
+    ]
+  },
+  "data": {
+    "es": {
+      "anonce": "Development, administration and maintenance of a website for the sale of German profiles and doors.",
+      "description": "Finalization of the site for the sale of German doors. Modules were created to translate the site into different languages ​​and display various data by country. Product view page update. SEO Project Improvement.",
+      "features": [
+        {
+          "title": "Admin panel",
+          "description": ""
+        },
+        {
+          "title": "News",
+          "description": ""
+        },
+        {
+          "title": "Catalog",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        },
+        {
+          "title": "Page generator",
+          "description": ""
+        },
+        {
+          "title": "Navigation",
+          "description": ""
+        }
+      ]
+    },
+    "ru": {
+      "anonce": "Разработка, администрирование и ведение сайта по продаже немецких профилей и дверей.",
+      "description": "Добработка сайта по продаже немецких дверей. Были созданы модули по переводу сайта на разные языки и отображение различных данных по странам. Обновление станицы просмотра товара. Улучшение проекта по SEO.",
+      "features": [
+        {
+          "title": "Admin panel",
+          "description": ""
+        },
+        {
+          "title": "News",
+          "description": ""
+        },
+        {
+          "title": "Catalog",
+          "description": ""
+        },
+        {
+          "title": "Multi-language",
+          "description": ""
+        },
+        {
+          "title": "SEO",
+          "description": ""
+        },
+        {
+          "title": "Page generator",
+          "description": ""
+        },
+        {
+          "title": "Navigation",
+          "description": ""
+        }
+      ]
+    }
+  }
+}

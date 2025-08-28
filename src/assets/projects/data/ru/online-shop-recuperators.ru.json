@@ -1,0 +1,121 @@
+{
+  "slug": "online-shop-recuperators",
+  "title": "Online shop recuperators",
+  "date": "2016-12-15",
+  "category": [
+    "online shop",
+    "cms"
+  ],
+  "anonce": "Онлайн магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
+  "description": "Разработка с нуля (и ведение) полноценного онлайн магазина по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей. Необходимо было реализовать возможность фильтрации товаров, сохранения фильтров и корзину товаров.",
+  "logo": "online-shop-recuperators-logo",
+  "instruments": [
+    {
+      "icon": "octobercms",
+      "color": "",
+      "title": "OctoberCMS"
+    },
+    {
+      "icon": "typescript",
+      "color": "",
+      "title": "TS"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "design",
+      "color": "",
+      "title": "Design"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "php",
+      "color": "",
+      "title": "PHP"
+    }
+  ],
+  "images": [
+    "online-shop-recuperators-1",
+    "online-shop-recuperators-2",
+    "online-shop-recuperators-3",
+    "online-shop-recuperators-4",
+    "online-shop-recuperators-5",
+    "online-shop-recuperators-6"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/Am-Filo/vozduh-v-dome",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/Am-Filo/vozduh-v-dome/tree/9ec7410109239f872c65ecb7b400333cba68df24",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://vozduhvdome.su/",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Catalog",
+      "description": ""
+    },
+    {
+      "title": "Category",
+      "description": ""
+    },
+    {
+      "title": "Filters",
+      "description": ""
+    },
+    {
+      "title": "Admin panel",
+      "description": ""
+    },
+    {
+      "title": "Shop bag",
+      "description": ""
+    },
+    {
+      "title": "Request from frontend",
+      "description": ""
+    },
+    {
+      "title": "Sales",
+      "description": ""
+    },
+    {
+      "title": "Feedbacks",
+      "description": ""
+    },
+    {
+      "title": "Optimisation",
+      "description": ""
+    },
+    {
+      "title": "SEO",
+      "description": ""
+    },
+    {
+      "title": "Adaptive",
+      "description": ""
+    }
+  ]
+}

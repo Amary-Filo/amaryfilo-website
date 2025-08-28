@@ -1,0 +1,122 @@
+{
+  "slug": "ducatus",
+  "title": "Ducatus website",
+  "date": "2021-11-12",
+  "category": [
+    "angular",
+    "crypto"
+  ],
+  "anonce": "Development of the official website of the Ducatus blockchain.",
+  "description": "The website of the Ducatus blockchain. Development of a complete site from layout to landing on Angular. Adding an administrative panel for creating and uploading vouchers and other information that was synchronized with the application. Various application and rate settings for the DUCX -> DUCX exchange. Adding a module for the exchange of cryptocurrency and its purchase. Exchange DUC, WDUCX, DUCX via Credit Card, Ethereum, Bitcoin wallets. Login through Amfi Connect to your account to interact with contracts.",
+  "logo": "ducatus-logo",
+  "instruments": [
+    {
+      "icon": "angular",
+      "color": "",
+      "title": "Angular"
+    },
+    {
+      "icon": "css3",
+      "color": "",
+      "title": "CSS"
+    },
+    {
+      "icon": "sass",
+      "color": "",
+      "title": "SCSS"
+    },
+    {
+      "icon": "web3js",
+      "color": "",
+      "title": "Web3js"
+    },
+    {
+      "icon": "metamask",
+      "color": "",
+      "title": "MM"
+    },
+    {
+      "icon": "html5",
+      "color": "",
+      "title": "HTML"
+    },
+    {
+      "icon": "design",
+      "color": "",
+      "title": "Design"
+    }
+  ],
+  "images": [
+    "ducatus-1",
+    "ducatus-2",
+    "ducatus-3",
+    "ducatus-4",
+    "ducatus-5",
+    "ducatus-6",
+    "ducatus-7",
+    "ducatus-8",
+    "ducatus-9",
+    "ducatus-10"
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "color": "",
+      "title": "Github",
+      "url": "https://github.com/DucatusX/ducatus-site",
+      "is_active": true
+    },
+    {
+      "icon": "hash",
+      "color": "cl-github-2",
+      "title": "Commit LTS",
+      "url": "https://github.com/DucatusX/ducatus-site/tree/379471bd37d87ab3579dff5cbb4bf5217a829908",
+      "is_active": true
+    },
+    {
+      "icon": "globe",
+      "color": "cl-ai",
+      "title": "View",
+      "url": "https://www.ducatuscoins.com",
+      "is_active": true
+    }
+  ],
+  "features": [
+    {
+      "title": "Admin panel",
+      "description": ""
+    },
+    {
+      "title": "Web3js",
+      "description": ""
+    },
+    {
+      "title": "Smart contracts",
+      "description": ""
+    },
+    {
+      "title": "User wallets",
+      "description": ""
+    },
+    {
+      "title": "Pages",
+      "description": ""
+    },
+    {
+      "title": "Navigation",
+      "description": ""
+    },
+    {
+      "title": "Backend",
+      "description": ""
+    },
+    {
+      "title": "Filters",
+      "description": ""
+    },
+    {
+      "title": "Vouchers",
+      "description": ""
+    }
+  ]
+}
