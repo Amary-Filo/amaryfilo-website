@@ -6,8 +6,8 @@
     "online shop",
     "cms"
   ],
-  "anonce": "Online store selling recuperators, breathers, exhaust fans, air conditioners and purifiers/humidifiers.",
-  "description": "Development from scratch (and maintenance) of a full-fledged online store selling recuperators, breathers, exhaust fans, air conditioners and cleaners / humidifiers. It was necessary to implement the ability to filter products, save filters and a basket of goods.",
+  "anonce": "Tienda online que vende recuperadores, brizers, ventiladores de extracción, aires acondicionados y purificadores/humidificadores.",
+  "description": "Desarrollo desde cero (y mantenimiento) de una tienda online completa que vende recuperadores, brizers, ventiladores de extracción, aires acondicionados y purificadores/humidificadores. Fue necesario implementar filtros de productos, guardar filtros y un carrito de compras.",
   "logo": "online-shop-recuperators-logo",
   "instruments": [
     {

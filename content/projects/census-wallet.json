@@ -9,36 +9,12 @@
     "anonce": "Development of an application Census Wallet to provide connect user accounts to one wallet.",
     "description": "Development of an application Census Wallet to provide connect user accounts to one wallet and create transactions. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service. Integration Tangem SDK for NFC scanner via Custom Cordova plugin.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "ionic",
-        "color": "",
-        "title": "Ionic"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "ionic", "color": "", "title": "Ionic" }
     ],
     "logo": "census-wallet-logo",
     "images": [],
@@ -59,127 +35,61 @@
       }
     ],
     "features": [
-      {
-        "title": "Tangem",
-        "description": ""
-      },
-      {
-        "title": "Wallet",
-        "description": ""
-      },
-      {
-        "title": "Transactions",
-        "description": ""
-      },
-      {
-        "title": "Multi-language",
-        "description": ""
-      },
-      {
-        "title": "Multi-chain",
-        "description": ""
-      },
-      {
-        "title": "Swap",
-        "description": ""
-      },
-      {
-        "title": "Bridge",
-        "description": ""
-      },
-      {
-        "title": "Buy cryptocurrency",
-        "description": ""
-      },
-      {
-        "title": "Moonpay",
-        "description": ""
-      }
+      { "title": "Tangem", "description": "" },
+      { "title": "Wallet", "description": "" },
+      { "title": "Transactions", "description": "" },
+      { "title": "Multi-language", "description": "" },
+      { "title": "Multi-chain", "description": "" },
+      { "title": "Swap", "description": "" },
+      { "title": "Bridge", "description": "" },
+      { "title": "Buy cryptocurrency", "description": "" },
+      { "title": "Moonpay", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development of an application Census Wallet to provide connect user accounts to one wallet.",
-      "description": "Development of an application Census Wallet to provide connect user accounts to one wallet and create transactions. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service. Integration Tangem SDK for NFC scanner via Custom Cordova plugin.",
+      "anonce": "Desarrollo de la aplicación Census Wallet para conectar cuentas de usuario a una sola billetera.",
+      "description": "Desarrollo de la aplicación Census Wallet para conectar cuentas de usuario a una sola billetera y crear transacciones. Adición de varios módulos y un rediseño completo. Mejoras e integración de la API para el funcionamiento completo de la aplicación. Actualización de las aplicaciones en App Store y Play Market. Desarrollo de la parte del servidor de la billetera. Integración de criptomonedas a través del servicio Moonpay. Integración del SDK de Tangem para el escáner NFC mediante un plugin personalizado de Cordova.",
       "features": [
-        {
-          "title": "Tangem",
-          "description": ""
-        },
-        {
-          "title": "Wallet",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "Swap",
-          "description": ""
-        },
-        {
-          "title": "Bridge",
-          "description": ""
-        },
-        {
-          "title": "Buy cryptocurrency",
-          "description": ""
-        },
-        {
-          "title": "Moonpay",
-          "description": ""
-        }
+        { "title": "Tangem", "description": "" },
+        { "title": "Billetera", "description": "" },
+        { "title": "Transacciones", "description": "" },
+        { "title": "Multi-idioma", "description": "" },
+        { "title": "Multi-cadena", "description": "" },
+        { "title": "Swap", "description": "" },
+        { "title": "Puente", "description": "" },
+        { "title": "Comprar criptomonedas", "description": "" },
+        { "title": "Moonpay", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку.",
-      "description": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку и создания транзакций. Добавление различных модулей, полный редизайн. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция обеих криптовалют через сервис Moonpay. Интеграция Tangem SDK для сканера NFC через создание кастомного плагина для Cordova.",
+      "description": "Разработка приложения Census Wallet для подключения учетных записей пользователей к одному кошельку и создания транзакций. Добавление различных модулей, полный редизайн. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция криптовалют через сервис Moonpay. Интеграция Tangem SDK для сканера NFC через кастомный плагин Cordova.",
       "features": [
-        {
-          "title": "Tangem",
-          "description": ""
-        },
-        {
-          "title": "Wallet",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "Swap",
-          "description": ""
-        },
-        {
-          "title": "Bridge",
-          "description": ""
-        },
-        {
-          "title": "Buy cryptocurrency",
-          "description": ""
-        },
-        {
-          "title": "Moonpay",
-          "description": ""
-        }
+        { "title": "Tangem", "description": "" },
+        { "title": "Кошелек", "description": "" },
+        { "title": "Транзакции", "description": "" },
+        { "title": "Мультиязычность", "description": "" },
+        { "title": "Мультичейн", "description": "" },
+        { "title": "Своп", "description": "" },
+        { "title": "Бридж", "description": "" },
+        { "title": "Покупка криптовалюты", "description": "" },
+        { "title": "Moonpay", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung der Anwendung Census Wallet, um Benutzerkonten mit einer einzigen Wallet zu verbinden.",
+      "description": "Entwicklung der Anwendung Census Wallet, um Benutzerkonten mit einer einzigen Wallet zu verbinden und Transaktionen zu erstellen. Hinzufügen verschiedener Module und ein komplettes Redesign. Verbesserungen und Anbindung der API für den vollständigen Betrieb der Anwendung. Aktualisierung der Apps im App Store und Play Market. Entwicklung des Serverteils der Wallet. Integration von Kryptowährungen über den Moonpay-Dienst. Integration des Tangem SDK für den NFC-Scanner über ein benutzerdefiniertes Cordova-Plugin.",
+      "features": [
+        { "title": "Tangem", "description": "" },
+        { "title": "Wallet", "description": "" },
+        { "title": "Transaktionen", "description": "" },
+        { "title": "Mehrsprachigkeit", "description": "" },
+        { "title": "Multi-Chain", "description": "" },
+        { "title": "Swap", "description": "" },
+        { "title": "Bridge", "description": "" },
+        { "title": "Kryptowährung kaufen", "description": "" },
+        { "title": "Moonpay", "description": "" }
       ]
     }
   }

@@ -2,8 +2,8 @@
   {
     "id": 1,
     "icon": "gallery",
-    "title": "Frontend",
-    "description": "Core frontend frameworks and tools for building modern web and mobile apps.",
+    "title": "Фронтенд",
+    "description": "Основные frontend-фреймворки и инструменты для создания современных веб- и мобильных приложений.",
     "skills": [
       {
         "id": 1,
@@ -55,8 +55,8 @@
   {
     "id": 2,
     "icon": "feature",
-    "title": "Blockchain",
-    "description": "Technologies and frameworks for Web3, wallets, and DeFi integrations.",
+    "title": "Блокчейн",
+    "description": "Технологии и фреймворки для Web3, криптокошельков и интеграции с DeFi.",
     "skills": [
       {
         "id": 1,
@@ -103,8 +103,8 @@
   {
     "id": 3,
     "icon": "images",
-    "title": "Backend",
-    "description": "Server-side frameworks, APIs, databases, and CMS platforms.",
+    "title": "Бэкенд",
+    "description": "Серверные фреймворки, API, базы данных и CMS-платформы.",
     "skills": [
       {
         "id": 1,
@@ -181,8 +181,8 @@
   {
     "id": 4,
     "icon": "done",
-    "title": "Other",
-    "description": "Version control, CI/CD, cloud, and AI integrations.",
+    "title": "Другое",
+    "description": "Системы контроля версий, CI/CD, облака и интеграции с искусственным интеллектом.",
     "skills": [
       {
         "id": 1,

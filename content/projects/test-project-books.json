@@ -6,29 +6,13 @@
     "title": "[TEST Project] Books"
   },
   "base": {
-    "anonce": "Test project that are demonstrate work with local storage (add/edit/delete) and validate form.",
-    "description": "Test project created on Vuejs with Axios. Demonstrates work with local storage, the ability to validate errors, add/edit and delete books.",
+    "anonce": "Test project that demonstrates work with local storage (add/edit/delete) and form validation.",
+    "description": "Test project created on VueJs with Axios. Demonstrates work with local storage, the ability to validate errors, add/edit and delete books.",
     "instruments": [
-      {
-        "icon": "vue",
-        "color": "",
-        "title": "VueJs"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      }
+      { "icon": "vue", "color": "", "title": "VueJs" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "typescript", "color": "", "title": "TS" }
     ],
     "logo": "test-project-books-logo",
     "images": [
@@ -54,103 +38,53 @@
       }
     ],
     "features": [
-      {
-        "title": "VueJs",
-        "description": ""
-      },
-      {
-        "title": "Forms",
-        "description": ""
-      },
-      {
-        "title": "Localstorage",
-        "description": ""
-      },
-      {
-        "title": "Update info",
-        "description": ""
-      },
-      {
-        "title": "Pages",
-        "description": ""
-      },
-      {
-        "title": "Previews",
-        "description": ""
-      },
-      {
-        "title": "Validates",
-        "description": ""
-      }
+      { "title": "VueJs", "description": "" },
+      { "title": "Forms", "description": "" },
+      { "title": "Localstorage", "description": "" },
+      { "title": "Update info", "description": "" },
+      { "title": "Pages", "description": "" },
+      { "title": "Previews", "description": "" },
+      { "title": "Validates", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Test project that are demonstrate work with local storage (add/edit/delete) and validate form.",
-      "description": "Test project created on Vuejs with Axios. Demonstrates work with local storage, the ability to validate errors, add/edit and delete books.",
+      "anonce": "Proyecto de prueba que demuestra el trabajo con el almacenamiento local (añadir/editar/eliminar) y la validación de formularios.",
+      "description": "Proyecto de prueba creado en VueJs con Axios. Demuestra el uso del almacenamiento local, la validación de errores y la posibilidad de añadir, editar y eliminar libros.",
       "features": [
-        {
-          "title": "VueJs",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "Localstorage",
-          "description": ""
-        },
-        {
-          "title": "Update info",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Previews",
-          "description": ""
-        },
-        {
-          "title": "Validates",
-          "description": ""
-        }
+        { "title": "VueJs", "description": "" },
+        { "title": "Formularios", "description": "" },
+        { "title": "Almacenamiento local", "description": "" },
+        { "title": "Actualizar información", "description": "" },
+        { "title": "Páginas", "description": "" },
+        { "title": "Vistas previas", "description": "" },
+        { "title": "Validación", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку формы.",
-      "description": "Тестовый проект созданный на Vuejs с использованием Axios. Демонстрирует работу с локальным хранилищем, возможностью валидировать ошибки, добавлять/изменять и удалять книги.",
+      "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку форм.",
+      "description": "Тестовый проект, созданный на VueJs с использованием Axios. Демонстрирует работу с локальным хранилищем, проверку ошибок, а также добавление, редактирование и удаление книг.",
       "features": [
-        {
-          "title": "VueJs",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "Localstorage",
-          "description": ""
-        },
-        {
-          "title": "Update info",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Previews",
-          "description": ""
-        },
-        {
-          "title": "Validates",
-          "description": ""
-        }
+        { "title": "VueJs", "description": "" },
+        { "title": "Формы", "description": "" },
+        { "title": "Локальное хранилище", "description": "" },
+        { "title": "Обновление информации", "description": "" },
+        { "title": "Страницы", "description": "" },
+        { "title": "Предпросмотр", "description": "" },
+        { "title": "Валидация", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Testprojekt, das die Arbeit mit dem lokalen Speicher (Hinzufügen/Bearbeiten/Löschen) und die Formularvalidierung demonstriert.",
+      "description": "Testprojekt, erstellt mit VueJs und Axios. Zeigt die Nutzung des lokalen Speichers, die Validierung von Fehlern sowie das Hinzufügen, Bearbeiten und Löschen von Büchern.",
+      "features": [
+        { "title": "VueJs", "description": "" },
+        { "title": "Formulare", "description": "" },
+        { "title": "Lokaler Speicher", "description": "" },
+        { "title": "Informationen aktualisieren", "description": "" },
+        { "title": "Seiten", "description": "" },
+        { "title": "Vorschauen", "description": "" },
+        { "title": "Validierung", "description": "" }
       ]
     }
   }

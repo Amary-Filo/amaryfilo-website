@@ -8,8 +8,8 @@
     "crypto",
     "ionic"
   ],
-  "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
-  "description": "Development of an application for the Quras blockchain. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service.",
+  "anonce": "Desarrollo de una aplicación para la blockchain de Quras en plataformas iOS, Web y Android.",
+  "description": "Desarrollo de una aplicación para la blockchain de Quras. Adición de varios módulos, un rediseño completo. Mejoras y conexión del API para el funcionamiento completo de la aplicación. Actualización de las aplicaciones en App Store y Play Market. Desarrollo de la parte del servidor del monedero. Integración de criptomonedas a través del servicio Moonpay.",
   "logo": "quras-wallet-logo",
   "instruments": [
     {
@@ -100,7 +100,7 @@
       "description": ""
     },
     {
-      "title": "Buy crypto by feat",
+      "title": "Buy crypto by fiat",
       "description": ""
     },
     {

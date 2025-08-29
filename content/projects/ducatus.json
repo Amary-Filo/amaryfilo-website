@@ -9,41 +9,13 @@
     "anonce": "Development of the official website of the Ducatus blockchain.",
     "description": "The website of the Ducatus blockchain. Development of a complete site from layout to landing on Angular. Adding an administrative panel for creating and uploading vouchers and other information that was synchronized with the application. Various application and rate settings for the DUCX -> DUCX exchange. Adding a module for the exchange of cryptocurrency and its purchase. Exchange DUC, WDUCX, DUCX via Credit Card, Ethereum, Bitcoin wallets. Login through Amfi Connect to your account to interact with contracts.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "metamask",
-        "color": "",
-        "title": "MM"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "design",
-        "color": "",
-        "title": "Design"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "metamask", "color": "", "title": "MM" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "design", "color": "", "title": "Design" }
     ],
     "logo": "ducatus-logo",
     "images": [
@@ -82,127 +54,61 @@
       }
     ],
     "features": [
-      {
-        "title": "Admin panel",
-        "description": ""
-      },
-      {
-        "title": "Web3js",
-        "description": ""
-      },
-      {
-        "title": "Smart contracts",
-        "description": ""
-      },
-      {
-        "title": "User wallets",
-        "description": ""
-      },
-      {
-        "title": "Pages",
-        "description": ""
-      },
-      {
-        "title": "Navigation",
-        "description": ""
-      },
-      {
-        "title": "Backend",
-        "description": ""
-      },
-      {
-        "title": "Filters",
-        "description": ""
-      },
-      {
-        "title": "Vouchers",
-        "description": ""
-      }
+      { "title": "Admin panel", "description": "" },
+      { "title": "Web3js", "description": "" },
+      { "title": "Smart contracts", "description": "" },
+      { "title": "User wallets", "description": "" },
+      { "title": "Pages", "description": "" },
+      { "title": "Navigation", "description": "" },
+      { "title": "Backend", "description": "" },
+      { "title": "Filters", "description": "" },
+      { "title": "Vouchers", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development of the official website of the Ducatus blockchain.",
-      "description": "The website of the Ducatus blockchain. Development of a complete site from layout to landing on Angular. Adding an administrative panel for creating and uploading vouchers and other information that was synchronized with the application. Various application and rate settings for the DUCX -> DUCX exchange. Adding a module for the exchange of cryptocurrency and its purchase. Exchange DUC, WDUCX, DUCX via Credit Card, Ethereum, Bitcoin wallets. Login through Amfi Connect to your account to interact with contracts.",
+      "anonce": "Desarrollo del sitio web oficial de la blockchain Ducatus.",
+      "description": "Sitio web de la blockchain Ducatus. Desarrollo completo del sitio, desde el maquetado hasta la implementación en Angular. Inclusión de un panel administrativo para crear y subir vales y otra información sincronizada con la aplicación. Configuración de parámetros y tipos de cambio para el intercambio DUCX -> DUCX. Módulo para el intercambio y compra de criptomonedas. Intercambio de DUC, WDUCX, DUCX mediante tarjeta de crédito, Ethereum y monederos de Bitcoin. Inicio de sesión a través de Amfi Connect para interactuar con los contratos.",
       "features": [
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Smart contracts",
-          "description": ""
-        },
-        {
-          "title": "User wallets",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Filters",
-          "description": ""
-        },
-        {
-          "title": "Vouchers",
-          "description": ""
-        }
+        { "title": "Panel de administración", "description": "" },
+        { "title": "Web3js", "description": "" },
+        { "title": "Contratos inteligentes", "description": "" },
+        { "title": "Monederos de usuario", "description": "" },
+        { "title": "Páginas", "description": "" },
+        { "title": "Navegación", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Filtros", "description": "" },
+        { "title": "Vales", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Разработка официального веб сайта блокчена Ducatus.",
-      "description": "Веб сайт блокчена Ducatus. Разработка полного сайта от верстки до посадки на Angular. Добавление административной панели для создания и загрузки ваучеров и иной информации которая синхронизировалась с приложением. Различные настройки приложений и курса для обмена DUCX -> DUCX. Добавление модуля по обмену криптовалюты и ее покупки. Обмен DUC, WDUCX, DUCX через Credit Card, Ethereum, Bitcoin кошельки. Логин через Amfi Connect в аккаунт для взаимодействия с контрактами.",
+      "anonce": "Разработка официального веб-сайта блокчейна Ducatus.",
+      "description": "Веб-сайт блокчейна Ducatus. Разработка полного сайта от верстки до запуска на Angular. Добавление административной панели для создания и загрузки ваучеров и другой информации, синхронизированной с приложением. Различные настройки приложения и курса для обмена DUCX -> DUCX. Добавление модуля для обмена и покупки криптовалюты. Обмен DUC, WDUCX, DUCX через банковскую карту, Ethereum и Bitcoin-кошельки. Вход в аккаунт через Amfi Connect для взаимодействия с контрактами.",
       "features": [
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Smart contracts",
-          "description": ""
-        },
-        {
-          "title": "User wallets",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Filters",
-          "description": ""
-        },
-        {
-          "title": "Vouchers",
-          "description": ""
-        }
+        { "title": "Админ-панель", "description": "" },
+        { "title": "Web3js", "description": "" },
+        { "title": "Смарт-контракты", "description": "" },
+        { "title": "Кошельки пользователей", "description": "" },
+        { "title": "Страницы", "description": "" },
+        { "title": "Навигация", "description": "" },
+        { "title": "Бэкенд", "description": "" },
+        { "title": "Фильтры", "description": "" },
+        { "title": "Ваучеры", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung der offiziellen Website der Ducatus-Blockchain.",
+      "description": "Die Website der Ducatus-Blockchain. Komplette Entwicklung der Seite, von der Gestaltung bis zur Umsetzung in Angular. Hinzufügen eines Administrationspanels zur Erstellung und Hochladung von Gutscheinen und anderer Informationen, die mit der Anwendung synchronisiert wurden. Verschiedene Einstellungen für Anwendung und Wechselkurs beim Austausch DUCX -> DUCX. Hinzufügen eines Moduls für den Austausch und Kauf von Kryptowährungen. Austausch von DUC, WDUCX, DUCX über Kreditkarte, Ethereum und Bitcoin-Wallets. Anmeldung über Amfi Connect, um mit Smart Contracts zu interagieren.",
+      "features": [
+        { "title": "Admin-Panel", "description": "" },
+        { "title": "Web3js", "description": "" },
+        { "title": "Smart Contracts", "description": "" },
+        { "title": "Benutzer-Wallets", "description": "" },
+        { "title": "Seiten", "description": "" },
+        { "title": "Navigation", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Filter", "description": "" },
+        { "title": "Gutscheine", "description": "" }
       ]
     }
   }

@@ -9,31 +9,11 @@
     "anonce": "Layout of the Ventuary website and landing on NuxtJs.",
     "description": "Layout of the Ventuary website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
     "instruments": [
-      {
-        "icon": "vue",
-        "color": "",
-        "title": "Vuejs"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      }
+      { "icon": "vue", "color": "", "title": "Vuejs" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" }
     ],
     "logo": "ventuary-logo",
     "images": [
@@ -70,79 +50,45 @@
       }
     ],
     "features": [
-      {
-        "title": "NuxtJs",
-        "description": ""
-      },
-      {
-        "title": "Forms",
-        "description": ""
-      },
-      {
-        "title": "Navigation",
-        "description": ""
-      },
-      {
-        "title": "Events",
-        "description": ""
-      },
-      {
-        "title": "Template",
-        "description": ""
-      }
+      { "title": "NuxtJs", "description": "" },
+      { "title": "Forms", "description": "" },
+      { "title": "Navigation", "description": "" },
+      { "title": "Events", "description": "" },
+      { "title": "Template", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Layout of the Ventuary website and landing on NuxtJs.",
-      "description": "Layout of the Ventuary website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+      "anonce": "Maquetación del sitio web Ventuary y desarrollo del landing en NuxtJs.",
+      "description": "Maquetación del sitio web Ventuary y desarrollo en NuxtJs. Creación de un formulario para enviar comentarios, navegación entre páginas del sitio y gestión de eventos.",
       "features": [
-        {
-          "title": "NuxtJs",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "Template",
-          "description": ""
-        }
+        { "title": "NuxtJs", "description": "" },
+        { "title": "Formularios", "description": "" },
+        { "title": "Navegación", "description": "" },
+        { "title": "Eventos", "description": "" },
+        { "title": "Plantilla", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Верстка сайта Ventuary и посадка на NuxtJs.",
-      "description": "Верстка сайта Ventuary и посадка на NuxtJs. Создание формы отправки обратной свяви, навигация по страницам сайта, ивенты.",
+      "description": "Верстка сайта Ventuary и интеграция на NuxtJs. Создание формы обратной связи, навигации по страницам сайта и раздела событий.",
       "features": [
-        {
-          "title": "NuxtJs",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "Template",
-          "description": ""
-        }
+        { "title": "NuxtJs", "description": "" },
+        { "title": "Формы", "description": "" },
+        { "title": "Навигация", "description": "" },
+        { "title": "События", "description": "" },
+        { "title": "Шаблон", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Layout der Ventuary-Website und Umsetzung mit NuxtJs.",
+      "description": "Layout und Entwicklung der Ventuary-Website mit NuxtJs. Erstellung eines Formulars für Feedback, Navigation zwischen den Seiten und Integration von Events.",
+      "features": [
+        { "title": "NuxtJs", "description": "" },
+        { "title": "Formulare", "description": "" },
+        { "title": "Navigation", "description": "" },
+        { "title": "Events", "description": "" },
+        { "title": "Vorlage", "description": "" }
       ]
     }
   }

@@ -9,46 +9,14 @@
     "anonce": "Platform for interaction with BTCMT token: purchase, deposit, exchange and withdrawal from smart contracts.",
     "description": "Developing a Minto project from scratch with React. Creation of a Staking module for transferring tokens via Web3js for staking for a selected time, receiving % of the number of days. Working with the BTCMT price chart received via API through a crypto exchange. Login to user account via AMFI Connect. Withdrawal of funds from the Staking contract. Claim tokens.",
     "instruments": [
-      {
-        "icon": "react",
-        "color": "",
-        "title": "React"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "metamask",
-        "color": "",
-        "title": "MM"
-      },
-      {
-        "icon": "amaryfilo",
-        "color": "cl-cmain",
-        "title": "AMFI Connect"
-      }
+      { "icon": "react", "color": "", "title": "React" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "metamask", "color": "", "title": "MM" },
+      { "icon": "amaryfilo", "color": "cl-cmain", "title": "AMFI Connect" }
     ],
     "logo": "minto-logo",
     "images": ["minto-1", "minto-2", "minto-3", "minto-4"],
@@ -76,127 +44,61 @@
       }
     ],
     "features": [
-      {
-        "title": "Metamask",
-        "description": ""
-      },
-      {
-        "title": "Wallets",
-        "description": ""
-      },
-      {
-        "title": "Staking",
-        "description": ""
-      },
-      {
-        "title": "Claim",
-        "description": ""
-      },
-      {
-        "title": "Deposits",
-        "description": ""
-      },
-      {
-        "title": "Themes",
-        "description": ""
-      },
-      {
-        "title": "Multi-language",
-        "description": ""
-      },
-      {
-        "title": "Multi-chain",
-        "description": ""
-      },
-      {
-        "title": "AMFI Connect",
-        "description": ""
-      }
+      { "title": "Metamask", "description": "" },
+      { "title": "Wallets", "description": "" },
+      { "title": "Staking", "description": "" },
+      { "title": "Claim", "description": "" },
+      { "title": "Deposits", "description": "" },
+      { "title": "Themes", "description": "" },
+      { "title": "Multi-language", "description": "" },
+      { "title": "Multi-chain", "description": "" },
+      { "title": "AMFI Connect", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Platform for interaction with BTCMT token: purchase, deposit, exchange and withdrawal from smart contracts.",
-      "description": "Developing a Minto project from scratch with React. Creation of a Staking module for transferring tokens via Web3js for staking for a selected time, receiving % of the number of days. Working with the BTCMT price chart received via API through a crypto exchange. Login to user account via AMFI Connect. Withdrawal of funds from the Staking contract. Claim tokens.",
+      "anonce": "Plataforma para interactuar con el token BTCMT: compra, depósito, intercambio y retiro desde contratos inteligentes.",
+      "description": "Desarrollo del proyecto Minto desde cero con React. Creación de un módulo de Staking para transferir tokens mediante Web3js durante un tiempo seleccionado y recibir un porcentaje según los días. Trabajo con el gráfico de precios de BTCMT obtenido a través de API desde un exchange de criptomonedas. Inicio de sesión en la cuenta de usuario mediante AMFI Connect. Retiro de fondos del contrato de Staking. Reclamo de tokens.",
       "features": [
-        {
-          "title": "Metamask",
-          "description": ""
-        },
-        {
-          "title": "Wallets",
-          "description": ""
-        },
-        {
-          "title": "Staking",
-          "description": ""
-        },
-        {
-          "title": "Claim",
-          "description": ""
-        },
-        {
-          "title": "Deposits",
-          "description": ""
-        },
-        {
-          "title": "Themes",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "AMFI Connect",
-          "description": ""
-        }
+        { "title": "Metamask", "description": "" },
+        { "title": "Wallets", "description": "" },
+        { "title": "Staking", "description": "" },
+        { "title": "Claim", "description": "" },
+        { "title": "Deposits", "description": "" },
+        { "title": "Themes", "description": "" },
+        { "title": "Multi-language", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "AMFI Connect", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Платформа для взаимодействия с BTCMT токеном: покупка, депозит, обмен и вывод со смарт контрактов.",
-      "description": "Разработка проекта Minto с нуля на React. Создание Staking модуля для передачи токенов через Web3js на стейкинг на выбранное время с получением % от количества дней. Работа с графиком стоимости BTCMT получаемые по API через крипто биржу. Вход в аккаунт пользователя через AMFI Connect. Вывод средств со Staking контракта. Claim токенов.",
+      "anonce": "Платформа для взаимодействия с токеном BTCMT: покупка, депозит, обмен и вывод из смарт-контрактов.",
+      "description": "Разработка проекта Minto с нуля на React. Создание модуля Staking для передачи токенов через Web3js на определённый срок с получением процентов за количество дней. Работа с графиком цены BTCMT, получаемым по API через криптобиржу. Вход в аккаунт пользователя через AMFI Connect. Вывод средств из Staking-контракта. Claim токенов.",
       "features": [
-        {
-          "title": "Metamask",
-          "description": ""
-        },
-        {
-          "title": "Wallets",
-          "description": ""
-        },
-        {
-          "title": "Staking",
-          "description": ""
-        },
-        {
-          "title": "Claim",
-          "description": ""
-        },
-        {
-          "title": "Deposits",
-          "description": ""
-        },
-        {
-          "title": "Themes",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "AMFI Connect",
-          "description": ""
-        }
+        { "title": "Metamask", "description": "" },
+        { "title": "Wallets", "description": "" },
+        { "title": "Staking", "description": "" },
+        { "title": "Claim", "description": "" },
+        { "title": "Deposits", "description": "" },
+        { "title": "Themes", "description": "" },
+        { "title": "Multi-language", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "AMFI Connect", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Plattform zur Interaktion mit dem BTCMT-Token: Kauf, Einzahlung, Tausch und Auszahlung aus Smart Contracts.",
+      "description": "Entwicklung des Minto-Projekts von Grund auf mit React. Erstellung eines Staking-Moduls zum Übertragen von Tokens über Web3js für eine ausgewählte Zeit, mit Erhalt eines Prozentsatzes basierend auf den Tagen. Arbeit mit dem BTCMT-Preischart, das über eine API von einer Kryptobörse abgerufen wird. Anmeldung im Benutzerkonto über AMFI Connect. Auszahlung von Geldern aus dem Staking-Vertrag. Token beanspruchen (Claim).",
+      "features": [
+        { "title": "Metamask", "description": "" },
+        { "title": "Wallets", "description": "" },
+        { "title": "Staking", "description": "" },
+        { "title": "Claim", "description": "" },
+        { "title": "Deposits", "description": "" },
+        { "title": "Themes", "description": "" },
+        { "title": "Multi-language", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "AMFI Connect", "description": "" }
       ]
     }
   }

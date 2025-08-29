@@ -9,36 +9,12 @@
     "anonce": "Online store selling recuperators, breathers, exhaust fans, air conditioners and purifiers/humidifiers.",
     "description": "Development from scratch (and maintenance) of a full-fledged online store selling recuperators, breathers, exhaust fans, air conditioners and cleaners / humidifiers. It was necessary to implement the ability to filter products, save filters and a basket of goods.",
     "instruments": [
-      {
-        "icon": "octobercms",
-        "color": "",
-        "title": "OctoberCMS"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "design",
-        "color": "",
-        "title": "Design"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "php",
-        "color": "",
-        "title": "PHP"
-      }
+      { "icon": "octobercms", "color": "", "title": "OctoberCMS" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "design", "color": "", "title": "Design" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "php", "color": "", "title": "PHP" }
     ],
     "logo": "online-shop-recuperators-logo",
     "images": [
@@ -73,151 +49,69 @@
       }
     ],
     "features": [
-      {
-        "title": "Catalog",
-        "description": ""
-      },
-      {
-        "title": "Category",
-        "description": ""
-      },
-      {
-        "title": "Filters",
-        "description": ""
-      },
-      {
-        "title": "Admin panel",
-        "description": ""
-      },
-      {
-        "title": "Shop bag",
-        "description": ""
-      },
-      {
-        "title": "Request from frontend",
-        "description": ""
-      },
-      {
-        "title": "Sales",
-        "description": ""
-      },
-      {
-        "title": "Feedbacks",
-        "description": ""
-      },
-      {
-        "title": "Optimisation",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      },
-      {
-        "title": "Adaptive",
-        "description": ""
-      }
+      { "title": "Catalog", "description": "" },
+      { "title": "Category", "description": "" },
+      { "title": "Filters", "description": "" },
+      { "title": "Admin panel", "description": "" },
+      { "title": "Shop bag", "description": "" },
+      { "title": "Request from frontend", "description": "" },
+      { "title": "Sales", "description": "" },
+      { "title": "Feedbacks", "description": "" },
+      { "title": "Optimisation", "description": "" },
+      { "title": "SEO", "description": "" },
+      { "title": "Adaptive", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Online store selling recuperators, breathers, exhaust fans, air conditioners and purifiers/humidifiers.",
-      "description": "Development from scratch (and maintenance) of a full-fledged online store selling recuperators, breathers, exhaust fans, air conditioners and cleaners / humidifiers. It was necessary to implement the ability to filter products, save filters and a basket of goods.",
+      "anonce": "Tienda online que vende recuperadores, brizers, ventiladores de extracción, aires acondicionados y purificadores/humidificadores.",
+      "description": "Desarrollo desde cero (y mantenimiento) de una tienda online completa que vende recuperadores, brizers, ventiladores de extracción, aires acondicionados y purificadores/humidificadores. Fue necesario implementar filtros de productos, guardar filtros y un carrito de compras.",
       "features": [
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Category",
-          "description": ""
-        },
-        {
-          "title": "Filters",
-          "description": ""
-        },
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Shop bag",
-          "description": ""
-        },
-        {
-          "title": "Request from frontend",
-          "description": ""
-        },
-        {
-          "title": "Sales",
-          "description": ""
-        },
-        {
-          "title": "Feedbacks",
-          "description": ""
-        },
-        {
-          "title": "Optimisation",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Catálogo", "description": "" },
+        { "title": "Categorías", "description": "" },
+        { "title": "Filtros", "description": "" },
+        { "title": "Panel de administración", "description": "" },
+        { "title": "Carrito de compras", "description": "" },
+        { "title": "Solicitudes desde el frontend", "description": "" },
+        { "title": "Ventas", "description": "" },
+        { "title": "Reseñas", "description": "" },
+        { "title": "Optimización", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Adaptativo", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Онлайн магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
-      "description": "Разработка с нуля (и ведение) полноценного онлайн магазина по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей. Необходимо было реализовать возможность фильтрации товаров, сохранения фильтров и корзину товаров.",
+      "anonce": "Онлайн-магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
+      "description": "Разработка с нуля (и поддержка) полноценного онлайн-магазина по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей. Реализована фильтрация товаров, сохранение фильтров и корзина.",
       "features": [
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Category",
-          "description": ""
-        },
-        {
-          "title": "Filters",
-          "description": ""
-        },
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Shop bag",
-          "description": ""
-        },
-        {
-          "title": "Request from frontend",
-          "description": ""
-        },
-        {
-          "title": "Sales",
-          "description": ""
-        },
-        {
-          "title": "Feedbacks",
-          "description": ""
-        },
-        {
-          "title": "Optimisation",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Каталог", "description": "" },
+        { "title": "Категории", "description": "" },
+        { "title": "Фильтры", "description": "" },
+        { "title": "Админ-панель", "description": "" },
+        { "title": "Корзина", "description": "" },
+        { "title": "Запросы с фронтенда", "description": "" },
+        { "title": "Продажи", "description": "" },
+        { "title": "Отзывы", "description": "" },
+        { "title": "Оптимизация", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Адаптивность", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Onlineshop für den Verkauf von Rekuperatoren, Lüftern, Klimaanlagen und Luftreinigern/Befeuchtern.",
+      "description": "Entwicklung von Grund auf (und Wartung) eines vollwertigen Onlineshops für den Verkauf von Rekuperatoren, Lüftern, Klimaanlagen und Luftreinigern/Befeuchtern. Es war notwendig, Produktfilter, Speichern von Filtern und einen Warenkorb zu implementieren.",
+      "features": [
+        { "title": "Katalog", "description": "" },
+        { "title": "Kategorien", "description": "" },
+        { "title": "Filter", "description": "" },
+        { "title": "Admin-Panel", "description": "" },
+        { "title": "Warenkorb", "description": "" },
+        { "title": "Frontend-Anfragen", "description": "" },
+        { "title": "Verkäufe", "description": "" },
+        { "title": "Bewertungen", "description": "" },
+        { "title": "Optimierung", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Responsiv", "description": "" }
       ]
     }
   }

@@ -9,46 +9,14 @@
     "anonce": "Service for saving crypto-tokens after the expiration of the specified period in the smart contract.",
     "description": "Development of a site for saving tokens after a certain period. Ability to create test contracts by selecting a test network. Request via web3js to provide control of unlimited selected tokens for a contract, without this the contract does not work. Conducting a payment transaction. Connecting custom wallets via MetaMask. View the list of contracts. Contract statuses: Creating/Deploy/Active/Decline/Done.",
     "instruments": [
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "metamask",
-        "color": "",
-        "title": "MM"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "seo",
-        "color": "",
-        "title": "SEO"
-      }
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "metamask", "color": "", "title": "MM" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "seo", "color": "", "title": "SEO" }
     ],
     "logo": "token-protector-logo",
     "images": [
@@ -84,139 +52,68 @@
       }
     ],
     "features": [
-      {
-        "title": "Web3js Integration",
-        "description": ""
-      },
-      {
-        "title": "Connect smart contracts",
-        "description": ""
-      },
-      {
-        "title": "Connect user wallets",
-        "description": ""
-      },
-      {
-        "title": "Stepper",
-        "description": ""
-      },
-      {
-        "title": "Login via MM/Google/Facebook",
-        "description": ""
-      },
-      {
-        "title": "List tokens",
-        "description": ""
-      },
-      {
-        "title": "Create transactions",
-        "description": ""
-      },
-      {
-        "title": "Multi-language",
-        "description": ""
-      },
-      {
-        "title": "Online Statistics",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      }
+      { "title": "Web3js Integration", "description": "" },
+      { "title": "Connect smart contracts", "description": "" },
+      { "title": "Connect user wallets", "description": "" },
+      { "title": "Stepper", "description": "" },
+      { "title": "Login via MM/Google/Facebook", "description": "" },
+      { "title": "List tokens", "description": "" },
+      { "title": "Create transactions", "description": "" },
+      { "title": "Multi-language", "description": "" },
+      { "title": "Online Statistics", "description": "" },
+      { "title": "SEO", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Service for saving crypto-tokens after the expiration of the specified period in the smart contract.",
-      "description": "Development of a site for saving tokens after a certain period. Ability to create test contracts by selecting a test network. Request via web3js to provide control of unlimited selected tokens for a contract, without this the contract does not work. Conducting a payment transaction. Connecting custom wallets via MetaMask. View the list of contracts. Contract statuses: Creating/Deploy/Active/Decline/Done.",
+      "anonce": "Servicio para guardar cripto-tokens después de la expiración del período especificado en el contrato inteligente.",
+      "description": "Desarrollo de un sitio para guardar tokens después de un período determinado. Posibilidad de crear contratos de prueba seleccionando una red de prueba. Solicitud a través de web3js para proporcionar control de los tokens seleccionados de forma ilimitada a un contrato; sin esto, el contrato no funciona. Realización de una transacción de pago. Conexión de billeteras personalizadas a través de MetaMask. Visualización de la lista de contratos. Estados del contrato: Creating/Deploy/Active/Decline/Done.",
       "features": [
+        { "title": "Integración con Web3js", "description": "" },
+        { "title": "Conectar contratos inteligentes", "description": "" },
+        { "title": "Conectar billeteras de usuario", "description": "" },
+        { "title": "Stepper", "description": "" },
         {
-          "title": "Web3js Integration",
+          "title": "Inicio de sesión con MM/Google/Facebook",
           "description": ""
         },
-        {
-          "title": "Connect smart contracts",
-          "description": ""
-        },
-        {
-          "title": "Connect user wallets",
-          "description": ""
-        },
-        {
-          "title": "Stepper",
-          "description": ""
-        },
-        {
-          "title": "Login via MM/Google/Facebook",
-          "description": ""
-        },
-        {
-          "title": "List tokens",
-          "description": ""
-        },
-        {
-          "title": "Create transactions",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Online Statistics",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Lista de tokens", "description": "" },
+        { "title": "Crear transacciones", "description": "" },
+        { "title": "Multi-idioma", "description": "" },
+        { "title": "Estadísticas en línea", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Сервис по сохранению крипто-токенов после истечения указанного срока в смарт-контракте.",
-      "description": "Разработка сайта по сохранению токенов после истечения определенного срока. Возможность создавать тестовые контракты выбрав тестовую сеть. Запрос через web3js на предоставление управления неограниченными выбранными токенами для контракта, без этого контракт не работает. Проведение транзакции оплаты. Подключение пользовательских кошельков через MetaMask. Просмотр списка контрактов. Статусы контрактов: Creating/Deploy/Active/Decline/Done.",
+      "description": "Разработка сайта для сохранения токенов после определенного периода. Возможность создавать тестовые контракты, выбирая тестовую сеть. Запрос через web3js на предоставление управления неограниченным количеством выбранных токенов для контракта, без этого контракт не работает. Проведение транзакции оплаты. Подключение пользовательских кошельков через MetaMask. Просмотр списка контрактов. Статусы контрактов: Creating/Deploy/Active/Decline/Done.",
       "features": [
-        {
-          "title": "Web3js Integration",
-          "description": ""
-        },
-        {
-          "title": "Connect smart contracts",
-          "description": ""
-        },
-        {
-          "title": "Connect user wallets",
-          "description": ""
-        },
-        {
-          "title": "Stepper",
-          "description": ""
-        },
-        {
-          "title": "Login via MM/Google/Facebook",
-          "description": ""
-        },
-        {
-          "title": "List tokens",
-          "description": ""
-        },
-        {
-          "title": "Create transactions",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "Online Statistics",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Интеграция Web3js", "description": "" },
+        { "title": "Подключение смарт-контрактов", "description": "" },
+        { "title": "Подключение кошельков пользователей", "description": "" },
+        { "title": "Пошаговый процесс (Stepper)", "description": "" },
+        { "title": "Вход через MM/Google/Facebook", "description": "" },
+        { "title": "Список токенов", "description": "" },
+        { "title": "Создание транзакций", "description": "" },
+        { "title": "Мультиязычность", "description": "" },
+        { "title": "Онлайн-статистика", "description": "" },
+        { "title": "SEO", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Dienst zur Speicherung von Krypto-Token nach Ablauf des im Smart Contract festgelegten Zeitraums.",
+      "description": "Entwicklung einer Website zur Speicherung von Token nach einem bestimmten Zeitraum. Möglichkeit, Testverträge durch Auswahl eines Testnetzwerks zu erstellen. Anfrage über web3js, um einem Vertrag die Kontrolle über unbegrenzt viele ausgewählte Token zu gewähren; ohne dies funktioniert der Vertrag nicht. Durchführung einer Zahlungstransaktion. Verbindung von Benutzer-Wallets über MetaMask. Anzeige der Vertragsliste. Vertragsstatus: Creating/Deploy/Active/Decline/Done.",
+      "features": [
+        { "title": "Web3js-Integration", "description": "" },
+        { "title": "Verbindung von Smart Contracts", "description": "" },
+        { "title": "Verbindung von Benutzer-Wallets", "description": "" },
+        { "title": "Schritt-für-Schritt-Prozess (Stepper)", "description": "" },
+        { "title": "Login über MM/Google/Facebook", "description": "" },
+        { "title": "Tokenliste", "description": "" },
+        { "title": "Transaktionen erstellen", "description": "" },
+        { "title": "Mehrsprachigkeit", "description": "" },
+        { "title": "Online-Statistiken", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     }
   }

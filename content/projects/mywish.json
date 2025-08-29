@@ -9,31 +9,11 @@
     "anonce": "Finalization of the project for the creation of smart contracts.",
     "description": "Finalization of the project for the creation of smart contracts. Adding various information. The project is written in Angular 1 version, it is difficult to maintain and add new modules.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "AngularJs"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS/JS"
-      }
+      { "icon": "angular", "color": "", "title": "AngularJs" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "typescript", "color": "", "title": "TS/JS" }
     ],
     "logo": "mywish-logo",
     "images": [],
@@ -47,91 +27,49 @@
       }
     ],
     "features": [
-      {
-        "title": "Web3js",
-        "description": ""
-      },
-      {
-        "title": "Navigation",
-        "description": ""
-      },
-      {
-        "title": "Contracts",
-        "description": ""
-      },
-      {
-        "title": "Backend",
-        "description": ""
-      },
-      {
-        "title": "Layout",
-        "description": ""
-      },
-      {
-        "title": "Template",
-        "description": ""
-      }
+      { "title": "Web3js", "description": "" },
+      { "title": "Navigation", "description": "" },
+      { "title": "Contracts", "description": "" },
+      { "title": "Backend", "description": "" },
+      { "title": "Layout", "description": "" },
+      { "title": "Template", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Finalization of the project for the creation of smart contracts.",
-      "description": "Finalization of the project for the creation of smart contracts. Adding various information. The project is written in Angular 1 version, it is difficult to maintain and add new modules.",
+      "anonce": "Finalización del proyecto para la creación de contratos inteligentes.",
+      "description": "Finalización del proyecto para la creación de contratos inteligentes. Adición de diversa información. El proyecto está escrito en Angular versión 1, lo que dificulta su mantenimiento y la incorporación de nuevos módulos.",
       "features": [
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Contracts",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Layout",
-          "description": ""
-        },
-        {
-          "title": "Template",
-          "description": ""
-        }
+        { "title": "Web3js", "description": "" },
+        { "title": "Navegación", "description": "" },
+        { "title": "Contratos", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Maquetación", "description": "" },
+        { "title": "Plantilla", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Доработка проекта по созданию смарт контрактов.",
-      "description": "Доработка проекта по созданию смарт контрактов. Добавление различной информации. Проект написан на Angular 1 версии, его сложно поддерживать и добавлять новые модули.",
+      "anonce": "Доработка проекта по созданию смарт-контрактов.",
+      "description": "Доработка проекта по созданию смарт-контрактов. Добавление различной информации. Проект написан на Angular 1 версии, его сложно поддерживать и добавлять новые модули.",
       "features": [
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Contracts",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Layout",
-          "description": ""
-        },
-        {
-          "title": "Template",
-          "description": ""
-        }
+        { "title": "Web3js", "description": "" },
+        { "title": "Навигация", "description": "" },
+        { "title": "Контракты", "description": "" },
+        { "title": "Бэкенд", "description": "" },
+        { "title": "Верстка", "description": "" },
+        { "title": "Шаблон", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Fertigstellung des Projekts zur Erstellung von Smart Contracts.",
+      "description": "Fertigstellung des Projekts zur Erstellung von Smart Contracts. Hinzufügen verschiedener Informationen. Das Projekt ist in Angular Version 1 geschrieben, was die Wartung und die Erweiterung um neue Module erschwert.",
+      "features": [
+        { "title": "Web3js", "description": "" },
+        { "title": "Navigation", "description": "" },
+        { "title": "Verträge", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Layout", "description": "" },
+        { "title": "Vorlage", "description": "" }
       ]
     }
   }

@@ -6,7 +6,7 @@
     "cms"
   ],
   "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
-  "description": "Rocknblock website development from scratch. Creation of many landing pages for information about the services provided by the company. Integration of third-party APIs for working with CRM. Page optimization for SEO and loading. Adding a PWA for the entire site. Development of a module for receiving leads from the page through feedback forms and module news.",
+  "description": "Rocknblock website development from scratch. Creation of many landing pages for information about the services provided by the company. Integration of third-party APIs for working with CRM. Page optimization for SEO and loading. Adding a PWA for the entire site. Development of a module for receiving leads from the page through feedback forms and news module.",
   "logo": "rocknblock-website-logo",
   "instruments": [
     {
@@ -32,7 +32,7 @@
     {
       "icon": "html5",
       "color": "",
-      "title": "THML"
+      "title": "HTML"
     },
     {
       "icon": "pug",
@@ -90,7 +90,7 @@
   ],
   "features": [
     {
-      "title": "REST Api",
+      "title": "REST API",
       "description": ""
     },
     {
@@ -106,7 +106,7 @@
       "description": ""
     },
     {
-      "title": "Multiply landing pages",
+      "title": "Multiple landing pages",
       "description": ""
     },
     {

@@ -6,8 +6,8 @@
     "landing",
     "vue"
   ],
-  "anonce": "Верстка сайта Gravity Hub и посадка на NuxtJs.",
-  "description": "Верстка сайта Gravity Hub и посадка на NuxtJs. Создание формы отправки обратной свяви, навигация по страницам сайта, ивенты.",
+  "anonce": "Верстка сайта Gravity Hub и запуск на NuxtJs.",
+  "description": "Верстка сайта Gravity Hub и запуск на NuxtJs. Создание формы для обратной связи, навигация по страницам сайта, работа с событиями.",
   "logo": "gravity-hub-logo",
   "instruments": [
     {

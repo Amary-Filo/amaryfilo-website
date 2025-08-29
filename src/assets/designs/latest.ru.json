@@ -7,7 +7,7 @@
       "landing",
       "blog"
     ],
-    "title": "Photographer's personal website ✨",
+    "title": "Личный сайт фотографа ✨",
     "thumbnail": "photographers-personal-website-thumb"
   },
   {
@@ -16,7 +16,7 @@
     "category": [
       "postcard"
     ],
-    "title": "Minimalistic New Year card design",
+    "title": "Минималистичный дизайн новогодней открытки",
     "thumbnail": "minimalistic-new-year-card-design-thumb"
   },
   {
@@ -25,7 +25,7 @@
     "category": [
       "web"
     ],
-    "title": "Website concept for a web studio",
+    "title": "Концепт сайта для веб-студии",
     "thumbnail": "website-concept-for-web-studio-thumb"
   },
   {
@@ -35,7 +35,7 @@
       "web",
       "landing"
     ],
-    "title": "Minimal landing page design",
+    "title": "Минималистичный дизайн лендинга",
     "thumbnail": "minimal-landing-page-design-thumb"
   },
   {
@@ -45,7 +45,7 @@
       "web",
       "blog"
     ],
-    "title": "Minimal blog design",
+    "title": "Минималистичный дизайн блога",
     "thumbnail": "minimal-blog-design-thumb"
   }
 ]

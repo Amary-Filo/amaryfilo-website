@@ -5,8 +5,8 @@
   "category": [
     "crypto"
   ],
-  "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android. ",
-  "description": "Серверная часть кошелька Quras Wallet+. Добавление Quras блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+  "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android.",
+  "description": "Серверная часть Quras Wallet+. Интеграция различных блокчейнов. Настройка параметров сервера, обновление пакетов. Создание различных API для работы кошелька. Обновление пакетов в NPM.",
   "logo": "quras-wallet-client-logo",
   "instruments": [
     {
@@ -62,7 +62,7 @@
       "description": ""
     },
     {
-      "title": "Muti-chain",
+      "title": "Multi-chain",
       "description": ""
     },
     {

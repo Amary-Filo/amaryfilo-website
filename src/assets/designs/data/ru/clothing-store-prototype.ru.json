@@ -1,13 +1,13 @@
 {
   "slug": "clothing-store-prototype",
-  "title": "Clothing store prototype",
+  "title": "Прототип магазина одежды",
   "date": "2017-08-28",
   "category": [
     "web",
     "shop"
   ],
   "thumbnail": "clothing-store-prototype-thumb",
-  "description": "Website design prototype for an online clothing store. The design includes a cart view, product quick view, product page, and lookbook.",
+  "description": "Прототип дизайна сайта интернет-магазина одежды. Дизайн включает просмотр корзины, быстрый просмотр товара, страницу товара и лукбук.",
   "images": [
     "clothing-store-prototype-1",
     "clothing-store-prototype-2",

@@ -7,7 +7,7 @@
       "package"
     ],
     "title": "AMFI Connect",
-    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "anonce": "Verbinden Sie Ihre Krypto-Wallet mit den Browser-Erweiterungen WalletLink, KardiaChain, MetaMask oder der mobilen App und dem WalletConnect-Dienst, indem Sie den QR-Code der Wallet scannen.",
     "logo": "amfi-connect-logo",
     "instruments": [
       {
@@ -34,7 +34,7 @@
       "cms"
     ],
     "title": "Rocknblock Website",
-    "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
+    "anonce": "Entwicklung und Wartung der offiziellen Informationswebsite des Unternehmens Rock'n'Block. Hinzufügen mehrerer Landingpages, SEO-Optimierung und Blog-Entwicklung.",
     "logo": "rocknblock-website-logo",
     "instruments": [
       {
@@ -60,7 +60,7 @@
       {
         "icon": "html5",
         "color": "",
-        "title": "THML"
+        "title": "HTML"
       },
       {
         "icon": "pug",
@@ -84,7 +84,7 @@
       "ionic"
     ],
     "title": "Ducatus Wallet",
-    "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
+    "anonce": "Entwicklung einer Anwendung für die Ducatus-Blockchain auf iOS-, Web- und Android-Plattformen.",
     "logo": "ducatus-wallet-logo",
     "instruments": [
       {
@@ -127,7 +127,7 @@
       "crypto"
     ],
     "title": "Ducatus website",
-    "anonce": "Development of the official website of the Ducatus blockchain.",
+    "anonce": "Entwicklung der offiziellen Website der Ducatus-Blockchain.",
     "logo": "ducatus-logo",
     "instruments": [
       {
@@ -174,7 +174,7 @@
       "crypto"
     ],
     "title": "Minto",
-    "anonce": "Platform for interaction with BTCMT token: purchase, deposit, exchange and withdrawal from smart contracts.",
+    "anonce": "Plattform zur Interaktion mit dem BTCMT-Token: Kauf, Einzahlung, Tausch und Auszahlung aus Smart Contracts.",
     "logo": "minto-logo",
     "instruments": [
       {
@@ -226,7 +226,7 @@
       "landing"
     ],
     "title": "Ducatus Centurion",
-    "anonce": "Website with information about the Centurion project.",
+    "anonce": "Webseite mit Informationen über das Centurion-Projekt.",
     "logo": "ducatus-centurion-logo",
     "instruments": [
       {
@@ -263,7 +263,7 @@
       "landing"
     ],
     "title": "Ducatus Emperor",
-    "anonce": "Development of a landing page for the Ducatus Emperor project.",
+    "anonce": "Entwicklung einer Landingpage für das Ducatus Emperor Projekt.",
     "logo": "ducatus-emperor-logo",
     "instruments": [
       {
@@ -300,7 +300,7 @@
       "crypto"
     ],
     "title": "Ducatus Wallet Client",
-    "anonce": "Server side of the Ducatus Wallet for iOS/Web and Android.",
+    "anonce": "Serverseitige Anwendung der Ducatus Wallet für iOS/Web und Android.",
     "logo": "ducatus-wallet-client-logo",
     "instruments": [
       {
@@ -338,7 +338,7 @@
       "crypto"
     ],
     "title": "Algovest",
-    "anonce": "Crypto platform for exchanging, investing and withdrawing tokens from smart contracts.",
+    "anonce": "Krypto-Plattform zum Austausch, Investieren und Abheben von Tokens aus Smart Contracts.",
     "logo": "algovest-logo",
     "instruments": [
       {
@@ -386,7 +386,7 @@
       "crypto"
     ],
     "title": "Axion Dashboard",
-    "anonce": "Development of a project to manage the balance of the Axion cryptocurrency.",
+    "anonce": "Entwicklung eines Projekts zur Verwaltung des Guthabens der Axion-Kryptowährung.",
     "logo": "axion-dashboard-logo",
     "instruments": [
       {
@@ -433,7 +433,7 @@
       "crypto"
     ],
     "title": "Quras+ Wallet Client",
-    "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
+    "anonce": "Server-Seite von Quras Wallet+ für iOS/Web und Android.",
     "logo": "quras-wallet-client-logo",
     "instruments": [
       {
@@ -473,7 +473,7 @@
       "ionic"
     ],
     "title": "Quras Wallet",
-    "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
+    "anonce": "Entwicklung einer Anwendung für die Quras-Blockchain auf iOS-, Web- und Android-Plattformen.",
     "logo": "quras-wallet-logo",
     "instruments": [
       {
@@ -511,7 +511,7 @@
       "crypto"
     ],
     "title": "MyWish",
-    "anonce": "Finalization of the project for the creation of smart contracts.",
+    "anonce": "Fertigstellung des Projekts zur Erstellung von Smart Contracts.",
     "logo": "mywish-logo",
     "instruments": [
       {
@@ -549,7 +549,7 @@
       "crypto"
     ],
     "title": "Axion",
-    "anonce": "Development of a web application for exchanging old Axions for new tokens via Claim.",
+    "anonce": "Entwicklung einer Webanwendung zum Umtausch alter Axion in neue Token über Claim.",
     "logo": "axion-logo",
     "instruments": [
       {
@@ -602,7 +602,7 @@
       "crypto"
     ],
     "title": "Rubic Exchange",
-    "anonce": "Development of a cryptocurrency p2p exchange platform.",
+    "anonce": "Entwicklung einer P2P-Plattform zum Austausch von Kryptowährungen.",
     "logo": "rubic-exchange-logo",
     "instruments": [
       {
@@ -647,7 +647,7 @@
       "ionic"
     ],
     "title": "Сensus Wallet",
-    "anonce": "Development of an application Census Wallet to provide connect user accounts to one wallet.",
+    "anonce": "Entwicklung der Anwendung Census Wallet, um Benutzerkonten mit einer einzigen Wallet zu verbinden.",
     "logo": "census-wallet-logo",
     "instruments": [
       {
@@ -690,7 +690,7 @@
       "vue"
     ],
     "title": "Gravity Hub",
-    "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
+    "anonce": "Layout der Gravity Hub-Website und Umsetzung mit NuxtJs.",
     "logo": "gravity-hub-logo",
     "instruments": [
       {
@@ -728,7 +728,7 @@
       "vue"
     ],
     "title": "Ventuary",
-    "anonce": "Layout of the Ventuary website and landing on NuxtJs.",
+    "anonce": "Layout der Ventuary-Website und Umsetzung mit NuxtJs.",
     "logo": "ventuary-logo",
     "instruments": [
       {
@@ -767,7 +767,7 @@
       "crypto"
     ],
     "title": "Token Protector",
-    "anonce": "Service for saving crypto-tokens after the expiration of the specified period in the smart contract.",
+    "anonce": "Dienst zur Speicherung von Krypto-Token nach Ablauf des im Smart Contract festgelegten Zeitraums.",
     "logo": "token-protector-logo",
     "instruments": [
       {
@@ -820,7 +820,7 @@
       "landing"
     ],
     "title": "Wallarm",
-    "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
+    "anonce": "Verbesserung der Unternehmenswebsite. Erstellung neuer Seiten und Integration verschiedener externer Dienste.",
     "logo": "wallarm-logo",
     "instruments": [
       {
@@ -856,70 +856,13 @@
     ]
   },
   {
-    "slug": "rocknblock",
-    "date": "2019-05-11",
-    "category": [
-      "Website"
-    ],
-    "title": "Rock'n'Block Website",
-    "anonce": "Corporate website with a variety of forms, landings and integrations.",
-    "logo": "rocknblock-logo",
-    "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "gulp",
-        "color": "",
-        "title": "Gulp"
-      },
-      {
-        "icon": "wintercms",
-        "color": "",
-        "title": "Winter CMS"
-      },
-      {
-        "icon": "laravel",
-        "color": "",
-        "title": "Laravel"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "pug",
-        "color": "",
-        "title": "Pug"
-      },
-      {
-        "icon": "seo",
-        "color": "",
-        "title": "SEO"
-      }
-    ]
-  },
-  {
     "slug": "test-project-stars",
     "date": "2019-03-06",
     "category": [
       "mobile"
     ],
-    "title": "[Тестовый проект] Stars",
-    "anonce": "Test project on Swift UI with Google Firebase connection.",
+    "title": "[TEST Project] Stars",
+    "anonce": "Testprojekt in SwiftUI mit Google Firebase Integration.",
     "logo": "test-project-stars-logo",
     "instruments": [
       {
@@ -946,7 +889,7 @@
       "cms"
     ],
     "title": "Performance Group",
-    "anonce": "Development and maintenance of a website for a full-cycle Internet advertising agency.",
+    "anonce": "Entwicklung und Wartung einer Website für eine Full-Service-Internet-Werbeagentur.",
     "logo": "performance-group-logo",
     "instruments": [
       {
@@ -993,7 +936,7 @@
       "landing"
     ],
     "title": "New Year Landing",
-    "anonce": "Landing page created for New Year's greetings from a group of companies.",
+    "anonce": "Landingpage, erstellt für Neujahrsgrüße einer Firmengruppe.",
     "logo": "new-year-landing-logo",
     "instruments": [
       {
@@ -1025,7 +968,7 @@
       "cms"
     ],
     "title": "Tornhoff",
-    "anonce": "Development, administration and maintenance of a website for the sale of German profiles and doors.",
+    "anonce": "Entwicklung, Administration und Wartung einer Website für den Verkauf von deutschen Profilen und Türen.",
     "logo": "tornhoff-logo",
     "instruments": [
       {
@@ -1072,7 +1015,7 @@
       "cms"
     ],
     "title": "Petrovskaya Akvatoria",
-    "anonce": "Development and maintenance of the museum website. Lots of pages, interactive maps, ticketing and multilingual.",
+    "anonce": "Entwicklung und Wartung der Museums-Website. Viele Seiten, interaktive Karten, Ticketing und Mehrsprachigkeit.",
     "logo": "museum-petrovskaya-akvatoria-logo",
     "instruments": [
       {
@@ -1124,7 +1067,7 @@
       "vue"
     ],
     "title": "[TEST Project] Big Menus",
-    "anonce": "Test project on NuxtJs.",
+    "anonce": "Testprojekt auf NuxtJs.",
     "logo": "test-project-big-menu-logo",
     "instruments": [
       {
@@ -1156,7 +1099,7 @@
       "vue"
     ],
     "title": "[TEST Project] Books",
-    "anonce": "Test project that are demonstrate work with local storage (add/edit/delete) and validate form.",
+    "anonce": "Testprojekt, das die Arbeit mit dem lokalen Speicher (Hinzufügen/Bearbeiten/Löschen) und die Formularvalidierung demonstriert.",
     "logo": "test-project-books-logo",
     "instruments": [
       {
@@ -1188,7 +1131,7 @@
       "cms"
     ],
     "title": "Plastic surgeon",
-    "anonce": "Official website of the plastic surgeon Maria Volokh.",
+    "anonce": "Offizielle Website der plastischen Chirurgin Maria Volokh.",
     "logo": "plastic-surgeon-mary-volokh-logo",
     "instruments": [
       {
@@ -1226,7 +1169,7 @@
       "cms"
     ],
     "title": "Online shop recuperators",
-    "anonce": "Online store selling recuperators, breathers, exhaust fans, air conditioners and purifiers/humidifiers.",
+    "anonce": "Onlineshop für den Verkauf von Rekuperatoren, Lüftern, Klimaanlagen und Luftreinigern/Befeuchtern.",
     "logo": "online-shop-recuperators-logo",
     "instruments": [
       {

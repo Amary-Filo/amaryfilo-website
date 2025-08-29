@@ -22,7 +22,15 @@
   "data": {
     "ru": {
       "title": "Moovie",
-      "description": "A simple landing page for a streaming service for movies, series and TV shows. The site displays news, traders and ratings for the broadcast content."
+      "description": "Простая лендинговая страница для стримингового сервиса фильмов, сериалов и телепередач. Сайт отображает новости, трейлеры и рейтинги для транслируемого контента."
+    },
+    "es": {
+      "title": "Moovie",
+      "description": "Una página de aterrizaje simple para un servicio de streaming de películas, series y programas de televisión. El sitio muestra noticias, tráilers y calificaciones del contenido transmitido."
+    },
+    "de": {
+      "title": "Moovie",
+      "description": "Eine einfache Landingpage für einen Streaming-Dienst für Filme, Serien und Fernsehsendungen. Die Website zeigt Nachrichten, Trailer und Bewertungen für die übertragenen Inhalte."
     }
   }
 }

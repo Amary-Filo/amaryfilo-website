@@ -8,8 +8,8 @@
     "crypto",
     "ionic"
   ],
-  "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
-  "description": "Development of an application for the Ducatus blockchain. Adding various modules from activating vouchers to creating deposits. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet for SWAP modules. Integration of both cryptocurrencies through the Moonpay service.",
+  "anonce": "Entwicklung einer Anwendung für die Ducatus-Blockchain auf iOS-, Web- und Android-Plattformen.",
+  "description": "Entwicklung einer Anwendung für die Ducatus-Blockchain. Hinzufügen verschiedener Module von der Aktivierung von Gutscheinen bis zur Erstellung von Einlagen. Verbesserungen und Anbindung der API für den vollständigen Betrieb der Anwendung. Aktualisierung der Apps im App Store und Play Market. Entwicklung des Serverteils der Wallet für SWAP-Module. Integration von Kryptowährungen über den Moonpay-Dienst.",
   "logo": "ducatus-wallet-logo",
   "instruments": [
     {
@@ -109,7 +109,7 @@
       "description": ""
     },
     {
-      "title": "Buy crypto by feat",
+      "title": "Buy crypto via fiat",
       "description": ""
     },
     {

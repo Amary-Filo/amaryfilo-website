@@ -9,26 +9,10 @@
     "anonce": "Landing page created for New Year's greetings from a group of companies.",
     "description": "Landing page created for New Year's greetings from a group of companies. The task was to create a landing page with autorun when a flash drive is connected to a USB port. Designed and completed the project.",
     "instruments": [
-      {
-        "icon": "gulp",
-        "color": "",
-        "title": "Gulp"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "Scss"
-      },
-      {
-        "icon": "javascript",
-        "color": "",
-        "title": "JS"
-      }
+      { "icon": "gulp", "color": "", "title": "Gulp" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "sass", "color": "", "title": "Scss" },
+      { "icon": "javascript", "color": "", "title": "JS" }
     ],
     "logo": "new-year-landing-logo",
     "images": [
@@ -47,67 +31,41 @@
       }
     ],
     "features": [
-      {
-        "title": "Books",
-        "description": ""
-      },
-      {
-        "title": "Music",
-        "description": ""
-      },
-      {
-        "title": "Video",
-        "description": ""
-      },
-      {
-        "title": "Autoload from flash card",
-        "description": ""
-      }
+      { "title": "Books", "description": "" },
+      { "title": "Music", "description": "" },
+      { "title": "Video", "description": "" },
+      { "title": "Autoload from flash card", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Landing page created for New Year's greetings from a group of companies.",
-      "description": "Landing page created for New Year's greetings from a group of companies. The task was to create a landing page with autorun when a flash drive is connected to a USB port. Designed and completed the project.",
+      "anonce": "Página de aterrizaje creada para las felicitaciones de Año Nuevo de un grupo de empresas.",
+      "description": "Página de aterrizaje creada para las felicitaciones de Año Nuevo de un grupo de empresas. La tarea era crear una página con ejecución automática al conectar una memoria USB. Se diseñó y completó el proyecto.",
       "features": [
-        {
-          "title": "Books",
-          "description": ""
-        },
-        {
-          "title": "Music",
-          "description": ""
-        },
-        {
-          "title": "Video",
-          "description": ""
-        },
-        {
-          "title": "Autoload from flash card",
-          "description": ""
-        }
+        { "title": "Libros", "description": "" },
+        { "title": "Música", "description": "" },
+        { "title": "Vídeo", "description": "" },
+        { "title": "Autocarga desde memoria USB", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Лендинг созданный под новогоднее поздравление от группы компаний.",
-      "description": "Лендинг созданный под новогоднее поздравление от группы компаний. Задача была создать лендинг с автозапуском при подключении флешки к USB порту. Создал дизайн и польностью закончил проект.",
+      "anonce": "Лендинг, созданный для новогоднего поздравления от группы компаний.",
+      "description": "Лендинг, созданный для новогоднего поздравления от группы компаний. Задача заключалась в создании лендинга с автозапуском при подключении флешки к USB-порту. Разработал дизайн и полностью завершил проект.",
       "features": [
-        {
-          "title": "Books",
-          "description": ""
-        },
-        {
-          "title": "Music",
-          "description": ""
-        },
-        {
-          "title": "Video",
-          "description": ""
-        },
-        {
-          "title": "Autoload from flash card",
-          "description": ""
-        }
+        { "title": "Книги", "description": "" },
+        { "title": "Музыка", "description": "" },
+        { "title": "Видео", "description": "" },
+        { "title": "Автозагрузка с флешки", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Landingpage, erstellt für Neujahrsgrüße einer Firmengruppe.",
+      "description": "Landingpage, erstellt für Neujahrsgrüße einer Firmengruppe. Die Aufgabe war es, eine Seite mit Autostart zu entwickeln, wenn ein USB-Stick angeschlossen wird. Das Projekt wurde entworfen und vollständig abgeschlossen.",
+      "features": [
+        { "title": "Bücher", "description": "" },
+        { "title": "Musik", "description": "" },
+        { "title": "Video", "description": "" },
+        { "title": "Autostart von USB-Stick", "description": "" }
       ]
     }
   }

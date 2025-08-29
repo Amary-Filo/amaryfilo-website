@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Development of the official website of the Ducatus blockchain.",
-  "description": "The website of the Ducatus blockchain. Development of a complete site from layout to landing on Angular. Adding an administrative panel for creating and uploading vouchers and other information that was synchronized with the application. Various application and rate settings for the DUCX -> DUCX exchange. Adding a module for the exchange of cryptocurrency and its purchase. Exchange DUC, WDUCX, DUCX via Credit Card, Ethereum, Bitcoin wallets. Login through Amfi Connect to your account to interact with contracts.",
+  "anonce": "Entwicklung der offiziellen Website der Ducatus-Blockchain.",
+  "description": "Die Website der Ducatus-Blockchain. Komplette Entwicklung der Seite, von der Gestaltung bis zur Umsetzung in Angular. Hinzufügen eines Administrationspanels zur Erstellung und Hochladung von Gutscheinen und anderer Informationen, die mit der Anwendung synchronisiert wurden. Verschiedene Einstellungen für Anwendung und Wechselkurs beim Austausch DUCX -> DUCX. Hinzufügen eines Moduls für den Austausch und Kauf von Kryptowährungen. Austausch von DUC, WDUCX, DUCX über Kreditkarte, Ethereum und Bitcoin-Wallets. Anmeldung über Amfi Connect, um mit Smart Contracts zu interagieren.",
   "logo": "ducatus-logo",
   "instruments": [
     {

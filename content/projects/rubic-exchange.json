@@ -9,36 +9,12 @@
     "anonce": "Development of a cryptocurrency p2p exchange platform.",
     "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "metamask",
-        "color": "",
-        "title": "MM"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "metamask", "color": "", "title": "MM" }
     ],
     "logo": "rubic-exchange-logo",
     "images": [],
@@ -66,103 +42,53 @@
       }
     ],
     "features": [
-      {
-        "title": "Web3js",
-        "description": ""
-      },
-      {
-        "title": "Metamask login",
-        "description": ""
-      },
-      {
-        "title": "Cryptocurrency",
-        "description": ""
-      },
-      {
-        "title": "P2P",
-        "description": ""
-      },
-      {
-        "title": "Create Transaction",
-        "description": ""
-      },
-      {
-        "title": "Multi-chain",
-        "description": ""
-      },
-      {
-        "title": "Multi-language",
-        "description": ""
-      }
+      { "title": "Web3js", "description": "" },
+      { "title": "Metamask login", "description": "" },
+      { "title": "Cryptocurrency", "description": "" },
+      { "title": "P2P", "description": "" },
+      { "title": "Create Transaction", "description": "" },
+      { "title": "Multi-chain", "description": "" },
+      { "title": "Multi-language", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development of a cryptocurrency p2p exchange platform.",
-      "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
+      "anonce": "Desarrollo de una plataforma p2p para el intercambio de criptomonedas.",
+      "description": "Desarrollo de una plataforma de intercambio de criptomonedas. En 2020, la plataforma tenía la primera versión de la interfaz y era diferente de la actual. Se realizaron diversas mejoras en el código, la estructura y el diseño del proyecto. Las principales secciones del desarrollo estaban orientadas al lanzamiento de la plataforma; su evolución posterior se convirtió en una dirección independiente dentro de la empresa.",
       "features": [
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Metamask login",
-          "description": ""
-        },
-        {
-          "title": "Cryptocurrency",
-          "description": ""
-        },
-        {
-          "title": "P2P",
-          "description": ""
-        },
-        {
-          "title": "Create Transaction",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        }
+        { "title": "Web3js", "description": "" },
+        { "title": "Inicio de sesión con Metamask", "description": "" },
+        { "title": "Criptomonedas", "description": "" },
+        { "title": "P2P", "description": "" },
+        { "title": "Crear transacción", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "Multi-idioma", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Разработка p2p платформы по обмену криптовалюты.",
-      "description": "Разработка платформы по обмену криптовалюты. В 2020 году платформа имела первы вариант интерфейса и отличается от нынешнего. Были проведены различные доработки в коде, структуре и дизайне проекта. Основные разделы разработки были на правлены на запуск платформы, ее последущее развитие выделилось в отдельное направление в компании.",
+      "anonce": "Разработка p2p-платформы для обмена криптовалюты.",
+      "description": "Разработка платформы для обмена криптовалюты. В 2020 году платформа имела первый вариант интерфейса и отличалась от нынешнего. Были проведены различные доработки в коде, структуре и дизайне проекта. Основные разделы разработки были направлены на запуск платформы, а её последующее развитие выделилось в отдельное направление компании.",
       "features": [
-        {
-          "title": "Web3js",
-          "description": ""
-        },
-        {
-          "title": "Metamask login",
-          "description": ""
-        },
-        {
-          "title": "Cryptocurrency",
-          "description": ""
-        },
-        {
-          "title": "P2P",
-          "description": ""
-        },
-        {
-          "title": "Create Transaction",
-          "description": ""
-        },
-        {
-          "title": "Multi-chain",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        }
+        { "title": "Web3js", "description": "" },
+        { "title": "Вход через Metamask", "description": "" },
+        { "title": "Криптовалюта", "description": "" },
+        { "title": "P2P", "description": "" },
+        { "title": "Создание транзакций", "description": "" },
+        { "title": "Мульти-чейн", "description": "" },
+        { "title": "Мультиязычность", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung einer P2P-Plattform zum Austausch von Kryptowährungen.",
+      "description": "Entwicklung einer Plattform für den Austausch von Kryptowährungen. Im Jahr 2020 hatte die Plattform die erste Version der Benutzeroberfläche und unterschied sich von der aktuellen. Es wurden verschiedene Verbesserungen am Code, an der Struktur und am Design des Projekts vorgenommen. Die Hauptteile der Entwicklung waren auf den Start der Plattform ausgerichtet; ihre weitere Entwicklung wurde zu einer eigenen Richtung im Unternehmen.",
+      "features": [
+        { "title": "Web3js", "description": "" },
+        { "title": "Metamask-Anmeldung", "description": "" },
+        { "title": "Kryptowährungen", "description": "" },
+        { "title": "P2P", "description": "" },
+        { "title": "Transaktion erstellen", "description": "" },
+        { "title": "Multi-Chain", "description": "" },
+        { "title": "Mehrsprachigkeit", "description": "" }
       ]
     }
   }

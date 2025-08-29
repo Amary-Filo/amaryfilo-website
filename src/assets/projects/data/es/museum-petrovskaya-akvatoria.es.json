@@ -5,8 +5,8 @@
   "category": [
     "cms"
   ],
-  "anonce": "Development and maintenance of the museum website. Lots of pages, interactive maps, ticketing and multilingual.",
-  "description": "Development and maintenance of the site of the Perovskaya Aquatoria Museum. It was necessary to implement an interactive map of the museum, online ticket orders, a poster, events, various navigation for visitors, a large selection of excursions and a photo / video gallery.",
+  "anonce": "Desarrollo y mantenimiento del sitio web del museo. Muchas páginas, mapas interactivos, venta de entradas y soporte multilingüe.",
+  "description": "Desarrollo y mantenimiento del sitio del Museo Petrovskaya Akvatoria. Fue necesario implementar un mapa interactivo del museo, pedidos de entradas en línea, cartelera, eventos, diferentes opciones de navegación para los visitantes, una gran selección de excursiones y una galería de fotos y videos.",
   "logo": "museum-petrovskaya-akvatoria-logo",
   "instruments": [
     {
@@ -82,7 +82,7 @@
       "description": ""
     },
     {
-      "title": "Tikets",
+      "title": "Tickets",
       "description": ""
     },
     {

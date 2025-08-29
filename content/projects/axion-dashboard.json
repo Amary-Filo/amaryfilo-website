@@ -9,41 +9,13 @@
     "anonce": "Development of a project to manage the balance of the Axion cryptocurrency.",
     "description": "Development of a project to manage the balance of the Axion cryptocurrency from scratch using Angular. Many different charts written from scratch, working with API and creating MultiAccount via web3 or MetaMask. Block of news and rates. Two kinds of color theme: dark and light.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "Metamask",
-        "color": "",
-        "title": "MM"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "rest",
-        "color": "",
-        "title": "REST"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "Metamask", "color": "", "title": "MM" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "rest", "color": "", "title": "REST" }
     ],
     "logo": "axion-dashboard-logo",
     "images": [],
@@ -64,127 +36,61 @@
       }
     ],
     "features": [
-      {
-        "title": "Smart Contracts",
-        "description": ""
-      },
-      {
-        "title": "Themes",
-        "description": ""
-      },
-      {
-        "title": "Claim",
-        "description": ""
-      },
-      {
-        "title": "Deposit (Staking)",
-        "description": ""
-      },
-      {
-        "title": "Auction",
-        "description": ""
-      },
-      {
-        "title": "Swap",
-        "description": ""
-      },
-      {
-        "title": "Wallets",
-        "description": ""
-      },
-      {
-        "title": "Rest API",
-        "description": ""
-      },
-      {
-        "title": "Metamask",
-        "description": ""
-      }
+      { "title": "Smart Contracts", "description": "" },
+      { "title": "Themes", "description": "" },
+      { "title": "Claim", "description": "" },
+      { "title": "Deposit (Staking)", "description": "" },
+      { "title": "Auction", "description": "" },
+      { "title": "Swap", "description": "" },
+      { "title": "Wallets", "description": "" },
+      { "title": "Rest API", "description": "" },
+      { "title": "Metamask", "description": "" }
     ]
   },
   "data": {
-    "es": {
-      "anonce": "Development of a project to manage the balance of the Axion cryptocurrency.",
-      "description": "Development of a project to manage the balance of the Axion cryptocurrency from scratch using Angular. Many different charts written from scratch, working with API and creating MultiAccount via web3 or MetaMask. Block of news and rates. Two kinds of color theme: dark and light.",
-      "features": [
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        },
-        {
-          "title": "Themes",
-          "description": ""
-        },
-        {
-          "title": "Claim",
-          "description": ""
-        },
-        {
-          "title": "Deposit (Staking)",
-          "description": ""
-        },
-        {
-          "title": "Auction",
-          "description": ""
-        },
-        {
-          "title": "Swap",
-          "description": ""
-        },
-        {
-          "title": "Wallets",
-          "description": ""
-        },
-        {
-          "title": "Rest API",
-          "description": ""
-        },
-        {
-          "title": "Metamask",
-          "description": ""
-        }
-      ]
-    },
     "ru": {
       "anonce": "Разработка проекта по управлению балансом криптовалюты Axion.",
-      "description": "Разработка проекта по управлению балансом криптовалюты Axion с нуля на Angular. Множество различных графиков написанных с нуля, работа с API и создание MultiAccount через web3 или MetaMask. Блок новостей и ставок. Два вида цветовой темы: темная и светлая.",
+      "description": "Разработка проекта по управлению балансом криптовалюты Axion с нуля на Angular. Множество различных графиков, написанных с нуля, работа с API и создание MultiAccount через web3 или MetaMask. Блок новостей и курсов. Две цветовые темы: тёмная и светлая.",
       "features": [
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        },
-        {
-          "title": "Themes",
-          "description": ""
-        },
-        {
-          "title": "Claim",
-          "description": ""
-        },
-        {
-          "title": "Deposit (Staking)",
-          "description": ""
-        },
-        {
-          "title": "Auction",
-          "description": ""
-        },
-        {
-          "title": "Swap",
-          "description": ""
-        },
-        {
-          "title": "Wallets",
-          "description": ""
-        },
-        {
-          "title": "Rest API",
-          "description": ""
-        },
-        {
-          "title": "Metamask",
-          "description": ""
-        }
+        { "title": "Смарт-контракты", "description": "" },
+        { "title": "Темы", "description": "" },
+        { "title": "Клейм", "description": "" },
+        { "title": "Депозит (Staking)", "description": "" },
+        { "title": "Аукцион", "description": "" },
+        { "title": "Обмен (Swap)", "description": "" },
+        { "title": "Кошельки", "description": "" },
+        { "title": "Rest API", "description": "" },
+        { "title": "Metamask", "description": "" }
+      ]
+    },
+    "es": {
+      "anonce": "Desarrollo de un proyecto para gestionar el saldo de la criptomoneda Axion.",
+      "description": "Desarrollo de un proyecto para gestionar el saldo de la criptomoneda Axion desde cero usando Angular. Muchos gráficos diferentes escritos desde cero, trabajo con API y creación de MultiAccount mediante web3 o MetaMask. Bloque de noticias y tipos de cambio. Dos tipos de temas de color: oscuro y claro.",
+      "features": [
+        { "title": "Contratos inteligentes", "description": "" },
+        { "title": "Temas", "description": "" },
+        { "title": "Reclamo (Claim)", "description": "" },
+        { "title": "Depósito (Staking)", "description": "" },
+        { "title": "Subasta", "description": "" },
+        { "title": "Intercambio (Swap)", "description": "" },
+        { "title": "Carteras", "description": "" },
+        { "title": "Rest API", "description": "" },
+        { "title": "Metamask", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung eines Projekts zur Verwaltung des Guthabens der Axion-Kryptowährung.",
+      "description": "Entwicklung eines Projekts zur Verwaltung des Guthabens der Axion-Kryptowährung von Grund auf mit Angular. Viele verschiedene Diagramme wurden von Grund auf neu erstellt, Arbeit mit API und Erstellung von MultiAccount über web3 oder MetaMask. Nachrichten- und Kursblock. Zwei Farbthemen: dunkel und hell.",
+      "features": [
+        { "title": "Smart Contracts", "description": "" },
+        { "title": "Themen", "description": "" },
+        { "title": "Claim", "description": "" },
+        { "title": "Einzahlung (Staking)", "description": "" },
+        { "title": "Auktion", "description": "" },
+        { "title": "Tausch (Swap)", "description": "" },
+        { "title": "Wallets", "description": "" },
+        { "title": "Rest API", "description": "" },
+        { "title": "Metamask", "description": "" }
       ]
     }
   }

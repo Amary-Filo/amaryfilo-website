@@ -1,6 +1,6 @@
 {
   "slug": "photographers-personal-website",
-  "title": "Photographer's personal website ✨",
+  "title": "Личный сайт фотографа ✨",
   "date": "2023-04-29",
   "category": [
     "web",
@@ -8,7 +8,7 @@
     "blog"
   ],
   "thumbnail": "photographers-personal-website-thumb",
-  "description": "Personal website of a professional photographer for publishing works. In addition to works, contacts are indicated, price list for photo shoots and photographer skills.",
+  "description": "Личный сайт профессионального фотографа для публикации работ. Помимо работ указаны контакты, прайс-лист на фотосессии и навыки фотографа.",
   "images": [
     "photographers-personal-website-1",
     "photographers-personal-website-2",

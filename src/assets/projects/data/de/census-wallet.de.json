@@ -8,8 +8,8 @@
     "crypto",
     "ionic"
   ],
-  "anonce": "Development of an application Census Wallet to provide connect user accounts to one wallet.",
-  "description": "Development of an application Census Wallet to provide connect user accounts to one wallet and create transactions. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service. Integration Tangem SDK for NFC scanner via Custom Cordova plugin.",
+  "anonce": "Entwicklung der Anwendung Census Wallet, um Benutzerkonten mit einer einzigen Wallet zu verbinden.",
+  "description": "Entwicklung der Anwendung Census Wallet, um Benutzerkonten mit einer einzigen Wallet zu verbinden und Transaktionen zu erstellen. Hinzufügen verschiedener Module und ein komplettes Redesign. Verbesserungen und Anbindung der API für den vollständigen Betrieb der Anwendung. Aktualisierung der Apps im App Store und Play Market. Entwicklung des Serverteils der Wallet. Integration von Kryptowährungen über den Moonpay-Dienst. Integration des Tangem SDK für den NFC-Scanner über ein benutzerdefiniertes Cordova-Plugin.",
   "logo": "census-wallet-logo",
   "instruments": [
     {

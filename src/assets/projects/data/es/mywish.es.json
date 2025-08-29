@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Finalization of the project for the creation of smart contracts.",
-  "description": "Finalization of the project for the creation of smart contracts. Adding various information. The project is written in Angular 1 version, it is difficult to maintain and add new modules.",
+  "anonce": "Finalización del proyecto para la creación de contratos inteligentes.",
+  "description": "Finalización del proyecto para la creación de contratos inteligentes. Adición de diversa información. El proyecto está escrito en Angular versión 1, lo que dificulta su mantenimiento y la incorporación de nuevos módulos.",
   "logo": "mywish-logo",
   "instruments": [
     {

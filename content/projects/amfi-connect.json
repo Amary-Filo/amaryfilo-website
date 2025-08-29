@@ -6,24 +6,12 @@
     "title": "AMFI Connect"
   },
   "base": {
-    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
-    "description": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extensions or mobile application and WalletConnect service by scanning Wallet QR-code.",
+    "description": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extensions or mobile application and WalletConnect service by scanning Wallet QR-code.",
     "instruments": [
-      {
-        "icon": "rxjs",
-        "color": "",
-        "title": "RxJs"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "npm",
-        "color": "",
-        "title": "NPM"
-      }
+      { "icon": "rxjs", "color": "", "title": "RxJs" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "npm", "color": "", "title": "NPM" }
     ],
     "logo": "amfi-connect-logo",
     "images": [],
@@ -44,127 +32,61 @@
       }
     ],
     "features": [
-      {
-        "title": "Connect any blockchains",
-        "description": ""
-      },
-      {
-        "title": "Transactions",
-        "description": ""
-      },
-      {
-        "title": "Networks",
-        "description": ""
-      },
-      {
-        "title": "Events",
-        "description": ""
-      },
-      {
-        "title": "WalletConnect",
-        "description": ""
-      },
-      {
-        "title": "Customizable",
-        "description": ""
-      },
-      {
-        "title": "Easy connect",
-        "description": ""
-      },
-      {
-        "title": "NPM package",
-        "description": ""
-      },
-      {
-        "title": "OpenSource",
-        "description": ""
-      }
+      { "title": "Connect any blockchains", "description": "" },
+      { "title": "Transactions", "description": "" },
+      { "title": "Networks", "description": "" },
+      { "title": "Events", "description": "" },
+      { "title": "WalletConnect", "description": "" },
+      { "title": "Customizable", "description": "" },
+      { "title": "Easy connect", "description": "" },
+      { "title": "NPM package", "description": "" },
+      { "title": "OpenSource", "description": "" }
     ]
   },
   "data": {
-    "es": {
-      "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
-      "description": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "ru": {
+      "anonce": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
+      "description": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
       "features": [
-        {
-          "title": "Connect any blockchains",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Networks",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "WalletConnect",
-          "description": ""
-        },
-        {
-          "title": "Customizable",
-          "description": ""
-        },
-        {
-          "title": "Easy connect",
-          "description": ""
-        },
-        {
-          "title": "NPM package",
-          "description": ""
-        },
-        {
-          "title": "OpenSource",
-          "description": ""
-        }
+        { "title": "Подключение любых блокчейнов", "description": "" },
+        { "title": "Транзакции", "description": "" },
+        { "title": "Сети", "description": "" },
+        { "title": "События", "description": "" },
+        { "title": "WalletConnect", "description": "" },
+        { "title": "Кастомизация", "description": "" },
+        { "title": "Лёгкое подключение", "description": "" },
+        { "title": "Пакет NPM", "description": "" },
+        { "title": "OpenSource", "description": "" }
       ]
     },
-    "ru": {
-      "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
-      "description": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+    "es": {
+      "anonce": "Conecta tu billetera cripto usando las extensiones de navegador WalletLink, KardiaChain, MetaMask o la aplicación móvil y el servicio WalletConnect escaneando el código QR de la billetera.",
+      "description": "Conecta tu billetera cripto usando las extensiones de navegador WalletLink, KardiaChain, MetaMask o la aplicación móvil y el servicio WalletConnect escaneando el código QR de la billetera.",
       "features": [
-        {
-          "title": "Connect any blockchains",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Networks",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "WalletConnect",
-          "description": ""
-        },
-        {
-          "title": "Customizable",
-          "description": ""
-        },
-        {
-          "title": "Easy connect",
-          "description": ""
-        },
-        {
-          "title": "NPM package",
-          "description": ""
-        },
-        {
-          "title": "OpenSource",
-          "description": ""
-        }
+        { "title": "Conectar cualquier blockchain", "description": "" },
+        { "title": "Transacciones", "description": "" },
+        { "title": "Redes", "description": "" },
+        { "title": "Eventos", "description": "" },
+        { "title": "WalletConnect", "description": "" },
+        { "title": "Personalizable", "description": "" },
+        { "title": "Conexión fácil", "description": "" },
+        { "title": "Paquete NPM", "description": "" },
+        { "title": "Código abierto", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Verbinden Sie Ihre Krypto-Wallet mit den Browser-Erweiterungen WalletLink, KardiaChain, MetaMask oder der mobilen App und dem WalletConnect-Dienst, indem Sie den QR-Code der Wallet scannen.",
+      "description": "Verbinden Sie Ihre Krypto-Wallet mit den Browser-Erweiterungen WalletLink, KardiaChain, MetaMask oder der mobilen App und dem WalletConnect-Dienst, indem Sie den QR-Code der Wallet scannen.",
+      "features": [
+        { "title": "Verbindung mit beliebigen Blockchains", "description": "" },
+        { "title": "Transaktionen", "description": "" },
+        { "title": "Netzwerke", "description": "" },
+        { "title": "Ereignisse", "description": "" },
+        { "title": "WalletConnect", "description": "" },
+        { "title": "Anpassbar", "description": "" },
+        { "title": "Einfache Verbindung", "description": "" },
+        { "title": "NPM-Paket", "description": "" },
+        { "title": "OpenSource", "description": "" }
       ]
     }
   }

@@ -3,8 +3,8 @@
     "slug": "sitemap-website",
     "date": "2023-04-29",
     "updates": [],
-    "title": "",
-    "anonce": "",
+    "title": "Sitemap der Website",
+    "anonce": "Was ist eine Sitemap und wie richtet man sie ein. Gängige Praktiken und Beispieldateien.",
     "thumbnail": "",
     "category": "optimization",
     "category_list": [
@@ -25,8 +25,8 @@
     "slug": "web-servers-apache-nginx",
     "date": "2023-03-03",
     "updates": [],
-    "title": "",
-    "anonce": "",
+    "title": "Webserver: Apache und Nginx erklärt",
+    "anonce": "Einrichtung und Konfiguration der Webserver Apache und Nginx für eine Website.",
     "thumbnail": "",
     "category": "optimization",
     "category_list": [
@@ -50,8 +50,8 @@
     "slug": "install-homebrew",
     "date": "2022-12-18",
     "updates": [],
-    "title": "",
-    "anonce": "",
+    "title": "Homebrew auf macOS, Apple Silicon und Windows installieren",
+    "anonce": "Homebrew ist ein leichter Paketmanager für macOS, Linux und Windows (über WSL), der die Installation von Software, die Verwaltung von Diensten und die Entwicklung erleichtert.",
     "thumbnail": "",
     "category": "tools",
     "category_list": [
@@ -76,8 +76,8 @@
     "slug": "install-postgresql-macos-apple-silicon-m1",
     "date": "2022-11-14",
     "updates": [],
-    "title": "",
-    "anonce": "",
+    "title": "PostgreSQL auf macOS installieren (Apple Silicon m1/m2)",
+    "anonce": "Wie man PostgreSQL auf macOS (einschließlich Apple Silicon M1/M2) installiert und mit Anwendungen verbindet.",
     "thumbnail": "",
     "category": "database",
     "category_list": [

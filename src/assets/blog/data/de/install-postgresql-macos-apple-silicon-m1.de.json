@@ -1,9 +1,9 @@
 {
   "slug": "install-postgresql-macos-apple-silicon-m1",
-  "title": "",
+  "title": "PostgreSQL auf macOS installieren (Apple Silicon m1/m2)",
   "date": "2022-11-14",
   "updates": [],
-  "anonce": "",
+  "anonce": "Wie man PostgreSQL auf macOS (einschließlich Apple Silicon M1/M2) installiert und mit Anwendungen verbindet.",
   "thumbnail": "",
   "category": "database",
   "category_list": [
@@ -24,7 +24,7 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Einführung",
       "level": 2
     },
     {
@@ -34,12 +34,12 @@
     },
     {
       "id": "Through-the-installer",
-      "title": "Through the installer",
+      "title": "Über den Installer",
       "level": 3
     },
     {
       "id": "Through-Homebrew",
-      "title": "Through Homebrew",
+      "title": "Über Homebrew",
       "level": 3
     },
     {
@@ -49,49 +49,49 @@
     },
     {
       "id": "Errors",
-      "title": "Errors",
+      "title": "Fehler",
       "level": 2
     },
     {
       "id": "Bootstrap-failed-5",
-      "title": "Bootstrap failed: 5: Input/output error",
+      "title": "Bootstrap failed: 5: Ein-/Ausgabe-Fehler",
       "level": 3
     },
     {
       "id": "Commands",
-      "title": "Commands",
+      "title": "Befehle",
       "level": 2
     },
     {
       "id": "Authorization",
-      "title": "Authorization",
+      "title": "Autorisierung",
       "level": 3
     },
     {
       "id": "Databases",
-      "title": "Databases",
+      "title": "Datenbanken",
       "level": 3
     },
     {
       "id": "Users",
-      "title": "Users",
+      "title": "Benutzer",
       "level": 3
     },
     {
       "id": "Tables",
-      "title": "Tables",
+      "title": "Tabellen",
       "level": 3
     },
     {
       "id": "Connecting-to-a-database-in-projects",
-      "title": "Connecting to a database in projects",
+      "title": "Verbindung zu Datenbanken in Projekten",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Einführung",
       "id": "Introduction"
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "type": "h3",
-      "text": "Through the installer",
+      "text": "Über den Installer",
       "id": "Through-the-installer"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
       "type": "h3",
-      "text": "Through Homebrew",
+      "text": "Über Homebrew",
       "id": "Through-Homebrew"
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "type": "h2",
-      "text": "Errors",
+      "text": "Fehler",
       "id": "Errors"
     },
     {
@@ -241,7 +241,7 @@
     },
     {
       "type": "h3",
-      "text": "Bootstrap failed: 5: Input/output error",
+      "text": "Bootstrap failed: 5: Ein-/Ausgabe-Fehler",
       "id": "Bootstrap-failed-5"
     },
     {
@@ -254,7 +254,7 @@
     },
     {
       "type": "h2",
-      "text": "Commands",
+      "text": "Befehle",
       "id": "Commands"
     },
     {
@@ -270,7 +270,7 @@
     },
     {
       "type": "h3",
-      "text": "Authorization",
+      "text": "Autorisierung",
       "id": "Authorization"
     },
     {
@@ -283,7 +283,7 @@
     },
     {
       "type": "h3",
-      "text": "Databases",
+      "text": "Datenbanken",
       "id": "Databases"
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "type": "h3",
-      "text": "Users",
+      "text": "Benutzer",
       "id": "Users"
     },
     {
@@ -328,7 +328,7 @@
     },
     {
       "type": "h3",
-      "text": "Tables",
+      "text": "Tabellen",
       "id": "Tables"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "type": "h2",
-      "text": "Connecting to a database in projects",
+      "text": "Verbindung zu Datenbanken in Projekten",
       "id": "Connecting-to-a-database-in-projects"
     },
     {

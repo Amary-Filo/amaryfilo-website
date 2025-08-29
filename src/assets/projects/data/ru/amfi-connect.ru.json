@@ -6,8 +6,8 @@
     "crypto",
     "package"
   ],
-  "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
-  "description": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+  "anonce": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
+  "description": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
   "logo": "amfi-connect-logo",
   "instruments": [
     {

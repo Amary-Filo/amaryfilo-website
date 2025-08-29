@@ -7,7 +7,7 @@
       "package"
     ],
     "title": "AMFI Connect",
-    "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+    "anonce": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
     "logo": "amfi-connect-logo",
     "instruments": [
       {
@@ -34,7 +34,7 @@
       "cms"
     ],
     "title": "Rocknblock Website",
-    "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества целевых страниц, SEO оптимизация и разработка блога.",
+    "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества посадочных страниц, SEO-оптимизация и разработка блога.",
     "logo": "rocknblock-website-logo",
     "instruments": [
       {
@@ -60,7 +60,7 @@
       {
         "icon": "html5",
         "color": "",
-        "title": "THML"
+        "title": "HTML"
       },
       {
         "icon": "pug",
@@ -127,7 +127,7 @@
       "crypto"
     ],
     "title": "Ducatus website",
-    "anonce": "Разработка официального веб сайта блокчена Ducatus.",
+    "anonce": "Разработка официального веб-сайта блокчейна Ducatus.",
     "logo": "ducatus-logo",
     "instruments": [
       {
@@ -174,7 +174,7 @@
       "crypto"
     ],
     "title": "Minto",
-    "anonce": "Платформа для взаимодействия с BTCMT токеном: покупка, депозит, обмен и вывод со смарт контрактов.",
+    "anonce": "Платформа для взаимодействия с токеном BTCMT: покупка, депозит, обмен и вывод из смарт-контрактов.",
     "logo": "minto-logo",
     "instruments": [
       {
@@ -338,7 +338,7 @@
       "crypto"
     ],
     "title": "Algovest",
-    "anonce": "Крипто-платформа для обмена, вложения и вывода токенов со смарт контрактов.",
+    "anonce": "Криптоплатформа для обмена, инвестирования и вывода токенов из смарт-контрактов.",
     "logo": "algovest-logo",
     "instruments": [
       {
@@ -433,7 +433,7 @@
       "crypto"
     ],
     "title": "Quras+ Wallet Client",
-    "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android. ",
+    "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android.",
     "logo": "quras-wallet-client-logo",
     "instruments": [
       {
@@ -511,7 +511,7 @@
       "crypto"
     ],
     "title": "MyWish",
-    "anonce": "Доработка проекта по созданию смарт контрактов.",
+    "anonce": "Доработка проекта по созданию смарт-контрактов.",
     "logo": "mywish-logo",
     "instruments": [
       {
@@ -549,7 +549,7 @@
       "crypto"
     ],
     "title": "Axion",
-    "anonce": "Разработка веб приложения для обмена старых Axion токенов на новые.",
+    "anonce": "Разработка веб-приложения для обмена старых Axion токенов на новые через Claim.",
     "logo": "axion-logo",
     "instruments": [
       {
@@ -602,7 +602,7 @@
       "crypto"
     ],
     "title": "Rubic Exchange",
-    "anonce": "Разработка p2p платформы по обмену криптовалюты.",
+    "anonce": "Разработка p2p-платформы для обмена криптовалюты.",
     "logo": "rubic-exchange-logo",
     "instruments": [
       {
@@ -690,7 +690,7 @@
       "vue"
     ],
     "title": "Gravity Hub",
-    "anonce": "Верстка сайта Gravity Hub и посадка на NuxtJs.",
+    "anonce": "Верстка сайта Gravity Hub и запуск на NuxtJs.",
     "logo": "gravity-hub-logo",
     "instruments": [
       {
@@ -820,7 +820,7 @@
       "landing"
     ],
     "title": "Wallarm",
-    "anonce": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов.",
+    "anonce": "Доработка корпоративного сайта. Создание новых страниц и интеграция сторонних сервисов.",
     "logo": "wallarm-logo",
     "instruments": [
       {
@@ -856,70 +856,13 @@
     ]
   },
   {
-    "slug": "rocknblock",
-    "date": "2019-05-11",
-    "category": [
-      "Website"
-    ],
-    "title": "Rock'n'Block Website",
-    "anonce": "Corporate website with a variety of forms, landings and integrations.",
-    "logo": "rocknblock-logo",
-    "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "gulp",
-        "color": "",
-        "title": "Gulp"
-      },
-      {
-        "icon": "wintercms",
-        "color": "",
-        "title": "Winter CMS"
-      },
-      {
-        "icon": "laravel",
-        "color": "",
-        "title": "Laravel"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "pug",
-        "color": "",
-        "title": "Pug"
-      },
-      {
-        "icon": "seo",
-        "color": "",
-        "title": "SEO"
-      }
-    ]
-  },
-  {
     "slug": "test-project-stars",
     "date": "2019-03-06",
     "category": [
       "mobile"
     ],
-    "title": "[Тестовый проект] Stars",
-    "anonce": "Тестовый проект на Swift UI с подключением Google Firebase.",
+    "title": "[TEST Project] Stars",
+    "anonce": "Тестовый проект на SwiftUI с интеграцией Google Firebase.",
     "logo": "test-project-stars-logo",
     "instruments": [
       {
@@ -946,7 +889,7 @@
       "cms"
     ],
     "title": "Performance Group",
-    "anonce": "Разработка и ведения сайта интернет рекламного агентства полного цикла.",
+    "anonce": "Разработка и поддержка сайта интернет-рекламного агентства полного цикла.",
     "logo": "performance-group-logo",
     "instruments": [
       {
@@ -993,7 +936,7 @@
       "landing"
     ],
     "title": "New Year Landing",
-    "anonce": "Лендинг созданный под новогоднее поздравление от группы компаний.",
+    "anonce": "Лендинг, созданный для новогоднего поздравления от группы компаний.",
     "logo": "new-year-landing-logo",
     "instruments": [
       {
@@ -1072,7 +1015,7 @@
       "cms"
     ],
     "title": "Petrovskaya Akvatoria",
-    "anonce": "Разработка и ведение сайта музея. Множество страниц, интерактивные карты, заказ билетов и мультиязычность.",
+    "anonce": "Разработка и поддержка сайта музея. Множество страниц, интерактивные карты, заказ билетов и мультиязычность.",
     "logo": "museum-petrovskaya-akvatoria-logo",
     "instruments": [
       {
@@ -1156,7 +1099,7 @@
       "vue"
     ],
     "title": "[TEST Project] Books",
-    "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку формы.",
+    "anonce": "Тестовый проект, демонстрирующий работу с локальным хранилищем (добавление/редактирование/удаление) и проверку форм.",
     "logo": "test-project-books-logo",
     "instruments": [
       {
@@ -1226,7 +1169,7 @@
       "cms"
     ],
     "title": "Online shop recuperators",
-    "anonce": "Онлайн магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
+    "anonce": "Онлайн-магазин по продаже рекуператоров, бризеров, вытяжных вентиляторов, кондиционеров и очистителей/увлажнителей.",
     "logo": "online-shop-recuperators-logo",
     "instruments": [
       {

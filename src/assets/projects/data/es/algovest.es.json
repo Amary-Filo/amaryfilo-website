@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Crypto platform for exchanging, investing and withdrawing tokens from smart contracts.",
-  "description": "Implementation of the Algovest Staking project from scratch. Working with the blockchain: transactions, getting a list of Stake requests, Withdraw tokens after the expiration of time. Working with a user account through MetaMask, but in a later version, the AMFI Connect package was added to implement account login from any application and device.",
+  "anonce": "Plataforma cripto para intercambiar, invertir y retirar tokens de contratos inteligentes.",
+  "description": "Implementación del proyecto Algovest Staking desde cero. Trabajo con la blockchain: transacciones, obtención de la lista de solicitudes de Stake y retiro de tokens al expirar el tiempo. Gestión de la cuenta de usuario a través de MetaMask, y en una versión posterior se añadió el paquete AMFI Connect para iniciar sesión desde cualquier aplicación y dispositivo.",
   "logo": "algovest-logo",
   "instruments": [
     {

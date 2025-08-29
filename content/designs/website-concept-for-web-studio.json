@@ -24,8 +24,16 @@
   },
   "data": {
     "ru": {
-      "title": "Website concept for a web studio",
-      "description": "Design concept for a web studio website in dark colors and minimalist design. The main task was to focus the company's projects on the main screen."
+      "title": "Концепт сайта для веб-студии",
+      "description": "Концепт дизайна сайта веб-студии в темных тонах и минималистичном стиле. Основная задача — сосредоточить внимание на проектах компании на главном экране."
+    },
+    "es": {
+      "title": "Concepto de sitio web para un estudio web",
+      "description": "Concepto de diseño para un sitio web de estudio web en colores oscuros y con un estilo minimalista. La tarea principal era destacar los proyectos de la empresa en la pantalla principal."
+    },
+    "de": {
+      "title": "Website-Konzept für ein Webstudio",
+      "description": "Designkonzept für die Website eines Webstudios in dunklen Farben und minimalistischem Stil. Die Hauptaufgabe bestand darin, die Projekte des Unternehmens auf dem Hauptbildschirm hervorzuheben."
     }
   }
 }

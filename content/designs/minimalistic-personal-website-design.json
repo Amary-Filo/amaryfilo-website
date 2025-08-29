@@ -27,8 +27,16 @@
   },
   "data": {
     "ru": {
-      "title": "Minimalistic personal website design",
-      "description": "Professional personal website template for blogging, personal information and social networks."
+      "title": "Минималистичный дизайн персонального сайта",
+      "description": "Профессиональный шаблон персонального сайта для ведения блога, размещения личной информации и ссылок на социальные сети."
+    },
+    "es": {
+      "title": "Diseño minimalista de sitio web personal",
+      "description": "Plantilla profesional de sitio web personal para blogs, información personal y redes sociales."
+    },
+    "de": {
+      "title": "Minimalistisches persönliches Webseitendesign",
+      "description": "Professionelle persönliche Website-Vorlage für Blogging, persönliche Informationen und soziale Netzwerke."
     }
   }
 }

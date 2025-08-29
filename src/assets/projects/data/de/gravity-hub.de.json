@@ -6,8 +6,8 @@
     "landing",
     "vue"
   ],
-  "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
-  "description": "Layout of the Gravity Hub website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+  "anonce": "Layout der Gravity Hub-Website und Umsetzung mit NuxtJs.",
+  "description": "Layout der Gravity Hub-Website und Umsetzung mit NuxtJs. Erstellung eines Formulars für Feedback, Navigation durch die Seiten der Website und Verwaltung von Events.",
   "logo": "gravity-hub-logo",
   "instruments": [
     {

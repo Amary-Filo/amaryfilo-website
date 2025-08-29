@@ -9,31 +9,11 @@
     "anonce": "Website with information about the Centurion project.",
     "description": "Website with information about the Centurion project written from scratch. Optimization of project pages for SEO.",
     "instruments": [
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "pug",
-        "color": "",
-        "title": "Pug"
-      }
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "pug", "color": "", "title": "Pug" }
     ],
     "logo": "ducatus-centurion-logo",
     "images": [
@@ -74,67 +54,41 @@
       }
     ],
     "features": [
-      {
-        "title": "Adaptive",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      },
-      {
-        "title": "Modules",
-        "description": ""
-      },
-      {
-        "title": "Pages",
-        "description": ""
-      }
+      { "title": "Adaptive", "description": "" },
+      { "title": "SEO", "description": "" },
+      { "title": "Modules", "description": "" },
+      { "title": "Pages", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Website with information about the Centurion project.",
-      "description": "Website with information about the Centurion project written from scratch. Optimization of project pages for SEO.",
+      "anonce": "Sitio web con información sobre el proyecto Centurion.",
+      "description": "Sitio web con información sobre el proyecto Centurion desarrollado desde cero. Optimización de las páginas del proyecto para SEO.",
       "features": [
-        {
-          "title": "Adaptive",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        }
+        { "title": "Adaptativo", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Módulos", "description": "" },
+        { "title": "Páginas", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Сайт с информацией о проекте Centurion.",
       "description": "Сайт с информацией о проекте Centurion написанный с нуля. Оптимизация страниц проекта под SEO.",
       "features": [
-        {
-          "title": "Adaptive",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "Pages",
-          "description": ""
-        }
+        { "title": "Адаптивность", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Модули", "description": "" },
+        { "title": "Страницы", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Webseite mit Informationen über das Centurion-Projekt.",
+      "description": "Webseite mit Informationen über das Centurion-Projekt, von Grund auf neu erstellt. Optimierung der Projektseiten für SEO.",
+      "features": [
+        { "title": "Adaptiv", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Module", "description": "" },
+        { "title": "Seiten", "description": "" }
       ]
     }
   }

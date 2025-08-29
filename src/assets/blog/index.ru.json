@@ -4,7 +4,7 @@
     "date": "2023-04-29",
     "updates": [],
     "title": "Карта сайта",
-    "anonce": "Что такое карта сайта и как ее настроить. обычная практика и примеры файлов.",
+    "anonce": "Что такое карта сайта и как её настроить. Общие практики и примеры файлов.",
     "thumbnail": "",
     "category": "optimization",
     "category_list": [
@@ -25,8 +25,8 @@
     "slug": "web-servers-apache-nginx",
     "date": "2023-03-03",
     "updates": [],
-    "title": "Серверная оптимизация сайта",
-    "anonce": "Установка и настройка сервера Apache и Nginx для сайта.",
+    "title": "Веб-серверы: Apache и Nginx объяснение",
+    "anonce": "Установка и настройка веб-сервера Apache и Nginx для сайта.",
     "thumbnail": "",
     "category": "optimization",
     "category_list": [
@@ -50,8 +50,8 @@
     "slug": "install-homebrew",
     "date": "2022-12-18",
     "updates": [],
-    "title": "Установка PostgreSQL на MacOS (Apple Silicon m1/m2)",
-    "anonce": "Как установить PostgreSQL на MacOS (Catalina/BigSur/Monterey/Ventura) с чипом Apple M1/M2.",
+    "title": "Как установить Homebrew на macOS, Apple Silicon и Windows",
+    "anonce": "Homebrew — это лёгкий пакетный менеджер для macOS, Linux и Windows (через WSL), который упрощает установку программ, управление сервисами и ускоряет разработку.",
     "thumbnail": "",
     "category": "tools",
     "category_list": [
@@ -76,8 +76,8 @@
     "slug": "install-postgresql-macos-apple-silicon-m1",
     "date": "2022-11-14",
     "updates": [],
-    "title": "Как установить Homebrew?",
-    "anonce": "Что такое Homebrew, для чего он нужен и как его установить под системы: macOS (Apple Silicon) и Windows.",
+    "title": "Установка PostgreSQL на macOS (Apple Silicon m1/m2)",
+    "anonce": "Как установить PostgreSQL на macOS (включая Apple Silicon M1/M2) и подключить его к вашим приложениям.",
     "thumbnail": "",
     "category": "database",
     "category_list": [

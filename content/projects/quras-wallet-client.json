@@ -7,33 +7,13 @@
   },
   "base": {
     "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
-    "description": "Server side of Quras Wallet+. Adding Quras blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+    "description": "Server side of Quras Wallet+. Adding Quras blockchain. Integration of various blockchains. Configuring server settings, updating packages. Creation of various APIs for the wallet. Updating packages in NPM.",
     "instruments": [
-      {
-        "icon": "nodejs",
-        "color": "",
-        "title": "NodeJS"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "rest",
-        "color": "",
-        "title": "REST"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "nginx",
-        "color": "",
-        "title": "Nginx"
-      }
+      { "icon": "nodejs", "color": "", "title": "NodeJS" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "rest", "color": "", "title": "REST" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "nginx", "color": "", "title": "Nginx" }
     ],
     "logo": "quras-wallet-client-logo",
     "images": [],
@@ -54,101 +34,60 @@
       }
     ],
     "features": [
-      {
-        "title": "Modules",
-        "description": ""
-      },
-      {
-        "title": "REST API",
-        "description": ""
-      },
-      {
-        "title": "Muti-chain",
-        "description": ""
-      },
-      {
-        "title": "Transactions",
-        "description": ""
-      },
-      {
-        "title": "HD Wallets",
-        "description": ""
-      },
-      {
-        "title": "Smart Contracts",
-        "description": ""
-      },
-      {
-        "title": "Custom interfaces for blockchains",
-        "description": ""
-      }
+      { "title": "Modules", "description": "" },
+      { "title": "REST API", "description": "" },
+      { "title": "Multi-chain", "description": "" },
+      { "title": "Transactions", "description": "" },
+      { "title": "HD Wallets", "description": "" },
+      { "title": "Smart Contracts", "description": "" },
+      { "title": "Custom interfaces for blockchains", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
-      "description": "Server side of Quras Wallet+. Adding Quras blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+      "anonce": "Parte del servidor de Quras Wallet+ para iOS/Web y Android.",
+      "description": "Parte del servidor de Quras Wallet+. Integración de varias blockchains. Configuración de los ajustes del servidor, actualización de paquetes. Creación de diferentes API para el monedero. Actualización de paquetes en NPM.",
       "features": [
+        { "title": "Módulos", "description": "" },
+        { "title": "REST API", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "Transacciones", "description": "" },
+        { "title": "Carteras HD", "description": "" },
+        { "title": "Contratos inteligentes", "description": "" },
         {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "REST API",
-          "description": ""
-        },
-        {
-          "title": "Muti-chain",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "HD Wallets",
-          "description": ""
-        },
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        },
-        {
-          "title": "Custom interfaces for blockchains",
+          "title": "Interfaces personalizadas para blockchains",
           "description": ""
         }
       ]
     },
     "ru": {
-      "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android. ",
-      "description": "Серверная часть кошелька Quras Wallet+. Добавление Quras блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+      "anonce": "Серверная часть кошелька Quras Wallet+ под iOS/Web и Android.",
+      "description": "Серверная часть Quras Wallet+. Интеграция различных блокчейнов. Настройка параметров сервера, обновление пакетов. Создание различных API для работы кошелька. Обновление пакетов в NPM.",
       "features": [
+        { "title": "Модули", "description": "" },
+        { "title": "REST API", "description": "" },
+        { "title": "Мульти-чейн", "description": "" },
+        { "title": "Транзакции", "description": "" },
+        { "title": "HD-кошельки", "description": "" },
+        { "title": "Смарт-контракты", "description": "" },
         {
-          "title": "Modules",
+          "title": "Пользовательские интерфейсы для блокчейнов",
           "description": ""
-        },
+        }
+      ]
+    },
+    "de": {
+      "anonce": "Server-Seite von Quras Wallet+ für iOS/Web und Android.",
+      "description": "Server-Seite von Quras Wallet+. Integration verschiedener Blockchains. Konfiguration der Servereinstellungen, Aktualisierung von Paketen. Erstellung verschiedener APIs für das Wallet. Aktualisierung von Paketen in NPM.",
+      "features": [
+        { "title": "Module", "description": "" },
+        { "title": "REST API", "description": "" },
+        { "title": "Multi-Chain", "description": "" },
+        { "title": "Transaktionen", "description": "" },
+        { "title": "HD-Wallets", "description": "" },
+        { "title": "Smart Contracts", "description": "" },
         {
-          "title": "REST API",
-          "description": ""
-        },
-        {
-          "title": "Muti-chain",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "HD Wallets",
-          "description": ""
-        },
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        },
-        {
-          "title": "Custom interfaces for blockchains",
+          "title": "Benutzerdefinierte Schnittstellen für Blockchains",
           "description": ""
         }
       ]

@@ -28,8 +28,16 @@
   },
   "data": {
     "ru": {
-      "title": "Headphones Landing Page",
-      "description": "Minimalistic Beats headphone sale page template. The page contains company news, a description of the headphones, an image gallery, and the products themselves with various marks."
+      "title": "Лендинг наушников",
+      "description": "Минималистичный шаблон страницы продажи наушников Beats. Страница содержит новости компании, описание наушников, галерею изображений и сами товары с различными метками."
+    },
+    "es": {
+      "title": "Página de aterrizaje de auriculares",
+      "description": "Plantilla minimalista de página de venta de auriculares Beats. La página incluye noticias de la empresa, una descripción de los auriculares, una galería de imágenes y los propios productos con varias marcas."
+    },
+    "de": {
+      "title": "Kopfhörer-Landingpage",
+      "description": "Minimalistische Vorlage für eine Verkaufsseite der Beats-Kopfhörer. Die Seite enthält Unternehmensnachrichten, eine Beschreibung der Kopfhörer, eine Bildergalerie und die Produkte selbst mit verschiedenen Markierungen."
     }
   }
 }

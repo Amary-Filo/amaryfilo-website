@@ -7,7 +7,7 @@
       "package"
     ],
     "title": "AMFI Connect",
-    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extensions or mobile application and WalletConnect service by scanning Wallet QR-code.",
     "logo": "amfi-connect-logo",
     "instruments": [
       {
@@ -60,7 +60,7 @@
       {
         "icon": "html5",
         "color": "",
-        "title": "THML"
+        "title": "HTML"
       },
       {
         "icon": "pug",
@@ -856,70 +856,13 @@
     ]
   },
   {
-    "slug": "rocknblock",
-    "date": "2019-05-11",
-    "category": [
-      "Website"
-    ],
-    "title": "Rock'n'Block Website",
-    "anonce": "Corporate website with a variety of forms, landings and integrations.",
-    "logo": "rocknblock-logo",
-    "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "gulp",
-        "color": "",
-        "title": "Gulp"
-      },
-      {
-        "icon": "wintercms",
-        "color": "",
-        "title": "Winter CMS"
-      },
-      {
-        "icon": "laravel",
-        "color": "",
-        "title": "Laravel"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "pug",
-        "color": "",
-        "title": "Pug"
-      },
-      {
-        "icon": "seo",
-        "color": "",
-        "title": "SEO"
-      }
-    ]
-  },
-  {
     "slug": "test-project-stars",
     "date": "2019-03-06",
     "category": [
       "mobile"
     ],
-    "title": "[Тестовый проект] Stars",
-    "anonce": "Test project on Swift UI with Google Firebase connection.",
+    "title": "[TEST Project] Stars",
+    "anonce": "Test project on SwiftUI with Google Firebase integration.",
     "logo": "test-project-stars-logo",
     "instruments": [
       {
@@ -1156,7 +1099,7 @@
       "vue"
     ],
     "title": "[TEST Project] Books",
-    "anonce": "Test project that are demonstrate work with local storage (add/edit/delete) and validate form.",
+    "anonce": "Test project that demonstrates work with local storage (add/edit/delete) and form validation.",
     "logo": "test-project-books-logo",
     "instruments": [
       {

@@ -1,9 +1,9 @@
 {
   "slug": "install-postgresql-macos-apple-silicon-m1",
-  "title": "",
+  "title": "Instalar PostgreSQL en macOS (Apple Silicon m1/m2)",
   "date": "2022-11-14",
   "updates": [],
-  "anonce": "",
+  "anonce": "Cómo instalar PostgreSQL en macOS (incluido Apple Silicon M1/M2) y conectarlo a tus aplicaciones.",
   "thumbnail": "",
   "category": "database",
   "category_list": [
@@ -24,22 +24,22 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Introducción",
       "level": 2
     },
     {
       "id": "Installation",
-      "title": "Installation",
+      "title": "Instalación",
       "level": 2
     },
     {
       "id": "Through-the-installer",
-      "title": "Through the installer",
+      "title": "A través del instalador",
       "level": 3
     },
     {
       "id": "Through-Homebrew",
-      "title": "Through Homebrew",
+      "title": "A través de Homebrew",
       "level": 3
     },
     {
@@ -49,49 +49,49 @@
     },
     {
       "id": "Errors",
-      "title": "Errors",
+      "title": "Errores",
       "level": 2
     },
     {
       "id": "Bootstrap-failed-5",
-      "title": "Bootstrap failed: 5: Input/output error",
+      "title": "Bootstrap failed: 5: Error de entrada/salida",
       "level": 3
     },
     {
       "id": "Commands",
-      "title": "Commands",
+      "title": "Comandos",
       "level": 2
     },
     {
       "id": "Authorization",
-      "title": "Authorization",
+      "title": "Autorización",
       "level": 3
     },
     {
       "id": "Databases",
-      "title": "Databases",
+      "title": "Bases de datos",
       "level": 3
     },
     {
       "id": "Users",
-      "title": "Users",
+      "title": "Usuarios",
       "level": 3
     },
     {
       "id": "Tables",
-      "title": "Tables",
+      "title": "Tablas",
       "level": 3
     },
     {
       "id": "Connecting-to-a-database-in-projects",
-      "title": "Connecting to a database in projects",
+      "title": "Conexión a bases de datos en proyectos",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Introducción",
       "id": "Introduction"
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "type": "h2",
-      "text": "Installation",
+      "text": "Instalación",
       "id": "Installation"
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "type": "h3",
-      "text": "Through the installer",
+      "text": "A través del instalador",
       "id": "Through-the-installer"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
       "type": "h3",
-      "text": "Through Homebrew",
+      "text": "A través de Homebrew",
       "id": "Through-Homebrew"
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "type": "h2",
-      "text": "Errors",
+      "text": "Errores",
       "id": "Errors"
     },
     {
@@ -241,7 +241,7 @@
     },
     {
       "type": "h3",
-      "text": "Bootstrap failed: 5: Input/output error",
+      "text": "Bootstrap failed: 5: Error de entrada/salida",
       "id": "Bootstrap-failed-5"
     },
     {
@@ -254,7 +254,7 @@
     },
     {
       "type": "h2",
-      "text": "Commands",
+      "text": "Comandos",
       "id": "Commands"
     },
     {
@@ -270,7 +270,7 @@
     },
     {
       "type": "h3",
-      "text": "Authorization",
+      "text": "Autorización",
       "id": "Authorization"
     },
     {
@@ -283,7 +283,7 @@
     },
     {
       "type": "h3",
-      "text": "Databases",
+      "text": "Bases de datos",
       "id": "Databases"
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "type": "h3",
-      "text": "Users",
+      "text": "Usuarios",
       "id": "Users"
     },
     {
@@ -328,7 +328,7 @@
     },
     {
       "type": "h3",
-      "text": "Tables",
+      "text": "Tablas",
       "id": "Tables"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "type": "h2",
-      "text": "Connecting to a database in projects",
+      "text": "Conexión a bases de datos en proyectos",
       "id": "Connecting-to-a-database-in-projects"
     },
     {

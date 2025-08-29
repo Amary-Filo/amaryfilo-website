@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Development of a project to manage the balance of the Axion cryptocurrency.",
-  "description": "Development of a project to manage the balance of the Axion cryptocurrency from scratch using Angular. Many different charts written from scratch, working with API and creating MultiAccount via web3 or MetaMask. Block of news and rates. Two kinds of color theme: dark and light.",
+  "anonce": "Desarrollo de un proyecto para gestionar el saldo de la criptomoneda Axion.",
+  "description": "Desarrollo de un proyecto para gestionar el saldo de la criptomoneda Axion desde cero usando Angular. Muchos gráficos diferentes escritos desde cero, trabajo con API y creación de MultiAccount mediante web3 o MetaMask. Bloque de noticias y tipos de cambio. Dos tipos de temas de color: oscuro y claro.",
   "logo": "axion-dashboard-logo",
   "instruments": [
     {

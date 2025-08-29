@@ -9,46 +9,14 @@
     "anonce": "Development of a web application for exchanging old Axions for new tokens via Claim.",
     "description": "Development of a web application for exchanging old Axions for new tokens via Claim. Creation of an auction system for late users, where % of the Claim amount is sent to a daily and weekly auction, where users can purchase tokens for Ethereum, which are subsequently blocked and issued after a certain time. Creation of a deposit system to increase the number of tokens and hold the token. The project went through three redesigns, there was a lot of work with the API and counting time, as well as tokens for exchange in WEI.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "rest",
-        "color": "",
-        "title": "REST"
-      },
-      {
-        "icon": "metamask",
-        "color": "",
-        "title": "MM"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "web3js", "color": "", "title": "Web3js" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "rest", "color": "", "title": "REST" },
+      { "icon": "metamask", "color": "", "title": "MM" }
     ],
     "logo": "axion-logo",
     "images": [
@@ -76,115 +44,57 @@
       }
     ],
     "features": [
-      {
-        "title": "Claim tokens",
-        "description": ""
-      },
-      {
-        "title": "Metamask login",
-        "description": ""
-      },
-      {
-        "title": "Auction",
-        "description": ""
-      },
-      {
-        "title": "Deposits",
-        "description": ""
-      },
-      {
-        "title": "Transaction",
-        "description": ""
-      },
-      {
-        "title": "Blockchain",
-        "description": ""
-      },
-      {
-        "title": "Notifications",
-        "description": ""
-      },
-      {
-        "title": "Smart contracts",
-        "description": ""
-      }
+      { "title": "Claim tokens", "description": "" },
+      { "title": "Metamask login", "description": "" },
+      { "title": "Auction", "description": "" },
+      { "title": "Deposits", "description": "" },
+      { "title": "Transaction", "description": "" },
+      { "title": "Blockchain", "description": "" },
+      { "title": "Notifications", "description": "" },
+      { "title": "Smart contracts", "description": "" }
     ]
   },
   "data": {
-    "es": {
-      "anonce": "Development of a web application for exchanging old Axions for new tokens via Claim.",
-      "description": "Development of a web application for exchanging old Axions for new tokens via Claim. Creation of an auction system for late users, where % of the Claim amount is sent to a daily and weekly auction, where users can purchase tokens for Ethereum, which are subsequently blocked and issued after a certain time. Creation of a deposit system to increase the number of tokens and hold the token. The project went through three redesigns, there was a lot of work with the API and counting time, as well as tokens for exchange in WEI.",
+    "ru": {
+      "anonce": "Разработка веб-приложения для обмена старых Axion токенов на новые через Claim.",
+      "description": "Разработка веб-приложения для обмена старых Axion на новые токены через Claim. Создание системы аукциона для опоздавших пользователей, где % от суммы Claim отправляется на ежедневный и еженедельный аукцион, где пользователи за Ethereum могут приобрести токены. Эти токены блокируются и выдаются через определённое время. Реализована система депозитов для увеличения количества токенов и удержания токена. Проект прошёл три редизайна, включал обширную работу с API, подсчёт времени и работу с токенами в WEI.",
       "features": [
-        {
-          "title": "Claim tokens",
-          "description": ""
-        },
-        {
-          "title": "Metamask login",
-          "description": ""
-        },
-        {
-          "title": "Auction",
-          "description": ""
-        },
-        {
-          "title": "Deposits",
-          "description": ""
-        },
-        {
-          "title": "Transaction",
-          "description": ""
-        },
-        {
-          "title": "Blockchain",
-          "description": ""
-        },
-        {
-          "title": "Notifications",
-          "description": ""
-        },
-        {
-          "title": "Smart contracts",
-          "description": ""
-        }
+        { "title": "Обмен (Claim) токенов", "description": "" },
+        { "title": "Вход через Metamask", "description": "" },
+        { "title": "Аукцион", "description": "" },
+        { "title": "Депозиты", "description": "" },
+        { "title": "Транзакции", "description": "" },
+        { "title": "Блокчейн", "description": "" },
+        { "title": "Уведомления", "description": "" },
+        { "title": "Смарт-контракты", "description": "" }
       ]
     },
-    "ru": {
-      "anonce": "Разработка веб приложения для обмена старых Axion токенов на новые.",
-      "description": "Разработка веб приложения для обмена старых Axion на новые токены через Claim. Создание системы аукциона для опоздавших пользователей, где % от суммы Claim отправляется на ежедневный и еженедельный аукцион, где пользователи за Ethereum могут приобрести токены, которые в последствии блокируются и выдаются через определенное время. Создание системы депозитов для увеличения количество токенов и удержания токена. Проект пережил три редизайна, было множетсво работы с API и подсчета времени а так же токенов для обмена в WEI.",
+    "es": {
+      "anonce": "Desarrollo de una aplicación web para intercambiar antiguos Axion por nuevos tokens mediante Claim.",
+      "description": "Desarrollo de una aplicación web para intercambiar antiguos Axion por nuevos tokens mediante Claim. Creación de un sistema de subastas para usuarios tardíos, donde un % del monto de Claim se envía a una subasta diaria y semanal, donde los usuarios pueden comprar tokens con Ethereum. Estos tokens se bloquean y se emiten después de un tiempo determinado. Se creó un sistema de depósitos para aumentar la cantidad de tokens y mantener el token. El proyecto pasó por tres rediseños, con mucho trabajo en la API, el cálculo de tiempo y el manejo de tokens en WEI.",
       "features": [
-        {
-          "title": "Claim tokens",
-          "description": ""
-        },
-        {
-          "title": "Metamask login",
-          "description": ""
-        },
-        {
-          "title": "Auction",
-          "description": ""
-        },
-        {
-          "title": "Deposits",
-          "description": ""
-        },
-        {
-          "title": "Transaction",
-          "description": ""
-        },
-        {
-          "title": "Blockchain",
-          "description": ""
-        },
-        {
-          "title": "Notifications",
-          "description": ""
-        },
-        {
-          "title": "Smart contracts",
-          "description": ""
-        }
+        { "title": "Reclamo de tokens", "description": "" },
+        { "title": "Inicio de sesión con Metamask", "description": "" },
+        { "title": "Subasta", "description": "" },
+        { "title": "Depósitos", "description": "" },
+        { "title": "Transacciones", "description": "" },
+        { "title": "Blockchain", "description": "" },
+        { "title": "Notificaciones", "description": "" },
+        { "title": "Contratos inteligentes", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung einer Webanwendung zum Umtausch alter Axion in neue Token über Claim.",
+      "description": "Entwicklung einer Webanwendung zum Umtausch alter Axion in neue Token über Claim. Erstellung eines Auktionssystems für verspätete Benutzer, bei dem ein Prozentsatz des Claim-Betrags in eine tägliche und wöchentliche Auktion fließt, in der Benutzer Tokens mit Ethereum kaufen können. Diese Tokens werden anschließend gesperrt und nach einer bestimmten Zeit ausgegeben. Es wurde ein Einzahlungs­system erstellt, um die Anzahl der Tokens zu erhöhen und den Token zu halten. Das Projekt durchlief drei Redesigns, mit umfangreicher Arbeit an der API, Zeitberechnung und Tokens in WEI.",
+      "features": [
+        { "title": "Tokens beanspruchen (Claim)", "description": "" },
+        { "title": "Metamask-Login", "description": "" },
+        { "title": "Auktion", "description": "" },
+        { "title": "Einzahlungen", "description": "" },
+        { "title": "Transaktionen", "description": "" },
+        { "title": "Blockchain", "description": "" },
+        { "title": "Benachrichtigungen", "description": "" },
+        { "title": "Smart Contracts", "description": "" }
       ]
     }
   }

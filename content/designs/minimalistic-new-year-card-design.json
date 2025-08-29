@@ -26,8 +26,16 @@
   },
   "data": {
     "ru": {
-      "title": "Minimalistic New Year card design",
-      "description": "Minimalistic New Year card design. Created for the New Year 2018/2019."
+      "title": "Минималистичный дизайн новогодней открытки",
+      "description": "Минималистичный дизайн открытки к Новому году. Создана для празднования Нового года 2018/2019."
+    },
+    "es": {
+      "title": "Diseño minimalista de tarjeta de Año Nuevo",
+      "description": "Diseño minimalista de tarjeta de Año Nuevo. Creada para las celebraciones de 2018/2019."
+    },
+    "de": {
+      "title": "Minimalistisches Neujahrskartendesign",
+      "description": "Minimalistisches Design einer Neujahrskarte. Erstellt für das Neujahrsfest 2018/2019."
     }
   }
 }

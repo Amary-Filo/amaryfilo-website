@@ -1,13 +1,13 @@
 {
   "slug": "minimal-blog-design",
-  "title": "Minimal blog design",
+  "title": "Diseño de blog minimalista",
   "date": "2018-11-15",
   "category": [
     "web",
     "blog"
   ],
   "thumbnail": "minimal-blog-design-thumb",
-  "description": "Minimalistic design template for personal blogging. Article search, view blog articles and list them on the main page. Two kinds of theme: dark and light.",
+  "description": "Plantilla de diseño minimalista para blogs personales. Búsqueda de artículos, visualización de publicaciones del blog y listado en la página principal. Dos tipos de tema: claro y oscuro.",
   "images": [
     "minimal-blog-design-1",
     "minimal-blog-design-2",

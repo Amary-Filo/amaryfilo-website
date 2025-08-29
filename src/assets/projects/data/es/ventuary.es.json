@@ -6,8 +6,8 @@
     "landing",
     "vue"
   ],
-  "anonce": "Layout of the Ventuary website and landing on NuxtJs.",
-  "description": "Layout of the Ventuary website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+  "anonce": "Maquetación del sitio web Ventuary y desarrollo del landing en NuxtJs.",
+  "description": "Maquetación del sitio web Ventuary y desarrollo en NuxtJs. Creación de un formulario para enviar comentarios, navegación entre páginas del sitio y gestión de eventos.",
   "logo": "ventuary-logo",
   "instruments": [
     {

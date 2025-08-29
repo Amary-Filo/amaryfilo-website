@@ -9,36 +9,12 @@
     "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
     "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
     "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "less",
-        "color": "",
-        "title": "LESS"
-      },
-      {
-        "icon": "pug",
-        "color": "",
-        "title": "Pug"
-      },
-      {
-        "icon": "design",
-        "color": "",
-        "title": "Design"
-      }
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "less", "color": "", "title": "LESS" },
+      { "icon": "pug", "color": "", "title": "Pug" },
+      { "icon": "design", "color": "", "title": "Design" }
     ],
     "logo": "wallarm-logo",
     "images": [],
@@ -52,115 +28,57 @@
       }
     ],
     "features": [
-      {
-        "title": "Pages",
-        "description": ""
-      },
-      {
-        "title": "Landings",
-        "description": ""
-      },
-      {
-        "title": "CMS",
-        "description": ""
-      },
-      {
-        "title": "Contentfull App",
-        "description": ""
-      },
-      {
-        "title": "Integrations",
-        "description": ""
-      },
-      {
-        "title": "Hubspot",
-        "description": ""
-      },
-      {
-        "title": "Forms",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      }
+      { "title": "Pages", "description": "" },
+      { "title": "Landings", "description": "" },
+      { "title": "CMS", "description": "" },
+      { "title": "Contentfull App", "description": "" },
+      { "title": "Integrations", "description": "" },
+      { "title": "Hubspot", "description": "" },
+      { "title": "Forms", "description": "" },
+      { "title": "SEO", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
-      "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
+      "anonce": "Mejora del sitio web de la empresa. Creación de nuevas páginas e integración de varios servicios externos.",
+      "description": "Mejora del sitio web de la empresa. Creación de nuevas páginas e integración de diferentes servicios externos. Incorporación de formularios y landing pages desde Hubspot. Desarrollo y publicación de la versión en ruso del sitio.",
       "features": [
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Landings",
-          "description": ""
-        },
-        {
-          "title": "CMS",
-          "description": ""
-        },
-        {
-          "title": "Contentfull App",
-          "description": ""
-        },
-        {
-          "title": "Integrations",
-          "description": ""
-        },
-        {
-          "title": "Hubspot",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Páginas", "description": "" },
+        { "title": "Landings", "description": "" },
+        { "title": "CMS", "description": "" },
+        { "title": "Aplicación Contentful", "description": "" },
+        { "title": "Integraciones", "description": "" },
+        { "title": "Hubspot", "description": "" },
+        { "title": "Formularios", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов.",
-      "description": "Доработка сайта компании. Создание новых страниц и интеграция различных сторонних сервисов. Добавление форм и целевых страниц из сервиса Hubspot. Разработка и публикация русской версии сайта.",
+      "anonce": "Доработка корпоративного сайта. Создание новых страниц и интеграция сторонних сервисов.",
+      "description": "Доработка корпоративного сайта. Создание новых страниц и интеграция различных сторонних сервисов. Добавление форм и лендингов из Hubspot. Разработка и публикация русской версии сайта.",
       "features": [
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Landings",
-          "description": ""
-        },
-        {
-          "title": "CMS",
-          "description": ""
-        },
-        {
-          "title": "Contentfull App",
-          "description": ""
-        },
-        {
-          "title": "Integrations",
-          "description": ""
-        },
-        {
-          "title": "Hubspot",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Страницы", "description": "" },
+        { "title": "Лендинги", "description": "" },
+        { "title": "CMS", "description": "" },
+        { "title": "Приложение Contentful", "description": "" },
+        { "title": "Интеграции", "description": "" },
+        { "title": "Hubspot", "description": "" },
+        { "title": "Формы", "description": "" },
+        { "title": "SEO", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Verbesserung der Unternehmenswebsite. Erstellung neuer Seiten und Integration verschiedener externer Dienste.",
+      "description": "Verbesserung der Unternehmenswebsite. Erstellung neuer Seiten und Integration verschiedener externer Services. Hinzufügen von Formularen und Landingpages aus Hubspot. Entwicklung und Veröffentlichung der russischen Version der Website.",
+      "features": [
+        { "title": "Seiten", "description": "" },
+        { "title": "Landings", "description": "" },
+        { "title": "CMS", "description": "" },
+        { "title": "Contentful-App", "description": "" },
+        { "title": "Integrationen", "description": "" },
+        { "title": "Hubspot", "description": "" },
+        { "title": "Formulare", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     }
   }

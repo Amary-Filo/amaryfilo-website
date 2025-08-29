@@ -9,31 +9,11 @@
     "anonce": "Development of a landing page for the Ducatus Emperor project.",
     "description": "Development of a landing page for the Ducatus Emperor project from scratch using React.",
     "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML5"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "react",
-        "color": "",
-        "title": "React"
-      }
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "html5", "color": "", "title": "HTML5" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "react", "color": "", "title": "React" }
     ],
     "logo": "ducatus-emperor-logo",
     "images": [
@@ -66,67 +46,41 @@
       }
     ],
     "features": [
-      {
-        "title": "Pages",
-        "description": ""
-      },
-      {
-        "title": "Modules",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      },
-      {
-        "title": "Adaptive",
-        "description": ""
-      }
+      { "title": "Pages", "description": "" },
+      { "title": "Modules", "description": "" },
+      { "title": "SEO", "description": "" },
+      { "title": "Adaptive", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development of a landing page for the Ducatus Emperor project.",
-      "description": "Development of a landing page for the Ducatus Emperor project from scratch using React.",
+      "anonce": "Desarrollo de una página de aterrizaje para el proyecto Ducatus Emperor.",
+      "description": "Desarrollo de una página de aterrizaje para el proyecto Ducatus Emperor desde cero utilizando React.",
       "features": [
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Páginas", "description": "" },
+        { "title": "Módulos", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Adaptativo", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Разработка посадочной страницы для проекта Ducatus Emperor.",
       "description": "Разработка посадочной страницы для проекта Ducatus Emperor с нуля на React.",
       "features": [
-        {
-          "title": "Pages",
-          "description": ""
-        },
-        {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Страницы", "description": "" },
+        { "title": "Модули", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Адаптивность", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung einer Landingpage für das Ducatus Emperor Projekt.",
+      "description": "Entwicklung einer Landingpage für das Ducatus Emperor Projekt von Grund auf mit React.",
+      "features": [
+        { "title": "Seiten", "description": "" },
+        { "title": "Module", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Adaptiv", "description": "" }
       ]
     }
   }

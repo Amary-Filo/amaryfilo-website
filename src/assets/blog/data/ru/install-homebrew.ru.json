@@ -1,9 +1,9 @@
 {
   "slug": "install-homebrew",
-  "title": "Установка PostgreSQL на MacOS (Apple Silicon m1/m2)",
+  "title": "Как установить Homebrew на macOS, Apple Silicon и Windows",
   "date": "2022-12-18",
   "updates": [],
-  "anonce": "Как установить PostgreSQL на MacOS (Catalina/BigSur/Monterey/Ventura) с чипом Apple M1/M2.",
+  "anonce": "Homebrew — это лёгкий пакетный менеджер для macOS, Linux и Windows (через WSL), который упрощает установку программ, управление сервисами и ускоряет разработку.",
   "thumbnail": "",
   "category": "tools",
   "category_list": [
@@ -27,22 +27,22 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Введение",
       "level": 2
     },
     {
       "id": "What-is-homebrew",
-      "title": "What is Homebrew?",
+      "title": "Что такое Homebrew?",
       "level": 3
     },
     {
       "id": "Commands",
-      "title": "Commands",
+      "title": "Команды",
       "level": 3
     },
     {
       "id": "Installing-Homebrew",
-      "title": "Installing Homebrew",
+      "title": "Установка Homebrew",
       "level": 2
     },
     {
@@ -62,14 +62,14 @@
     },
     {
       "id": "Conclusion",
-      "title": "Conclusion",
+      "title": "Заключение",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Введение",
       "id": "Introduction"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "type": "h3",
-      "text": "What is Homebrew?",
+      "text": "Что такое Homebrew?",
       "id": "What-is-homebrew"
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "type": "h3",
-      "text": "Commands",
+      "text": "Команды",
       "id": "Commands"
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "type": "h2",
-      "text": "Installing Homebrew",
+      "text": "Установка Homebrew",
       "id": "Installing-Homebrew"
     },
     {
@@ -248,7 +248,7 @@
     },
     {
       "type": "h2",
-      "text": "Conclusion",
+      "text": "Заключение",
       "id": "Conclusion"
     },
     {

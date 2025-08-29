@@ -9,31 +9,11 @@
     "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
     "description": "Layout of the Gravity Hub website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
     "instruments": [
-      {
-        "icon": "vue",
-        "color": "",
-        "title": "NuxtJS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      }
+      { "icon": "vue", "color": "", "title": "NuxtJS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "typescript", "color": "", "title": "TS" }
     ],
     "logo": "gravity-hub-logo",
     "images": [],
@@ -47,79 +27,45 @@
       }
     ],
     "features": [
-      {
-        "title": "Template",
-        "description": ""
-      },
-      {
-        "title": "Navigation",
-        "description": ""
-      },
-      {
-        "title": "Events",
-        "description": ""
-      },
-      {
-        "title": "Forms",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      }
+      { "title": "Template", "description": "" },
+      { "title": "Navigation", "description": "" },
+      { "title": "Events", "description": "" },
+      { "title": "Forms", "description": "" },
+      { "title": "SEO", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Layout of the Gravity Hub website and landing on NuxtJs.",
-      "description": "Layout of the Gravity Hub website and landing on NuxtJs. Creating a form for sending feedback, navigating through the pages of the site, events.",
+      "anonce": "Maquetación del sitio web Gravity Hub y despliegue en NuxtJs.",
+      "description": "Maquetación del sitio web Gravity Hub y despliegue en NuxtJs. Creación de un formulario para enviar comentarios, navegación por las páginas del sitio y gestión de eventos.",
       "features": [
-        {
-          "title": "Template",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Plantilla", "description": "" },
+        { "title": "Navegación", "description": "" },
+        { "title": "Eventos", "description": "" },
+        { "title": "Formularios", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     },
     "ru": {
-      "anonce": "Верстка сайта Gravity Hub и посадка на NuxtJs.",
-      "description": "Верстка сайта Gravity Hub и посадка на NuxtJs. Создание формы отправки обратной свяви, навигация по страницам сайта, ивенты.",
+      "anonce": "Верстка сайта Gravity Hub и запуск на NuxtJs.",
+      "description": "Верстка сайта Gravity Hub и запуск на NuxtJs. Создание формы для обратной связи, навигация по страницам сайта, работа с событиями.",
       "features": [
-        {
-          "title": "Template",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        },
-        {
-          "title": "Events",
-          "description": ""
-        },
-        {
-          "title": "Forms",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        }
+        { "title": "Шаблон", "description": "" },
+        { "title": "Навигация", "description": "" },
+        { "title": "События", "description": "" },
+        { "title": "Формы", "description": "" },
+        { "title": "SEO", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Layout der Gravity Hub-Website und Umsetzung mit NuxtJs.",
+      "description": "Layout der Gravity Hub-Website und Umsetzung mit NuxtJs. Erstellung eines Formulars für Feedback, Navigation durch die Seiten der Website und Verwaltung von Events.",
+      "features": [
+        { "title": "Vorlage", "description": "" },
+        { "title": "Navigation", "description": "" },
+        { "title": "Events", "description": "" },
+        { "title": "Formulare", "description": "" },
+        { "title": "SEO", "description": "" }
       ]
     }
   }

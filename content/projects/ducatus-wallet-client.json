@@ -9,31 +9,11 @@
     "anonce": "Server side of the Ducatus Wallet for iOS/Web and Android.",
     "description": "The back end of the Ducatus Wallet. Adding Ducatus is blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
     "instruments": [
-      {
-        "icon": "nodejs",
-        "color": "",
-        "title": "NodeJs"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "rest",
-        "color": "",
-        "title": "REST"
-      },
-      {
-        "icon": "nginx",
-        "color": "",
-        "title": "Nginx"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      }
+      { "icon": "nodejs", "color": "", "title": "NodeJs" },
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "rest", "color": "", "title": "REST" },
+      { "icon": "nginx", "color": "", "title": "Nginx" },
+      { "icon": "web3js", "color": "", "title": "Web3js" }
     ],
     "logo": "ducatus-wallet-client-logo",
     "images": [],
@@ -54,103 +34,62 @@
       }
     ],
     "features": [
-      {
-        "title": "REST API",
-        "description": ""
-      },
-      {
-        "title": "Modules",
-        "description": ""
-      },
-      {
-        "title": "Custom interfaces for blockchains",
-        "description": ""
-      },
-      {
-        "title": "Transactions",
-        "description": ""
-      },
-      {
-        "title": "Muti-chain",
-        "description": ""
-      },
-      {
-        "title": "HD Wallets",
-        "description": ""
-      },
-      {
-        "title": "Smart Contracts",
-        "description": ""
-      }
+      { "title": "REST API", "description": "" },
+      { "title": "Modules", "description": "" },
+      { "title": "Custom interfaces for blockchains", "description": "" },
+      { "title": "Transactions", "description": "" },
+      { "title": "Multi-chain", "description": "" },
+      { "title": "HD Wallets", "description": "" },
+      { "title": "Smart Contracts", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Server side of the Ducatus Wallet for iOS/Web and Android.",
-      "description": "The back end of the Ducatus Wallet. Adding Ducatus is blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+      "anonce": "Parte del servidor de Ducatus Wallet para iOS/Web y Android.",
+      "description": "El backend de Ducatus Wallet. Integración del blockchain de Ducatus. Integración de varias blockchains. Configuración del servidor, actualización de paquetes. Creación de diferentes APIs para el monedero. Actualización de paquetes en NPM.",
       "features": [
+        { "title": "REST API", "description": "" },
+        { "title": "Módulos", "description": "" },
         {
-          "title": "REST API",
+          "title": "Interfaces personalizadas para blockchains",
           "description": ""
         },
-        {
-          "title": "Modules",
-          "description": ""
-        },
-        {
-          "title": "Custom interfaces for blockchains",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Muti-chain",
-          "description": ""
-        },
-        {
-          "title": "HD Wallets",
-          "description": ""
-        },
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        }
+        { "title": "Transacciones", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "Carteras HD", "description": "" },
+        { "title": "Contratos inteligentes", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Серверная часть кошелька Ducatus Wallet под iOS/Web и Android.",
-      "description": "Серверная часть кошелька Ducatus Wallet. Добавление Ducatus блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+      "description": "Серверная часть кошелька Ducatus Wallet. Добавление блокчейна Ducatus. Интеграция различных блокчейнов. Настройка параметров сервера, обновление пакетов. Создание различных API для работы кошелька. Обновление пакетов в NPM.",
       "features": [
+        { "title": "REST API", "description": "" },
+        { "title": "Модули", "description": "" },
         {
-          "title": "REST API",
+          "title": "Пользовательские интерфейсы для блокчейнов",
           "description": ""
         },
+        { "title": "Транзакции", "description": "" },
+        { "title": "Multi-chain", "description": "" },
+        { "title": "HD-кошельки", "description": "" },
+        { "title": "Смарт-контракты", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Serverseitige Anwendung der Ducatus Wallet für iOS/Web und Android.",
+      "description": "Das Backend der Ducatus Wallet. Integration der Ducatus-Blockchain. Integration verschiedener Blockchains. Konfiguration der Servereinstellungen, Paket-Updates. Erstellung verschiedener APIs für die Wallet. Aktualisierung von Paketen in NPM.",
+      "features": [
+        { "title": "REST-API", "description": "" },
+        { "title": "Module", "description": "" },
         {
-          "title": "Modules",
+          "title": "Benutzerdefinierte Schnittstellen für Blockchains",
           "description": ""
         },
-        {
-          "title": "Custom interfaces for blockchains",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Muti-chain",
-          "description": ""
-        },
-        {
-          "title": "HD Wallets",
-          "description": ""
-        },
-        {
-          "title": "Smart Contracts",
-          "description": ""
-        }
+        { "title": "Transaktionen", "description": "" },
+        { "title": "Multi-Chain", "description": "" },
+        { "title": "HD-Wallets", "description": "" },
+        { "title": "Smart Contracts", "description": "" }
       ]
     }
   }

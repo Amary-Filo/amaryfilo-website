@@ -5,8 +5,8 @@
   "category": [
     "crypto"
   ],
-  "anonce": "Platform for interaction with BTCMT token: purchase, deposit, exchange and withdrawal from smart contracts.",
-  "description": "Developing a Minto project from scratch with React. Creation of a Staking module for transferring tokens via Web3js for staking for a selected time, receiving % of the number of days. Working with the BTCMT price chart received via API through a crypto exchange. Login to user account via AMFI Connect. Withdrawal of funds from the Staking contract. Claim tokens.",
+  "anonce": "Plataforma para interactuar con el token BTCMT: compra, depósito, intercambio y retiro desde contratos inteligentes.",
+  "description": "Desarrollo del proyecto Minto desde cero con React. Creación de un módulo de Staking para transferir tokens mediante Web3js durante un tiempo seleccionado y recibir un porcentaje según los días. Trabajo con el gráfico de precios de BTCMT obtenido a través de API desde un exchange de criptomonedas. Inicio de sesión en la cuenta de usuario mediante AMFI Connect. Retiro de fondos del contrato de Staking. Reclamo de tokens.",
   "logo": "minto-logo",
   "instruments": [
     {

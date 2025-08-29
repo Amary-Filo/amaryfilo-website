@@ -7,7 +7,7 @@
       "package"
     ],
     "title": "AMFI Connect",
-    "anonce": "Подключите Crypto Wallet с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав Qr-код кошелька.",
+    "anonce": "Подключите криптокошелёк с помощью расширений браузера WalletLink, KardiaChain, MetaMask или мобильного приложения и сервиса WalletConnect, отсканировав QR-код кошелька.",
     "logo": "amfi-connect-logo",
     "instruments": [
       {
@@ -34,7 +34,7 @@
       "cms"
     ],
     "title": "Rocknblock Website",
-    "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества целевых страниц, SEO оптимизация и разработка блога.",
+    "anonce": "Разработка и ведение официального информационного сайта компании Rock'n'Block. Добавление множества посадочных страниц, SEO-оптимизация и разработка блога.",
     "logo": "rocknblock-website-logo",
     "instruments": [
       {
@@ -60,7 +60,7 @@
       {
         "icon": "html5",
         "color": "",
-        "title": "THML"
+        "title": "HTML"
       },
       {
         "icon": "pug",
@@ -127,7 +127,7 @@
       "crypto"
     ],
     "title": "Ducatus website",
-    "anonce": "Разработка официального веб сайта блокчена Ducatus.",
+    "anonce": "Разработка официального веб-сайта блокчейна Ducatus.",
     "logo": "ducatus-logo",
     "instruments": [
       {

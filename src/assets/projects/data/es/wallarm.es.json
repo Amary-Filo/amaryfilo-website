@@ -6,8 +6,8 @@
     "cms",
     "landing"
   ],
-  "anonce": "Improvement of the company's website. Creation of new pages and integration of various third-party services.",
-  "description": "Improvement of the company's website. Creation of new pages and integration of various third-party services. Add forms and landing pages from Hubspot. Development and publication of the Russian version of the site.",
+  "anonce": "Mejora del sitio web de la empresa. Creación de nuevas páginas e integración de varios servicios externos.",
+  "description": "Mejora del sitio web de la empresa. Creación de nuevas páginas e integración de diferentes servicios externos. Incorporación de formularios y landing pages desde Hubspot. Desarrollo y publicación de la versión en ruso del sitio.",
   "logo": "wallarm-logo",
   "instruments": [
     {

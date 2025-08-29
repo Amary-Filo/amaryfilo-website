@@ -6,7 +6,7 @@
     "web"
   ],
   "thumbnail": "moovie-thumb",
-  "description": "A simple landing page for a streaming service for movies, series and TV shows. The site displays news, traders and ratings for the broadcast content.",
+  "description": "Простая лендинговая страница для стримингового сервиса фильмов, сериалов и телепередач. Сайт отображает новости, трейлеры и рейтинги для транслируемого контента.",
   "images": [
     "moovie-1",
     "moovie-2"

@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Development of a web application for exchanging old Axions for new tokens via Claim.",
-  "description": "Development of a web application for exchanging old Axions for new tokens via Claim. Creation of an auction system for late users, where % of the Claim amount is sent to a daily and weekly auction, where users can purchase tokens for Ethereum, which are subsequently blocked and issued after a certain time. Creation of a deposit system to increase the number of tokens and hold the token. The project went through three redesigns, there was a lot of work with the API and counting time, as well as tokens for exchange in WEI.",
+  "anonce": "Entwicklung einer Webanwendung zum Umtausch alter Axion in neue Token über Claim.",
+  "description": "Entwicklung einer Webanwendung zum Umtausch alter Axion in neue Token über Claim. Erstellung eines Auktionssystems für verspätete Benutzer, bei dem ein Prozentsatz des Claim-Betrags in eine tägliche und wöchentliche Auktion fließt, in der Benutzer Tokens mit Ethereum kaufen können. Diese Tokens werden anschließend gesperrt und nach einer bestimmten Zeit ausgegeben. Es wurde ein Einzahlungs­system erstellt, um die Anzahl der Tokens zu erhöhen und den Token zu halten. Das Projekt durchlief drei Redesigns, mit umfangreicher Arbeit an der API, Zeitberechnung und Tokens in WEI.",
   "logo": "axion-logo",
   "instruments": [
     {

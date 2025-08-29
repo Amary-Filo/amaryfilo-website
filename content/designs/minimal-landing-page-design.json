@@ -21,8 +21,16 @@
   },
   "data": {
     "ru": {
-      "title": "Minimal landing page design",
-      "description": "Minimalistic design of the main page of the site. The main idea of ​​the site is a personal site development company."
+      "title": "Минималистичный дизайн лендинга",
+      "description": "Минималистичный дизайн главной страницы сайта. Основная идея сайта — компания по разработке персональных сайтов."
+    },
+    "es": {
+      "title": "Diseño minimalista de página de aterrizaje",
+      "description": "Diseño minimalista de la página principal del sitio. La idea principal del sitio es una empresa de desarrollo de sitios personales."
+    },
+    "de": {
+      "title": "Minimalistisches Landingpage-Design",
+      "description": "Minimalistisches Design der Hauptseite der Website. Die Hauptidee der Website ist ein Unternehmen für die Entwicklung persönlicher Websites."
     }
   }
 }

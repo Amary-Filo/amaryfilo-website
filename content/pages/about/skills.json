@@ -74,5 +74,85 @@
         { "id": 7, "title": "AI Integrations / LLM APIs", "icon": "ai" }
       ]
     }
-  ]
+  ],
+  "data": {
+    "ru": [
+      {
+        "id": 1,
+        "icon": "gallery",
+        "title": "Фронтенд",
+        "description": "Основные frontend-фреймворки и инструменты для создания современных веб- и мобильных приложений."
+      },
+      {
+        "id": 2,
+        "icon": "feature",
+        "title": "Блокчейн",
+        "description": "Технологии и фреймворки для Web3, криптокошельков и интеграции с DeFi."
+      },
+      {
+        "id": 3,
+        "icon": "images",
+        "title": "Бэкенд",
+        "description": "Серверные фреймворки, API, базы данных и CMS-платформы."
+      },
+      {
+        "id": 4,
+        "icon": "done",
+        "title": "Другое",
+        "description": "Системы контроля версий, CI/CD, облака и интеграции с искусственным интеллектом."
+      }
+    ],
+    "es": [
+      {
+        "id": 1,
+        "icon": "gallery",
+        "title": "Frontend",
+        "description": "Frameworks y herramientas principales de frontend para crear aplicaciones web y móviles modernas."
+      },
+      {
+        "id": 2,
+        "icon": "feature",
+        "title": "Blockchain",
+        "description": "Tecnologías y frameworks para Web3, monederos y integraciones DeFi."
+      },
+      {
+        "id": 3,
+        "icon": "images",
+        "title": "Backend",
+        "description": "Frameworks del lado del servidor, APIs, bases de datos y plataformas CMS."
+      },
+      {
+        "id": 4,
+        "icon": "done",
+        "title": "Otros",
+        "description": "Control de versiones, CI/CD, nube e integraciones con inteligencia artificial."
+      }
+    ],
+    "de": [
+      {
+        "id": 1,
+        "icon": "gallery",
+        "title": "Frontend",
+        "description": "Kern-Frameworks und Tools für das Frontend zum Erstellen moderner Web- und Mobile-Apps."
+      },
+      {
+        "id": 2,
+        "icon": "feature",
+        "title": "Blockchain",
+        "description": "Technologien und Frameworks für Web3, Wallets und DeFi-Integrationen."
+      },
+      {
+        "id": 3,
+        "icon": "images",
+        "title": "Backend",
+        "description": "Serverseitige Frameworks, APIs, Datenbanken und CMS-Plattformen."
+      },
+      {
+        "id": 4,
+        "icon": "done",
+        "title": "Sonstiges",
+        "description": "Versionskontrolle, CI/CD, Cloud und KI-Integrationen."
+      }
+    ]
+  }
 }

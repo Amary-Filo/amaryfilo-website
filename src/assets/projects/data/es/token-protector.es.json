@@ -7,8 +7,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Service for saving crypto-tokens after the expiration of the specified period in the smart contract.",
-  "description": "Development of a site for saving tokens after a certain period. Ability to create test contracts by selecting a test network. Request via web3js to provide control of unlimited selected tokens for a contract, without this the contract does not work. Conducting a payment transaction. Connecting custom wallets via MetaMask. View the list of contracts. Contract statuses: Creating/Deploy/Active/Decline/Done.",
+  "anonce": "Servicio para guardar cripto-tokens después de la expiración del período especificado en el contrato inteligente.",
+  "description": "Desarrollo de un sitio para guardar tokens después de un período determinado. Posibilidad de crear contratos de prueba seleccionando una red de prueba. Solicitud a través de web3js para proporcionar control de los tokens seleccionados de forma ilimitada a un contrato; sin esto, el contrato no funciona. Realización de una transacción de pago. Conexión de billeteras personalizadas a través de MetaMask. Visualización de la lista de contratos. Estados del contrato: Creating/Deploy/Active/Decline/Done.",
   "logo": "token-protector-logo",
   "instruments": [
     {

@@ -9,31 +9,11 @@
     "anonce": "Official website of the plastic surgeon Maria Volokh.",
     "description": "Full support and creation of the site from scratch. Design development, layout and site landing on CMS October. Creation of various plugins such as comments, services, photos and blog.",
     "instruments": [
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "php",
-        "color": "",
-        "title": "PHP"
-      },
-      {
-        "icon": "javascript",
-        "color": "",
-        "title": "JS"
-      },
-      {
-        "icon": "octobercms",
-        "color": "",
-        "title": "October CMS"
-      }
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "php", "color": "", "title": "PHP" },
+      { "icon": "javascript", "color": "", "title": "JS" },
+      { "icon": "octobercms", "color": "", "title": "October CMS" }
     ],
     "logo": "plastic-surgeon-mary-volokh-logo",
     "images": [
@@ -60,151 +40,69 @@
       }
     ],
     "features": [
-      {
-        "title": "Plugins",
-        "description": ""
-      },
-      {
-        "title": "Optimisation",
-        "description": ""
-      },
-      {
-        "title": "Blog",
-        "description": ""
-      },
-      {
-        "title": "Operations",
-        "description": ""
-      },
-      {
-        "title": "News",
-        "description": ""
-      },
-      {
-        "title": "Order",
-        "description": ""
-      },
-      {
-        "title": "Reviews",
-        "description": ""
-      },
-      {
-        "title": "Feedbacks",
-        "description": ""
-      },
-      {
-        "title": "Admin panel",
-        "description": ""
-      },
-      {
-        "title": "Catalog",
-        "description": ""
-      },
-      {
-        "title": "Category",
-        "description": ""
-      }
+      { "title": "Plugins", "description": "" },
+      { "title": "Optimisation", "description": "" },
+      { "title": "Blog", "description": "" },
+      { "title": "Operations", "description": "" },
+      { "title": "News", "description": "" },
+      { "title": "Order", "description": "" },
+      { "title": "Reviews", "description": "" },
+      { "title": "Feedbacks", "description": "" },
+      { "title": "Admin panel", "description": "" },
+      { "title": "Catalog", "description": "" },
+      { "title": "Category", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Official website of the plastic surgeon Maria Volokh.",
-      "description": "Full support and creation of the site from scratch. Design development, layout and site landing on CMS October. Creation of various plugins such as comments, services, photos and blog.",
+      "anonce": "Sitio web oficial de la cirujana plástica María Volokh.",
+      "description": "Soporte completo y creación del sitio desde cero. Desarrollo del diseño, maquetación e implementación en CMS October. Creación de varios complementos como comentarios, servicios, fotos y blog.",
       "features": [
-        {
-          "title": "Plugins",
-          "description": ""
-        },
-        {
-          "title": "Optimisation",
-          "description": ""
-        },
-        {
-          "title": "Blog",
-          "description": ""
-        },
-        {
-          "title": "Operations",
-          "description": ""
-        },
-        {
-          "title": "News",
-          "description": ""
-        },
-        {
-          "title": "Order",
-          "description": ""
-        },
-        {
-          "title": "Reviews",
-          "description": ""
-        },
-        {
-          "title": "Feedbacks",
-          "description": ""
-        },
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Category",
-          "description": ""
-        }
+        { "title": "Plugins", "description": "" },
+        { "title": "Optimización", "description": "" },
+        { "title": "Blog", "description": "" },
+        { "title": "Operaciones", "description": "" },
+        { "title": "Noticias", "description": "" },
+        { "title": "Pedidos", "description": "" },
+        { "title": "Reseñas", "description": "" },
+        { "title": "Comentarios", "description": "" },
+        { "title": "Panel de administración", "description": "" },
+        { "title": "Catálogo", "description": "" },
+        { "title": "Categoría", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Официальный сайт пластического хирурга Марии Волох.",
       "description": "Полное сопровождение и создание сайта с нуля. Разработка дизайна, верстка и посадка сайта на CMS October. Создание различных плагинов, таких как комментарии, услуги, фотографии и блог.",
       "features": [
-        {
-          "title": "Plugins",
-          "description": ""
-        },
-        {
-          "title": "Optimisation",
-          "description": ""
-        },
-        {
-          "title": "Blog",
-          "description": ""
-        },
-        {
-          "title": "Operations",
-          "description": ""
-        },
-        {
-          "title": "News",
-          "description": ""
-        },
-        {
-          "title": "Order",
-          "description": ""
-        },
-        {
-          "title": "Reviews",
-          "description": ""
-        },
-        {
-          "title": "Feedbacks",
-          "description": ""
-        },
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Category",
-          "description": ""
-        }
+        { "title": "Плагины", "description": "" },
+        { "title": "Оптимизация", "description": "" },
+        { "title": "Блог", "description": "" },
+        { "title": "Операции", "description": "" },
+        { "title": "Новости", "description": "" },
+        { "title": "Заказы", "description": "" },
+        { "title": "Отзывы", "description": "" },
+        { "title": "Комментарии", "description": "" },
+        { "title": "Админ-панель", "description": "" },
+        { "title": "Каталог", "description": "" },
+        { "title": "Категория", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Offizielle Website der plastischen Chirurgin Maria Volokh.",
+      "description": "Komplette Betreuung und Erstellung der Website von Grund auf. Designentwicklung, Layout und Implementierung auf CMS October. Erstellung verschiedener Plugins wie Kommentare, Dienstleistungen, Fotos und Blog.",
+      "features": [
+        { "title": "Plugins", "description": "" },
+        { "title": "Optimierung", "description": "" },
+        { "title": "Blog", "description": "" },
+        { "title": "Operationen", "description": "" },
+        { "title": "Nachrichten", "description": "" },
+        { "title": "Bestellungen", "description": "" },
+        { "title": "Bewertungen", "description": "" },
+        { "title": "Feedbacks", "description": "" },
+        { "title": "Admin-Panel", "description": "" },
+        { "title": "Katalog", "description": "" },
+        { "title": "Kategorie", "description": "" }
       ]
     }
   }

@@ -3,7 +3,7 @@
     "id": 1,
     "icon": "gallery",
     "title": "Frontend",
-    "description": "Core frontend frameworks and tools for building modern web and mobile apps.",
+    "description": "Kern-Frameworks und Tools für das Frontend zum Erstellen moderner Web- und Mobile-Apps.",
     "skills": [
       {
         "id": 1,
@@ -56,7 +56,7 @@
     "id": 2,
     "icon": "feature",
     "title": "Blockchain",
-    "description": "Technologies and frameworks for Web3, wallets, and DeFi integrations.",
+    "description": "Technologien und Frameworks für Web3, Wallets und DeFi-Integrationen.",
     "skills": [
       {
         "id": 1,
@@ -104,7 +104,7 @@
     "id": 3,
     "icon": "images",
     "title": "Backend",
-    "description": "Server-side frameworks, APIs, databases, and CMS platforms.",
+    "description": "Serverseitige Frameworks, APIs, Datenbanken und CMS-Plattformen.",
     "skills": [
       {
         "id": 1,
@@ -181,8 +181,8 @@
   {
     "id": 4,
     "icon": "done",
-    "title": "Other",
-    "description": "Version control, CI/CD, cloud, and AI integrations.",
+    "title": "Sonstiges",
+    "description": "Versionskontrolle, CI/CD, Cloud und KI-Integrationen.",
     "skills": [
       {
         "id": 1,

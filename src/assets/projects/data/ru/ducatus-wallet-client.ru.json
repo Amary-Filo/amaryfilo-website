@@ -6,7 +6,7 @@
     "crypto"
   ],
   "anonce": "Серверная часть кошелька Ducatus Wallet под iOS/Web и Android.",
-  "description": "Серверная часть кошелька Ducatus Wallet. Добавление Ducatus блокчена. Интеграция различных блокчейнов. Настройка параметров сервера, обновления пакетов. Создание различных api для работы кошелька. Обновление пакетов в NPM.",
+  "description": "Серверная часть кошелька Ducatus Wallet. Добавление блокчейна Ducatus. Интеграция различных блокчейнов. Настройка параметров сервера, обновление пакетов. Создание различных API для работы кошелька. Обновление пакетов в NPM.",
   "logo": "ducatus-wallet-client-logo",
   "instruments": [
     {
@@ -70,7 +70,7 @@
       "description": ""
     },
     {
-      "title": "Muti-chain",
+      "title": "Multi-chain",
       "description": ""
     },
     {

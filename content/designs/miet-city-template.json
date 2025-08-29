@@ -34,8 +34,16 @@
   },
   "data": {
     "ru": {
-      "title": "Miet - City template",
-      "description": "The prototype design of the site of urban events is assumed that the site can display all the running future events in the selected city user and find out information about any events and buy tickets."
+      "title": "Miet - Городской шаблон",
+      "description": "Прототип дизайна сайта городских мероприятий. Предполагается, что сайт может отображать все предстоящие события в выбранном пользователем городе, предоставлять информацию о них и возможность купить билеты."
+    },
+    "es": {
+      "title": "Miet - Plantilla de ciudad",
+      "description": "Prototipo de diseño de un sitio de eventos urbanos. Se supone que el sitio puede mostrar todos los próximos eventos en la ciudad seleccionada por el usuario, brindar información sobre ellos y permitir la compra de entradas."
+    },
+    "de": {
+      "title": "Miet - Stadtvorlage",
+      "description": "Prototypisches Design einer Website für städtische Veranstaltungen. Die Seite soll alle kommenden Events in der vom Nutzer gewählten Stadt anzeigen, Informationen dazu bereitstellen und den Ticketkauf ermöglichen."
     }
   }
 }

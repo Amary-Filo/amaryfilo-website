@@ -308,19 +308,766 @@
   },
   "data": {
     "ru": {
-      "title": "Как установить Homebrew?",
-      "anonce": "Что такое Homebrew, для чего он нужен и как его установить под системы: macOS (Apple Silicon) и Windows.",
-      "content": []
+      "title": "Установка PostgreSQL на macOS (Apple Silicon m1/m2)",
+      "anonce": "Как установить PostgreSQL на macOS (включая Apple Silicon M1/M2) и подключить его к вашим приложениям.",
+      "content": [
+        { "type": "h2", "text": "Введение", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "При разработке приложений часто требуется хранить и управлять данными в базах данных. В этой статье показано, как установить PostgreSQL на macOS и подключить его к своим приложениям."
+        },
+        {
+          "type": "p",
+          "text": "Мы рассмотрим методы установки, использование терминала, подключение из приложений и базовые команды PostgreSQL."
+        },
+
+        { "type": "h2", "text": "Установка", "id": "Installation" },
+        { "type": "p", "text": "Установить PostgreSQL можно двумя способами:" },
+        {
+          "type": "ul",
+          "items": [
+            "Через установщик с официального сайта",
+            "С помощью пакетного менеджера Homebrew (рекомендуется)"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Оба способа позволяют полноценно установить PostgreSQL на систему."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Рекомендуемый способ",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Наиболее распространённый и рекомендуемый способ установки PostgreSQL — через Homebrew."
+            }
+          ]
+        },
+
+        {
+          "type": "h3",
+          "text": "Через установщик",
+          "id": "Through-the-installer"
+        },
+        {
+          "type": "p",
+          "html": "Перейдите на <a href=\"https://www.postgresql.org/ftp/source/\" target=\"_blank\">официальный сайт PostgreSQL</a> и скачайте нужную версию."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Выберите нужную версию (например, v14.2) и откройте каталог",
+            "Скачайте <strong>postgresql-[версия].tar.gz</strong>",
+            "Распакуйте и откройте папку",
+            "Проверьте файл INSTALL для пошаговой инструкции",
+            "Следуйте инструкциям в терминале для установки"
+          ]
+        },
+
+        { "type": "h3", "text": "Через Homebrew", "id": "Through-Homebrew" },
+        {
+          "type": "p",
+          "text": "Перед установкой проверьте и обновите Homebrew:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Обновить пакеты: `brew update`",
+            "Обновить сам Homebrew: `brew upgrade`",
+            "Исправить ошибки: `brew doctor`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Подробнее",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "См. руководство: <a href=\"https://amaryfilo.com/blog/how-install-homebrew\" target=\"_blank\">Как установить Homebrew</a>."
+            }
+          ]
+        },
+        { "type": "p", "text": "Шаги установки PostgreSQL через Homebrew:" },
+        {
+          "type": "ul",
+          "items": [
+            "`brew install postgresql`",
+            "`brew services start postgresql` (запуск сервиса)",
+            "`brew services stop postgresql` (остановка сервиса)",
+            "`brew services list` (проверка статуса)",
+            "Вход: `psql postgres`",
+            "Список пользователей: `\\du`",
+            "Выход: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Дополнительно", "id": "Extras" },
+        {
+          "type": "ul",
+          "items": [
+            "Ручной запуск: `/opt/homebrew/opt/postgresql/bin/postgres -D /opt/homebrew/var/postgres`",
+            "Запуск/остановка через pg_ctl: `pg_ctl -D /opt/homebrew/var/postgres start|stop`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Удаление",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Удалить PostgreSQL: `brew uninstall postgresql`, затем `brew cleanup` и `brew doctor`."
+            }
+          ]
+        },
+
+        { "type": "h2", "text": "Ошибки", "id": "Errors" },
+        {
+          "type": "p",
+          "text": "Частые ошибки, которые могут возникнуть при настройке."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Совет",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Часто помогает перезагрузка устройства или терминала."
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Bootstrap failed: 5: Input/output error",
+          "id": "Bootstrap-failed-5"
+        },
+        {
+          "type": "p",
+          "text": "Возникает после `brew services start postgresql`."
+        },
+        {
+          "type": "p",
+          "text": "Решение: выполните `launchctl remove homebrew.mxcl.postgresql`, затем `brew services start postgresql`."
+        },
+
+        { "type": "h2", "text": "Команды", "id": "Commands" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Авторизация",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Команды вводятся в `psql` под авторизованным пользователем."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Авторизация", "id": "Authorization" },
+        {
+          "type": "ul",
+          "items": [
+            "Пользователь по умолчанию: `psql postgres`",
+            "Определённый пользователь: `psql postgres -U [user_name]`",
+            "Выход: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Базы данных", "id": "Databases" },
+        {
+          "type": "ul",
+          "items": [
+            "Список баз: `\\l`",
+            "Создать: `create database [name];`",
+            "Удалить: `drop database [name];`",
+            "Переименовать: `alter database [old] rename to [new];`"
+          ]
+        },
+        { "type": "p", "text": "Импорт базы данных:" },
+        {
+          "type": "ul",
+          "items": [
+            "`psql -h [host] -d [db] -U [user] -f ~/path/to/file.sql`",
+            "`psql [db] < ~/path/to/file.sql`"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Экспорт базы: `pg_dump -U [user] -h [host] [db] >> export_file.sql`"
+        },
+
+        { "type": "h3", "text": "Пользователи", "id": "Users" },
+        {
+          "type": "ul",
+          "items": [
+            "Создать пользователя с паролем: `create role [name] with login password 'pass';`",
+            "С зашифрованным паролем: `create role [name] with login encrypted password 'pass';`",
+            "Без пароля: `create role [name] with login;`",
+            "Удалить: `drop user [name];`",
+            "Переименовать: `alter user [old] rename to [new];`",
+            "Сменить пароль: `alter user [name] with password 'new_pass';`"
+          ]
+        },
+
+        { "type": "h3", "text": "Таблицы", "id": "Tables" },
+        { "type": "p", "text": "Пример создания таблицы:" },
+        {
+          "type": "code",
+          "lang": "sql",
+          "wide": true,
+          "code": "create table accounts (\n  user_id serial PRIMARY KEY,\n  username VARCHAR(50) UNIQUE NOT NULL,\n  password VARCHAR(50) NOT NULL,\n  email VARCHAR(255) UNIQUE NOT NULL,\n  created_on TIMESTAMP NOT NULL,\n  last_login TIMESTAMP\n);"
+        },
+        { "type": "p", "text": "Удалить таблицу: `drop table accounts;`" },
+
+        {
+          "type": "h2",
+          "text": "Подключение в проектах",
+          "id": "Connecting-to-a-database-in-projects"
+        },
+        {
+          "type": "p",
+          "text": "PostgreSQL по умолчанию работает на порту 5432. Подключение выполняется по IP и порту (например, localhost:5432)."
+        },
+        {
+          "type": "p",
+          "text": "Для хранения параметров подключения используйте ENV-файлы (IP, порт, логин, пароль)."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Создать пользователя: `CREATE ROLE MyNewUserName WITH LOGIN PASSWORD 'MyNewUserPassword';`",
+            "Разрешить создание БД: `ALTER ROLE MyNewUserName CREATEDB;`",
+            "Вход новым пользователем: `psql postgres -U MyNewUserName`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Напоминание",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Замените MyNewUserName/MyNewUserPassword на свои данные."
+            }
+          ]
+        }
+      ]
     },
+
     "es": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "Instalar PostgreSQL en macOS (Apple Silicon m1/m2)",
+      "anonce": "Cómo instalar PostgreSQL en macOS (incluido Apple Silicon M1/M2) y conectarlo a tus aplicaciones.",
+      "content": [
+        { "type": "h2", "text": "Introducción", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Al desarrollar aplicaciones, a menudo es necesario almacenar y gestionar datos en bases de datos. Este artículo muestra cómo instalar PostgreSQL en macOS y conectarlo a tus aplicaciones."
+        },
+        {
+          "type": "p",
+          "text": "Cubriremos métodos de instalación, uso de la terminal, conexión desde aplicaciones y comandos básicos de PostgreSQL."
+        },
+
+        { "type": "h2", "text": "Instalación", "id": "Installation" },
+        { "type": "p", "text": "Puedes instalar PostgreSQL de dos maneras:" },
+        {
+          "type": "ul",
+          "items": [
+            "Mediante el instalador desde el sitio oficial",
+            "Usando el gestor de paquetes Homebrew (recomendado)"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Ambos métodos permiten instalar completamente PostgreSQL en tu sistema."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Método recomendado",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "La forma más común y recomendada de instalar PostgreSQL es a través de Homebrew."
+            }
+          ]
+        },
+
+        {
+          "type": "h3",
+          "text": "A través del instalador",
+          "id": "Through-the-installer"
+        },
+        {
+          "type": "p",
+          "html": "Ve al <a href=\"https://www.postgresql.org/ftp/source/\" target=\"_blank\">sitio oficial de PostgreSQL</a> y descarga la versión que necesites."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Selecciona la versión requerida (por ejemplo, v14.2) y abre el directorio",
+            "Descarga <strong>postgresql-[versión].tar.gz</strong>",
+            "Descomprime y abre la carpeta",
+            "Revisa el archivo INSTALL para instrucciones paso a paso",
+            "Sigue las instrucciones en la terminal para instalar"
+          ]
+        },
+
+        {
+          "type": "h3",
+          "text": "A través de Homebrew",
+          "id": "Through-Homebrew"
+        },
+        {
+          "type": "p",
+          "text": "Antes de instalar, revisa y actualiza Homebrew:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Actualizar: `brew update`",
+            "Actualizar Homebrew: `brew upgrade`",
+            "Revisar problemas: `brew doctor`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Más información",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "Ver guía: <a href=\"https://amaryfilo.com/blog/how-install-homebrew\" target=\"_blank\">Cómo instalar Homebrew</a>."
+            }
+          ]
+        },
+        { "type": "p", "text": "Pasos para instalar PostgreSQL con Homebrew:" },
+        {
+          "type": "ul",
+          "items": [
+            "`brew install postgresql`",
+            "`brew services start postgresql` (iniciar servicio)",
+            "`brew services stop postgresql` (detener servicio)",
+            "`brew services list` (ver estado del servicio)",
+            "Iniciar sesión: `psql postgres`",
+            "Listar usuarios: `\\du`",
+            "Salir: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Extras", "id": "Extras" },
+        {
+          "type": "ul",
+          "items": [
+            "Inicio manual: `/opt/homebrew/opt/postgresql/bin/postgres -D /opt/homebrew/var/postgres`",
+            "Iniciar/detener con pg_ctl: `pg_ctl -D /opt/homebrew/var/postgres start|stop`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Desinstalar",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Eliminar PostgreSQL: `brew uninstall postgresql`, luego `brew cleanup` y `brew doctor`."
+            }
+          ]
+        },
+
+        { "type": "h2", "text": "Errores", "id": "Errors" },
+        {
+          "type": "p",
+          "text": "Errores comunes que pueden ocurrir durante la configuración."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Consejo",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A menudo reiniciar el dispositivo o la terminal soluciona los problemas."
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Bootstrap failed: 5: Error de entrada/salida",
+          "id": "Bootstrap-failed-5"
+        },
+        {
+          "type": "p",
+          "text": "Aparece después de `brew services start postgresql`."
+        },
+        {
+          "type": "p",
+          "text": "Solución: ejecuta `launchctl remove homebrew.mxcl.postgresql` y luego `brew services start postgresql`."
+        },
+
+        { "type": "h2", "text": "Comandos", "id": "Commands" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Autorización",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Los comandos se ingresan en `psql` como un usuario autorizado."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Autorización", "id": "Authorization" },
+        {
+          "type": "ul",
+          "items": [
+            "Usuario por defecto: `psql postgres`",
+            "Usuario específico: `psql postgres -U [nombre_usuario]`",
+            "Salir: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Bases de datos", "id": "Databases" },
+        {
+          "type": "ul",
+          "items": [
+            "Listar BDs: `\\l`",
+            "Crear: `create database [nombre];`",
+            "Eliminar: `drop database [nombre];`",
+            "Renombrar: `alter database [antiguo] rename to [nuevo];`"
+          ]
+        },
+        { "type": "p", "text": "Importar base de datos:" },
+        {
+          "type": "ul",
+          "items": [
+            "`psql -h [host] -d [db] -U [usuario] -f ~/ruta/a/archivo.sql`",
+            "`psql [db] < ~/ruta/a/archivo.sql`"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Exportar BD: `pg_dump -U [usuario] -h [host] [db] >> export_file.sql`"
+        },
+
+        { "type": "h3", "text": "Usuarios", "id": "Users" },
+        {
+          "type": "ul",
+          "items": [
+            "Crear usuario con contraseña: `create role [nombre] with login password 'pass';`",
+            "Con contraseña cifrada: `create role [nombre] with login encrypted password 'pass';`",
+            "Sin contraseña: `create role [nombre] with login;`",
+            "Eliminar usuario: `drop user [nombre];`",
+            "Renombrar usuario: `alter user [antiguo] rename to [nuevo];`",
+            "Cambiar contraseña: `alter user [nombre] with password 'new_pass';`"
+          ]
+        },
+
+        { "type": "h3", "text": "Tablas", "id": "Tables" },
+        { "type": "p", "text": "Ejemplo de creación de tabla:" },
+        {
+          "type": "code",
+          "lang": "sql",
+          "wide": true,
+          "code": "create table accounts (\n  user_id serial PRIMARY KEY,\n  username VARCHAR(50) UNIQUE NOT NULL,\n  password VARCHAR(50) NOT NULL,\n  email VARCHAR(255) UNIQUE NOT NULL,\n  created_on TIMESTAMP NOT NULL,\n  last_login TIMESTAMP\n);"
+        },
+        { "type": "p", "text": "Eliminar tabla: `drop table accounts;`" },
+
+        {
+          "type": "h2",
+          "text": "Conexión a bases de datos en proyectos",
+          "id": "Connecting-to-a-database-in-projects"
+        },
+        {
+          "type": "p",
+          "text": "PostgreSQL se ejecuta en el puerto 5432 por defecto. Conéctate usando IP y puerto (por ejemplo, localhost:5432)."
+        },
+        {
+          "type": "p",
+          "text": "Usa archivos ENV para almacenar detalles de conexión (IP, puerto, usuario, contraseña)."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Crear usuario: `CREATE ROLE MyNewUserName WITH LOGIN PASSWORD 'MyNewUserPassword';`",
+            "Conceder creación de BD: `ALTER ROLE MyNewUserName CREATEDB;`",
+            "Iniciar sesión como nuevo usuario: `psql postgres -U MyNewUserName`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Recordatorio",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Reemplaza MyNewUserName/MyNewUserPassword con tus credenciales."
+            }
+          ]
+        }
+      ]
     },
+
     "de": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "PostgreSQL auf macOS installieren (Apple Silicon m1/m2)",
+      "anonce": "Wie man PostgreSQL auf macOS (einschließlich Apple Silicon M1/M2) installiert und mit Anwendungen verbindet.",
+      "content": [
+        { "type": "h2", "text": "Einführung", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Bei der Entwicklung von Anwendungen ist es oft notwendig, Daten in Datenbanken zu speichern und zu verwalten. Dieser Artikel zeigt, wie man PostgreSQL auf macOS installiert und mit Anwendungen verbindet."
+        },
+        {
+          "type": "p",
+          "text": "Wir behandeln Installationsmethoden, Nutzung des Terminals, Verbindung aus Anwendungen und grundlegende PostgreSQL-Befehle."
+        },
+
+        { "type": "h2", "text": "Installation", "id": "Installation" },
+        {
+          "type": "p",
+          "text": "PostgreSQL kann auf zwei Arten installiert werden:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Über den Installer von der offiziellen Website",
+            "Mit dem Paketmanager Homebrew (empfohlen)"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Beide Methoden ermöglichen die vollständige Installation von PostgreSQL auf dem System."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Empfohlene Methode",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Die am häufigsten verwendete und empfohlene Methode zur Installation von PostgreSQL ist über Homebrew."
+            }
+          ]
+        },
+
+        {
+          "type": "h3",
+          "text": "Über den Installer",
+          "id": "Through-the-installer"
+        },
+        {
+          "type": "p",
+          "html": "Gehe zur <a href=\"https://www.postgresql.org/ftp/source/\" target=\"_blank\">offiziellen PostgreSQL-Website</a> und lade die gewünschte Version herunter."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Wähle die benötigte Version (z. B. v14.2) und öffne das Verzeichnis",
+            "Lade <strong>postgresql-[version].tar.gz</strong> herunter",
+            "Entpacke und öffne den Ordner",
+            "Prüfe die INSTALL-Datei für Schritt-für-Schritt-Anweisungen",
+            "Folge den Anweisungen im Terminal zur Installation"
+          ]
+        },
+
+        { "type": "h3", "text": "Über Homebrew", "id": "Through-Homebrew" },
+        {
+          "type": "p",
+          "text": "Vor der Installation Homebrew prüfen und aktualisieren:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Update: `brew update`",
+            "Upgrade: `brew upgrade`",
+            "Fehler prüfen: `brew doctor`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Mehr Informationen",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "Siehe Anleitung: <a href=\"https://amaryfilo.com/blog/how-install-homebrew\" target=\"_blank\">Wie man Homebrew installiert</a>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Schritte zur Installation von PostgreSQL mit Homebrew:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "`brew install postgresql`",
+            "`brew services start postgresql` (Dienst starten)",
+            "`brew services stop postgresql` (Dienst stoppen)",
+            "`brew services list` (Dienststatus anzeigen)",
+            "Anmelden: `psql postgres`",
+            "Benutzer auflisten: `\\du`",
+            "Beenden: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Extras", "id": "Extras" },
+        {
+          "type": "ul",
+          "items": [
+            "Manueller Start: `/opt/homebrew/opt/postgresql/bin/postgres -D /opt/homebrew/var/postgres`",
+            "Start/Stop mit pg_ctl: `pg_ctl -D /opt/homebrew/var/postgres start|stop`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Deinstallation",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "PostgreSQL entfernen mit: `brew uninstall postgresql`, dann `brew cleanup` und `brew doctor`."
+            }
+          ]
+        },
+
+        { "type": "h2", "text": "Fehler", "id": "Errors" },
+        {
+          "type": "p",
+          "text": "Häufige Fehler, die während der Einrichtung auftreten können."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Tipp",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Oft hilft es, das Gerät oder das Terminal neu zu starten."
+            }
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "Bootstrap failed: 5: Ein-/Ausgabe-Fehler",
+          "id": "Bootstrap-failed-5"
+        },
+        {
+          "type": "p",
+          "text": "Erscheint nach `brew services start postgresql`."
+        },
+        {
+          "type": "p",
+          "text": "Lösung: `launchctl remove homebrew.mxcl.postgresql` ausführen, dann `brew services start postgresql`."
+        },
+
+        { "type": "h2", "text": "Befehle", "id": "Commands" },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Autorisierung",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Befehle werden in `psql` als autorisierter Benutzer eingegeben."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Autorisierung", "id": "Authorization" },
+        {
+          "type": "ul",
+          "items": [
+            "Standardbenutzer: `psql postgres`",
+            "Bestimmter Benutzer: `psql postgres -U [benutzername]`",
+            "Beenden: `\\q`"
+          ]
+        },
+
+        { "type": "h3", "text": "Datenbanken", "id": "Databases" },
+        {
+          "type": "ul",
+          "items": [
+            "Datenbanken auflisten: `\\l`",
+            "Erstellen: `create database [name];`",
+            "Löschen: `drop database [name];`",
+            "Umbenennen: `alter database [alt] rename to [neu];`"
+          ]
+        },
+        { "type": "p", "text": "Datenbank importieren:" },
+        {
+          "type": "ul",
+          "items": [
+            "`psql -h [host] -d [db] -U [benutzer] -f ~/pfad/zu/datei.sql`",
+            "`psql [db] < ~/pfad/zu/datei.sql`"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Datenbank exportieren: `pg_dump -U [benutzer] -h [host] [db] >> export_file.sql`"
+        },
+
+        { "type": "h3", "text": "Benutzer", "id": "Users" },
+        {
+          "type": "ul",
+          "items": [
+            "Benutzer mit Passwort erstellen: `create role [name] with login password 'pass';`",
+            "Mit verschlüsseltem Passwort: `create role [name] with login encrypted password 'pass';`",
+            "Ohne Passwort: `create role [name] with login;`",
+            "Benutzer löschen: `drop user [name];`",
+            "Benutzer umbenennen: `alter user [alt] rename to [neu];`",
+            "Passwort ändern: `alter user [name] with password 'new_pass';`"
+          ]
+        },
+
+        { "type": "h3", "text": "Tabellen", "id": "Tables" },
+        { "type": "p", "text": "Beispiel für das Erstellen einer Tabelle:" },
+        {
+          "type": "code",
+          "lang": "sql",
+          "wide": true,
+          "code": "create table accounts (\n  user_id serial PRIMARY KEY,\n  username VARCHAR(50) UNIQUE NOT NULL,\n  password VARCHAR(50) NOT NULL,\n  email VARCHAR(255) UNIQUE NOT NULL,\n  created_on TIMESTAMP NOT NULL,\n  last_login TIMESTAMP\n);"
+        },
+        { "type": "p", "text": "Tabelle löschen: `drop table accounts;`" },
+
+        {
+          "type": "h2",
+          "text": "Verbindung zu Datenbanken in Projekten",
+          "id": "Connecting-to-a-database-in-projects"
+        },
+        {
+          "type": "p",
+          "text": "PostgreSQL läuft standardmäßig auf Port 5432. Verbindung über IP und Port herstellen (z. B. localhost:5432)."
+        },
+        {
+          "type": "p",
+          "text": "Verwende ENV-Dateien, um Verbindungsdetails (IP, Port, Benutzername, Passwort) zu speichern."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Benutzer erstellen: `CREATE ROLE MyNewUserName WITH LOGIN PASSWORD 'MyNewUserPassword';`",
+            "DB-Erstellung erlauben: `ALTER ROLE MyNewUserName CREATEDB;`",
+            "Als neuer Benutzer anmelden: `psql postgres -U MyNewUserName`"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Erinnerung",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Ersetze MyNewUserName/MyNewUserPassword durch deine Daten."
+            }
+          ]
+        }
+      ]
     }
   }
 }

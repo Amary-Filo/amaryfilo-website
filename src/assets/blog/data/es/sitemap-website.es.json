@@ -1,9 +1,9 @@
 {
   "slug": "sitemap-website",
-  "title": "",
+  "title": "Mapa del sitio",
   "date": "2023-04-29",
   "updates": [],
-  "anonce": "",
+  "anonce": "Qué es un mapa del sitio y cómo configurarlo. Prácticas comunes y ejemplos de archivos.",
   "thumbnail": "",
   "category": "optimization",
   "category_list": [
@@ -23,44 +23,44 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Introducción",
       "level": 2
     },
     {
       "id": "What-are-sitemaps",
-      "title": "What are sitemaps",
+      "title": "Qué son los mapas del sitio",
       "level": 2
     },
     {
       "id": "HTML-Sitemap",
-      "title": "HTML Sitemap",
+      "title": "Mapa del sitio HTML",
       "level": 3
     },
     {
       "id": "XML-Sitemap",
-      "title": "XML Sitemap",
+      "title": "Mapa del sitio XML",
       "level": 3
     },
     {
       "id": "TXT-Sitemap",
-      "title": "TXT Sitemap",
+      "title": "Mapa del sitio TXT",
       "level": 3
     },
     {
       "id": "Page-priorities",
-      "title": "Page priorities",
+      "title": "Prioridades de páginas",
       "level": 2
     },
     {
       "id": "Creating-a-sitemap",
-      "title": "Creating a sitemap",
+      "title": "Creación de un mapa del sitio",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Introducción",
       "id": "Introduction"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "h2",
-      "text": "What are sitemaps",
+      "text": "Qué son los mapas del sitio",
       "id": "What-are-sitemaps"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "type": "h3",
-      "text": "HTML Sitemap",
+      "text": "Mapa del sitio HTML",
       "id": "HTML-Sitemap"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "type": "h3",
-      "text": "XML Sitemap",
+      "text": "Mapa del sitio XML",
       "id": "XML-Sitemap"
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "type": "h3",
-      "text": "TXT Sitemap",
+      "text": "Mapa del sitio TXT",
       "id": "TXT-Sitemap"
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "type": "h2",
-      "text": "Page priorities",
+      "text": "Prioridades de páginas",
       "id": "Page-priorities"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "type": "h2",
-      "text": "Creating a sitemap",
+      "text": "Creación de un mapa del sitio",
       "id": "Creating-a-sitemap"
     },
     {

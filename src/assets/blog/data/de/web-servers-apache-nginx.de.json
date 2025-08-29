@@ -1,9 +1,9 @@
 {
   "slug": "web-servers-apache-nginx",
-  "title": "",
+  "title": "Webserver: Apache und Nginx erklärt",
   "date": "2023-03-03",
   "updates": [],
-  "anonce": "",
+  "anonce": "Einrichtung und Konfiguration der Webserver Apache und Nginx für eine Website.",
   "thumbnail": "",
   "category": "optimization",
   "category_list": [
@@ -26,12 +26,12 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Einführung",
       "level": 2
     },
     {
       "id": "Web-servers",
-      "title": "Web servers",
+      "title": "Webserver",
       "level": 2
     },
     {
@@ -46,12 +46,12 @@
     },
     {
       "id": "Apache-or-Nginx",
-      "title": "Apache or Nginx?",
+      "title": "Apache oder Nginx?",
       "level": 3
     },
     {
       "id": "Web-server-setup",
-      "title": "Web server setup",
+      "title": "Webserver-Konfiguration",
       "level": 2
     },
     {
@@ -68,7 +68,7 @@
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Einführung",
       "id": "Introduction"
     },
     {
@@ -96,7 +96,7 @@
     },
     {
       "type": "h2",
-      "text": "Web servers",
+      "text": "Webserver",
       "id": "Web-servers"
     },
     {
@@ -189,7 +189,7 @@
     },
     {
       "type": "h3",
-      "text": "Apache or Nginx?",
+      "text": "Apache oder Nginx?",
       "id": "Apache-or-Nginx"
     },
     {
@@ -235,7 +235,7 @@
     },
     {
       "type": "h2",
-      "text": "Web server setup",
+      "text": "Webserver-Konfiguration",
       "id": "Web-server-setup"
     },
     {

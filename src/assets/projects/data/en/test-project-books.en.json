@@ -5,8 +5,8 @@
   "category": [
     "vue"
   ],
-  "anonce": "Test project that are demonstrate work with local storage (add/edit/delete) and validate form.",
-  "description": "Test project created on Vuejs with Axios. Demonstrates work with local storage, the ability to validate errors, add/edit and delete books.",
+  "anonce": "Test project that demonstrates work with local storage (add/edit/delete) and form validation.",
+  "description": "Test project created on VueJs with Axios. Demonstrates work with local storage, the ability to validate errors, add/edit and delete books.",
   "logo": "test-project-books-logo",
   "instruments": [
     {

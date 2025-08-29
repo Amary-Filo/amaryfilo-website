@@ -96,7 +96,8 @@
   "page.home.blog.title": "Blog",
   "page.home.blog.description": "I enjoy developing products and sharing my experiences. Perhaps you can find useful information.",
   "page.home.blog.button": "View articles",
-  "page.home.design.title": "Blog",
+
+  "page.home.design.title": "Design",
   "page.home.design.description": "I enjoy developing products and sharing my experiences. Perhaps you can find useful information.",
   "page.home.design.button": "View designs",
   "page.home.design.open": "Open design {{title}}",

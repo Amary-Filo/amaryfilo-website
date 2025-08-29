@@ -21,8 +21,16 @@
   },
   "data": {
     "ru": {
-      "title": "Clothing store template",
-      "description": "Design of an online clothing store. The site presents various collections and sections with clothes for adults."
+      "title": "Шаблон магазина одежды",
+      "description": "Дизайн интернет-магазина одежды. На сайте представлены различные коллекции и разделы с одеждой для взрослых."
+    },
+    "es": {
+      "title": "Plantilla de tienda de ropa",
+      "description": "Diseño de una tienda de ropa en línea. El sitio presenta varias colecciones y secciones con ropa para adultos."
+    },
+    "de": {
+      "title": "Vorlage für ein Bekleidungsgeschäft",
+      "description": "Design eines Online-Bekleidungsgeschäfts. Die Website präsentiert verschiedene Kollektionen und Bereiche mit Kleidung für Erwachsene."
     }
   }
 }

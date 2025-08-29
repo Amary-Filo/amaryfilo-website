@@ -6,8 +6,8 @@
     "angular",
     "crypto"
   ],
-  "anonce": "Development of a cryptocurrency p2p exchange platform.",
-  "description": "Development of a cryptocurrency exchange platform. In 2020, the platform had the first version of the interface and is different from the current one. Various improvements were made in the code, structure and design of the project. The main sections of the development were aimed at launching the platform, its subsequent development became a separate direction in the company.",
+  "anonce": "Entwicklung einer P2P-Plattform zum Austausch von Kryptowährungen.",
+  "description": "Entwicklung einer Plattform für den Austausch von Kryptowährungen. Im Jahr 2020 hatte die Plattform die erste Version der Benutzeroberfläche und unterschied sich von der aktuellen. Es wurden verschiedene Verbesserungen am Code, an der Struktur und am Design des Projekts vorgenommen. Die Hauptteile der Entwicklung waren auf den Start der Plattform ausgerichtet; ihre weitere Entwicklung wurde zu einer eigenen Richtung im Unternehmen.",
   "logo": "rubic-exchange-logo",
   "instruments": [
     {

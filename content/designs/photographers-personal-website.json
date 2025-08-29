@@ -25,8 +25,16 @@
   },
   "data": {
     "ru": {
-      "title": "Photographer's personal website ✨",
-      "description": "Personal website of a professional photographer for publishing works. In addition to works, contacts are indicated, price list for photo shoots and photographer skills."
+      "title": "Личный сайт фотографа ✨",
+      "description": "Личный сайт профессионального фотографа для публикации работ. Помимо работ указаны контакты, прайс-лист на фотосессии и навыки фотографа."
+    },
+    "es": {
+      "title": "Sitio web personal del fotógrafo ✨",
+      "description": "Sitio web personal de un fotógrafo profesional para publicar trabajos. Además de las obras, se indican los contactos, la lista de precios para sesiones fotográficas y las habilidades del fotógrafo."
+    },
+    "de": {
+      "title": "Persönliche Website des Fotografen ✨",
+      "description": "Persönliche Website eines professionellen Fotografen zur Veröffentlichung von Arbeiten. Neben den Arbeiten sind auch Kontakte, eine Preisliste für Fotoshootings und die Fähigkeiten des Fotografen angegeben."
     }
   }
 }

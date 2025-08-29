@@ -27,8 +27,16 @@
   },
   "data": {
     "ru": {
-      "title": "Minimal blog design",
-      "description": "Minimalistic design template for personal blogging. Article search, view blog articles and list them on the main page. Two kinds of theme: dark and light."
+      "title": "Минималистичный дизайн блога",
+      "description": "Шаблон минималистичного дизайна для личного блога. Поиск статей, просмотр записей блога и их список на главной странице. Две темы оформления: светлая и тёмная."
+    },
+    "es": {
+      "title": "Diseño de blog minimalista",
+      "description": "Plantilla de diseño minimalista para blogs personales. Búsqueda de artículos, visualización de publicaciones del blog y listado en la página principal. Dos tipos de tema: claro y oscuro."
+    },
+    "de": {
+      "title": "Minimalistisches Blog-Design",
+      "description": "Minimalistische Designvorlage für persönliches Bloggen. Artikelsuche, Anzeige von Blogbeiträgen und deren Auflistung auf der Startseite. Zwei Designvarianten: hell und dunkel."
     }
   }
 }

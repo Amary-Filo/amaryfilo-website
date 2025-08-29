@@ -3,7 +3,7 @@
   "title": "Карта сайта",
   "date": "2023-04-29",
   "updates": [],
-  "anonce": "Что такое карта сайта и как ее настроить. обычная практика и примеры файлов.",
+  "anonce": "Что такое карта сайта и как её настроить. Общие практики и примеры файлов.",
   "thumbnail": "",
   "category": "optimization",
   "category_list": [
@@ -23,44 +23,44 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Введение",
       "level": 2
     },
     {
       "id": "What-are-sitemaps",
-      "title": "What are sitemaps",
+      "title": "Что такое карты сайта",
       "level": 2
     },
     {
       "id": "HTML-Sitemap",
-      "title": "HTML Sitemap",
+      "title": "HTML карта сайта",
       "level": 3
     },
     {
       "id": "XML-Sitemap",
-      "title": "XML Sitemap",
+      "title": "XML карта сайта",
       "level": 3
     },
     {
       "id": "TXT-Sitemap",
-      "title": "TXT Sitemap",
+      "title": "TXT карта сайта",
       "level": 3
     },
     {
       "id": "Page-priorities",
-      "title": "Page priorities",
+      "title": "Приоритеты страниц",
       "level": 2
     },
     {
       "id": "Creating-a-sitemap",
-      "title": "Creating a sitemap",
+      "title": "Создание карты сайта",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Введение",
       "id": "Introduction"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "h2",
-      "text": "What are sitemaps",
+      "text": "Что такое карты сайта",
       "id": "What-are-sitemaps"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "type": "h3",
-      "text": "HTML Sitemap",
+      "text": "HTML карта сайта",
       "id": "HTML-Sitemap"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "type": "h3",
-      "text": "XML Sitemap",
+      "text": "XML карта сайта",
       "id": "XML-Sitemap"
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "type": "h3",
-      "text": "TXT Sitemap",
+      "text": "TXT карта сайта",
       "id": "TXT-Sitemap"
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "type": "h2",
-      "text": "Page priorities",
+      "text": "Приоритеты страниц",
       "id": "Page-priorities"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "type": "h2",
-      "text": "Creating a sitemap",
+      "text": "Создание карты сайта",
       "id": "Creating-a-sitemap"
     },
     {

@@ -1,12 +1,12 @@
 {
   "slug": "test-project-stars",
-  "title": "[Тестовый проект] Stars",
+  "title": "[TEST Project] Stars",
   "date": "2019-03-06",
   "category": [
     "mobile"
   ],
-  "anonce": "Test project on Swift UI with Google Firebase connection.",
-  "description": "Test project on Swift UI. The Google Account module is connected. The ability to log into the application through a Google Account and view the profile. Autologin by sessions.",
+  "anonce": "Test project on SwiftUI with Google Firebase integration.",
+  "description": "Test project on SwiftUI. The Google Account module is connected, allowing users to log into the application through a Google Account and view their profile. Autologin via sessions is supported.",
   "logo": "test-project-stars-logo",
   "instruments": [
     {

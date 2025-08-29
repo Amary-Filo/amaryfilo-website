@@ -6,7 +6,7 @@
     "crypto"
   ],
   "anonce": "Server side of Quras Wallet+ for iOS/Web and Android.",
-  "description": "Server side of Quras Wallet+. Adding Quras blocked. Integration of various blockchains. Configuring server settings, updating packages. Creation of various api for the wallet. Updating packages in NPM.",
+  "description": "Server side of Quras Wallet+. Adding Quras blockchain. Integration of various blockchains. Configuring server settings, updating packages. Creation of various APIs for the wallet. Updating packages in NPM.",
   "logo": "quras-wallet-client-logo",
   "instruments": [
     {
@@ -62,7 +62,7 @@
       "description": ""
     },
     {
-      "title": "Muti-chain",
+      "title": "Multi-chain",
       "description": ""
     },
     {

@@ -1,9 +1,9 @@
 {
   "slug": "install-homebrew",
-  "title": "",
+  "title": "Cómo instalar Homebrew en macOS, Apple Silicon y Windows",
   "date": "2022-12-18",
   "updates": [],
-  "anonce": "",
+  "anonce": "Homebrew es un gestor de paquetes ligero para macOS, Linux y Windows (a través de WSL) que simplifica la instalación de software, la gestión de servicios y acelera el desarrollo.",
   "thumbnail": "",
   "category": "tools",
   "category_list": [
@@ -27,22 +27,22 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Introducción",
       "level": 2
     },
     {
       "id": "What-is-homebrew",
-      "title": "What is Homebrew?",
+      "title": "¿Qué es Homebrew?",
       "level": 3
     },
     {
       "id": "Commands",
-      "title": "Commands",
+      "title": "Comandos",
       "level": 3
     },
     {
       "id": "Installing-Homebrew",
-      "title": "Installing Homebrew",
+      "title": "Instalación de Homebrew",
       "level": 2
     },
     {
@@ -62,14 +62,14 @@
     },
     {
       "id": "Conclusion",
-      "title": "Conclusion",
+      "title": "Conclusión",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Introducción",
       "id": "Introduction"
     },
     {
@@ -82,7 +82,7 @@
     },
     {
       "type": "h3",
-      "text": "What is Homebrew?",
+      "text": "¿Qué es Homebrew?",
       "id": "What-is-homebrew"
     },
     {
@@ -107,7 +107,7 @@
     },
     {
       "type": "h3",
-      "text": "Commands",
+      "text": "Comandos",
       "id": "Commands"
     },
     {
@@ -144,7 +144,7 @@
     },
     {
       "type": "h2",
-      "text": "Installing Homebrew",
+      "text": "Instalación de Homebrew",
       "id": "Installing-Homebrew"
     },
     {
@@ -248,7 +248,7 @@
     },
     {
       "type": "h2",
-      "text": "Conclusion",
+      "text": "Conclusión",
       "id": "Conclusion"
     },
     {

@@ -258,19 +258,650 @@
   },
   "data": {
     "ru": {
-      "title": "Серверная оптимизация сайта",
-      "anonce": "Установка и настройка сервера Apache и Nginx для сайта.",
-      "content": []
+      "title": "Веб-серверы: Apache и Nginx объяснение",
+      "anonce": "Установка и настройка веб-сервера Apache и Nginx для сайта.",
+      "content": [
+        { "type": "h2", "text": "Введение", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Веб-сервер — это посредник между клиентом и сервером. Он получает контент по каждому запросу и передаёт его в сеть."
+        },
+        {
+          "type": "p",
+          "text": "Его основная задача — одновременно обслуживать множество запросов. Правильная настройка серверных файлов снижает нагрузку и улучшает производительность сайта."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Языки программирования",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Веб-серверы обрабатывают файлы, написанные на PHP, Python, JavaScript и других языках."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Проще говоря: веб-сервер соединяет сервер и клиента."
+        },
+
+        { "type": "h2", "text": "Веб-серверы", "id": "Web-servers" },
+        {
+          "type": "p",
+          "text": "Сегодня существует множество веб-серверов. Самые популярные — Apache и Nginx."
+        },
+        {
+          "type": "p",
+          "text": "Мы не будем подробно их сравнивать, а рассмотрим основы и настройку."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Установленное ПО",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx и Apache — это программное обеспечение, устанавливаемое на сервер."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache", "id": "Apache" },
+        {
+          "type": "p",
+          "text": "Когда клиент заходит на страницу, Apache возвращает запрошенные файлы (текст, изображения и т. д.), используя протокол HTTP/HTTPS."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Модули",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache имеет модульную структуру и легко настраивается."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Модули позволяют включать и отключать безопасность, кэширование, редактирование URL, аутентификацию и другие функции."
+        },
+        { "type": "p", "text": "Настройки можно задать через файл .htaccess." },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Расположение",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Обычно .htaccess размещают в корне сайта, но можно поместить и в подкаталоги."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx", "id": "Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx — это веб-сервер и почтовый прокси, выпущенный в 2004 году. Эффективен для статических сайтов и как обратный прокси для динамических."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Лёгкость",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx позиционируется как быстрый, надёжный и не перегруженный лишними функциями сервер."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Обслуживание запросов, индексные файлы, списки файлов",
+            "Проксирование без кэша, балансировка нагрузки, отказоустойчивость",
+            "Кэширование для ускоренного проксирования",
+            "Модульность и фильтры",
+            "Параллельное выполнение подзапросов на одной странице"
+          ]
+        },
+
+        { "type": "h3", "text": "Apache или Nginx?", "id": "Apache-or-Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx был создан для решения проблемы c10k (10 000 одновременных подключений)."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Проблема 10K",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "Подробнее см. в <a href=\"https://en.wikipedia.org/wiki/C10k_problem\" target=\"_blank\">Википедии</a>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Apache использует потоковую структуру и при высокой нагрузке может замедляться. Nginx построен на событийной архитектуре с мастер-процессом и рабочими процессами."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Масштабируемость",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Модель Nginx эффективно распределяет запросы между воркерами, что повышает масштабируемость."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Малые сайты",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache может быть удобнее для небольших сайтов благодаря модулям и простой настройке."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Настройка веб-сервера",
+          "id": "Web-server-setup"
+        },
+        {
+          "type": "p",
+          "text": "Конфигурационные файлы обычно настраиваются отдельно для каждого сайта или фреймворка, но есть общие правила."
+        },
+        {
+          "type": "p",
+          "text": "Ключевые модули: редактирование URL и кэширование — важны и для SEO, и для производительности."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Сжатие",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Сжатие текста (gzip) уменьшает размер файлов и ускоряет загрузку."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Правила URL",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Базовая настройка включает собственные страницы ошибок и удаление расширений .html/.php."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache: .htaccess", "id": "Apache-htaccess" },
+        {
+          "type": "p",
+          "text": "Все дополнения Apache записываются в .htaccess, размещённый в корне сайта."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Имя файла",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Файл должен называться именно .htaccess, а не my.htaccess."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx: .conf", "id": "Nginx-conf" },
+        {
+          "type": "p",
+          "text": "Конфигурации Nginx задаются в файлах .conf с любыми именами (например, cache-ng.conf)."
+        }
+      ]
     },
+
     "es": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "Servidores web: explicación de Apache y Nginx",
+      "anonce": "Configuración y ajuste del servidor Apache y Nginx para un sitio web.",
+      "content": [
+        { "type": "h2", "text": "Introducción", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "El servidor web es un intermediario entre el cliente y el servidor. Recupera el contenido de cada solicitud y lo transmite a la red."
+        },
+        {
+          "type": "p",
+          "text": "Su tarea principal es manejar múltiples solicitudes simultáneamente. Configurar correctamente los archivos del servidor reduce la carga y mejora el rendimiento del sitio."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Lenguajes de programación",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Los servidores web procesan archivos escritos en PHP, Python, JavaScript y otros."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "En pocas palabras: un servidor web conecta el servidor con el cliente."
+        },
+
+        { "type": "h2", "text": "Servidores web", "id": "Web-servers" },
+        {
+          "type": "p",
+          "text": "Hoy en día existen muchos servidores web. Los más populares son Apache y Nginx."
+        },
+        {
+          "type": "p",
+          "text": "No los compararemos en detalle, sino que veremos lo básico y su configuración."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Software instalado",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx y Apache son programas que se instalan en el servidor."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache", "id": "Apache" },
+        {
+          "type": "p",
+          "text": "Cuando un cliente visita una página, Apache devuelve los archivos solicitados (texto, imágenes, etc.) utilizando HTTP/HTTPS."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Módulos",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache tiene una estructura modular y es altamente configurable."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los módulos permiten activar o desactivar seguridad, caché, edición de URL, autenticación y más."
+        },
+        {
+          "type": "p",
+          "text": "Las configuraciones se pueden establecer con el archivo .htaccess."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Ubicación",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Normalmente .htaccess se coloca en la raíz del sitio, pero también puede ponerse en subdirectorios."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx", "id": "Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx es un servidor web y proxy de correo, lanzado en 2004. Es eficiente para sitios estáticos y como proxy inverso para los dinámicos."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Ligero",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx es rápido, confiable y no está sobrecargado de funciones."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Atender solicitudes, archivos índice, listas de archivos",
+            "Proxy sin caché, balanceo de carga, tolerancia a fallos",
+            "Soporte de caché para un proxy más rápido",
+            "Modularidad y filtros",
+            "Subconsultas en paralelo en una misma página"
+          ]
+        },
+
+        { "type": "h3", "text": "¿Apache o Nginx?", "id": "Apache-or-Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx fue creado para resolver el problema c10k (10.000 conexiones simultáneas)."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Problema 10K",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "Más información en <a href=\"https://en.wikipedia.org/wiki/C10k_problem\" target=\"_blank\">Wikipedia</a>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Apache utiliza una estructura basada en hilos y puede ralentizarse con alto tráfico. Nginx usa una arquitectura orientada a eventos con un proceso maestro y procesos de trabajo."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Escalabilidad",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx distribuye las solicitudes de forma eficiente entre los workers, mejorando la escalabilidad."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Sitios pequeños",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache puede ser más conveniente para sitios pequeños gracias a sus módulos y configuración más simple."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Configuración del servidor web",
+          "id": "Web-server-setup"
+        },
+        {
+          "type": "p",
+          "text": "Los archivos de configuración suelen personalizarse por sitio o framework, pero existen ajustes generales."
+        },
+        {
+          "type": "p",
+          "text": "Módulos clave: edición de URL y caché, ambos importantes para SEO y rendimiento."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Compresión",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "La compresión de texto (gzip) reduce el tamaño de los archivos y acelera la carga."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Reglas de URL",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "La configuración básica incluye páginas de error personalizadas y eliminar extensiones .html/.php."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache: .htaccess", "id": "Apache-htaccess" },
+        {
+          "type": "p",
+          "text": "Todas las configuraciones adicionales de Apache se escriben en .htaccess, ubicado en la raíz del sitio."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Nombre de archivo",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Debe llamarse exactamente .htaccess, no my.htaccess."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx: .conf", "id": "Nginx-conf" },
+        {
+          "type": "p",
+          "text": "Las configuraciones de Nginx están en archivos .conf con nombres flexibles (por ejemplo, cache-ng.conf)."
+        }
+      ]
     },
     "de": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "Webserver: Apache und Nginx erklärt",
+      "anonce": "Einrichtung und Konfiguration der Webserver Apache und Nginx für eine Website.",
+      "content": [
+        { "type": "h2", "text": "Einführung", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Ein Webserver ist ein Vermittler zwischen Client und Server. Er ruft Inhalte für jede Anfrage ab und überträgt sie ins Netzwerk."
+        },
+        {
+          "type": "p",
+          "text": "Seine Hauptaufgabe besteht darin, mehrere Anfragen gleichzeitig zu verarbeiten. Eine korrekte Konfiguration der Serverdateien reduziert die Last und verbessert die Leistung der Website."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Programmiersprachen",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Webserver verarbeiten Dateien, die in PHP, Python, JavaScript und anderen Sprachen geschrieben sind."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Einfach gesagt: Ein Webserver verbindet Server und Client."
+        },
+
+        { "type": "h2", "text": "Webserver", "id": "Web-servers" },
+        {
+          "type": "p",
+          "text": "Heute gibt es viele Webserver. Die beliebtesten sind Apache und Nginx."
+        },
+        {
+          "type": "p",
+          "text": "Wir werden sie nicht im Detail vergleichen, sondern die Grundlagen und ihre Konfiguration behandeln."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Installierte Software",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx und Apache sind Programme, die auf dem Server installiert werden."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache", "id": "Apache" },
+        {
+          "type": "p",
+          "text": "Wenn ein Client eine Seite aufruft, liefert Apache die angeforderten Dateien (Text, Bilder usw.) über HTTP/HTTPS zurück."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Module",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache ist modular aufgebaut und sehr anpassbar."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Mit Modulen können Sicherheit, Caching, URL-Bearbeitung, Authentifizierung und mehr aktiviert oder deaktiviert werden."
+        },
+        {
+          "type": "p",
+          "text": "Konfigurationen können mit der Datei .htaccess festgelegt werden."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Platzierung",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Normalerweise befindet sich .htaccess im Stammverzeichnis der Website, es kann aber auch in Unterverzeichnissen platziert werden."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx", "id": "Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx ist ein Webserver und Mail-Proxy, der 2004 veröffentlicht wurde. Er eignet sich besonders für statische Websites und als Reverse Proxy für dynamische Seiten."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Leichtgewichtig",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx ist schnell, zuverlässig und nicht mit Funktionen überladen."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Verarbeiten von Anfragen, Indexdateien, Dateilisten",
+            "Proxy ohne Caching, Lastverteilung, Fehlertoleranz",
+            "Caching-Unterstützung für schnelleres Proxying",
+            "Modularität und Filter",
+            "Parallele Unterabfragen auf einer Seite"
+          ]
+        },
+
+        { "type": "h3", "text": "Apache oder Nginx?", "id": "Apache-or-Nginx" },
+        {
+          "type": "p",
+          "text": "Nginx wurde entwickelt, um das c10k-Problem (10.000 gleichzeitige Verbindungen) zu lösen."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "10K-Problem",
+          "blocks": [
+            {
+              "type": "p",
+              "html": "Mehr dazu auf <a href=\"https://en.wikipedia.org/wiki/C10k_problem\" target=\"_blank\">Wikipedia</a>."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Apache verwendet eine Thread-Struktur und kann bei hohem Traffic langsamer werden. Nginx nutzt eine ereignisgesteuerte Architektur mit einem Master-Prozess und Worker-Prozessen."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Skalierbarkeit",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Nginx verteilt Anfragen effizient auf Worker-Prozesse und verbessert so die Skalierbarkeit."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Kleinere Websites",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Apache kann für kleinere Websites einfacher sein, dank seiner Module und der leichteren Einrichtung."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Webserver-Konfiguration",
+          "id": "Web-server-setup"
+        },
+        {
+          "type": "p",
+          "text": "Konfigurationsdateien werden normalerweise pro Website oder Framework angepasst, es gibt jedoch allgemeine Einstellungen."
+        },
+        {
+          "type": "p",
+          "text": "Wichtige Module: URL-Bearbeitung und Caching, beide entscheidend für SEO und Performance."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Kompression",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Textkompression (gzip) reduziert Dateigröße und beschleunigt die Ladezeit."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "URL-Regeln",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Die Basiskonfiguration umfasst benutzerdefinierte Fehlerseiten und das Entfernen von .html/.php-Endungen."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Apache: .htaccess", "id": "Apache-htaccess" },
+        {
+          "type": "p",
+          "text": "Alle Apache-Erweiterungen werden in .htaccess geschrieben, das sich im Stammverzeichnis der Website befindet."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Dateiname",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Die Datei muss genau .htaccess heißen, nicht my.htaccess."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Nginx: .conf", "id": "Nginx-conf" },
+        {
+          "type": "p",
+          "text": "Die Nginx-Konfigurationen befinden sich in .conf-Dateien mit flexiblen Namen (z. B. cache-ng.conf)."
+        }
+      ]
     }
   }
 }

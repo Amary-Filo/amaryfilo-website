@@ -9,31 +9,11 @@
     "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
     "description": "Development of an application for the Quras blockchain. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service.",
     "instruments": [
-      {
-        "icon": "angular",
-        "color": "",
-        "title": "Angular"
-      },
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "ionic",
-        "color": "",
-        "title": "Ionic"
-      },
-      {
-        "icon": "web3js",
-        "color": "",
-        "title": "Web3js"
-      }
+      { "icon": "angular", "color": "", "title": "Angular" },
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "ionic", "color": "", "title": "Ionic" },
+      { "icon": "web3js", "color": "", "title": "Web3js" }
     ],
     "logo": "quras-wallet-logo",
     "images": [
@@ -73,113 +53,64 @@
       }
     ],
     "features": [
-      {
-        "title": "Cordova",
-        "description": ""
-      },
-      {
-        "title": "Tangem cards integration",
-        "description": ""
-      },
-      {
-        "title": "Wallet",
-        "description": ""
-      },
-      {
-        "title": "Moonpay",
-        "description": ""
-      },
-      {
-        "title": "Transactions",
-        "description": ""
-      },
-      {
-        "title": "Backend",
-        "description": ""
-      },
-      {
-        "title": "Buy crypto by feat",
-        "description": ""
-      },
-      {
-        "title": "Subscribe transactions via Tangem Card",
-        "description": ""
-      }
+      { "title": "Cordova", "description": "" },
+      { "title": "Tangem cards integration", "description": "" },
+      { "title": "Wallet", "description": "" },
+      { "title": "Moonpay", "description": "" },
+      { "title": "Transactions", "description": "" },
+      { "title": "Backend", "description": "" },
+      { "title": "Buy crypto by fiat", "description": "" },
+      { "title": "Subscribe transactions via Tangem Card", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development of an application for the Quras blockchain to iOS, Web and Android platforms.",
-      "description": "Development of an application for the Quras blockchain. Adding various modules, a complete redesign. Improvements and connection of the API for the full operation of the application. Updating applications in the App Store and Play Market. Development of the server part of the wallet. Integration of both cryptocurrencies through the Moonpay service.",
+      "anonce": "Desarrollo de una aplicación para la blockchain de Quras en plataformas iOS, Web y Android.",
+      "description": "Desarrollo de una aplicación para la blockchain de Quras. Adición de varios módulos, un rediseño completo. Mejoras y conexión del API para el funcionamiento completo de la aplicación. Actualización de las aplicaciones en App Store y Play Market. Desarrollo de la parte del servidor del monedero. Integración de criptomonedas a través del servicio Moonpay.",
       "features": [
+        { "title": "Cordova", "description": "" },
+        { "title": "Integración con tarjetas Tangem", "description": "" },
+        { "title": "Monedero", "description": "" },
+        { "title": "Moonpay", "description": "" },
+        { "title": "Transacciones", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Comprar cripto con fiat", "description": "" },
         {
-          "title": "Cordova",
-          "description": ""
-        },
-        {
-          "title": "Tangem cards integration",
-          "description": ""
-        },
-        {
-          "title": "Wallet",
-          "description": ""
-        },
-        {
-          "title": "Moonpay",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Buy crypto by feat",
-          "description": ""
-        },
-        {
-          "title": "Subscribe transactions via Tangem Card",
+          "title": "Suscripción de transacciones con tarjeta Tangem",
           "description": ""
         }
       ]
     },
     "ru": {
       "anonce": "Разработка приложения для блокчейна Quras для платформ iOS, Web и Android.",
-      "description": "Разработка приложения для блокчейна Quras. Добавление различных модулей, полное изменение дизайна. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция обена криптовалюты через сервис Moonpay.",
+      "description": "Разработка приложения для блокчейна Quras. Добавление различных модулей, полный редизайн. Доработки и подключение API для полноценной работы приложения. Обновление приложений в App Store и Play Market. Разработка серверной части кошелька. Интеграция обмена криптовалюты через сервис Moonpay.",
       "features": [
+        { "title": "Cordova", "description": "" },
+        { "title": "Интеграция карт Tangem", "description": "" },
+        { "title": "Кошелек", "description": "" },
+        { "title": "Moonpay", "description": "" },
+        { "title": "Транзакции", "description": "" },
+        { "title": "Бэкенд", "description": "" },
+        { "title": "Покупка криптовалюты за фиат", "description": "" },
         {
-          "title": "Cordova",
+          "title": "Подписывать транзакции через карту Tangem",
           "description": ""
-        },
+        }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung einer Anwendung für die Quras-Blockchain auf iOS-, Web- und Android-Plattformen.",
+      "description": "Entwicklung einer Anwendung für die Quras-Blockchain. Hinzufügen verschiedener Module, ein komplettes Redesign. Verbesserungen und Anbindung der API für den vollständigen Betrieb der Anwendung. Aktualisierung der Anwendungen im App Store und Play Market. Entwicklung des Serverteils der Wallet. Integration von Kryptowährungen über den Moonpay-Dienst.",
+      "features": [
+        { "title": "Cordova", "description": "" },
+        { "title": "Integration von Tangem-Karten", "description": "" },
+        { "title": "Wallet", "description": "" },
+        { "title": "Moonpay", "description": "" },
+        { "title": "Transaktionen", "description": "" },
+        { "title": "Backend", "description": "" },
+        { "title": "Krypto mit Fiat kaufen", "description": "" },
         {
-          "title": "Tangem cards integration",
-          "description": ""
-        },
-        {
-          "title": "Wallet",
-          "description": ""
-        },
-        {
-          "title": "Moonpay",
-          "description": ""
-        },
-        {
-          "title": "Transactions",
-          "description": ""
-        },
-        {
-          "title": "Backend",
-          "description": ""
-        },
-        {
-          "title": "Buy crypto by feat",
-          "description": ""
-        },
-        {
-          "title": "Subscribe transactions via Tangem Card",
+          "title": "Transaktionen mit Tangem-Karte signieren",
           "description": ""
         }
       ]

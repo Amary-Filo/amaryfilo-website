@@ -6,8 +6,8 @@
     "crypto",
     "package"
   ],
-  "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
-  "description": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+  "anonce": "Conecta tu billetera cripto usando las extensiones de navegador WalletLink, KardiaChain, MetaMask o la aplicación móvil y el servicio WalletConnect escaneando el código QR de la billetera.",
+  "description": "Conecta tu billetera cripto usando las extensiones de navegador WalletLink, KardiaChain, MetaMask o la aplicación móvil y el servicio WalletConnect escaneando el código QR de la billetera.",
   "logo": "amfi-connect-logo",
   "instruments": [
     {

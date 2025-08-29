@@ -9,26 +9,10 @@
     "anonce": "Test project on NuxtJs.",
     "description": "Test project on NuxtJs. Nothing remarkable.",
     "instruments": [
-      {
-        "icon": "html5",
-        "color": "",
-        "title": "HTML"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "vue",
-        "color": "",
-        "title": "NuxtJs"
-      },
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      }
+      { "icon": "html5", "color": "", "title": "HTML" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "vue", "color": "", "title": "NuxtJs" },
+      { "icon": "typescript", "color": "", "title": "TS" }
     ],
     "logo": "test-project-big-menu-logo",
     "images": [
@@ -53,55 +37,37 @@
       }
     ],
     "features": [
-      {
-        "title": "Sliders",
-        "description": ""
-      },
-      {
-        "title": "Menu",
-        "description": ""
-      },
-      {
-        "title": "Adaptive",
-        "description": ""
-      }
+      { "title": "Sliders", "description": "" },
+      { "title": "Menu", "description": "" },
+      { "title": "Adaptive", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Test project on NuxtJs.",
-      "description": "Test project on NuxtJs. Nothing remarkable.",
+      "anonce": "Proyecto de prueba en NuxtJs.",
+      "description": "Proyecto de prueba en NuxtJs. Nada destacable.",
       "features": [
-        {
-          "title": "Sliders",
-          "description": ""
-        },
-        {
-          "title": "Menu",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Deslizadores", "description": "" },
+        { "title": "Menú", "description": "" },
+        { "title": "Adaptativo", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Тестовый проект на NuxtJs.",
       "description": "Тестовый проект на NuxtJs. Ничего примечательного.",
       "features": [
-        {
-          "title": "Sliders",
-          "description": ""
-        },
-        {
-          "title": "Menu",
-          "description": ""
-        },
-        {
-          "title": "Adaptive",
-          "description": ""
-        }
+        { "title": "Слайдеры", "description": "" },
+        { "title": "Меню", "description": "" },
+        { "title": "Адаптивность", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Testprojekt auf NuxtJs.",
+      "description": "Testprojekt auf NuxtJs. Nichts Besonderes.",
+      "features": [
+        { "title": "Slider", "description": "" },
+        { "title": "Menü", "description": "" },
+        { "title": "Adaptiv", "description": "" }
       ]
     }
   }

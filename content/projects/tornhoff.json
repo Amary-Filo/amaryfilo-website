@@ -9,41 +9,13 @@
     "anonce": "Development, administration and maintenance of a website for the sale of German profiles and doors.",
     "description": "Finalization of the site for the sale of German doors. Modules were created to translate the site into different languages ​​and display various data by country. Product view page update. SEO Project Improvement.",
     "instruments": [
-      {
-        "icon": "typescript",
-        "color": "",
-        "title": "TS"
-      },
-      {
-        "icon": "css3",
-        "color": "",
-        "title": "CSS"
-      },
-      {
-        "icon": "sass",
-        "color": "",
-        "title": "SCSS"
-      },
-      {
-        "icon": "php",
-        "color": "",
-        "title": "PHP"
-      },
-      {
-        "icon": "design",
-        "color": "",
-        "title": "Design"
-      },
-      {
-        "icon": "octobercms",
-        "color": "",
-        "title": "OctoberCMS"
-      },
-      {
-        "icon": "nginx",
-        "color": "",
-        "title": "Nginx"
-      }
+      { "icon": "typescript", "color": "", "title": "TS" },
+      { "icon": "css3", "color": "", "title": "CSS" },
+      { "icon": "sass", "color": "", "title": "SCSS" },
+      { "icon": "php", "color": "", "title": "PHP" },
+      { "icon": "design", "color": "", "title": "Design" },
+      { "icon": "octobercms", "color": "", "title": "OctoberCMS" },
+      { "icon": "nginx", "color": "", "title": "Nginx" }
     ],
     "logo": "tornhoff-logo",
     "images": [
@@ -69,103 +41,53 @@
       }
     ],
     "features": [
-      {
-        "title": "Admin panel",
-        "description": ""
-      },
-      {
-        "title": "News",
-        "description": ""
-      },
-      {
-        "title": "Catalog",
-        "description": ""
-      },
-      {
-        "title": "Multi-language",
-        "description": ""
-      },
-      {
-        "title": "SEO",
-        "description": ""
-      },
-      {
-        "title": "Page generator",
-        "description": ""
-      },
-      {
-        "title": "Navigation",
-        "description": ""
-      }
+      { "title": "Admin panel", "description": "" },
+      { "title": "News", "description": "" },
+      { "title": "Catalog", "description": "" },
+      { "title": "Multi-language", "description": "" },
+      { "title": "SEO", "description": "" },
+      { "title": "Page generator", "description": "" },
+      { "title": "Navigation", "description": "" }
     ]
   },
   "data": {
     "es": {
-      "anonce": "Development, administration and maintenance of a website for the sale of German profiles and doors.",
-      "description": "Finalization of the site for the sale of German doors. Modules were created to translate the site into different languages ​​and display various data by country. Product view page update. SEO Project Improvement.",
+      "anonce": "Desarrollo, administración y mantenimiento de un sitio web para la venta de perfiles y puertas alemanas.",
+      "description": "Finalización del sitio para la venta de puertas alemanas. Se crearon módulos para traducir el sitio a diferentes idiomas y mostrar diversos datos por país. Actualización de la página de visualización de productos. Mejora del proyecto en SEO.",
       "features": [
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "News",
-          "description": ""
-        },
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Page generator",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        }
+        { "title": "Panel de administración", "description": "" },
+        { "title": "Noticias", "description": "" },
+        { "title": "Catálogo", "description": "" },
+        { "title": "Multi-idioma", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Generador de páginas", "description": "" },
+        { "title": "Navegación", "description": "" }
       ]
     },
     "ru": {
       "anonce": "Разработка, администрирование и ведение сайта по продаже немецких профилей и дверей.",
-      "description": "Добработка сайта по продаже немецких дверей. Были созданы модули по переводу сайта на разные языки и отображение различных данных по странам. Обновление станицы просмотра товара. Улучшение проекта по SEO.",
+      "description": "Доработка сайта по продаже немецких дверей. Были созданы модули для перевода сайта на разные языки и отображения различных данных по странам. Обновление страницы просмотра товара. Улучшение проекта по SEO.",
       "features": [
-        {
-          "title": "Admin panel",
-          "description": ""
-        },
-        {
-          "title": "News",
-          "description": ""
-        },
-        {
-          "title": "Catalog",
-          "description": ""
-        },
-        {
-          "title": "Multi-language",
-          "description": ""
-        },
-        {
-          "title": "SEO",
-          "description": ""
-        },
-        {
-          "title": "Page generator",
-          "description": ""
-        },
-        {
-          "title": "Navigation",
-          "description": ""
-        }
+        { "title": "Админ-панель", "description": "" },
+        { "title": "Новости", "description": "" },
+        { "title": "Каталог", "description": "" },
+        { "title": "Мультиязычность", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Генератор страниц", "description": "" },
+        { "title": "Навигация", "description": "" }
+      ]
+    },
+    "de": {
+      "anonce": "Entwicklung, Administration und Wartung einer Website für den Verkauf von deutschen Profilen und Türen.",
+      "description": "Überarbeitung der Website für den Verkauf von deutschen Türen. Es wurden Module erstellt, um die Website in verschiedene Sprachen zu übersetzen und unterschiedliche Daten je nach Land anzuzeigen. Aktualisierung der Produktansichtsseite. Verbesserung des Projekts in Bezug auf SEO.",
+      "features": [
+        { "title": "Admin-Panel", "description": "" },
+        { "title": "Nachrichten", "description": "" },
+        { "title": "Katalog", "description": "" },
+        { "title": "Mehrsprachigkeit", "description": "" },
+        { "title": "SEO", "description": "" },
+        { "title": "Seitengenerator", "description": "" },
+        { "title": "Navigation", "description": "" }
       ]
     }
   }

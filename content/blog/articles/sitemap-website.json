@@ -206,18 +206,544 @@
   "data": {
     "ru": {
       "title": "Карта сайта",
-      "anonce": "Что такое карта сайта и как ее настроить. обычная практика и примеры файлов.",
-      "content": []
+      "anonce": "Что такое карта сайта и как её настроить. Общие практики и примеры файлов.",
+      "content": [
+        { "type": "h2", "text": "Введение", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Карта сайта — это html-страница сайта или специальный xml-файл, который содержит ссылки на все важные страницы. Она похожа на оглавление книги и помогает пользователям и поисковым роботам быстрее находить страницы с минимальным количеством переходов."
+        },
+
+        {
+          "type": "h2",
+          "text": "Что такое карты сайта",
+          "id": "What-are-sitemaps"
+        },
+        {
+          "type": "p",
+          "text": "Поисковые роботы индексируют сайт постепенно, начиная с главной страницы. При глубокой вложенности индексация всех страниц может занять много времени. Карта сайта даёт прямые ссылки на страницы и ускоряет процесс. Различают три вида: HTML, XML и TXT."
+        },
+
+        { "type": "h3", "text": "HTML карта сайта", "id": "HTML-Sitemap" },
+        {
+          "type": "p",
+          "text": "HTML-карта сайта — это страница со списком основных разделов и страниц сайта."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Для людей",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "HTML-карта сайта предназначена скорее для пользователей, чем для роботов, и помогает быстро ориентироваться."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Ограничение",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Не размещайте более 100 ссылок на одной странице HTML-карты сайта."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "HTML-карты сайта часто имеют древовидную структуру с разделами и подразделами. Фактически все ссылки в футере, хедере и теле страницы образуют HTML-карту сайта."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "SEO-ценность",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "HTML-карта сайта имеет небольшую ценность для поисковых систем по сравнению с XML."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "XML карта сайта", "id": "XML-Sitemap" },
+        {
+          "type": "p",
+          "text": "Для крупных сайтов необходимо использовать XML-карту сайта, которая содержит структурированные данные о каждой странице."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Определение",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "XML-карта сайта — это файл sitemap.xml в корне сайта. Может содержать до 50 000 ссылок."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Кодировка",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Файл sitemap.xml должен быть в кодировке UTF-8."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<urlset> – основной тег, содержащий все URL.",
+            "<url> – информация о конкретном URL.",
+            "<loc> – адрес страницы."
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<lastmod> – дата последнего изменения.",
+            "<changefreq> – частота обновления.",
+            "<priority> – приоритет страницы (0.1–1)."
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Разделение",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Если карта сайта превышает 50 000 ссылок или 10 МБ, её нужно разделить на несколько файлов и использовать <sitemapindex>."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "TXT карта сайта", "id": "TXT-Sitemap" },
+        {
+          "type": "p",
+          "text": "TXT-карта сайта — это простой текстовый файл, в котором все ссылки перечислены построчно."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Ограничения",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Максимум 50 000 ссылок, отсутствуют атрибуты <lastmod> и priority."
+            }
+          ]
+        },
+
+        { "type": "h2", "text": "Приоритеты страниц", "id": "Page-priorities" },
+        {
+          "type": "ul",
+          "items": [
+            "1 – Главная страница",
+            "0.8 – Основные разделы",
+            "0.6–0.5 – Категории и подкатегории",
+            "0.4 – Второстепенные страницы"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "На практике",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Поисковые системы могут не строго учитывать выставленные приоритеты."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Создание карты сайта",
+          "id": "Creating-a-sitemap"
+        },
+        {
+          "type": "p",
+          "text": "Файл карты сайта должен находиться в корне сайта. Поисковые системы могут находить его автоматически, но можно указать ссылки напрямую."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Добавить в Google Search Console",
+            "Указать в robots.txt",
+            "Сгенерировать через CMS или плагины",
+            "Использовать онлайн-генераторы (например, xml-sitemaps.com)",
+            "Автоматически генерировать с помощью gulp, webpack, react, vue",
+            "Написать вручную"
+          ]
+        }
+      ]
     },
     "es": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "Mapa del sitio",
+      "anonce": "Qué es un mapa del sitio y cómo configurarlo. Prácticas comunes y ejemplos de archivos.",
+      "content": [
+        { "type": "h2", "text": "Introducción", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Un mapa del sitio es una página html de un sitio o un archivo xml especial que contiene enlaces a todas las páginas importantes del sitio. Es similar a un índice de un libro y ayuda a los visitantes y a los robots de búsqueda a encontrar páginas rápidamente con un número mínimo de transiciones."
+        },
+
+        {
+          "type": "h2",
+          "text": "Qué son los mapas del sitio",
+          "id": "What-are-sitemaps"
+        },
+        {
+          "type": "p",
+          "text": "Los robots de búsqueda indexan el sitio gradualmente, comenzando por la página principal. Con mucha profundidad de anidamiento, indexar todas las páginas puede llevar mucho tiempo. Un mapa del sitio proporciona enlaces directos a las páginas y acelera el proceso. Existen tres tipos: HTML, XML y TXT."
+        },
+
+        { "type": "h3", "text": "Mapa del sitio HTML", "id": "HTML-Sitemap" },
+        {
+          "type": "p",
+          "text": "Un mapa del sitio en HTML es una página que lista las secciones y páginas más importantes del sitio."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Para personas",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "El mapa del sitio en HTML está diseñado para los usuarios más que para los robots y ayuda a navegar rápidamente."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Límite",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "No coloques más de 100 enlaces en una sola página de un mapa del sitio HTML."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Los mapas del sitio en HTML suelen tener estructuras en árbol con secciones y subsecciones. En la práctica, todos los enlaces en el pie de página, encabezado y cuerpo forman un mapa del sitio en HTML."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Valor SEO",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Un mapa del sitio en HTML tiene poco valor para los motores de búsqueda en comparación con uno en XML."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Mapa del sitio XML", "id": "XML-Sitemap" },
+        {
+          "type": "p",
+          "text": "Para sitios grandes es necesario utilizar un mapa del sitio en XML, que contiene datos estructurados sobre cada página."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Definición",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Un mapa del sitio en XML es un archivo llamado sitemap.xml en la raíz del sitio. Puede contener hasta 50,000 enlaces."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Codificación",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "El archivo sitemap.xml debe estar codificado en UTF-8."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<urlset> – etiqueta principal que contiene todas las URL.",
+            "<url> – información sobre una URL específica.",
+            "<loc> – especifica la dirección de la página."
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<lastmod> – fecha de la última modificación.",
+            "<changefreq> – frecuencia de actualización.",
+            "<priority> – prioridad de la página (0.1–1)."
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "División",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Si un mapa del sitio supera los 50,000 enlaces o los 10 MB, debe dividirse en varios archivos y usar <sitemapindex>."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "Mapa del sitio TXT", "id": "TXT-Sitemap" },
+        {
+          "type": "p",
+          "text": "El mapa del sitio en TXT es un archivo de texto simple en el que todos los enlaces se enumeran línea por línea."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Limitaciones",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Máximo de 50,000 enlaces, sin atributos <lastmod> ni prioridad."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Prioridades de páginas",
+          "id": "Page-priorities"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "1 – Página principal",
+            "0.8 – Secciones principales",
+            "0.6–0.5 – Categorías y subcategorías",
+            "0.4 – Otras páginas secundarias"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "En la práctica",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Los motores de búsqueda pueden no seguir estrictamente las prioridades establecidas."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Creación de un mapa del sitio",
+          "id": "Creating-a-sitemap"
+        },
+        {
+          "type": "p",
+          "text": "El archivo del mapa del sitio debe ubicarse en la raíz del sitio. Los motores de búsqueda pueden encontrarlo automáticamente, pero también se pueden proporcionar enlaces directos."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Agregar en Google Search Console",
+            "Especificar en robots.txt",
+            "Generar con CMS o plugins",
+            "Usar generadores online (ej. xml-sitemaps.com)",
+            "Generar automáticamente con gulp, webpack, react, vue",
+            "Escribirlo manualmente"
+          ]
+        }
+      ]
     },
     "de": {
-      "title": "",
-      "anonce": "",
-      "content": []
+      "title": "Sitemap der Website",
+      "anonce": "Was ist eine Sitemap und wie richtet man sie ein. Gängige Praktiken und Beispieldateien.",
+      "content": [
+        { "type": "h2", "text": "Einleitung", "id": "Introduction" },
+        {
+          "type": "p",
+          "text": "Eine Sitemap ist eine HTML-Seite einer Website oder eine spezielle XML-Datei, die Links zu allen wichtigen Seiten der Website enthält. Sie ähnelt einem Inhaltsverzeichnis eines Buches und hilft Besuchern und Suchmaschinenrobotern, Seiten mit minimalen Klicks schnell zu finden."
+        },
+
+        {
+          "type": "h2",
+          "text": "Was sind Sitemaps",
+          "id": "What-are-sitemaps"
+        },
+        {
+          "type": "p",
+          "text": "Suchmaschinen indexieren eine Website schrittweise, beginnend mit der Startseite. Bei tiefer Verschachtelung kann es lange dauern, bis alle Seiten erfasst sind. Eine Sitemap bietet direkte Links zu den Seiten und beschleunigt so den Prozess. Es gibt drei Typen: HTML, XML und TXT."
+        },
+
+        { "type": "h3", "text": "HTML-Sitemap", "id": "HTML-Sitemap" },
+        {
+          "type": "p",
+          "text": "Eine HTML-Sitemap ist eine Seite, die die wichtigsten Abschnitte und Seiten der Website auflistet."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Für Menschen",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Die HTML-Sitemap ist eher für Benutzer als für Roboter gedacht und hilft Menschen, sich schnell zu orientieren."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Limit",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Platziere nicht mehr als 100 Links auf einer HTML-Sitemap-Seite."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "HTML-Sitemaps verwenden oft Baumstrukturen mit Abschnitten und Unterabschnitten. In der Praxis bilden alle Links im Footer, Header und Body eine HTML-Sitemap."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "SEO-Wert",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Eine HTML-Sitemap hat für Suchmaschinen im Vergleich zu XML nur geringen Wert."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "XML-Sitemap", "id": "XML-Sitemap" },
+        {
+          "type": "p",
+          "text": "Für große Websites ist es notwendig, eine XML-Sitemap zu verwenden, die strukturierte Daten über jede Seite enthält."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Definition",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Eine XML-Sitemap ist eine Datei mit dem Namen sitemap.xml im Root-Verzeichnis der Website. Sie kann bis zu 50.000 Links enthalten."
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Kodierung",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Die sitemap.xml muss in UTF-8 kodiert sein."
+            }
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<urlset> – übergeordnetes Tag, das alle URLs enthält.",
+            "<url> – Informationen zu einer bestimmten URL.",
+            "<loc> – gibt die Seitenadresse an."
+          ]
+        },
+        {
+          "type": "ul",
+          "items": [
+            "<lastmod> – letztes Änderungsdatum.",
+            "<changefreq> – Aktualisierungshäufigkeit.",
+            "<priority> – Seitenpriorität (0.1–1)."
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Aufteilen",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Wenn eine Sitemap mehr als 50.000 Links oder 10 MB überschreitet, muss sie in mehrere Dateien aufgeteilt und mit <sitemapindex> verwaltet werden."
+            }
+          ]
+        },
+
+        { "type": "h3", "text": "TXT-Sitemap", "id": "TXT-Sitemap" },
+        {
+          "type": "p",
+          "text": "Eine TXT-Sitemap ist eine einfache Textdatei, in der alle Links zeilenweise aufgelistet sind."
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Einschränkungen",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Maximal 50.000 Links, keine <lastmod>- oder Prioritätsattribute."
+            }
+          ]
+        },
+
+        { "type": "h2", "text": "Seitenprioritäten", "id": "Page-priorities" },
+        {
+          "type": "ul",
+          "items": [
+            "1 – Startseite",
+            "0.8 – Hauptsektionen",
+            "0.6–0.5 – Kategorien und Unterkategorien",
+            "0.4 – Andere Unterseiten"
+          ]
+        },
+        {
+          "type": "note",
+          "kind": "info",
+          "title": "Praxis",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Suchmaschinen halten sich möglicherweise nicht strikt an die festgelegten Prioritäten."
+            }
+          ]
+        },
+
+        {
+          "type": "h2",
+          "text": "Erstellung einer Sitemap",
+          "id": "Creating-a-sitemap"
+        },
+        {
+          "type": "p",
+          "text": "Die Sitemap-Datei sollte im Root-Verzeichnis der Website liegen. Suchmaschinen können sie automatisch finden, aber man kann auch direkte Links bereitstellen."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Hinzufügen in Google Search Console",
+            "Angeben in robots.txt",
+            "Generieren mit CMS oder Plugins",
+            "Online-Generatoren verwenden (z. B. xml-sitemaps.com)",
+            "Automatisch mit gulp, webpack, react, vue erstellen",
+            "Manuell schreiben"
+          ]
+        }
+      ]
     }
   }
 }

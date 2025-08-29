@@ -1,9 +1,9 @@
 {
   "slug": "sitemap-website",
-  "title": "",
+  "title": "Sitemap der Website",
   "date": "2023-04-29",
   "updates": [],
-  "anonce": "",
+  "anonce": "Was ist eine Sitemap und wie richtet man sie ein. Gängige Praktiken und Beispieldateien.",
   "thumbnail": "",
   "category": "optimization",
   "category_list": [
@@ -23,44 +23,44 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Einleitung",
       "level": 2
     },
     {
       "id": "What-are-sitemaps",
-      "title": "What are sitemaps",
+      "title": "Was sind Sitemaps",
       "level": 2
     },
     {
       "id": "HTML-Sitemap",
-      "title": "HTML Sitemap",
+      "title": "HTML-Sitemap",
       "level": 3
     },
     {
       "id": "XML-Sitemap",
-      "title": "XML Sitemap",
+      "title": "XML-Sitemap",
       "level": 3
     },
     {
       "id": "TXT-Sitemap",
-      "title": "TXT Sitemap",
+      "title": "TXT-Sitemap",
       "level": 3
     },
     {
       "id": "Page-priorities",
-      "title": "Page priorities",
+      "title": "Seitenprioritäten",
       "level": 2
     },
     {
       "id": "Creating-a-sitemap",
-      "title": "Creating a sitemap",
+      "title": "Erstellung einer Sitemap",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Einleitung",
       "id": "Introduction"
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "type": "h2",
-      "text": "What are sitemaps",
+      "text": "Was sind Sitemaps",
       "id": "What-are-sitemaps"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "type": "h3",
-      "text": "HTML Sitemap",
+      "text": "HTML-Sitemap",
       "id": "HTML-Sitemap"
     },
     {
@@ -124,7 +124,7 @@
     },
     {
       "type": "h3",
-      "text": "XML Sitemap",
+      "text": "XML-Sitemap",
       "id": "XML-Sitemap"
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "type": "h3",
-      "text": "TXT Sitemap",
+      "text": "TXT-Sitemap",
       "id": "TXT-Sitemap"
     },
     {
@@ -202,7 +202,7 @@
     },
     {
       "type": "h2",
-      "text": "Page priorities",
+      "text": "Seitenprioritäten",
       "id": "Page-priorities"
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "type": "h2",
-      "text": "Creating a sitemap",
+      "text": "Erstellung einer Sitemap",
       "id": "Creating-a-sitemap"
     },
     {

@@ -7,7 +7,7 @@
       "package"
     ],
     "title": "AMFI Connect",
-    "anonce": "Connect Crypto Wallet by using WalletLink, KardiaChain, MetaMask browser extentions or mobile application and WalletConnect service by scanning Wallet Qr-code.",
+    "anonce": "Verbinden Sie Ihre Krypto-Wallet mit den Browser-Erweiterungen WalletLink, KardiaChain, MetaMask oder der mobilen App und dem WalletConnect-Dienst, indem Sie den QR-Code der Wallet scannen.",
     "logo": "amfi-connect-logo",
     "instruments": [
       {
@@ -34,7 +34,7 @@
       "cms"
     ],
     "title": "Rocknblock Website",
-    "anonce": "Development and maintenance of the official information site of the company Rock'n'Block. Adding multiple landing pages, SEO optimization and blog development.",
+    "anonce": "Entwicklung und Wartung der offiziellen Informationswebsite des Unternehmens Rock'n'Block. Hinzufügen mehrerer Landingpages, SEO-Optimierung und Blog-Entwicklung.",
     "logo": "rocknblock-website-logo",
     "instruments": [
       {
@@ -60,7 +60,7 @@
       {
         "icon": "html5",
         "color": "",
-        "title": "THML"
+        "title": "HTML"
       },
       {
         "icon": "pug",
@@ -84,7 +84,7 @@
       "ionic"
     ],
     "title": "Ducatus Wallet",
-    "anonce": "Development of an application for the Ducatus blockchain to iOS, Web and Android platforms.",
+    "anonce": "Entwicklung einer Anwendung für die Ducatus-Blockchain auf iOS-, Web- und Android-Plattformen.",
     "logo": "ducatus-wallet-logo",
     "instruments": [
       {
@@ -127,7 +127,7 @@
       "crypto"
     ],
     "title": "Ducatus website",
-    "anonce": "Development of the official website of the Ducatus blockchain.",
+    "anonce": "Entwicklung der offiziellen Website der Ducatus-Blockchain.",
     "logo": "ducatus-logo",
     "instruments": [
       {

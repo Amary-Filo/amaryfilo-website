@@ -1,12 +1,12 @@
 {
   "slug": "miet-city-template",
-  "title": "Miet - City template",
+  "title": "Miet - Городской шаблон",
   "date": "2018-06-10",
   "category": [
     "web"
   ],
   "thumbnail": "miet-city-template-thumb",
-  "description": "The prototype design of the site of urban events is assumed that the site can display all the running future events in the selected city user and find out information about any events and buy tickets.",
+  "description": "Прототип дизайна сайта городских мероприятий. Предполагается, что сайт может отображать все предстоящие события в выбранном пользователем городе, предоставлять информацию о них и возможность купить билеты.",
   "images": [
     "miet-city-template-1",
     "miet-city-template-2",

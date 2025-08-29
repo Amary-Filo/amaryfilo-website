@@ -1,9 +1,9 @@
 {
   "slug": "install-postgresql-macos-apple-silicon-m1",
-  "title": "Как установить Homebrew?",
+  "title": "Установка PostgreSQL на macOS (Apple Silicon m1/m2)",
   "date": "2022-11-14",
   "updates": [],
-  "anonce": "Что такое Homebrew, для чего он нужен и как его установить под системы: macOS (Apple Silicon) и Windows.",
+  "anonce": "Как установить PostgreSQL на macOS (включая Apple Silicon M1/M2) и подключить его к вашим приложениям.",
   "thumbnail": "",
   "category": "database",
   "category_list": [
@@ -24,32 +24,32 @@
   "menu": [
     {
       "id": "Introduction",
-      "title": "Introduction",
+      "title": "Введение",
       "level": 2
     },
     {
       "id": "Installation",
-      "title": "Installation",
+      "title": "Установка",
       "level": 2
     },
     {
       "id": "Through-the-installer",
-      "title": "Through the installer",
+      "title": "Через установщик",
       "level": 3
     },
     {
       "id": "Through-Homebrew",
-      "title": "Through Homebrew",
+      "title": "Через Homebrew",
       "level": 3
     },
     {
       "id": "Extras",
-      "title": "Extras",
+      "title": "Дополнительно",
       "level": 3
     },
     {
       "id": "Errors",
-      "title": "Errors",
+      "title": "Ошибки",
       "level": 2
     },
     {
@@ -59,39 +59,39 @@
     },
     {
       "id": "Commands",
-      "title": "Commands",
+      "title": "Команды",
       "level": 2
     },
     {
       "id": "Authorization",
-      "title": "Authorization",
+      "title": "Авторизация",
       "level": 3
     },
     {
       "id": "Databases",
-      "title": "Databases",
+      "title": "Базы данных",
       "level": 3
     },
     {
       "id": "Users",
-      "title": "Users",
+      "title": "Пользователи",
       "level": 3
     },
     {
       "id": "Tables",
-      "title": "Tables",
+      "title": "Таблицы",
       "level": 3
     },
     {
       "id": "Connecting-to-a-database-in-projects",
-      "title": "Connecting to a database in projects",
+      "title": "Подключение в проектах",
       "level": 2
     }
   ],
   "content": [
     {
       "type": "h2",
-      "text": "Introduction",
+      "text": "Введение",
       "id": "Introduction"
     },
     {
@@ -104,7 +104,7 @@
     },
     {
       "type": "h2",
-      "text": "Installation",
+      "text": "Установка",
       "id": "Installation"
     },
     {
@@ -135,7 +135,7 @@
     },
     {
       "type": "h3",
-      "text": "Through the installer",
+      "text": "Через установщик",
       "id": "Through-the-installer"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
       "type": "h3",
-      "text": "Through Homebrew",
+      "text": "Через Homebrew",
       "id": "Through-Homebrew"
     },
     {
@@ -198,7 +198,7 @@
     },
     {
       "type": "h3",
-      "text": "Extras",
+      "text": "Дополнительно",
       "id": "Extras"
     },
     {
@@ -221,7 +221,7 @@
     },
     {
       "type": "h2",
-      "text": "Errors",
+      "text": "Ошибки",
       "id": "Errors"
     },
     {
@@ -254,7 +254,7 @@
     },
     {
       "type": "h2",
-      "text": "Commands",
+      "text": "Команды",
       "id": "Commands"
     },
     {
@@ -270,7 +270,7 @@
     },
     {
       "type": "h3",
-      "text": "Authorization",
+      "text": "Авторизация",
       "id": "Authorization"
     },
     {
@@ -283,7 +283,7 @@
     },
     {
       "type": "h3",
-      "text": "Databases",
+      "text": "Базы данных",
       "id": "Databases"
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "type": "h3",
-      "text": "Users",
+      "text": "Пользователи",
       "id": "Users"
     },
     {
@@ -328,7 +328,7 @@
     },
     {
       "type": "h3",
-      "text": "Tables",
+      "text": "Таблицы",
       "id": "Tables"
     },
     {
@@ -347,7 +347,7 @@
     },
     {
       "type": "h2",
-      "text": "Connecting to a database in projects",
+      "text": "Подключение в проектах",
       "id": "Connecting-to-a-database-in-projects"
     },
     {
