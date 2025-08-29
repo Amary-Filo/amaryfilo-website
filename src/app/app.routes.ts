@@ -100,6 +100,11 @@ const children: Routes = [
     ],
   },
   {
+    path: 'sandbox',
+    loadChildren: () =>
+      import('./features/sandbox/sandbox.routes').then((m) => m.SANDBOX_ROUTES),
+  },
+  {
     path: '404',
     loadComponent: () =>
       import('./features/not-found/not-found.page').then((m) => m.NotFoundPage),

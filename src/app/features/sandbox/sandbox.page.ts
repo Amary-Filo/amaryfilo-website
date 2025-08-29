@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-sandbox-page',
   imports: [],
   templateUrl: './sandbox.page.html',
-  styleUrl: './sandbox.page.scss'
+  styleUrl: './sandbox.page.scss',
+  standalone: true,
 })
-export class SandboxPage {
-
-}
+export class SandboxPage {}
