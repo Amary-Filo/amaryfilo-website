@@ -1,0 +1,15 @@
+/* дефолтные значения (light) */
+[data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #222222;
+  --card-bg: #f7f7f7;
+  --card-border: #dddddd;
+}
+
+/* dark */
+[data-theme="dark"] {
+  --bg: #1c1727;
+  --fg: #f1f1f1;
+  --card-bg: #2a2335;
+  --card-border: #444444;
+}

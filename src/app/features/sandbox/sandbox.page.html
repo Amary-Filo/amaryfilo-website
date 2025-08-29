@@ -1,1 +1,12 @@
-<p>sandbox page!</p>
+<section class="sc container">
+  <h1 class="fz-xl fw-800">Sandbox</h1>
+  <div class="grid">
+    @for (d of demos(); track $index) {
+    <a [routerLink]="['/sandbox', d.kind, d.slug]" class="card">
+      <h3>{{ d.title }}</h3>
+      <p>{{ d.description }}</p>
+      <span class="tags">{{ d.tags.join(" • ") }}</span>
+    </a>
+    }
+  </div>
+</section>

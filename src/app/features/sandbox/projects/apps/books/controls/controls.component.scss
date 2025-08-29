@@ -1,0 +1,51 @@
+@use "../../../../../../../styles/mixins/mixins.scss" as mx;
+
+.check {
+  --checkbox-width: #{mx.rem(25)};
+  --checkbox-height: #{mx.rem(25)};
+  display: flex;
+  width: 100%;
+}
+
+.title {
+  padding: mx.rem(15);
+  margin-bottom: mx.rem(10);
+}
+
+.field-set {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: mx.rem(5);
+
+  padding: mx.rem(25) mx.rem(15);
+  border-top: mx.rem(2) solid rgba(140, 140, 140, 0.25);
+
+  &::before {
+    content: attr(data-title);
+    position: absolute;
+    top: mx.rem(-13);
+    left: mx.rem(10);
+    padding: 0 mx.rem(5);
+    background-color: var(--body-bg-color);
+  }
+}
+
+.form-group {
+  margin-top: mx.rem(5);
+  input {
+    min-height: min-content;
+    padding: mx.rem(10);
+    border-radius: mx.rem(10);
+  }
+
+  label {
+    --input-label-top: #{mx.rem(13)};
+    --input-label-left: #{mx.rem(15)};
+    --input-label-fz-active: #{mx.rem(12)};
+    --input-label-fz: #{mx.rem(14)};
+
+    letter-spacing: mx.rem(1);
+  }
+}

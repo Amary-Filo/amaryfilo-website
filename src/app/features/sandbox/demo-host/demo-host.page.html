@@ -1,1 +1,25 @@
-Demo Host Page
+<div class="container">
+  <sbx-frame
+    [title]="manifest()?.title"
+    [description]="manifest()?.description"
+    [tags]="manifest()?.tags"
+    [theme]="theme()"
+    (themeToggle)="theme.set($event)"
+  >
+    <main sbxFrameMain [attr.data-theme]="theme()">
+      @if (manifest()?.component; as Cmp) {
+      <ng-container
+        *ngComponentOutlet="Cmp; injector: demoInjector()"
+      ></ng-container>
+      }
+    </main>
+
+    @if (manifest()?.controls; as Ctl) {
+    <aside sbxFrameAside>
+      <ng-container
+        *ngComponentOutlet="Ctl; injector: demoInjector()"
+      ></ng-container>
+    </aside>
+    }
+  </sbx-frame>
+</div>

@@ -1,1 +1,81 @@
-app: books controls component
+<div class="controls cl-cmain">
+  <h4 class="title fz-md">Settings</h4>
+
+  <div class="field-set" [attr.data-title]="'Fields group'">
+    <div class="check">
+      <input
+        class="checkbox"
+        type="checkbox"
+        id="author"
+        name="author"
+        [checked]="cfg?.showAuthor"
+        (change)="toggleFlag('showAuthor')"
+      />
+      <label class="label op-7" for="author">Show author</label>
+    </div>
+
+    <div class="check">
+      <input
+        class="checkbox"
+        type="checkbox"
+        id="date"
+        name="date"
+        [checked]="cfg?.showDate"
+        (change)="toggleFlag('showDate')"
+      />
+      <label class="label op-7" for="date">Show publish date</label>
+    </div>
+
+    <div class="check">
+      <input
+        class="checkbox"
+        type="checkbox"
+        id="description"
+        name="description"
+        [checked]="cfg?.showDescription"
+        (change)="toggleFlag('showDescription')"
+      />
+      <label class="label op-7" for="description">Show description</label>
+    </div>
+  </div>
+
+  <div class="field-set" [attr.data-title]="'Buttons Group'">
+    <button class="btn" (click)="triggerAutoGenerate()">Generate a book</button>
+  </div>
+  <!-- 
+  <div class="field-set" [attr.data-title]="'Data Group'">
+    <div class="form-group">
+      <input
+        class="form-input"
+        id="name"
+        type="text"
+        name="name"
+        required="required"
+        placeholder=" "
+      />
+      <label class="form-label" for="name">Name</label>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-input"
+        id="contact"
+        type="text"
+        name="contact"
+        required="required"
+        placeholder=" "
+      />
+      <label class="form-label" for="contact">Contact</label>
+    </div>
+    <div class="form-group">
+      <input
+        class="form-input"
+        id="textr"
+        type="text"
+        name="textr"
+        required="required"
+        placeholder=" "
+      />
+      <label class="form-label" for="textr">Name</label>
+    </div>
+  </div> -->
+</div>

@@ -23,6 +23,8 @@
       "@shared/*": ["app/shared/*"],
       "@pipes/*": ["app/shared/pipes/*"],
       "@ui-kit/*": ["app/shared/ui-kit/*"],
+      "@sandbox/shared/*": ["app/features/sandbox/shared/*"],
+      "@sandbox/*": ["app/features/sandbox/*"]
     }
   },
   "angularCompilerOptions": {

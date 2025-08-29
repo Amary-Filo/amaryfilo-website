@@ -1,0 +1,43 @@
+<div class="sbx-frame cd" [attr.data-theme]="theme">
+  <header class="sbx-head fl-sbc gg-5">
+    <div class="">
+      <h2 class="title fz-xxl2 t-gr cl-g-project">{{ title }}</h2>
+      @if (description) {
+      <p class="op-7">{{ description }}</p>
+      } @if (tags) {
+      <div class="tags fl">
+        @for (t of tags; track t) {
+        <span class="btn m cl-cmain">{{ t }}</span> }
+      </div>
+      }
+    </div>
+
+    <div class="btns fl fl-cc">
+      <button
+        [class]="'btn m ic-' + (theme === 'dark' ? 'moon' : 'light-up')"
+        (click)="toggleTheme()"
+      ></button>
+
+      <button
+        class="btn t ic-filter"
+        (click)="toggleAside()"
+        aria-controls="sbx-aside"
+        [attr.aria-expanded]="showAside"
+      >
+        {{ showAside ? "Hide" : "Show" }}
+      </button>
+    </div>
+  </header>
+
+  <div class="sbx-body" [class.aside-hidden]="!showAside">
+    <main class="main">
+      <ng-content select="[sbxFrameMain]"></ng-content>
+    </main>
+
+    @if (showAside) {
+    <aside id="sbx-aside" class="aside">
+      <ng-content select="[sbxFrameAside]"></ng-content>
+    </aside>
+    }
+  </div>
+</div>

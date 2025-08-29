@@ -1,4 +1,4 @@
-@use '../mixins/mixins' as mx;
+@use "../mixins/mixins" as mx;
 
 .head-section {
   &:not(.hs-part) {
@@ -125,10 +125,10 @@ textarea {
 
     padding: mx.rem(20);
     border-radius: mx.rem(16);
-    border: mx.rem(3) solid rgba(140, 140, 140, 0.15);
+    border: mx.rem(3) solid rgba(var(--cl-main-rgb, 140, 140, 140), 0.15);
 
     font-size: mx.rem(16);
-    font-family: 'Space Grotesk';
+    font-family: "Space Grotesk";
     font-weight: 600;
 
     text-decoration: none !important;
@@ -140,9 +140,9 @@ textarea {
     &:focus ~ .form-label,
     &:not(:placeholder-shown).form-input:not(:focus) ~ .form-label,
     &:not(:placeholder-shown).form-textarea:not(:focus) ~ .form-label {
-      top: mx.rem(-10);
-      font-size: mx.rem(12);
-      left: mx.rem(10);
+      top: var(--input-label-top-active, #{mx.rem(-10)});
+      left: var(--input-label-left-active, #{mx.rem(10)});
+      font-size: var(--input-label-fz-active, #{mx.rem(12)});
     }
 
     &:hover {
@@ -165,9 +165,12 @@ textarea {
     left: mx.rem(20);
     top: mx.rem(19);
 
+    top: var(--input-label-top, #{mx.rem(-10)});
+    left: var(--input-label-left, #{mx.rem(10)});
+
     padding: 0 mx.rem(5);
 
-    font-size: mx.rem(16);
+    font-size: var(--input-label-fz, #{mx.rem(16)});
     font-weight: 600;
     letter-spacing: mx.rem(2);
 
@@ -195,10 +198,10 @@ textarea {
     align-items: center;
 
     &::before {
-      content: '';
+      content: "";
 
-      width: mx.rem(35);
-      height: mx.rem(35);
+      width: var(--checkbox-width, #{mx.rem(35)});
+      height: var(--checkbox-height, #{mx.rem(35)});
 
       margin-right: mx.rem(10);
 
@@ -778,12 +781,12 @@ section.subscribe {
 
   a {
     color: var(--cl-cmain);
-    @include mx.theme('dark', true) {
+    @include mx.theme("dark", true) {
       color: var(--cl-caccent);
     }
     &:hover {
       color: var(--cl-caccent);
-      @include mx.theme('dark', true) {
+      @include mx.theme("dark", true) {
         color: var(--cl-cmain);
       }
     }

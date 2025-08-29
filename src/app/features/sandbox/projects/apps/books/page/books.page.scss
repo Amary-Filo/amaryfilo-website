@@ -1,0 +1,162 @@
+@use "../../../../../../../styles/mixins/mixins.scss" as mx;
+
+:host {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.books[data-theme="light"] {
+  --body-bg-color: #fff;
+  --body-bg-color-rgb: 255, 255, 255;
+  --body-text-color: #000;
+  --body-text-color-alt: #fff;
+  --accent-gray-color: #727272;
+}
+
+.books[data-theme="dark"] {
+  --body-bg-color: #1c1727;
+  --body-bg-color-rgb: 28, 23, 39;
+  --body-text-color: #fff;
+  --body-text-color-alt: #000;
+  --accent-gray-color: #b3b3b3cc;
+}
+
+.books {
+  width: 100%;
+  height: 100%;
+
+  padding: mx.rem(25);
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 12px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+  }
+
+  .cd-book {
+    position: relative;
+    background-color: #8c8c8c1a;
+
+    &:hover {
+      .actions {
+        bottom: mx.rem(10);
+        transition: all 0.4s;
+      }
+    }
+
+    .actions {
+      --btn-padding: #{mx.rem(5)};
+
+      position: absolute;
+      left: 0;
+      bottom: mx.rem(-100);
+      padding: 0 mx.rem(10);
+      width: 100%;
+      transition: all 0.4s;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+      span {
+        opacity: 0.8;
+        margin-right: 6px;
+      }
+    }
+
+    .desc {
+      margin-top: 8px;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+  }
+
+  /* Модалка пределах книги/фрейма */
+  .modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding: mx.rem(25);
+
+    .backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal {
+      position: relative;
+      max-width: mx.rem(350);
+      width: 100%;
+      height: max-content;
+      border-radius: mx.rem(15);
+      box-shadow: 0 4px 8px #0000004e;
+      z-index: 1;
+      padding: mx.rem(25);
+      overflow: hidden;
+
+      background-color: var(--body-bg-color);
+
+      h3 {
+        margin: 0 0 10px 0;
+      }
+
+      form {
+        display: grid;
+        gap: 10px;
+        max-height: 400px;
+        overflow-y: scroll;
+
+        label {
+          display: grid;
+          gap: 6px;
+          font-size: 13px;
+        }
+
+        input,
+        textarea {
+          color: var(--body-text-color);
+          background: transparent;
+          border: 1px solid var(--accent-gray-color);
+          border-radius: 8px;
+          padding: 8px 10px;
+        }
+      }
+      .buttons {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 20px;
+        gap: 8px;
+
+        .primary {
+          background: var(--accent);
+          color: white;
+          border: none;
+          padding: 8px 12px;
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}

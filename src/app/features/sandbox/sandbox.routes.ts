@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { demoManifestResolver } from './demo-manifest.resolver';
 
 export const SANDBOX_ROUTES: Routes = [
   {
@@ -9,5 +10,6 @@ export const SANDBOX_ROUTES: Routes = [
     path: ':kind/:slug',
     loadComponent: () =>
       import('./demo-host/demo-host.page').then((m) => m.DemoHostPage),
+    resolve: { manifest: demoManifestResolver }, // <-- ВАЖНО
   },
 ];

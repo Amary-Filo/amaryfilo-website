@@ -1,0 +1,97 @@
+@use "../../../../../styles//mixins/mixins.scss" as mx;
+
+:host {
+  display: block;
+}
+
+.sbx-frame {
+  --bg: #fff;
+  --fg: #111;
+  --muted: #666;
+  --border: #e6e6e6;
+  --chip-bg: #f3f3f3;
+
+  &[data-theme="dark"] {
+    --bg: #141218;
+    --fg: #f2f2f2;
+    --muted: #b9b6c2;
+    --border: #2a2633;
+    --chip-bg: #1d1826;
+  }
+
+  padding: 0;
+  margin-top: mx.rem(50);
+  border-color: rgba(var(--cl-main-rgb, 140, 140, 140), 0.25);
+}
+
+.sbx-head {
+  padding: mx.rem(20) mx.rem(30);
+  border-bottom: mx.rem(3) solid rgba(var(--cl-main-rgb, 140, 140, 140), 0.25);
+
+  @include mx.b(mobile) {
+    flex-direction: column;
+  }
+
+  .tags {
+    --btn-padding: 4px 7px;
+    margin-top: mx.rem(5);
+
+    .btn {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .btns {
+    @include mx.b(mobile) {
+      width: 100%;
+    }
+
+    .btn {
+      @include mx.b(mobile) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.sbx-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) mx.rem(320);
+  gap: 0;
+  min-height: mx.rem(550);
+  height: 100%;
+  overflow: hidden;
+
+  &.aside-hidden {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .aside {
+    border-left: mx.rem(3) solid rgba(var(--cl-main-rgb, 140, 140, 140), 0.25);
+    min-width: mx.rem(260);
+    overflow: auto;
+
+    @include mx.b(desktop) {
+      border-left: none;
+      border-bottom: mx.rem(3) solid
+        rgba(var(--cl-main-rgb, 140, 140, 140), 0.25);
+    }
+  }
+
+  @include mx.b(desktop) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: max-content;
+    max-height: mx.rem(10000);
+  }
+
+  .main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}

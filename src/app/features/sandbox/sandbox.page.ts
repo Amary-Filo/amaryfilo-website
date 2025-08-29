@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { DEMOS } from './registry';
 
 @Component({
-  selector: 'app-sandbox-page',
-  imports: [],
+  selector: 'app-sandbox',
   templateUrl: './sandbox.page.html',
-  styleUrl: './sandbox.page.scss',
+  styleUrls: ['./sandbox.page.scss'],
+  imports: [RouterLink],
   standalone: true,
 })
-export class SandboxPage {}
+export class SandboxPage {
+  demos = computed(() => DEMOS);
+}

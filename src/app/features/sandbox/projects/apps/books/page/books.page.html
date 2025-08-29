@@ -1,1 +1,97 @@
-app: books page
+<section class="books" [attr.data-theme]="theme()">
+  <div class="toolbar">
+    <button class="btn add" (click)="openAddModal()">+ Add book</button>
+  </div>
+
+  <div class="grid">
+    @for (b of books(); track b.id) {
+    <div class="cd cd-book">
+      <h4 class="title fz-nm">{{ b.title }}</h4>
+
+      @if (config().showAuthor && b.author) {
+      <div class="meta"><span>Author:</span> {{ b.author }}</div>
+      } @if (config().showDate && b.date) {
+      <div class="meta"><span>Date:</span> {{ b.date }}</div>
+      } @if (config().showDescription && b.description) {
+      <p class="desc">{{ b.description }}</p>
+      }
+
+      <div class="actions fl gg-5">
+        <button
+          class="btn fill t-cw ic-brush w-100"
+          (click)="openEditModal(b)"
+        ></button>
+        <button
+          class="btn fill t-cw ic-cancel-1 cl-error w-100"
+          (click)="deleteBook(b.id)"
+        ></button>
+      </div>
+    </div>
+    }
+  </div>
+
+  @if (showModal()) {
+  <div class="modal-wrapper">
+    <div class="backdrop" (click)="closeModal()"></div>
+
+    <div class="modal">
+      <h3 class="title fz-nm">
+        {{ modalMode() === "add" ? "Add book" : "Edit book" }}
+      </h3>
+
+      <form (submit)="$event.preventDefault(); saveModal()">
+        <label>
+          Title
+          <input
+            type="text"
+            [ngModel]="form().title"
+            name="title"
+            (ngModelChange)="patchForm({ title: $event })"
+            required
+          />
+        </label>
+
+        <label>
+          Author
+          <input
+            type="text"
+            [ngModel]="form().author"
+            name="author"
+            (ngModelChange)="patchForm({ author: $event })"
+          />
+        </label>
+
+        <label>
+          Date
+          <input
+            type="date"
+            [ngModel]="form().date"
+            name="date"
+            (ngModelChange)="patchForm({ date: $event })"
+          />
+        </label>
+
+        <label>
+          Description
+          <textarea
+            rows="3"
+            [ngModel]="form().description"
+            name="description"
+            (ngModelChange)="patchForm({ description: $event })"
+          ></textarea>
+        </label>
+      </form>
+
+      <div class="row buttons">
+        <button
+          class="btn fill t-cw ic-cancel-1 cl-error w-100"
+          (click)="closeModal()"
+        ></button>
+        <button (click)="saveModal()" type="submit" class="btn fill t-cw w-100">
+          save
+        </button>
+      </div>
+    </div>
+  </div>
+  }
+</section>
