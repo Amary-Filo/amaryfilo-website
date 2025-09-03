@@ -1,8 +1,8 @@
-import { Manifest } from '@sandbox/shared/utils/tokens';
+import { Manifest, BaseDemoConfig } from '@sandbox/shared/utils/tokens';
 import { BooksPage } from './page/books.page';
 import { BooksControlsComponent } from './controls/controls.component';
 
-export interface BooksConfig {
+export interface BooksConfig extends BaseDemoConfig {
   showAuthor: boolean;
   showDate: boolean;
   showDescription: boolean;

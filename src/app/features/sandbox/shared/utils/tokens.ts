@@ -1,21 +1,30 @@
 import { InjectionToken, Type } from '@angular/core';
-import { WritableSignal } from '@angular/core';
 
-export const DEMO_CONFIG = new InjectionToken<WritableSignal<any>>(
-  'DEMO_CONFIG'
-);
-export const DEMO_THEME = new InjectionToken<'light' | 'dark'>('DEMO_THEME');
+export type Theme = 'light' | 'dark';
 
-export type DemoKind = 'app' | 'crypto' | 'ui';
+export interface Web3Config {
+  allowedChains: number[];
+  allowedWallets: ('injected' | 'walletconnect' | string)[];
+  contracts: Record<string, string>;
+  abis: Record<string, any>;
+}
 
-export interface Manifest<Cfg = unknown> {
+export interface BaseDemoConfig {
+  web3?: Web3Config;
+  [k: string]: unknown;
+}
+
+export interface Manifest<Cfg extends BaseDemoConfig = BaseDemoConfig> {
   id: string;
   slug: string;
-  kind: DemoKind;
+  kind: string;
   title: string;
   description: string;
   tags: string[];
-  component: Type<any>;
-  controls?: Type<any>;
+  component: Type<unknown>;
+  controls?: Type<unknown>;
   defaultConfig?: Cfg;
 }
+
+export const DEMO_CONFIG = new InjectionToken<any>('DEMO_CONFIG');
+export const DEMO_THEME = new InjectionToken<any>('DEMO_THEME');

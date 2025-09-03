@@ -4,6 +4,7 @@
     [description]="manifest()?.description"
     [tags]="manifest()?.tags"
     [theme]="theme()"
+    [controls]="!!manifest()?.controls"
     (themeToggle)="theme.set($event)"
   >
     <main sbxFrameMain [attr.data-theme]="theme()">

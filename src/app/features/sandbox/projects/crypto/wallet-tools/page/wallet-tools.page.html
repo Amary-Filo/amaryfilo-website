@@ -1,1 +1,21 @@
-crypto: wallet-tools page
+<section class="wallet-tools">
+  <div class="row">
+    <button (click)="connect()">Connect</button>
+    <button (click)="ensureSepolia()">Switch to Sepolia</button>
+    <span>Account: {{ account() || "—" }}</span>
+    <span>Chain: {{ chainName() }}</span>
+  </div>
+
+  <div class="row">
+    <div>AST: {{ ast() }}</div>
+    <div>APT: {{ apt() }}</div>
+    <button (click)="refresh()">Refresh</button>
+  </div>
+
+  <div class="row">
+    <button (click)="faucetAST()">Claim AST faucet</button>
+    <button (click)="lockAPT1()">Lock 1 APT</button>
+  </div>
+
+  <div class="row status">{{ status() }}</div>
+</section>

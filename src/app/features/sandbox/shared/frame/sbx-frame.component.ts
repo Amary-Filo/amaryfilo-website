@@ -10,11 +10,12 @@ export class SbxFrameComponent {
   @Input() title? = '';
   @Input() description? = '';
   @Input() tags?: string[] = [];
+  @Input() controls?: boolean = false;
 
   @Input() theme: 'light' | 'dark' = 'light';
   @Output() themeToggle = new EventEmitter<'light' | 'dark'>();
 
-  @Input() showAside = true;
+  @Input() showAside = false;
   @Output() showAsideChange = new EventEmitter<boolean>();
 
   toggleTheme() {

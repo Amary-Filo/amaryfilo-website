@@ -17,6 +17,7 @@
         [class]="'btn m ic-' + (theme === 'dark' ? 'moon' : 'light-up')"
         (click)="toggleTheme()"
       ></button>
+      @if(controls) {
 
       <button
         class="btn t ic-filter"
@@ -26,6 +27,7 @@
       >
         {{ showAside ? "Hide" : "Show" }}
       </button>
+      }
     </div>
   </header>
 
@@ -34,7 +36,7 @@
       <ng-content select="[sbxFrameMain]"></ng-content>
     </main>
 
-    @if (showAside) {
+    @if (showAside && controls) {
     <aside id="sbx-aside" class="aside">
       <ng-content select="[sbxFrameAside]"></ng-content>
     </aside>
