@@ -1,10 +1,8 @@
-import { Injectable, inject } from '@angular/core';
-import { ContractFactoryService } from '@sandbox/shared/web3/services/contract-factory.service';
+import { Injectable } from '@angular/core';
+import { BaseContractsService } from '@sandbox/shared/web3/services/base-contract.service';
 
-@Injectable({ providedIn: 'root' })
-export class ContractsService {
-  private factory = inject(ContractFactoryService);
-
+@Injectable()
+export class ContractsService extends BaseContractsService {
   apt() {
     return this.factory.get('APT');
   }

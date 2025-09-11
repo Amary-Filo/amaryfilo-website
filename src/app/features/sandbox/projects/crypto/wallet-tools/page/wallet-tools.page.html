@@ -1,21 +1,12 @@
-<section class="wallet-tools">
-  <div class="row">
-    <button (click)="connect()">Connect</button>
-    <button (click)="ensureSepolia()">Switch to Sepolia</button>
-    <span>Account: {{ account() || "—" }}</span>
-    <span>Chain: {{ chainName() }}</span>
-  </div>
+<section class="sbx-wallet-tools sandbox-ui">
+  <sbx-wallet-tools-header-component [(page)]="page" />
 
-  <div class="row">
-    <div>AST: {{ ast() }}</div>
-    <div>APT: {{ apt() }}</div>
-    <button (click)="refresh()">Refresh</button>
+  <div class="container">
+    <div class="card">
+      @if(page() === 'home') { <sbx-wallet-tools-home-tab [(page)]="page" /> }
+      @if(page() === 'staking') { <sbx-wallet-tools-staking-tab /> } @if(page()
+      === 'auction') { <sbx-wallet-tools-auction-tab /> } @if(page() ===
+      'market') { <sbx-wallet-tools-marketplace-tab /> }
+    </div>
   </div>
-
-  <div class="row">
-    <button (click)="faucetAST()">Claim AST faucet</button>
-    <button (click)="lockAPT1()">Lock 1 APT</button>
-  </div>
-
-  <div class="row status">{{ status() }}</div>
 </section>

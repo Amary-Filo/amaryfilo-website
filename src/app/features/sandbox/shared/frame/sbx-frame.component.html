@@ -1,6 +1,11 @@
-<div class="sbx-frame cd" [attr.data-theme]="theme">
-  <header class="sbx-head fl-sbc gg-5">
-    <div class="">
+<div
+  [attr.data-theme]="theme"
+  [class.sbx-frame]="!frameless"
+  [class.cd]="!frameless"
+>
+  @if(!frameless) {
+  <header class="sbx-head fl-sbc gg-5 base-ui">
+    <div>
       <h2 class="title fz-xxl2 t-gr cl-g-project">{{ title }}</h2>
       @if (description) {
       <p class="op-7">{{ description }}</p>
@@ -17,29 +22,33 @@
         [class]="'btn m ic-' + (theme === 'dark' ? 'moon' : 'light-up')"
         (click)="toggleTheme()"
       ></button>
+      <button class="btn t" (click)="changeFrameless.emit()">
+        Hide Layout
+      </button>
       @if(controls) {
-
-      <button
-        class="btn t ic-filter"
-        (click)="toggleAside()"
-        aria-controls="sbx-aside"
-        [attr.aria-expanded]="showAside"
-      >
+      <button class="btn t ic-filter" (click)="toggleAside()">
         {{ showAside ? "Hide" : "Show" }}
       </button>
       }
     </div>
   </header>
+  }
 
-  <div class="sbx-body" [class.aside-hidden]="!showAside">
-    <main class="main">
+  <div class="sbx-body base-ui" [class.aside-hidden]="frameless || !showAside">
+    <main class="main base-ui">
       <ng-content select="[sbxFrameMain]"></ng-content>
     </main>
 
-    @if (showAside && controls) {
-    <aside id="sbx-aside" class="aside">
+    @if (!frameless && showAside && controls) {
+    <aside id="sbx-aside base-ui" class="aside">
       <ng-content select="[sbxFrameAside]"></ng-content>
     </aside>
     }
   </div>
 </div>
+
+@if (frameless) {
+<div class="frameless-toolbar">
+  <button class="btn s" (click)="changeFrameless.emit()">Show Layout</button>
+</div>
+}

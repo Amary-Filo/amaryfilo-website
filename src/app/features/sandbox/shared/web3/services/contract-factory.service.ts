@@ -3,7 +3,7 @@ import { ProviderService } from '../core/provider.service';
 import { DEMO_WEB3_CONFIG } from '../tokens';
 import type { Web3Config } from '@sandbox/shared/utils/tokens';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class ContractFactoryService {
   constructor(
     private p: ProviderService,

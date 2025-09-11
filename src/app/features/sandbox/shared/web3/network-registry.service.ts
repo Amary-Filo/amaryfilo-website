@@ -6,9 +6,10 @@ export type ChainDef = {
   name: string;
   rpcUrls: string[];
   explorers?: Explorer[];
+  explorer?: Explorer;
 };
 
-export const CHAINS = {
+export const CHAINS: { [index: string]: ChainDef } = {
   sepolia: {
     id: 11155111,
     hex: '0xaa36a7',
@@ -17,7 +18,7 @@ export const CHAINS = {
       'https://rpc.sepolia.org',
       'https://ethereum-sepolia.publicnode.com',
     ],
-    explorers: [{ name: 'Etherscan', url: 'https://sepolia.etherscan.io' }],
+    explorer: { name: 'Etherscan', url: 'https://sepolia.etherscan.io' },
   },
   // amoy: {
   //   id: 80002,

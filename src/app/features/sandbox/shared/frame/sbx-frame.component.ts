@@ -18,6 +18,9 @@ export class SbxFrameComponent {
   @Input() showAside = false;
   @Output() showAsideChange = new EventEmitter<boolean>();
 
+  @Input() frameless = false;
+  @Output() changeFrameless = new EventEmitter<void>();
+
   toggleTheme() {
     const next = this.theme === 'dark' ? 'light' : 'dark';
     this.themeToggle.emit(next);

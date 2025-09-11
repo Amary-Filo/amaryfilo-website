@@ -1,0 +1,320 @@
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">About Project</h2>
+    <p class="text text-secondary">
+      This project are created to demonstrate how i can create applications that
+      are working with WEB3. You can connect any wallets from any applications
+      or extensions and see your Tokens.
+      <br />
+      <br />
+      In General i created 6 Contracts, deployed it and verified on Sepolia
+      Ethereum blockchain.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-t row-sbc">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [content]="displayToken(ast()) + ' AST'"
+      [text]="'How many tokens you have right now'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Your <span class="text-accent fill cl-ast">AST</span> Token
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        Use this tokens for claim
+        <span class="text-accent cl-apt">APT</span> via
+        <span class="text-accent cl-auction">Auction</span>.<br />
+        For getting more
+        <span class="text-accent cl-ast">AST</span> Tokens just
+        <span class="text-accent cl-staking">Stake</span> it and Claim reward.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          (click)="go('staking')"
+          color="staking"
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'handCoinFill'"
+        />
+        <ui-button
+          (click)="go('auction')"
+          color="auction"
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'auctionFill'"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [content]="displayToken(apt()) + ' APT'"
+      [text]="'How many tokens you have right now'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Your <span class="text-accent fill cl-apt">APT</span> Token
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        Use this tokens for buy items in marketplace and burn
+        <span class="text-accent cl-apt">APT</span> token.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          (click)="go('market')"
+          color="market"
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'shoppingCart2Fill'"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-t">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Your Staking</span>
+    <!-- <p class="text-secondary">
+          <span class="text-accent">TIP:</span> For getting more profit from
+          <span class="text-accent cl-staking">Staking </span>
+          <span class="text-accent cl-ast">AST</span> Token just select long
+          time for staking
+        </p> -->
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-tb">
+    @if(status() !== 'connected') {
+
+    <div class="fz-xl fw-extrabold t-c m-md">
+      Please Connect Wallet to see all data
+    </div>
+    } @else {
+    <div class="fz-xl fw-extrabold t-c m-xs">
+      Hmm...
+      <span class="text-accent cl-gray-500">It’s not okay..</span>
+      <br />
+      <span class="fz-lg fw-bold">
+        We don’t have any records for your account :(
+      </span>
+    </div>
+    }
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Contracts and their addresses</span>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-tb row-sbc">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('AST')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Contract address for
+          <span class="text-accent fill cl-ast">AST</span> Token
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open this
+        <span class="text-accent cl-ast"> AST</span> Token contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('AST')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('APT')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Contract address for
+          <span class="text-accent fill cl-apt">APT</span> Token
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open this
+        <span class="text-accent cl-apt"> APT</span> Token contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('APT')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-b row-sbc">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('STAKING')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Address for
+          <span class="text-accent fill cl-staking">Staking</span> Contract
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open
+        <span class="text-accent cl-staking"> Staking</span> contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('STAKING')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('AUCTION')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Address for
+          <span class="text-accent fill cl-auction">Auction</span> Contract
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open
+        <span class="text-accent cl-auction"> Auction</span> contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('AUCTION')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-b row-sbc">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('MARKET')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Address for
+          <span class="text-accent fill cl-market">Marketplace</span>
+          Contract
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open
+        <span class="text-accent cl-market">Marketplace</span> contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('MARKET')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [content]="getContractAddress('LOCKER')"
+      [text]="'Official contract address with verified status'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          Address for <span class="text-accent fill cl-lock">Lock</span>
+          Contract
+        </span>
+      </div>
+
+      <p class="text-secondary" accordionBottom>
+        You can open <span class="text-accent cl-lock">Lock</span> contract in
+        Etherscan. This contract is verified.
+      </p>
+
+      <ng-container accordionBottomButtons>
+        <ui-button
+          [isFilled]="true"
+          [onlyIcon]="true"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openExplorer('LOCKER')"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+</div>

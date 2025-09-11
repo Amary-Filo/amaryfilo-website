@@ -1,5 +1,4 @@
 export async function safeGetJson<T>(path: string): Promise<T | null> {
-  // dev-server иногда возвращает index.html с 200 → ловим по content-type
   const res = await fetch(path, { cache: 'no-cache' });
   if (!res.ok) return null;
 

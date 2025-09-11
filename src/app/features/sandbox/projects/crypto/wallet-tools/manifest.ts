@@ -17,6 +17,9 @@ export const CRYPTO_WALLET_TOOLS_MANIFEST: Manifest = {
   tags: ['crypto', 'wallet', 'sepolia'],
   component: WalletToolsPage,
   defaultConfig: {
+    ui: {
+      frameless: true,
+    },
     web3: {
       allowedChains: [SEPOLIA],
       allowedWallets: ['injected'],

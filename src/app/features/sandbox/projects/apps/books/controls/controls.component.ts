@@ -24,7 +24,7 @@ export class BooksControlsComponent {
   toggleFlag(key: 'showAuthor' | 'showDate' | 'showDescription') {
     const c = { ...this.config() };
     c[key] = !c[key];
-    this.config.set(c); // __autoGen__ НЕ меняется → computed не нотифицирует
+    this.config.set(c);
   }
 
   setTheme(next: Theme) {

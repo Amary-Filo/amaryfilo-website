@@ -15,7 +15,6 @@ export class CodepenScriptService {
   private readonly SCRIPT_ID = 'codepen-embed-script';
 
   ensureLoaded() {
-    // На сервере молча выходим — иначе будет "document is not defined"
     if (!this.isBrowser || this.loaded) return;
 
     afterNextRender({

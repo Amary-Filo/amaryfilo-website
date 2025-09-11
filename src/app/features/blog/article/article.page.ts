@@ -25,7 +25,7 @@ import { ArticleBlockComponent } from './components/article-block/article-block.
 })
 export class ArticlePage {
   private static readonly MOBILE_BP = 1025;
-  private static readonly STICKY_OFFSET = 120; // подгони под высоту шапки
+  private static readonly STICKY_OFFSET = 120;
 
   private route = inject(ActivatedRoute);
   private data = toSignal(this.route.data, { initialValue: {} as any });

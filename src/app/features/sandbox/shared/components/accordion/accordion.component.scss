@@ -1,0 +1,73 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/sandbox";
+
+:host {
+  width: 100%;
+}
+
+.accordion {
+  width: 100%;
+
+  &.bordered {
+    border: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+  }
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+    width: 100%;
+
+    padding-left: 20px;
+    padding-right: 15px;
+
+    border-bottom: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 10px 0;
+      width: 100%;
+    }
+
+    &-etc {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      padding-left: var(--spacing-md);
+      border-left: 1px solid
+        rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+    }
+  }
+
+  &-body {
+    padding: 25px 20px;
+
+    border-bottom: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+  }
+
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    height: max-content;
+
+    padding: 10px 20px;
+
+    &-etc {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<div class="sandbox-ui">
+  <div class="header">
+    <div class="container">
+      <div class="card">
+        <div class="left-side">
+          <div class="logo fz-2xl">
+            <ui-icon name="amfiLogoGradient" />
+          </div>
+          <nav class="menu">
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'home'"
+              [isStrong]="page() === 'home'"
+              (click)="go('home')"
+              >Home</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'staking'"
+              [isStrong]="page() === 'staking'"
+              color="staking"
+              (click)="go('staking')"
+              >Staking</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'auction'"
+              [isStrong]="page() === 'auction'"
+              color="auction"
+              (click)="go('auction')"
+              >Auction</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'market'"
+              [isStrong]="page() === 'market'"
+              color="market"
+              (click)="go('market')"
+              >Marketplace</ui-button
+            >
+          </nav>
+        </div>
+        <div class="btns">
+          @if (status() !== 'connected') {
+          <ui-button (click)="connect()">Connect Wallet</ui-button>
+          } @else {
+          <ui-button
+            [isDropdown]="true"
+            [isActive]="menuOpen()"
+            (click)="menuOpen.set(!menuOpen())"
+          >
+            {{ shortAddr() }}
+          </ui-button>
+          } @if (menuOpen()) {
+
+          <div class="dropdown card">
+            <div class="row">Status: {{ status() }}</div>
+            <div class="row">Account: {{ account() }}</div>
+            <div class="row fl gg-10 mt-10">
+              <ui-button size="sm" (click)="switchToSepolia()"
+                >Sepolia</ui-button
+              >
+              <ui-button size="sm" color="error" (click)="disconnect()"
+                >Logout</ui-button
+              >
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

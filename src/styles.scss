@@ -65,101 +65,106 @@ body {
   padding-top: mx.rem(50);
   background: var(--body-bg-color);
   color: var(--body-text-color);
+
+  &.sbx-frameless {
+    padding-top: 0;
+  }
 }
 
 // Typography
+@include mx.scope("base-ui") {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title {
+    overflow-wrap: break-word;
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.title {
-  overflow-wrap: break-word;
+    font-family: var(--title-font);
+    font-weight: 700;
+  }
 
-  font-family: var(--title-font);
-  font-weight: 700;
-}
+  h1 {
+    font-size: mx.rem(49);
+  }
+  h2 {
+    font-size: mx.rem(39);
+  }
+  h3 {
+    font-size: mx.rem(31);
+  }
+  h4 {
+    font-size: mx.rem(25);
+  }
+  h5 {
+    font-size: mx.rem(20);
+  }
 
-h1 {
-  font-size: mx.rem(49);
-}
-h2 {
-  font-size: mx.rem(39);
-}
-h3 {
-  font-size: mx.rem(31);
-}
-h4 {
-  font-size: mx.rem(25);
-}
-h5 {
-  font-size: mx.rem(20);
-}
+  small {
+    font-size: mx.rem(13);
+  }
 
-small {
-  font-size: mx.rem(13);
-}
+  a {
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 
-a {
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-
-  &.link {
-    color: var(--cl-cmain);
-    &:hover {
-      color: var(--cl-caccent);
+    &.link {
+      color: var(--cl-cmain);
+      &:hover {
+        color: var(--cl-caccent);
+      }
     }
   }
-}
 
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-// Template
+  // Template
 
-.sc {
-  position: relative;
-  &:not(.pg-hd) {
-    margin-top: mx.rem(250);
-    @include mx.b(desktop) {
-      margin-top: mx.rem(200);
+  .sc {
+    position: relative;
+    &:not(.pg-hd) {
+      margin-top: mx.rem(250);
+      @include mx.b(desktop) {
+        margin-top: mx.rem(200);
+      }
+      @include mx.b(tablet) {
+        margin-top: mx.rem(150);
+      }
+      @include mx.b(mobile) {
+        margin-top: mx.rem(100);
+      }
     }
-    @include mx.b(tablet) {
-      margin-top: mx.rem(150);
-    }
+  }
+
+  .container {
+    --container-width: #{mx.rem(1200)};
+
+    position: relative;
+    max-width: var(--container-width);
+    width: 100%;
+
+    margin: 0 auto;
+    padding: mx.rem(15);
+
     @include mx.b(mobile) {
-      margin-top: mx.rem(100);
+      padding: mx.rem(10);
     }
-  }
-}
-
-.container {
-  --container-width: #{mx.rem(1200)};
-
-  position: relative;
-  max-width: var(--container-width);
-  width: 100%;
-
-  margin: 0 auto;
-  padding: mx.rem(15);
-
-  @include mx.b(mobile) {
-    padding: mx.rem(10);
   }
 }

@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FrameService } from '@sandbox/shared/frame/frame.service';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
 
@@ -10,5 +11,5 @@ import { HeaderComponent } from '@shared/components/header/header.component';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('amaryfilo-website');
+  layout = inject(FrameService);
 }

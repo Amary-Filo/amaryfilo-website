@@ -1,0 +1,20 @@
+:host,
+.sbx-root {
+  /* шрифты sandbox */
+  --sbx-title-font: "Nunito", system-ui, sans-serif;
+  --sbx-text-font: "Space Grotesk", system-ui, sans-serif;
+
+  /* базовые цвета sandbox (не зависят от сайта) */
+  --sbx-bg: #fff;
+  --sbx-fg: #111;
+
+  /* семантика */
+  --sbx-cmain: #86acb9;
+  --sbx-caccent: #eddbc3;
+}
+
+:host([data-theme="dark"]),
+.sbx-root[data-theme="dark"] {
+  --sbx-bg: #1c1727;
+  --sbx-fg: #fff;
+}

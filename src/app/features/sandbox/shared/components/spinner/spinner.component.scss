@@ -1,0 +1,40 @@
+$offset: 190;
+
+.spinner-svg {
+  animation: rotate 1.4s linear infinite;
+}
+
+.path {
+  stroke: var(--cp-spinner-color, var(--cl-main, var(--fg)));
+  stroke-width: 5px;
+  stroke-dasharray: $offset;
+  transform-origin: center;
+  animation: dash 1.4s ease-in-out infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: $offset;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    stroke-dashoffset: calc($offset / 4);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: $offset;
+    transform: rotate(450deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}

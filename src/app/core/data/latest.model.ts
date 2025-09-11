@@ -39,7 +39,7 @@ export interface SolutionLatest extends LatestBase {
 
 // Sandbox
 export interface SandboxLatest extends LatestBase {
-  type: string; // напр. 'component' | 'app' | 'lib' | 'experiment'
+  type: string;
 }
 
 export type Section = 'designs' | 'blog' | 'projects' | 'solutions' | 'sandbox';

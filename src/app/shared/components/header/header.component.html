@@ -1,4 +1,4 @@
-<header [class]="headerClass()">
+<header class="base-ui" [class]="headerClass()">
   <div class="container">
     <span
       class="btn fz-md"
@@ -86,37 +86,39 @@
 </header>
 
 @if (langModalOpen()) {
-<div class="modal fl-cc fl-dc" id="modal-lang">
-  <div (click)="closeLangModal()" class="backdrop"></div>
-  <div class="modal-wrap">
-    <button
-      (click)="closeLangModal()"
-      [attr.aria-label]="'menu.modal.close' | t"
-      class="modal-close btn ic-cancel-1 link-hover"
-    ></button>
-    <div class="modal-top">
-      <h2 class="title fz-xxl cl-amaryfilo t-gr">
-        {{ "menu.modal.title" | t }}
-      </h2>
-      <p class="text op-6">
-        {{ "menu.modal.description" | t }}
-      </p>
-      <div class="clearfix"></div>
-    </div>
-    <div class="modal-content">
-      <div class="modal-lang">
-        @for (l of langs; track l) {
-        <button
-          class="btn w-100"
-          [class.active]="l === langSvc.current"
-          (click)="pickLang(l)"
-        >
-          {{ langNames[l] || l.toUpperCase() }}
-        </button>
-        }
+<section class="modal-opened base-ui">
+  <div class="modal fl-cc fl-dc" id="modal-lang">
+    <div (click)="closeLangModal()" class="backdrop"></div>
+    <div class="modal-wrap">
+      <button
+        (click)="closeLangModal()"
+        [attr.aria-label]="'menu.modal.close' | t"
+        class="modal-close btn ic-cancel-1 link-hover"
+      ></button>
+      <div class="modal-top">
+        <h2 class="title fz-xxl cl-amaryfilo t-gr">
+          {{ "menu.modal.title" | t }}
+        </h2>
+        <p class="text op-6">
+          {{ "menu.modal.description" | t }}
+        </p>
+        <div class="clearfix"></div>
       </div>
+      <div class="modal-content">
+        <div class="modal-lang">
+          @for (l of langs; track l) {
+          <button
+            class="btn w-100"
+            [class.active]="l === langSvc.current"
+            (click)="pickLang(l)"
+          >
+            {{ langNames[l] || l.toUpperCase() }}
+          </button>
+          }
+        </div>
+      </div>
+      <div class="modal-bottom"></div>
     </div>
-    <div class="modal-bottom"></div>
   </div>
-</div>
+</section>
 }

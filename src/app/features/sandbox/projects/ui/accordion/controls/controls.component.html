@@ -1,0 +1,101 @@
+<div class="base-ui">
+  <div class="controls cl-cmain">
+    <h4 class="title fz-md">Settings</h4>
+
+    <div class="field-set" [attr.data-title]="'Toggles'">
+      <div class="check">
+        <input
+          class="checkbox"
+          type="checkbox"
+          id="isOpen"
+          [checked]="cfg().isOpen"
+          (change)="toggle('isOpen')"
+        />
+        <label class="label op-7" for="isOpen">Open</label>
+      </div>
+
+      <div class="check">
+        <input
+          class="checkbox"
+          type="checkbox"
+          id="bottomShowButtons"
+          [checked]="cfg().bottomShowButtons"
+          (change)="toggle('bottomShowButtons')"
+        />
+        <label class="label op-7" for="bottomShowButtons">Bottom buttons</label>
+      </div>
+
+      <div class="check">
+        <input
+          class="checkbox"
+          type="checkbox"
+          id="skeleton"
+          [checked]="cfg().skeleton"
+          (change)="toggle('skeleton')"
+        />
+        <label class="label op-7" for="skeleton">Loading</label>
+      </div>
+    </div>
+
+    <div class="field-set" [attr.data-title]="'Texts'">
+      <div class="form-group">
+        <input
+          class="form-input"
+          id="headerTitle"
+          type="text"
+          placeholder=" "
+          [ngModel]="cfg().headerTitle"
+          (ngModelChange)="set('headerTitle', $event)"
+        />
+        <label class="form-label" for="headerTitle">Header Title</label>
+      </div>
+
+      <div class="form-group">
+        <input
+          class="form-input"
+          id="headerText"
+          type="text"
+          placeholder=" "
+          [ngModel]="cfg().headerText"
+          (ngModelChange)="set('headerText', $event)"
+        />
+        <label class="form-label" for="headerText">Header Text</label>
+      </div>
+
+      <div class="form-group">
+        <input
+          class="form-input"
+          id="bodyText"
+          type="text"
+          placeholder=" "
+          [ngModel]="cfg().bodyText"
+          (ngModelChange)="set('bodyText', $event)"
+        />
+        <label class="form-label" for="bodyText">Body Text</label>
+      </div>
+
+      <div class="form-group">
+        <input
+          class="form-input"
+          id="bottomText"
+          type="text"
+          placeholder=" "
+          [ngModel]="cfg().bottomText"
+          (ngModelChange)="set('bottomText', $event)"
+        />
+        <label class="form-label" for="bottomText">Bottom Text</label>
+      </div>
+      <div class="form-group">
+        <input
+          class="form-input"
+          id="skeletHeaderText"
+          type="text"
+          placeholder=" "
+          [ngModel]="cfg().skeletHeaderText"
+          (ngModelChange)="set('skeletHeaderText', $event)"
+        />
+        <label class="form-label" for="bottomText">Skeleton Text</label>
+      </div>
+    </div>
+  </div>
+</div>

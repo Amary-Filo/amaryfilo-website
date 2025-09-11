@@ -1,0 +1,203 @@
+@use "../../styles/mixins" as mx;
+@use "../../styles/sandbox";
+
+:host {
+  --btn-minh-xxs: #{mx.rem(24)};
+  --btn-fz-xxs: var(--fz-2xs);
+  --btn-py-xxs: var(--spacing-2xs);
+  --btn-px-xxs: var(--spacing-xs);
+  --btn-r-xxs: var(--radius-xs);
+  --btn-ic-xxs: #{mx.rem(12)};
+  --btn-gap-xxs: #{mx.rem(6)};
+
+  --btn-minh-xs: #{mx.rem(32)};
+  --btn-fz-xs: var(--fz-xs);
+  --btn-py-xs: var(--spacing-xs);
+  --btn-px-xs: #{mx.rem(10)};
+  --btn-r-xs: var(--radius-xs);
+  --btn-ic-xs: #{mx.rem(14)};
+  --btn-gap-xs: #{mx.rem(6)};
+
+  --btn-minh-sm: #{mx.rem(36)};
+  --btn-fz-sm: var(--fz-sm);
+  --btn-py-sm: var(--spacing-sm);
+  --btn-px-sm: var(--spacing-sm);
+  --btn-r-sm: var(--radius-sm);
+  --btn-ic-sm: #{mx.rem(16)};
+  --btn-gap-sm: #{mx.rem(8)};
+
+  --btn-minh-md: #{mx.rem(40)};
+  --btn-fz-md: var(--fz-md);
+  --btn-py-md: #{mx.rem(10)};
+  --btn-px-md: var(--spacing-md);
+  --btn-r-md: var(--radius-md);
+  --btn-ic-md: #{mx.rem(18)};
+  --btn-gap-md: #{mx.rem(8)};
+
+  --btn-minh-lg: #{mx.rem(48)};
+  --btn-fz-lg: var(--fz-nd);
+  --btn-py-lg: var(--spacing-md);
+  --btn-px-lg: var(--spacing-lg);
+  --btn-r-lg: var(--radius-lg);
+  --btn-ic-lg: #{mx.rem(20)};
+  --btn-gap-lg: #{mx.rem(10)};
+
+  --btn-minh-xl: #{mx.rem(56)};
+  --btn-fz-xl: var(--fz-lg);
+  --btn-py-xl: var(--spacing-lg);
+  --btn-px-xl: var(--spacing-xl);
+  --btn-r-xl: var(--radius-xl);
+  --btn-ic-xl: #{mx.rem(24)};
+  --btn-gap-xl: #{mx.rem(12)};
+
+  --btn-icon-color: var(--cl-main);
+}
+
+.btns {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: var(--cp-btn-min-width, max-content);
+  width: var(--cp-btn-width, auto);
+
+  min-height: var(--cp-btn-min-height, var(--btn-minh-md));
+  font-size: var(--cp-btn-font-size, var(--btn-fz-md));
+  font-weight: var(--fw-bold);
+  line-height: 1;
+
+  padding: var(
+    --cp-btn-padding,
+    var(--cp-btn-pad-y, var(--btn-py-md)) var(--cp-btn-pad-x, var(--btn-px-md))
+  );
+  gap: var(--cp-btn-gap, var(--btn-gap-md));
+
+  border-radius: var(--cp-btn-radius, var(--btn-r-md));
+  border: #{mx.rem(1)} solid rgba(var(--cp-btn-border-color-rgb, var(--cl-main-rgb, var(--border-base-color-rgb))), var(--cp-btn-bg-border-opacity, var(--border-base-opacity)));
+
+  background: none;
+  color: var(--cp-btn-color, var(--cl-main-text));
+  transition: 0.3s var(--ease-standard);
+
+  &.fill {
+    border-color: none;
+    background-color: rgba(
+      var(--cp-btn-bg-color-rgb, var(--cl-main-rgb)),
+      var(--cp-btn-bg-border-opacity, 0.5)
+    );
+    color: var(--cp-btn-fill-text, var(--fg-inverted, #fff));
+    --cp-spinner-color: var(--cp-btn-fill-text, var(--fg-inverted, #fff));
+  }
+
+  &.text-color {
+    --cp-btn-color: var(--cl-main);
+  }
+
+  &.strong {
+    --cp-btn-bg-border-opacity: 1;
+  }
+
+  &.full {
+    --cp-btn-min-width: 100%;
+  }
+
+  &.only-icon {
+    --cp-btn-gap: 0;
+    --cp-btn-padding: 0;
+
+    width: var(--cp-btn-min-height);
+  }
+
+  &.disabled,
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &:not(.disabled, [disabled]) {
+    cursor: pointer;
+
+    &:hover {
+      --cp-btn-bg-border-opacity: 1;
+    }
+
+    &:active {
+      --cp-btn-bg-border-opacity: 0.8;
+    }
+
+    // &:focus-visible {
+    //   box-shadow: 0 0 0 2px var(--background-primary),
+    //     0 0 0 4px var(--border-emphasize);
+    // }
+  }
+
+  &-text {
+    white-space: nowrap;
+  }
+
+  &-open {
+    transform: rotate(180deg);
+  }
+}
+
+.btns-xxs {
+  --cp-btn-min-height: var(--btn-minh-xxs);
+  --cp-btn-font-size: var(--btn-fz-xxs);
+  --cp-btn-pad-y: var(--btn-py-xxs);
+  --cp-btn-pad-x: var(--btn-px-xxs);
+  --cp-btn-radius: var(--btn-r-xxs);
+  --cp-btn-gap: var(--btn-gap-xxs);
+  --icon-size: var(--btn-ic-xxs);
+}
+.btns-xs {
+  --cp-btn-min-height: var(--btn-minh-xs);
+  --cp-btn-font-size: var(--btn-fz-xs);
+  --cp-btn-pad-y: var(--btn-py-xs);
+  --cp-btn-pad-x: var(--btn-px-xs);
+  --cp-btn-radius: var(--btn-r-xs);
+  --cp-btn-gap: var(--btn-gap-xs);
+  --icon-size: var(--btn-ic-xs);
+}
+.btns-sm {
+  --cp-btn-min-height: var(--btn-minh-sm);
+  --cp-btn-font-size: var(--btn-fz-sm);
+  --cp-btn-pad-y: var(--btn-py-sm);
+  --cp-btn-pad-x: var(--btn-px-sm);
+  --cp-btn-radius: var(--btn-r-sm);
+  --cp-btn-gap: var(--btn-gap-sm);
+  --icon-size: var(--btn-ic-sm);
+}
+.btns-md {
+  --cp-btn-min-height: var(--btn-minh-md);
+  --cp-btn-font-size: var(--btn-fz-md);
+  --cp-btn-pad-y: var(--btn-py-md);
+  --cp-btn-pad-x: var(--btn-px-md);
+  --cp-btn-radius: var(--btn-r-md);
+  --cp-btn-gap: var(--btn-gap-md);
+  --icon-size: var(--btn-ic-md);
+}
+.btns-lg {
+  --cp-btn-min-height: var(--btn-minh-lg);
+  --cp-btn-font-size: var(--btn-fz-md);
+  --cp-btn-pad-y: var(--btn-py-lg);
+  --cp-btn-pad-x: var(--btn-px-lg);
+  --cp-btn-radius: var(--btn-r-lg);
+  --cp-btn-gap: var(--btn-gap-lg);
+  --icon-size: var(--btn-ic-lg);
+}
+.btns-xl {
+  --cp-btn-min-height: var(--btn-minh-xl);
+  --cp-btn-font-size: var(--btn-fz-lg);
+  --cp-btn-pad-y: var(--btn-py-xl);
+  --cp-btn-pad-x: var(--btn-px-xl);
+  --cp-btn-radius: var(--btn-r-xl);
+  --cp-btn-gap: var(--btn-gap-xl);
+  --icon-size: var(--btn-ic-xl);
+}
+
+@media (pointer: coarse) {
+  .btns-xxs,
+  .btns-xs {
+    --cp-btn-min-height: #{mx.rem(40)};
+  }
+}

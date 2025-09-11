@@ -1,0 +1,104 @@
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">
+      Stake <span class="text-accent fill cl-ast">AST</span> Token
+    </h2>
+    <p class="text text-secondary">
+      You can stake AST token to get profit by choosing any range in staking
+      period. This AST token you can change to APT via Auction. On this page you
+      can find your deposits and claim rewards. Also you find a form for staking
+      AST Tokens
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Rules, time and reward formula.</span>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-t row-sbc">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [title]="'Rules and time'"
+      [text]="'What you need to do to Staking AST Token'"
+      [bottomText]="'Choose the longest time to get more AST Tokens.'"
+    >
+      <ol class="text-secondary" accordionContent>
+        <li>You can Stake and withdraw unlimit tokens</li>
+        <li>Rates: 15 min (0.5%) | 30 min (1.5%) | 45 min (2.5%) | 1h (5%)</li>
+      </ol>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [title]="'Reward formula'"
+      [text]="'Formula for your reward AST Tokens'"
+      [bottomText]="
+        'Ex.: Staked 20 AST for 1h (2.5%) so you will get 20*2,5%+20 = 20.5 AST tokens.'
+      "
+    >
+      <ol class="text-secondary" accordionContent>
+        <li>
+          [<span class="text-accent cl-ast">You Staked</span>] * [Percent] =
+          [<span class="text-accent cl-staking">Your percents</span>]
+        </li>
+        <li>
+          [<span class="text-accent cl-ast">You Staked</span>] + [<span
+            class="text-accent cl-staking"
+            >Your percents</span
+          >] = [You will withdraw]
+        </li>
+      </ol>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-t">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Fill form to Stake AST Token</div>
+    <p class="text-secondary">
+      <span class="text-accent">TIP:</span> For getting more profit from Staking
+      <span class="text-accent cl-ast"> AST</span> Token just select long time
+      for staking
+    </p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Withdraw Staking</div>
+    <p class="text-secondary">
+      To Claim <span class="text-accent cl-ast">AST</span> Tokens click on
+      button “Withdraw”.
+    </p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Wait a little bit</div>
+    <p class="text-secondary">
+      You will see this stakings in block behind when they will be done.
+    </p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+</div>
