@@ -42,9 +42,12 @@
         </div>
         <div class="btns">
           @if (status() !== 'connected') {
-          <ui-button (click)="connect()">Connect Wallet</ui-button>
+          <ui-button color="gray-900" (click)="connect()"
+            >Connect Wallet</ui-button
+          >
           } @else {
           <ui-button
+            color="gray-900"
             [isDropdown]="true"
             [isActive]="menuOpen()"
             (click)="menuOpen.set(!menuOpen())"
@@ -57,7 +60,7 @@
             <div class="row">Status: {{ status() }}</div>
             <div class="row">Account: {{ account() }}</div>
             <div class="row fl gg-10 mt-10">
-              <ui-button size="sm" (click)="switchToSepolia()"
+              <ui-button color="gray-900" size="sm" (click)="switchToSepolia()"
                 >Sepolia</ui-button
               >
               <ui-button size="sm" color="error" (click)="disconnect()"

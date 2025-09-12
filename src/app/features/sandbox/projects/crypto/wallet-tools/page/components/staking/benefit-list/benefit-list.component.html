@@ -1,0 +1,17 @@
+<div class="sandbox-ui">
+  <div class="benefit-list">
+    <ui-benefit-item
+      icon="calendarScheduleFill"
+      title="Date start"
+      [text]="date()"
+    />
+    <ui-benefit-item icon="stackFill" title="You Staked" [text]="staked()" />
+    <ui-benefit-item
+      icon="percentFill"
+      title="Your Percent"
+      [text]="percent()"
+    />
+    <ui-benefit-item icon="lineChartFill" title="You Get" [text]="get()" />
+    <ui-benefit-item icon="historyFill" title="You choose" [text]="choose()" />
+  </div>
+</div>

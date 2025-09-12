@@ -14,6 +14,9 @@ export class UIAccordionComponent {
   bottomShowButtons = model(true);
   isSkeleton = model(false);
   fullBorder = input(false);
+  showBottom = input(true);
+  showHeadButtons = input(false);
+  showHeadContent = input(false);
 
   title = input('Header title');
   text = input('Header text');

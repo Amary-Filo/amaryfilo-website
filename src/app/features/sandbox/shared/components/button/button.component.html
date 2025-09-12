@@ -8,6 +8,7 @@
     [class.strong]="isStrong()"
     [class.text-color]="textColor()"
     [class.loading]="loading()"
+    [class.full]="fullWidth()"
   >
     @if (leftIcon() && !loading()) {
     <ui-icon class="icon" [name]="leftIcon()" [size]="'var(--icon-size)'" />

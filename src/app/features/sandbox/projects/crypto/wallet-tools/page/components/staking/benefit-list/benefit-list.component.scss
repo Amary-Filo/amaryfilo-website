@@ -1,0 +1,22 @@
+@use "../../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../../shared/styles/sandbox.scss";
+
+:host {
+  width: 100%;
+}
+
+.benefit-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  border-right: 20px solid rgba(var(--gray-500-rgb), 0.1);
+  border-left: 20px solid rgba(var(--gray-500-rgb), 0.1);
+
+  ui-benefit-item {
+    &:first-child {
+      border-left: var(--border-base-width) solid
+        rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+    }
+  }
+}

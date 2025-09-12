@@ -1,0 +1,78 @@
+<div class="sandbox-ui">
+  <div
+    class="ui-input"
+    [class.invalid]="invalid()"
+    [class.disabled]="disabled()"
+  >
+    <div class="field">
+      @if(prefix()){
+      <div class="affix prefix">
+        <ng-content class="title" select="[input-prefix]">Slot</ng-content>
+      </div>
+      }
+
+      <div class="control-wrap">
+        <div class="control-inner">
+          <input
+            class="control"
+            [id]="id() ?? name()"
+            [name]="name()"
+            [attr.inputmode]="
+              type() === 'number' || type() === 'token' ? 'decimal' : 'text'
+            "
+            [attr.pattern]="
+              type() === 'number' || type() === 'token'
+                ? '[0-9]*[.]?[0-9]*'
+                : null
+            "
+            [placeholder]="placeholder()"
+            [required]="required()"
+            [disabled]="disabled()"
+            [readOnly]="readonly()"
+            [value]="value()"
+            (input)="onInput($event)"
+            (keydown)="onKeyDown($event)"
+            (blur)="onBlur()"
+            (keyup.enter)="enter.emit()"
+          />
+          <label class="label" [for]="id() ?? name()">{{ label() }}</label>
+        </div>
+      </div>
+
+      @if(suffix()){
+      <div class="affix suffix">
+        <ng-content class="title" select="[input-suffix]">Slot</ng-content>
+      </div>
+      }
+    </div>
+
+    <!-- ошибки / низ -->
+    <div class="bottom">
+      @if(invalid()){
+      <div class="errors">
+        @for (e of errors(); track $index) {
+        <div class="err">{{ e }}</div>
+        }
+      </div>
+      } @else {
+      <div class="actions">
+        <ng-content select="[input-actions]" />
+      </div>
+      }
+    </div>
+  </div>
+</div>
+
+<!-- <div class="sandbox-ui">
+  <div class="ui-form ui-input">
+    <input
+      class="ui-form-el"
+      type="text"
+      [id]="name()"
+      [name]="name()"
+      [required]="required()"
+      [placeholder]="placeholder()"
+    />
+    <label class="ui-form-label" [for]="name()">{{ title() }}</label>
+  </div>
+</div> -->

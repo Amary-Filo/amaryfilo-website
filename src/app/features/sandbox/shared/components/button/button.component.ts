@@ -14,10 +14,11 @@ export type ButtonSize = 'lg' | 'md' | 'sm' | 'xs' | 'xxs';
 })
 export class UIButtonComponent {
   size = input<ButtonSize>('md');
-  color = input<string>('gray-600');
-  spinnerColor = input<string>('gray-900');
+  color = input<string>('button');
+  spinnerColor = input<string>('button');
 
   isActive = input(false);
+  fullWidth = input(false);
   isFilled = input(false);
   textColor = input(false);
   isStrong = input(false);

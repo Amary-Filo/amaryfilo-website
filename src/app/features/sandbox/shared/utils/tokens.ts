@@ -13,7 +13,6 @@ export interface BaseDemoConfig {
   web3?: Web3Config;
   ui?: {
     frameless?: boolean;
-    // browserFullscreen?: boolean;
   };
   [k: string]: unknown;
 }
