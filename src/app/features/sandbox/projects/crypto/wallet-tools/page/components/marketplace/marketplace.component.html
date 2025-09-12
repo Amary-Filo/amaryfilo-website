@@ -1,1 +1,183 @@
-crypto: wallet-tools marketplace component
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">Marketplace</h2>
+    <p class="text text-secondary">
+      You can get APT token by take a bit in auction pulls. If your bit win then
+      you will get APT after pull timer is end. Then you can spend APT in
+      marketplace and buy any items.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Rules</span>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-t">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [title]="'Rules'"
+      [text]="'What you need to do to buy items'"
+      [bottomText]="'All world in your hand'"
+    >
+      <ol class="text-secondary" accordionContent>
+        <li>You can by anything from item list.</li>
+        <li>Available for only APT Tokens.</li>
+        <li>Some items you can by infinity times.</li>
+        <li>All items are for test only.</li>
+      </ol>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-t">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Available Items</div>
+    <p class="text-secondary">
+      List of items for purchase by
+      <span class="text-accent cl-apt">APT</span> Token
+    </p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  @if(status() !== 'connected') {
+  <div class="row-line row-tb">
+    <div class="fz-xl fw-extrabold t-c m-md">
+      Please Connect Wallet to see all items
+    </div>
+  </div>
+  } @else {
+  <div class="row-line row-fdc row-t">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [showHeadButtons]="true"
+      [showToggle]="false"
+      [title]="'Item 1'"
+    >
+      <div class="block-title" accordionHeadContent>
+        <span class="title">
+          <span class="text-accent fill cl-market"
+            >Amary Filo Solutions List</span
+          >
+          you can buy for
+          <span class="text-accent fill cl-apt">2 APT</span> Tokens
+        </span>
+      </div>
+
+      <ng-content accordionHeadBtns>
+        <ui-button [isStrong]="true" [isFilled]="true">Buy</ui-button>
+      </ng-content>
+    </sbx-accordion-component>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [showHeadButtons]="true"
+      [showToggle]="false"
+      [title]="'Item 1'"
+    >
+      <div class="block-title" accordionHeadContent>
+        <span class="title">
+          <span class="text-accent fill cl-market"
+            >Amary Filo Solutions List</span
+          >
+          you can buy for
+          <span class="text-accent fill cl-apt">2 APT</span> Tokens
+        </span>
+      </div>
+
+      <ng-content accordionHeadBtns>
+        <ui-button [isStrong]="true" [isFilled]="true">Buy</ui-button>
+      </ng-content>
+    </sbx-accordion-component>
+  </div>
+  }
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Your items</div>
+    <p class="text-secondary">Items that you already purchased</p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  @if(status() !== 'connected') {
+  <div class="row-line row-tb">
+    <div class="fz-xl fw-extrabold t-c m-md">
+      Please Connect Wallet to see your items
+    </div>
+  </div>
+  } @else {
+  <div class="row-line row-fdc row-t">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [showHeadButtons]="true"
+      [showToggle]="false"
+      [title]="'Item 1'"
+    >
+      <div class="block-title" accordionHeadContent>
+        <span class="title">
+          <span class="text-accent fill cl-market"
+            >Amary Filo Solutions List</span
+          >
+          you bought for
+          <span class="text-accent fill cl-apt">2 APT</span> Tokens
+        </span>
+      </div>
+
+      <ng-content accordionHeadBtns>
+        <ui-button [isStrong]="true" [isFilled]="true">Download</ui-button>
+      </ng-content>
+    </sbx-accordion-component>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [showHeadButtons]="true"
+      [showToggle]="false"
+      [title]="'Item 1'"
+    >
+      <div class="block-title" accordionHeadContent>
+        <span class="title">
+          <span class="text-accent fill cl-market"
+            >Amary Filo Solutions List</span
+          >
+          you bought for
+          <span class="text-accent fill cl-apt">2 APT</span> Tokens
+        </span>
+      </div>
+
+      <ng-content accordionHeadBtns>
+        <ui-button [isStrong]="true" [isFilled]="true">Download</ui-button>
+      </ng-content>
+    </sbx-accordion-component>
+  </div>
+  }
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+</div>

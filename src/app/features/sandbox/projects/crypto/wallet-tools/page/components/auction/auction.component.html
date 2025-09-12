@@ -12,26 +12,45 @@
   </div>
 
   <div class="row-info row-tb">
-    <span class="title">Rules</span>
+    <span class="title">Rules and pulls</span>
   </div>
 
   <div class="row-line">
     <div class="row-spacer"></div>
   </div>
 
-  <div class="row-line row-t">
+  <div class="row-line row-t row-sbc">
     <sbx-accordion-component
       [isSkeleton]="status() !== 'connected'"
       [isOpen]="true"
       [title]="'Rules'"
-      [text]="'What you need to do to buy items'"
-      [bottomText]="'Be first - win all APT'"
+      [text]="'What you need to do to get APT Token'"
+      [bottomText]="'Choose the longest time to get more AST Tokens.'"
     >
       <ol class="text-secondary" accordionContent>
-        <li>You can by anything from item list.</li>
-        <li>Available for only APT Tokens.</li>
-        <li>Some items you can by infinity times.</li>
-        <li>All items are for test only.</li>
+        <li>You bit only AST Tokens</li>
+        <li>Minimun 1 AST per bit</li>
+        <li>If your bit loose then you will get refund AST immediately</li>
+        <li>Claim reward you can only when pull is end</li>
+      </ol>
+    </sbx-accordion-component>
+
+    <div class="row-spacer"></div>
+
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [title]="'Pulls'"
+      [text]="'How long and much you can get from pulls'"
+      [bottomText]="
+        'Ex.: Staked 20 AST for 1h (2.5%) so you will get 20*2,5%+20 = 20.5 AST tokens.'
+      "
+    >
+      <ol class="text-secondary" accordionContent>
+        <li>3 pulls per day</li>
+        <li>Only one winner per pull</li>
+        <li>Each pull can be from 5 min to 1 hour</li>
+        <li>Pull range from 0.1 APT (min) to 1 APT (max)</li>
       </ol>
     </sbx-accordion-component>
   </div>
@@ -41,10 +60,10 @@
   </div>
 
   <div class="row-info row-tb">
-    <div class="title">Available Lots</div>
+    <div class="title">Auctions</div>
     <p class="text-secondary">
-      List of items for purchase by
-      <span class="text-accent cl-apt">APT</span> Token
+      List of pulls to bit <span class="text-accent cl-ast">APT</span> Tokens to
+      claim <span class="text-accent cl-apt">APT</span>
     </p>
   </div>
 
@@ -167,8 +186,8 @@
   </div>
 
   <div class="row-info row-tb">
-    <div class="title">Your lots</div>
-    <p class="text-secondary">Lots that your are win</p>
+    <div class="title">Your APT</div>
+    <p class="text-secondary">List of winning pulls</p>
   </div>
 
   <div class="row-line">
