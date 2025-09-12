@@ -1,1 +1,217 @@
-crypto: wallet-tools auction component
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">Auction</h2>
+    <p class="text text-secondary">
+      You can get APT token by take a bit in auction pulls. If your bit win then
+      you will get APT after pull timer is end. Then you can spend APT in
+      marketplace and buy any items.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Rules</span>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-line row-t">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [isOpen]="true"
+      [title]="'Rules'"
+      [text]="'What you need to do to buy items'"
+      [bottomText]="'Be first - win all APT'"
+    >
+      <ol class="text-secondary" accordionContent>
+        <li>You can by anything from item list.</li>
+        <li>Available for only APT Tokens.</li>
+        <li>Some items you can by infinity times.</li>
+        <li>All items are for test only.</li>
+      </ol>
+    </sbx-accordion-component>
+  </div>
+
+  <div class="row-line row-t">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Available Lots</div>
+    <p class="text-secondary">
+      List of items for purchase by
+      <span class="text-accent cl-apt">APT</span> Token
+    </p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  @if(status() !== 'connected') {
+  <div class="row-line row-tb">
+    <div class="fz-xl fw-extrabold t-c m-md">
+      Please Connect Wallet to see all lots
+    </div>
+  </div>
+  } @else {
+  <div class="row-line row-fdc row-t">
+    <sbx-accordion-component
+      class="auction-pull"
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [title]="'Pull 1'"
+    >
+      <ui-lot-benefit-list
+        accordionHeadContent
+        [dateEnd]="'12.04.2025 15:34'"
+        [dateStart]="'12.04.2025 16:34'"
+        [lot]="'0.5'"
+        [endTime]="'33 min'"
+      />
+
+      <ng-container accordionContent>
+        <ui-pull-content
+          [validators]="[positiveValidator, maxBalanceValidator]"
+          [max]="ast()"
+          [date]="'12.04.2025 15:34'"
+          [(amount)]="amount"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+    <sbx-accordion-component
+      class="auction-pull"
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [title]="'Pull 1'"
+    >
+      <ui-lot-benefit-list
+        accordionHeadContent
+        [dateEnd]="'12.04.2025 15:34'"
+        [dateStart]="'12.04.2025 16:34'"
+        [lot]="'0.5'"
+        [endTime]="'33 min'"
+      />
+
+      <ng-container accordionContent>
+        <ui-pull-content
+          [type]="'bit'"
+          [validators]="[positiveValidator, maxBalanceValidator]"
+          [max]="ast()"
+          [date]="'12.04.2025 15:34'"
+          [(amount)]="amount"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+    <sbx-accordion-component
+      class="auction-pull"
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [title]="'Pull 1'"
+    >
+      <ui-lot-benefit-list
+        accordionHeadContent
+        [dateEnd]="'12.04.2025 15:34'"
+        [dateStart]="'12.04.2025 16:34'"
+        [lot]="'0.5'"
+        [endTime]="'33 min'"
+      />
+
+      <ng-container accordionContent>
+        <ui-pull-content
+          [type]="'winner'"
+          [validators]="[positiveValidator, maxBalanceValidator]"
+          [max]="ast()"
+          [date]="'12.04.2025 15:34'"
+          [(amount)]="amount"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+    <sbx-accordion-component
+      class="auction-pull"
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [title]="'Pull 1'"
+    >
+      <ui-lot-benefit-list
+        accordionHeadContent
+        [dateEnd]="'12.04.2025 15:34'"
+        [dateStart]="'12.04.2025 16:34'"
+        [lot]="'0.5'"
+        [endTime]="'33 min'"
+      />
+
+      <ng-container accordionContent>
+        <ui-pull-content
+          [type]="'empty'"
+          [validators]="[positiveValidator, maxBalanceValidator]"
+          [max]="ast()"
+          [date]="'12.04.2025 15:34'"
+          [(amount)]="amount"
+        />
+      </ng-container>
+    </sbx-accordion-component>
+  </div>
+  }
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <div class="title">Your lots</div>
+    <p class="text-secondary">Lots that your are win</p>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  @if(status() !== 'connected') {
+  <div class="row-line row-tb">
+    <div class="fz-xl fw-extrabold t-c m-md">
+      Please Connect Wallet to see win lots
+    </div>
+  </div>
+  } @else {
+  <div class="row-line row-fdc row-t">
+    <sbx-accordion-component
+      [isSkeleton]="status() !== 'connected'"
+      [showBottom]="false"
+      [showHeadContent]="true"
+      [showHeadButtons]="true"
+      [showToggle]="false"
+      [text]="'12.04.2025 15:34'"
+    >
+      <div class="block-title" accordionHeadInfo>
+        <span class="title">
+          You bit <span class="text-accent fill cl-ast">25 AST</span>
+        </span>
+      </div>
+
+      <div class="block-title" accordionHeadContent>
+        <span class="title">
+          You win
+          <span class="text-accent fill cl-apt">50 APT</span> Tokens
+        </span>
+      </div>
+
+      <ng-content accordionHeadBtns>
+        <ui-button [isStrong]="true" [isFilled]="true">Withdraw</ui-button>
+      </ng-content>
+    </sbx-accordion-component>
+  </div>
+  }
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+</div>

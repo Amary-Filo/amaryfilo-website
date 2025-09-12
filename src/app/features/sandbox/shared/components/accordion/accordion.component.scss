@@ -28,6 +28,7 @@
     &-info {
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 0;
       width: max-content;
       min-width: max-content;
@@ -42,7 +43,7 @@
       display: flex;
       align-items: center;
       width: 100%;
-      padding: 0 25px;
+      padding: var(--cp-accordion-head-content-padding, 0 25px);
 
       border-left: var(--border-base-width) solid
         rgba(var(--border-base-color-rgb), var(--border-base-opacity));

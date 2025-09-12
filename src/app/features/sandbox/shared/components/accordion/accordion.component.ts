@@ -17,11 +17,12 @@ export class UIAccordionComponent {
   showBottom = input(true);
   showHeadButtons = input(false);
   showHeadContent = input(false);
+  showToggle = input(true);
 
-  title = input('Header title');
-  text = input('Header text');
-  content = input('Body text');
-  bottomText = input('Bottom text');
+  title = input('');
+  text = input('');
+  content = input('');
+  bottomText = input('');
   skeletHeaderText = input('Connect wallet to see information');
 
   toggle() {

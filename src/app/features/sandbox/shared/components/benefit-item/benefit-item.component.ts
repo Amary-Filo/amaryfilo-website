@@ -12,6 +12,7 @@ import { UIIconComponent } from '../icon/icon.component';
 export class UIBenefitItemComponent {
   title = input('');
   text = input('');
+  isSmall = input(false);
   iconSize = input('30px');
   icon = input<IconName | undefined>(undefined);
 }

@@ -38,7 +38,7 @@
         <ng-content select="[accordionHeadBtns]"></ng-content>
         }
       </div>
-      }
+      } @if(showToggle()) {
       <div class="toggle">
         @if (!isSkeleton()) {
         <ui-button
@@ -54,6 +54,7 @@
         <ui-skeleton [circle]="true" />
         }
       </div>
+      }
     </div>
   </div>
 
