@@ -8,10 +8,11 @@ import { ContractKey, WalletToolsTabs } from '../../../types';
 import { formatToken } from '@sandbox/shared/web3/utils/units';
 import { BalancesService } from '../../../services/balances.service';
 import { WalletFacade } from '../../../services/wallet-facade.service';
+import { UIStakingListComponent } from '../staking/staking-list/staking-list.component';
 
 @Component({
   selector: 'sbx-wallet-tools-home-tab',
-  imports: [UIAccordionComponent, UIButtonComponent],
+  imports: [UIAccordionComponent, UIButtonComponent, UIStakingListComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   standalone: true,

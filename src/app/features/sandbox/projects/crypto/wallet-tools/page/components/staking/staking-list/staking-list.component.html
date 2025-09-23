@@ -1,0 +1,78 @@
+<div class="sandbox-ui">
+  @if(isListLoading()) {
+  <div class="fz-xl fl-cc fl-dc fw-extrabold t-c m-md">
+    <ui-spinner size="40px" />
+    <span class="text-accent cl-gray-500">Your data is loading...</span>
+  </div>
+  } @else if(data() && data().length) { @for (item of data(); track $index) {
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [showBottom]="false"
+    [showHeadContent]="true"
+    [showHeadButtons]="true"
+    [text]="(item.dateStart | date : 'short') || ''"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        You staked
+        <span class="text-accent fill cl-ast"
+          >{{ item.amountHuman | number : "1.2-2" }} AST</span
+        >
+      </span>
+    </div>
+
+    <div class="block-title" accordionHeadContent>
+      <span class="title">
+        In total you will get
+        <span class="text-accent fill cl-ast"
+          >{{ item.totalPlannedHuman }} AST</span
+        >
+        tokens
+      </span>
+    </div>
+
+    <ng-content accordionHeadBtns>
+      @if(isPending()) {
+      <ui-button
+        color="gray-900"
+        [leftIcon]="'timeFill'"
+        [isStrong]="true"
+        [isFilled]="true"
+      >
+        Wait {{ formatRemaining(item.eta) }}
+      </ui-button>
+      } @else {
+      <ui-button
+        [isStrong]="true"
+        [isFilled]="true"
+        (click)="withdraw(item.idx)"
+        [loading]="isWithdraw().has(item.idx)"
+      >
+        Withdraw
+      </ui-button>
+      }
+    </ng-content>
+
+    <ng-container accordionContent>
+      <ui-benefit-list
+        [date]="(item.dateStart | date : 'short') || ''"
+        [staked]="item.amountHuman + ' AST'"
+        [percent]="item.percentHuman"
+        [get]="item.rewardPlannedHuman + ' AST'"
+        [choose]="item.termLabel"
+      />
+      <div class="separated-line"></div>
+    </ng-container>
+  </sbx-accordion-component>
+  } } @else {
+  <div class="fz-xl fw-extrabold t-c m-xs">
+    Hmm...
+    <span class="text-accent cl-gray-500">You don't have any records...</span>
+    <br />
+    <span class="fz-lg fw-bold">
+      Maybe you need to stake some
+      <span class="text-accent cl-ast">AST</span> Tokens? What do you think?
+    </span>
+  </div>
+  }
+</div>

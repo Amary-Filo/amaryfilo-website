@@ -84,6 +84,65 @@
     <div class="fz-xl fw-extrabold t-c m-md">
       Please Connect Wallet to stake AST Tokens
     </div>
+    } @else { @if(ast() === '0.0') {
+    <div class="row-info">
+      <div class="title fz-2xl fw-extrabold t-c">Ooops...</div>
+      <span class="fz-xl text-secondary m-sm">
+        Where your <span class="text-accent cl-ast"> AST</span> Tokens? Huh?! 🤯
+      </span>
+
+      @if(!isFaucetCooldown()) {
+      <span class="fz-md fw-bold">
+        👇 Don't panic we are on fausetanic 👇
+      </span>
+      <ui-button
+        class="m-sm"
+        [isFilled]="true"
+        [isStrong]="true"
+        [leftIcon]="'coinFill'"
+        [loading]="faucetInProgress()"
+        size="lg"
+        (click)="faucetClaim()"
+      >
+        Grab Your Coins Right Now
+      </ui-button>
+
+      } @else {
+      <span class="fz-md fw-bold m-lg">
+        PSHHHHHH... Wait some times, maybe one hour, you have cooldown 🍹
+      </span>
+      }
+
+      <span class="fz-md fw-bold">
+        If you don't have SEPOLIA ETH claim it here 👇
+      </span>
+
+      <div class="fl m-sm">
+        <ui-button
+          class="m"
+          [isFilled]="true"
+          size="xs"
+          color="primary-500"
+          [leftIcon]="'externalLinkFill'"
+          (click)="openLink('https://sepolia-faucet.pk910.de/')"
+          >Sepolia</ui-button
+        >
+
+        <ui-button
+          class="m"
+          [isFilled]="true"
+          size="xs"
+          [leftIcon]="'externalLinkFill'"
+          color="primary-500"
+          (click)="
+            openLink(
+              'https://cloud.google.com/application/web3/faucet/ethereum/sepolia'
+            )
+          "
+          >Google</ui-button
+        >
+      </div>
+    </div>
     } @else {
     <div class="row-form">
       <div class="row-line row-sbc row-rl">
@@ -95,48 +154,78 @@
           [suffix]="true"
           [validators]="[maxBalanceValidator, positiveValidator]"
           [(value)]="amount"
+          [max]="ast()"
+          [disabled]="stakingInProgress()"
         >
           <span input-suffix class="text-accent cl-ast fz-md">AST</span>
-          <span input-prefix class="text-accent cl-ast fz-md">AST</span>
 
           <ng-container input-actions>
-            <div class="block-title" accordionHeadInfo>
+            @if(ast() === '0.0') {
+            <div class="block-title">
               <span class="text-secondary">
-                You have
-                <span class="text-accent fill cl-ast">{{ ast() }} AST</span>
+                Seems you don't have
+                <span class="text-accent fill cl-ast">AST</span>
                 tokens
               </span>
             </div>
             <ui-button
               [isFilled]="true"
               [isStrong]="true"
-              color="gray-900"
+              [leftIcon]="'coinFill'"
+              color="secondary-500"
               size="xxs"
-              (click)="amount.set(ast())"
-              >Send Max</ui-button
+              (click)="faucetClaim()"
+              >Get it now</ui-button
             >
-          </ng-container>
-        </ui-input>
-        <div class="row-spacer"></div>
-        <ui-input-choose
-          label="Choose period"
-          name="percent"
-          [values]="percents"
-          [(value)]="percent"
-        >
-          <ng-container input-actions>
-            <div class="block-title" accordionHeadInfo>
+            } @else {
+
+            <div class="block-title">
               <span class="text-secondary">
-                You choose
-                <span class="text-accent fill cl-ast">{{ percent() }}</span>
+                You have
+                <span class="text-accent fill cl-ast"
+                  >{{ ast() | number : "1.2-5" }} AST</span
+                >
+                tokens
               </span>
             </div>
             <ui-button
               [isFilled]="true"
               [isStrong]="true"
+              [disabled]="stakingInProgress()"
               color="gray-900"
               size="xxs"
-              (click)="percent.set('5.5%')"
+              (click)="amount.set(ast())"
+              >Send Max</ui-button
+            >
+            }
+          </ng-container>
+        </ui-input>
+
+        <div class="row-spacer"></div>
+
+        <ui-input-choose
+          label="Choose period"
+          name="percent"
+          [values]="terms"
+          [(value)]="percent"
+          [disabled]="stakingInProgress()"
+        >
+          <ng-container input-actions>
+            <div class="block-title" accordionHeadInfo>
+              <span class="text-secondary">
+                You choose
+                <span class="text-accent fill cl-ast">
+                  {{ aprPercentLabel() }} ({{ effectivePercentLabel() }})</span
+                >
+              </span>
+            </div>
+            <ui-button
+              [disabled]="stakingInProgress()"
+              [isFilled]="true"
+              [isStrong]="true"
+              color="gray-900"
+              size="xxs"
+              (click)="percent.set('M180')"
               >Max profit</ui-button
             >
           </ng-container>
@@ -146,9 +235,9 @@
       <div class="row-info row-rl row-t">
         <span class="text-secondary">
           You will get
-          <span class="text-accent fill cl-ast">0.5 AST</span>
+          <span class="text-accent fill cl-ast">{{ rewardHuman() }} AST</span>
           from percent and in total
-          <span class="text-accent fill cl-ast">25.5 AST</span>
+          <span class="text-accent fill cl-ast">{{ totalHuman() }} AST</span>
         </span>
       </div>
 
@@ -158,13 +247,15 @@
           [fullWidth]="true"
           [isFilled]="true"
           [isStrong]="true"
+          [loading]="stakingInProgress()"
+          (click)="stake()"
           size="md"
         >
           Stake
         </ui-button>
       </div>
     </div>
-    }
+    } }
   </div>
 
   <div class="row-line row-t">
@@ -190,147 +281,8 @@
     </div>
   </div>
   } @else {
-  <div class="row-line row-fdc row-t">
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-ast">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-ast">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button [isStrong]="true" [isFilled]="true">Withdraw</ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-ast">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-ast">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button [isStrong]="true" [isFilled]="true">Withdraw</ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-ast">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-ast">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button [isStrong]="true" [isFilled]="true">Withdraw</ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-ast">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-ast">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button [isStrong]="true" [isFilled]="true">Withdraw</ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
+  <div class="row-line row-fdc row-tb">
+    <ui-staking-list />
   </div>
   }
 
@@ -356,133 +308,8 @@
     </div>
   </div>
   } @else {
-  <div class="row-line row-fdc row-t">
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-gray-900">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-gray-900">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button
-          color="gray-900"
-          [leftIcon]="'timeFill'"
-          [isStrong]="true"
-          [isFilled]="true"
-        >
-          Wait 33 min
-        </ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-gray-900">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-gray-900">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button
-          color="gray-900"
-          [leftIcon]="'timeFill'"
-          [isStrong]="true"
-          [isFilled]="true"
-        >
-          Wait 33 min
-        </ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [showBottom]="false"
-      [showHeadContent]="true"
-      [showHeadButtons]="true"
-      [text]="'12.04.2025 15:34'"
-    >
-      <div class="block-title" accordionHeadInfo>
-        <span class="title">
-          You staked <span class="text-accent fill cl-gray-900">25 AST</span>
-        </span>
-      </div>
-
-      <div class="block-title" accordionHeadContent>
-        <span class="title">
-          In Total you wil get
-          <span class="text-accent fill cl-gray-900">50 AST</span> Tokens
-        </span>
-      </div>
-
-      <ng-content accordionHeadBtns>
-        <ui-button
-          color="gray-900"
-          [leftIcon]="'timeFill'"
-          [isStrong]="true"
-          [isFilled]="true"
-        >
-          Wait 33 min
-        </ui-button>
-      </ng-content>
-
-      <ng-container accordionContent>
-        <ui-benefit-list
-          [date]="'12.04.2025 15:34'"
-          [staked]="'25 AST'"
-          [percent]="'2.5%'"
-          [get]="'4.5 AST'"
-          [choose]="'1 hour'"
-        />
-        <div class="separated-line"></div>
-      </ng-container>
-    </sbx-accordion-component>
+  <div class="row-line row-fdc row-tb">
+    <ui-staking-list [items]="itemsPending()" [isPending]="true" />
   </div>
   }
 

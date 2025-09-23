@@ -92,35 +92,23 @@
 
   <div class="row-info row-tb">
     <span class="title">Your Staking</span>
-    <!-- <p class="text-secondary">
-          <span class="text-accent">TIP:</span> For getting more profit from
-          <span class="text-accent cl-staking">Staking </span>
-          <span class="text-accent cl-ast">AST</span> Token just select long
-          time for staking
-        </p> -->
   </div>
 
   <div class="row-line">
     <div class="row-spacer"></div>
   </div>
 
+  @if(status() !== 'connected') {
   <div class="row-line row-tb">
-    @if(status() !== 'connected') {
-
     <div class="fz-xl fw-extrabold t-c m-md">
       Please Connect Wallet to see all data
     </div>
-    } @else {
-    <div class="fz-xl fw-extrabold t-c m-xs">
-      Hmm...
-      <span class="text-accent cl-gray-500">It’s not okay..</span>
-      <br />
-      <span class="fz-lg fw-bold">
-        We don’t have any records for your account :(
-      </span>
-    </div>
-    }
   </div>
+  } @else {
+  <div class="row-line row-fdc row-tb">
+    <ui-staking-list />
+  </div>
+  }
 
   <div class="row-line">
     <div class="row-spacer"></div>

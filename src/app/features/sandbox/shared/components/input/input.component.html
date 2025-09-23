@@ -46,9 +46,8 @@
       }
     </div>
 
-    <!-- ошибки / низ -->
     <div class="bottom">
-      @if(invalid()){
+      @if (invalid() && max() !== '0.0'){
       <div class="errors">
         @for (e of errors(); track $index) {
         <div class="err">{{ e }}</div>
@@ -62,17 +61,3 @@
     </div>
   </div>
 </div>
-
-<!-- <div class="sandbox-ui">
-  <div class="ui-form ui-input">
-    <input
-      class="ui-form-el"
-      type="text"
-      [id]="name()"
-      [name]="name()"
-      [required]="required()"
-      [placeholder]="placeholder()"
-    />
-    <label class="ui-form-label" [for]="name()">{{ title() }}</label>
-  </div>
-</div> -->

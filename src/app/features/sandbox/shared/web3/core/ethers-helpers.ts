@@ -1,13 +1,5 @@
 import { ethers } from 'ethers';
 
-export function format18(n: bigint) {
-  return ethers.formatUnits(n, 18);
-}
-
-export function parse18(s: string) {
-  return ethers.parseUnits(s || '0', 18);
-}
-
 export async function getSigner(ethereum: any) {
   const provider = new ethers.BrowserProvider(ethereum);
   return provider.getSigner();

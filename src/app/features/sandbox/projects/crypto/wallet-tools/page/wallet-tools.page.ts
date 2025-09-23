@@ -18,6 +18,13 @@ import { BalancesService } from '../services/balances.service';
 import { BaseContractsService } from '@sandbox/shared/web3/services/base-contract.service';
 import { WalletFacade } from '../services/wallet-facade.service';
 import { AuctionService } from '../services/auction.service';
+import { Eip1193Adapter } from '@sandbox/shared/web3/core/adapters/eip1193-adapter.service';
+import { WEB3_ADAPTER } from '@sandbox/shared/web3/core/provider-adapter';
+import { TxService } from '@sandbox/shared/web3/core/tx.service';
+import { ErrorsService } from '@sandbox/shared/web3/core/errors.service';
+import { Web3TokenService } from '@sandbox/shared/web3/services/web3-token.service';
+import { StakingService } from '../services/staking.service';
+import { AstService } from '../services/ast.service';
 
 @Component({
   standalone: true,
@@ -33,6 +40,7 @@ import { AuctionService } from '../services/auction.service';
   templateUrl: './wallet-tools.page.html',
   styleUrls: ['./wallet-tools.page.scss'],
   providers: [
+    { provide: WEB3_ADAPTER, useClass: Eip1193Adapter },
     {
       provide: DEMO_WEB3_CONFIG,
       deps: [DEMO_CONFIG],
@@ -56,6 +64,11 @@ import { AuctionService } from '../services/auction.service';
     Web3Orchestrator,
     BalancesService,
     AuctionService,
+    TxService,
+    ErrorsService,
+    Web3TokenService,
+    StakingService,
+    AstService,
   ],
 })
 export class WalletToolsPage {
@@ -65,19 +78,4 @@ export class WalletToolsPage {
   ngOnDestroy() {
     this.facade.disconnect();
   }
-
-  // async faucetAST() {
-  //   await (await this.contracts.ast()).faucetClaim();
-  //   await this.refresh();
-  // }
-
-  // async lockAPT1() {
-  //   const acc = this.account();
-  //   if (!acc) return;
-  //   const apt = await this.contracts.apt();
-  //   const locker = await this.contracts.locker();
-  //   await apt.approve(locker.target, 10n ** 18n);
-  //   await locker.start(10n ** 18n);
-  //   await this.refresh();
-  // }
 }

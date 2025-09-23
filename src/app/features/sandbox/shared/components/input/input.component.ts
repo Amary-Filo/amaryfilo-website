@@ -23,7 +23,7 @@ export class UIInputComponent {
 
   decimals = input<number>(18);
   min = input<number | undefined>(undefined);
-  max = input<number | undefined>(undefined);
+  max = input<number | string | undefined>(undefined);
 
   validators = input<Array<(v: string) => string | null>>([]);
 
@@ -76,7 +76,8 @@ export class UIInputComponent {
     ) {
       const n = Number(next || 0);
       if (this.min() != null && n < this.min()!) next = String(this.min());
-      if (this.max() != null && n > this.max()!) next = String(this.max());
+      if (this.max() != null && n > Number(this.max())!)
+        next = String(this.max());
     }
 
     this.value.set(next);
@@ -149,7 +150,7 @@ export class UIInputComponent {
           return null;
         }
         if (min != null && Number(v) < min) return `Min is ${min}`;
-        if (max != null && Number(v) > max) return `Max is ${max}`;
+        if (max != null && Number(v) > Number(max)) return `Max is ${max}`;
         return null;
       },
       (v) => {
