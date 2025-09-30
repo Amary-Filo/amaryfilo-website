@@ -29,6 +29,7 @@ import { WalletToolsHomeComponent } from './components/home/home.component';
 import { WalletToolsStakingComponent } from './components/staking/staking.component';
 import { WalletToolsMarketplaceComponent } from './components/marketplace/marketplace.component';
 import { WalletToolsFooterComponent } from './components/footer/footer.component';
+import { WalletToolsAboutComponent } from './components/about/about.component';
 
 @Component({
   standalone: true,
@@ -41,6 +42,7 @@ import { WalletToolsFooterComponent } from './components/footer/footer.component
     WalletToolsAuctionComponent,
     WalletToolsMarketplaceComponent,
     WalletToolsFooterComponent,
+    WalletToolsAboutComponent,
   ],
   templateUrl: './wallet-tools.page.html',
   styleUrls: ['./wallet-tools.page.scss'],

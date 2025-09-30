@@ -22,7 +22,7 @@
 }
 
 .text-secondary {
-  color: var(--gray-600);
+  color: var(--cl-main, var(--gray-600));
   font-size: var(--fz-sm);
 }
 

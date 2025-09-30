@@ -38,6 +38,14 @@
               (click)="go('market')"
               >Marketplace</ui-button
             >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'about'"
+              [isStrong]="page() === 'about'"
+              color="secondary-500"
+              (click)="go('about')"
+              >About</ui-button
+            >
           </nav>
         </div>
         <div class="btns">

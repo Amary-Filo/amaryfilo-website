@@ -4,9 +4,14 @@
   <div class="container">
     <div class="card">
       @if(page() === 'home') { <sbx-wallet-tools-home-tab [(page)]="page" /> }
-      @if(page() === 'staking') { <sbx-wallet-tools-staking-tab /> } @if(page()
-      === 'auction') { <sbx-wallet-tools-auction-tab /> } @if(page() ===
-      'market') { <sbx-wallet-tools-marketplace-tab /> }
+      <!-- Page Home -->
+      @if(page() === 'staking') { <sbx-wallet-tools-staking-tab /> }
+      <!-- Page Auction -->
+      @if(page() === 'auction') { <sbx-wallet-tools-auction-tab /> }
+      <!-- Page Market -->
+      @if(page() === 'market') { <sbx-wallet-tools-marketplace-tab /> }
+      <!-- Page About -->
+      @if(page() === 'about') { <sbx-wallet-tools-about-tab /> }
     </div>
   </div>
 
