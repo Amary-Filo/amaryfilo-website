@@ -35,3 +35,30 @@ export interface StakeViewUI extends StakeView {
   termKey: TermsSec;
   termLabel: string;
 }
+
+// Auction
+export type AuctionPoolStatus = 'active' | 'withdraw' | 'ended';
+export type BidPoolStatus = 'empty' | 'bid' | 'winner';
+
+export interface AuctionPoolUI {
+  id: number;
+  status: AuctionPoolStatus;
+  bidStatus: BidPoolStatus;
+  isUserHighest: boolean;
+
+  amountAPT: string;
+  endTime: number;
+  highestAddress: string;
+  highestAST: string;
+  settled: boolean;
+  minBid: string;
+}
+
+export interface IPoolResponse {
+  amountAPT: bigint;
+  endTime: number;
+  highestBidder: string;
+  highestBidAST: bigint;
+  settled: boolean;
+  minBid: bigint;
+}

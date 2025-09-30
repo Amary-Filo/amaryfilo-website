@@ -5,9 +5,6 @@
 >
   <div class="accordion-head">
     <div class="accordion-head-info">
-      <!-- @if (isSkeleton()) {
-      <ui-skeleton preset="accordionHead" [circle]="false" />
-      } @else { -->
       <ng-content select="[accordionHeadInfo]">
         <div class="block-title">
           <span class="title" [innerHTML]="title()"></span>
@@ -18,7 +15,6 @@
       } @else if (text()) {
       <p class="text-secondary">{{ text() }}</p>
       }
-      <!-- } -->
     </div>
 
     @if (showHeadContent()) {

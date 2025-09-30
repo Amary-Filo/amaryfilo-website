@@ -1,0 +1,56 @@
+<div class="row-info">
+  <div class="title fz-2xl fw-extrabold t-c">Ooops...</div>
+  <span class="fz-xl text-secondary m-sm">
+    Where your <span class="text-accent cl-ast"> AST</span> Tokens? Huh?! 🤯
+  </span>
+
+  @if(!isFaucetCooldown()) {
+  <span class="fz-md fw-bold"> 👇 Don't panic we are on fausetanic 👇 </span>
+  <ui-button
+    class="m-sm"
+    [isFilled]="true"
+    [isStrong]="true"
+    [leftIcon]="'coinFill'"
+    [loading]="faucetInProgress()"
+    size="lg"
+    (click)="faucetClaim()"
+  >
+    Grab Your Coins Right Now
+  </ui-button>
+
+  } @else {
+  <span class="fz-md fw-bold m-lg">
+    PSHHHHHH... Wait some times, maybe one hour, you have cooldown 🍹
+  </span>
+  }
+
+  <span class="fz-md fw-bold">
+    If you don't have SEPOLIA ETH claim it here 👇
+  </span>
+
+  <div class="fl m-sm">
+    <ui-button
+      class="m"
+      [isFilled]="true"
+      size="xs"
+      color="primary-500"
+      [leftIcon]="'externalLinkFill'"
+      (click)="openLink('https://sepolia-faucet.pk910.de/')"
+      >Sepolia</ui-button
+    >
+
+    <ui-button
+      class="m"
+      [isFilled]="true"
+      size="xs"
+      [leftIcon]="'externalLinkFill'"
+      color="primary-500"
+      (click)="
+        openLink(
+          'https://cloud.google.com/application/web3/faucet/ethereum/sepolia'
+        )
+      "
+      >Google</ui-button
+    >
+  </div>
+</div>

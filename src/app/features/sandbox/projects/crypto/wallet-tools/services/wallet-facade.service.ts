@@ -1,7 +1,7 @@
 import { Injectable, inject, computed } from '@angular/core';
 import { WalletStore } from '@sandbox/shared/web3/core/wallet.store';
-import { CHAINS } from '@sandbox/shared/web3/network-registry.service';
 import { Web3Orchestrator } from './web3-orchestrator.service';
+import { CHAINS } from '@sandbox/shared/web3/network-registry.service';
 
 @Injectable()
 export class WalletFacade {

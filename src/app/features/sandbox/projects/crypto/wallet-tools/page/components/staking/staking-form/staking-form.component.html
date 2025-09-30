@@ -1,0 +1,94 @@
+@if(!isBalanceLoading() && ast() === '0.0') {
+<ui-staking-zero-ast />
+} @else {
+<div class="row-form sandbox-ui">
+  <div class="row-line row-sbc row-rl">
+    <ui-input
+      name="stake"
+      [label]="'Stake amount'"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="amount"
+      [max]="ast()"
+      [disabled]="stakingInProgress()"
+    >
+      <span input-suffix class="text-accent cl-ast fz-md">AST</span>
+
+      <ng-container input-actions>
+        <div class="block-title">
+          <span class="text-secondary">
+            You have
+            <span class="text-accent fill cl-ast"
+              >{{ ast() | number : "1.2-5" }} AST</span
+            >
+            tokens
+          </span>
+        </div>
+        <ui-button
+          [isFilled]="true"
+          [isStrong]="true"
+          [disabled]="stakingInProgress()"
+          color="gray-900"
+          size="xxs"
+          (click)="amount.set(ast())"
+          >Send Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+
+    <div class="row-spacer"></div>
+
+    <ui-input-choose
+      label="Choose period"
+      name="percent"
+      [values]="terms"
+      [(value)]="percent"
+      [disabled]="stakingInProgress()"
+    >
+      <ng-container input-actions>
+        <div class="block-title" accordionHeadInfo>
+          <span class="text-secondary">
+            You choose
+            <span class="text-accent fill cl-ast">
+              {{ aprPercentLabel() }} ({{ effectivePercentLabel() }})</span
+            >
+          </span>
+        </div>
+        <ui-button
+          [disabled]="stakingInProgress()"
+          [isFilled]="true"
+          [isStrong]="true"
+          color="gray-900"
+          size="xxs"
+          (click)="percent.set('M180')"
+          >Max profit</ui-button
+        >
+      </ng-container>
+    </ui-input-choose>
+  </div>
+
+  <div class="row-info row-rl row-t">
+    <span class="text-secondary">
+      You will get
+      <span class="text-accent fill cl-ast">{{ rewardHuman() }} AST</span>
+      from percent and in total
+      <span class="text-accent fill cl-ast">{{ totalHuman() }} AST</span>
+    </span>
+  </div>
+
+  <div class="row-line row-t row-rl">
+    <ui-button
+      class="m-sm btn-stake"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [isStrong]="true"
+      [loading]="stakingInProgress()"
+      (click)="stake()"
+      size="md"
+    >
+      Stake
+    </ui-button>
+  </div>
+</div>
+}

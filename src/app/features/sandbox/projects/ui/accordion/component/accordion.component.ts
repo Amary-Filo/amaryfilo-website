@@ -1,15 +1,7 @@
-import {
-  Component,
-  computed,
-  effect,
-  Inject,
-  inject,
-  signal,
-  WritableSignal,
-} from '@angular/core';
-import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accordion.component';
+import { Component, computed, Inject, WritableSignal } from '@angular/core';
 import { DEMO_CONFIG, DEMO_THEME } from '@sandbox/shared/utils/tokens';
 import { AccordionConfig } from '../manifest';
+import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accordion.component';
 
 @Component({
   selector: 'sbx-ui-accordion-component',

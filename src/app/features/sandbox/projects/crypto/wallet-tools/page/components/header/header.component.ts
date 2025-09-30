@@ -1,8 +1,10 @@
 import { Component, computed, inject, model, signal } from '@angular/core';
+
+import { WalletFacade } from '../../../services/wallet-facade.service';
+import { WalletToolsTabs } from '../../../types';
+
 import { UIIconComponent } from '@sandbox/shared/components/icon/icon.component';
 import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
-import { WalletToolsTabs } from '../../../types';
-import { WalletFacade } from '../../../services/wallet-facade.service';
 
 @Component({
   selector: 'sbx-wallet-tools-header-component',

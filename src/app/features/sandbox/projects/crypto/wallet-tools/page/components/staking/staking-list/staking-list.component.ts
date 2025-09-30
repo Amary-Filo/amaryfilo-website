@@ -1,12 +1,14 @@
 import { Component, computed, inject, input } from '@angular/core';
-import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accordion.component';
-import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
-import { UIBenefitListComponent } from '../benefit-list/benefit-list.component';
-import { StakeViewUI } from '@sandbox/projects/crypto/wallet-tools/services/types';
 import { CommonModule } from '@angular/common';
+
 import { WalletFacade } from '@sandbox/projects/crypto/wallet-tools/services/wallet-facade.service';
 import { StakingService } from '@sandbox/projects/crypto/wallet-tools/services/staking.service';
 import { TxService } from '@sandbox/shared/web3/core/tx.service';
+import { StakeViewUI } from '@sandbox/projects/crypto/wallet-tools/services/types';
+
+import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accordion.component';
+import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
+import { UIBenefitListComponent } from '../benefit-list/benefit-list.component';
 import { UISpinnerComponent } from '@sandbox/shared/components/spinner/spinner.component';
 
 @Component({

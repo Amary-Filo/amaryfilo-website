@@ -1,4 +1,4 @@
-import { Component, effect, input, model, computed } from '@angular/core';
+import { Component, effect, input, model } from '@angular/core';
 
 export interface InputChooseValues {
   title: string;

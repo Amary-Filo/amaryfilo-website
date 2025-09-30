@@ -1,0 +1,14 @@
+@use "../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../shared/styles/sandbox.scss";
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-md) var(--spacing-lg);
+  overflow: visible;
+}
+
+.logo-icon {
+  margin-right: var(--spacing-sm);
+}

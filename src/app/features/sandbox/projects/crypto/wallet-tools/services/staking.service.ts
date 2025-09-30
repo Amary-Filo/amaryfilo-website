@@ -6,13 +6,14 @@ import {
   OnDestroy,
   signal,
 } from '@angular/core';
+import { formatUnits } from 'ethers';
+
 import { WalletStore } from '@sandbox/shared/web3/core/wallet.store';
 import { Web3TokenService } from '@sandbox/shared/web3/services/web3-token.service';
 import { ContractsService } from './contracts.service';
+
+import { STAKING_TERMS, TERM_BY_SEC, plannedReward } from './constants';
 import { StakeViewUI, TermsSec } from './types';
-import { formatUnits } from 'ethers';
-import { plannedReward } from './finance';
-import { STAKING_TERMS, TERM_BY_SEC } from './constants';
 
 @Injectable()
 export class StakingService implements OnDestroy {

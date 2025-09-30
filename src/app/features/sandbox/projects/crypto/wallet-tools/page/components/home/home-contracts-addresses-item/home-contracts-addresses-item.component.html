@@ -1,0 +1,33 @@
+<sbx-accordion-component
+  class="sandbox-ui"
+  [isSkeleton]="status() !== 'connected'"
+  [content]="address"
+  [text]="'Official contract address with verified status'"
+>
+  <div class="block-title" accordionHeadInfo>
+    <span class="title">
+      Contract address for
+      <span [class]="`text-accent fill cl-${contractKey().toLowerCase()}`">{{
+        contractKey()
+      }}</span>
+      Token
+    </span>
+  </div>
+
+  <p class="text-secondary" accordionBottom>
+    You can open this
+    <span [class]="`text-accent cl-${contractKey().toLowerCase()}`">
+      {{ contractKey() }}</span
+    >
+    Token contract in Etherscan. This contract is verified.
+  </p>
+
+  <ng-container accordionBottomButtons>
+    <ui-button
+      [isFilled]="true"
+      [onlyIcon]="true"
+      [leftIcon]="'externalLinkFill'"
+      (click)="open()"
+    />
+  </ng-container>
+</sbx-accordion-component>

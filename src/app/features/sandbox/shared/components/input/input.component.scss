@@ -60,10 +60,6 @@
     &:not(:placeholder-shown).control:not(:focus) ~ .label {
       --input-label-top: #{mx.rem(10)};
       --input-label-fz: #{mx.rem(14)};
-      // --input-label-left: #{mx.rem(15)};
-      // top: var(--input-label-top-active, #{mx.rem(-10)});
-      // left: var(--input-label-left-active, #{mx.rem(10)});
-      // font-size: var(--input-label-fz-active, #{mx.rem(12)});
     }
 
     &:hover {

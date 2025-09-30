@@ -3,27 +3,35 @@ import { BaseContractsService } from '@sandbox/shared/web3/services/base-contrac
 
 @Injectable()
 export class ContractsService extends BaseContractsService {
+  aptRead() {
+    return this.factory.getRead('APT');
+  }
+  astRead() {
+    return this.factory.getRead('AST');
+  }
+  auctionRead() {
+    return this.factory.getRead('AUCTION');
+  }
+  stakingRead() {
+    return this.factory.getRead('STAKING');
+  }
+  marketRead() {
+    return this.factory.getRead('MARKET');
+  }
+
   apt() {
-    return this.factory.get('APT');
+    return this.factory.getWrite('APT');
   }
-
   ast() {
-    return this.factory.get('AST');
+    return this.factory.getWrite('AST');
   }
-
   auction() {
-    return this.factory.get('AUCTION');
+    return this.factory.getWrite('AUCTION');
   }
-
-  locker() {
-    return this.factory.get('LOCKER');
-  }
-
-  market() {
-    return this.factory.get('MARKET');
-  }
-
   staking() {
-    return this.factory.get('STAKING');
+    return this.factory.getWrite('STAKING');
+  }
+  market() {
+    return this.factory.getWrite('MARKET');
   }
 }

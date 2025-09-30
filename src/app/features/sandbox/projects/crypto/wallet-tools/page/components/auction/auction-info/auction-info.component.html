@@ -1,0 +1,35 @@
+<div class="row-line row-sbc">
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [title]="'Rules'"
+    [text]="'What you need to do to get APT Token'"
+    [bottomText]="'Choose the longest time to get more AST Tokens.'"
+  >
+    <ol class="text-secondary" accordionContent>
+      <li>You bid only AST tokens.</li>
+      <li>Minimum bid = 1 AST.</li>
+      <li>If you lose, your AST is refunded immediately.</li>
+      <li>Rewards can be claimed only when the pool ends.</li>
+      <li>Longer pools = higher APR (choose wisely).</li>
+    </ol>
+  </sbx-accordion-component>
+
+  <div class="row-spacer"></div>
+
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [title]="'Pools'"
+    [text]="'How long and much you can get from pools'"
+    [bottomText]="'Anyone can outbid your bid in any active auction pool.'"
+  >
+    <ol class="text-secondary" accordionContent>
+      <li>3 pools per day.</li>
+      <li>1 winner per pool.</li>
+      <li>Duration: from 15 minutes to 3 hours.</li>
+      <li>Reward range: from 0.1 APT (min) to 100 APT (max).</li>
+      <li>Withdraw at any time.</li>
+    </ol>
+  </sbx-accordion-component>
+</div>

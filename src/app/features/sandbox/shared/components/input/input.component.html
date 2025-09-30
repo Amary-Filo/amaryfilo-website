@@ -30,6 +30,8 @@
             [disabled]="disabled()"
             [readOnly]="readonly()"
             [value]="value()"
+            (beforeinput)="onBeforeInput($event)"
+            (paste)="onPaste($event)"
             (input)="onInput($event)"
             (keydown)="onKeyDown($event)"
             (blur)="onBlur()"

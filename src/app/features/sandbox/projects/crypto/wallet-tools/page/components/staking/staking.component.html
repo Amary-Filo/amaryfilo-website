@@ -1,319 +1,54 @@
 <div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-wallet-tools-balances-component />
+  </div>
   <div class="row-text">
-    <h2 class="h1">
-      Stake <span class="text-accent fill cl-ast">AST</span> Token
-    </h2>
+    <h2 class="h1">Staking <span class="text-accent fill cl-ast">AST</span></h2>
     <p class="text text-secondary">
-      You can stake AST token to get profit by choosing any range in staking
-      period. This AST token you can change to APT via Auction. On this page you
-      can find your deposits and claim rewards. Also you find a form for staking
-      AST Tokens
+      <b>What is Staking?</b> <br />
+
+      <span class="text-accent cl-staking">Stake</span> your
+      <span class="text-accent cl-ast">AST</span> tokens for a fixed period and
+      earn rewards. After staking ends, you can withdraw both your initial
+      <span class="text-accent cl-ast">AST</span> and the extra rewards. Later,
+      you can exchange <span class="text-accent cl-ast">AST</span> for
+      <span class="text-accent cl-apt">APT</span> via
+      <span class="text-accent cl-auction">Auctions</span>.
     </p>
   </div>
   <div class="row-line">
     <div class="row-spacer"></div>
   </div>
 
-  <div class="row-info row-tb">
-    <span class="title">Rules, time and reward formula.</span>
-  </div>
+  <!-- Staking Info -->
+  <sbx-wallet-tools-row-title-content
+    title="Rules & Time Options"
+    [useStatus]="false"
+  >
+    <ui-staking-info />
+  </sbx-wallet-tools-row-title-content>
 
-  <div class="row-line">
-    <div class="row-spacer"></div>
-  </div>
+  <!-- Staking Form -->
+  <sbx-wallet-tools-row-title-content
+    title="Fill form to Stake AST Token"
+    text="TIP:For maximum profit, always choose longer durations."
+  >
+    <ui-staking-form />
+  </sbx-wallet-tools-row-title-content>
 
-  <div class="row-line row-t row-sbc">
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [isOpen]="true"
-      [title]="'Rules and time'"
-      [text]="'What you need to do to Staking AST Token'"
-      [bottomText]="'Choose the longest time to get more AST Tokens.'"
-    >
-      <ol class="text-secondary" accordionContent>
-        <li>You can Stake and withdraw unlimit tokens</li>
-        <li>Rates: 15 min (0.5%) | 30 min (1.5%) | 45 min (2.5%) | 1h (5%)</li>
-      </ol>
-    </sbx-accordion-component>
-
-    <div class="row-spacer"></div>
-
-    <sbx-accordion-component
-      [isSkeleton]="status() !== 'connected'"
-      [isOpen]="true"
-      [title]="'Reward formula'"
-      [text]="'Formula for your reward AST Tokens'"
-      [bottomText]="
-        'Ex.: Staked 20 AST for 1h (2.5%) so you will get 20*2,5%+20 = 20.5 AST tokens.'
-      "
-    >
-      <ol class="text-secondary" accordionContent>
-        <li>
-          [<span class="text-accent cl-ast">You Staked</span>] * [Percent] =
-          [<span class="text-accent cl-staking">Your percents</span>]
-        </li>
-        <li>
-          [<span class="text-accent cl-ast">You Staked</span>] + [<span
-            class="text-accent cl-staking"
-            >Your percents</span
-          >] = [You will withdraw]
-        </li>
-      </ol>
-    </sbx-accordion-component>
-  </div>
-
-  <div class="row-line row-t">
-    <div class="row-spacer"></div>
-  </div>
-
-  <div class="row-info row-tb">
-    <div class="title">Fill form to Stake AST Token</div>
-    <p class="text-secondary">
-      <span class="text-accent">TIP:</span> For getting more profit from Staking
-      <span class="text-accent cl-ast"> AST</span> Token just select long time
-      for staking
-    </p>
-  </div>
-
-  <div class="row-line row-b">
-    <div class="row-spacer"></div>
-  </div>
-
-  <div class="row-line">
-    @if(status() !== 'connected') {
-    <div class="fz-xl fw-extrabold t-c m-md">
-      Please Connect Wallet to stake AST Tokens
-    </div>
-    } @else { @if(ast() === '0.0') {
-    <div class="row-info">
-      <div class="title fz-2xl fw-extrabold t-c">Ooops...</div>
-      <span class="fz-xl text-secondary m-sm">
-        Where your <span class="text-accent cl-ast"> AST</span> Tokens? Huh?! 🤯
-      </span>
-
-      @if(!isFaucetCooldown()) {
-      <span class="fz-md fw-bold">
-        👇 Don't panic we are on fausetanic 👇
-      </span>
-      <ui-button
-        class="m-sm"
-        [isFilled]="true"
-        [isStrong]="true"
-        [leftIcon]="'coinFill'"
-        [loading]="faucetInProgress()"
-        size="lg"
-        (click)="faucetClaim()"
-      >
-        Grab Your Coins Right Now
-      </ui-button>
-
-      } @else {
-      <span class="fz-md fw-bold m-lg">
-        PSHHHHHH... Wait some times, maybe one hour, you have cooldown 🍹
-      </span>
-      }
-
-      <span class="fz-md fw-bold">
-        If you don't have SEPOLIA ETH claim it here 👇
-      </span>
-
-      <div class="fl m-sm">
-        <ui-button
-          class="m"
-          [isFilled]="true"
-          size="xs"
-          color="primary-500"
-          [leftIcon]="'externalLinkFill'"
-          (click)="openLink('https://sepolia-faucet.pk910.de/')"
-          >Sepolia</ui-button
-        >
-
-        <ui-button
-          class="m"
-          [isFilled]="true"
-          size="xs"
-          [leftIcon]="'externalLinkFill'"
-          color="primary-500"
-          (click)="
-            openLink(
-              'https://cloud.google.com/application/web3/faucet/ethereum/sepolia'
-            )
-          "
-          >Google</ui-button
-        >
-      </div>
-    </div>
-    } @else {
-    <div class="row-form">
-      <div class="row-line row-sbc row-rl">
-        <ui-input
-          name="stake"
-          [label]="'Stake amount'"
-          [type]="'token'"
-          [decimals]="18"
-          [suffix]="true"
-          [validators]="[maxBalanceValidator, positiveValidator]"
-          [(value)]="amount"
-          [max]="ast()"
-          [disabled]="stakingInProgress()"
-        >
-          <span input-suffix class="text-accent cl-ast fz-md">AST</span>
-
-          <ng-container input-actions>
-            @if(ast() === '0.0') {
-            <div class="block-title">
-              <span class="text-secondary">
-                Seems you don't have
-                <span class="text-accent fill cl-ast">AST</span>
-                tokens
-              </span>
-            </div>
-            <ui-button
-              [isFilled]="true"
-              [isStrong]="true"
-              [leftIcon]="'coinFill'"
-              color="secondary-500"
-              size="xxs"
-              (click)="faucetClaim()"
-              >Get it now</ui-button
-            >
-            } @else {
-
-            <div class="block-title">
-              <span class="text-secondary">
-                You have
-                <span class="text-accent fill cl-ast"
-                  >{{ ast() | number : "1.2-5" }} AST</span
-                >
-                tokens
-              </span>
-            </div>
-            <ui-button
-              [isFilled]="true"
-              [isStrong]="true"
-              [disabled]="stakingInProgress()"
-              color="gray-900"
-              size="xxs"
-              (click)="amount.set(ast())"
-              >Send Max</ui-button
-            >
-            }
-          </ng-container>
-        </ui-input>
-
-        <div class="row-spacer"></div>
-
-        <ui-input-choose
-          label="Choose period"
-          name="percent"
-          [values]="terms"
-          [(value)]="percent"
-          [disabled]="stakingInProgress()"
-        >
-          <ng-container input-actions>
-            <div class="block-title" accordionHeadInfo>
-              <span class="text-secondary">
-                You choose
-                <span class="text-accent fill cl-ast">
-                  {{ aprPercentLabel() }} ({{ effectivePercentLabel() }})</span
-                >
-              </span>
-            </div>
-            <ui-button
-              [disabled]="stakingInProgress()"
-              [isFilled]="true"
-              [isStrong]="true"
-              color="gray-900"
-              size="xxs"
-              (click)="percent.set('M180')"
-              >Max profit</ui-button
-            >
-          </ng-container>
-        </ui-input-choose>
-      </div>
-
-      <div class="row-info row-rl row-t">
-        <span class="text-secondary">
-          You will get
-          <span class="text-accent fill cl-ast">{{ rewardHuman() }} AST</span>
-          from percent and in total
-          <span class="text-accent fill cl-ast">{{ totalHuman() }} AST</span>
-        </span>
-      </div>
-
-      <div class="row-line row-t row-rl">
-        <ui-button
-          class="m-sm btn-stake"
-          [fullWidth]="true"
-          [isFilled]="true"
-          [isStrong]="true"
-          [loading]="stakingInProgress()"
-          (click)="stake()"
-          size="md"
-        >
-          Stake
-        </ui-button>
-      </div>
-    </div>
-    } }
-  </div>
-
-  <div class="row-line row-t">
-    <div class="row-spacer"></div>
-  </div>
-
-  <div class="row-info row-tb">
-    <div class="title">Withdraw Staking</div>
-    <p class="text-secondary">
-      To Claim <span class="text-accent cl-ast">AST</span> Tokens click on
-      button “Withdraw”.
-    </p>
-  </div>
-
-  <div class="row-line">
-    <div class="row-spacer"></div>
-  </div>
-
-  @if(status() !== 'connected') {
-  <div class="row-line row-tb">
-    <div class="fz-xl fw-extrabold t-c m-md">
-      Please Connect Wallet to see ready for claim items
-    </div>
-  </div>
-  } @else {
-  <div class="row-line row-fdc row-tb">
+  <!-- Withdraw Stakings -->
+  <sbx-wallet-tools-row-title-content
+    title="My Stakings"
+    text="To Claim AST Tokens click on button 'Withdraw'."
+  >
     <ui-staking-list />
-  </div>
-  }
+  </sbx-wallet-tools-row-title-content>
 
-  <div class="row-line">
-    <div class="row-spacer"></div>
-  </div>
-
-  <div class="row-info row-tb">
-    <div class="title">Wait a little bit</div>
-    <p class="text-secondary">
-      You will see this stakings in block behind when they will be done.
-    </p>
-  </div>
-
-  <div class="row-line">
-    <div class="row-spacer"></div>
-  </div>
-
-  @if(status() !== 'connected') {
-  <div class="row-line row-tb">
-    <div class="fz-xl fw-extrabold t-c m-md">
-      Please Connect Wallet to see pending items
-    </div>
-  </div>
-  } @else {
-  <div class="row-line row-fdc row-tb">
+  <!-- Active Stakings -->
+  <sbx-wallet-tools-row-title-content
+    title="Wait a little bit"
+    text="You will see this stakings in block behind when they will be done."
+  >
     <ui-staking-list [items]="itemsPending()" [isPending]="true" />
-  </div>
-  }
-
-  <div class="row-line">
-    <div class="row-spacer"></div>
-  </div>
+  </sbx-wallet-tools-row-title-content>
 </div>

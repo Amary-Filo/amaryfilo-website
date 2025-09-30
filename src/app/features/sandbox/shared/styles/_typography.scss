@@ -66,6 +66,28 @@
   }
 }
 
+.p {
+  &-xxs {
+    padding: var(--spacing-2xs);
+  }
+
+  &-xs {
+    padding: var(--spacing-xs);
+  }
+
+  &-sm {
+    padding: var(--spacing-sm);
+  }
+
+  &-md {
+    padding: var(--spacing-md);
+  }
+
+  &-lg {
+    padding: var(--spacing-lg);
+  }
+}
+
 .fz {
   &-2xs {
     font-size: var(--fz-2xs);

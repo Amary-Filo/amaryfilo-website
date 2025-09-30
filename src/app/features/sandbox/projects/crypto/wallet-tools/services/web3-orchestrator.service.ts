@@ -1,8 +1,8 @@
 import { DestroyRef, Injectable, effect, inject } from '@angular/core';
+import { Web3Config } from '@sandbox/shared/utils/tokens';
+import { DEMO_WEB3_CONFIG } from '@sandbox/shared/web3/tokens';
 import { WalletStore } from '@sandbox/shared/web3/core/wallet.store';
 import { BalancesService } from './balances.service';
-import { DEMO_WEB3_CONFIG } from '@sandbox/shared/web3/tokens';
-import { Web3Config } from '@sandbox/shared/utils/tokens';
 
 @Injectable()
 export class Web3Orchestrator {

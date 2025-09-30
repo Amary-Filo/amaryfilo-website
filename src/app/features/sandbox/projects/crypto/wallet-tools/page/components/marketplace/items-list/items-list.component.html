@@ -1,0 +1,69 @@
+<div class="sandbox-ui">
+  @if(isItemsLoading()) {
+  <div class="row-b fz-xl fl-cc fl-dc fw-extrabold t-c p-md">
+    <ui-spinner size="40px" />
+    <span class="text-accent cl-gray-500">Items is loading...</span>
+  </div>
+  } @else if(data() && data().length) {
+
+  <!-- Data -->
+  @for (item of data(); track $index) {
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [showBottom]="false"
+    [showHeadContent]="true"
+    [showHeadButtons]="true"
+    [showToggle]="false"
+    [title]="'Item ' + ($index + 1)"
+  >
+    <div class="block-title" accordionHeadContent>
+      <span class="title">
+        <span class="text-accent fill cl-market">
+          {{ item.title }}
+        </span>
+        @if(item.isBought) { you bought for } @else { you can buy for }
+        <span class="text-accent fill cl-apt"> {{ item.price }} APT</span>
+        Tokens{{ " " }}
+        @if(item.isPartial) {
+        <span class="text-accent fill cl-apt">
+          you already pay {{ item.pricePartialHuman }} APT
+        </span>
+        {{ " " }}Tokens }
+      </span>
+    </div>
+
+    <ng-content accordionHeadBtns>
+      @if(item.isBought) {
+      <ui-button
+        [isStrong]="true"
+        [isFilled]="true"
+        [leftIcon]="
+          item.type === 'link' ? 'externalLinkFill' : 'downloadCloud2Fill'
+        "
+        (click)="getOneItem(item)"
+        >{{ item.type === "link" ? "Open" : "Download" }}</ui-button
+      >
+      } @else if(isAvailable(item.priceWei)()) {
+      <ui-button
+        [isStrong]="true"
+        [isFilled]="true"
+        [loading]="isItemLoading(item.id)"
+        (click)="buy(item.id)"
+        >{{ item.isPartial ? `Pay ${item.remainingHuman}` : 'Buy' }}</ui-button
+      >
+      } @else { Need more APT tokens }
+    </ng-content>
+  </sbx-accordion-component>
+
+  } } @else {
+  <div class="row-b fz-xl fw-extrabold t-c p-sm">
+    Hmm...
+    <span class="text-accent cl-gray-500">You don't have any items...</span>
+    <br />
+    <span class="fz-lg fw-bold">
+      Maybe you need to buy something by
+      <span class="text-accent cl-apt">APT</span> Tokens? What do you think?
+    </span>
+  </div>
+  }
+</div>

@@ -1,10 +1,13 @@
 <div class="sandbox-ui">
   @if(isListLoading()) {
-  <div class="fz-xl fl-cc fl-dc fw-extrabold t-c m-md">
+  <div class="row-b fz-xl fl-cc fl-dc fw-extrabold t-c p-md">
     <ui-spinner size="40px" />
-    <span class="text-accent cl-gray-500">Your data is loading...</span>
+    <span class="text-accent cl-gray-500">Stakings is loading...</span>
   </div>
-  } @else if(data() && data().length) { @for (item of data(); track $index) {
+  } @else if(data() && data().length) {
+
+  <!-- Data -->
+  @for (item of data(); track $index) {
   <sbx-accordion-component
     [isSkeleton]="status() !== 'connected'"
     [showBottom]="false"
@@ -65,7 +68,7 @@
     </ng-container>
   </sbx-accordion-component>
   } } @else {
-  <div class="fz-xl fw-extrabold t-c m-xs">
+  <div class="row-b fz-xl fw-extrabold t-c p-sm">
     Hmm...
     <span class="text-accent cl-gray-500">You don't have any records...</span>
     <br />
