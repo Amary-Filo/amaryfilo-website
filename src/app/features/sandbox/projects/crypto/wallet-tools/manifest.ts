@@ -13,8 +13,9 @@ export const CRYPTO_WALLET_TOOLS_MANIFEST: Manifest = {
   slug: 'wallet-tools',
   kind: 'crypto',
   title: 'Wallet Tools',
-  description: 'Connect wallet, balances, faucet AST, lock APT.',
-  tags: ['crypto', 'wallet', 'sepolia'],
+  description:
+    'A demo project showing basic dApp scenarios: connecting a wallet, checking balances, staking tokens, participating in auctions, and purchasing digital items in the store.',
+  tags: ['crypto', 'metamask', 'wallet', 'sepolia', 'contracts', 'tokens'],
   component: WalletToolsPage,
   defaultConfig: {
     ui: {
