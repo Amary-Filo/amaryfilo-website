@@ -8,6 +8,7 @@ import { UIHomeTokensComponent } from './home-tokens/home-tokens.component';
 import { UIStakingListComponent } from '../staking/staking-list/staking-list.component';
 import { UIAuctionListComponent } from '../auction/auction-list/auction-list.component';
 import { UIMarketplaceItemsComponent } from '../marketplace/items-list/items-list.component';
+import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
 
 @Component({
   selector: 'sbx-wallet-tools-home-tab',
@@ -18,6 +19,7 @@ import { UIMarketplaceItemsComponent } from '../marketplace/items-list/items-lis
     UIHomeContractsAddressesComponent,
     WalletToolsRowTitleContentComponent,
     UIHomeTokensComponent,
+    UIButtonComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -25,4 +27,8 @@ import { UIMarketplaceItemsComponent } from '../marketplace/items-list/items-lis
 })
 export class WalletToolsHomeComponent {
   page = model<WalletToolsTabs>();
+
+  go(page: WalletToolsTabs) {
+    this.page.set(page);
+  }
 }

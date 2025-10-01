@@ -82,8 +82,6 @@ export class AuctionService {
         out.push(pool);
       }
 
-      console.log(out);
-
       this._pools.set(out);
     } finally {
       this.isPoolsLoading.set(false);

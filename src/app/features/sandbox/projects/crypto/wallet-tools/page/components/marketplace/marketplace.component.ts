@@ -4,7 +4,6 @@ import { WalletFacade } from '../../../services/wallet-facade.service';
 import { BalancesService } from '../../../services/balances.service';
 import { TxService } from '@sandbox/shared/web3/core/tx.service';
 import { MarketService } from '../../../services/marketplace.service';
-import { IMarketplaceItems } from '../../../services/marketplace-items';
 
 import { WalletToolsBalancesComponent } from '../balances/balances.component';
 import { WalletToolsRowTitleContentComponent } from '../row-title-content/row-title-content.component';
@@ -46,11 +45,5 @@ export class WalletToolsMarketplaceComponent {
           console.warn('stake error', s.error);
         },
       };
-  }
-
-  getItem(item: IMarketplaceItems) {
-    if (item.type === 'link') window.open(item.value, '_blank', 'noopener');
-    if (item.type === 'download')
-      window.open(`assets/${item.value}`, '_blank', 'noopener');
   }
 }

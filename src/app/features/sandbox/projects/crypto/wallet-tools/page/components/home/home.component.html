@@ -1,11 +1,21 @@
 <div class="sandbox-ui">
   <div class="row-text">
-    <h2 class="h1">Welcome to the AMFI Web3 Demo</h2>
+    <h2 class="h1">AMFI Web3 Demo</h2>
     <p class="text text-secondary">
-      This project demonstrates a full Web3 flow: stake → earn → spend. It’s
-      built with Angular + Ethers.js and a set of Solidity contracts deployed
-      and verified on Sepolia.
+      This is a test project that shows how DeFi works on the
+      <b class="text-accent fill cl-secondary-500">Ethereum Sepolia testnet</b>.
+      Here you can try the full cycle of a decentralized app: get AST tokens
+      from the faucet or staking, join auctions to win APT tokens, and spend
+      them in the marketplace on demo items.
     </p>
+    <br />
+    <ui-button
+      [leftIcon]="'gitRepositoryFill'"
+      [isFilled]="true"
+      [isStrong]="true"
+      (click)="go('about')"
+      >Learn how it works</ui-button
+    >
   </div>
 
   <!-- Tokens -->

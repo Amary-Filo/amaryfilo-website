@@ -40,7 +40,7 @@
         [leftIcon]="
           item.type === 'link' ? 'externalLinkFill' : 'downloadCloud2Fill'
         "
-        (click)="getOneItem(item)"
+        (click)="getItem(item)"
         >{{ item.type === "link" ? "Open" : "Download" }}</ui-button
       >
       } @else if(isAvailable(item.priceWei)()) {

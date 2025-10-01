@@ -85,7 +85,6 @@ export class MarketService {
       const status = this.wallet.status();
       const account = this.wallet.account();
 
-      console.log(account, status);
       if (status === 'connected' && account) {
         this.refreshFromEvents().catch(() => {});
         this.bindEvents().catch(() => {});

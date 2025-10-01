@@ -98,13 +98,13 @@
 
 .frameless-toolbar {
   position: fixed;
-  top: 12px;
+  bottom: 12px;
   right: 12px;
   display: flex;
   gap: 8px;
-  padding: 6px 10px;
+  padding: 6px 6px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.9);
+  background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 

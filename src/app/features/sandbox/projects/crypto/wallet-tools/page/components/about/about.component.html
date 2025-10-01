@@ -2,19 +2,16 @@
   <div class="row-text">
     <h2 class="h1">About project</h2>
     <p class="text text-secondary">
-      This project demonstrates a complete
-      <strong>Web3 earning & spending flow</strong>:
-      <em>Stake AST → Win APT → Buy items in Marketplace</em>.
+      This is a test project that shows how DeFi works on the Ethereum Sepolia
+      testnet. Here you can try the full cycle of a decentralized app: get AST
+      tokens from the faucet or staking, join auctions to win APT tokens, and
+      spend them in the marketplace on demo items.
     </p>
     <p class="text text-secondary">
-      It’s built with <strong>Angular + Ethers.js</strong> on top of
-      <strong>Solidity smart contracts</strong> deployed and verified on the
-      <strong>Sepolia Ethereum testnet</strong>.
-    </p>
-    <p class="text text-secondary">
-      Goal of this demo: show how decentralized applications (dApps) work — how
-      you can interact with smart contracts, earn tokens, and spend them inside
-      a real on-chain economy.
+      I built and designed everything myself: the smart contracts, the site, and
+      the UI, using the latest tools and frameworks. All tokens, rewards,
+      contracts, and auctions are only on the testnet, so you don’t spend real
+      money.
     </p>
   </div>
 
@@ -216,7 +213,11 @@
   </sbx-wallet-tools-row-title-content>
 
   <!-- How to use this project -->
-  <sbx-wallet-tools-row-title-content title="How to use" [useStatus]="false">
+  <sbx-wallet-tools-row-title-content
+    title="How to use"
+    text="Step by step guide"
+    [useStatus]="false"
+  >
     <div class="row-line row-b">
       <sbx-accordion-component
         [title]="'1. Prerequisites (one-time)'"
@@ -435,9 +436,9 @@
       >
         <div class="text-secondary" accordionContent>
           <b>Auction:</b> you’ll see live updates when bids are placed, pools
-          end, and when your status changes to Withdraw. <br />
+          end, and when your status changes to Withdraw. <br /><br />
           <b>Marketplace:</b> the app listens to Purchased events and updates
-          Your items and Remaining automatically. <br />
+          Your items and Remaining automatically. <br /><br />
           <b>Balances:</b> AST/APT balances update after each confirmed
           transaction
         </div>

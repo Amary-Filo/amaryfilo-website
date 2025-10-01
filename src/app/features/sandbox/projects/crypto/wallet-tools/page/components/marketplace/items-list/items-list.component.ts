@@ -29,7 +29,6 @@ export class UIMarketplaceItemsComponent {
   apt = input<bigint>(0n);
 
   buyItem = output<number>();
-  getItem = output<IMarketplaceItems>();
 
   readonly status = this.facade.status;
   readonly isItemsLoading = computed(() => this.market.isItemsLoading());
@@ -43,7 +42,15 @@ export class UIMarketplaceItemsComponent {
     this.buyItem.emit(id);
   }
 
-  getOneItem(item: IMarketplaceItems): void {
-    this.getItem.emit(item);
+  getItem(item: IMarketplaceItems) {
+    if (item.type === 'link') window.open(item.value, '_blank', 'noopener');
+    if (item.type === 'download') {
+      const link = document.createElement('a');
+      link.href = `assets/files/${item.value}`;
+      link.download = item.value.split('/').pop() || 'file';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   }
 }
