@@ -31,4 +31,12 @@ export class WalletToolsHomeComponent {
   go(page: WalletToolsTabs) {
     this.page.set(page);
   }
+
+  openMetamaskLink() {
+    window.open(
+      `https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn`,
+      '_blank',
+      'noopener'
+    );
+  }
 }

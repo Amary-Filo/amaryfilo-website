@@ -22,7 +22,15 @@ export const CRYPTO_WALLET_TOOLS_MANIFEST: Manifest = {
     },
     web3: {
       allowedChains: [SEPOLIA],
-      allowedWallets: ['injected'],
+      allowedWallets: ['injected', 'walletconnect'],
+      adapterOptions: {
+        walletconnect: {
+          projectId: '2b4c4b7cf2cd6125d3f67b94a6beeca7',
+        },
+        injected: {
+          preferred: 'metamask',
+        },
+      },
       contracts: CONTRACTS[SEPOLIA],
       abis: {
         AST: AST_ABI,

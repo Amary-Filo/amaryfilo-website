@@ -19,7 +19,7 @@ export type PurchaseUI = {
   timestamp?: number;
 };
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class MarketService {
   private contracts = inject(ContractsService);
   private wallet = inject(WalletStore);

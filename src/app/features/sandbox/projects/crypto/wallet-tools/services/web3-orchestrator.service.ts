@@ -20,7 +20,7 @@ export class Web3Orchestrator {
 
         const allowed = this.cfg.allowedChains?.length
           ? this.cfg.allowedChains.includes(chainId ?? -1)
-          : true;
+          : false;
 
         if (!acc || !allowed || status !== 'connected') {
           this.balances.ast.set(0n);
@@ -37,10 +37,9 @@ export class Web3Orchestrator {
       const acc = this.wallet.account();
       const chainId = this.wallet.chainId();
       const status = this.wallet.status();
-
       const allowed = this.cfg.allowedChains?.length
         ? this.cfg.allowedChains.includes(chainId ?? -1)
-        : true;
+        : false;
 
       if (acc && status === 'connected' && allowed) {
         this.balances.refresh(acc);

@@ -8,10 +8,17 @@ import {
   signal,
   createEnvironmentInjector,
   OnDestroy,
+  WritableSignal,
 } from '@angular/core';
 import { CommonModule, NgComponentOutlet } from '@angular/common';
 import { SbxFrameComponent } from '../shared/frame/sbx-frame.component';
-import { DEMO_CONFIG, DEMO_THEME, Manifest } from '../shared/utils/tokens';
+import {
+  BaseDemoConfig,
+  DEMO_CONFIG,
+  DEMO_THEME,
+  Manifest,
+  Theme,
+} from '../shared/utils/tokens';
 import { FrameService } from '@sandbox/shared/frame/frame.service';
 
 @Component({
@@ -19,13 +26,13 @@ import { FrameService } from '@sandbox/shared/frame/frame.service';
   standalone: true,
   imports: [NgComponentOutlet, SbxFrameComponent, CommonModule],
   templateUrl: './demo-host.page.html',
-  styleUrl: './demo-host.page.scss',
+  styleUrls: ['./demo-host.page.scss'],
 })
 export class DemoHostPage implements OnDestroy {
   readonly manifest = input<Manifest | null>(null);
 
   readonly theme = signal<'light' | 'dark'>('light');
-  readonly config = signal<any>({});
+  readonly config = signal<BaseDemoConfig>({});
 
   private parentEnv = inject(EnvironmentInjector);
 
@@ -33,7 +40,7 @@ export class DemoHostPage implements OnDestroy {
     createEnvironmentInjector(
       [
         { provide: DEMO_CONFIG, useValue: this.config },
-        { provide: DEMO_THEME, useValue: this.theme },
+        { provide: DEMO_THEME, useValue: this.theme as WritableSignal<Theme> },
       ],
       this.parentEnv
     )

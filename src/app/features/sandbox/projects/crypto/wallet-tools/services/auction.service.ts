@@ -175,7 +175,7 @@ export class AuctionService {
 
       const me = this.wallet.account()?.toLowerCase();
       if (me && String(user).toLowerCase() === me) {
-        console.log('⚠️ Ваша ставка перебита. Refund:', refund.toString());
+        console.log('⚠️ Refund:', refund.toString());
       }
     });
 

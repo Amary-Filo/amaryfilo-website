@@ -50,9 +50,14 @@
         </div>
         <div class="btns">
           @if (status() !== 'connected') {
-          <ui-button color="gray-900" (click)="connect()"
-            >Connect Wallet</ui-button
+          <ui-button
+            [leftIcon]="'metamaskColor'"
+            color="metamask"
+            [textColor]="true"
+            (click)="connect()"
           >
+            Connect Wallet
+          </ui-button>
           } @else {
           <ui-button
             color="gray-900"
