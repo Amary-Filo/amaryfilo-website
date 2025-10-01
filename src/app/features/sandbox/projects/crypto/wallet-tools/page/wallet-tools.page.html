@@ -1,1 +1,19 @@
-crypto: wallet-tools page
+<section class="sbx-wallet-tools sandbox-ui">
+  <sbx-wallet-tools-header-component [(page)]="page" />
+
+  <div class="container">
+    <div class="card">
+      @if(page() === 'home') { <sbx-wallet-tools-home-tab [(page)]="page" /> }
+      <!-- Page Home -->
+      @if(page() === 'staking') { <sbx-wallet-tools-staking-tab /> }
+      <!-- Page Auction -->
+      @if(page() === 'auction') { <sbx-wallet-tools-auction-tab /> }
+      <!-- Page Market -->
+      @if(page() === 'market') { <sbx-wallet-tools-marketplace-tab /> }
+      <!-- Page About -->
+      @if(page() === 'about') { <sbx-wallet-tools-about-tab /> }
+    </div>
+  </div>
+
+  <sbx-wallet-tools-footer-component />
+</section>

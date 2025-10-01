@@ -1,0 +1,35 @@
+<div class="row-line row-sbc">
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [title]="'Rules and time'"
+    [text]="'What you need to do to Staking AST Token'"
+    [bottomText]="'The longer you stake, the higher your profit.'"
+  >
+    <ol class="text-secondary" accordionContent>
+      <li>Stake and withdraw any amount (no limits).</li>
+      <li>
+        Fixed reward rates: 15 min (4% APR) | 30 min (8% APR) | 1h (16% APR) |
+        2h (32% APR) | 3h (48% APR)
+      </li>
+    </ol>
+  </sbx-accordion-component>
+
+  <div class="row-spacer"></div>
+
+  <sbx-accordion-component
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [title]="'How to Stake'"
+    [text]="'Formula for your reward AST Tokens'"
+    [bottomText]="
+      'Ex.: Staked 20 AST for 1h (2.5%) so you will get 20*2,5%+20 = 20.5 AST tokens.'
+    "
+  >
+    <ol class="text-secondary" accordionContent>
+      <li>Fill the staking form: choose amount + duration.</li>
+      <li>Confirm the transaction in your wallet.</li>
+      <li>Wait until the timer ends.</li>
+    </ol>
+  </sbx-accordion-component>
+</div>

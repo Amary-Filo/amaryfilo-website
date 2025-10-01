@@ -1,12 +1,49 @@
-<section class="sc container">
-  <h1 class="fz-xl fw-800">Sandbox</h1>
-  <div class="grid">
-    @for (d of demos(); track $index) {
-    <a [routerLink]="['/sandbox', d.kind, d.slug]" class="card">
-      <h3>{{ d.title }}</h3>
-      <p>{{ d.description }}</p>
-      <span class="tags">{{ d.tags.join(" • ") }}</span>
-    </a>
-    }
-  </div>
-</section>
+<main class="pg-sandbox base-ui">
+  <section class="sc head-section pg-hd">
+    <div class="container info fl-cc fl-dc t-c">
+      <h1 class="title ls-2 t-gr ls t-u cl-g-development">Sandbox</h1>
+      <p class="text op-7 ls fw-b">My pet-projects</p>
+    </div>
+  </section>
+
+  <section class="sc list">
+    <div class="container">
+      <span class="title fz-nm op-7">C'mon select something</span>
+      <div class="fl fl-w lists">
+        @for (item of filters(); track item) {
+        <button
+          type="button"
+          [class]="'btn m t ic-' + item + ' cl-' + item"
+          [class.active]="selectedFilter() === item"
+          (click)="filterData(item)"
+          [title]="item"
+        >
+          {{ item }}
+        </button>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="sc sandbox-list">
+    <div class="container">
+      @for (item of filteredItems(); track item.slug) {
+      <article [class]="$first ? 'landscape' : ''">
+        <a
+          [class]="'cd cd-atc fl fl-dc cl-' + item.kind"
+          [attr.title]="item.title"
+          [routerLink]="['/sandbox', item.kind, item.slug]"
+        >
+          <div class="info">
+            <h3 class="title">{{ item.title }}</h3>
+            <p class="text op-6">{{ item.description }}</p>
+          </div>
+        </a>
+      </article>
+      }
+    </div>
+  </section>
+
+  <app-subscribe />
+  <app-form-order />
+</main>

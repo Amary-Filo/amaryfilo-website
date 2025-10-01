@@ -1,0 +1,12 @@
+@use "../../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../../shared/styles/sandbox.scss";
+
+:host {
+  border-bottom: var(--border-base-width) solid
+    rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+}
+
+.row-form {
+  width: max-content;
+  margin: 0 auto;
+}

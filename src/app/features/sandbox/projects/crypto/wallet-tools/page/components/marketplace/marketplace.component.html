@@ -1,0 +1,48 @@
+<div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-wallet-tools-balances-component />
+  </div>
+  <div class="row-text">
+    <h2 class="h1">Marketplace</h2>
+    <p class="text text-secondary">
+      <b>What is this?</b> <br />
+      This is the place where you can spend your
+      <span class="text-accent cl-apt">APT</span> tokens. You earn
+      <span class="text-accent cl-apt">APT</span> by joining
+      <span class="text-accent cl-auction">auctions</span>. If your bid wins,
+      you receive <span class="text-accent cl-apt">APT</span> after the
+      <span class="text-accent cl-auction">auction</span> timer ends. Then, you
+      can use <span class="text-accent cl-apt">APT</span> here to unlock
+      <span class="text-accent cl-market">exclusive items</span>: guides,
+      components, access to private channels, and more.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <!-- Marketplace Info -->
+  <sbx-wallet-tools-row-title-content title="How it works" [useStatus]="false">
+    <ui-marketplace-info />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Catalog -->
+  <sbx-wallet-tools-row-title-content
+    title="Catalog"
+    text="list of digital goods"
+  >
+    <ui-marketplace-items-list
+      [items]="availableItems"
+      [apt]="apt()"
+      (buyItem)="buy($event)"
+    />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- My Goods -->
+  <sbx-wallet-tools-row-title-content
+    title="My goods"
+    text="items you already own"
+  >
+    <ui-marketplace-items-list />
+  </sbx-wallet-tools-row-title-content>
+</div>

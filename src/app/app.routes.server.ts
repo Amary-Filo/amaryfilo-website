@@ -23,7 +23,6 @@ const langSlugParams = (page: PagePrefix) => {
 };
 
 export const serverRoutes: ServerRoute[] = [
-  // без префикса
   { path: '', renderMode: RenderMode.Prerender },
   { path: 'about', renderMode: RenderMode.Prerender },
   { path: 'designs', renderMode: RenderMode.Prerender },
@@ -48,7 +47,6 @@ export const serverRoutes: ServerRoute[] = [
     getPrerenderParams: async () => slugs('blog').map((slug) => ({ slug })),
   },
 
-  // языковые корни
   {
     path: ':lang',
     renderMode: RenderMode.Prerender,

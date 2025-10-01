@@ -1,0 +1,70 @@
+@use "./mixins" as mx;
+
+:root,
+.sandbox-ui {
+  /* Spacing scale */
+  --spacing-2xs: #{mx.rem(4)};
+  --spacing-xs: #{mx.rem(8)};
+  --spacing-sm: #{mx.rem(12)};
+  --spacing-md: #{mx.rem(16)};
+  --spacing-lg: #{mx.rem(24)};
+  --spacing-xl: #{mx.rem(32)};
+  --spacing-2xl: #{mx.rem(48)};
+
+  /* Radius scale */
+  --radius-2xs: #{mx.rem(2)};
+  --radius-xs: #{mx.rem(4)};
+  --radius-sm: #{mx.rem(6)};
+  --radius-md: #{mx.rem(10)};
+  --radius-lg: #{mx.rem(14)};
+  --radius-xl: #{mx.rem(20)};
+  --radius-2xl: #{mx.rem(30)};
+
+  /* Typography scale (пример) */
+  --fz-2xs: #{mx.rem(12)};
+  --fz-xs: #{mx.rem(13)};
+  --fz-sm: #{mx.rem(14)};
+  --fz-md: #{mx.rem(16)};
+  --fz-nd: #{mx.rem(18)};
+  --fz-lg: #{mx.rem(20)};
+  --fz-xl: #{mx.rem(24)};
+  --fz-2xl: #{mx.rem(32)};
+  --fz-3xl: #{mx.rem(40)};
+
+  --lh-none: 1;
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.7;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Shadows (мягкие по умолчанию) */
+  --shadow-2xs: 0 #{mx.rem(1)} #{mx.rem(2)} rgba(0, 0, 0, 0.05);
+  --shadow-xs: 0 #{mx.rem(1)} #{mx.rem(4)} rgba(0, 0, 0, 0.06);
+  --shadow-sm: 0 #{mx.rem(2)} #{mx.rem(8)} rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 #{mx.rem(4)} #{mx.rem(12)} rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 #{mx.rem(8)} #{mx.rem(20)} rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 #{mx.rem(12)} #{mx.rem(32)} rgba(0, 0, 0, 0.16);
+  --shadow-2xl: 0 #{mx.rem(20)} #{mx.rem(48)} rgba(0, 0, 0, 0.2);
+
+  /* Z-index */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-dropdown: 1000;
+  --z-modal: 1100;
+  --z-popover: 1200;
+  --z-toast: 1300;
+  --z-max: 9999;
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emph: cubic-bezier(0.2, 0.7, 0, 1);
+}

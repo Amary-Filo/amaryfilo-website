@@ -1,0 +1,152 @@
+@use "./mixins" as mx;
+
+.h1 {
+  font-size: var(--fz-3xl);
+}
+
+.text {
+  color: var(--gray-800);
+}
+
+.text-muted {
+  color: var(--gray-600);
+}
+
+.title {
+  font-size: var(--fz-nd);
+  font-weight: var(--fw-bold);
+}
+
+.cl {
+  color: var(--cl-main);
+}
+
+.text-secondary {
+  color: var(--cl-main, var(--gray-600));
+  font-size: var(--fz-sm);
+}
+
+.text-accent {
+  display: inline-block;
+  font-weight: var(--fw-extrabold);
+  color: var(--cp-badge-color, var(--cl-main, var(--fg)));
+
+  &.fill {
+    line-height: var(--cp-badge-line-height, var(--lh-none));
+    padding: var(--cp-badge-padding, var(--spacing-2xs));
+    border-radius: var(--cp-badge-radius, var(--radius-xs));
+    background-color: var(--cp-badge-bg-color, var(--cl-main, var(--gray-500)));
+    color: var(--cp-badge-color, var(--gray-50));
+  }
+}
+
+.t-c {
+  text-align: center;
+}
+
+.m {
+  &-xxs {
+    margin: var(--spacing-2xs);
+  }
+
+  &-xs {
+    margin: var(--spacing-xs);
+  }
+
+  &-sm {
+    margin: var(--spacing-sm);
+  }
+
+  &-md {
+    margin: var(--spacing-md);
+  }
+
+  &-lg {
+    margin: var(--spacing-lg);
+  }
+}
+
+.p {
+  &-xxs {
+    padding: var(--spacing-2xs);
+  }
+
+  &-xs {
+    padding: var(--spacing-xs);
+  }
+
+  &-sm {
+    padding: var(--spacing-sm);
+  }
+
+  &-md {
+    padding: var(--spacing-md);
+  }
+
+  &-lg {
+    padding: var(--spacing-lg);
+  }
+}
+
+.fz {
+  &-2xs {
+    font-size: var(--fz-2xs);
+  }
+  &-xs {
+    font-size: var(--fz-xs);
+  }
+  &-sm {
+    font-size: var(--fz-sm);
+  }
+  &-md {
+    font-size: var(--fz-md);
+  }
+  &-nd {
+    font-size: var(--fz-nd);
+  }
+  &-lg {
+    font-size: var(--fz-lg);
+  }
+  &-xl {
+    font-size: var(--fz-xl);
+  }
+  &-2xl {
+    font-size: var(--fz-2xl);
+  }
+  &-3xl {
+    font-size: var(--fz-3xl);
+  }
+}
+
+.lh {
+  &-none {
+    line-height: var(--lh-none);
+  }
+  &-tight {
+    line-height: var(--lh-tight);
+  }
+  &-normal {
+    line-height: var(--lh-normal);
+  }
+  &-loose {
+    line-height: var(--lh-loose);
+  }
+}
+
+.fw {
+  &-regular {
+    font-weight: var(--fw-regular);
+  }
+  &-medium {
+    font-weight: var(--fw-medium);
+  }
+  &-semibold {
+    font-weight: var(--fw-semibold);
+  }
+  &-bold {
+    font-weight: var(--fw-bold);
+  }
+  &-extrabold {
+    font-weight: var(--fw-extrabold);
+  }
+}

@@ -1,0 +1,101 @@
+<div class="pull-content">
+  @if (['bid','winner', 'empty'].includes(bidStatus())) {
+  <div class="separated-line row-b"></div>
+
+  @if (status() === 'ended') {
+  <div class="row-line bit">
+    <div class="block-title fw-extrabold">
+      No one do a bid for this auction, so there is no winner
+    </div>
+  </div>
+  } @else {
+  <div class="row-line bit">
+    <ui-benefit-item
+      icon="vipCrown2Fill"
+      [title]="bidStatus() === 'winner' ? 'Your bid' : 'Top bid'"
+      [text]="date()"
+      [isSmall]="true"
+    />
+    <div class="block-title fw-extrabold">
+      {{ bidStatus() === "winner" ? "You" : "Someone" }}
+      bid
+      <span class="text-accent cl-ast fill"> {{ topBidHuman() }} AST </span>
+      for this auction
+    </div>
+  </div>
+  } }
+  <!-- Form -->
+  @if (['bid','empty'].includes(bidStatus()) && status() === 'active') {
+  <div class="separated-line row-b"></div>
+  <div class="row-line bit-form">
+    <div class="row-form">
+      <div class="row-line row-sbc row-rl">
+        <ui-input
+          name="bid"
+          [label]="'Input AST amount'"
+          [type]="'token'"
+          [id]="id()"
+          [name]="id()"
+          [decimals]="18"
+          [suffix]="true"
+          [useWei]="true"
+          [disabled]="disabled() || loading()"
+          [validators]="allValidators()"
+          [max]="max()"
+          [min]="minToOutbidHuman()"
+          [(value)]="amount"
+        >
+          <span input-suffix class="text-accent cl-ast fz-md">AST</span>
+
+          <ng-container input-actions>
+            <div class="block-title" accordionHeadInfo>
+              <span class="text-secondary">
+                Min to outbid:
+                <span class="text-accent fill cl-ast">
+                  {{ minToOutbidHuman() }} AST
+                </span>
+              </span>
+            </div>
+
+            <div class="block-title" accordionHeadInfo>
+              <span class="text-secondary">
+                You have
+                <span class="text-accent fill cl-ast"
+                  >{{ max() | number : "1.2-5" }} AST</span
+                >
+              </span>
+            </div>
+
+            <ui-button
+              [isFilled]="true"
+              [isStrong]="true"
+              color="gray-900"
+              size="xxs"
+              (click)="onSendMax()"
+              [disabled]="disabled() || loading()"
+              >Send Max</ui-button
+            >
+          </ng-container>
+        </ui-input>
+      </div>
+
+      <div class="row-line row-t row-rl">
+        <ui-button
+          class="m-sm bit-btn"
+          [fullWidth]="true"
+          [isFilled]="true"
+          [isStrong]="true"
+          size="md"
+          [loading]="loading()"
+          [disabled]="disabled() || loading()"
+          (click)="clickBid()"
+        >
+          BID
+        </ui-button>
+      </div>
+    </div>
+  </div>
+  }
+
+  <div class="separated-line"></div>
+</div>

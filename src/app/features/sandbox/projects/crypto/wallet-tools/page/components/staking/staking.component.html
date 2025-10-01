@@ -1,0 +1,54 @@
+<div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-wallet-tools-balances-component />
+  </div>
+  <div class="row-text">
+    <h2 class="h1">Staking <span class="text-accent fill cl-ast">AST</span></h2>
+    <p class="text text-secondary">
+      <b>What is Staking?</b> <br />
+
+      <span class="text-accent cl-staking">Stake</span> your
+      <span class="text-accent cl-ast">AST</span> tokens for a fixed period and
+      earn rewards. After staking ends, you can withdraw both your initial
+      <span class="text-accent cl-ast">AST</span> and the extra rewards. Later,
+      you can exchange <span class="text-accent cl-ast">AST</span> for
+      <span class="text-accent cl-apt">APT</span> via
+      <span class="text-accent cl-auction">Auctions</span>.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <!-- Staking Info -->
+  <sbx-wallet-tools-row-title-content
+    title="Rules & Time Options"
+    [useStatus]="false"
+  >
+    <ui-staking-info />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Staking Form -->
+  <sbx-wallet-tools-row-title-content
+    title="Fill form to Stake AST Token"
+    text="TIP:For maximum profit, always choose longer durations."
+  >
+    <ui-staking-form />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Withdraw Stakings -->
+  <sbx-wallet-tools-row-title-content
+    title="My Stakings"
+    text="To Claim AST Tokens click on button 'Withdraw'."
+  >
+    <ui-staking-list />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Active Stakings -->
+  <sbx-wallet-tools-row-title-content
+    title="Wait a little bit"
+    text="You will see this stakings in block behind when they will be done."
+  >
+    <ui-staking-list [items]="itemsPending()" [isPending]="true" />
+  </sbx-wallet-tools-row-title-content>
+</div>

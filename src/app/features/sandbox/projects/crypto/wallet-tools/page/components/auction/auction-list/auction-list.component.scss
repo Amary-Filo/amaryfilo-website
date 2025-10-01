@@ -1,0 +1,6 @@
+@use "../../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../../shared/styles/sandbox.scss";
+
+.auction-pull {
+  --cp-accordion-head-content-padding: 0;
+}

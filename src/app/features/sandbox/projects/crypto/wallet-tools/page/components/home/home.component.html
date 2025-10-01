@@ -1,0 +1,68 @@
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">AMFI Web3 Demo</h2>
+    <p class="text text-secondary">
+      This is a test project that shows how DeFi works on the
+      <b class="text-accent fill cl-secondary-500">Ethereum Sepolia testnet</b>.
+      Here you can try the full cycle of a decentralized app: get AST tokens
+      from the faucet or staking, join auctions to win APT tokens, and spend
+      them in the marketplace on demo items.
+    </p>
+    <br />
+    <p class="text-secondary t-c fz-md">
+      To use the project,
+      <b class="text-accent cl-metamask"
+        >you need to install the MetaMask browser extension</b
+      >.
+      <br />
+      Other wallets will be supported later.
+    </p>
+    <br />
+    <div class="fl">
+      <ui-button
+        [leftIcon]="'gitRepositoryFill'"
+        [isFilled]="true"
+        [isStrong]="true"
+        (click)="go('about')"
+      >
+        Learn how it works
+      </ui-button>
+      <div class="m-xs"></div>
+      <ui-button
+        [leftIcon]="'metamaskColor'"
+        [isStrong]="true"
+        [textColor]="true"
+        color="metamask"
+        (click)="openMetamaskLink()"
+      >
+        Install MetaMask
+      </ui-button>
+    </div>
+  </div>
+
+  <!-- Tokens -->
+  <ui-home-tokens [(page)]="page" />
+
+  <!-- Staking -->
+  <sbx-wallet-tools-row-title-content title="My Stakings">
+    <ui-staking-list />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Auction -->
+  <sbx-wallet-tools-row-title-content title="My Auction">
+    <ui-auction-list type="withdraw" />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Marketplace -->
+  <sbx-wallet-tools-row-title-content title="My Items">
+    <ui-marketplace-items-list />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Contracts & Addresses -->
+  <sbx-wallet-tools-row-title-content
+    title="Contracts & addresses"
+    [useStatus]="false"
+  >
+    <ui-home-contracts-addresses />
+  </sbx-wallet-tools-row-title-content>
+</div>

@@ -1,0 +1,59 @@
+<div class="sandbox-ui">
+  @if(isListLoading()) {
+  <div class="row-b fz-xl fl-cc fl-dc fw-extrabold t-c p-md">
+    <ui-spinner size="40px" />
+    <span class="text-accent cl-gray-500">Pools is loading...</span>
+  </div>
+  } @else if(data() && data().length) {
+
+  <!-- Data -->
+  @for (item of data(); track $index) {
+  <sbx-accordion-component
+    class="auction-pull"
+    [isSkeleton]="status() !== 'connected'"
+    [showBottom]="false"
+    [showHeadContent]="true"
+    [title]="'Pool ' + item.id"
+  >
+    <ui-lot-benefit-list
+      accordionHeadContent
+      [dateEnd]="(item.endTime | date) || ''"
+      [lot]="item.amountAPT"
+      [endIn]="remaining(item)"
+      [showWithdraw]="item.status === 'withdraw'"
+      [ended]="item.status === 'ended'"
+      [isWithdrawn]="isWithdrawn(item.id)"
+      (withdraw)="withdraw(item.id)"
+    />
+
+    <ng-container accordionContent>
+      <ui-pull-content
+        [id]="$index.toString()"
+        [bidStatus]="item.bidStatus"
+        [status]="item.status"
+        [date]="(item.endTime | date) || ''"
+        [topBidHuman]="item.highestAST"
+        [minToOutbidHuman]="item.minBid"
+        [iAmHighest]="item.isUserHighest"
+        [disabled]="false"
+        [loading]="isLoading(item.id)"
+        [max]="ast()"
+        (buttonBid)="bid(item.id, $event)"
+      />
+    </ng-container>
+  </sbx-accordion-component>
+  } } @else {
+  <div class="row-b fz-xl fw-extrabold t-c p-sm">
+    Hmm...
+    <span class="text-accent cl-gray-500">
+      {{ type() === "withdraw" ? "You" : "We" }} don't have any
+      {{ type() }} pools...
+    </span>
+    <br />
+    <span class="fz-lg fw-bold">
+      @if(type() === 'withdraw') { You can try your luck in Active pools } @else
+      { You can't do anything with this right now }
+    </span>
+  </div>
+  }
+</div>

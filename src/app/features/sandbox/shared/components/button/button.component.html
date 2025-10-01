@@ -1,0 +1,32 @@
+<div class="sandbox-ui">
+  <button
+    role="button"
+    [disabled]="disabled()"
+    [class]="'btns btns-' + size() + ' cl-' + color()"
+    [class.only-icon]="onlyIcon()"
+    [class.fill]="isFilled()"
+    [class.strong]="isStrong()"
+    [class.text-color]="textColor()"
+    [class.loading]="loading()"
+    [class.full]="fullWidth()"
+  >
+    @if (leftIcon() && !loading()) {
+    <ui-icon class="icon" [name]="leftIcon()" [size]="'var(--icon-size)'" />
+    } @if (!loading()) {
+    <span class="btns-text">
+      <ng-content />
+    </span>
+    } @if (rightIcon() && !loading()) {
+    <ui-icon class="icon" [name]="rightIcon()" [size]="'var(--icon-size)'" />
+    } @if (isDropdown() && !loading()) {
+    <ui-icon
+      class="icon"
+      [class.btns-open]="isActive()"
+      size="16"
+      name="dropdownSolid"
+    />
+    } @if (loading()) {
+    <ui-spinner [color]="spinnerColor()" />
+    }
+  </button>
+</div>

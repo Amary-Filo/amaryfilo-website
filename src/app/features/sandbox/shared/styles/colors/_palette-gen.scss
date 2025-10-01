@@ -1,0 +1,141 @@
+@use "sass:color";
+
+@function hex2rgb($c) {
+  @return #{color.channel($c, "red", $space: rgb)},
+    #{color.channel($c, "green", $space: rgb)},
+    #{color.channel($c, "blue", $space: rgb)};
+}
+
+@mixin var-pair($name, $hex) {
+  --#{$name}: #{$hex};
+  --#{$name}-rgb: #{hex2rgb($hex)};
+
+  .cl-#{$name} {
+    --cl-main: #{$hex};
+    --cl-main-rgb: #{hex2rgb($hex)};
+  }
+}
+
+@mixin color-scale($family, $scale-map) {
+  @each $step, $hex in $scale-map {
+    @include var-pair(#{$family}-#{$step}, $hex);
+  }
+}
+
+@function text-contrast($color) {
+  @return if(color.channel($color, "lightness", $space: hsl) > 50%, #000, #fff);
+}
+
+@mixin colors($colors, $wrapper: "sandbox-ui") {
+  @each $name, $color in $colors {
+    // .#{$wrapper} {
+    .cl-#{$name} {
+      --cl-main: #{$color};
+      --cl-main-rgb: #{hex2rgb($color)};
+
+      --cl-accent: #{color.adjust($color, $lightness: -30%)};
+      --cl-text: #{text-contrast($color)};
+      --cl-text-rgb: #{hex2rgb(text-contrast($color))};
+
+      // @include theme("dark", true) {
+      //   --cl-text: #{text-contrast(text-contrast($color))};
+      //   --cl-text-rgb: #{HexToRGB(text-contrast(text-contrast($color)))};
+      // }
+    }
+    // }
+
+    :root {
+      .#{$wrapper} {
+        --cl-#{$name}: #{$color};
+        --cl-#{$name}-rgb: #{hex2rgb($color)};
+      }
+    }
+  }
+}
+
+$gray: (
+  50: #f8f9fa,
+  100: #f1f3f5,
+  200: #e9ecef,
+  300: #dee2e6,
+  400: #ced4da,
+  500: #adb5bd,
+  600: #868e96,
+  700: #495057,
+  800: #343a40,
+  900: #212529,
+);
+
+$brand-primary: (
+  50: #f2f9fb,
+  100: #dff1f6,
+  200: #bfe3ee,
+  300: #96cfe2,
+  400: #6bb7d2,
+  500: #3b98bd,
+  600: #2f7e9d,
+  700: #276882,
+  800: #204f63,
+  900: #173646,
+);
+
+$brand-secondary: (
+  50: #f9f6fd,
+  100: #f1e9fb,
+  200: #e0ccf7,
+  300: #c7a0ef,
+  400: #ab74e5,
+  500: #8f49db,
+  600: #7637bd,
+  700: #602e9a,
+  800: #4b2579,
+  900: #341a53,
+);
+
+$status-green: (
+  100: #e6f6ef,
+  300: #b9e7d4,
+  500: #47aa8d,
+  700: #2d7a64,
+  900: #18483b,
+);
+
+$status-red: (
+  100: #fdeaea,
+  300: #f6b0b6,
+  500: #e35f68,
+  700: #b4434b,
+  900: #70292e,
+);
+
+$status-yellow: (
+  100: #fff8e6,
+  300: #ffe29e,
+  500: #f6bb55,
+  700: #c18f32,
+  900: #7a5a18,
+);
+
+$colors: (
+  ast: #007bff,
+  apt: #c300ff,
+  staking: #ff00a6,
+  auction: #ff8c00,
+  metamask: #ff5c16,
+  market: #ff0000,
+  lock: #1ecfc6,
+  button: #007bff,
+);
+
+:root,
+.sandbox-ui {
+  @include color-scale("gray", $gray);
+  @include color-scale("primary", $brand-primary);
+  @include color-scale("secondary", $brand-secondary);
+
+  @include color-scale("success", $status-green);
+  @include color-scale("danger", $status-red);
+  @include color-scale("warning", $status-yellow);
+
+  @include colors($colors);
+}

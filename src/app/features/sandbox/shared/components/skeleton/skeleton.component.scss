@@ -1,0 +1,63 @@
+:host {
+  width: 100%;
+}
+
+.ui-skeleton {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: var(--gap, 8px);
+
+  .lines {
+    display: grid;
+    gap: var(--gap, 8px);
+    min-width: 0;
+  }
+}
+
+.skeleton-line,
+.skeleton-circle {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(var(--border-base-color-rgb, 0, 0, 0), 0.12);
+  border-radius: var(--radius-sm, 6px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.35) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    animation: skeleton-shimmer 1.2s cubic-bezier(0.2, 0, 0, 1) infinite;
+  }
+}
+
+.skeleton-circle {
+  border-radius: 999px;
+}
+
+.msg {
+  grid-column: 1 / -1;
+  margin-top: 6px;
+  font-size: var(--fz-sm, 14px);
+  line-height: var(--lh-normal, 1.5);
+  color: rgba(var(--cl-main-rgb, 0, 0, 0), 0.6);
+}
+
+@keyframes skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-line::after,
+  .skeleton-circle::after {
+    animation: none;
+  }
+}

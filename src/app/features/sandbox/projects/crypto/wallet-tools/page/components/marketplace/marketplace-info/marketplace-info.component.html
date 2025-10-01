@@ -1,0 +1,22 @@
+<sbx-accordion-component
+  [isSkeleton]="status() !== 'connected'"
+  [isOpen]="true"
+  [title]="'Rules'"
+  [text]="'What you need to do to buy items'"
+  [bottomText]="'Collect APT, unlock tools and content.'"
+>
+  <ol class="text-secondary" accordionContent>
+    <li><b>Get APT:</b> participate in auctions and win APT tokens.</li>
+    <li>
+      <b>Choose an item:</b> browse the catalog of digital goods and perks.
+    </li>
+    <li><b>Buy with APT:</b> you need to pay the required amount of APT.</li>
+    <li>
+      <b>Use instantly:</b>
+      <ul>
+        <li>If it’s a file: you can download it.</li>
+        <li>If it’s a link: you can open it in tab.</li>
+      </ul>
+    </li>
+  </ol>
+</sbx-accordion-component>

@@ -1,0 +1,87 @@
+<section
+  class="accordion sandbox-ui"
+  [class.bordered]="fullBorder()"
+  [class.is-skeleton]="isSkeleton()"
+>
+  <div class="accordion-head">
+    <div class="accordion-head-info">
+      <ng-content select="[accordionHeadInfo]">
+        <div class="block-title">
+          <span class="title" [innerHTML]="title()"></span>
+        </div>
+      </ng-content>
+      @if (isSkeleton()) {
+      <p class="text-secondary">{{ skeletHeaderText() }}</p>
+      } @else if (text()) {
+      <p class="text-secondary">{{ text() }}</p>
+      }
+    </div>
+
+    @if (showHeadContent()) {
+    <div class="accordion-head-content">
+      @if (isSkeleton()) {
+      <ui-skeleton [lines]="2" />
+      } @else {
+      <ng-content select="[accordionHeadContent]"></ng-content>
+      }
+    </div>
+    }
+
+    <div class="accordion-head-etc">
+      @if(showHeadButtons()) {
+      <div class="accordion-head-btns">
+        @if (!isSkeleton()) {
+        <ng-content select="[accordionHeadBtns]"></ng-content>
+        }
+      </div>
+      } @if(showToggle()) {
+      <div class="toggle">
+        @if (!isSkeleton()) {
+        <ui-button
+          aria-label="Toggle"
+          color="gray-900"
+          [isDropdown]="true"
+          [onlyIcon]="true"
+          [isActive]="isOpen()"
+          [attr.aria-expanded]="isOpen()"
+          (click)="toggle()"
+        />
+        } @else {
+        <ui-skeleton [circle]="true" />
+        }
+      </div>
+      }
+    </div>
+  </div>
+
+  @if (isOpen()) {
+  <div class="accordion-body" [class.no-padding]="showBottom()">
+    @if (isSkeleton()) {
+    <ui-skeleton preset="accordionBody" />
+
+    } @else {
+    <ng-content select="[accordionContent]">
+      <div class="fz-md fw-extrabold lh-none">{{ content() }}</div>
+    </ng-content>
+    }
+  </div>
+
+  @if(showBottom()) {
+  <div class="accordion-bottom">
+    @if (isSkeleton()) {
+    <ui-skeleton [widths]="['50%', '30%']" [lines]="2" />
+    <div class="accordion-bottom-etc">
+      <ui-skeleton [circle]="true" />
+    </div>
+    } @else {
+    <ng-content select="[accordionBottom]">
+      <p class="text-secondary">{{ bottomText() }}</p>
+    </ng-content>
+    @if (bottomShowButtons()) {
+    <div class="accordion-bottom-etc">
+      <ng-content select="[accordionBottomButtons]"></ng-content>
+    </div>
+    } }
+  </div>
+  } }
+</section>

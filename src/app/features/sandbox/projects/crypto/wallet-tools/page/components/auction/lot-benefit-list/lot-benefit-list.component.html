@@ -1,0 +1,43 @@
+<div class="sandbox-ui">
+  <div class="benefit-list">
+    <div class="list">
+      <ui-benefit-item
+        icon="calendarScheduleFill"
+        title="Date end"
+        [text]="dateEnd()"
+        [isSmall]="true"
+      />
+    </div>
+
+    <div class="list">
+      <ui-benefit-item icon="coinFill">
+        <div benefitContent class="block-title title">
+          Lot <span class="text-accent cl-apt fill">{{ lot() }} APT</span>
+        </div>
+      </ui-benefit-item>
+
+      @if (showWithdraw()) {
+      <ui-button
+        class="withdraw-btn"
+        (click)="onWithdraw()"
+        [isFilled]="true"
+        [isStrong]="true"
+        [loading]="isWithdrawn()"
+        >Withdraw</ui-button
+      >
+      } @else if (ended()) {
+      <ui-benefit-item icon="timeFill">
+        <div benefitContent class="block-title title">
+          <span class="text-accent cl-gray-900 fill">Ended</span>
+        </div>
+      </ui-benefit-item>
+      } @else {
+      <ui-benefit-item icon="timeFill">
+        <div benefitContent class="block-title title">
+          End in <span class="text-accent cl-gray-900 fill">{{ endIn() }}</span>
+        </div>
+      </ui-benefit-item>
+      }
+    </div>
+  </div>
+</div>

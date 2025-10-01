@@ -1,0 +1,41 @@
+@use "../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../shared/styles/sandbox.scss";
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  overflow: visible;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  gap: mx.rem(15);
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: mx.rem(5);
+}
+
+.btns {
+  position: relative;
+
+  .dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    z-index: 99;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--bg);
+    word-wrap: break-word;
+    box-shadow: var(--shadow-md);
+  }
+}

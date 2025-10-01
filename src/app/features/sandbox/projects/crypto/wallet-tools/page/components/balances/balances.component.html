@@ -1,0 +1,35 @@
+<div class="sandbox-ui balances fw-800">
+  @if(status() === 'connected') {
+
+  <div class="block-title">
+    You have
+    <span class="text-accent fill cl-ast">
+      @if(isLoading()) {
+      <ui-skeleton [lines]="1" [widths]="['60px']" />
+      } @else {
+      {{ ast() | number : "1.2-2" }} AST }
+    </span>
+    Tokens
+  </div>
+
+  <div class="block-title">
+    You have
+    <span class="text-accent fill cl-apt">
+      @if(isLoading()) {
+      <ui-skeleton [lines]="1" [widths]="['60px']" />
+      } @else {
+      {{ apt() | number : "1.2-2" }} AST }
+    </span>
+    Tokens
+  </div>
+
+  } @else {
+  <div class="block-title">
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+  </div>
+  <div class="block-title">
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+  </div>
+
+  }
+</div>

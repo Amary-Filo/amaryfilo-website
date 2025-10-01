@@ -6,7 +6,7 @@ header {
   top: 0;
   z-index: 999;
   padding: mx.rem(0) mx.rem(15);
-  // background-color: var(--body-bg-color);
+
   @include mx.b(tablet) {
     background-color: transparent;
   }

@@ -1,0 +1,23 @@
+<div class="ui-skeleton" [style.--gap]="gap()">
+  @if (showCircle) {
+  <div
+    class="skeleton-circle"
+    [style.width]="circleSize()"
+    [style.height]="circleSize()"
+  ></div>
+  }
+
+  <div class="lines">
+    @for (w of lineWidths; track $index) {
+    <div
+      class="skeleton-line"
+      [style.width]="w"
+      [style.height]="height()"
+    ></div>
+    }
+  </div>
+
+  @if (message()) {
+  <div class="msg">{{ message() }}</div>
+  }
+</div>

@@ -1,0 +1,46 @@
+@use "../../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../../shared/styles/sandbox.scss";
+
+.bit {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+  border-left: 20px solid rgba(var(--gray-500-rgb), 0.1);
+  border-right: 20px solid rgba(var(--gray-500-rgb), 0.1);
+
+  ui-benefit-item {
+    border-right: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+    border-left: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+  }
+
+  .block-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: -webkit-fill-available;
+    padding-left: 25px;
+    border-right: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+  }
+
+  &-btn {
+    width: 100%;
+  }
+
+  &-form {
+    background-color: rgba(var(--gray-500-rgb), 0.1);
+
+    .row-form {
+      background-color: var(--body-bg-color);
+    }
+  }
+}
+
+.separated-line {
+  &:first-child {
+    border-top: none;
+  }
+}

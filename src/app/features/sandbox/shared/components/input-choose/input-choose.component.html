@@ -1,0 +1,31 @@
+<div class="sandbox-ui">
+  <div class="ui-input" [class.disabled]="disabled()">
+    <div class="top">
+      <div class="text-secondary">{{ label() }}</div>
+    </div>
+    <div class="field">
+      @for (item of values(); track $index) {
+      <div class="control-wrap">
+        <input
+          class="control"
+          [id]="name() + $index"
+          [name]="name()"
+          type="radio"
+          [attr.inputmode]="'radio'"
+          [disabled]="disabled()"
+          [value]="item.value"
+          [checked]="value() === item.value"
+          (change)="onInput($event)"
+        />
+        <label class="label" [for]="name() + $index">{{ item.title }}</label>
+      </div>
+      }
+    </div>
+
+    <div class="bottom">
+      <div class="actions">
+        <ng-content select="[input-actions]" />
+      </div>
+    </div>
+  </div>
+</div>

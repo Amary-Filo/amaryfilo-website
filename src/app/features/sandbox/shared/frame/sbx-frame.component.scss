@@ -95,3 +95,21 @@
     overflow: hidden;
   }
 }
+
+.frameless-toolbar {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  display: flex;
+  gap: 8px;
+  padding: 6px 6px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+
+  .btn.s {
+    font-size: 14px;
+    padding: 4px 8px;
+  }
+}

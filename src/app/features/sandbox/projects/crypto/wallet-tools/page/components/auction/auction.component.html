@@ -1,0 +1,58 @@
+<div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-wallet-tools-balances-component />
+  </div>
+  <div class="row-text">
+    <h2 class="h1">Auction</h2>
+    <p class="text text-secondary">
+      <b>What are Auctions?</b><br />
+
+      Here you can bid <span class="text-accent cl-ast">AST</span> tokens to win
+      <span class="text-accent cl-apt">APT</span> tokens.
+      <span class="text-accent cl-apt">APT</span> is your main utility token —
+      you’ll need it to buy items in the
+      <span class="text-accent cl-market">Marketplace</span>. You can get
+      <span class="text-accent cl-apt">APT</span> token by take a bit in
+      <span class="text-accent cl-auction">auction pools</span>. If your bit win
+      then you will get <span class="text-accent cl-apt">APT</span> after pool
+      timer is end. Then you can spend
+      <span class="text-accent cl-apt">APT</span> in
+      <span class="text-accent cl-market">marketplace</span> and buy any items.
+    </p>
+  </div>
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <!-- Staking Info -->
+  <sbx-wallet-tools-row-title-content
+    title="Rules & Basics"
+    [useStatus]="false"
+  >
+    <ui-auction-info />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Active Pools -->
+  <sbx-wallet-tools-row-title-content
+    title="Active Auctions"
+    text="place your bids here to win APT"
+  >
+    <ui-auction-list [items]="active()" />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Withdraw Pools -->
+  <sbx-wallet-tools-row-title-content
+    title="My APT"
+    text="list of pools you’ve won: claim rewards"
+  >
+    <ui-auction-list />
+  </sbx-wallet-tools-row-title-content>
+
+  <!-- Past Pools -->
+  <sbx-wallet-tools-row-title-content
+    title="Past Pools"
+    text="history of finished pools and winners"
+  >
+    <ui-auction-list [items]="past()" />
+  </sbx-wallet-tools-row-title-content>
+</div>

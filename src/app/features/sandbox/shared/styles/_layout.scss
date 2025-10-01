@@ -1,0 +1,13 @@
+@use "./mixins" as mx;
+
+// :host .sbx-container,
+// .sbx-root .sbx-container {
+//   --sbx-container-width: #{mx.rem(1200)};
+//   max-width: var(--sbx-container-width);
+//   margin: 0 auto;
+//   padding: mx.rem(15);
+//   @include mx.b(mobile) {
+//     padding: mx.rem(10);
+//   }
+//   @include mx.container-init; /* включаем container queries */
+// }

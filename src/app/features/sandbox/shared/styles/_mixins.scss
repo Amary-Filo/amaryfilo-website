@@ -1,0 +1,68 @@
+@use "sass:math";
+
+@mixin theme($name, $global: false) {
+  @if $global {
+    @at-root body.#{$name} & {
+      @content;
+    }
+  }
+  &.#{$name} {
+    @content;
+  }
+}
+
+@mixin theme-scope($host) {
+  #{$host} {
+    @content;
+  }
+}
+
+@mixin scope($ns) {
+  :where(.#{$ns}) {
+    @content;
+  }
+}
+@mixin rem($size) {
+  font-size: math.div($size, 16) * 1rem;
+}
+
+@function rem($size) {
+  @return math.div($size, 16) * 1rem;
+}
+
+$bp-laptop: rem(1440);
+$bp-desktop: rem(1024);
+$bp-tablet: rem(769);
+$bp-mobile: rem(550);
+
+@mixin b($point) {
+  @if $point == laptop {
+    @media (max-width: $bp-laptop) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (max-width: $bp-desktop) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (max-width: $bp-tablet) {
+      @content;
+    }
+  } @else if $point == mobile {
+    @media (max-width: $bp-mobile) {
+      @content;
+    }
+  }
+}
+
+@mixin container-init {
+  & {
+    container-type: inline-size;
+  }
+}
+
+@mixin cq($query) {
+  @container (#{$query}) {
+    @content;
+  }
+}

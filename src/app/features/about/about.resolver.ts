@@ -23,14 +23,3 @@ export const aboutResolver: ResolveFn<AboutVM> = async () => {
 
   return { areas, skills, work };
 };
-
-// import { combineResolvers } from '@core/routing/resolve.helper';
-// import { SectionApi } from '@core/data/section.api';
-// import { Lang } from '@core/i18n/i18n.model';
-// import { inject } from '@angular/core';
-
-// export const aboutResolver = combineResolvers({
-//   areas:  () => inject(SectionApi).list((l: Lang) => `/assets/pages/about/areas.${l}.json`),
-//   skills: () => inject(SectionApi).list((l: Lang) => `/assets/pages/about/skills.${l}.json`),
-//   work:   () => inject(SectionApi).list((l: Lang) => `/assets/pages/about/work.${l}.json`),
-// });
