@@ -15,6 +15,14 @@
 .title {
   font-size: var(--fz-nd);
   font-weight: var(--fw-bold);
+
+  @include mx.b(750) {
+    font-size: var(--fz-md);
+  }
+
+  @include mx.b(650) {
+    font-size: var(--fz-sm);
+  }
 }
 
 .cl {

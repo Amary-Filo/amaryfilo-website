@@ -25,6 +25,15 @@
     border-bottom: var(--border-base-width) solid
       rgba(var(--border-base-color-rgb), var(--border-base-opacity));
 
+    @include mx.b(650) {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      grid-template-areas:
+        "info etc"
+        "content content";
+      padding: 0;
+    }
+
     &-info {
       display: flex;
       flex-direction: column;
@@ -33,6 +42,12 @@
       width: max-content;
       min-width: max-content;
       padding: 10px 15px 10px 0;
+      grid-area: info;
+      word-break: break-all;
+
+      @include mx.b(650) {
+        padding: 10px 15px 10px 15px;
+      }
 
       * {
         width: max-content;
@@ -47,11 +62,19 @@
 
       border-left: var(--border-base-width) solid
         rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+      grid-area: content;
+
+      @include mx.b(650) {
+        padding: 10px var(--spacing-md);
+        border-left: none;
+        border-top: var(--cp-row-border);
+      }
     }
 
     &-etc {
       display: flex;
       flex-shrink: 0;
+      grid-area: etc;
     }
 
     &-btns {
@@ -67,6 +90,10 @@
       border-left: 1px solid
         rgba(var(--border-base-color-rgb), var(--border-base-opacity));
       padding-left: var(--spacing-md);
+
+      @include mx.b(650) {
+        padding-right: var(--spacing-md);
+      }
     }
   }
 
@@ -89,6 +116,10 @@
     height: max-content;
 
     padding: 10px 20px;
+
+    @include mx.b(650) {
+      border-bottom: var(--cp-row-border);
+    }
 
     &-etc {
       display: flex;

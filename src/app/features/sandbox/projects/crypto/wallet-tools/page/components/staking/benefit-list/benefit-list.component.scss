@@ -13,6 +13,8 @@
   border-right: 20px solid rgba(var(--gray-500-rgb), 0.1);
   border-left: 20px solid rgba(var(--gray-500-rgb), 0.1);
 
+  overflow-x: scroll;
+
   ui-benefit-item {
     width: 100%;
     border-right: var(--border-base-width) solid

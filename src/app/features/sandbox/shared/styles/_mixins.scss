@@ -52,6 +52,10 @@ $bp-mobile: rem(550);
     @media (max-width: $bp-mobile) {
       @content;
     }
+  } @else {
+    @media (max-width: ($point + "px")) {
+      @content;
+    }
   }
 }
 

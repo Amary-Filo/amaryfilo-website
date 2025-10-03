@@ -51,6 +51,7 @@
         <div class="btns">
           @if (status() !== 'connected') {
           <ui-button
+            [fullWidth]="true"
             [leftIcon]="'metamaskColor'"
             color="metamask"
             [textColor]="true"
@@ -61,6 +62,7 @@
           } @else {
           <ui-button
             color="gray-900"
+            [fullWidth]="true"
             [isDropdown]="true"
             [isActive]="menuOpen()"
             (click)="menuOpen.set(!menuOpen())"
