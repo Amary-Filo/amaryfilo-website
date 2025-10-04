@@ -1,0 +1,487 @@
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">About project</h2>
+    <p class="text text-secondary">
+      This is a test project that shows how DeFi works on the Ethereum Sepolia
+      testnet. Here you can try the full cycle of a decentralized app: get AST
+      tokens from the faucet or staking, join auctions to win APT tokens, and
+      spend them in the marketplace on demo items.
+    </p>
+    <p class="text text-secondary">
+      I built and designed everything myself: the smart contracts, the site, and
+      the UI, using the latest tools and frameworks. All tokens, rewards,
+      contracts, and auctions are only on the testnet, so you don’t spend real
+      money.
+    </p>
+  </div>
+
+  <!-- Common Information -->
+  <sbx-row-title-content
+    main-title="Common Information"
+    text="Everything about Tokens and Contracts"
+    [useStatus]="false"
+  >
+    <div class="row-line row-sbc row-b">
+      <sbx-accordion-component
+        [title]="'What is AST Token?'"
+        [text]="'What you can do with this Token'"
+        [bottomText]="
+          'AST is your “working token”: easy to obtain and used to generate value.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          <span class="fw-800">
+            <u class="text-accent cl-ast">AST</u> is a Amfi Special Token.
+          </span>
+          The base token of the ecosystem. This token is the starting point of
+          the whole project flow.
+          <br />
+          <br />
+          <b> You can get it:</b>
+          <ul>
+            <li>for free via the faucet (ast contract).</li>
+            <li>
+              or multiply it through staking (lock tokens to earn interest).
+            </li>
+          </ul>
+          <br />
+          <b>The main purpose of AST:</b>
+          <ul>
+            <li>participate in staking to grow your balance,</li>
+            <li>use it in auctions: place bids to win APT tokens.</li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'What is APT Token?'"
+        [text]="'The exclusive utility token.'"
+        [bottomText]="
+          'APT is your “value token”: harder to earn, but it unlocks access to the Market.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          <span class="fw-800">
+            <u class="text-accent cl-apt">APT</u> is a Amfi Pure Token.
+          </span>
+          It is the rare and exclusive token of the this project ecosystem.
+          <br />
+          <br />
+          You cannot get it from faucet or staking. The only way is to win it in
+          auctions, by bidding with AST.
+          <br />
+          <br />
+          <b>The main purpose of APT:</b>
+          <ul>
+            <li>it is the utility token used in the Marketplace.</li>
+            <li>
+              only with APT you can buy guides, components, private channels, or
+              other digital goods.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-sbc row-b">
+      <sbx-accordion-component
+        [title]="'What is Staking?'"
+        [text]="'Lock AST to earn more AST.'"
+        [bottomText]="
+          'Engine of growth: it lets you increase your AST tokens, which you will later use in auctions to win APT.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          Staking is a way to multiply your AST balance over time.
+          <br /><br />
+          <b>Features:</b>
+          <ul>
+            <li>
+              You choose how long to lock your AST tokens (from 15 minutes to 3
+              hour in this demo).
+            </li>
+            <li>The longer you lock — the higher the percentage reward.</li>
+          </ul>
+          <br />
+          <b> Example calculation:</b>
+          <ul>
+            <li>Assume the APR is 4% per year.</li>
+            <li>If you stake 100 AST for 1 year: you would earn 4 AST.</li>
+            <li>
+              If you stake the same 100 AST for 15 minutes (≈ 1/35,000 of a
+              year), your reward will be: 100 * 4% * (15 minutes / 1 year) ≈
+              0.00011 AST.
+            </li>
+            <li>
+              At the end, you withdraw: 100.00011 AST (your initial + reward).
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'What is Auction?'"
+        [text]="'Bid AST tokens to win exclusive APT.'"
+        [bottomText]="
+          'Gateway to APT, and APT unlocks access to the Marketplace.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          APT (Amfi Pure Token) cannot be minted or farmed. The only way to get
+          APT is to win it in auctions.
+          <br /><br />
+          <b>How it works:</b>
+          <ul>
+            <li>
+              Each auction is a timed pool where users compete with bids in AST.
+            </li>
+            <li>
+              When the timer ends — the highest bidder wins and receives the APT
+              reward.
+            </li>
+            <li>All other bidders get their AST refunded automatically.</li>
+          </ul>
+          <br />
+          <b>Rules:</b>
+          <ul>
+            <li>You can only bid with AST tokens.</li>
+            <li>Minimum bid = 1 AST.</li>
+            <li>Each new bid must be higher than the previous one.</li>
+            <li>If you lose, your AST is refunded instantly.</li>
+            <li>
+              If you win, you must wait until the pool ends to claim your APT.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'What is Market?'"
+        [text]="'Use your APT tokens to unlock items and rewards.'"
+        [bottomText]="
+          'The final step: you stake AST, bid in auctions, win APT and then spend it on real digital items.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          The Marketplace is where you spend APT.
+          <br /><br />
+          <b>How it works:</b>
+          <ul>
+            <li>Each item has its price in APT.</li>
+            <li>Some items are digital downloads (PDFs, code, components).</li>
+            <li>
+              Other items are links (exclusive access, private channels, tools).
+            </li>
+            <li>After buying an item, it moves to your “My Items” section.</li>
+          </ul>
+
+          <br />
+
+          <b>Rules:</b>
+          <ul>
+            <li>Only APT tokens are accepted.</li>
+            <li>Items can have different types:</li>
+            <ul>
+              <li>Download: instantly get the file.</li>
+              <li>Link: access to a private resource or channel.</li>
+            </ul>
+            <li>Some items can be purchased multiple times.</li>
+            <li>
+              Purchases are on-chain events: once confirmed, the item is yours
+              forever.
+            </li>
+          </ul>
+          <br />
+          <b>Example:</b>
+          <ul>
+            <li>You have 2 APT from auctions.</li>
+            <li>You buy an item priced at 1.5 APT: it goes into “My Items”.</li>
+            <li>Remaining balance: 0.5 APT.</li>
+            <li>
+              Next time you open the Marketplace, your purchased item is
+              available under “Your items”.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+  </sbx-row-title-content>
+
+  <!-- How to use this project -->
+  <sbx-row-title-content
+    main-title="How to use"
+    text="Step by step guide"
+    [useStatus]="false"
+  >
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'1. Prerequisites (one-time)'"
+        [text]="'Network: switch your wallet to Sepolia.'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>What to do:</b>
+          <ul>
+            <li>Switch your wallet to Ethereum Sepolia network.</li>
+            <li>Gas: make sure you have a little test ETH for gas fees.</li>
+            <li>
+              (Optional) Add tokens to wallet: add the contract addresses for
+              AST and APT so you can see balances.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'2. Connect your wallet'"
+        [text]="'Click Connect Wallet on the top bar.'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>What to do:</b>
+          <ol>
+            <li>Click Connect Wallet on the top bar.</li>
+            <li>Approve connection in MetaMask (or your wallet).</li>
+            <li>
+              Once connected, the app will load your balances and on-chain
+              history.
+            </li>
+          </ol>
+          <br />
+          <b>Tips:</b>
+          <ul>
+            <li>
+              If you see “Wrong network”, switch to Sepolia in your wallet and
+              reload the page.
+            </li>
+            <li>
+              Balances and lists auto-refresh when your status changes to
+              connected.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'3. Get AST (fuel for the system)'"
+        [text]="'Start using AST Token from Contract Faucet'"
+        [bottomText]="'You’ll use AST to place bids in Auctions.'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>AST (Amfi Special Token) is your working token:</b>
+          <ul>
+            <li>Get it from the Faucet (if enabled), and/or</li>
+            <li>Earn more via Staking (next step).</li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'4. Stake AST (earn more AST)'"
+        [text]="'Get more AST Tokens'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>What to do:</b>
+          <ol>
+            <li>Open Staking.</li>
+            <li>Enter the amount of AST to stake and choose a duration.</li>
+            <li>
+              Click Stake: your wallet may ask for a one-time Approve
+              (allowance), then the Stake transaction.
+            </li>
+            <li>
+              After the timer reaches 00:00, click Withdraw to receive your
+              initial AST + reward.
+            </li>
+          </ol>
+          <br />
+          <b>Notes</b>
+          <ul>
+            <li>Longer durations have higher APR, so you earn more AST.</li>
+            <li>Positions become withdrawable only after the lock ends.</li>
+            <li>
+              The UI shows your positions and timers; when it hits 00:00 the
+              card switches to Withdraw.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'5. Bid in Auctions'"
+        [text]="'Win APT'"
+        [bottomText]="
+          'APT (Amfi Pure Token) is the premium token you spend in the Marketplace.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          <b>What to do:</b>
+          <ol>
+            <li>Open Auction → you’ll see Active, Withdraw, and Past pools.</li>
+            <li>
+              Pick an Active pool. Check:
+              <ul>
+                <li>End in: the countdown.</li>
+                <li>Top bid: current highest AST bid.</li>
+                <li>
+                  Min to outbid: the minimum you must bid to become the new
+                  leader.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Enter your AST amount and click BID.
+              <ul>
+                <li>
+                  First time: your wallet will prompt Approve AST: Auction.
+                </li>
+                <li>Then confirm the Bid transaction.</li>
+              </ul>
+            </li>
+            <li>
+              If you’re outbid, your previous bid becomes refundable
+              automatically by the contract; the UI will reflect your new
+              status.
+            </li>
+            <li>
+              When the timer ends:
+              <ul>
+                <li>
+                  If you are the highest bidder, the pool moves to Withdraw:
+                  click Withdraw to receive APT.
+                </li>
+                <li>
+                  Otherwise, you’re done (you’ll see the pool under Past).
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'6. Spend APT in the Marketplace'"
+        [text]="'Buy any items'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>What to do:</b>
+          <ol>
+            <li>
+              Open Marketplace → browse Available items (each shows a price in
+              APT).
+            </li>
+            <li>
+              Click Buy on an item:
+              <ul>
+                <li>
+                  First time: your wallet will prompt Approve APT → Marketplace.
+                </li>
+                <li>Then confirm the Buy transaction.</li>
+              </ul>
+            </li>
+            <li>
+              After the purchase confirms, the item moves to Your items:
+              <ul>
+                <li>Download items give you a file (e.g., .zip, .pdf).</li>
+                <li>Link items grant access to gated resources.</li>
+              </ul>
+            </li>
+          </ol>
+          <br />
+          <b>Partial payments (supported)</b>
+          <ul>
+            <li>
+              If you pay less than the listed price (on-chain), the app will
+              count it as a partial payment and show Remaining on the card
+              (e.g., “Paid 0.5 of 2 APT → Remaining 1.5 APT”).
+            </li>
+            <li>
+              Click Buy again later — the app will automatically pay only the
+              remaining amount.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+  </sbx-row-title-content>
+
+  <!-- Additional Information -->
+  <sbx-row-title-content
+    main-title="Additional Information"
+    text="Something more"
+    [useStatus]="false"
+  >
+    <div class="row-line row-sbc row-b">
+      <sbx-accordion-component
+        [title]="'Tracking & history'"
+        [text]="'What you can do with this Token'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          <b>Auction:</b> you’ll see live updates when bids are placed, pools
+          end, and when your status changes to Withdraw. <br /><br />
+          <b>Marketplace:</b> the app listens to Purchased events and updates
+          Your items and Remaining automatically. <br /><br />
+          <b>Balances:</b> AST/APT balances update after each confirmed
+          transaction
+        </div>
+      </sbx-accordion-component>
+
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'Common issues & quick fixes'"
+        [text]="'text'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          “Approve” keeps popping up: the first time for each token & spender is
+          normal. After that, you won’t see it until the allowance is
+          insufficient.
+          <br />
+          <ul>
+            <li>
+              Pending transaction: open it in the block explorer; if gas was too
+              low, speed it up from your wallet.
+            </li>
+            <li>Wrong network: switch to Sepolia and refresh.</li>
+            <li>
+              Decimals / min amount errors: the input enforces token decimals
+              and minimums; adjust the value until the error disappears.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-b">
+      <sbx-accordion-component
+        [title]="'TL;DR '"
+        [text]="'Flow in one line.'"
+        [bottomText]="'text'"
+      >
+        <div class="text-secondary" accordionContent>
+          Stake AST -> earn more AST -> bid in Auctions -> win APT -> buy items
+          in Marketplace.
+        </div>
+      </sbx-accordion-component>
+    </div>
+  </sbx-row-title-content>
+</div>

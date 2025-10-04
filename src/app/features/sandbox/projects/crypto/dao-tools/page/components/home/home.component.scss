@@ -1,0 +1,9 @@
+@use "../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../shared/styles/sandbox.scss";
+
+.home-btns {
+  @include mx.b(650) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,95 @@
+<div class="sandbox-ui">
+  <div class="header">
+    <div class="container">
+      <div class="card">
+        <div class="left-side">
+          <div class="logo fz-2xl">
+            <ui-icon name="amfiLogoGradient" />
+          </div>
+          <nav class="menu">
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'home'"
+              [isStrong]="page() === 'home'"
+              (click)="go('home')"
+              >Home</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'swap'"
+              [isStrong]="page() === 'swap'"
+              color="staking"
+              (click)="go('swap')"
+              >Swap</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'liquidity'"
+              [isStrong]="page() === 'liquidity'"
+              color="auction"
+              (click)="go('liquidity')"
+              >Liquidity</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'farming'"
+              [isStrong]="page() === 'farming'"
+              color="market"
+              (click)="go('farming')"
+              >Farming</ui-button
+            >
+            <ui-button
+              size="xs"
+              [isFilled]="page() === 'about'"
+              [isStrong]="page() === 'about'"
+              color="secondary-500"
+              (click)="go('about')"
+              >About</ui-button
+            >
+          </nav>
+        </div>
+        <div class="btns">
+          @if (status() !== 'connected') {
+          <ui-button
+            [fullWidth]="true"
+            [leftIcon]="'metamaskColor'"
+            color="metamask"
+            [textColor]="true"
+            (click)="connect()"
+          >
+            Connect Wallet
+          </ui-button>
+          } @else {
+          <ui-button
+            color="gray-900"
+            [fullWidth]="true"
+            [isDropdown]="true"
+            [isActive]="menuOpen()"
+            (click)="menuOpen.set(!menuOpen())"
+          >
+            {{ shortAddr() }}
+          </ui-button>
+          } @if (menuOpen()) {
+
+          <div class="dropdown card">
+            <div class="row">Status: {{ status() }}</div>
+            <div class="row">Account: {{ account() }}</div>
+            <div class="row fl gg-10 mt-10">
+              <ui-button color="gray-900" size="sm" (click)="switchToSepolia()"
+                >Sepolia</ui-button
+              >
+              <ui-button
+                [textColor]="true"
+                size="sm"
+                color="error"
+                (click)="disconnect()"
+                >Logout</ui-button
+              >
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

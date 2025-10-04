@@ -1,0 +1,55 @@
+import { Manifest } from '@sandbox/shared/utils/tokens';
+import { DaoToolsPage } from './page/dao-tools.page';
+import { CONTRACTS, SEPOLIA } from './services/contracts/addresses';
+
+import APT_ABI from './services/contracts/apt.abi.json';
+import AST_ABI from './services/contracts/ast.abi.json';
+import AUCTION_ABI from './services/contracts/auction.abi.json';
+import LOCKER_ABI from './services/contracts/locker.abi.json';
+import MARKET_ABI from './services/contracts/market.abi.json';
+import STAKING_ABI from './services/contracts/staking.abi.json';
+
+export const CRYPTO_DAO_TOOLS_MANIFEST: Manifest = {
+  id: 'crypto-dao-tools',
+  slug: 'dao-tools',
+  kind: 'crypto',
+  title: 'Dao Tools',
+  description:
+    'A demo project showing basic dApp scenarios: connecting a wallet, checking balances, staking tokens, participating in auctions, and purchasing digital items in the store.',
+  tags: [
+    'crypto',
+    'metamask',
+    'wallet',
+    'sepolia',
+    'contracts',
+    'tokens',
+    'dao',
+  ],
+  component: DaoToolsPage,
+  defaultConfig: {
+    ui: {
+      frameless: true,
+    },
+    web3: {
+      allowedChains: [SEPOLIA],
+      allowedWallets: ['injected', 'walletconnect'],
+      adapterOptions: {
+        walletconnect: {
+          projectId: '2b4c4b7cf2cd6125d3f67b94a6beeca7',
+        },
+        injected: {
+          preferred: 'metamask',
+        },
+      },
+      contracts: CONTRACTS[SEPOLIA],
+      abis: {
+        AST: AST_ABI,
+        APT: APT_ABI,
+        AUCTION: AUCTION_ABI,
+        LOCKER: LOCKER_ABI,
+        MARKET: MARKET_ABI,
+        STAKING: STAKING_ABI,
+      },
+    },
+  },
+};

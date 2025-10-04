@@ -1,0 +1,36 @@
+import { Component, model } from '@angular/core';
+
+import { PageTabs } from '../../../types';
+
+import { RowTitleContentComponent } from '../row-title-content/row-title-content.component';
+import { UIHomeContractsAddressesComponent } from './home-contracts-addresses/home-contracts-addresses.component';
+import { UIHomeTokensComponent } from './home-tokens/home-tokens.component';
+import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
+
+@Component({
+  selector: 'sbx-dao-tools-home-tab',
+  imports: [
+    UIHomeContractsAddressesComponent,
+    RowTitleContentComponent,
+    UIHomeTokensComponent,
+    UIButtonComponent,
+  ],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.scss',
+  standalone: true,
+})
+export class DaoToolsHomeComponent {
+  page = model<PageTabs>();
+
+  go(page: PageTabs) {
+    this.page.set(page);
+  }
+
+  openMetamaskLink() {
+    window.open(
+      `https://chromewebstore.google.com/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn`,
+      '_blank',
+      'noopener'
+    );
+  }
+}

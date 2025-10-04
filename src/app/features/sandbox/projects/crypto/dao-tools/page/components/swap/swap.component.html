@@ -1,0 +1,82 @@
+<div class="sandbox-ui">
+  <div class="row-text">
+    <h2 class="h1">Swap Page</h2>
+    <p class="text text-secondary">
+      This is a test project that shows how DeFi works on the Ethereum Sepolia
+      testnet. Here you can try the full cycle of a decentralized app: get AST
+      tokens from the faucet or staking, join auctions to win APT tokens, and
+      spend them in the marketplace on demo items.
+    </p>
+  </div>
+
+  <!-- Common Information -->
+  <sbx-row-title-content
+    main-title="Common Information"
+    text="Everything about Tokens and Contracts"
+    [useStatus]="false"
+  >
+    <div class="row-line row-sbc row-b">
+      <sbx-accordion-component
+        [title]="'What is AST Token?'"
+        [text]="'What you can do with this Token'"
+        [bottomText]="
+          'AST is your “working token”: easy to obtain and used to generate value.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          <span class="fw-800">
+            <u class="text-accent cl-ast">AST</u> is a Amfi Special Token.
+          </span>
+          The base token of the ecosystem. This token is the starting point of
+          the whole project flow.
+          <br />
+          <br />
+          <b> You can get it:</b>
+          <ul>
+            <li>for free via the faucet (ast contract).</li>
+            <li>
+              or multiply it through staking (lock tokens to earn interest).
+            </li>
+          </ul>
+          <br />
+          <b>The main purpose of AST:</b>
+          <ul>
+            <li>participate in staking to grow your balance,</li>
+            <li>use it in auctions: place bids to win APT tokens.</li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'What is APT Token?'"
+        [text]="'The exclusive utility token.'"
+        [bottomText]="
+          'APT is your “value token”: harder to earn, but it unlocks access to the Market.'
+        "
+      >
+        <div class="text-secondary" accordionContent>
+          <span class="fw-800">
+            <u class="text-accent cl-apt">APT</u> is a Amfi Pure Token.
+          </span>
+          It is the rare and exclusive token of the this project ecosystem.
+          <br />
+          <br />
+          You cannot get it from faucet or staking. The only way is to win it in
+          auctions, by bidding with AST.
+          <br />
+          <br />
+          <b>The main purpose of APT:</b>
+          <ul>
+            <li>it is the utility token used in the Marketplace.</li>
+            <li>
+              only with APT you can buy guides, components, private channels, or
+              other digital goods.
+            </li>
+          </ul>
+        </div>
+      </sbx-accordion-component>
+    </div>
+  </sbx-row-title-content>
+</div>

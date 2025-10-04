@@ -1,0 +1,80 @@
+<div class="row-line">
+  <div class="row-spacer"></div>
+</div>
+
+<div class="row-line row-t row-sbc">
+  <sbx-accordion-component
+    class="sandbox-ui"
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [content]="ast() + ' AST'"
+    [text]="'How many tokens you have right now'"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        My <span class="text-accent fill cl-ast">AST</span> Token
+      </span>
+    </div>
+
+    <p class="text-secondary" accordionBottom>
+      Use this tokens for claim
+      <span class="text-accent cl-apt">APT</span> via
+      <span class="text-accent cl-auction">Auction</span>.<br />
+      For getting more
+      <span class="text-accent cl-ast">AST</span> Tokens just
+      <span class="text-accent cl-staking">Stake</span> it and Claim reward.
+    </p>
+
+    <ng-container accordionBottomButtons>
+      <ui-button
+        (click)="go('swap')"
+        color="staking"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'handCoinFill'"
+      />
+      <ui-button
+        (click)="go('liquidity')"
+        color="auction"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'auctionFill'"
+      />
+    </ng-container>
+  </sbx-accordion-component>
+
+  <div class="row-spacer"></div>
+
+  <sbx-accordion-component
+    class="sandbox-ui"
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [content]="apt() + ' APT'"
+    [text]="'How many tokens you have right now'"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        My <span class="text-accent fill cl-apt">APT</span> Token
+      </span>
+    </div>
+
+    <p class="text-secondary" accordionBottom>
+      Use this tokens for buy items in marketplace and burn
+      <span class="text-accent cl-apt">APT</span> token.
+    </p>
+
+    <ng-container accordionBottomButtons>
+      <ui-button
+        (click)="go('farming')"
+        color="market"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'shoppingCart2Fill'"
+      />
+    </ng-container>
+  </sbx-accordion-component>
+</div>
+
+<div class="row-line row-t">
+  <div class="row-spacer"></div>
+</div>

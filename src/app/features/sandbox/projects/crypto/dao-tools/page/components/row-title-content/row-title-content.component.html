@@ -1,0 +1,26 @@
+<ng-content select="[rowTitle]">
+  @if(title()) {
+  <div class="row-info row-tb">
+    <span class="title">{{ title() }}</span>
+    @if(text()) {
+    <p class="text-secondary">{{ text() }}</p>
+    }
+  </div>
+  }
+</ng-content>
+
+<div class="row-line">
+  <div class="row-spacer"></div>
+</div>
+
+@if(useStatus() && status() !== 'connected') {
+<sbx-connect-wallet-text [connectText]="connectText()" />
+} @else {
+<div class="row-line row-fdc row-t">
+  <ng-content />
+</div>
+}
+
+<div class="row-line">
+  <div class="row-spacer"></div>
+</div>
