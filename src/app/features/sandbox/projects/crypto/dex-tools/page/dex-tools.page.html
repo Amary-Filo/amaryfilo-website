@@ -1,0 +1,19 @@
+<section class="sbx-wallet-tools sandbox-ui">
+  <sbx-header-component [(page)]="page" />
+
+  <div class="container">
+    <div class="card">
+      @if(page() === 'home') { <sbx-dex-tools-home-tab [(page)]="page" /> }
+      <!-- Page Swap -->
+      @if(page() === 'swap') { <sbx-dex-tools-swap-tab /> }
+      <!-- Page Liquidity -->
+      @if(page() === 'liquidity') { <sbx-dex-tools-liquidity-tab /> }
+      <!-- Page Farming -->
+      @if(page() === 'farming') { <sbx-dex-tools-farming-tab /> }
+      <!-- Page About -->
+      @if(page() === 'about') { <sbx-dex-tools-about-tab /> }
+    </div>
+  </div>
+
+  <sbx-footer-component />
+</section>
