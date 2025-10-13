@@ -1,0 +1,34 @@
+<div class="row-info row-b farm-info sandbox-ui">
+  <div class="row-line row-sbc">
+    <div class="block-title fl fl-dc">
+      <span class="text-secondary">Reward Rate (RPS)</span>
+      <div>
+        @if(loading()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div class="text-accent cl-apt">{{ summary()?.rpsHuman }} APT/s</div>
+        }
+      </div>
+    </div>
+    <div class="block-title fl fl-dc">
+      <span class="text-secondary">Your Pending</span>
+      <div>
+        @if(loading()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div class="text-accent cl-apt">{{ summary()?.pendingHuman }} APT</div>
+        }
+      </div>
+    </div>
+    <div class="block-title fl fl-dc">
+      <span class="text-secondary">Staked LP</span>
+      <div>
+        @if(loading()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div class="text-accent cl-lp">{{ summary()?.stakedLpHuman }} LP</div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

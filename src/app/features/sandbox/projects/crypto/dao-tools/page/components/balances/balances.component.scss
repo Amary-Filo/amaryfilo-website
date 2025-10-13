@@ -1,0 +1,22 @@
+@use "../../../../../../shared/styles/mixins" as mx;
+@use "../../../../../../shared/styles/sandbox.scss";
+
+:host {
+  width: 100%;
+}
+
+.balances {
+  width: 100%;
+  display: flex;
+  min-height: 50px;
+}
+
+.block-title {
+  padding: 0 25px;
+  border-right: var(--border-base-width) solid
+    rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+
+  &:last-child {
+    border-right: none;
+  }
+}

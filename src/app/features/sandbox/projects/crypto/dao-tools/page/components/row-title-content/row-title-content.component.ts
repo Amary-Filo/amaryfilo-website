@@ -10,7 +10,7 @@ import { ConnectWalletTextComponent } from '../connect-wallet-text/connect-walle
   imports: [ConnectWalletTextComponent],
 })
 export class RowTitleContentComponent {
-  title = input<string>();
+  mainTitle = input<string>();
   text = input<string>();
   useStatus = input<boolean>(true);
   connectText = input<string>();

@@ -7,19 +7,22 @@
   <div class="block-title" accordionHeadInfo>
     <span class="title">
       Contract address for
-      <span [class]="`text-accent fill cl-${contractKey().toLowerCase()}`">{{
-        contractKey()
-      }}</span>
+      <span
+        [class]="`text-accent fill cl-${contractName.toLowerCase().replace('/','-')}`"
+        >{{ contractName }}</span
+      >
       Token
     </span>
   </div>
 
   <p class="text-secondary" accordionBottom>
     You can open this
-    <span [class]="`text-accent cl-${contractKey().toLowerCase()}`">
-      {{ contractKey() }}</span
+    <span
+      [class]="`text-accent cl-${contractName.toLowerCase().replace('/','-')}`"
     >
-    Token contract in Etherscan. This contract is verified.
+      {{ contractName }}</span
+    >
+    verified contract in Etherscan.
   </p>
 
   <ng-container accordionBottomButtons>

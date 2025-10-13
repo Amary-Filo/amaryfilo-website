@@ -117,6 +117,7 @@ $status-yellow: (
 );
 
 $colors: (
+  home: #007bff,
   ast: #007bff,
   apt: #c300ff,
   staking: #ff00a6,
@@ -125,6 +126,17 @@ $colors: (
   market: #ff0000,
   lock: #1ecfc6,
   button: #007bff,
+  weth: #534075,
+  factory: #3b98bd,
+  router: #495057,
+  swap: #1ecfc6,
+  liquidity: #ff0059,
+  farming: #0033ff,
+  farm: #0033ff,
+  lp-ast-apt: #11b03b,
+  lp-ast-weth: #e2c000,
+  lp-aa: #11b03b,
+  lp-aw: #e2c000,
 );
 
 :root,

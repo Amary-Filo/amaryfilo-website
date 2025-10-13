@@ -1,0 +1,48 @@
+<div class="sandbox-ui">
+  <div
+    [class]="'ui-select cl-' + color()"
+    [class.disabled]="disabled()"
+    [class.open]="open()"
+  >
+    <div class="field" (click)="toggle()">
+      <div class="control-wrap">
+        <div class="control-inner">
+          <div class="control" [class.has-value]="value() !== undefined">
+            @if (currentLabel(); as lbl) {
+            <span class="selected-value">{{ lbl }}</span>
+            } @else {
+            <span class="selected-value placeholder"></span>
+            }
+          </div>
+          <label class="label">{{ label() }}</label>
+
+          <div class="suffix">
+            @if (clearable() && value() !== undefined && !disabled()) {
+            <span class="clear" (click)="clear($event)">clear</span>
+            }
+            <span class="caret" [class.rotated]="open()">▾</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    @if (open()) {
+    <div class="dropdown" #dropdown>
+      @for (it of items(); track it.value) {
+      <div
+        class="opt"
+        [class.active]="isSelected(it.value)"
+        (click)="select(it.value)"
+      >
+        @if (optionTpl) {
+        <ng-container *ngTemplateOutlet="optionTpl; context: { $implicit: it }">
+        </ng-container>
+        } @else {
+        <span>{{ it.label }}</span>
+        }
+      </div>
+      }
+    </div>
+    }
+  </div>
+</div>

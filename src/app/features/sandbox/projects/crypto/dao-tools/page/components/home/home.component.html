@@ -1,12 +1,13 @@
 <div class="sandbox-ui">
   <div class="row-text">
-    <h2 class="h1">AMFI Web3 Demo</h2>
+    <h2 class="h1">AMFI DAO Tools</h2>
     <p class="text text-secondary">
-      This is a test project that shows how DeFi works on the
+      This is a demo project that showcases the core mechanics of decentralized
+      finance within the AMFI ecosystem on the
       <b class="text-accent fill cl-secondary-500">Ethereum Sepolia testnet</b>.
-      Here you can try the full cycle of a decentralized app: get AST tokens
-      from the faucet or staking, join auctions to win APT tokens, and spend
-      them in the marketplace on demo items.
+      Here you can provide liquidity to token pairs, earn rewards through
+      farming, and experiment with token swaps, experiencing how automated
+      market makers (AMMs) and yield protocols work in practice.
     </p>
     <br />
     <p class="text-secondary t-c fz-md">
@@ -41,25 +42,20 @@
   </div>
 
   <!-- Tokens -->
-  <ui-home-tokens [(page)]="page" />
+  <ui-dao-home-tokens [(page)]="page" />
 
-  <!-- Staking -->
-  <sbx-row-title-content main-title="My Stakings">
-    <!-- <ui-staking-list /> -->
+  <!-- Liquidity -->
+  <sbx-row-title-content mainTitle="Liquidity info">
+    <ui-liquidity-info />
   </sbx-row-title-content>
 
-  <!-- Auction -->
-  <sbx-row-title-content main-title="My Auction">
-    <!-- <ui-auction-list type="withdraw" /> -->
-  </sbx-row-title-content>
-
-  <!-- Marketplace -->
-  <sbx-row-title-content main-title="My Items">
-    <!-- <ui-marketplace-items-list /> -->
+  <!-- Farming -->
+  <sbx-row-title-content mainTitle="Farming info">
+    <ui-farming-summary />
   </sbx-row-title-content>
 
   <!-- Contracts & Addresses -->
-  <sbx-row-title-content main-title="Contracts & addresses" [useStatus]="false">
-    <ui-home-contracts-addresses />
+  <sbx-row-title-content mainTitle="Contracts & addresses" [useStatus]="false">
+    <ui-dao-home-contracts-addresses />
   </sbx-row-title-content>
 </div>

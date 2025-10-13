@@ -1,0 +1,60 @@
+<div class="sandbox-ui">
+  <div class="row-line">
+    <ui-input-choose
+      label="Select Pair"
+      [values]="pairItems"
+      [(value)]="pair"
+    />
+  </div>
+
+  <div class="row-info row-tb lp-info">
+    <div class="row-line row-sbc">
+      <div class="block-title fl fl-dc">
+        <span class="text-secondary">Reserves: </span>
+        @if(loadingQuick()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div>
+          <span [class]="'text-accent cl-' + tokenA().toLocaleLowerCase()">
+            {{ info()!.reserve0 | number : "1.2-3" }} {{ tokenA() }}
+          </span>
+          /
+          <span [class]="'text-accent cl-' + tokenB().toLocaleLowerCase()">
+            {{ info()!.reserve1 | number : "1.2-3" }} {{ tokenB() }}
+          </span>
+        </div>
+        }
+      </div>
+      <div class="block-title fl fl-dc">
+        <span class="text-secondary">Total Supply LP: </span>
+        @if(loadingQuick()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div>
+          <span
+            [class]="
+              'text-accent cl-pair-' +
+              pairLabel()?.toLocaleLowerCase()?.replace('/', '-')
+            "
+          >
+            {{ info()!.totalSupply }} {{ pairLabel() }}
+          </span>
+        </div>
+        }
+      </div>
+      <div class="block-title fl fl-dc">
+        <span class="text-secondary">My LP: </span>
+        @if(loadingQuick()) {
+        <ui-skeleton [lines]="1" [widths]="['120px']" />
+        } @else {
+        <div>
+          <span [class]="'text-accent'">
+            {{ info()!.myLp | number : "1.2-3" }} ({{ info()!.mySharePct }}%
+            share)
+          </span>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,13 @@
 <div class="sandbox-ui">
   <div class="row-text">
-    <h2 class="h1">About project</h2>
+    <h2 class="h1">AMFI DAO Tools</h2>
     <p class="text text-secondary">
-      This is a test project that shows how DeFi works on the Ethereum Sepolia
-      testnet. Here you can try the full cycle of a decentralized app: get AST
-      tokens from the faucet or staking, join auctions to win APT tokens, and
-      spend them in the marketplace on demo items.
+      This is a demo project that showcases the core mechanics of decentralized
+      finance within the AMFI ecosystem on the
+      <b class="text-accent fill cl-secondary-500">Ethereum Sepolia testnet</b>.
+      Here you can provide liquidity to token pairs, earn rewards through
+      farming, and experiment with token swaps, experiencing how automated
+      market makers (AMMs) and yield protocols work in practice.
     </p>
     <p class="text text-secondary">
       I built and designed everything myself: the smart contracts, the site, and
@@ -17,39 +19,25 @@
 
   <!-- Common Information -->
   <sbx-row-title-content
-    main-title="Common Information"
+    mainTitle="Common Information"
     text="Everything about Tokens and Contracts"
     [useStatus]="false"
   >
     <div class="row-line row-sbc row-b">
       <sbx-accordion-component
         [title]="'What is AST Token?'"
-        [text]="'What you can do with this Token'"
-        [bottomText]="
-          'AST is your “working token”: easy to obtain and used to generate value.'
-        "
+        [text]="'Your “working” token for day-to-day actions.'"
+        [bottomText]="'Easy to obtain use for fuels swaps and liquidity.'"
       >
         <div class="text-secondary" accordionContent>
           <span class="fw-800">
             <u class="text-accent cl-ast">AST</u> is a Amfi Special Token.
           </span>
-          The base token of the ecosystem. This token is the starting point of
-          the whole project flow.
           <br />
-          <br />
-          <b> You can get it:</b>
-          <ul>
-            <li>for free via the faucet (ast contract).</li>
-            <li>
-              or multiply it through staking (lock tokens to earn interest).
-            </li>
-          </ul>
-          <br />
-          <b>The main purpose of AST:</b>
-          <ul>
-            <li>participate in staking to grow your balance,</li>
-            <li>use it in auctions: place bids to win APT tokens.</li>
-          </ul>
+          AST is the base utility token of this demo. You can get it from the
+          faucet or by swapping. Use AST to provide liquidity (e.g., AST/APT,
+          AST/WETH), trade on the AMM, and generally move value through the
+          system.
         </div>
       </sbx-accordion-component>
 
@@ -57,156 +45,149 @@
 
       <sbx-accordion-component
         [title]="'What is APT Token?'"
-        [text]="'The exclusive utility token.'"
+        [text]="'The primary reward and marketplace currency.'"
         [bottomText]="
-          'APT is your “value token”: harder to earn, but it unlocks access to the Market.'
+          'Earn it via the farm and spend it where utility matters.'
         "
       >
         <div class="text-secondary" accordionContent>
           <span class="fw-800">
             <u class="text-accent cl-apt">APT</u> is a Amfi Pure Token.
           </span>
-          It is the rare and exclusive token of the this project ecosystem.
           <br />
-          <br />
-          You cannot get it from faucet or staking. The only way is to win it in
-          auctions, by bidding with AST.
-          <br />
-          <br />
-          <b>The main purpose of APT:</b>
-          <ul>
-            <li>it is the utility token used in the Marketplace.</li>
-            <li>
-              only with APT you can buy guides, components, private channels, or
-              other digital goods.
-            </li>
-          </ul>
+          APT is harder to obtain directly. The main way to get it is by staking
+          LP/AA in the Farm to earn APT over time. You can also swap for APT if
+          liquidity allows. In the broader ecosystem, APT unlocks premium
+          features and items.
         </div>
       </sbx-accordion-component>
     </div>
 
     <div class="row-line row-sbc row-b">
       <sbx-accordion-component
-        [title]="'What is Staking?'"
-        [text]="'Lock AST to earn more AST.'"
-        [bottomText]="
-          'Engine of growth: it lets you increase your AST tokens, which you will later use in auctions to win APT.'
-        "
+        [title]="'What is LP/AA?'"
+        [text]="'Your proof of ownership in the AST/APT pool.'"
+        [bottomText]="'Stake it in the Farm to earn APT.'"
       >
         <div class="text-secondary" accordionContent>
-          Staking is a way to multiply your AST balance over time.
-          <br /><br />
-          <b>Features:</b>
-          <ul>
-            <li>
-              You choose how long to lock your AST tokens (from 15 minutes to 3
-              hour in this demo).
-            </li>
-            <li>The longer you lock — the higher the percentage reward.</li>
-          </ul>
+          <span class="fw-800">
+            <u class="text-accent cl-lp-ast-apt">LP/AA </u> is a AST/APT
+            Liquidity Token.
+          </span>
           <br />
-          <b> Example calculation:</b>
-          <ul>
-            <li>Assume the APR is 4% per year.</li>
-            <li>If you stake 100 AST for 1 year: you would earn 4 AST.</li>
-            <li>
-              If you stake the same 100 AST for 15 minutes (≈ 1/35,000 of a
-              year), your reward will be: 100 * 4% * (15 minutes / 1 year) ≈
-              0.00011 AST.
-            </li>
-            <li>
-              At the end, you withdraw: 100.00011 AST (your initial + reward).
-            </li>
-          </ul>
+          When you provide liquidity to the AST/APT pool, you receive LP/AA
+          tokens. They represent your share of the pool and entitle you to 0.3%
+          of trading fees plus APT farming rewards. You can stake them in the
+          Farm to earn extra APT over time.
         </div>
       </sbx-accordion-component>
 
       <div class="row-spacer"></div>
 
       <sbx-accordion-component
-        [title]="'What is Auction?'"
-        [text]="'Bid AST tokens to win exclusive APT.'"
-        [bottomText]="
-          'Gateway to APT, and APT unlocks access to the Marketplace.'
-        "
+        [title]="'What is LP/AW?'"
+        [text]="'Your proof of ownership in the AST/WETH pool.'"
+        [bottomText]="'Can be used for swaps or future incentives.'"
       >
         <div class="text-secondary" accordionContent>
-          APT (Amfi Pure Token) cannot be minted or farmed. The only way to get
-          APT is to win it in auctions.
-          <br /><br />
-          <b>How it works:</b>
-          <ul>
-            <li>
-              Each auction is a timed pool where users compete with bids in AST.
-            </li>
-            <li>
-              When the timer ends — the highest bidder wins and receives the APT
-              reward.
-            </li>
-            <li>All other bidders get their AST refunded automatically.</li>
-          </ul>
+          <span class="fw-800">
+            <u class="text-accent cl-lp-ast-weth">LP/AW</u> is a AST/WETH
+            Liquidity Token.
+          </span>
           <br />
-          <b>Rules:</b>
-          <ul>
-            <li>You can only bid with AST tokens.</li>
-            <li>Minimum bid = 1 AST.</li>
-            <li>Each new bid must be higher than the previous one.</li>
-            <li>If you lose, your AST is refunded instantly.</li>
-            <li>
-              If you win, you must wait until the pool ends to claim your APT.
-            </li>
-          </ul>
+          Providing liquidity to the AST/WETH pair gives you LP/AW tokens. These
+          represent your share in the AST/WETH pool and accumulate 0.3% swap
+          fees. Although they are not used in the APT farm, they can be redeemed
+          anytime for the underlying AST and WETH.
         </div>
       </sbx-accordion-component>
     </div>
-    <div class="row-line row-b">
+
+    <div class="row-line row-sbc row-b">
       <sbx-accordion-component
-        [title]="'What is Market?'"
-        [text]="'Use your APT tokens to unlock items and rewards.'"
-        [bottomText]="
-          'The final step: you stake AST, bid in auctions, win APT and then spend it on real digital items.'
-        "
+        [title]="'What is WETH?'"
+        [text]="'ERC-20 ETH used in AMMs.'"
+        [bottomText]="'Pairs cleanly with tokens like AST.'"
       >
         <div class="text-secondary" accordionContent>
-          The Marketplace is where you spend APT.
-          <br /><br />
-          <b>How it works:</b>
-          <ul>
-            <li>Each item has its price in APT.</li>
-            <li>Some items are digital downloads (PDFs, code, components).</li>
-            <li>
-              Other items are links (exclusive access, private channels, tools).
-            </li>
-            <li>After buying an item, it moves to your “My Items” section.</li>
-          </ul>
+          <span class="fw-800">
+            <u class="text-accent cl-weth">WETH</u> is a Wrapped ETH Token.
+          </span>
+          <br />
+          WETH wraps native ETH into a standard ERC-20, making it compatible
+          with the AMM and LP math. You can swap between WETH and other tokens,
+          or provide liquidity (AST/WETH). The router also enforces safety knobs
+          around WETH (like reserve floor and daily caps) to protect pools.
+        </div>
+      </sbx-accordion-component>
 
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'What is Router?'"
+        [text]="'The trading & liquidity entry point.'"
+        [bottomText]="'Swaps, adds/removes liquidity, and guards price impact.'"
+      >
+        <div class="text-secondary" accordionContent>
+          The Router orchestrates interactions with pairs: it routes trades,
+          transfers tokens into the pair, mints/burns LP on liquidity changes,
+          and enforces safety rules (price-impact limit, WETH reserve floor,
+          daily WETH cap). Approvals are granted to the Router so it can move
+          your tokens for these actions.
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line row-sbc row-b">
+      <sbx-accordion-component
+        [title]="'What is Factory?'"
+        [text]="'The registry that creates and tracks pairs.'"
+        [bottomText]="'Ensures each token pair has a single canonical pool.'"
+      >
+        <div class="text-secondary" accordionContent>
+          The Factory deploys new Pair contracts and records them. When you
+          request AST/APT, it returns the canonical pair address. The Router
+          relies on the Factory to find pools, ensuring swaps and liquidity
+          operations always hit the right contract.
+        </div>
+      </sbx-accordion-component>
+
+      <div class="row-spacer"></div>
+
+      <sbx-accordion-component
+        [title]="'What is Farm?'"
+        [text]="'Stake LP tokens to earn APT passively.'"
+        [bottomText]="'Reward center for liquidity providers.'"
+      >
+        <div class="text-secondary" accordionContent>
+          The Farm distributes APT rewards to users who stake LP/AA tokens. The
+          longer you keep them staked, the more APT you earn.
+          <br />
+          <b>You can:</b>
+          <ul>
+            <li>Deposit LP/AA to start farming.</li>
+            <li>Harvest to claim pending APT.</li>
+            <li>Withdraw LP/AA anytime.</li>
+          </ul>
           <br />
 
-          <b>Rules:</b>
-          <ul>
-            <li>Only APT tokens are accepted.</li>
-            <li>Items can have different types:</li>
-            <ul>
-              <li>Download: instantly get the file.</li>
-              <li>Link: access to a private resource or channel.</li>
-            </ul>
-            <li>Some items can be purchased multiple times.</li>
-            <li>
-              Purchases are on-chain events: once confirmed, the item is yours
-              forever.
-            </li>
-          </ul>
-          <br />
-          <b>Example:</b>
-          <ul>
-            <li>You have 2 APT from auctions.</li>
-            <li>You buy an item priced at 1.5 APT: it goes into “My Items”.</li>
-            <li>Remaining balance: 0.5 APT.</li>
-            <li>
-              Next time you open the Marketplace, your purchased item is
-              available under “Your items”.
-            </li>
-          </ul>
+          It’s a passive income layer built on top of liquidity providing.
+        </div>
+      </sbx-accordion-component>
+    </div>
+
+    <div class="row-line ow-b">
+      <sbx-accordion-component
+        [title]="'What is Pair (Liquidity pools)?'"
+        [text]="'A two-token pool that mints LP to liquidity providers.'"
+        [bottomText]="'Holds reserves; prices move with supply/demand.'"
+      >
+        <div class="text-secondary" accordionContent>
+          Each pair (e.g., AST/APT, AST/WETH) holds reserves of two tokens. It
+          follows the constant-product AMM model. Liquidity providers deposit
+          both tokens at the current ratio and receive LP tokens representing
+          their share. Traders swap against the reserves; fees (0.3%) accrue to
+          LPs via the pool state.
         </div>
       </sbx-accordion-component>
     </div>
@@ -214,25 +195,25 @@
 
   <!-- How to use this project -->
   <sbx-row-title-content
-    main-title="How to use"
+    mainTitle="How to use"
     text="Step by step guide"
     [useStatus]="false"
   >
     <div class="row-line row-b">
       <sbx-accordion-component
-        [title]="'1. Prerequisites (one-time)'"
+        [title]="'1. Connect & Prepare'"
         [text]="'Network: switch your wallet to Sepolia.'"
-        [bottomText]="'text'"
+        [showBottom]="false"
       >
         <div class="text-secondary" accordionContent>
           <b>What to do:</b>
           <ul>
-            <li>Switch your wallet to Ethereum Sepolia network.</li>
-            <li>Gas: make sure you have a little test ETH for gas fees.</li>
+            <li>Network: Ethereum Sepolia testnet.</li>
             <li>
-              (Optional) Add tokens to wallet: add the contract addresses for
-              AST and APT so you can see balances.
+              Wallet: Connect MetaMask. Make sure you have a little SEP ETH for
+              gas.
             </li>
+            <li>Get AST: Use the faucet (recommended) or Swap (WETH/AST).</li>
           </ul>
         </div>
       </sbx-accordion-component>
@@ -240,30 +221,31 @@
 
     <div class="row-line row-b">
       <sbx-accordion-component
-        [title]="'2. Connect your wallet'"
+        [title]="'2. Swap (optional)'"
         [text]="'Click Connect Wallet on the top bar.'"
-        [bottomText]="'text'"
+        [showBottom]="false"
       >
         <div class="text-secondary" accordionContent>
           <b>What to do:</b>
           <ol>
-            <li>Click Connect Wallet on the top bar.</li>
-            <li>Approve connection in MetaMask (or your wallet).</li>
+            <li>Goal: Convert between AST, APT, WETH using the AMM.</li>
             <li>
-              Once connected, the app will load your balances and on-chain
-              history.
+              Pick pair: “From” = the token you sell; “To” = the token you buy.
+            </li>
+            <li>
+              Enter amount and review Min received / Price impact / 0.3% fee →
+              Swap.
             </li>
           </ol>
           <br />
-          <b>Tips:</b>
+          <b>Notes:</b>
           <ul>
             <li>
-              If you see “Wrong network”, switch to Sepolia in your wallet and
-              reload the page.
+              You may see Approve prompts the first time you trade a token.
             </li>
             <li>
-              Balances and lists auto-refresh when your status changes to
-              connected.
+              Respect the pool’s price-impact guard and the WETH safety rules
+              (the router can reject risky trades).
             </li>
           </ul>
         </div>
@@ -272,15 +254,23 @@
 
     <div class="row-line row-b">
       <sbx-accordion-component
-        [title]="'3. Get AST (fuel for the system)'"
+        [title]="'3. Add Liquidity'"
         [text]="'Start using AST Token from Contract Faucet'"
-        [bottomText]="'You’ll use AST to place bids in Auctions.'"
+        [showBottom]="false"
       >
         <div class="text-secondary" accordionContent>
-          <b>AST (Amfi Special Token) is your working token:</b>
+          <b>What to do:</b>
           <ul>
-            <li>Get it from the Faucet (if enabled), and/or</li>
-            <li>Earn more via Staking (next step).</li>
+            <li>Goal: Provide tokens to a pool and receive LP tokens.</li>
+            <li>Choose pair: AST/APT or AST/WETH.</li>
+            <li>
+              Enter “Amount Token 1”: the form auto-quotes Token 2 to keep the
+              pool ratio.
+            </li>
+            <li>
+              Confirm approvals (once per token) then Add Liquidity and you
+              receive LP/AA (for AST/APT) or LP/AW (for AST/WETH).
+            </li>
           </ul>
         </div>
       </sbx-accordion-component>
@@ -288,32 +278,25 @@
 
     <div class="row-line row-b">
       <sbx-accordion-component
-        [title]="'4. Stake AST (earn more AST)'"
+        [title]="'4. Farm (stake LP/AA)'"
         [text]="'Get more AST Tokens'"
-        [bottomText]="'text'"
+        [showBottom]="false"
       >
         <div class="text-secondary" accordionContent>
           <b>What to do:</b>
-          <ol>
-            <li>Open Staking.</li>
-            <li>Enter the amount of AST to stake and choose a duration.</li>
-            <li>
-              Click Stake: your wallet may ask for a one-time Approve
-              (allowance), then the Stake transaction.
-            </li>
-            <li>
-              After the timer reaches 00:00, click Withdraw to receive your
-              initial AST + reward.
-            </li>
-          </ol>
-          <br />
-          <b>Notes</b>
           <ul>
-            <li>Longer durations have higher APR, so you earn more AST.</li>
-            <li>Positions become withdrawable only after the lock ends.</li>
+            <li>Goal: Stake LP/AA to earn APT over time.</li>
+            <li>Deposit: Enter LP amount and click Deposit.</li>
+          </ul>
+          <br />
+          <b>Watch:</b>
+          <ul>
+            <li>RPS = APT / second emitted to all stakers</li>
+            <li>Pending = your unclaimed APT</li>
+            <li>Staked LP = your LP/AA in farm.</li>
+            <li>Harvest: Click Harvest anytime to claim APT.</li>
             <li>
-              The UI shows your positions and timers; when it hits 00:00 the
-              card switches to Withdraw.
+              Withdraw: Get your LP/AA back (rewards are automatically settled).
             </li>
           </ul>
         </div>
@@ -322,99 +305,20 @@
 
     <div class="row-line row-b">
       <sbx-accordion-component
-        [title]="'5. Bid in Auctions'"
+        [title]="'5. Remove Liquidity (optional)'"
         [text]="'Win APT'"
-        [bottomText]="
-          'APT (Amfi Pure Token) is the premium token you spend in the Marketplace.'
-        "
+        [showBottom]="false"
       >
         <div class="text-secondary" accordionContent>
           <b>What to do:</b>
-          <ol>
-            <li>Open Auction → you’ll see Active, Withdraw, and Past pools.</li>
-            <li>
-              Pick an Active pool. Check:
-              <ul>
-                <li>End in: the countdown.</li>
-                <li>Top bid: current highest AST bid.</li>
-                <li>
-                  Min to outbid: the minimum you must bid to become the new
-                  leader.
-                </li>
-              </ul>
-            </li>
-            <li>
-              Enter your AST amount and click BID.
-              <ul>
-                <li>
-                  First time: your wallet will prompt Approve AST: Auction.
-                </li>
-                <li>Then confirm the Bid transaction.</li>
-              </ul>
-            </li>
-            <li>
-              If you’re outbid, your previous bid becomes refundable
-              automatically by the contract; the UI will reflect your new
-              status.
-            </li>
-            <li>
-              When the timer ends:
-              <ul>
-                <li>
-                  If you are the highest bidder, the pool moves to Withdraw:
-                  click Withdraw to receive APT.
-                </li>
-                <li>
-                  Otherwise, you’re done (you’ll see the pool under Past).
-                </li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-      </sbx-accordion-component>
-    </div>
-
-    <div class="row-line row-b">
-      <sbx-accordion-component
-        [title]="'6. Spend APT in the Marketplace'"
-        [text]="'Buy any items'"
-        [bottomText]="'text'"
-      >
-        <div class="text-secondary" accordionContent>
-          <b>What to do:</b>
-          <ol>
-            <li>
-              Open Marketplace → browse Available items (each shows a price in
-              APT).
-            </li>
-            <li>
-              Click Buy on an item:
-              <ul>
-                <li>
-                  First time: your wallet will prompt Approve APT → Marketplace.
-                </li>
-                <li>Then confirm the Buy transaction.</li>
-              </ul>
-            </li>
-            <li>
-              After the purchase confirms, the item moves to Your items:
-              <ul>
-                <li>Download items give you a file (e.g., .zip, .pdf).</li>
-                <li>Link items grant access to gated resources.</li>
-              </ul>
-            </li>
-          </ol>
-          <br />
-          <b>Partial payments (supported)</b>
           <ul>
+            <li>Goal: Redeem LP back into the two underlying tokens.</li>
             <li>
-              If you pay less than the listed price (on-chain), the app will
-              count it as a partial payment and show Remaining on the card
-              (e.g., “Paid 0.5 of 2 APT → Remaining 1.5 APT”).
+              Enter LP amount (or use 25/50/75/100%) then Remove Liquidity and
+              receive Token 1 + Token 2.
             </li>
             <li>
-              Click Buy again later — the app will automatically pay only the
-              remaining amount.
+              Open Auction then you’ll see Active, Withdraw, and Past pools.
             </li>
           </ul>
         </div>
@@ -424,23 +328,43 @@
 
   <!-- Additional Information -->
   <sbx-row-title-content
-    main-title="Additional Information"
+    mainTitle="Additional Information"
     text="Something more"
     [useStatus]="false"
   >
     <div class="row-line row-sbc row-b">
       <sbx-accordion-component
-        [title]="'Tracking & history'"
-        [text]="'What you can do with this Token'"
+        [title]="'Forms'"
+        [text]="'Field-by-Field Reminders'"
         [bottomText]="'text'"
       >
         <div class="text-secondary" accordionContent>
-          <b>Auction:</b> you’ll see live updates when bids are placed, pools
-          end, and when your status changes to Withdraw. <br /><br />
-          <b>Marketplace:</b> the app listens to Purchased events and updates
-          Your items and Remaining automatically. <br /><br />
-          <b>Balances:</b> AST/APT balances update after each confirmed
-          transaction
+          <b>Swap:</b>
+          <ul>
+            <li>From / To: Pick sell/buy tokens.</li>
+            <li>Amount: How much you sell.</li>
+            <li>Slippage: Max price drift you accept.</li>
+            <li>Swap Info:</li>
+            <li>Min received — worst-case output after slippage,</li>
+            <li>Price impact — how much your trade moves the pool price,</li>
+            <li>Fee (0.3%) — taken from input; not the gas fee.</li>
+          </ul>
+          <br />
+          <b>Liquidity:</b>
+          <ul>
+            <li>Select Pair: Choose AST/APT or AST/WETH.</li>
+            <li>Reserves / Total Supply / My LP: Pool state and your share.</li>
+            <li>Add Liquidity: Enter Token 1; Token 2 auto-quotes; confirm.</li>
+            <li>Remove Liquidity: Enter LP to redeem the two tokens back.</li>
+          </ul>
+          <br />
+          <b>Farming:</b>
+          <ul>
+            <li>RPS: APT emitted per second to all stakers.</li>
+            <li>Pending: Your unclaimed APT.</li>
+            <li>Staked LP: Your deposited LP/AA in the farm.</li>
+            <li>Actions: Deposit LP/AA → Harvest APT → Withdraw LP/AA.</li>
+          </ul>
         </div>
       </sbx-accordion-component>
 
@@ -478,7 +402,9 @@
         [bottomText]="'text'"
       >
         <div class="text-secondary" accordionContent>
-          Stake AST -> earn more AST -> bid in Auctions -> win APT -> buy items
+          Swap AST:APT/WETH or APT:AST -> get LP/AA (send AST/APT pair) or LP/AW
+          (send AST/WETH pair) via liquidity -> "deposit" LP tokens via Farming
+          -> harvest APT from Farming -> go to market in wallet tools project.
           in Marketplace.
         </div>
       </sbx-accordion-component>

@@ -1,16 +1,21 @@
-import { Component, model } from '@angular/core';
+import { Component } from '@angular/core';
 
-import { PageTabs } from '../../../types';
+import { BalancesComponent } from '../balances/balances.component';
+
 import { RowTitleContentComponent } from '../row-title-content/row-title-content.component';
+import { UILiquidityFormComponent } from './liquidity-form/liquidity-form.component';
 import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accordion.component';
 
 @Component({
   selector: 'sbx-dao-tools-liquidity-tab',
-  imports: [RowTitleContentComponent, UIAccordionComponent],
+  imports: [
+    RowTitleContentComponent,
+    UILiquidityFormComponent,
+    BalancesComponent,
+    UIAccordionComponent,
+  ],
   templateUrl: './liquidity.component.html',
   styleUrl: './liquidity.component.scss',
   standalone: true,
 })
-export class DaoToolsLiquidityComponent {
-  page = model<PageTabs>();
-}
+export class DaoToolsLiquidityComponent {}

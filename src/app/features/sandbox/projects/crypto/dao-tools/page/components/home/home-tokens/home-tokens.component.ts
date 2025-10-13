@@ -8,20 +8,25 @@ import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accor
 import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
 
 @Component({
-  selector: 'ui-home-tokens',
+  selector: 'ui-dao-home-tokens',
   templateUrl: './home-tokens.component.html',
   styleUrl: './home-tokens.component.scss',
   imports: [UIAccordionComponent, UIButtonComponent],
   standalone: true,
 })
-export class UIHomeTokensComponent {
+export class UIHomeDaoTokensComponent {
   private facade = inject(WalletFacade);
   private balances = inject(BalancesService);
   readonly status = this.facade.status;
 
   page = model<PageTabs>();
-  ast = this.balances.formatAst;
-  apt = this.balances.formatApt;
+  ast = this.balances.tokenAst;
+  apt = this.balances.tokenApt;
+  weth = this.balances.tokenWeth;
+  astApt = this.balances.pairAstApt;
+  astWeth = this.balances.pairAstWeth;
 
   go = (p: PageTabs) => this.page.set(p);
+  openWalletTools = () =>
+    window.open(`/sandbox/crypto/wallet-tools`, '_blank', 'noopener');
 }

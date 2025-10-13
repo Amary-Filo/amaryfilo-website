@@ -23,8 +23,7 @@ export class Web3Orchestrator {
           : false;
 
         if (!acc || !allowed || status !== 'connected') {
-          this.balances.ast.set(0n);
-          this.balances.apt.set(0n);
+          this.balances.setDefault();
           return;
         }
 

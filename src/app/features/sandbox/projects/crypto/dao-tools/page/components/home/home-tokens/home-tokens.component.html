@@ -7,7 +7,7 @@
     class="sandbox-ui"
     [isSkeleton]="status() !== 'connected'"
     [isOpen]="true"
-    [content]="ast() + ' AST'"
+    [content]="ast().formatted + ' AST'"
     [text]="'How many tokens you have right now'"
   >
     <div class="block-title" accordionHeadInfo>
@@ -17,28 +17,27 @@
     </div>
 
     <p class="text-secondary" accordionBottom>
-      Use this tokens for claim
-      <span class="text-accent cl-apt">APT</span> via
-      <span class="text-accent cl-auction">Auction</span>.<br />
-      For getting more
-      <span class="text-accent cl-ast">AST</span> Tokens just
-      <span class="text-accent cl-staking">Stake</span> it and Claim reward.
+      Base token that you can gat via
+      <span class="text-accent cl-swap">Dao Swap </span> (
+      <span class="text-accent cl-weth">WETH</span> /
+      <span class="text-accent cl-ast">AST</span>) or you can get it from
+      <span class="text-accent cl-staking">Staking</span> in Wallet Tools
+      project (external link).
     </p>
 
     <ng-container accordionBottomButtons>
       <ui-button
-        (click)="go('swap')"
-        color="staking"
+        (click)="openWalletTools()"
         [isFilled]="true"
         [onlyIcon]="true"
-        [leftIcon]="'handCoinFill'"
+        [leftIcon]="'externalLinkFill'"
       />
       <ui-button
-        (click)="go('liquidity')"
-        color="auction"
+        (click)="go('swap')"
+        color="swap"
         [isFilled]="true"
         [onlyIcon]="true"
-        [leftIcon]="'auctionFill'"
+        [leftIcon]="'arrowLeftRightFill'"
       />
     </ng-container>
   </sbx-accordion-component>
@@ -49,7 +48,8 @@
     class="sandbox-ui"
     [isSkeleton]="status() !== 'connected'"
     [isOpen]="true"
-    [content]="apt() + ' APT'"
+    [bottomShowButtons]="false"
+    [content]="apt().formatted + ' APT'"
     [text]="'How many tokens you have right now'"
   >
     <div class="block-title" accordionHeadInfo>
@@ -62,14 +62,117 @@
       Use this tokens for buy items in marketplace and burn
       <span class="text-accent cl-apt">APT</span> token.
     </p>
+  </sbx-accordion-component>
+</div>
+
+<div class="row-line row-t">
+  <sbx-accordion-component
+    class="sandbox-ui"
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [content]="weth().formatted + ' WETH'"
+    [text]="'How many tokens you have right now'"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        My <span class="text-accent fill cl-weth">WETH</span> Token
+      </span>
+    </div>
+
+    <p class="text-secondary" accordionBottom>
+      You can buy <span class="text-accent cl-ast">AST</span> token via
+      <span class="text-accent cl-weth">WETH</span> Token.
+    </p>
 
     <ng-container accordionBottomButtons>
       <ui-button
-        (click)="go('farming')"
-        color="market"
+        (click)="go('swap')"
+        color="swap"
         [isFilled]="true"
         [onlyIcon]="true"
-        [leftIcon]="'shoppingCart2Fill'"
+        [leftIcon]="'arrowLeftRightFill'"
+      />
+    </ng-container>
+  </sbx-accordion-component>
+</div>
+
+<div class="row-line row-t row-sbc">
+  <sbx-accordion-component
+    class="sandbox-ui"
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [content]="astApt().formatted + ' LP/AA'"
+    [text]="'How many tokens you have right now'"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        My <span class="text-accent fill cl-lp-ast-apt">LP/AA</span> Token
+      </span>
+    </div>
+
+    <p class="text-secondary" accordionBottom>
+      Get this Tokens from adding Liquidity for
+      <span class="text-accent cl-ast">AST</span> and
+      <span class="text-accent cl-apt">APT</span> pair at Liquidity page. Use it
+      in Farming page to get more
+      <span class="text-accent cl-apt">APT</span> tokens.
+    </p>
+
+    <ng-container accordionBottomButtons>
+      <ui-button
+        (click)="go('liquidity')"
+        color="liquidity"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'contractLeftRightLine'"
+      />
+      <ui-button
+        (click)="go('farming')"
+        color="farming"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'apps2AddFill'"
+      />
+    </ng-container>
+  </sbx-accordion-component>
+
+  <div class="row-spacer"></div>
+
+  <sbx-accordion-component
+    class="sandbox-ui"
+    [isSkeleton]="status() !== 'connected'"
+    [isOpen]="true"
+    [content]="astWeth().formatted + ' LP/AW'"
+    [text]="'How many tokens you have right now'"
+  >
+    <div class="block-title" accordionHeadInfo>
+      <span class="title">
+        My <span class="text-accent fill cl-lp-ast-weth">LP/AW</span> Token
+      </span>
+    </div>
+
+    <p class="text-secondary" accordionBottom>
+      Get this Tokens from adding Liquidity for
+      <span class="text-accent cl-ast">AST</span> and
+      <span class="text-accent cl-weth">WETH</span> pair at Liquidity page. Use
+      it in Farming page to get more
+      <span class="text-accent cl-apt">APT</span> tokens.
+    </p>
+
+    <ng-container accordionBottomButtons>
+      <ui-button
+        (click)="go('liquidity')"
+        color="liquidity"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'contractLeftRightLine'"
+      />
+      <ui-button
+        (click)="go('farming')"
+        color="farming"
+        [isFilled]="true"
+        [onlyIcon]="true"
+        [leftIcon]="'apps2AddFill'"
       />
     </ng-container>
   </sbx-accordion-component>

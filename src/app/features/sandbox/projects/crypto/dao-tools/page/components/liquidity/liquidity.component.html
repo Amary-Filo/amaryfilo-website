@@ -1,11 +1,14 @@
 <div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-balances-component />
+  </div>
   <div class="row-text">
-    <h2 class="h1">Liquidity Page</h2>
+    <h2 class="h1">Liquidity</h2>
     <p class="text text-secondary">
-      This is a test project that shows how DeFi works on the Ethereum Sepolia
-      testnet. Here you can try the full cycle of a decentralized app: get AST
-      tokens from the faucet or staking, join auctions to win APT tokens, and
-      spend them in the marketplace on demo items.
+      This section shows how liquidity pools work in DEX. Here you can add
+      tokens to a pool to earn fees, remove them anytime, and see your share in
+      real time. By providing liquidity, you become part of the AMM, enabling
+      swaps between tokens like AST/APT and AST/WETH.
     </p>
   </div>
 
@@ -17,32 +20,21 @@
   >
     <div class="row-line row-sbc row-b">
       <sbx-accordion-component
-        [title]="'What is AST Token?'"
-        [text]="'What you can do with this Token'"
-        [bottomText]="
-          'AST is your “working token”: easy to obtain and used to generate value.'
-        "
+        [title]="'What is Pairs?'"
+        [text]="'Understands AST/APT and AST/WETH'"
       >
         <div class="text-secondary" accordionContent>
-          <span class="fw-800">
-            <u class="text-accent cl-ast">AST</u> is a Amfi Special Token.
-          </span>
-          The base token of the ecosystem. This token is the starting point of
-          the whole project flow.
+          Each pair represents a liquidity pool of two tokens that users can
+          swap between — like AST/APT or AST/WETH.
+          <br />
+          When you add liquidity to a pair, you receive LP tokens that represent
+          your share in that pool.
           <br />
           <br />
-          <b> You can get it:</b>
+          <b>Tokens from Pairs</b>
           <ul>
-            <li>for free via the faucet (ast contract).</li>
-            <li>
-              or multiply it through staking (lock tokens to earn interest).
-            </li>
-          </ul>
-          <br />
-          <b>The main purpose of AST:</b>
-          <ul>
-            <li>participate in staking to grow your balance,</li>
-            <li>use it in auctions: place bids to win APT tokens.</li>
+            <li>Pair AST/APT gives you LP/AA tokens.</li>
+            <li>Pair AST/WETH gives you LP/AW tokens.</li>
           </ul>
         </div>
       </sbx-accordion-component>
@@ -50,33 +42,63 @@
       <div class="row-spacer"></div>
 
       <sbx-accordion-component
-        [title]="'What is APT Token?'"
-        [text]="'The exclusive utility token.'"
-        [bottomText]="
-          'APT is your “value token”: harder to earn, but it unlocks access to the Market.'
-        "
+        [title]="'About form'"
+        [text]="'How does this form works'"
+        [bottomText]="'You can use LP/AA and LP/WA Tokens at the farming page.'"
       >
         <div class="text-secondary" accordionContent>
-          <span class="fw-800">
-            <u class="text-accent cl-apt">APT</u> is a Amfi Pure Token.
-          </span>
-          It is the rare and exclusive token of the this project ecosystem.
+          Select Pair — choose which pool you want to interact with (AST/APT or
+          AST/WETH).
           <br />
-          <br />
-          You cannot get it from faucet or staking. The only way is to win it in
-          auctions, by bidding with AST.
-          <br />
-          <br />
-          <b>The main purpose of APT:</b>
+          <b>Pair Info:</b>
           <ul>
-            <li>it is the utility token used in the Marketplace.</li>
+            <li>Reserves - shows the current pool size</li>
+            <li>Total Supply - total LP tokens</li>
+            <li>My LP - your share</li>
+          </ul>
+          <br />
+          <b>Add Liquidity</b>
+          <ol>
             <li>
-              only with APT you can buy guides, components, private channels, or
-              other digital goods.
+              Token 1 / Token 2 - enter how much of each token you want to
+              deposit.
+            </li>
+            <li>The form keeps the correct ratio automatically.</li>
+            <li>
+              After adding liquidity, you’ll receive LP tokens (like LP/AA or
+              LP/AW) representing your share in the pool.
+            </li>
+          </ol>
+          <br />
+          <b>Remove Liquidity</b>
+          <ul>
+            <li>
+              LP Token Input - enter how many LP tokens you want to withdraw.
+            </li>
+            <li>
+              You’ll get back both tokens (AST + APT or AST + WETH) according to
+              your pool share.
+            </li>
+          </ul>
+          <br />
+          <b>In Result:</b>
+          <ul>
+            <li>
+              <b>Adding liquidity</b> = you provide tokens to help the swap
+              system work and earn fees.
+            </li>
+            <li>
+              <b>Removing liquidity</b> = you get your tokens back plus the
+              small fee portion you’ve earned.
             </li>
           </ul>
         </div>
       </sbx-accordion-component>
     </div>
+  </sbx-row-title-content>
+
+  <!-- Form -->
+  <sbx-row-title-content mainTitle="Form" text="Add Liquidity">
+    <ui-liquidity-form />
   </sbx-row-title-content>
 </div>

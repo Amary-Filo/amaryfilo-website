@@ -1,19 +1,30 @@
 import { Injectable } from '@angular/core';
 import { BaseContractsService } from '@sandbox/shared/web3/services/base-contract.service';
+import { PairKey, TokenKey } from './contracts/addresses';
 
 @Injectable()
 export class ContractsService extends BaseContractsService {
-  aptRead() {
-    return this.factory.getRead('APT');
+  erc20Read(key: TokenKey) {
+    return this.factory.getRead(key);
   }
-  astRead() {
-    return this.factory.getRead('AST');
+  erc20Write(key: TokenKey) {
+    return this.factory.getWrite(key);
   }
 
-  apt() {
-    return this.factory.getWrite('APT');
+  pairRead(key: PairKey) {
+    return this.factory.getRead(key);
   }
-  ast() {
-    return this.factory.getWrite('AST');
+  pairWrite(key: PairKey) {
+    return this.factory.getWrite(key);
+  }
+
+  router() {
+    return this.factory.getWrite('ROUTER');
+  }
+  farm() {
+    return this.factory.getWrite('FARM');
+  }
+  farmRead() {
+    return this.factory.getRead('FARM');
   }
 }

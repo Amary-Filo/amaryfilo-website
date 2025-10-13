@@ -1,0 +1,144 @@
+<div class="row-form sandbox-ui">
+  <ui-liquidity-info (selectedPair)="pair.set($event)" />
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Add Liquidity</span>
+    <p class="text-secondary">Text</p>
+  </div>
+
+  <div class="row-line row-sbc">
+    <ui-input
+      name="amtA"
+      [label]="'Amount ' + tokenA()"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="amountAH"
+      [disabled]="isAdding()"
+      [max]="maxA()"
+    >
+      <span input-suffix class="text-accent fz-md">{{ tokenA() }}</span>
+      <ng-container input-actions>
+        <div class="block-title text-secondary">
+          You have
+          <span class="text-accent"
+            >{{ maxA() | number : "1.2-6" }} {{ tokenA() }}</span
+          >
+        </div>
+        <ui-button
+          size="xxs"
+          color="gray-900"
+          [isFilled]="true"
+          [isStrong]="true"
+          [disabled]="isAdding()"
+          (click)="amountAH.set(maxA())"
+          >Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+
+    <div class="row-spacer"></div>
+
+    <ui-input
+      name="amtB"
+      [label]="'Amount ' + tokenB()"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="amountBH"
+      [disabled]="isAdding()"
+      [max]="maxB()"
+      [readonly]="linkByRatio()"
+    >
+      <span input-suffix class="text-accent fz-md">{{ tokenB() }}</span>
+      <ng-container input-actions>
+        <label class="text-secondary">
+          <input
+            type="checkbox"
+            [checked]="linkByRatio()"
+            (change)="setLinkByRatio($event)"
+          />
+          Keep ratio
+        </label>
+        <ui-button
+          size="xxs"
+          color="gray-900"
+          (click)="amountBH.set(maxB())"
+          [isFilled]="true"
+          [isStrong]="true"
+          [disabled]="linkByRatio() || isAdding()"
+          >Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+  </div>
+
+  <div class="row-line row-tb">
+    <ui-button
+      class="m-sm w-100"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [isStrong]="true"
+      [loading]="isAdding()"
+      (click)="add()"
+    >
+      Add Liquidity
+    </ui-button>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Remove Liquidity</span>
+    <p class="text-secondary">Text</p>
+  </div>
+
+  <div class="row-line row-sbc">
+    <ui-input
+      name="lpRemove"
+      label="Remove LP"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="lpToRemoveH"
+      [disabled]="isRemoving()"
+      [max]="maxLP()"
+    >
+      <span input-suffix class="text-accent fz-md">LP</span>
+      <ng-container input-actions>
+        <div class="block-title text-secondary">
+          You have
+          <span class="text-accent">{{ maxLP() | number : "1.2-6" }} LP</span>
+        </div>
+        <ui-button
+          size="xxs"
+          color="gray-900"
+          [isFilled]="true"
+          [isStrong]="true"
+          [disabled]="isRemoving()"
+          (click)="lpToRemoveH.set(maxLP())"
+          >Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+  </div>
+
+  <div class="row-line row-tb">
+    <ui-button
+      class="m-sm w-100"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [isStrong]="true"
+      [loading]="isRemoving()"
+      (click)="remove()"
+    >
+      Remove Liquidity
+    </ui-button>
+  </div>
+</div>

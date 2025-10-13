@@ -1,0 +1,128 @@
+<div class="row-form sandbox-ui">
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Deposit LP</span>
+    <p class="text-secondary">Text</p>
+  </div>
+
+  <div class="row-line">
+    <ui-input
+      name="deposit"
+      [label]="'Amount to stake'"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="depositH"
+      [max]="maxDeposit()"
+      [disabled]="depositing()"
+    >
+      <span input-suffix class="text-accent fz-md">LP</span>
+
+      <ng-container input-actions>
+        <div class="block-title">
+          <span class="text-secondary">
+            You have
+            <span class="text-accent"
+              >{{ maxDeposit() | number : "1.2-6" }} LP</span
+            >
+          </span>
+        </div>
+        <ui-button
+          [isFilled]="true"
+          [isStrong]="true"
+          color="gray-900"
+          size="xxs"
+          (click)="depositH.set(maxDeposit())"
+          [disabled]="depositing()"
+          >Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+  </div>
+
+  <div class="row-line row-tb">
+    <ui-button
+      class="m-sm w-100"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [isStrong]="true"
+      [loading]="depositing()"
+      (click)="doDeposit()"
+    >
+      Deposit
+    </ui-button>
+  </div>
+
+  <div class="row-line">
+    <div class="row-spacer"></div>
+  </div>
+
+  <div class="row-info row-tb">
+    <span class="title">Manage Position</span>
+    <p class="text-secondary">Text</p>
+  </div>
+
+  <div class="row-line row-sbc">
+    <ui-input
+      name="withdraw"
+      [label]="'Amount to withdraw'"
+      [type]="'token'"
+      [decimals]="18"
+      [suffix]="true"
+      [(value)]="withdrawH"
+      [max]="maxWithdraw()"
+      [disabled]="withdrawing()"
+    >
+      <span input-suffix class="text-accent fz-md">LP</span>
+
+      <ng-container input-actions>
+        <div class="block-title">
+          <span class="text-secondary">
+            Staked
+            <span class="text-accent"
+              >{{ maxWithdraw() | number : "1.2-6" }} LP</span
+            >
+          </span>
+        </div>
+        <ui-button
+          [isFilled]="true"
+          [isStrong]="true"
+          color="gray-900"
+          size="xxs"
+          (click)="withdrawH.set(maxWithdraw())"
+          [disabled]="withdrawing()"
+          >Max</ui-button
+        >
+      </ng-container>
+    </ui-input>
+  </div>
+
+  <div class="row-line row-tb">
+    <ui-button
+      class="m-sm w-100"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [isStrong]="true"
+      [loading]="withdrawing()"
+      (click)="doWithdraw()"
+    >
+      Withdraw
+    </ui-button>
+  </div>
+
+  <div class="row-line row-tb">
+    <ui-button
+      class="m-sm w-100"
+      [fullWidth]="true"
+      [isFilled]="true"
+      [loading]="harvesting()"
+      [disabled]="!canHarvest()"
+      (click)="doHarvest()"
+    >
+      Harvest
+    </ui-button>
+  </div>
+</div>

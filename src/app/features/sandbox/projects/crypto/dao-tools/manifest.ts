@@ -4,10 +4,10 @@ import { CONTRACTS, SEPOLIA } from './services/contracts/addresses';
 
 import APT_ABI from './services/contracts/apt.abi.json';
 import AST_ABI from './services/contracts/ast.abi.json';
-import AUCTION_ABI from './services/contracts/auction.abi.json';
-import LOCKER_ABI from './services/contracts/locker.abi.json';
-import MARKET_ABI from './services/contracts/market.abi.json';
-import STAKING_ABI from './services/contracts/staking.abi.json';
+import FACTORY_ABI from './services/contracts/factory.abi.json';
+import ROUTER_ABI from './services/contracts/router.abi.json';
+import PAIR_ABI from './services/contracts/pair.abi.json';
+import FARM_ABI from './services/contracts/farm.abi.json';
 
 export const CRYPTO_DAO_TOOLS_MANIFEST: Manifest = {
   id: 'crypto-dao-tools',
@@ -45,10 +45,12 @@ export const CRYPTO_DAO_TOOLS_MANIFEST: Manifest = {
       abis: {
         AST: AST_ABI,
         APT: APT_ABI,
-        AUCTION: AUCTION_ABI,
-        LOCKER: LOCKER_ABI,
-        MARKET: MARKET_ABI,
-        STAKING: STAKING_ABI,
+        WETH: AST_ABI,
+        FACTORY: FACTORY_ABI,
+        ROUTER: ROUTER_ABI,
+        PAIR_AST_APT: PAIR_ABI,
+        PAIR_AST_WETH: PAIR_ABI,
+        FARM: FARM_ABI,
       },
     },
   },

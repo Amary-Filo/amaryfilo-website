@@ -1,7 +1,7 @@
 <ng-content select="[rowTitle]">
-  @if(title()) {
+  @if(mainTitle()) {
   <div class="row-info row-tb">
-    <span class="title">{{ title() }}</span>
+    <span class="title">{{ mainTitle() }}</span>
     @if(text()) {
     <p class="text-secondary">{{ text() }}</p>
     }

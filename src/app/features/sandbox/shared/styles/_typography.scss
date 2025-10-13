@@ -158,3 +158,19 @@
     font-weight: var(--fw-extrabold);
   }
 }
+
+.w {
+  &-100 {
+    width: 100%;
+  }
+
+  &-mc {
+    width: max-content;
+  }
+
+  &-min {
+    &-mc {
+      min-width: max-content;
+    }
+  }
+}

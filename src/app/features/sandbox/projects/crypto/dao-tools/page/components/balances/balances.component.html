@@ -1,0 +1,43 @@
+<div class="sandbox-ui balances fw-800">
+  <div class="block-title">Your Tokens:</div>
+
+  @if(status() === 'connected') {
+  <div class="block-title">
+    <span class="text-accent fill cl-ast">
+      {{ ast().formatted | number : "1.2-2" }} AST
+    </span>
+  </div>
+  <div class="block-title">
+    <span class="text-accent fill cl-apt">
+      {{ apt().formatted | number : "1.2-2" }} APT
+    </span>
+  </div>
+  <div class="block-title">
+    <span class="text-accent fill cl-weth">
+      {{ weth().formatted | number : "1.2-2" }} WETH
+    </span>
+  </div>
+
+  <div class="block-title">
+    <span class="text-accent fill cl-ast">
+      {{ astApt().formatted | number : "1.2-2" }} LP/AA
+    </span>
+  </div>
+  <div class="block-title">
+    <span class="text-accent fill cl-ast">
+      {{ astWeth().formatted | number : "1.2-2" }} LP/AW
+    </span>
+  </div>
+
+  } @else {
+  <div class="block-title">
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+  </div>
+  <div class="block-title">
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+    <ui-skeleton [lines]="2" [widths]="['120px', '60px']" />
+  </div>
+  }
+</div>

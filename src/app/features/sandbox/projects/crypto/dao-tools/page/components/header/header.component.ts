@@ -19,6 +19,13 @@ export class SbxHeaderComponent {
   readonly account = this.facade.account;
   readonly status = this.facade.status;
 
+  readonly menus: { label: string; page: PageTabs }[] = [
+    { label: 'Home', page: 'home' },
+    { label: 'Swap', page: 'swap' },
+    { label: 'Liquidity', page: 'liquidity' },
+    { label: 'Farming', page: 'farming' },
+    { label: 'About', page: 'about' },
+  ];
   page = model<PageTabs>('home');
   menuOpen = signal(false);
 

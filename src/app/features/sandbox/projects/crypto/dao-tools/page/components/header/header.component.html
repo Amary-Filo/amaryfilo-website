@@ -7,45 +7,16 @@
             <ui-icon name="amfiLogoGradient" />
           </div>
           <nav class="menu">
+            @for (item of menus; track $index) {
             <ui-button
               size="xs"
-              [isFilled]="page() === 'home'"
-              [isStrong]="page() === 'home'"
-              (click)="go('home')"
-              >Home</ui-button
+              [isFilled]="page() === item.page"
+              [isStrong]="page() === item.page"
+              (click)="go(item.page)"
+              [color]="item.page"
+              >{{ item.label }}</ui-button
             >
-            <ui-button
-              size="xs"
-              [isFilled]="page() === 'swap'"
-              [isStrong]="page() === 'swap'"
-              color="staking"
-              (click)="go('swap')"
-              >Swap</ui-button
-            >
-            <ui-button
-              size="xs"
-              [isFilled]="page() === 'liquidity'"
-              [isStrong]="page() === 'liquidity'"
-              color="auction"
-              (click)="go('liquidity')"
-              >Liquidity</ui-button
-            >
-            <ui-button
-              size="xs"
-              [isFilled]="page() === 'farming'"
-              [isStrong]="page() === 'farming'"
-              color="market"
-              (click)="go('farming')"
-              >Farming</ui-button
-            >
-            <ui-button
-              size="xs"
-              [isFilled]="page() === 'about'"
-              [isStrong]="page() === 'about'"
-              color="secondary-500"
-              (click)="go('about')"
-              >About</ui-button
-            >
+            }
           </nav>
         </div>
         <div class="btns">

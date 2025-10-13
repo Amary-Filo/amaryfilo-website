@@ -1,11 +1,14 @@
 <div class="sandbox-ui">
+  <div class="row-b">
+    <sbx-balances-component />
+  </div>
   <div class="row-text">
-    <h2 class="h1">Swap Page</h2>
+    <h2 class="h1">Swap</h2>
     <p class="text text-secondary">
-      This is a test project that shows how DeFi works on the Ethereum Sepolia
-      testnet. Here you can try the full cycle of a decentralized app: get AST
-      tokens from the faucet or staking, join auctions to win APT tokens, and
-      spend them in the marketplace on demo items.
+      This demo shows how decentralized token exchange works on the Ethereum
+      Sepolia testnet. You can swap between AST, APT, and WETH tokens using an
+      automated market maker (AMM) (just like in Uniswap) and explore how
+      prices, liquidity, and fees are calculated in real time.
     </p>
   </div>
 
@@ -16,67 +19,182 @@
     [useStatus]="false"
   >
     <div class="row-line row-sbc row-b">
-      <sbx-accordion-component
-        [title]="'What is AST Token?'"
-        [text]="'What you can do with this Token'"
-        [bottomText]="
-          'AST is your “working token”: easy to obtain and used to generate value.'
-        "
-      >
+      <sbx-accordion-component [title]="'What is AMM?'" [text]="'How it works'">
         <div class="text-secondary" accordionContent>
-          <span class="fw-800">
-            <u class="text-accent cl-ast">AST</u> is a Amfi Special Token.
-          </span>
-          The base token of the ecosystem. This token is the starting point of
-          the whole project flow.
+          <span class="fw-800">AMM (Automated Market Maker)</span> is a smart
+          contract that allows users to trade tokens directly without the need
+          for an order book or centralized intermediary.
           <br />
           <br />
-          <b> You can get it:</b>
-          <ul>
-            <li>for free via the faucet (ast contract).</li>
-            <li>
-              or multiply it through staking (lock tokens to earn interest).
-            </li>
-          </ul>
-          <br />
-          <b>The main purpose of AST:</b>
-          <ul>
-            <li>participate in staking to grow your balance,</li>
-            <li>use it in auctions: place bids to win APT tokens.</li>
-          </ul>
+          It relies on liquidity pools — reserves of two tokens provided by
+          users (ex. AST and APT). When you make a swap, the AMM automatically
+          adjusts the token prices based on the pool ratio, ensuring constant
+          liquidity for every trade.
         </div>
       </sbx-accordion-component>
 
       <div class="row-spacer"></div>
 
       <sbx-accordion-component
-        [title]="'What is APT Token?'"
-        [text]="'The exclusive utility token.'"
-        [bottomText]="
-          'APT is your “value token”: harder to earn, but it unlocks access to the Market.'
-        "
+        [title]="'About swap form'"
+        [text]="'Explain about inputs and swap info'"
+        [bottomText]="'You cant impact on price more than 20%'"
       >
         <div class="text-secondary" accordionContent>
-          <span class="fw-800">
-            <u class="text-accent cl-apt">APT</u> is a Amfi Pure Token.
-          </span>
-          It is the rare and exclusive token of the this project ecosystem.
+          The swap form lets you choose two tokens, set the amount you want to
+          exchange, and instantly see the calculated rate, fee, and minimum
+          amount you’ll receive.
           <br />
           <br />
-          You cannot get it from faucet or staking. The only way is to win it in
-          auctions, by bidding with AST.
-          <br />
-          <br />
-          <b>The main purpose of APT:</b>
+          You can also flip tokens, adjust slippage tolerance, and preview
+          real-time swap info before confirming the transaction.
+          <br /><br />
+          <b>Form data:</b>
           <ul>
-            <li>it is the utility token used in the Marketplace.</li>
             <li>
-              only with APT you can buy guides, components, private channels, or
-              other digital goods.
+              Slippage – protects you from price changes during transaction.
+            </li>
+            <li>Amount input – token amount you sell.</li>
+            <li>Select From / To – choose tokens you want to swap between.</li>
+          </ul>
+
+          <b>Swap info:</b>
+          <ul>
+            <li>Min received – lowest amount you’ll get after slippage.</li>
+            <li>Price impact – how much your swap moves the pool price.</li>
+            <li>
+              Fee (0.3%) – trading fee taken from your input amount, not a gas
+              fee.
             </li>
           </ul>
         </div>
       </sbx-accordion-component>
+    </div>
+  </sbx-row-title-content>
+
+  <!-- Form -->
+  <sbx-row-title-content
+    mainTitle="Swap"
+    text="Swap pair of tokens: WETH:[WETH, AST], AST:[WETH, APT], APT:AST"
+  >
+    <div class="row-line row-sbc row-b">
+      <ui-select
+        [color]="tokenIn().toLowerCase()"
+        label="From"
+        [items]="tokenItems"
+        [(value)]="tokenIn"
+      />
+
+      <div class="row-spacer fl fl-cc">
+        <ui-button
+          [leftIcon]="'arrowLeftRightFill'"
+          [isStrong]="true"
+          [isFilled]="true"
+          [onlyIcon]="true"
+          (click)="flip()"
+        />
+      </div>
+
+      <ui-select
+        [color]="tokenOut().toLowerCase()"
+        label="To"
+        [items]="toItems()"
+        [(value)]="tokenOut"
+      />
+    </div>
+
+    <div class="row-line row-sbc">
+      <ui-input
+        name="stake"
+        [label]="'Swap amount'"
+        [type]="'token'"
+        [decimals]="18"
+        [suffix]="true"
+        [(value)]="amount"
+        [max]="max()"
+        [disabled]="isSwapInProgress()"
+      >
+        <span
+          input-suffix
+          [class]="'text-accent fz-md cl-' + tokenIn().toLocaleLowerCase()"
+          >{{ tokenIn() }}</span
+        >
+
+        <ng-container input-actions>
+          <div class="block-title">
+            <span class="text-secondary">
+              You have
+              <span
+                [class]="'text-accent fill cl-' + tokenIn().toLocaleLowerCase()"
+                >{{ max() | number : "1.2-5" }} {{ tokenIn() }}</span
+              >
+              tokens
+            </span>
+          </div>
+          <ui-button
+            [isFilled]="true"
+            [isStrong]="true"
+            [disabled]="isSwapInProgress()"
+            color="gray-900"
+            size="xxs"
+            (click)="amount.set(max())"
+            >Send Max</ui-button
+          >
+        </ng-container>
+      </ui-input>
+    </div>
+
+    <div class="row-info row-tb swap-info">
+      <div class="row-line row-sbc">
+        <div class="block-title fl fl-dc">
+          <span class="text-secondary">Min received</span>
+          @if(quote()) {
+          <span
+            [class]="'text-accent fill cl-' + tokenOut().toLocaleLowerCase()"
+          >
+            {{ quote()!.minOutHuman }} {{ tokenOut() }}
+          </span>
+          } @else {
+          <ui-skeleton height="24px" [lines]="1" [widths]="['120px']" />
+          }
+        </div>
+        <div class="block-title fl fl-dc">
+          <span class="text-secondary">Price impact</span>
+          @if(quote()) {
+          <span class="text-accent">
+            {{ quote()!.priceImpactPct.toFixed(2) }}%
+          </span>
+          } @else {
+          <ui-skeleton height="24px" [lines]="1" [widths]="['120px']" />
+          }
+        </div>
+        <div class="block-title fl fl-dc">
+          <span class="text-secondary">Fee (0.3%)</span>
+          @if(quote()) {
+          <span
+            [class]="'text-accent fill cl-' + tokenIn().toLocaleLowerCase()"
+          >
+            {{ feeHuman() }} {{ tokenIn() }}
+          </span>
+          } @else {
+          <ui-skeleton height="24px" [lines]="1" [widths]="['120px']" />
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="row-line row-b">
+      <ui-button
+        class="m-sm w-100"
+        [fullWidth]="true"
+        [isFilled]="true"
+        [isStrong]="true"
+        [loading]="isSwapInProgress()"
+        (click)="swap()"
+        size="md"
+      >
+        Swap
+      </ui-button>
     </div>
   </sbx-row-title-content>
 </div>

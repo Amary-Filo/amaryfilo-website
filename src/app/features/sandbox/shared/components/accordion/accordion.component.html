@@ -55,7 +55,7 @@
   </div>
 
   @if (isOpen()) {
-  <div class="accordion-body" [class.no-padding]="showBottom()">
+  <div class="accordion-body" [class.no-padding]="noPadding()">
     @if (isSkeleton()) {
     <ui-skeleton preset="accordionBody" />
 

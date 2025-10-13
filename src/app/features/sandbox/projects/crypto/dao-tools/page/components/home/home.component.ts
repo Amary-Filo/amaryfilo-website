@@ -3,17 +3,21 @@ import { Component, model } from '@angular/core';
 import { PageTabs } from '../../../types';
 
 import { RowTitleContentComponent } from '../row-title-content/row-title-content.component';
-import { UIHomeContractsAddressesComponent } from './home-contracts-addresses/home-contracts-addresses.component';
-import { UIHomeTokensComponent } from './home-tokens/home-tokens.component';
+import { UIHomeDaoContractsAddressesComponent } from './home-contracts-addresses/home-contracts-addresses.component';
+import { UIHomeDaoTokensComponent } from './home-tokens/home-tokens.component';
 import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
+import { UIFarmSummaryComponent } from '../farming/farming-summary/farming-summary.component';
+import { UILiquidityInfoComponent } from '../liquidity/liquidity-info/liquidity-info.component';
 
 @Component({
   selector: 'sbx-dao-tools-home-tab',
   imports: [
-    UIHomeContractsAddressesComponent,
+    UIHomeDaoContractsAddressesComponent,
     RowTitleContentComponent,
-    UIHomeTokensComponent,
+    UIHomeDaoTokensComponent,
     UIButtonComponent,
+    UIFarmSummaryComponent,
+    UILiquidityInfoComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

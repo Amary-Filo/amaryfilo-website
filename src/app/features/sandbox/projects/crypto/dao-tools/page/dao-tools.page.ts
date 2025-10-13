@@ -25,6 +25,11 @@ import { Web3TokenService } from '@sandbox/shared/web3/services/web3-token.servi
 import { ContractsService } from '../services/contracts.service';
 import { Web3Orchestrator } from '../services/web3-orchestrator.service';
 
+import { BalancesService } from '../services/balances.service';
+import { SwapService } from '../services/swap.service';
+import { LiquidityService } from '../services/liquidity.service';
+import { FarmService } from '../services/farm.service';
+
 import { SbxHeaderComponent } from './components/header/header.component';
 import { SbxFooterComponent } from './components/footer/footer.component';
 import { DaoToolsAboutComponent } from './components/about/about.component';
@@ -32,7 +37,6 @@ import { DaoToolsHomeComponent } from './components/home/home.component';
 import { DaoToolsSwapComponent } from './components/swap/swap.component';
 import { DaoToolsLiquidityComponent } from './components/liquidity/liquidity.component';
 import { DaoToolsFarmingComponent } from './components/farming/farming.component';
-import { BalancesService } from '../services/balances.service';
 
 @Component({
   standalone: true,
@@ -74,6 +78,9 @@ import { BalancesService } from '../services/balances.service';
     TxService,
     ContractsService,
     BalancesService,
+    SwapService,
+    LiquidityService,
+    FarmService,
   ],
 })
 export class DaoToolsPage {

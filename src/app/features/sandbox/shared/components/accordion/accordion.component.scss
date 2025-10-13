@@ -98,13 +98,14 @@
   }
 
   &-body {
-    &:not(&.no-padding) {
-      padding: 0;
-    }
     padding: 25px 20px;
 
     border-bottom: var(--border-base-width) solid
       rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+  }
+
+  .no-padding {
+    padding: 0;
   }
 
   &-bottom {

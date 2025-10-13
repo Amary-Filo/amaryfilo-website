@@ -1,2 +1,21 @@
 @use "../../../../../../shared/styles/mixins" as mx;
 @use "../../../../../../shared/styles/sandbox.scss";
+
+.swap-info {
+  padding: 0;
+
+  .block-title {
+    width: 100%;
+    padding: 15px 25px;
+    border-right: var(--border-base-width) solid
+      rgba(var(--border-base-color-rgb), var(--border-base-opacity));
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  ui-skeleton {
+    width: max-content;
+  }
+}

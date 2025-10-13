@@ -11,13 +11,13 @@ import { UIAccordionComponent } from '@sandbox/shared/components/accordion/accor
 import { UIButtonComponent } from '@sandbox/shared/components/button/button.component';
 
 @Component({
-  selector: 'ui-home-contracts-addresses-item',
+  selector: 'ui-dao-home-contracts-addresses-item',
   imports: [UIAccordionComponent, UIButtonComponent],
   templateUrl: './home-contracts-addresses-item.component.html',
   styleUrl: './home-contracts-addresses-item.component.scss',
   standalone: true,
 })
-export class UIHomeContractsAddressesItemComponent {
+export class UIHomeDaoContractsAddressesItemComponent {
   contractKey = input<ContractKey>('');
 
   private store = inject(WalletStore);
@@ -27,6 +27,15 @@ export class UIHomeContractsAddressesItemComponent {
 
   get address() {
     return this.contracts.getAddress(this.contractKey());
+  }
+
+  get contractName(): string {
+    const names: Record<ContractKey, string> = {
+      PAIR_AST_APT: 'LP/AA',
+      PAIR_AST_WETH: 'LP/AW',
+    };
+
+    return names[this.contractKey()] || this.contractKey();
   }
 
   open() {
