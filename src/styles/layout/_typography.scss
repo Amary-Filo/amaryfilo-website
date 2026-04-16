@@ -1,0 +1,56 @@
+// src/styles/layout/_typography.scss
+
+@use '../mixins' as mx;
+@use '../mixins/typography' as type;
+
+@each $role in type.$ui-text-roles {
+  .ui-text-#{$role} {
+    @include type.ui-text($role);
+  }
+}
+
+// Font weight
+.u-regular {
+  font-weight: var(--ui-fw-regular);
+}
+
+.u-medium {
+  font-weight: var(--ui-fw-medium);
+}
+
+.u-semibold {
+  font-weight: var(--ui-fw-semibold);
+}
+
+.u-bold {
+  font-weight: var(--ui-fw-bold);
+}
+
+.u-black {
+  font-weight: var(--ui-fw-black);
+}
+
+// Colors
+.u-text-muted {
+  color: rgb(var(--ui-sem-muted-fg-rgb) / var(--ui-alpha-100));
+}
+
+// Utils
+.u-truncate {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-mono {
+  font-family: var(--ui-ff-monospace);
+}
+
+.u-tt-u {
+  text-transform: uppercase;
+}
+
+.u-tt-c {
+  text-transform: capitalize;
+}

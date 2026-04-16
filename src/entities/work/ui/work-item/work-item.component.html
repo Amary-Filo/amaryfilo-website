@@ -1,0 +1,33 @@
+<h4 class="title">{{ item().title }}</h4>
+<i class="meta">{{ item().meta }}</i>
+<p class="text">{{ item().summary }}</p>
+
+<div class="btns">
+  <button ui-button (click)="openDialog()">View summary</button>
+
+  @if (item().codeUrl) {
+    <a
+      ui-button
+      icon="arrowRightUpLine"
+      variant="secondary"
+      [href]="item().codeUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View code
+    </a>
+  }
+
+  @if (item().liveUrl) {
+    <a
+      ui-button
+      icon="arrowRightUpLine"
+      variant="secondary"
+      [href]="item().liveUrl"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Live site
+    </a>
+  }
+</div>

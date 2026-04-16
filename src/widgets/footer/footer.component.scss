@@ -1,0 +1,21 @@
+@use 'styles/mixins' as mx;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--ui-spacing-2xl);
+  margin-top: var(--ui-spacing-8xl);
+  padding: var(--ui-spacing-2xl) 0;
+  font-size: var(--ui-fz-sm);
+}
+
+nav {
+  display: flex;
+  gap: var(--ui-spacing-md);
+
+  a {
+    --cp-btn-link-decoration-bg-a: var(--ui-alpha-0);
+  }
+}

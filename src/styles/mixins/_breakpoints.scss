@@ -1,0 +1,44 @@
+// src/styles/mixins/_breakpoints.scss
+@use 'sass:map';
+@use 'sass:meta';
+
+$ui-breakpoints: (
+  desktop: 1024px,
+  tablet: 769px,
+  mobile: 550px,
+  extramobile: 400px,
+);
+
+@function ui-bp($point) {
+  @if meta.type-of($point) == number {
+    @return $point * 1px;
+  }
+
+  @if map.has-key($ui-breakpoints, $point) {
+    @return map.get($ui-breakpoints, $point);
+  }
+
+  @error "Breakpoint `#{$point}` is not defined.";
+}
+
+@mixin down($point) {
+  @media (max-width: ui-bp($point)) {
+    @content;
+  }
+}
+
+@mixin up($point) {
+  @media (min-width: ui-bp($point)) {
+    @content;
+  }
+}
+
+@mixin between($from, $to) {
+  @media (min-width: ui-bp($from)) and (max-width: ui-bp($to)) {
+    @content;
+  }
+}
+
+@function ui-breakpoints() {
+  @return $ui-breakpoints;
+}

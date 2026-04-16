@@ -1,0 +1,66 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  container-type: inline-size;
+
+  padding: var(--ui-spacing-2xl);
+  border-radius: var(--ui-radius-3xl);
+  border: var(--ui-border-1) solid var(--ui-sem-border-2);
+
+  @include mx.down(700) {
+    min-width: 75vw;
+    scroll-snap-align: center;
+  }
+
+  @include mx.down(mobile) {
+    padding: var(--ui-spacing-sm);
+    border-radius: var(--ui-radius-xl);
+  }
+}
+
+.title {
+  margin-bottom: var(--ui-spacing-3xs);
+
+  @include mx.down(desktop) {
+    @include mx.ui-text('paragraph-extra-large-bold');
+  }
+
+  @include mx.down(tablet) {
+    @include mx.ui-text('paragraph-large-bold');
+  }
+}
+
+.meta,
+.text {
+  color: var(--ui-sem-muted-fg);
+  font-weight: var(--ui-fw-medium);
+}
+
+.text {
+  margin: var(--ui-spacing-sm) 0 var(--ui-spacing-lg);
+
+  @include mx.down(desktop) {
+    @include mx.ui-text('paragraph-medium');
+  }
+
+  @include mx.down(tablet) {
+    @include mx.ui-text('paragraph-small-medium');
+    margin: var(--ui-spacing-2xs) 0 var(--ui-spacing-lg);
+  }
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-sm);
+
+  @container (max-width: 252px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    > * {
+      --cp-btn-w: 100%;
+    }
+  }
+}

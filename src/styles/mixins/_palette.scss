@@ -1,0 +1,34 @@
+// src/styles/mixins/_palette.scss
+@use 'sass:color';
+@use 'sass:math';
+@use 'sass:list';
+
+@function uiRgbTriplet($hex) {
+  $r: math.round(color.channel($hex, 'red', $space: rgb));
+  $g: math.round(color.channel($hex, 'green', $space: rgb));
+  $b: math.round(color.channel($hex, 'blue', $space: rgb));
+
+  @return #{$r} #{$g} #{$b};
+}
+
+@mixin generate-colors-palette($mapping) {
+  :root {
+    @each $palette-name, $steps in $mapping {
+      @each $step, $hex in $steps {
+        --ui-color-#{$palette-name}-#{$step}: #{$hex};
+        --ui-color-#{$palette-name}-#{$step}-rgb: #{uiRgbTriplet($hex)};
+      }
+    }
+  }
+}
+
+@mixin generate-brand-palette($mapping) {
+  :root {
+    @each $palette-name, $steps in $mapping {
+      @each $step, $color in $steps {
+        --ui-brand-#{$palette-name}-#{$step}: var(--ui-color-#{$color});
+        --ui-brand-#{$palette-name}-#{$step}-rgb: var(--ui-color-#{$color}-rgb);
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<form class="contact-form" [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+  @if (formSent()) {
+    <div class="success-state" aria-live="polite">
+      <div class="success-title">Message sent</div>
+      <p class="success-text">
+        Thanks — your message was sent successfully. I will get back to you as soon as possible.
+      </p>
+
+      <button
+        ui-button
+        type="button"
+        variant="secondary"
+        size="extra-lg"
+        (click)="formSent.set(false)"
+      >
+        Send another message
+      </button>
+    </div>
+  } @else {
+    <ui-form-field>
+      <label>Your name</label>
+      <input
+        ui-input
+        type="text"
+        placeholder="Your name"
+        formControlName="name"
+        autocomplete="name"
+      />
+
+      <!-- @if (form.controls.name.touched && form.controls.name.invalid) {
+        <div class="error">Please enter your name.</div>
+      } -->
+    </ui-form-field>
+
+    <ui-form-field>
+      <label>Work email</label>
+      <input
+        ui-input
+        type="email"
+        placeholder="name@company.com"
+        formControlName="email"
+        autocomplete="email"
+      />
+
+      <!-- @if (form.controls.email.touched && form.controls.email.invalid) {
+        <div class="error">Please enter a valid email address.</div>
+      } -->
+    </ui-form-field>
+
+    <ui-form-field>
+      <label for="contact-message">Message</label>
+      <textarea
+        ui-textarea
+        placeholder="Tell me a bit about the role, team, or project"
+        formControlName="message"
+        rows="3"
+      ></textarea>
+
+      <!-- @if (form.controls.message.touched && form.controls.message.invalid) {
+        <div class="error">Please enter a message.</div>
+      } -->
+    </ui-form-field>
+
+    <ui-form-field aria-hidden="true" hidden>
+      <label>Website</label>
+      <input type="text" formControlName="website" tabindex="-1" autocomplete="off" />
+    </ui-form-field>
+
+    <button
+      ui-button
+      type="submit"
+      size="extra-lg"
+      fill
+      [loading]="isSubmitting()"
+      [disabled]="form.invalid || isSubmitting()"
+    >
+      Send message
+    </button>
+
+    @if (submitError()) {
+      <div class="submit-error" aria-live="polite">
+        {{ submitError() }}
+      </div>
+    }
+
+    <p class="legal">
+      By submitting this form, you agree to the
+      <a ui-button variant="link" routerLink="/privacy">Privacy Policy</a>
+      and
+      <a ui-button variant="link" routerLink="/terms">Terms of Use</a>.
+    </p>
+  }
+</form>

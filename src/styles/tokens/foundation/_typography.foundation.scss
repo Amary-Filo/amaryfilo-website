@@ -1,0 +1,49 @@
+// src/styles/tokens/foundation/_typography.foundation.scss
+
+:root {
+  // Font Families
+  --ui-ff-sans: Inter, system-ui, -apple-system, sans-serif;
+  --ui-ff-body: var(--ui-ff-sans);
+  --ui-ff-monospace:
+    ui-monospace, sfmono-regular, menlo, monaco, consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+
+  // Font Weights
+  --ui-fw-regular: 400;
+  --ui-fw-medium: 500;
+  --ui-fw-semibold: 600;
+  --ui-fw-bold: 700;
+  --ui-fw-extrabold: 800;
+  --ui-fw-black: 900;
+
+  // Letter Spacing
+  --ui-ls-tightest: -1.5px;
+  --ui-ls-tighter: -1px;
+  --ui-ls-normal: 0px;
+  --ui-ls-wider: 1.5px;
+
+  // Font Sizes
+  --ui-fz-xs: 12px;
+  --ui-fz-sm: 14px;
+  --ui-fz-md: 16px;
+  --ui-fz-lg: 18px;
+  --ui-fz-xl: 20px;
+  --ui-fz-2xl: 24px;
+  --ui-fz-3xl: 30px;
+  --ui-fz-4xl: 40px;
+  --ui-fz-5xl: 48px;
+  --ui-fz-6xl: 64px;
+  --ui-fz-7xl: 80px;
+  --ui-fz-8xl: 96px;
+
+  // Line Heights
+  --ui-lh-xs: 16px;
+  --ui-lh-sm: 20px;
+  --ui-lh-md: 21px;
+  --ui-lh-lg: 24px;
+  --ui-lh-xl: 27px;
+  --ui-lh-2xl: 28.8px;
+  --ui-lh-3xl: 30px;
+  --ui-lh-4xl: 44px;
+  --ui-lh-5xl: 58px;
+}

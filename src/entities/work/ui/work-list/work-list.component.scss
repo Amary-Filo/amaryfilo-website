@@ -1,0 +1,26 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--ui-spacing-3xl);
+
+  @include mx.down(desktop) {
+    gap: var(--ui-spacing-xl);
+  }
+
+  @include mx.down(700) {
+    display: flex;
+    gap: var(--ui-spacing-md);
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

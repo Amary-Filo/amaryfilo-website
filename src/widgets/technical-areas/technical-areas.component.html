@@ -1,0 +1,25 @@
+<section class="u-container">
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Technical Areas</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Core technologies and implementation areas I work with most often.
+    </p>
+  </div>
+
+  <div class="list">
+    @for (item of list; track $index) {
+      <div class="item">
+        <div class="head">
+          <ui-icon [name]="item.icon" size="var(--cp-ta-icon-size)" />
+          <h4>{{ item.title }}</h4>
+        </div>
+        <div ui-separator></div>
+        <div class="item-list">
+          @for (badge of item.list; track $index) {
+            <div class="badge">{{ badge }}</div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

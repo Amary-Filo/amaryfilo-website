@@ -1,0 +1,31 @@
+@use 'styles/mixins' as mx;
+
+.u-section-head {
+  --cp-sc-head-width: 750px;
+
+  [ui-button] {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-5xl);
+
+  padding: var(--ui-spacing-5xl);
+  border-radius: var(--ui-radius-4xl);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(desktop) {
+    padding: var(--ui-spacing-3xl);
+  }
+
+  @include mx.down(mobile) {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}

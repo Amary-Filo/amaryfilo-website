@@ -1,0 +1,60 @@
+@use 'styles/mixins' as mx;
+
+.eyebrow,
+.text,
+.meta,
+.bullets {
+  color: var(--ui-sem-muted-fg);
+
+  @include mx.down(mobile) {
+    font-size: var(--ui-fz-sm);
+    line-height: var(--ui-lh-sm);
+  }
+}
+
+.eyebrow {
+  font-weight: var(--ui-fw-bold);
+}
+
+.title {
+  margin: var(--ui-spacing-2xs) 0;
+
+  @include mx.down(mobile) {
+    margin: var(--ui-spacing-3xs) 0;
+    font-size: var(--ui-fz-md);
+    line-height: var(--ui-lh-lg);
+  }
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-2xs);
+  margin-bottom: var(--ui-spacing-md);
+}
+
+.text,
+.meta,
+.bullets {
+  font-weight: var(--ui-fw-medium);
+}
+
+.bullets {
+  margin: var(--ui-spacing-xs) 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.bullets li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  top: 0;
+}

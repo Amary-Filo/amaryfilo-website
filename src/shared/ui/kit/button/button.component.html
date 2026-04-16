@@ -1,0 +1,29 @@
+@if (iconOnly()) {
+  @if (loading()) {
+    <ui-spinner class="spinner" size="var(--cp-btn-spinner-size)" />
+  } @else {
+    <ui-icon [name]="icon() || 'diamondFill'" size="var(--cp-btn-icon-size)" />
+  }
+}
+<!-- leading -->
+@if (showLeadingIcon()) {
+  <span class="leading">
+    @if (loading()) {
+      <ui-spinner class="spinner" size="var(--cp-btn-spinner-size)" />
+    } @else if (showLeadingIcon()) {
+      <ui-icon [name]="icon() || 'diamondFill'" />
+    }
+  </span>
+}
+<!-- leading -->
+@if (!showLeadingIcon() && loading()) {
+  <span class="leading">
+    <ui-spinner class="spinner" size="var(--cp-btn-spinner-size)" />
+  </span>
+}
+<!-- label -->
+@if (!iconOnly()) {
+  <span class="label">
+    <ng-content />
+  </span>
+}

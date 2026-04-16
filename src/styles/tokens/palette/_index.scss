@@ -1,0 +1,11 @@
+// src/styles/tokens/palette/index.scss
+
+@forward './colors.palette';
+@forward './brand.palette';
+
+:root {
+  --ui-color-white: #fff;
+  --ui-color-white-rgb: 255 255 255;
+  --ui-color-black: #000;
+  --ui-color-black-rgb: 0 0 0;
+}

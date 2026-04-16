@@ -1,0 +1,79 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-xl);
+
+  padding: var(--ui-spacing-3xl);
+  border-radius: var(--ui-radius-4xl);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(tablet) {
+    padding: var(--ui-spacing-2xl);
+    border-radius: var(--ui-radius-3xl);
+  }
+
+  @include mx.down(mobile) {
+    padding: var(--ui-spacing-xl);
+    gap: var(--ui-spacing-lg);
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-xs);
+
+  label {
+    @include mx.ui-text('paragraph-small-medium');
+    color: var(--ui-sem-fg);
+  }
+}
+
+.error,
+.submit-error {
+  @include mx.ui-text('paragraph-small-medium');
+  color: rgb(var(--ui-sem-destructive-rgb));
+}
+
+.legal {
+  @include mx.ui-text('paragraph-small-medium');
+  color: var(--ui-sem-muted-fg);
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-underline-offset: 2px;
+  }
+}
+
+.success-state {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--ui-spacing-lg);
+}
+
+.success-title {
+  @include mx.ui-text('heading-3');
+  color: var(--ui-sem-fg);
+}
+
+.success-text {
+  @include mx.ui-text('paragraph-medium');
+  color: var(--ui-sem-muted-fg);
+}
+
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

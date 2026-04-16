@@ -1,0 +1,61 @@
+// src/styles/patterns/_prose.scss
+
+.u-prose {
+  --u-prose-space: var(--ui-spacing-md);
+  --u-prose-space-tight: var(--ui-spacing-sm);
+
+  overflow-wrap: anywhere;
+}
+
+.u-prose :where(p, ul, ol, pre, blockquote, hr, figure),
+.u-prose :where(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+}
+
+.u-prose :where(h1, h2, h3, h4, h5, h6) {
+  margin-top: calc(var(--u-prose-space) * 1.5);
+}
+
+.u-prose :where(h1, h2, h3, h4, h5, h6) + * {
+  margin-top: var(--u-prose-space-tight);
+}
+
+.u-prose :where(ul, ol) {
+  padding-left: 1.25em;
+}
+
+.u-prose li + li {
+  margin-top: calc(var(--u-prose-space) / 2);
+}
+
+.u-prose li > :where(ul, ol) {
+  margin-top: calc(var(--u-prose-space) / 2);
+}
+
+.u-prose hr {
+  border: 0;
+  height: var(--ui-border-1);
+  background: rgb(var(--ui-sem-border-2-rgb) / var(--ui-alpha-100));
+}
+
+.u-prose blockquote {
+  padding-left: var(--ui-spacing-lg);
+  border-left: var(--ui-border-2) solid rgb(var(--ui-sem-border-2-rgb) / var(--ui-alpha-100));
+  color: rgb(var(--ui-sem-muted-fg-rgb) / var(--ui-alpha-100));
+}
+
+.u-prose code {
+  font-family: var(--ui-ff-monospace);
+  font-size: 0.95em;
+}
+
+.u-prose pre {
+  padding: var(--ui-spacing-lg);
+  border-radius: var(--ui-radius-md);
+  background: rgb(var(--ui-sem-secondary-rgb) / var(--ui-alpha-100));
+  overflow: auto;
+}
+
+.u-prose > * + * {
+  margin-top: var(--u-prose-space);
+}

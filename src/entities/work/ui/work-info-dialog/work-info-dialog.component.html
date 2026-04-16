@@ -1,0 +1,74 @@
+<div ngpDialogOverlay>
+  <div ngpDialog aria-label="Work summary dialog">
+    <button
+      class="dialog-close"
+      ui-button
+      icon="closeLine"
+      iconOnly
+      variant="secondary"
+      pill
+      (click)="close()"
+    ></button>
+
+    <div class="dialog-content">
+      <div class="dialog-head">
+        <h2 class="title">{{ item().title }}</h2>
+        <i class="meta">{{ item().meta }}</i>
+      </div>
+
+      <p class="summary">{{ item().summary }}</p>
+
+      @if (item().image) {
+        <div class="image-wrap">
+          <img [src]="item().image" [alt]="item().title + ' preview'" />
+        </div>
+      }
+
+      <div class="section">
+        <h4 class="section-title">Overview</h4>
+        <p class="text">{{ item().description }}</p>
+      </div>
+
+      @if (item().tags?.length) {
+        <div class="section">
+          <h4 class="section-title">Focus areas</h4>
+          <div class="tags">
+            @for (tag of item().tags; track $index) {
+              <span class="tag">{{ tag }}</span>
+            }
+          </div>
+        </div>
+      }
+
+      @if (item().codeUrl || item().liveUrl) {
+        <div class="actions">
+          @if (item().codeUrl) {
+            <a
+              ui-button
+              icon="arrowRightUpLine"
+              variant="secondary"
+              [href]="item().codeUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View code
+            </a>
+          }
+
+          @if (item().liveUrl) {
+            <a
+              ui-button
+              icon="arrowRightUpLine"
+              variant="outlined"
+              [href]="item().liveUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live site
+            </a>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</div>

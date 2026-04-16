@@ -1,0 +1,89 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  position: fixed;
+  top: var(--ui-spacing-md);
+  left: 0;
+  width: 100%;
+  z-index: var(--ui-z-header);
+  pointer-events: none;
+
+  @include mx.down(650) {
+    top: var(--ui-spacing-xs);
+  }
+}
+
+.u-container {
+  @include mx.down(650) {
+    --u-container-px: var(--ui-spacing-xs);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: var(--ui-spacing-md) var(--ui-spacing-xl) var(--ui-spacing-md) var(--ui-spacing-xl);
+
+  border-radius: var(--ui-radius-lg);
+  background: rgb(var(--ui-color-white-rgb) / 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  pointer-events: auto;
+
+  @include mx.down(650) {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: 'button bars';
+
+    padding: var(--ui-spacing-sm);
+    transition: var(--ui-sem-transition-interactive);
+  }
+}
+
+nav {
+  display: flex;
+  gap: var(--ui-spacing-xl);
+
+  @include mx.down(650) {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    grid-column: 1 / 3;
+
+    max-height: 0;
+
+    transition: max-height var(--ui-dur-fast) var(--ui-ease);
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  button {
+    --cp-btn-link-decoration-bg-a: var(--ui-alpha-0);
+
+    @include mx.down(650) {
+      --cp-btn-w: 100%;
+      --cp-btn-py: 8px;
+    }
+  }
+}
+
+.menu-bars {
+  display: none;
+  grid-area: bars;
+
+  @include mx.down(650) {
+    display: flex;
+  }
+}
+
+.menu-opened {
+  @include mx.down(650) {
+    nav {
+      max-height: calc(100vh - 62px - 10px);
+      transition: var(--ui-dur-slow-1) var(--ui-ease);
+      pointer-events: auto;
+    }
+  }
+}

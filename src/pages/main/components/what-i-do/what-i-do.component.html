@@ -1,0 +1,19 @@
+<section class="u-container">
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">What I Do</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      I work at the intersection of frontend architecture, reusable systems, and complex product
+      flows.
+    </p>
+  </div>
+
+  <div class="list">
+    @for (item of list; track $index) {
+      <div class="item">
+        <ui-icon [name]="item.icon" size="var(--cp-wid-icon-size)" />
+        <div class="title">{{ item.title }}</div>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>

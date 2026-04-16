@@ -1,0 +1,120 @@
+// src/styles/tokens/semantic/_theme.semantic.scss
+
+:root {
+  // General
+  --ui-sem-bg: var(--ui-color-white);
+  --ui-sem-bg-rgb: var(--ui-color-white-rgb);
+  // --ui-sem-bg: var(--ui-color-slate-50);
+  // --ui-sem-bg-rgb: var(--ui-color-slate-50-rgb);
+  --ui-sem-fg: var(--ui-brand-neutrals-950);
+  --ui-sem-fg-rgb: var(--ui-brand-neutrals-950-rgb);
+  --ui-sem-primary: var(--ui-brand-neutrals-900);
+  --ui-sem-primary-rgb: var(--ui-brand-neutrals-900-rgb);
+  --ui-sem-primary-fg: var(--ui-brand-neutrals-50);
+  --ui-sem-primary-fg-rgb: var(--ui-brand-neutrals-50-rgb);
+  --ui-sem-primary-soft-rgb: var(--ui-brand-neutrals-200-rgb);
+  --ui-sem-primary-soft-fg-rgb: var(--ui-brand-neutrals-950-rgb);
+  --ui-sem-primary-border-rgb: var(--ui-brand-neutrals-300-rgb);
+  --ui-sem-secondary: var(--ui-brand-neutrals-100);
+  --ui-sem-secondary-rgb: var(--ui-brand-neutrals-100-rgb);
+  --ui-sem-secondary-fg: var(--ui-brand-neutrals-900);
+  --ui-sem-secondary-fg-rgb: var(--ui-brand-neutrals-900-rgb);
+  --ui-sem-accent: var(--ui-brand-neutrals-100);
+  --ui-sem-accent-rgb: var(--ui-brand-neutrals-100-rgb);
+  --ui-sem-accent-fg: var(--ui-brand-neutrals-900);
+  --ui-sem-accent-fg-rgb: var(--ui-brand-neutrals-900-rgb);
+  --ui-sem-muted: var(--ui-brand-neutrals-100);
+  --ui-sem-muted-rgb: var(--ui-brand-neutrals-100-rgb);
+  --ui-sem-muted-fg: var(--ui-brand-neutrals-500);
+  --ui-sem-muted-fg-rgb: var(--ui-brand-neutrals-500-rgb);
+  --ui-sem-destructive: var(--ui-color-red-600);
+  --ui-sem-destructive-rgb: var(--ui-color-red-600-rgb);
+  --ui-sem-destructive-fg: var(--ui-color-white);
+  --ui-sem-destructive-fg-rgb: var(--ui-color-white-rgb);
+
+  // Components
+  --ui-sem-input: var(--ui-color-white);
+  --ui-sem-input-rgb: var(--ui-color-white-rgb);
+  --ui-sem-card: var(--ui-color-white);
+  --ui-sem-card-rgb: var(--ui-color-white-rgb);
+  --ui-sem-card-fg: var(--ui-brand-neutrals-950);
+  --ui-sem-card-fg-rgb: var(--ui-brand-neutrals-950-rgb);
+  --ui-sem-popover: var(--ui-color-black);
+  --ui-sem-popover-rgb: var(--ui-color-black-rgb);
+  --ui-sem-popover-fg: var(--ui-color-white);
+  --ui-sem-popover-fg-rgb: var(--ui-color-white-rgb);
+
+  // Shadows
+  --ui-sem-ring-rgb: var(--ui-brand-neutrals-300-rgb);
+  --ui-sem-ring-error-rgb: var(--ui-color-red-300-rgb);
+  --ui-sem-shadow-color-rgb: var(--ui-color-neutral-900-rgb);
+  --ui-sem-backdrop-rgb: var(--ui-color-black-rgb);
+  --ui-sem-overlay-rgb: 0 0 0;
+
+  // UNOFFICIAL
+  --ui-sem-fg-alt: var(--ui-brand-neutrals-50);
+  --ui-sem-fg-alt-rgb: var(--ui-brand-neutrals-50-rgb);
+  --ui-sem-body-bg: var(--ui-color-white);
+  --ui-sem-body-bg-rgb: var(--ui-color-white-rgb);
+
+  // Statuses
+  --ui-sem-destructive-border: var(--ui-color-red-500);
+  --ui-sem-destructive-border-rgb: var(--ui-color-red-500-rgb);
+  --ui-sem-destructive-text: var(--ui-color-red-600);
+  --ui-sem-destructive-text-rgb: var(--ui-color-red-600-rgb);
+  --ui-sem-destructive-subtle: var(--ui-color-red-50);
+  --ui-sem-destructive-subtle-rgb: var(--ui-color-red-50-rgb);
+  --ui-sem-success: var(--ui-color-green-500);
+  --ui-sem-success-rgb: var(--ui-color-green-500-rgb);
+  --ui-sem-success-fg: var(--ui-color-neutral-950);
+  --ui-sem-success-fg-rgb: var(--ui-color-neutral-950-rgb);
+  --ui-sem-warning: var(--ui-color-yellow-500);
+  --ui-sem-warning-rgb: var(--ui-color-yellow-500-rgb);
+  --ui-sem-warning-fg: var(--ui-color-neutral-950);
+  --ui-sem-warning-fg-rgb: var(--ui-color-neutral-950-rgb);
+  --ui-sem-info: var(--ui-color-blue-500);
+  --ui-sem-info-rgb: var(--ui-color-blue-500-rgb);
+  --ui-sem-info-fg: #fff;
+  --ui-sem-info-fg-rgb: 255 255 255;
+  --ui-sem-mid-alt: var(--ui-brand-neutrals-600);
+  --ui-sem-mid-alt-rgb: var(--ui-brand-neutrals-600-rgb);
+
+  // Ghost
+  --ui-sem-ghost-bg: rgb(var(--ui-color-white), var(--ui-alpha-001));
+  --ui-sem-ghost-fg: var(--ui-brand-neutrals-700);
+  --ui-sem-ghost-fg-rgb: var(--ui-brand-neutrals-700-rgb);
+  --ui-sem-ghost-hover: rgb(var(--ui-color-black-rgb), var(--ui-alpha-5));
+
+  // Hover
+  --ui-sem-primary-hover: var(--ui-brand-neutrals-700);
+  --ui-sem-primary-hover-rgb: var(--ui-brand-neutrals-700-rgb);
+  --ui-sem-secondary-hover: var(--ui-brand-neutrals-50);
+  --ui-sem-secondary-hover-rgb: var(--ui-brand-neutrals-50-rgb);
+
+  // Outline
+  --ui-sem-outline: rgb(var(--ui-color-white-rgb), var(--ui-alpha-10));
+  --ui-sem-outline-hover: rgb(var(--ui-color-black-rgb), var(--ui-alpha-333));
+  --ui-sem-outline-active: rgb(var(--ui-color-black-rgb), var(--ui-alpha-5));
+
+  // Accent (Accent maps darkness levels)
+  --ui-sem-accent-0: var(--ui-brand-neutrals-50);
+  --ui-sem-accent-0-rgb: var(--ui-brand-neutrals-50-rgb);
+  --ui-sem-accent-2: var(--ui-brand-neutrals-200);
+  --ui-sem-accent-2-rgb: var(--ui-brand-neutrals-200-rgb);
+  --ui-sem-accent-3: var(--ui-brand-neutrals-300);
+  --ui-sem-accent-3-rgb: var(--ui-brand-neutrals-300-rgb);
+
+  // Borders
+  --ui-sem-border-0: var(--ui-brand-neutrals-50);
+  --ui-sem-border-0-rgb: var(--ui-brand-neutrals-50-rgb);
+  --ui-sem-border-1: var(--ui-brand-neutrals-100);
+  --ui-sem-border-1-rgb: var(--ui-brand-neutrals-100-rgb);
+  --ui-sem-border-2: var(--ui-brand-neutrals-200);
+  --ui-sem-border-2-rgb: var(--ui-brand-neutrals-200-rgb);
+  --ui-sem-border-3: var(--ui-brand-neutrals-300);
+  --ui-sem-border-3-rgb: var(--ui-brand-neutrals-300-rgb);
+  --ui-sem-border-4: var(--ui-brand-neutrals-400);
+  --ui-sem-border-4-rgb: var(--ui-brand-neutrals-400-rgb);
+  --ui-sem-border-5: var(--ui-brand-neutrals-500);
+  --ui-sem-border-5-rgb: var(--ui-brand-neutrals-500-rgb);
+}

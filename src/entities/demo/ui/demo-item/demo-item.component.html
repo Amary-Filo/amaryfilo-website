@@ -1,0 +1,22 @@
+<img [src]="item().img" [alt]="item().title" />
+<div class="info">
+  <div class="title">{{ item().title }}</div>
+  <p class="text">{{ item().text }}</p>
+  <div class="btns">
+    <button ui-button [routerLink]="'/demos/' + item().slug">Open Demo</button>
+
+    @if (item().code) {
+      <a
+        ui-button
+        icon="arrowRightUpLine"
+        variant="secondary"
+        [href]="item().code"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="View Code"
+      >
+        View Code
+      </a>
+    }
+  </div>
+</div>

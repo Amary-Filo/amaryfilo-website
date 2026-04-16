@@ -1,0 +1,58 @@
+<section class="u-container">
+  <div class="content" [attr.data-align]="align()">
+    @if (eyebrow()) {
+      <div class="eyebrow">
+        {{ eyebrow() }}
+      </div>
+    }
+
+    <h1 class="title">
+      {{ title() }}
+    </h1>
+
+    <p class="text">
+      {{ description() }}
+    </p>
+
+    @if (actions().length) {
+      <div class="btns">
+        @for (action of actions(); track $index) {
+          @if (action.href) {
+            <a
+              ui-button
+              [variant]="action.variant || 'primary'"
+              [size]="action.size || 'extra-lg'"
+              [icon]="action.icon || null"
+              [href]="action.href"
+              [target]="action.target || null"
+              [rel]="action.rel || null"
+            >
+              {{ action.label }}
+            </a>
+          } @else if (action.routerLink) {
+            <a
+              ui-button
+              [variant]="action.variant || 'primary'"
+              [size]="action.size || 'extra-lg'"
+              [icon]="action.icon || null"
+              [routerLink]="action.routerLink"
+            >
+              {{ action.label }}
+            </a>
+          }
+        }
+      </div>
+    }
+
+    @if (meta().length) {
+      <div class="trust u-text-muted">
+        @for (item of meta(); track $index; let last = $last) {
+          <span>{{ item }}</span>
+          @if (!last) {
+            <span>·</span>
+          }
+        }
+      </div>
+    }
+  </div>
+</section>

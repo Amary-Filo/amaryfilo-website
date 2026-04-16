@@ -1,0 +1,131 @@
+// src/styles/base/_reset.scss
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ui-ff-body);
+  font-weight: var(--ui-fw-regular);
+  background-color: var(--ui-sem-bg);
+  color: var(--ui-sem-fg);
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  overflow-wrap: break-word;
+  font-family: var(--ui-ff-sans);
+  font-weight: var(--ui-fw-semibold);
+}
+
+h1,
+.h1 {
+  font-size: var(--ui-sem-text-heading-1-fz);
+  line-height: var(--ui-sem-text-heading-1-lh);
+  letter-spacing: var(--ui-sem-text-heading-1-ls);
+}
+
+h2,
+.h2 {
+  font-size: var(--ui-sem-text-heading-2-fz);
+  line-height: var(--ui-sem-text-heading-2-lh);
+  letter-spacing: var(--ui-sem-text-heading-2-ls);
+}
+
+h3,
+.h3 {
+  font-size: var(--ui-sem-text-heading-3-fz);
+  line-height: var(--ui-sem-text-heading-3-lh);
+  letter-spacing: var(--ui-sem-text-heading-3-ls);
+}
+
+h4,
+.h4 {
+  font-size: var(--ui-sem-text-heading-4-fz);
+  line-height: var(--ui-sem-text-heading-4-lh);
+  letter-spacing: var(--ui-sem-text-heading-4-ls);
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+  font-size: var(--ui-sem-text-paragraph-large-regular-fz);
+  line-height: var(--ui-sem-text-paragraph-large-regular-lh);
+  letter-spacing: var(--ui-sem-text-paragraph-large-regular-ls);
+}
+
+small {
+  font-size: var(--ui-sem-text-paragraph-small-regular-fz);
+  line-height: var(--ui-sem-text-paragraph-small-regular-lh);
+}
+
+// Links
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 120ms ease;
+}
+
+a.link {
+  color: rgb(var(--ui-sem-primary) / var(--ui-alpha-100));
+}
+
+a.link:hover {
+  color: rgb(var(--ui-sem-primary) / var(--ui-alpha-80));
+}
+
+// Media
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+// Forms
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

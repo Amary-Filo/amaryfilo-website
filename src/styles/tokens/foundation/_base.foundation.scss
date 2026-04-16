@@ -1,0 +1,66 @@
+// src/styles/tokens/foundation/_base.foundation.scss
+
+:root {
+  // Spacing
+  --ui-spacing-4xs: 2px;
+  --ui-spacing-3xs: 4px;
+  --ui-spacing-2xs: 6px;
+  --ui-spacing-xs: 8px;
+  --ui-spacing-sm: 12px;
+  --ui-spacing-md: 16px;
+  --ui-spacing-lg: 20px;
+  --ui-spacing-xl: 24px;
+  --ui-spacing-2xl: 32px;
+  --ui-spacing-3xl: 40px;
+  --ui-spacing-4xl: 48px;
+  --ui-spacing-5xl: 64px;
+  --ui-spacing-6xl: 80px;
+  --ui-spacing-7xl: 96px;
+  --ui-spacing-8xl: 112px;
+  --ui-spacing-9xl: 128px;
+  --ui-spacing-10xl: 144px;
+
+  // Radius
+  --ui-radius-none: 0;
+  --ui-radius-xs: 2px;
+  --ui-radius-sm: 4px;
+  --ui-radius-md: 6px;
+  --ui-radius-lg: 8px;
+  --ui-radius: 10px;
+  --ui-radius-xl: 12px;
+  --ui-radius-2xl: 16px;
+  --ui-radius-3xl: 24px;
+  --ui-radius-4xl: 32px;
+  --ui-radius-full: 999px;
+
+  // Alpha
+  --ui-alpha-0: 0;
+  --ui-alpha-001: 0.0001;
+  --ui-alpha-333: 0.0333;
+  --ui-alpha-5: 0.05;
+  --ui-alpha-10: 0.1;
+  --ui-alpha-15: 0.15;
+  --ui-alpha-20: 0.2;
+  --ui-alpha-30: 0.3;
+  --ui-alpha-40: 0.4;
+  --ui-alpha-50: 0.5;
+  --ui-alpha-60: 0.6;
+  --ui-alpha-70: 0.7;
+  --ui-alpha-80: 0.8;
+  --ui-alpha-90: 0.9;
+  --ui-alpha-95: 0.95;
+  --ui-alpha-100: 1;
+
+  // Border Width
+  --ui-border-1: 1px;
+  --ui-border-2: 2px;
+
+  // Z-Index
+  --ui-z-header: 100;
+  --ui-z-backdrop: 400;
+  --ui-z-modal: 500;
+  --ui-z-popover: 600;
+  --ui-z-dropdown: 1000;
+  --ui-z-tooltip: 1500;
+  --ui-z-toast: 2000;
+}

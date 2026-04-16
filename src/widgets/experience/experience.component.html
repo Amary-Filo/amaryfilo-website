@@ -1,0 +1,20 @@
+@if (onlyList()) {
+  <experience-list [list]="list()" [variant]="variant()" />
+} @else {
+  <!-- <section class="u-container"> -->
+  <section>
+    <div class="content">
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Experience</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          I work at the intersection of frontend architecture, reusable systems, and complex product
+          flows.
+        </p>
+
+        <button ui-button routerLink="/about">View full experience</button>
+      </div>
+
+      <experience-list [list]="list()" [variant]="variant()" />
+    </div>
+  </section>
+}

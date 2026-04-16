@@ -1,0 +1,49 @@
+// src/styles/tokens/semantic/_base.semantic.scss
+
+:root {
+  // Shadows
+  --ui-sem-shadow-none: 0 0 0 #000;
+  --ui-sem-shadow-2xs: 0 1px 0 0 rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-0));
+  --ui-sem-shadow-xs: 0 1px 2px 0 rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-0));
+  --ui-sem-shadow-sm:
+    0 1px 3px 0 rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10)),
+    0 1px 2px -1px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10));
+  --ui-sem-shadow-md:
+    0 4px 6px -1px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10)),
+    0 2px 4px -2px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10));
+  --ui-sem-shadow-lg:
+    0 10px 15px -3px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10)),
+    0 4px 6px -4px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10));
+  --ui-sem-shadow-xl:
+    0 20px 25px -5px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10)),
+    0 8px 10px -6px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10));
+  --ui-sem-shadow-2xl: 0 25px 50px -12px rgb(var(--ui-sem-shadow-color-rgb) / var(--ui-alpha-10));
+
+  // Focus ring
+  --ui-sem-focus-ring: 0 0 0 3px rgb(var(--ui-sem-ring-rgb) / var(--ui-alpha-100));
+  --ui-sem-focus-ring-error: 0 0 0 3px rgb(var(--ui-sem-ring-error-rgb) / var(--ui-alpha-100));
+
+  // Backdrop
+  --ui-sem-backdrop-md: 0 0 0 rgb(var(--ui-color-black-rgb), var(--ui-alpha-60));
+
+  // Motion
+  --ui-dur-fast: 150ms;
+  --ui-dur-normal: 250ms;
+  --ui-dur-slow: 350ms;
+  --ui-dur-slow-1: 550ms;
+  --ui-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --ui-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ui-ease-in: cubic-bezier(0.4, 0, 1, 1);
+
+  --ui-sem-transition-interactive:
+    color var(--ui-dur-fast) var(--ui-ease), background-color var(--ui-dur-fast) var(--ui-ease),
+    border-color var(--ui-dur-fast) var(--ui-ease), box-shadow var(--ui-dur-fast) var(--ui-ease),
+    opacity var(--ui-dur-fast) var(--ui-ease);
+  --ui-sem-transition-transform: transform var(--ui-dur-fast) var(--ui-ease);
+  --ui-sem-transition-overlay:
+    opacity var(--ui-dur-normal) var(--ui-ease-out),
+    transform var(--ui-dur-normal) var(--ui-ease-out),
+    visibility var(--ui-dur-normal) var(--ui-ease-out);
+  --ui-sem-transition-expand:
+    height var(--ui-dur-normal) var(--ui-ease-out), opacity var(--ui-dur-normal) var(--ui-ease-out);
+}

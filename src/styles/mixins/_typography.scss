@@ -1,0 +1,63 @@
+// src/styles/mixins/_typography.scss
+@use 'sass:map';
+$ui-text-roles: (
+  // Display
+  'display-1',
+  'display-2',
+  // Headings (48/48) (30/30) (24/28.8) (20/24)
+  'heading-1',
+  'heading-2',
+  'heading-3',
+  'heading-4',
+  // Paragraph large (20/27)
+  'paragraph-extra-large-regular',
+  'paragraph-extra-large-medium',
+  'paragraph-extra-large-bold',
+  // Paragraph large (18/27)
+  'paragraph-large-regular',
+  'paragraph-large-medium',
+  'paragraph-large-bold',
+  // Paragraph (16/24)
+  'paragraph-regular',
+  'paragraph-medium',
+  'paragraph-bold',
+  // Paragraph small (14/20)
+  'paragraph-small-regular',
+  'paragraph-small-medium',
+  'paragraph-small-bold',
+  // Paragraph mini (12/16)
+  'paragraph-mini-regular',
+  'paragraph-mini-medium',
+  'paragraph-mini-bold',
+  // Caption (14/21) or mono (16/24)
+  'caption',
+  'mono'
+);
+
+// Slots
+@mixin ui-text($role, $slot: null) {
+  @if $slot {
+    font-size: var(--#{$slot}-fz, var(--ui-sem-text-#{$role}-fz));
+    line-height: var(--#{$slot}-lh, var(--ui-sem-text-#{$role}-lh));
+    font-weight: var(--#{$slot}-fw, var(--ui-sem-text-#{$role}-fw));
+    letter-spacing: var(--#{$slot}-ls, var(--ui-sem-text-#{$role}-ls));
+  } @else {
+    font-size: var(--ui-sem-text-#{$role}-fz);
+    line-height: var(--ui-sem-text-#{$role}-lh);
+    font-weight: var(--ui-sem-text-#{$role}-fw);
+    letter-spacing: var(--ui-sem-text-#{$role}-ls);
+  }
+}
+
+@mixin text-slot($role, $slot) {
+  --#{$slot}-fz: var(--ui-sem-text-#{$role}-fz);
+  --#{$slot}-lh: var(--ui-sem-text-#{$role}-lh);
+  --#{$slot}-fw: var(--ui-sem-text-#{$role}-fw);
+  --#{$slot}-ls: var(--ui-sem-text-#{$role}-ls);
+}
+
+@each $role in $ui-text-roles {
+  %ui-text-#{$role} {
+    @include ui-text($role);
+  }
+}

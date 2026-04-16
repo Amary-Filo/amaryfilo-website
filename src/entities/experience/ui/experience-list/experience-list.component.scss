@@ -1,0 +1,12 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-md);
+  margin-top: var(--ui-spacing-4xl);
+
+  @include mx.down(mobile) {
+    margin-top: var(--ui-spacing-2xl);
+  }
+}

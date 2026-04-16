@@ -1,0 +1,46 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: block;
+  margin-top: 180px;
+  margin-bottom: var(--ui-spacing-8xl);
+
+  @include mx.down(tablet) {
+    margin-top: 120px;
+  }
+
+  @include mx.down(mobile) {
+    margin-top: 100px;
+    margin-bottom: var(--ui-spacing-6xl);
+  }
+}
+
+.content {
+  max-width: 760px;
+}
+
+.u-prose {
+  color: rgb(var(--ui-sem-fg-rgb) / var(--ui-alpha-100));
+}
+
+.u-prose h1 {
+  @include mx.ui-text('heading-1');
+  font-weight: var(--ui-fw-extrabold);
+  margin-bottom: var(--ui-spacing-2xl);
+}
+
+.u-prose h2 {
+  @include mx.ui-text('heading-3');
+  margin-top: var(--ui-spacing-4xl);
+}
+
+.u-prose p,
+.u-prose li {
+  @include mx.ui-text('paragraph-large-medium');
+  color: var(--ui-sem-muted-fg);
+  line-height: 1.7;
+}
+
+.u-prose strong {
+  color: rgb(var(--ui-sem-fg-rgb) / var(--ui-alpha-100));
+}

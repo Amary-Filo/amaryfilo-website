@@ -1,0 +1,17 @@
+@use 'styles/mixins' as mx;
+
+.u-section-head {
+  --cp-sc-head-width: 650px;
+
+  [ui-button] {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-5xl);
+}

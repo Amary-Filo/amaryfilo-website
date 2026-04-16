@@ -1,0 +1,129 @@
+// src/styles/tokens/semantic/_typography.semantic.scss
+
+@use 'styles/mixins' as mx;
+
+// Desktop (default)
+:root {
+  // Headings
+  --ui-sem-text-heading-1-fz: var(--ui-fz-5xl);
+  --ui-sem-text-heading-1-lh: var(--ui-lh-5xl);
+  --ui-sem-text-heading-1-ls: var(--ui-ls-tightest);
+  --ui-sem-text-heading-1-fw: var(--ui-fw-bold);
+  --ui-sem-text-heading-2-fz: var(--ui-fz-3xl);
+  --ui-sem-text-heading-2-lh: var(--ui-lh-3xl);
+  --ui-sem-text-heading-2-ls: var(--ui-ls-tighter);
+  --ui-sem-text-heading-2-fw: var(--ui-fw-semibold);
+  --ui-sem-text-heading-3-fz: var(--ui-fz-2xl);
+  --ui-sem-text-heading-3-lh: var(--ui-lh-2xl);
+  --ui-sem-text-heading-3-ls: var(--ui-ls-tighter);
+  --ui-sem-text-heading-3-fw: var(--ui-fw-semibold);
+  --ui-sem-text-heading-4-fz: var(--ui-fz-xl);
+  --ui-sem-text-heading-4-lh: var(--ui-lh-lg);
+  --ui-sem-text-heading-4-ls: var(--ui-ls-normal);
+  --ui-sem-text-heading-4-fw: var(--ui-fw-semibold);
+
+  // Paragraph large (20/27)
+  --ui-sem-text-paragraph-extra-large-regular-fz: var(--ui-fz-xl);
+  --ui-sem-text-paragraph-extra-large-regular-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-extra-large-regular-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-extra-large-regular-fw: var(--ui-fw-regular);
+  --ui-sem-text-paragraph-extra-large-medium-fz: var(--ui-fz-xl);
+  --ui-sem-text-paragraph-extra-large-medium-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-extra-large-medium-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-extra-large-medium-fw: var(--ui-fw-medium);
+  --ui-sem-text-paragraph-extra-large-bold-fz: var(--ui-fz-xl);
+  --ui-sem-text-paragraph-extra-large-bold-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-extra-large-bold-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-extra-large-bold-fw: var(--ui-fw-semibold);
+
+  // Paragraph large (18/27)
+  --ui-sem-text-paragraph-large-regular-fz: var(--ui-fz-lg);
+  --ui-sem-text-paragraph-large-regular-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-large-regular-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-large-regular-fw: var(--ui-fw-regular);
+  --ui-sem-text-paragraph-large-medium-fz: var(--ui-fz-lg);
+  --ui-sem-text-paragraph-large-medium-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-large-medium-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-large-medium-fw: var(--ui-fw-medium);
+  --ui-sem-text-paragraph-large-bold-fz: var(--ui-fz-lg);
+  --ui-sem-text-paragraph-large-bold-lh: var(--ui-lh-xl);
+  --ui-sem-text-paragraph-large-bold-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-large-bold-fw: var(--ui-fw-semibold);
+
+  // Paragraph (16/24)
+  --ui-sem-text-paragraph-regular-fz: var(--ui-fz-md);
+  --ui-sem-text-paragraph-regular-lh: var(--ui-lh-lg);
+  --ui-sem-text-paragraph-regular-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-regular-fw: var(--ui-fw-regular);
+  --ui-sem-text-paragraph-medium-fz: var(--ui-fz-md);
+  --ui-sem-text-paragraph-medium-lh: var(--ui-lh-lg);
+  --ui-sem-text-paragraph-medium-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-medium-fw: var(--ui-fw-medium);
+  --ui-sem-text-paragraph-bold-fz: var(--ui-fz-md);
+  --ui-sem-text-paragraph-bold-lh: var(--ui-lh-lg);
+  --ui-sem-text-paragraph-bold-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-bold-fw: var(--ui-fw-semibold);
+
+  // Paragraph small (14/20)
+  --ui-sem-text-paragraph-small-regular-fz: var(--ui-fz-sm);
+  --ui-sem-text-paragraph-small-regular-lh: var(--ui-lh-sm);
+  --ui-sem-text-paragraph-small-regular-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-small-regular-fw: var(--ui-fw-regular);
+  --ui-sem-text-paragraph-small-medium-fz: var(--ui-fz-sm);
+  --ui-sem-text-paragraph-small-medium-lh: var(--ui-lh-sm);
+  --ui-sem-text-paragraph-small-medium-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-small-medium-fw: var(--ui-fw-medium);
+  --ui-sem-text-paragraph-small-bold-fz: var(--ui-fz-sm);
+  --ui-sem-text-paragraph-small-bold-lh: var(--ui-lh-sm);
+  --ui-sem-text-paragraph-small-bold-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-small-bold-fw: var(--ui-fw-semibold);
+
+  // Paragraph mini (12/16)
+  --ui-sem-text-paragraph-mini-regular-fz: var(--ui-fz-xs);
+  --ui-sem-text-paragraph-mini-regular-lh: var(--ui-lh-xs);
+  --ui-sem-text-paragraph-mini-regular-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-mini-regular-fw: var(--ui-fw-regular);
+  --ui-sem-text-paragraph-mini-medium-fz: var(--ui-fz-xs);
+  --ui-sem-text-paragraph-mini-medium-lh: var(--ui-lh-xs);
+  --ui-sem-text-paragraph-mini-medium-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-mini-medium-fw: var(--ui-fw-medium);
+  --ui-sem-text-paragraph-mini-bold-fz: var(--ui-fz-xs);
+  --ui-sem-text-paragraph-mini-bold-lh: var(--ui-lh-xs);
+  --ui-sem-text-paragraph-mini-bold-ls: var(--ui-ls-normal);
+  --ui-sem-text-paragraph-mini-bold-fw: var(--ui-fw-semibold);
+
+  // Caption or mono
+  --ui-sem-text-caption-fz: var(--ui-fz-sm);
+  --ui-sem-text-caption-lh: var(--ui-lh-md);
+  --ui-sem-text-caption-ls: var(--ui-ls-wider);
+  --ui-sem-text-caption-fw: var(--ui-fw-regular);
+  --ui-sem-text-mono-fz: var(--ui-fz-md);
+  --ui-sem-text-mono-lh: var(--ui-lh-lg);
+  --ui-sem-text-mono-ls: var(--ui-ls-normal);
+  --ui-sem-text-mono-fw: var(--ui-fw-regular);
+}
+
+// Tablet
+@include mx.down(tablet) {
+  :root {
+    --ui-sem-text-heading-1-fz: var(--ui-fz-4xl);
+    --ui-sem-text-heading-1-lh: var(--ui-lh-4xl);
+    --ui-sem-text-heading-1-ls: var(--ui-ls-tighter);
+    --ui-sem-text-heading-2-fz: var(--ui-fz-2xl);
+    --ui-sem-text-heading-2-lh: var(--ui-lh-2xl);
+  }
+}
+
+// Mobile
+@include mx.down(mobile) {
+  :root {
+    --ui-sem-text-heading-1-fz: var(--ui-fz-3xl);
+    // --ui-sem-text-heading-1-lh: var(--ui-lh-3xl);
+    --ui-sem-text-heading-1-lh: 34px;
+    --ui-sem-text-heading-1-ls: var(--ui-ls-normal);
+    --ui-sem-text-heading-2-fz: var(--ui-fz-xl);
+    --ui-sem-text-heading-2-lh: var(--ui-lh-lg);
+    --ui-sem-text-heading-3-fz: var(--ui-fz-lg);
+    --ui-sem-text-heading-3-lh: var(--ui-lh-xl);
+  }
+}

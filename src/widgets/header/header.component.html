@@ -1,0 +1,27 @@
+<header class="u-container">
+  <div class="content" [class.menu-opened]="menuOpen()">
+    <ui-icon routerLink="/" name="nsLogo" size="24px" />
+
+    <ui-icon
+      class="menu-bars"
+      size="24px"
+      [name]="icon()"
+      [class.menu-opened]="menuOpen()"
+      (click)="toggleMenu()"
+    />
+
+    <nav>
+      @for (item of navItems; track item.id) {
+        <button
+          ui-button
+          variant="link"
+          type="button"
+          [active]="isItemActive(item)"
+          (click)="onNavItemClick(item)"
+        >
+          {{ item.label }}
+        </button>
+      }
+    </nav>
+  </div>
+</header>

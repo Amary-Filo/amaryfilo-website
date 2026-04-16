@@ -1,0 +1,15 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+
+  @include mx.down(tablet) {
+    gap: var(--ui-spacing-10xl);
+  }
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-8xl);
+  }
+}
