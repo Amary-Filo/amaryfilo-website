@@ -91,6 +91,7 @@ export const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '404',
+    data: { seo: notFoundSeo },
+    loadComponent: () => import('../pages/not-found/not-found.page').then((m) => m.NotFoundPage),
   },
 ];
