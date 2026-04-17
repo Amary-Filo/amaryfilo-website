@@ -1,0 +1,19 @@
+<section class="u-container">
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Engineering Approach</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      I prefer frontend systems that stay simple, extensible, and maintainable as products evolve.
+      My approach is shaped less by trends and more by what makes products easier to build, scale,
+      and support over time.
+    </p>
+  </div>
+
+  <div class="list">
+    @for (item of list; track $index) {
+      <div class="item">
+        <div class="title">{{ item.title }}</div>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>

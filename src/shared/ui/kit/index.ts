@@ -10,3 +10,4 @@ export * from './button/button.component';
 export * from './spinner.component';
 export * from './separator.component';
 export * from './form-field.component';
+export * from './switch.component';

@@ -1,0 +1,40 @@
+@use 'styles/mixins' as mx;
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--ui-spacing-lg);
+  margin-top: var(--ui-spacing-5xl);
+
+  @include mx.down(mobile) {
+    grid-template-columns: 1fr;
+    gap: var(--ui-spacing-xs);
+    margin-top: var(--ui-spacing-2xl);
+  }
+}
+
+.item {
+  padding: var(--ui-spacing-xl);
+  border-radius: var(--ui-radius-2xl);
+  border: var(--ui-border-1) solid var(--ui-sem-border-2);
+
+  @include mx.down(tablet) {
+    padding: var(--ui-spacing-lg);
+    border-radius: var(--ui-radius-lg);
+  }
+
+  .title {
+    @include mx.ui-text('heading-4');
+    margin-bottom: var(--ui-spacing-xs);
+
+    @include mx.down(tablet) {
+      margin-bottom: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-large-bold');
+    }
+  }
+
+  .text {
+    font-weight: var(--ui-fw-medium);
+    color: var(--ui-sem-muted-fg);
+  }
+}

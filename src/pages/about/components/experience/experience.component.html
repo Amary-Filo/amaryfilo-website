@@ -1,0 +1,17 @@
+<section class="u-container">
+  <div class="content">
+    <div class="u-section-head">
+      <h2 class="ui-text-heading-1">Experience</h2>
+      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+        A broader view of my frontend work across product teams, commercial delivery, reusable
+        systems, and technical leadership.
+      </p>
+
+      <ui-form-field label="Show Full">
+        <ui-switch [(ngModel)]="isFull" aria-label="Show full Experience description" />
+      </ui-form-field>
+    </div>
+
+    <experience-list [list]="list" [variant]="isFull() ? 'full' : 'preview'" />
+  </div>
+</section>

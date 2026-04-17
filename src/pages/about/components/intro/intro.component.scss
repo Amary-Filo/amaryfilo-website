@@ -1,0 +1,36 @@
+@use 'styles/mixins' as mx;
+
+.content {
+  max-width: max-content;
+  padding: var(--ui-spacing-4xl);
+  border-radius: var(--ui-radius-3xl);
+  border: var(--ui-border-1) solid var(--ui-sem-border-1);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(tablet) {
+    padding: var(--ui-spacing-2xl);
+  }
+
+  @include mx.down(mobile) {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-lg);
+  max-width: 750px;
+  margin-top: var(--ui-spacing-xl);
+
+  @include mx.down(tablet) {
+    @include mx.ui-text('paragraph-medium');
+  }
+
+  @include mx.down(mobile) {
+    margin-top: var(--ui-spacing-md);
+  }
+}

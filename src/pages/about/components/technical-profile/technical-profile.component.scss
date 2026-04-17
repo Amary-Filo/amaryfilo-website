@@ -1,0 +1,60 @@
+@use 'styles/mixins' as mx;
+
+.u-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--ui-spacing-2xl);
+
+  @include mx.down(desktop) {
+    flex-direction: column;
+  }
+
+  @include mx.down(tablet) {
+    gap: var(--ui-spacing-3xl);
+  }
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-2xl);
+  }
+}
+
+.u-section-head {
+  max-width: 500px;
+  min-width: 400px;
+
+  @include mx.down(desktop) {
+    min-width: 100%;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-lg);
+  max-width: 550px;
+
+  @include mx.down(desktop) {
+    max-width: 750px;
+  }
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-md);
+  }
+}
+
+.item {
+  .title {
+    @include mx.ui-text('heading-4');
+    margin-bottom: var(--ui-spacing-xs);
+
+    @include mx.down(tablet) {
+      margin-bottom: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-large-bold');
+    }
+  }
+
+  .text {
+    font-weight: var(--ui-fw-medium);
+    color: var(--ui-sem-muted-fg);
+  }
+}

@@ -66,6 +66,10 @@ nav {
       --cp-btn-w: 100%;
       --cp-btn-py: 8px;
     }
+
+    &[data-active] {
+      --cp-btn-link-decoration-bg-a: var(--ui-alpha-100);
+    }
   }
 }
 

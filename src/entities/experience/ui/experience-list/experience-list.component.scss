@@ -3,7 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  gap: var(--ui-spacing-md);
+  gap: var(--ui-spacing-lg);
   margin-top: var(--ui-spacing-4xl);
 
   @include mx.down(mobile) {

@@ -3,11 +3,12 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { WorkFacade, WorkList } from '@entities';
 import { WidgetPageHero } from '@widgets';
+import { UISeparator } from '@shared/ui/kit';
 
 @Component({
   selector: 'page-works',
   standalone: true,
-  imports: [WorkList, WidgetPageHero],
+  imports: [WorkList, WidgetPageHero, UISeparator],
   templateUrl: './works.page.html',
   styleUrl: './works.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

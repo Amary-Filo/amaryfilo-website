@@ -3,12 +3,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { HowIWorkSection } from '../how-i-work/how-i-work.component';
-import { WidgetExperience } from '@widgets';
+import { ExperienceSection } from '../experience/experience.component';
 
 @Component({
   selector: 'section-about-experience',
   standalone: true,
-  imports: [HowIWorkSection, WidgetExperience],
+  imports: [HowIWorkSection, ExperienceSection],
   templateUrl: './about-experience.component.html',
   styleUrl: './about-experience.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

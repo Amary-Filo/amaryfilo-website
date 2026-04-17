@@ -3,18 +3,20 @@
 .u-section-head {
   --cp-sc-head-width: 750px;
 
+  margin-bottom: var(--ui-spacing-5xl);
+
   [ui-button] {
     position: absolute;
     top: 0;
     right: 0;
   }
+
+  @include mx.down(mobile) {
+    margin-bottom: var(--ui-spacing-2xl);
+  }
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--ui-spacing-5xl);
-
   padding: var(--ui-spacing-5xl);
   border-radius: var(--ui-radius-4xl);
   background-color: var(--ui-sem-accent-0);

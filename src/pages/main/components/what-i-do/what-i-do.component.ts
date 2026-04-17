@@ -1,8 +1,8 @@
 // src/pages/main/components/what-i-do/what-i-do.component.ts
 
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { UIIcon } from '@shared/ui/kit';
-import { IconName } from '@shared/ui/kit/icon/types';
+import { UIIcon } from '@ui/kit';
+import { IconName } from '@ui/kit/icon/types';
 
 @Component({
   selector: 'section-what-i-do',

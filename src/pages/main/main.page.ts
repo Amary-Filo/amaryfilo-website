@@ -8,9 +8,9 @@ import {
   AboutExperienceSection,
   WorkSection,
   ContactsSection,
+  TechnicalAreasSection,
 } from './components';
 import { UISeparator } from '@ui/kit';
-import { WidgetTechnicalAreas } from '@widgets';
 
 @Component({
   selector: 'page-main',
@@ -23,7 +23,7 @@ import { WidgetTechnicalAreas } from '@widgets';
     WorkSection,
     ContactsSection,
     UISeparator,
-    WidgetTechnicalAreas,
+    TechnicalAreasSection,
   ],
   templateUrl: './main.page.html',
   styleUrl: './main.page.scss',

@@ -1,0 +1,38 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  width: 100%;
+}
+
+.u-section-head {
+  .text {
+    margin-bottom: var(--ui-spacing-2xl);
+
+    @include mx.down(mobile) {
+      margin-bottom: var(--ui-spacing-xl);
+    }
+  }
+}
+
+.content {
+  max-width: 700px;
+  border-radius: var(--ui-spacing-xl);
+  padding: var(--ui-spacing-4xl);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(desktop) {
+    padding: var(--ui-spacing-2xl);
+  }
+
+  @include mx.down(mobile) {
+    padding: 0;
+    background-color: transparent;
+  }
+}
+
+ui-form-field {
+  flex-direction: row-reverse;
+  align-items: center;
+  width: max-content;
+  gap: var(--ui-spacing-sm);
+}

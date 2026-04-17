@@ -1,0 +1,18 @@
+<section class="u-container">
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">What I Focus On</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      The areas I tend to contribute to most often in real product work — from system structure and
+      reusable UI to delivery of complex frontend flows.
+    </p>
+  </div>
+
+  <div class="list">
+    @for (item of list; track $index) {
+      <div class="item">
+        <div class="title">{{ item.title }}</div>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>

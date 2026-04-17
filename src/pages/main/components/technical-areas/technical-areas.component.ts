@@ -11,14 +11,14 @@ interface ITechnicalAreas {
 }
 
 @Component({
-  selector: 'widget-technical-areas',
+  selector: 'section-technical-areas',
   standalone: true,
   imports: [UISeparator, UIIcon],
   templateUrl: './technical-areas.component.html',
   styleUrl: './technical-areas.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class WidgetTechnicalAreas {
+export class TechnicalAreasSection {
   readonly list: ITechnicalAreas[] = [
     {
       icon: 'linkedinFill',

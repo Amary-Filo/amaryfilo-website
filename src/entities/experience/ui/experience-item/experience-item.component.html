@@ -1,29 +1,16 @@
-@if (item().company) {
-  <span class="eyebrow">{{ item().company }}</span>
-}
+<span class="eyebrow" [hidden]="!item().company">{{ item().company }}</span>
 
 <h4 class="title">{{ item().title }}</h4>
 
-@if (variant() === 'full') {
-  @if (item().period || item().location) {
-    <div class="meta">
-      @if (item().period) {
-        <span>{{ item().period }}</span>
-      }
-
-      @if (item().location) {
-        <span>{{ item().location }}</span>
-      }
-    </div>
-  }
-}
+<div class="meta" [hidden]="variant() !== 'full'">
+  <span [hidden]="!item().period">{{ item().period }}</span>
+  <span [hidden]="!item().location">{{ item().location }}</span>
+</div>
 
 <p class="text">{{ item().summary }}</p>
 
-@if (variant() === 'full' && item().bullets?.length) {
-  <ul class="bullets">
-    @for (bullet of item().bullets; track $index) {
-      <li>{{ bullet }}</li>
-    }
-  </ul>
-}
+<ul class="bullets" [hidden]="variant() !== 'full' && item().bullets?.length">
+  @for (bullet of item().bullets; track $index) {
+    <li>{{ bullet }}</li>
+  }
+</ul>

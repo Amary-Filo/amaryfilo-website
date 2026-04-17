@@ -1,12 +1,30 @@
 // src/pages/about/about.page.ts
 
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { IHeroAction, WidgetExperience, WidgetPageHero, WidgetTechnicalAreas } from '@widgets';
+import { IHeroAction, WidgetPageHero } from '@widgets';
+import {
+  ExperienceSection,
+  IntroSection,
+  FocusSection,
+  ApproachSection,
+  TechnicalProfileSection,
+  ValueSection,
+} from './components';
+import { UISeparator } from '@shared/ui/kit';
 
 @Component({
   selector: 'page-about',
   standalone: true,
-  imports: [WidgetExperience, WidgetPageHero, WidgetTechnicalAreas],
+  imports: [
+    WidgetPageHero,
+    ExperienceSection,
+    IntroSection,
+    FocusSection,
+    ApproachSection,
+    TechnicalProfileSection,
+    ValueSection,
+    UISeparator,
+  ],
   templateUrl: './about.page.html',
   styleUrl: './about.page.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -16,11 +34,11 @@ export class AboutPage {
     {
       label: 'View resume',
       href: '/Nikita-Syreishchikov-Senior-Frontend-Engineer.pdf',
-      target: '_blank' as const,
+      target: '_blank',
       rel: 'noopener noreferrer',
       icon: 'arrowRightUpLine',
-      variant: 'secondary' as const,
-      size: 'extra-lg' as const,
+      variant: 'secondary',
+      size: 'extra-lg',
     },
   ];
 

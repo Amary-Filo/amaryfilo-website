@@ -1,22 +1,20 @@
 <section class="u-container">
-  <div class="content">
-    <div class="u-section-head">
-      <h2 class="ui-text-heading-1">Featured Work</h2>
-      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
-        A curated selection of product and platform work across wallet-connected interfaces,
-        commercial frontend delivery, and reusable product systems.
-      </p>
-      <button
-        ui-button
-        iconOnly
-        icon="arrowRightUpLine"
-        pill
-        size="extra-lg"
-        variant="secondary"
-        routerLink="/works"
-      ></button>
-    </div>
-
-    <work-list [list]="list" />
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Featured Work</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      A curated selection of product and platform work across wallet-connected interfaces,
+      commercial frontend delivery, and reusable product systems.
+    </p>
+    <button
+      ui-button
+      iconOnly
+      icon="arrowRightUpLine"
+      pill
+      size="extra-lg"
+      variant="secondary"
+      routerLink="/works"
+    ></button>
   </div>
+
+  <work-list [list]="list" />
 </section>

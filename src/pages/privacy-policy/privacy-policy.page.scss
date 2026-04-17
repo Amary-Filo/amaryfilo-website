@@ -39,6 +39,10 @@
   @include mx.ui-text('paragraph-large-medium');
   color: var(--ui-sem-muted-fg);
   line-height: 1.7;
+
+  @include mx.down(mobile) {
+    @include mx.ui-text('paragraph-medium');
+  }
 }
 
 .u-prose strong {

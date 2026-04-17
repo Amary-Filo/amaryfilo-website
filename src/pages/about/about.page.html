@@ -1,64 +1,14 @@
 <widget-page-hero
-  title="About"
+  [title]="'About'"
   description="Senior Frontend Engineer focused on Angular, frontend architecture, reusable UI systems, and transaction-heavy product interfaces for fintech and Web3."
   [actions]="heroActions"
   [meta]="heroMeta"
   align="left"
 />
-
-<section class="u-container">
-  <div class="content-block">
-    <h2 class="ui-text-heading-1">Who I Am</h2>
-
-    <div class="prose u-text-muted">
-      <p>
-        I’m a senior frontend engineer with a strong focus on Angular applications, reusable UI
-        systems, and structured product delivery. My work sits at the intersection of frontend
-        architecture, design-system thinking, and real product implementation.
-      </p>
-
-      <p>
-        Over the years, I’ve worked across fintech, Web3, internal tools, wallet-connected
-        interfaces, dashboards, and commercial platforms. I care most about frontend systems that
-        remain clear, scalable, and maintainable as products evolve.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section class="u-container">
-  <div class="u-section-head">
-    <h2 class="ui-text-heading-1">What I Do</h2>
-    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
-      I work at the intersection of frontend architecture, reusable systems, and complex product
-      flows.
-    </p>
-  </div>
-
-  <!-- block What I Do -->
-</section>
-
-<section class="u-container">
-  <div class="u-section-head">
-    <h2 class="ui-text-heading-1">How I Work</h2>
-    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
-      I prefer frontend systems that stay simple, extensible, and maintainable as products evolve.
-    </p>
-  </div>
-
-  <!-- block How I Work -->
-</section>
-
-<widget-technical-areas />
-
-<section class="u-container">
-  <div class="u-section-head">
-    <h2 class="ui-text-heading-1">Experience</h2>
-    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
-      A broader view of my frontend work across product teams, commercial delivery, reusable
-      systems, and technical leadership.
-    </p>
-  </div>
-
-  <widget-experience variant="full" onlyList />
-</section>
+<div ui-separator></div>
+<section-intro />
+<section-focus />
+<section-approach />
+<section-technical-profile />
+<section-experience />
+<section-value />

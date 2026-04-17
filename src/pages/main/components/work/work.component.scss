@@ -3,15 +3,15 @@
 .u-section-head {
   --cp-sc-head-width: 650px;
 
+  margin-bottom: var(--ui-spacing-5xl);
+
   [ui-button] {
     position: absolute;
     top: 0;
     right: 0;
   }
-}
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--ui-spacing-5xl);
+  @include mx.down(mobile) {
+    margin-bottom: var(--ui-spacing-2xl);
+  }
 }

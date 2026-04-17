@@ -2,16 +2,8 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
-type ContactPayload = {
-  name?: string;
-  contact?: string;
-  message?: string;
-  type?: string;
-  meta?: Record<string, unknown>;
-};
-
 function escapeHtml(value: string): string {
-  return value
+  return String(value)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -19,7 +11,7 @@ function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
+module.exports = async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     return res.status(405).json({ ok: false, error: 'Method not allowed' });
   }
@@ -35,6 +27,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     console.log('has RESEND_API_KEY:', !!resendApiKey);
     console.log('CONTACT_TO_EMAIL:', contactToEmail);
     console.log('CONTACT_FROM_EMAIL:', contactFromEmail);
+    console.log('body:', req.body);
 
     if (!resendApiKey) {
       return res.status(500).json({ ok: false, error: 'Missing RESEND_API_KEY' });
@@ -48,7 +41,13 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(500).json({ ok: false, error: 'Missing CONTACT_FROM_EMAIL' });
     }
 
-    const body = (req.body ?? {}) as ContactPayload;
+    const body = (req.body ?? {}) as {
+      name?: string;
+      contact?: string;
+      message?: string;
+      type?: string;
+      meta?: Record<string, unknown>;
+    };
 
     const name = typeof body.name === 'string' ? body.name.trim() : '';
     const contact = typeof body.contact === 'string' ? body.contact.trim() : '';
@@ -111,4 +110,4 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       error: error instanceof Error ? error.message : 'Unexpected server error',
     });
   }
-}
+};

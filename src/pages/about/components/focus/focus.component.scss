@@ -2,52 +2,39 @@
 
 .list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--cp-wid-width, 290px), 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: var(--ui-spacing-lg);
   margin-top: var(--ui-spacing-5xl);
 
-  @include mx.down(tablet) {
-    --cp-wid-width: 230px;
-    gap: var(--ui-spacing-md);
-  }
-
   @include mx.down(mobile) {
+    grid-template-columns: 1fr;
+    gap: var(--ui-spacing-xs);
     margin-top: var(--ui-spacing-2xl);
   }
 }
 
 .item {
-  --cp-wid-icon-size: 35px;
   padding: var(--ui-spacing-2xl);
   border-radius: var(--ui-radius-2xl);
   background-color: var(--ui-sem-accent-0);
 
   @include mx.down(tablet) {
-    --cp-wid-icon-size: 24px;
     padding: var(--ui-spacing-lg);
     border-radius: var(--ui-radius-lg);
   }
 
   .title {
     @include mx.ui-text('heading-4');
-    margin: var(--ui-spacing-xl) 0 var(--ui-spacing-xs) 0;
+    margin-bottom: var(--ui-spacing-xs);
 
     @include mx.down(tablet) {
-      margin: var(--ui-spacing-md) 0 var(--ui-spacing-3xs) 0;
-      font-size: var(--ui-fz-sm);
+      margin-bottom: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-large-bold');
     }
-  }
-
-  ui-icon,
-  .text {
-    color: var(--ui-sem-muted-fg);
   }
 
   .text {
     font-weight: var(--ui-fw-medium);
-
-    @include mx.down(tablet) {
-      font-size: var(--ui-fz-sm);
-    }
+    color: var(--ui-sem-muted-fg);
   }
 }
