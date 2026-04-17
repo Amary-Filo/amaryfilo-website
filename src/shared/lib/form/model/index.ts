@@ -4,4 +4,3 @@ export * from './data-collector.service';
 export * from './form-meta.types';
 export * from './form.model';
 export * from './form.utils';
-export * from './form.validators';

@@ -2,8 +2,18 @@
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 
+type ContactRequestBody = {
+  name?: string;
+  email?: string;
+  message?: string;
+  website?: string;
+  meta?: Record<string, unknown>;
+};
+
+type ContactResponse = { ok: true; id: string | null } | { ok: false; error: string };
+
 function escapeHtml(value: string): string {
-  return String(value)
+  return value
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -11,10 +21,17 @@ function escapeHtml(value: string): string {
     .replace(/'/g, '&#039;');
 }
 
+function getString(value: unknown): string {
+  return typeof value === 'string' ? value.trim() : '';
+}
+
+function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+}
+
 module.exports = async function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'POST') {
+  if (req.method !== 'POST')
     return res.status(405).json({ ok: false, error: 'Method not allowed' });
-  }
 
   try {
     const { Resend } = await import('resend');
@@ -23,61 +40,62 @@ module.exports = async function handler(req: VercelRequest, res: VercelResponse)
     const contactToEmail = process.env.CONTACT_TO_EMAIL;
     const contactFromEmail = process.env.CONTACT_FROM_EMAIL;
 
-    console.log('CONTACT API START');
-    console.log('has RESEND_API_KEY:', !!resendApiKey);
-    console.log('CONTACT_TO_EMAIL:', contactToEmail);
-    console.log('CONTACT_FROM_EMAIL:', contactFromEmail);
-    console.log('body:', req.body);
+    if (!resendApiKey) return res.status(500).json({ ok: false, error: 'Missing RESEND_API_KEY' });
 
-    if (!resendApiKey) {
-      return res.status(500).json({ ok: false, error: 'Missing RESEND_API_KEY' });
-    }
-
-    if (!contactToEmail) {
+    if (!contactToEmail)
       return res.status(500).json({ ok: false, error: 'Missing CONTACT_TO_EMAIL' });
-    }
 
-    if (!contactFromEmail) {
+    if (!contactFromEmail)
       return res.status(500).json({ ok: false, error: 'Missing CONTACT_FROM_EMAIL' });
-    }
 
-    const body = (req.body ?? {}) as {
-      name?: string;
-      contact?: string;
-      message?: string;
-      type?: string;
-      meta?: Record<string, unknown>;
-    };
+    const body = (req.body ?? {}) as ContactRequestBody;
 
-    const name = typeof body.name === 'string' ? body.name.trim() : '';
-    const contact = typeof body.contact === 'string' ? body.contact.trim() : '';
-    const message = typeof body.message === 'string' ? body.message.trim() : '';
-    const type = typeof body.type === 'string' ? body.type : 'question';
+    const name = getString(body.name);
+    const email = getString(body.email);
+    const message = getString(body.message);
+    const website = getString(body.website);
     const meta = body.meta ?? {};
 
-    if (!name || !contact || !message) {
+    // Honeypot: silently accept bot submissions
+    if (website) return res.status(200).json({ ok: true, id: null });
+
+    if (!name || !email || !message)
       return res.status(400).json({
         ok: false,
-        error: 'Name, contact, and message are required',
+        error: 'Name, email, and message are required',
       });
-    }
+
+    if (!isValidEmail(email))
+      return res.status(400).json({
+        ok: false,
+        error: 'Please provide a valid email address',
+      });
 
     const resend = new Resend(resendApiKey);
 
     const subject = `[amaryfilo.com] New message from ${name}`;
 
     const html = `
-      <h2>New contact form submission</h2>
-      <p><strong>Type:</strong> ${escapeHtml(type)}</p>
-      <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-      <p><strong>Contact:</strong> ${escapeHtml(contact)}</p>
-      <p><strong>Message:</strong></p>
-      <p>${escapeHtml(message).replace(/\n/g, '<br />')}</p>
-      <hr />
-      <h3>Meta</h3>
-      <pre style="white-space: pre-wrap; font-family: monospace;">${escapeHtml(
-        JSON.stringify(meta, null, 2),
-      )}</pre>
+      <div style="font-family: Inter, Arial, sans-serif; color: #111; line-height: 1.6;">
+        <h2 style="margin: 0 0 16px;">New contact form submission</h2>
+
+        <p style="margin: 0 0 8px;"><strong>Name:</strong> ${escapeHtml(name)}</p>
+        <p style="margin: 0 0 8px;"><strong>Email:</strong> ${escapeHtml(email)}</p>
+
+        <div style="margin: 20px 0;">
+          <p style="margin: 0 0 8px;"><strong>Message:</strong></p>
+          <div style="padding: 12px 14px; border: 1px solid #ddd; border-radius: 10px; background: #fafafa;">
+            ${escapeHtml(message).replace(/\n/g, '<br />')}
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #e5e5e5; margin: 24px 0;" />
+
+        <h3 style="margin: 0 0 12px; font-size: 16px;">Meta</h3>
+        <pre style="white-space: pre-wrap; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; padding: 12px; border-radius: 10px; background: #fafafa; border: 1px solid #eee;">${escapeHtml(
+          JSON.stringify(meta, null, 2),
+        )}</pre>
+      </div>
     `;
 
     const { data, error } = await resend.emails.send({
@@ -85,13 +103,12 @@ module.exports = async function handler(req: VercelRequest, res: VercelResponse)
       to: contactToEmail,
       subject,
       html,
-      replyTo: contact,
+      replyTo: email,
     });
 
-    console.log('RESEND DATA:', data);
-    console.log('RESEND ERROR:', error);
-
     if (error) {
+      console.error('Resend send error:', error);
+
       return res.status(500).json({
         ok: false,
         error: error.message || 'Failed to send email',
