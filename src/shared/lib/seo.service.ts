@@ -1,6 +1,7 @@
 // src/shared/lib/seo.service.ts
 
-import { inject, Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { inject, Injectable, Renderer2, RendererFactory2 } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
@@ -16,7 +17,9 @@ export interface AppRouteSeo {
 }
 
 export const DEFAULT_ROBOTS = 'index, follow';
+
 const SITE_URL = 'https://amaryfilo.com';
+const SITE_NAME = 'Nikita S.';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.png`;
 
 const DEFAULT_SEO: AppRouteSeo = {
@@ -34,6 +37,11 @@ export class SeoService {
   private readonly router = inject(Router);
   private readonly title = inject(Title);
   private readonly meta = inject(Meta);
+  private readonly document = inject(DOCUMENT);
+  private readonly renderer: Renderer2 = inject(RendererFactory2).createRenderer(null, null);
+
+  private canonicalLink?: HTMLLinkElement;
+  private jsonLdScript?: HTMLScriptElement;
 
   constructor() {
     if (this.router.navigated) this.applyCurrentRouteSeo();
@@ -55,6 +63,7 @@ export class SeoService {
     this.updateNamedMeta('robots', seo.robots ?? DEFAULT_ROBOTS);
 
     this.updatePropertyMeta('og:type', seo.type ?? 'website');
+    this.updatePropertyMeta('og:site_name', SITE_NAME);
     this.updatePropertyMeta('og:title', seo.title);
     this.updatePropertyMeta('og:description', seo.description);
     this.updatePropertyMeta('og:image', seo.image ?? DEFAULT_OG_IMAGE);
@@ -64,6 +73,9 @@ export class SeoService {
     this.updateNamedMeta('twitter:title', seo.title);
     this.updateNamedMeta('twitter:description', seo.description);
     this.updateNamedMeta('twitter:image', seo.image ?? DEFAULT_OG_IMAGE);
+
+    this.updateCanonical(seo.url ?? SITE_URL);
+    this.updateJsonLd(seo.url ?? SITE_URL, seo.image ?? DEFAULT_OG_IMAGE);
   }
 
   private resolveSeo(snapshot: ActivatedRouteSnapshot): AppRouteSeo {
@@ -92,5 +104,75 @@ export class SeoService {
 
   private updatePropertyMeta(property: string, content: string): void {
     this.meta.updateTag({ property, content }, `property="${property}"`);
+  }
+
+  private updateCanonical(url: string): void {
+    if (!this.canonicalLink) {
+      this.canonicalLink = this.renderer.createElement('link');
+      this.renderer.setAttribute(this.canonicalLink, 'rel', 'canonical');
+      this.renderer.appendChild(this.document.head, this.canonicalLink);
+    }
+
+    this.renderer.setAttribute(this.canonicalLink, 'href', url);
+  }
+
+  private updateJsonLd(pageUrl: string, imageUrl: string): void {
+    const structuredData = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        {
+          '@type': 'WebSite',
+          '@id': `${SITE_URL}/#website`,
+          url: SITE_URL,
+          name: SITE_NAME,
+          inLanguage: 'en',
+        },
+        {
+          '@type': 'Person',
+          '@id': `${SITE_URL}/#person`,
+          name: 'Nikita S.',
+          url: SITE_URL,
+          image: imageUrl,
+          jobTitle: 'Senior Frontend Engineer / Frontend Lead',
+          sameAs: ['https://github.com/amaryfilo', 'https://www.linkedin.com/in/amary-filo'],
+          knowsAbout: [
+            'Angular',
+            'TypeScript',
+            'Frontend Architecture',
+            'Reusable UI Systems',
+            'Fintech Frontend',
+            'Web3 Interfaces',
+          ],
+        },
+        {
+          '@type': 'WebPage',
+          '@id': `${pageUrl}#webpage`,
+          url: pageUrl,
+          name: this.title.getTitle(),
+          description: this.meta.getTag('name="description"')?.content ?? DEFAULT_SEO.description,
+          isPartOf: {
+            '@id': `${SITE_URL}/#website`,
+          },
+          about: {
+            '@id': `${SITE_URL}/#person`,
+          },
+          primaryImageOfPage: {
+            '@type': 'ImageObject',
+            url: imageUrl,
+          },
+        },
+      ],
+    };
+
+    let script = this.jsonLdScript;
+
+    if (!script) {
+      script = this.renderer.createElement('script') as HTMLScriptElement;
+      this.renderer.setAttribute(script, 'type', 'application/ld+json');
+      this.renderer.appendChild(this.document.head, script);
+      this.jsonLdScript = script;
+    }
+
+    script.text = JSON.stringify(structuredData);
   }
 }
