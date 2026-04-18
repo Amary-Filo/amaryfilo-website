@@ -69,6 +69,11 @@
 }
 
 .state-warning {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--ui-spacing-sm);
   border-color: rgb(var(--ui-color-yellow-300-rgb) / var(--ui-alpha-100));
 }
 

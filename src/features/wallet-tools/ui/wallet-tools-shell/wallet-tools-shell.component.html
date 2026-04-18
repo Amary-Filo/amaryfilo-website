@@ -45,18 +45,16 @@
 
   @if (account.isConnected() && account.isWrongNetwork()) {
     <div class="card-item state-warning">
-      <div class="state__head">
-        <div>
-          <div class="title">Wrong network</div>
-          <p class="u-text-muted">
-            This demo requires chain id
-            <strong>{{ facade.config.requiredChain.id }}</strong>
-            ({{ facade.config.requiredChain.name }}).
-          </p>
-        </div>
-
-        <button ui-button (click)="account.switchToRequiredNetwork()">Switch network</button>
+      <div>
+        <div class="title">Wrong network</div>
+        <p class="u-text-muted">
+          This demo requires chain id
+          <strong>{{ facade.config.requiredChain.id }}</strong>
+          ({{ facade.config.requiredChain.name }}).
+        </p>
       </div>
+
+      <button ui-button (click)="account.switchToRequiredNetwork()">Switch network</button>
     </div>
   }
 

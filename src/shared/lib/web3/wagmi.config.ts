@@ -1,16 +1,11 @@
 // src/shared/lib/web3/wagmi.config.ts
 
 import { createConfig, fallback, http } from '@wagmi/core';
-import { walletConnect } from '@wagmi/connectors';
+import { injected, walletConnect } from '@wagmi/connectors';
 import { sepolia } from 'viem/chains';
 import { environment } from '@env';
 
 const isBrowser = typeof window !== 'undefined';
-
-export const walletConnectConnector = walletConnect({
-  projectId: environment.walletConnectId,
-  showQrModal: true,
-});
 
 const batchedHttp = (url: string) =>
   http(url, {
@@ -20,9 +15,30 @@ const batchedHttp = (url: string) =>
     },
   });
 
+export const injectedConnector = injected({
+  shimDisconnect: true,
+  unstable_shimAsyncInject: 1500,
+});
+
+export const walletConnectConnector = walletConnect({
+  projectId: environment.walletConnectId,
+  showQrModal: true,
+  isNewChainsStale: false,
+  metadata: {
+    name: 'amaryfilo.com',
+    description: 'Nikita S. portfolio demos',
+    url: 'https://amaryfilo.com',
+    icons: ['https://amaryfilo.com/og/main-og.jpg'],
+  },
+  qrModalOptions: {
+    themeMode: 'dark',
+  },
+});
+
 export const wagmiConfig = createConfig({
   chains: [sepolia],
-  connectors: isBrowser ? [walletConnectConnector] : [],
+  connectors: isBrowser ? [injectedConnector, walletConnectConnector] : [],
+  multiInjectedProviderDiscovery: true,
   transports: {
     [sepolia.id]: fallback([
       batchedHttp(`https://sepolia.infura.io/v3/${environment.infuraKey}`),
