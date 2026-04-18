@@ -1,0 +1,82 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-5xl);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-4xl);
+}
+
+// Header
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-md);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-lg);
+
+  @include mx.down(mobile) {
+    width: 100%;
+    gap: var(--ui-spacing-sm);
+  }
+
+  .link {
+    --cp-btn-link-decoration-bg-a: var(--ui-alpha-0);
+    text-transform: capitalize;
+
+    &[data-active] {
+      --cp-btn-link-decoration-bg-a: var(--ui-alpha-100);
+    }
+  }
+}
+
+.action {
+  @include mx.down(mobile) {
+    width: 100%;
+  }
+}
+
+// Balances
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-md);
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  gap: var(--ui-spacing-3xs);
+  padding: var(--ui-spacing-sm) var(--ui-spacing-lg);
+  border-radius: var(--ui-radius);
+  border: var(--ui-border-1) solid var(--ui-sem-border-1);
+  background-color: var(--ui-sem-accent-0);
+}
+
+.state-warning {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--ui-spacing-sm);
+  border-color: rgb(var(--ui-color-yellow-300-rgb) / var(--ui-alpha-100));
+}
+
+.state-error {
+  border-color: rgb(var(--ui-color-red-300-rgb) / var(--ui-alpha-100));
+}

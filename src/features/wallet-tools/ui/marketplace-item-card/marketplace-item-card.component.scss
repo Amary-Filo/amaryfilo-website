@@ -1,0 +1,50 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-md);
+
+  padding: var(--ui-spacing-sm) var(--ui-spacing-md);
+  border-radius: var(--ui-radius-xl);
+  border: var(--ui-border-1) solid var(--ui-sem-border-2);
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--ui-spacing-xs);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--ui-spacing-lg);
+
+  span {
+    @include mx.ui-text('paragraph-small-medium');
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-xs);
+
+  padding: var(--ui-spacing-sm) var(--ui-spacing-lg);
+  border-radius: var(--ui-radius);
+  border: var(--ui-border-1) solid var(--ui-sem-border-1);
+  background-color: var(--ui-sem-accent-0);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-2xs);
+
+  @include mx.ui-text('paragraph-small-medium');
+}

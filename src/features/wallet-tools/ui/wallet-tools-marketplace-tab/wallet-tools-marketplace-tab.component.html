@@ -1,0 +1,67 @@
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Marketplace</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Spend APT on demo items and unlock content tied to the connected wallet history and
+      marketplace contract state.
+    </p>
+  </div>
+
+  <div class="cards-list">
+    @for (item of notes; track $index) {
+      <div class="card-item">
+        <h4 class="title">{{ item.title }}</h4>
+        <p class="u-text-muted u-medium">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<section>
+  @if (market.isItemsLoading()) {
+    <div class="empty-state">
+      <div class="title">Marketplace items are loading...</div>
+    </div>
+  } @else {
+    @if (market.availableItems().length) {
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Available Items</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Items that can still be purchased with the connected wallet.
+        </p>
+      </div>
+
+      <div class="content">
+        <div class="list">
+          @for (item of market.availableItems(); track item.id) {
+            <wallet-tools-marketplace-item-card [item]="item" />
+          }
+        </div>
+      </div>
+    }
+
+    @if (market.usersItems().length) {
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Your Purchased Items</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Items already unlocked by the connected wallet.
+        </p>
+      </div>
+
+      <div class="content">
+        <div class="list">
+          @for (item of market.usersItems(); track item.id) {
+            <wallet-tools-marketplace-item-card [item]="item" />
+          }
+        </div>
+      </div>
+    }
+
+    @if (!market.availableItems().length && !market.usersItems().length) {
+      <div class="card">
+        <div class="title">No marketplace items yet</div>
+        <p class="u-text-muted">The marketplace catalog is currently empty.</p>
+      </div>
+    }
+  }
+</section>

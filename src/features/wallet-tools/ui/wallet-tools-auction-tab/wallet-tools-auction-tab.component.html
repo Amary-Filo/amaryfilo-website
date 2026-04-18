@@ -1,0 +1,108 @@
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Auction</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Bid AST in timed pools to compete for APT rewards. The highest bidder at the end of an active
+      pool becomes eligible to settle the reward.
+    </p>
+  </div>
+
+  <div class="cards-list">
+    @for (item of notes; track $index) {
+      <div class="card">
+        <h4 class="title">{{ item.title }}</h4>
+        <p class="u-text-muted u-medium">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+@if (auction.isPoolsLoading()) {
+  <section>
+    <div class="card-item">
+      <div class="title">Pools are loading...</div>
+    </div>
+  </section>
+} @else {
+  @if (auction.poolsActive().length) {
+    <section>
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Active Pools</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Pools that are currently open for bidding.
+        </p>
+      </div>
+
+      <div class="list content">
+        @for (pool of auction.poolsActive(); track pool.id) {
+          <wallet-tools-auction-pool-card [pool]="pool" />
+        }
+      </div>
+    </section>
+  }
+
+  @if (auction.poolsUpcoming().length) {
+    <section>
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Upcoming Pools</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Pools that are configured but not yet active.
+        </p>
+      </div>
+
+      <div class="list content">
+        @for (pool of auction.poolsUpcoming(); track pool.id) {
+          <wallet-tools-auction-pool-card [pool]="pool" />
+        }
+      </div>
+    </section>
+  }
+
+  @if (auction.poolsWithdraw().length) {
+    <section>
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Ready to Withdraw</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Pools won by the connected wallet and ready for reward settlement.
+        </p>
+      </div>
+
+      <div class="list content">
+        @for (pool of auction.poolsWithdraw(); track pool.id) {
+          <wallet-tools-auction-pool-card [pool]="pool" />
+        }
+      </div>
+    </section>
+  }
+
+  @if (auction.poolsEnded().length) {
+    <section>
+      <div class="u-section-head">
+        <h2 class="ui-text-heading-1">Ended Pools</h2>
+        <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+          Completed pools that are no longer actionable.
+        </p>
+      </div>
+
+      <div class="list content">
+        @for (pool of auction.poolsEnded(); track pool.id) {
+          <wallet-tools-auction-pool-card [pool]="pool" />
+        }
+      </div>
+    </section>
+  }
+
+  @if (
+    !auction.poolsActive().length &&
+    !auction.poolsUpcoming().length &&
+    !auction.poolsWithdraw().length &&
+    !auction.poolsEnded().length
+  ) {
+    <section>
+      <div class="card-item">
+        <div class="title">No auction pools yet</div>
+        <p class="u-text-muted">There are currently no pools to display in this demo.</p>
+      </div>
+    </section>
+  }
+}

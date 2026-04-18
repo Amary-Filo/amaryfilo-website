@@ -23,6 +23,30 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": [
+              "@walletconnect/time",
+              "@walletconnect/window-getters",
+              "@walletconnect/window-metadata",
+              "@walletconnect/environment",
+              "blakejs",
+              "cross-fetch",
+              "qrcode",
+              "ws",
+              "pino",
+              "dayjs",
+              "dayjs/locale/en.js",
+              "dayjs/plugin/relativeTime.js",
+              "dayjs/plugin/updateLocale.js"
+            ],
+            "externalDependencies": [
+              "@base-org/account",
+              "@coinbase/wallet-sdk",
+              "@metamask/sdk",
+              "porto",
+              "porto/internal",
+              "@safe-global/safe-apps-sdk",
+              "@safe-global/safe-apps-provider"
+            ],
             "assets": [
               {
                 "glob": "**/*",
@@ -47,12 +71,12 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "550kB",
                   "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "4kB",
+                  "maximumWarning": "9kB",
                   "maximumError": "30kB"
                 }
               ],

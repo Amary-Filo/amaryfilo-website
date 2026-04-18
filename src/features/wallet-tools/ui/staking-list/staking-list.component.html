@@ -1,0 +1,16 @@
+@if (isListLoading()) {
+  <div class="info-card">
+    <div class="title">Stakes are loading...</div>
+  </div>
+} @else if (data().length) {
+  <div class="list">
+    @for (item of data(); track item.idx) {
+      <wallet-tools-staking-item [item]="item" [isPending]="isPending()" />
+    }
+  </div>
+} @else {
+  <div class="info-card">
+    <div class="title">No staking records yet</div>
+    <p class="u-text-muted">Create a stake to see active and completed positions here.</p>
+  </div>
+}

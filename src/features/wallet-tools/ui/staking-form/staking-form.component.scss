@@ -1,0 +1,44 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-lg);
+  height: max-content;
+
+  padding: var(--ui-spacing-2xl);
+  border-radius: var(--ui-radius-2xl);
+  border: var(--ui-border-1) solid var(--ui-sem-border-2);
+  background: var(--ui-sem-card);
+
+  @include mx.down(mobile) {
+    padding: var(--ui-spacing-lg);
+  }
+}
+
+.form-head p {
+  margin-top: var(--ui-spacing-xs);
+}
+
+.meta-row,
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ui-spacing-md);
+}
+
+.terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ui-spacing-sm);
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-sm);
+  padding: var(--ui-spacing-lg);
+  border-radius: var(--ui-radius-2xl);
+  background: var(--ui-sem-accent-0);
+}

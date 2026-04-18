@@ -1,0 +1,113 @@
+<div class="pool-card">
+  <button class="pool-card__summary" type="button" (click)="toggle()">
+    <div class="pool-card__summary-main">
+      <div class="pool-card__title-row">
+        <div class="pool-card__title">Pool {{ pool().id }}</div>
+        <div class="pool-card__lot">Lot {{ pool().amountAPT }} APT</div>
+      </div>
+
+      <div class="pool-card__meta-row">
+        <span class="pool-chip">{{ pool().status }}</span>
+        <span class="pool-meta">Top bid {{ pool().highestAST }} AST</span>
+        <span class="pool-meta">Min {{ pool().minBid }} AST</span>
+      </div>
+    </div>
+
+    <div class="pool-card__summary-side">
+      <div class="pool-card__status">{{ statusLabel() }}</div>
+      <div class="pool-card__toggle">{{ isOpen() ? 'Hide details' : 'Show details' }}</div>
+    </div>
+  </button>
+
+  @if (isOpen()) {
+    <div class="pool-card__details">
+      <div class="pool-card__grid">
+        <div class="info">
+          <span class="label">Top bid</span>
+          <span class="value">{{ pool().highestAST }} AST</span>
+        </div>
+
+        <div class="info">
+          <span class="label">Min to outbid</span>
+          <span class="value">{{ pool().minBid }} AST</span>
+        </div>
+
+        <div class="info">
+          <span class="label">Bid status</span>
+          <span class="value">{{ pool().bidStatus }}</span>
+        </div>
+
+        <div class="info">
+          <span class="label">Highest bidder</span>
+          <span class="value mono">{{ pool().highestAddress }}</span>
+        </div>
+      </div>
+
+      @if (pool().status === 'active' && ['empty', 'bid'].includes(pool().bidStatus)) {
+        <div class="action-card">
+          <div class="action-card__head">
+            <h4>Place a bid</h4>
+            <p class="u-text-muted">
+              Enter an AST amount higher than the current minimum required to outbid.
+            </p>
+          </div>
+
+          <ui-form-field label="Bid amount">
+            <input
+              ui-input
+              type="text"
+              placeholder="0.0"
+              [ngModel]="amount()"
+              (ngModelChange)="amount.set($event)"
+            />
+          </ui-form-field>
+
+          <div class="meta-row">
+            <span class="u-text-muted">
+              Available:
+              <strong>{{ astBalance() }}</strong>
+              AST
+            </span>
+
+            <button ui-button type="button" size="xs" variant="secondary" (click)="setMax()">
+              Max
+            </button>
+          </div>
+
+          <button
+            ui-button
+            type="button"
+            size="extra-lg"
+            fill
+            [loading]="isBidLoading() || isSubmitting()"
+            [disabled]="!canBid()"
+            (click)="bid()"
+          >
+            Place bid
+          </button>
+        </div>
+      }
+
+      @if (pool().status === 'withdraw') {
+        <div class="action-card">
+          <div class="action-card__head">
+            <h4>Withdraw reward</h4>
+            <p class="u-text-muted">
+              This pool has ended and the connected wallet can now settle the reward.
+            </p>
+          </div>
+
+          <button
+            ui-button
+            type="button"
+            size="extra-lg"
+            [loading]="isWithdrawLoading() || isSubmitting()"
+            (click)="settle()"
+          >
+            Withdraw reward
+          </button>
+        </div>
+      }
+    </div>
+  }
+</div>

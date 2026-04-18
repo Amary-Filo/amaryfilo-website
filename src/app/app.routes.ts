@@ -58,21 +58,21 @@ const notFoundSeo: AppRouteSeo = {
   image: 'https://amaryfilo.com/og-main.png',
 };
 
-// const walletToolsSeo: AppRouteSeo = {
-//   title: 'Wallet Tools · Nikita S.',
-//   description:
-//     'Angular / Web3 demo covering wallet connection, staking, auction, marketplace, and product-facing wallet flows.',
-//   robots: 'index, follow',
-//   image: 'https://amaryfilo.com/og-wallet-tools.png',
-// };
+const walletToolsSeo: AppRouteSeo = {
+  title: 'Wallet Tools · Nikita S.',
+  description:
+    'Angular / Web3 demo covering wallet connection, staking, auction, marketplace, and product-facing wallet flows.',
+  robots: 'index, follow',
+  image: 'https://amaryfilo.com/og-wallet-tools.png',
+};
 
-// const dexToolsSeo: AppRouteSeo = {
-//   title: 'DEX Tools · Nikita S.',
-//   description:
-//     'Angular / Web3 demo covering swaps, liquidity, farming, LP flows, and AMM-style mechanics.',
-//   robots: 'index, follow',
-//   image: 'https://amaryfilo.com/og-dex-tools.png',
-// };
+const dexToolsSeo: AppRouteSeo = {
+  title: 'DEX Tools · Nikita S.',
+  description:
+    'Angular / Web3 demo covering swaps, liquidity, farming, LP flows, and AMM-style mechanics.',
+  robots: 'index, follow',
+  image: 'https://amaryfilo.com/og-dex-tools.png',
+};
 
 export const routes: Routes = [
   {
@@ -90,18 +90,18 @@ export const routes: Routes = [
     data: { seo: demosSeo },
     loadComponent: () => import('../pages/demos/demos.page').then((m) => m.DemosPage),
   },
-  // {
-  //   path: 'demos/wallet-tools',
-  //   data: { seo: walletToolsSeo },
-  //   loadComponent: () =>
-  //     import('../features/wallet-tools/pages/wallet-tools.page').then((m) => m.WalletToolsPage),
-  // },
-  // {
-  //   path: 'demos/dex-tools',
-  //   data: { seo: dexToolsSeo },
-  //   loadComponent: () =>
-  //     import('../features/dex-tools/pages/dex-tools.page').then((m) => m.DexToolsPage),
-  // },
+  {
+    path: 'demos/wallet-tools',
+    data: { seo: walletToolsSeo },
+    loadComponent: () =>
+      import('../pages/demos/wallet-tools/wallet-tools.page').then((m) => m.WalletToolsPage),
+  },
+  {
+    path: 'demos/dex-tools',
+    data: { seo: dexToolsSeo },
+    loadComponent: () =>
+      import('../pages/demos/dex-tools/dex-tools.page').then((m) => m.DexToolsPage),
+  },
   {
     path: 'works',
     data: { seo: worksSeo },

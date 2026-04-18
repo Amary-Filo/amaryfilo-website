@@ -14,7 +14,7 @@ export const DEMO_ITEMS: IDemoItem[] = [
   {
     slug: 'dex-tools',
     img: '/dex-tools.png',
-    title: 'DEX Tools',
+    title: '[WIP] DEX Tools',
     text: 'Angular/Web3 demo covering swaps, liquidity, farming, LP flows, and AMM-style mechanics.',
     code: '',
     featured: true,

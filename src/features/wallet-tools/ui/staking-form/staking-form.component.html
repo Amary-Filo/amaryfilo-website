@@ -1,0 +1,68 @@
+<div class="form-head">
+  <h3>New stake</h3>
+  <p class="u-text-muted">Choose an AST amount and a staking term to create a new position.</p>
+</div>
+
+<ui-form-field label="Stake amount">
+  <input
+    ui-input
+    type="text"
+    placeholder="0.0"
+    [ngModel]="amount()"
+    (ngModelChange)="amount.set($event)"
+  />
+</ui-form-field>
+
+<div class="meta-row">
+  <span class="u-text-muted">
+    Available:
+    <strong>{{ astBalance() }}</strong>
+    AST
+  </span>
+
+  <button ui-button type="button" size="xs" variant="secondary" (click)="setMax()">Max</button>
+</div>
+
+<ui-form-field label="Terms">
+  <div class="terms">
+    @for (item of termOptions; track item.key) {
+      <button
+        ui-button
+        type="button"
+        variant="secondary"
+        [active]="term() === item.key"
+        (click)="term.set(item.key)"
+      >
+        {{ item.title }}
+      </button>
+    }
+  </div>
+</ui-form-field>
+
+<div class="summary">
+  <div class="summary-row">
+    <span class="u-text-muted">APR</span>
+    <span class="u-mono u-semibold">{{ aprPercentLabel() }}</span>
+  </div>
+
+  <div class="summary-row">
+    <span class="u-text-muted">Planned reward</span>
+    <span class="u-mono u-semibold">{{ rewardHuman() }} AST</span>
+  </div>
+
+  <div class="summary-row">
+    <span class="u-text-muted">Total planned</span>
+    <span class="u-mono u-semibold">{{ totalHuman() }} AST</span>
+  </div>
+</div>
+
+<button
+  ui-button
+  size="extra-lg"
+  fill
+  [loading]="stakingInProgress()"
+  [disabled]="!canStake()"
+  (click)="stake()"
+>
+  Stake
+</button>
