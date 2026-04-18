@@ -1,0 +1,72 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-6xl);
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-4xl);
+  }
+}
+
+.cards-list {
+  display: grid;
+  gap: var(--ui-spacing-lg);
+  margin-top: var(--ui-spacing-5xl);
+
+  grid-template-columns: 1fr 1fr;
+
+  @include mx.down(tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-xs);
+    margin-top: var(--ui-spacing-2xl);
+  }
+}
+
+.card {
+  padding: var(--ui-spacing-2xl);
+  border-radius: var(--ui-radius-2xl);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(tablet) {
+    padding: var(--ui-spacing-lg);
+    border-radius: var(--ui-radius-lg);
+  }
+
+  .title {
+    margin-bottom: var(--ui-spacing-xs);
+
+    @include mx.down(tablet) {
+      margin-bottom: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-large-bold');
+    }
+  }
+}
+
+.content {
+  margin-top: var(--ui-spacing-5xl);
+
+  @include mx.down(mobile) {
+    margin-top: var(--ui-spacing-2xl);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-lg);
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-3xs);
+  padding: var(--ui-spacing-sm) var(--ui-spacing-lg);
+  border-radius: var(--ui-radius);
+  border: var(--ui-border-1) solid var(--ui-sem-border-1);
+  background-color: var(--ui-sem-accent-0);
+}

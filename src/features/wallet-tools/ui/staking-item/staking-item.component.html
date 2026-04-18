@@ -1,0 +1,53 @@
+<div class="head">
+  <div>
+    <div class="u-semibold">{{ item().amountHuman }} AST</div>
+    <span class="u-semibold u-text-muted">{{ item().dateStart | date: 'short' }}</span>
+  </div>
+
+  <div class="actions">
+    @if (isPending()) {
+      <button ui-button size="sm" variant="secondary">
+        Wait {{ formatRemaining(item().eta) }}
+      </button>
+    } @else {
+      <button
+        ui-button
+        size="sm"
+        [loading]="withdrawing().has(item().idx)"
+        (click)="withdraw(item().idx)"
+      >
+        Withdraw
+      </button>
+    }
+    <button
+      ui-button
+      size="sm"
+      variant="ghost"
+      iconOnly
+      icon="arrowDownSFill"
+      (click)="toggle()"
+    ></button>
+  </div>
+</div>
+
+<div [hidden]="!isOpen()" class="list">
+  <div class="info">
+    <span class="u-text-muted">Term</span>
+    <span class="u-mono u-semibold">{{ item().termLabel }}</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">APR</span>
+    <span class="u-mono u-semibold">{{ item().percentHuman }}</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">Planned reward</span>
+    <span class="u-mono u-semibold">{{ item().rewardPlannedHuman }} AST</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">Total planned</span>
+    <span class="u-mono u-semibold">{{ item().totalPlannedHuman }} AST</span>
+  </div>
+</div>

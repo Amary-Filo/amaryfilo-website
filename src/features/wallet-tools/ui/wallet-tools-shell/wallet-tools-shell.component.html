@@ -1,0 +1,133 @@
+<widget-page-hero
+  [title]="'Wallet Tools'"
+  description="Demo environment for wallet connection, network handling, contract configuration, and product-facing flows for staking, auction, and marketplace interactions."
+  [meta]="heroMeta"
+  align="left"
+/>
+
+<div ui-separator></div>
+
+<div class="content u-container">
+  <!-- Header -->
+  <section class="header">
+    <div class="nav">
+      @for (tab of tabs; track trackByTab($index, tab)) {
+        <button
+          class="link"
+          ui-button
+          variant="link"
+          [active]="facade.activeTab() === tab"
+          (click)="setTab(tab)"
+        >
+          {{ tab }}
+        </button>
+      }
+    </div>
+
+    <button
+      class="action"
+      ui-button
+      [variant]="!account.isConnected() ? 'primary' : 'secondary'"
+      (click)="actionButton()"
+    >
+      {{ actionText() }}
+    </button>
+  </section>
+
+  <!-- Errors -->
+
+  @if (account.error()) {
+    <div class="card-item state-error">
+      <div class="title">Wallet error</div>
+      <p class="u-text-muted">{{ account.error() }}</p>
+    </div>
+  }
+
+  @if (account.isConnected() && account.isWrongNetwork()) {
+    <div class="card-item state-warning">
+      <div class="state__head">
+        <div>
+          <div class="title">Wrong network</div>
+          <p class="u-text-muted">
+            This demo requires chain id
+            <strong>{{ facade.config.requiredChain.id }}</strong>
+            ({{ facade.config.requiredChain.name }}).
+          </p>
+        </div>
+
+        <button ui-button (click)="account.switchToRequiredNetwork()">Switch network</button>
+      </div>
+    </div>
+  }
+
+  <!-- Account and Balances-->
+
+  <section class="cards-list">
+    @if (account.status() === 'disconnected') {
+      <div class="card-item">
+        <div class="title">Wallet not ready</div>
+        <p class="u-text-muted">
+          Connect a wallet and switch to the required network to load account data.
+        </p>
+      </div>
+    }
+    @if (['wrong_network', 'error', 'connected'].includes(account.status())) {
+      <div
+        class="card-item"
+        [class.state-error]="['wrong_network', 'error'].includes(account.status())"
+      >
+        <div class="title">Status</div>
+        <div class="u-mono u-text-muted">{{ account.status() }}</div>
+      </div>
+      <div class="card-item">
+        <div class="title">Address</div>
+        <div class="u-mono u-text-muted">{{ shortenAddress(account.address()) }}</div>
+      </div>
+      <div class="card-item">
+        <div class="title">ChainID</div>
+        <div class="u-mono u-text-muted">{{ account.chainId() }}</div>
+      </div>
+    }
+
+    @if (balancesState() === 'loading') {
+      <div class="card-item" style="width: 100%">
+        <div class="title">Data are loading...</div>
+      </div>
+    } @else if (balancesState() === 'error') {
+      <div class="card-item" style="width: 100%">
+        <div class="title">Could not load balances</div>
+        <p class="u-text-muted">{{ balances.error() }}</p>
+      </div>
+    } @else {
+      @for (item of balances.items(); track item.key) {
+        <div class="card-item">
+          <div class="title">{{ item.symbol }} ({{ item.label }})</div>
+          <div class="u-mono u-text-muted">{{ item.human }}</div>
+        </div>
+      }
+    }
+  </section>
+
+  <!-- Content page -->
+  <div class="content">
+    <div class="page">
+      @switch (facade.activeTab()) {
+        @case ('home') {
+          <wallet-tools-home-tab />
+        }
+
+        @case ('staking') {
+          <wallet-tools-staking-tab />
+        }
+
+        @case ('auction') {
+          <wallet-tools-auction-tab />
+        }
+
+        @case ('marketplace') {
+          <wallet-tools-marketplace-tab />
+        }
+      }
+    </div>
+  </div>
+</div>

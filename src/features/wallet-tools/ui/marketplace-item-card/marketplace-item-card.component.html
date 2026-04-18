@@ -1,0 +1,54 @@
+<div class="head">
+  <div>
+    <div class="u-semibold">{{ item().title }}</div>
+    <span class="u-semibold u-text-muted">Price: {{ item().price }} APT</span>
+  </div>
+
+  <div class="actions">
+    @if (item().isBought) {
+      <button ui-button size="sm" (click)="open()">
+        {{ item().type === 'link' ? 'Open' : 'Download' }}
+      </button>
+    } @else if (canBuy()) {
+      <button ui-button variant="secondary" size="sm" [loading]="isLoading()" (click)="buy()">
+        @if (item().isPartial) {
+          Pay {{ item().remainingHuman }} APT
+        } @else {
+          Buy
+        }
+      </button>
+    } @else {
+      <span class="u-text-muted u-semibold">Not enough APT</span>
+    }
+    <button
+      ui-button
+      size="sm"
+      variant="ghost"
+      iconOnly
+      icon="arrowDownSFill"
+      (click)="toggle()"
+    ></button>
+  </div>
+</div>
+
+<div [hidden]="!isOpen()" class="list">
+  <div class="info">
+    <span class="u-text-muted">Full price</span>
+    <span class="u-mono u-semibold">{{ item().price }} APT</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">Type</span>
+    <span class="u-mono u-semibold">{{ item().type }}</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">Already paid</span>
+    <span class="u-mono u-semibold">{{ item().pricePartialHuman }} APT</span>
+  </div>
+
+  <div class="info">
+    <span class="u-text-muted">Remaining</span>
+    <span class="u-mono u-semibold">{{ item().remainingHuman }} APT</span>
+  </div>
+</div>

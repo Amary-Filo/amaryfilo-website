@@ -58,13 +58,13 @@ const notFoundSeo: AppRouteSeo = {
   image: 'https://amaryfilo.com/og-main.png',
 };
 
-// const walletToolsSeo: AppRouteSeo = {
-//   title: 'Wallet Tools · Nikita S.',
-//   description:
-//     'Angular / Web3 demo covering wallet connection, staking, auction, marketplace, and product-facing wallet flows.',
-//   robots: 'index, follow',
-//   image: 'https://amaryfilo.com/og-wallet-tools.png',
-// };
+const walletToolsSeo: AppRouteSeo = {
+  title: 'Wallet Tools · Nikita S.',
+  description:
+    'Angular / Web3 demo covering wallet connection, staking, auction, marketplace, and product-facing wallet flows.',
+  robots: 'index, follow',
+  image: 'https://amaryfilo.com/og-wallet-tools.png',
+};
 
 // const dexToolsSeo: AppRouteSeo = {
 //   title: 'DEX Tools · Nikita S.',
@@ -90,12 +90,12 @@ export const routes: Routes = [
     data: { seo: demosSeo },
     loadComponent: () => import('../pages/demos/demos.page').then((m) => m.DemosPage),
   },
-  // {
-  //   path: 'demos/wallet-tools',
-  //   data: { seo: walletToolsSeo },
-  //   loadComponent: () =>
-  //     import('../features/wallet-tools/pages/wallet-tools.page').then((m) => m.WalletToolsPage),
-  // },
+  {
+    path: 'demos/wallet-tools',
+    data: { seo: walletToolsSeo },
+    loadComponent: () =>
+      import('../pages/demos/wallet-tools/wallet-tools.page').then((m) => m.WalletToolsPage),
+  },
   // {
   //   path: 'demos/dex-tools',
   //   data: { seo: dexToolsSeo },

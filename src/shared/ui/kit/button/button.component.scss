@@ -9,9 +9,6 @@
   --cp-btn-fg: var(--ui-sem-primary-fg-rgb);
   --cp-btn-soft: var(--ui-sem-secondary-rgb);
   --cp-btn-soft-fg: var(--ui-sem-secondary-fg-rgb);
-  // --cp-btn-soft: var(--ui-sem-primary-soft-rgb, var(--ui-sem-secondary-rgb));
-  // --cp-btn-soft-fg: var(--ui-sem-primary-soft-fg-rgb, var(--ui-sem-primary-fg-rgb));
-  // --cp-btn-border: var(--ui-sem-primary-rgb);
   --cp-btn-border: var(--ui-sem-border-3-rgb);
 
   --cp-btn-bg: var(--cp-btn-base);
@@ -190,12 +187,15 @@
   }
 }
 
-:host([data-active])[data-variant='primary'],
-:host([data-active])[data-variant='secondary'] {
+:host([data-active])[data-variant='primary'] {
   --cp-btn-border-color: var(--cp-btn-base);
+  --cp-btn-bg: var(--cp-btn-soft);
+  --cp-btn-fg: var(--cp-btn-soft-fg);
+}
+
+:host([data-active])[data-variant='secondary'] {
   --cp-btn-bg: var(--cp-btn-base);
-  --cp-btn-fg: var(--cp-btn-fg);
-  --cp-btn-bg-a: var(--ui-alpha-80);
+  --cp-btn-fg: var(--ui-sem-primary-fg-rgb);
 }
 
 // Variants

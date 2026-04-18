@@ -1,0 +1,50 @@
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Staking</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Lock AST for a selected duration, earn more AST over time, and withdraw the position once the
+      term ends.
+    </p>
+  </div>
+
+  <div class="layout">
+    <wallet-tools-staking-form />
+
+    <div class="cards-list">
+      @for (item of notes; track $index) {
+        <div class="card-item">
+          <h4 class="title">{{ item.title }}</h4>
+          <p class="text">{{ item.text }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <section>
+    <div class="u-section-head">
+      <h2 class="ui-text-heading-1">Pending Positions</h2>
+      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+        Latest positions that are still active and not yet ready to withdraw.
+      </p>
+    </div>
+
+    <div class="content">
+      <wallet-tools-staking-list [items]="staking.listPending()" isPending />
+    </div>
+  </section>
+
+  <section>
+    <div class="u-section-head">
+      <h2 class="ui-text-heading-1">Ready to Withdraw</h2>
+      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+        Positions whose lock period has already ended and can now be withdrawn.
+      </p>
+    </div>
+
+    <div class="content">
+      <wallet-tools-staking-list [items]="staking.listReady()" />
+    </div>
+  </section>
+</div>
