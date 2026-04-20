@@ -1,0 +1,105 @@
+<!-- Intro -->
+<section class="section-accent">
+  <div class="content">
+    <h2 class="ui-text-heading-1">What This Demo Is</h2>
+
+    <div class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      <p>
+        Dex Tools is a practical DeFi demo built on Ethereum Sepolia. It combines token swaps,
+        liquidity pools, LP token ownership, and farming rewards into one connected on-chain product
+        flow.
+      </p>
+
+      <p>
+        This project is designed as a frontend and smart contract showcase rather than a production
+        exchange. Its goal is to demonstrate how wallet identity, AMM logic, reserves, approvals, LP
+        mechanics, and modular frontend architecture can work together in one consistent experience.
+      </p>
+
+      <p>
+        Everything here runs on testnet contracts and testnet tokens only, so it can be explored
+        safely without using real funds. The main focus is DeFi product behavior, reusable Web3 UI
+        patterns, and contract-driven frontend implementation.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Flow -->
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">How the Flow Works</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      The demo is meant to be explored as one connected liquidity-driven loop.
+    </p>
+  </div>
+
+  <div class="cards-list cards-list-accent">
+    @for (item of flowList; track $index) {
+      <div class="card-item">
+        <div class="title">{{ item.title }}</div>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- Concepts -->
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Core Concepts</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      The demo revolves around AMM swaps, liquidity positions, LP tokens, and farming rewards.
+    </p>
+  </div>
+
+  <div class="cards-list cards-list-accent">
+    @for (item of concepts; track $index) {
+      <div class="card-item">
+        <div class="title">{{ item.title }}</div>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>
+
+<div class="layout">
+  <!-- Contracts -->
+  <section>
+    <div class="u-section-head">
+      <h2 class="ui-text-heading-1">Contracts</h2>
+      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+        Demo contracts and token addresses currently used by this environment.
+      </p>
+    </div>
+
+    <div class="list">
+      @for (contract of contracts; track contract.key) {
+        <div class="card-compact">
+          <div class="title">
+            {{ contract.label }} <span class="u-text-muted">({{ contract.kind }})</span>
+          </div>
+          <div class="u-mono">{{ contract.address }}</div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- Technical Notes -->
+  <section>
+    <div class="u-section-head">
+      <h2 class="ui-text-heading-1">Technical Notes</h2>
+      <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+        A few practical details that explain how the demo behaves.
+      </p>
+    </div>
+
+    <h3 class="list-title">Keep in mind:</h3>
+
+    <div class="value-list">
+      @for (item of notesList; track $index) {
+        <div class="value-item">— {{ item }}</div>
+      }
+    </div>
+  </section>
+</div>

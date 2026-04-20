@@ -60,6 +60,10 @@
   }
 }
 
+ui-icon {
+  color: var(--ui-sem-muted-fg);
+}
+
 h4 {
   @container (max-width: 235px) {
     font-size: var(--ui-fz-md);

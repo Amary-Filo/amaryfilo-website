@@ -4,10 +4,10 @@ import { Injectable, computed, effect, inject, signal } from '@angular/core';
 import { formatUnits } from 'viem';
 import { getPublicClient, waitForTransactionReceipt, writeContract } from '@wagmi/core';
 
-import { wagmiConfig, asAppChainId } from '@lib/web3';
+import { wagmiConfig, asAppChainId, ensureErc20Allowance } from '@lib/web3';
 import { AccountFacade } from '@entities';
 import { WALLET_TOOLS_CONFIG } from '../../wallet-tools.config';
-import { ensureErc20Allowance } from '../staking/staking.utils';
+
 import { MARKETPLACE_ITEMS } from './marketplace.items';
 import { MarketplaceItem, PurchaseUI } from './marketplace.types';
 
@@ -187,7 +187,6 @@ export class MarketplaceService {
       await ensureErc20Allowance({
         chainId: appChainId,
         tokenAddress: apt.address,
-        tokenAbi: apt.abi,
         spender: market.address,
         amountWei: remainingWei,
       });

@@ -1,0 +1,189 @@
+<div class="pair-tabs">
+  @for (item of pairs; track item.key) {
+    <button
+      ui-button
+      type="button"
+      variant="secondary"
+      [active]="pair() === item.key"
+      (click)="setPair(item.key)"
+    >
+      {{ item.label }}
+    </button>
+  }
+</div>
+
+<div class="card">
+  <div>
+    <div class="title">Pool reserves</div>
+    <p class="u-text-muted">
+      Current reserves, LP supply, and your position in the selected liquidity pool.
+    </p>
+  </div>
+
+  @if (loadingQuick()) {
+    <div class="list">
+      <div class="info-row"></div>
+      <div class="info-row"></div>
+      <div class="info-row"></div>
+      <div class="info-row"></div>
+    </div>
+  } @else if (info(); as quick) {
+    <div class="list">
+      <div class="info">
+        <span class="u-text-muted">Pair</span>
+        <span class="u-mono u-semibold">{{ pairLabel() }}</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">Reserves</span>
+        <span class="u-mono u-semibold">
+          {{ quick.reserve0 }} {{ tokenA() }}<br />
+          {{ quick.reserve1 }} {{ tokenB() }}
+        </span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">Total LP supply</span>
+        <span class="u-mono u-semibold">{{ quick.totalSupply }} LP</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">My LP</span>
+        <span class="u-mono u-semibold">{{ quick.myLp }} LP</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">My share</span>
+        <span class="u-mono u-semibold">{{ quick.mySharePct }}%</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">Underlying</span>
+        <span class="u-mono u-semibold">
+          {{ quick.myUnderlying0 }} {{ tokenA() }}<br />
+          {{ quick.myUnderlying1 }} {{ tokenB() }}
+        </span>
+      </div>
+    </div>
+  } @else {
+    <div class="list">
+      <div class="empty-text u-text-muted">Pool data is not available right now.</div>
+    </div>
+  }
+</div>
+
+<div class="forms-column">
+  <div class="form-card">
+    <div class="form-head">
+      <h3>Add liquidity</h3>
+      <p class="u-text-muted">
+        Deposit both assets of the selected pair and receive LP tokens that represent your pool
+        share.
+      </p>
+    </div>
+
+    <ui-form-field [label]="'Amount ' + tokenA()">
+      <input
+        ui-input
+        type="text"
+        placeholder="0.0"
+        [ngModel]="amountAH()"
+        (ngModelChange)="amountAH.set($event)"
+      />
+    </ui-form-field>
+
+    <div class="meta-row">
+      <span class="u-text-muted">
+        Available:
+        <strong class="u-mono">{{ maxA() }}</strong>
+        {{ tokenA() }}
+      </span>
+
+      <button ui-button type="button" size="xs" variant="secondary" (click)="setMaxA()">Max</button>
+    </div>
+
+    <ui-form-field [label]="'Amount ' + tokenB()">
+      <input
+        ui-input
+        type="text"
+        placeholder="0.0"
+        [readonly]="linkByRatio()"
+        [ngModel]="amountBH()"
+        (ngModelChange)="amountBH.set($event)"
+      />
+    </ui-form-field>
+
+    <div class="meta-row">
+      <label class="checkbox">
+        <input type="checkbox" [checked]="linkByRatio()" (change)="onRatioToggle($event)" />
+        <span class="u-text-muted">Keep pool ratio</span>
+      </label>
+
+      <button
+        ui-button
+        type="button"
+        size="xs"
+        variant="secondary"
+        [disabled]="linkByRatio()"
+        (click)="setMaxB()"
+      >
+        Max
+      </button>
+    </div>
+
+    <button
+      ui-button
+      type="button"
+      size="extra-lg"
+      fill
+      [loading]="isAdding()"
+      [disabled]="!canAdd()"
+      (click)="add()"
+    >
+      Add liquidity
+    </button>
+  </div>
+
+  <div class="form-card">
+    <div class="form-head">
+      <h3>Remove liquidity</h3>
+      <p class="u-text-muted">
+        Burn LP tokens and receive your proportional share of the pool assets back.
+      </p>
+    </div>
+
+    <ui-form-field label="LP amount">
+      <input
+        ui-input
+        type="text"
+        placeholder="0.0"
+        [ngModel]="lpToRemoveH()"
+        (ngModelChange)="lpToRemoveH.set($event)"
+      />
+    </ui-form-field>
+
+    <div class="meta-row">
+      <span class="u-text-muted">
+        Available:
+        <strong class="u-mono">{{ maxLP() }}</strong>
+        LP
+      </span>
+
+      <button ui-button type="button" size="xs" variant="secondary" (click)="setMaxLP()">
+        Max
+      </button>
+    </div>
+
+    <button
+      ui-button
+      type="button"
+      size="extra-lg"
+      fill
+      [loading]="isRemoving()"
+      [disabled]="!canRemove()"
+      (click)="remove()"
+    >
+      Remove liquidity
+    </button>
+  </div>
+</div>

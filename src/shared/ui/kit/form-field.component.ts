@@ -23,6 +23,9 @@ import { NgpFormField, NgpLabel } from 'ng-primitives/form-field';
       gap: var(--ui-spacing-2xs);
       width: 100%;
       @include mx.ui-text('paragraph-medium');
+    }
+
+    [ngpLabel] {
       color: var(--ui-sem-muted-fg);
     }
   `,

@@ -1,0 +1,30 @@
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Liquidity</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Add liquidity to supported pools, receive LP tokens, and remove your share whenever you want.
+    </p>
+  </div>
+
+  <div class="content">
+    <liquidity-form />
+  </div>
+</section>
+
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">How it works</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      A few practical notes about reserves, LP tokens, and adding assets to the pool ratio.
+    </p>
+  </div>
+
+  <div class="cards-list">
+    @for (item of notes; track $index) {
+      <div class="card-item">
+        <h4 class="title">{{ item.title }}</h4>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</section>

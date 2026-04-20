@@ -21,7 +21,7 @@ interface ITechnicalAreas {
 export class TechnicalAreasSection {
   readonly list: ITechnicalAreas[] = [
     {
-      icon: 'linkedinFill',
+      icon: 'cpuLine',
       title: 'Core',
       list: [
         'Angular',
@@ -35,7 +35,7 @@ export class TechnicalAreasSection {
       ],
     },
     {
-      icon: 'linkedinFill',
+      icon: 'flowChart',
       title: 'Systems',
       list: [
         'Design systems',
@@ -46,7 +46,7 @@ export class TechnicalAreasSection {
       ],
     },
     {
-      icon: 'linkedinFill',
+      icon: 'paletteFill',
       title: 'UI',
       list: [
         'Product interfaces',

@@ -1,0 +1,107 @@
+<div class="form-head">
+  <h3>New swap</h3>
+  <p class="u-text-muted">
+    Choose a token pair, enter the amount, and preview the quote before sending the swap
+    transaction.
+  </p>
+</div>
+
+<ui-form-field label="Swap pair">
+  <div class="pair-row">
+    <ui-select
+      [options]="tokenOptions"
+      [ngModel]="tokenIn()"
+      (ngModelChange)="tokenIn.set($event)"
+    />
+
+    <button class="flip" ui-button type="button" variant="secondary" (click)="flip()">Flip</button>
+
+    <ui-select
+      [options]="toOptions()"
+      [ngModel]="tokenOut()"
+      (ngModelChange)="tokenOut.set($event)"
+    />
+  </div>
+</ui-form-field>
+
+<ui-form-field label="Swap amount">
+  <input
+    ui-input
+    type="text"
+    placeholder="0.0"
+    [ngModel]="amount()"
+    (ngModelChange)="amount.set($event)"
+  />
+</ui-form-field>
+
+<div class="meta-row">
+  <span class="u-text-muted">
+    Available:
+    <strong>{{ max() }}</strong>
+    {{ tokenIn() }}
+  </span>
+
+  <button ui-button type="button" size="xs" variant="secondary" (click)="setMax()">Max</button>
+</div>
+
+<ui-form-field label="Slippage">
+  <div class="terms">
+    @for (value of slippageValues; track trackByValue($index, value)) {
+      <button
+        ui-button
+        type="button"
+        variant="secondary"
+        [active]="slippage() === value"
+        (click)="setSlippage(value)"
+      >
+        {{ value }}%
+      </button>
+    }
+  </div>
+</ui-form-field>
+
+<div class="summary">
+  <div class="summary-row">
+    <span class="u-text-muted">Pair</span>
+    <span class="u-mono u-semibold">{{ pairLabel() }}</span>
+  </div>
+
+  <div class="summary-row">
+    <span class="u-text-muted">Min received</span>
+    <span class="u-mono u-semibold">
+      @if (quote()) {
+        {{ quote()!.minOutHuman }} {{ tokenOut() }}
+      } @else {
+        —
+      }
+    </span>
+  </div>
+
+  <div class="summary-row">
+    <span class="u-text-muted">Price impact</span>
+    <span class="u-mono u-semibold">
+      @if (quote()) {
+        {{ quote()!.priceImpactPct.toFixed(2) }}%
+      } @else {
+        —
+      }
+    </span>
+  </div>
+
+  <div class="summary-row">
+    <span class="u-text-muted">Fee (0.3%)</span>
+    <span class="u-mono u-semibold">{{ feeHuman() }} {{ tokenIn() }}</span>
+  </div>
+</div>
+
+<button
+  ui-button
+  type="button"
+  size="extra-lg"
+  fill
+  [loading]="isSwapInProgress() || loadingQuote()"
+  [disabled]="!canSwap()"
+  (click)="swap()"
+>
+  Swap
+</button>

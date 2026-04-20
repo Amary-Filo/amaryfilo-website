@@ -1,0 +1,19 @@
+<div class="u-section-head">
+  <h2 class="ui-text-heading-1">Farm</h2>
+  <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+    Stake AST / APT LP tokens, accumulate APT rewards, and manage the full farming position from one
+    place.
+  </p>
+
+  <div class="cards-list">
+    @for (item of notes; track $index) {
+      <div class="card-item">
+        <h4 class="title">{{ item.title }}</h4>
+        <p class="text">{{ item.text }}</p>
+      </div>
+    }
+  </div>
+</div>
+
+<farm-summary />
+<farm-form />

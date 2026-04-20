@@ -1,0 +1,62 @@
+@use 'styles/mixins' as mx;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-6xl);
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-4xl);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ui-spacing-2xl);
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-xl);
+  }
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--ui-spacing-lg);
+  margin-top: var(--ui-spacing-5xl);
+
+  @include mx.down(tablet) {
+    grid-template-columns: 1fr;
+  }
+
+  @include mx.down(mobile) {
+    gap: var(--ui-spacing-xs);
+    margin-top: var(--ui-spacing-xl);
+  }
+}
+
+.card-item {
+  padding: var(--ui-spacing-2xl);
+  border-radius: var(--ui-radius-2xl);
+  background-color: var(--ui-sem-accent-0);
+
+  @include mx.down(tablet) {
+    padding: var(--ui-spacing-lg);
+    border-radius: var(--ui-radius-lg);
+  }
+
+  .title {
+    margin-bottom: var(--ui-spacing-xs);
+
+    @include mx.down(tablet) {
+      margin-bottom: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-large-bold');
+    }
+  }
+
+  .text {
+    color: var(--ui-sem-muted-fg);
+    font-weight: var(--ui-fw-medium);
+  }
+}
