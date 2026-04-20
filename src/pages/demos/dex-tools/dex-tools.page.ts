@@ -1,23 +1,26 @@
 // src/pages/demos/dex-tools/dex-tools.page.ts
 
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { WidgetPageHero } from '@widgets';
-import { UISeparator } from '@ui/kit';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+
+import { DEMO_REQUIRED_CHAIN_ID } from '@lib/web3';
+import { DEX_TOOLS_CONFIG, DexToolsShellComponent } from '@features/dex-tools';
+import { AccountFacade, AccountStore, CryptoBalanceFacade, CryptoBalanceService } from '@entities';
 
 @Component({
-  selector: 'page-wallet-dex',
+  selector: 'page-dex-tools',
   standalone: true,
-  imports: [WidgetPageHero, UISeparator],
-  templateUrl: 'dex-tools.page.html',
-  styles: `
-    :host {
-      display: flex;
-      flex-direction: column;
-      gap: var(--ui-spacing-5xl);
-    }
-  `,
+  imports: [DexToolsShellComponent],
+  template: `<dex-tools-shell />`,
   changeDetection: ChangeDetectionStrategy.OnPush,
+  providers: [
+    {
+      provide: DEMO_REQUIRED_CHAIN_ID,
+      useValue: signal(DEX_TOOLS_CONFIG.requiredChain.id),
+    },
+    AccountStore,
+    AccountFacade,
+    CryptoBalanceService,
+    CryptoBalanceFacade,
+  ],
 })
-export class DexToolsPage {
-  readonly heroMeta = ['Angular', 'Web3', 'Wallet flows', 'Transaction-heavy interfaces'];
-}
+export class DexToolsPage {}

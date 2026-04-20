@@ -1,0 +1,113 @@
+<div class="forms-column">
+  <div class="form-card">
+    <div class="form-head">
+      <h3>Deposit LP</h3>
+      <p class="u-text-muted">
+        Stake AST / APT LP tokens to start accumulating APT rewards over time.
+      </p>
+    </div>
+
+    <ui-form-field label="Amount to stake">
+      <input
+        ui-input
+        type="text"
+        placeholder="0.0"
+        [ngModel]="depositH()"
+        (ngModelChange)="depositH.set($event)"
+      />
+    </ui-form-field>
+
+    <div class="meta-row">
+      <span class="u-text-muted">
+        Available:
+        <strong class="u-mono">{{ maxDeposit() }}</strong>
+        LP
+      </span>
+
+      <button ui-button type="button" size="xs" variant="secondary" (click)="setMaxDeposit()">
+        Max
+      </button>
+    </div>
+
+    <button
+      ui-button
+      type="button"
+      size="extra-lg"
+      fill
+      [loading]="depositing()"
+      [disabled]="!canDeposit()"
+      (click)="doDeposit()"
+    >
+      Deposit
+    </button>
+  </div>
+
+  <div class="form-card">
+    <div class="form-head">
+      <h3>Withdraw / Harvest</h3>
+      <p class="u-text-muted">
+        Withdraw staked LP or harvest pending APT rewards without fully exiting the farm.
+      </p>
+    </div>
+
+    <ui-form-field label="Amount to withdraw">
+      <input
+        ui-input
+        type="text"
+        placeholder="0.0"
+        [ngModel]="withdrawH()"
+        (ngModelChange)="withdrawH.set($event)"
+      />
+    </ui-form-field>
+
+    <div class="meta-row">
+      <span class="u-text-muted">
+        Staked:
+        <strong class="u-mono">{{ maxWithdraw() }}</strong>
+        LP
+      </span>
+
+      <button ui-button type="button" size="xs" variant="secondary" (click)="setMaxWithdraw()">
+        Max
+      </button>
+    </div>
+
+    <div class="summary">
+      <div class="summary-row">
+        <span class="u-text-muted">Pending rewards</span>
+        <span class="u-mono u-semibold">{{ summary()?.pendingHuman ?? '0' }} APT</span>
+      </div>
+
+      <div class="summary-row">
+        <span class="u-text-muted">Currently staked</span>
+        <span class="u-mono u-semibold">{{ maxWithdraw() }} LP</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button
+        ui-button
+        type="button"
+        size="extra-lg"
+        fill
+        [loading]="withdrawing()"
+        [disabled]="!canWithdraw()"
+        (click)="doWithdraw()"
+      >
+        Withdraw
+      </button>
+
+      <button
+        ui-button
+        type="button"
+        size="extra-lg"
+        variant="secondary"
+        [loading]="harvesting()"
+        [disabled]="!canHarvest()"
+        (click)="doHarvest()"
+      >
+        Harvest
+      </button>
+    </div>
+  </div>
+</div>

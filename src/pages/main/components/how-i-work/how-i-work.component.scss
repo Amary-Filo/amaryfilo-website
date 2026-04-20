@@ -52,4 +52,8 @@ section {
     font-size: var(--ui-fz-sm);
     line-height: var(--ui-lh-sm);
   }
+
+  ui-icon {
+    color: var(--ui-sem-muted-fg);
+  }
 }

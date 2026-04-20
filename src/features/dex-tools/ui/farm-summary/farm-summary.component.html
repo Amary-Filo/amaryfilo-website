@@ -1,0 +1,37 @@
+<div class="card">
+  <div>
+    <div class="title">Farm summary</div>
+    <p class="u-text-muted">
+      Current reward emission, pending APT rewards, and your staked LP position.
+    </p>
+  </div>
+
+  @if (error()) {
+    <div class="list">
+      <div class="empty-text">{{ error() }}</div>
+    </div>
+  } @else if (!summary()) {
+    <div class="list">
+      <div class="info-row"></div>
+      <div class="info-row"></div>
+      <div class="info-row"></div>
+    </div>
+  } @else {
+    <div class="list">
+      <div class="info">
+        <span class="u-text-muted">Reward rate</span>
+        <span class="u-mono u-semibold">{{ summary()!.rpsHuman }} APT / s</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">Pending APT</span>
+        <span class="u-mono u-semibold">{{ summary()!.pendingHuman }} APT</span>
+      </div>
+
+      <div class="info">
+        <span class="u-text-muted">Staked LP</span>
+        <span class="u-mono u-semibold">{{ summary()!.stakedLpHuman }} LP</span>
+      </div>
+    </div>
+  }
+</div>

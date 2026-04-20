@@ -1,0 +1,22 @@
+<section>
+  <div class="u-section-head">
+    <h2 class="ui-text-heading-1">Swap</h2>
+    <p class="text ui-text-paragraph-extra-large-medium u-text-muted">
+      Swap between AST, APT, and WETH through AMM-based token pairs and review how price impact,
+      slippage, and ERC-20 approvals affect the flow.
+    </p>
+  </div>
+
+  <div class="layout">
+    <swap-form />
+
+    <div class="cards-list">
+      @for (item of notes; track $index) {
+        <div class="card-item">
+          <h4 class="title">{{ item.title }}</h4>
+          <p class="text">{{ item.text }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>

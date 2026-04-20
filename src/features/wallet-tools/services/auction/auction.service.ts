@@ -4,10 +4,9 @@ import { DestroyRef, Injectable, computed, effect, inject, signal } from '@angul
 import { formatUnits } from 'viem';
 import { readContract, readContracts, waitForTransactionReceipt, writeContract } from '@wagmi/core';
 
-import { wagmiConfig, asAppChainId } from '@lib/web3';
+import { wagmiConfig, asAppChainId, ensureErc20Allowance } from '@lib/web3';
 import { AccountFacade } from '@entities';
 import { WALLET_TOOLS_CONFIG } from '../../wallet-tools.config';
-import { ensureErc20Allowance } from '../staking/staking.utils';
 import { AuctionPoolStatus, AuctionPoolUI, BidPoolStatus, IPoolResponse } from './auction.types';
 
 const DEFAULT_ADDRESS = '0x0000000000000000000000000000000000000000';
@@ -247,7 +246,6 @@ export class AuctionService {
       await ensureErc20Allowance({
         chainId: appChainId,
         tokenAddress: ast.address,
-        tokenAbi: ast.abi,
         spender: auction.address,
         amountWei,
       });

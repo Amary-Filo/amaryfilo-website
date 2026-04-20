@@ -1,4 +1,3 @@
-import { BooleanInput } from '@angular/cdk/coercion';
 import {
   booleanAttribute,
   ChangeDetectionStrategy,
@@ -38,7 +37,7 @@ import { UIIcon } from './icon/icon.component';
       }
       @if (arrow()) {
         <div class="arrow">
-          <ui-icon name="coinFill" size="10px" />
+          <ui-icon name="arrowDownSFill" size="10px" />
         </div>
       }
 
@@ -54,14 +53,16 @@ import { UIIcon } from './icon/icon.component';
     </div>
   `,
   styles: `
+    @use 'styles/mixins' as mx;
+
     :host {
       max-width: var(--kit-select-max-width);
       width: 100%;
     }
 
     :host.ng-invalid.ng-touched [ngpSelect] {
-      outline: 2px solid #ff4d4f;
-      outline-offset: 2px;
+      outline: var(--ui-border-2) solid var(--ui-sem-destructive-border);
+      outline-offset: var(--ui-spacing-4xs);
     }
 
     [ngpSelect] {
@@ -72,23 +73,23 @@ import { UIIcon } from './icon/icon.component';
       max-width: var(--kit-select-max-width);
       width: 100%;
 
-      padding: 10px 10px 10px 20px;
+      @include mx.ui-text('paragraph-small-medium');
+      padding: var(--ui-spacing-sm) var(--ui-spacing-sm) var(--ui-spacing-sm) var(--ui-spacing-lg);
 
-      border-radius: var(--radius-lg, 10px);
-      border: none;
-      background-color: var(--surface-300, #29293f);
+      border-radius: var(--ui-radius-xl);
+      border: var(--ui-border-1) solid var(--ui-sem-border-2);
+      background-color: var(--ui-sem-input);
       box-sizing: border-box;
     }
 
     .select-placeholder {
-      color: #808095;
+      color: var(--ui-sem-muted-fg);
     }
 
     .arrow {
-      padding: 6px;
-      background-color: var(--surface-400, #1d1d31);
-      border-radius: 5px;
-      color: rgba(var(--cl-main-rgb, #4d4d74), 1);
+      padding: var(--ui-spacing-3xs);
+      // background-color: var(--ui-sem-accent-0);
+      border-radius: var(--ui-radius-full);
 
       ui-icon {
         transition: 0.3s ease-in-out;
@@ -103,19 +104,12 @@ import { UIIcon } from './icon/icon.component';
     }
 
     [ngpSelect][data-focus] {
-      outline: 2px solid rgba(var(--cl-main-rgb, #4d4d74), 0.6);
+      outline: var(--ui-border-2) solid rgba(var(--cl-main-rgb, #4d4d74), 0.6);
       outline-offset: 2px;
     }
 
-    .select-value,
     .select-placeholder {
-      font-weight: 600;
-      font-size: 14px;
-      color: #808095;
-    }
-
-    .select-value {
-      color: white;
+      color: var(--ui-sem-muted-fg);
     }
 
     [ngpSelectDropdown] {
@@ -124,13 +118,14 @@ import { UIIcon } from './icon/icon.component';
       width: var(--ngp-select-width);
       max-height: 240px;
 
-      padding: 7px;
-      margin-top: 4px;
+      padding: var(--ui-spacing-xs);
+      margin-top: var(--ui-spacing-3xs);
+      @include mx.ui-text('paragraph-small-medium');
 
-      border: 1px solid var(--ngp-border);
-      border-radius: var(--radius-lg, 10px);
-      box-shadow: var(--ngp-shadow-lg);
-      background-color: var(--surface-300, #29293f);
+      border: var(--ui-border-1) solid var(--ui-sem-border-2);
+      border-radius: var(--ui-radius);
+      // box-shadow: var(--ngp-shadow-lg);
+      background-color: var(--ui-sem-input);
 
       animation: popover-show 0.1s ease-out;
       transform-origin: var(--ngp-select-transform-origin);
@@ -152,41 +147,32 @@ import { UIIcon } from './icon/icon.component';
     [ngpSelectOption] {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: var(--ui-spacing-xs);
 
       height: 36px;
       width: 100%;
 
-      padding: 0.375rem 0.75rem;
-      font-size: 14px;
+      padding: var(--ui-spacing-sm) var(--ui-spacing-md);
+      @include mx.ui-text('paragraph-small-medium');
 
-      border-radius: 0.5rem;
-      color: #808095;
+      border-radius: var(--ui-radius-md);
       box-sizing: border-box;
       cursor: pointer;
       transition: 0.3s ease-in-out;
     }
 
-    [ngpSelectOption][data-hover] {
-      background-color: #3e3e5d;
-    }
-
-    [ngpSelectOption][data-press] {
-      background-color: #3e3e5d;
-    }
-
+    [ngpSelectOption][data-hover],
+    [ngpSelectOption][data-press],
     [ngpSelectOption][data-active] {
-      background-color: #3e3e5d;
+      background-color: var(--ui-sem-secondary);
     }
 
     .empty-message {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0.5rem;
-      color: var(--ngp-text-secondary);
-      font-size: 14px;
-      font-weight: 500;
+      padding: var(--ui-spacing-md);
+      color: var(--ui-sem-muted-fg);
       text-align: center;
     }
 
@@ -219,7 +205,7 @@ export class UISelect implements ControlValueAccessor {
   readonly arrow = input<boolean>(true);
   readonly placeholder = input<string>('');
 
-  readonly disabled = input<boolean, BooleanInput>(false, {
+  readonly disabled = input(false, {
     transform: booleanAttribute,
   });
 

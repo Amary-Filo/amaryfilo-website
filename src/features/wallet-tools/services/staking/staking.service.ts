@@ -9,7 +9,7 @@ import { AccountFacade } from '@entities';
 import { WALLET_TOOLS_CONFIG } from '../../wallet-tools.config';
 import { STAKING_TERMS, TERM_BY_SEC, plannedReward } from './staking.constants';
 import { StakeViewUI, TermsSec } from './staking.types';
-import { ensureErc20Allowance } from './staking.utils';
+import { ensureErc20Allowance } from '@lib/web3';
 
 @Injectable()
 export class StakingService {
@@ -260,7 +260,6 @@ export class StakingService {
     await ensureErc20Allowance({
       chainId: appChainId,
       tokenAddress: ast.address,
-      tokenAbi: ast.abi,
       spender: staking.address,
       amountWei,
     });

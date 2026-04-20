@@ -4,286 +4,36 @@ import type { Abi } from 'viem';
 
 export const MARKET_ABI = [
   {
-    inputs: [
-      { internalType: 'address', name: 'apt', type: 'address' },
-      { internalType: 'address', name: 'admin', type: 'address' },
-      { internalType: 'address', name: 'treasury_', type: 'address' },
-    ],
+    inputs: [{ internalType: 'address', name: 'apt', type: 'address' }],
     stateMutability: 'nonpayable',
     type: 'constructor',
   },
-  { inputs: [], name: 'AccessControlBadConfirmation', type: 'error' },
-  {
-    inputs: [
-      { internalType: 'address', name: 'account', type: 'address' },
-      { internalType: 'bytes32', name: 'neededRole', type: 'bytes32' },
-    ],
-    name: 'AccessControlUnauthorizedAccount',
-    type: 'error',
-  },
   { inputs: [], name: 'ReentrancyGuardReentrantCall', type: 'error' },
   {
-    inputs: [{ internalType: 'address', name: 'token', type: 'address' }],
-    name: 'SafeERC20FailedOperation',
-    type: 'error',
-  },
-  {
     anonymous: false,
     inputs: [
-      {
-        indexed: false,
-        internalType: 'uint16',
-        name: 'burnBps',
-        type: 'uint16',
-      },
-      {
-        indexed: false,
-        internalType: 'uint16',
-        name: 'treasuryBps',
-        type: 'uint16',
-      },
-      {
-        indexed: false,
-        internalType: 'address',
-        name: 'treasury',
-        type: 'address',
-      },
-    ],
-    name: 'ParamsUpdated',
-    type: 'event',
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
-        indexed: true,
-        internalType: 'address',
-        name: 'user',
-        type: 'address',
-      },
-      {
-        indexed: true,
-        internalType: 'uint256',
-        name: 'itemId',
-        type: 'uint256',
-      },
-      {
-        indexed: false,
-        internalType: 'uint256',
-        name: 'paidAPT',
-        type: 'uint256',
-      },
+      { indexed: true, internalType: 'address', name: 'user', type: 'address' },
+      { indexed: true, internalType: 'uint256', name: 'itemId', type: 'uint256' },
+      { indexed: false, internalType: 'uint256', name: 'priceAPT', type: 'uint256' },
     ],
     name: 'Purchased',
     type: 'event',
   },
   {
-    anonymous: false,
-    inputs: [
-      {
-        indexed: true,
-        internalType: 'bytes32',
-        name: 'role',
-        type: 'bytes32',
-      },
-      {
-        indexed: true,
-        internalType: 'bytes32',
-        name: 'previousAdminRole',
-        type: 'bytes32',
-      },
-      {
-        indexed: true,
-        internalType: 'bytes32',
-        name: 'newAdminRole',
-        type: 'bytes32',
-      },
-    ],
-    name: 'RoleAdminChanged',
-    type: 'event',
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
-        indexed: true,
-        internalType: 'bytes32',
-        name: 'role',
-        type: 'bytes32',
-      },
-      {
-        indexed: true,
-        internalType: 'address',
-        name: 'account',
-        type: 'address',
-      },
-      {
-        indexed: true,
-        internalType: 'address',
-        name: 'sender',
-        type: 'address',
-      },
-    ],
-    name: 'RoleGranted',
-    type: 'event',
-  },
-  {
-    anonymous: false,
-    inputs: [
-      {
-        indexed: true,
-        internalType: 'bytes32',
-        name: 'role',
-        type: 'bytes32',
-      },
-      {
-        indexed: true,
-        internalType: 'address',
-        name: 'account',
-        type: 'address',
-      },
-      {
-        indexed: true,
-        internalType: 'address',
-        name: 'sender',
-        type: 'address',
-      },
-    ],
-    name: 'RoleRevoked',
-    type: 'event',
-  },
-  {
     inputs: [],
     name: 'APT',
-    outputs: [{ internalType: 'contract IERC20', name: '', type: 'address' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'APT_BURN',
-    outputs: [
-      {
-        internalType: 'contract IERC20BurnSelf',
-        name: '',
-        type: 'address',
-      },
-    ],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'DEFAULT_ADMIN_ROLE',
-    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'MANAGER_ROLE',
-    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'burnBps',
-    outputs: [{ internalType: 'uint16', name: '', type: 'uint16' }],
+    outputs: [{ internalType: 'contract IAmfiPureBurn2', name: '', type: 'address' }],
     stateMutability: 'view',
     type: 'function',
   },
   {
     inputs: [
       { internalType: 'uint256', name: 'itemId', type: 'uint256' },
-      { internalType: 'uint256', name: 'amountAPT', type: 'uint256' },
+      { internalType: 'uint256', name: 'priceAPT', type: 'uint256' },
     ],
     name: 'buy',
     outputs: [],
     stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [{ internalType: 'bytes32', name: 'role', type: 'bytes32' }],
-    name: 'getRoleAdmin',
-    outputs: [{ internalType: 'bytes32', name: '', type: 'bytes32' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [
-      { internalType: 'bytes32', name: 'role', type: 'bytes32' },
-      { internalType: 'address', name: 'account', type: 'address' },
-    ],
-    name: 'grantRole',
-    outputs: [],
-    stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [
-      { internalType: 'bytes32', name: 'role', type: 'bytes32' },
-      { internalType: 'address', name: 'account', type: 'address' },
-    ],
-    name: 'hasRole',
-    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [
-      { internalType: 'bytes32', name: 'role', type: 'bytes32' },
-      {
-        internalType: 'address',
-        name: 'callerConfirmation',
-        type: 'address',
-      },
-    ],
-    name: 'renounceRole',
-    outputs: [],
-    stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [
-      { internalType: 'bytes32', name: 'role', type: 'bytes32' },
-      { internalType: 'address', name: 'account', type: 'address' },
-    ],
-    name: 'revokeRole',
-    outputs: [],
-    stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [
-      { internalType: 'uint16', name: '_burnBps', type: 'uint16' },
-      { internalType: 'uint16', name: '_treasuryBps', type: 'uint16' },
-      { internalType: 'address', name: '_treasury', type: 'address' },
-    ],
-    name: 'setParams',
-    outputs: [],
-    stateMutability: 'nonpayable',
-    type: 'function',
-  },
-  {
-    inputs: [{ internalType: 'bytes4', name: 'interfaceId', type: 'bytes4' }],
-    name: 'supportsInterface',
-    outputs: [{ internalType: 'bool', name: '', type: 'bool' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'treasury',
-    outputs: [{ internalType: 'address', name: '', type: 'address' }],
-    stateMutability: 'view',
-    type: 'function',
-  },
-  {
-    inputs: [],
-    name: 'treasuryBps',
-    outputs: [{ internalType: 'uint16', name: '', type: 'uint16' }],
-    stateMutability: 'view',
     type: 'function',
   },
 ] as const satisfies Abi;

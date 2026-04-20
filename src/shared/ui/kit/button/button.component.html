@@ -2,7 +2,7 @@
   @if (loading()) {
     <ui-spinner class="spinner" size="var(--cp-btn-spinner-size)" />
   } @else {
-    <ui-icon [name]="icon() || 'diamondFill'" size="var(--cp-btn-icon-size)" />
+    <ui-icon [name]="icon() || 'menuFill'" size="var(--cp-btn-icon-size)" />
   }
 }
 <!-- leading -->
@@ -11,7 +11,7 @@
     @if (loading()) {
       <ui-spinner class="spinner" size="var(--cp-btn-spinner-size)" />
     } @else if (showLeadingIcon()) {
-      <ui-icon [name]="icon() || 'diamondFill'" />
+      <ui-icon [name]="icon() || 'menuFill'" />
     }
   </span>
 }
