@@ -2,8 +2,29 @@
 <div class="info">
   <div class="title">{{ item().title }}</div>
   <p class="text">{{ item().text }}</p>
+
   <div class="btns">
-    <button ui-button [routerLink]="'/demos/' + item().slug">Open Demo</button>
+    <button ui-button (click)="openDialog()">View summary</button>
+
+    @if (item().liveUrl) {
+      <button ui-button variant="secondary" [routerLink]="'/demos/' + item().slug">
+        Open Demo
+      </button>
+    }
+
+    @if (item().link) {
+      <a
+        ui-button
+        icon="arrowRightUpLine"
+        variant="secondary"
+        [href]="item().link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Demo"
+      >
+        Open Demo
+      </a>
+    }
 
     @if (item().code) {
       <a

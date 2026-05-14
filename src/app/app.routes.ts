@@ -6,7 +6,7 @@ import { AppRouteSeo } from '@lib/seo.service';
 const landingSeo: AppRouteSeo = {
   title: 'Nikita S. · Senior Frontend Engineer / Frontend Lead',
   description:
-    'Senior Frontend Engineer / Frontend Lead focused on Angular, frontend architecture, reusable UI systems, and fintech / Web3 product interfaces.',
+    'Senior Product-Minded Frontend Engineer. I specialize in Angular, scalable architectures, and turning complex business requirements into seamless Enterprise and Web3 interfaces.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-main.png',
 };
@@ -14,7 +14,7 @@ const landingSeo: AppRouteSeo = {
 const aboutSeo: AppRouteSeo = {
   title: 'About · Nikita S.',
   description:
-    'About Nikita S. — Senior Frontend Engineer focused on Angular, frontend architecture, reusable UI systems, and fintech / Web3 product delivery.',
+    'About Nikita S. — Senior Frontend Engineer driving features from vague concepts to production. Explore my engineering approach, technical profile, and focus on product delivery.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-about.png',
 };
@@ -22,7 +22,7 @@ const aboutSeo: AppRouteSeo = {
 const demosSeo: AppRouteSeo = {
   title: 'Demos · Nikita S.',
   description:
-    'Technical demos built with Angular and Web3, covering wallet connection, staking, marketplace, swaps, liquidity, and transaction-heavy product flows.',
+    'Interactive showcases demonstrating production-grade Angular architecture, Web3 mechanics, and complex UI systems in practice. Not just visual mockups.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-demos.png',
 };
@@ -30,7 +30,7 @@ const demosSeo: AppRouteSeo = {
 const worksSeo: AppRouteSeo = {
   title: 'Work · Nikita S.',
   description:
-    'Selected product and platform work across wallet-connected interfaces, commercial frontend delivery, dashboards, and reusable frontend systems.',
+    'A curated selection of flagship products and platforms across Fintech, Enterprise B2B, and Web3 ecosystems built for scale and reliability.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-works.png',
 };
@@ -61,7 +61,7 @@ const notFoundSeo: AppRouteSeo = {
 const walletToolsSeo: AppRouteSeo = {
   title: 'Wallet Tools · Nikita S.',
   description:
-    'Angular / Web3 demo covering wallet connection, staking, auction, marketplace, and product-facing wallet flows.',
+    'Technical demo showcasing a scalable Angular and Web3 architecture for staking, decentralized auctions, marketplace logic, and robust wallet connections.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-wallet-tools.png',
 };
@@ -69,7 +69,7 @@ const walletToolsSeo: AppRouteSeo = {
 const dexToolsSeo: AppRouteSeo = {
   title: 'DEX Tools · Nikita S.',
   description:
-    'Angular / Web3 demo covering swaps, liquidity, farming, LP flows, and AMM-style mechanics.',
+    'Technical demo highlighting advanced AMM mechanics in Angular, including automated swaps, liquidity pools, yield farming, and state-heavy DeFi product flows.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-dex-tools.png',
 };

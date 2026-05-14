@@ -21,9 +21,9 @@ export class WorksPage {
   readonly earlier = this.workFacade.getByGroup('commercial');
 
   readonly heroMeta = [
-    'Product delivery',
-    'Wallet-connected interfaces',
-    'Reusable frontend systems',
-    'Commercial work',
+    'Fintech & Banking',
+    'Web3 Ecosystems',
+    'Enterprise Dashboards',
+    'B2B Platforms',
   ];
 }

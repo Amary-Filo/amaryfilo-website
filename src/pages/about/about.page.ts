@@ -8,7 +8,6 @@ import {
   FocusSection,
   ApproachSection,
   TechnicalProfileSection,
-  ValueSection,
 } from './components';
 import { UISeparator } from '@shared/ui/kit';
 
@@ -22,7 +21,6 @@ import { UISeparator } from '@shared/ui/kit';
     FocusSection,
     ApproachSection,
     TechnicalProfileSection,
-    ValueSection,
     UISeparator,
   ],
   templateUrl: './about.page.html',
@@ -42,5 +40,12 @@ export class AboutPage {
     },
   ];
 
-  readonly heroMeta = ['Angular', 'Frontend architecture', 'Reusable UI systems', 'Fintech / Web3'];
+  readonly heroMeta = [
+    'Angular',
+    'React',
+    'Frontend Architecture',
+    'Product Delivery',
+    'Fintech / Web3',
+    'Product Engineering',
+  ];
 }

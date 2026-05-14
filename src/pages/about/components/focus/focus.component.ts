@@ -12,20 +12,20 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class FocusSection {
   readonly list: { title: string; text: string }[] = [
     {
-      title: 'Frontend architecture',
-      text: 'I build frontend systems that stay understandable, maintainable, and extensible as products grow in scope, team size, and implementation complexity.',
+      title: 'Clarity in Complex Projects',
+      text: 'I don’t wait for perfect specifications. I take unclear requirements, break them down into deliverable steps, agree on API contracts with the backend early, and start building working solutions.',
     },
     {
-      title: 'Reusable UI foundations',
-      text: 'I prefer reusable patterns, clear component boundaries, and design-system thinking over one-off implementation that becomes expensive to maintain.',
+      title: 'Scalable Architecture',
+      text: 'I design scalable frontend foundations with clear boundaries and predictable data flows. Isolating complex logic keeps the codebase clean, bug-resistant, and easy to scale without over-engineering.',
     },
     {
-      title: 'Product-facing interfaces',
-      text: 'A large part of my work sits close to real product complexity: dashboards, admin surfaces, forms, filters, wallet-connected flows, and transaction-heavy user journeys.',
+      title: 'Simplifying Complex Flows',
+      text: 'I specialize in translating heavy business logic, whether it`s an enterprise client platform, a B2B operational workflow, or Web3 security steps into secure, intuitive, and effortless user journeys.',
     },
     {
       title: 'Delivery beyond MVP',
-      text: 'I care not only about getting a product shipped, but about how well it survives the next stage — scaling, iteration, cleanup, and long-term support.',
+      text: 'I care not only about getting a product shipped, but about how well it survives the next stage: scaling, iteration, cleanup, and long-term support.',
     },
   ];
 }

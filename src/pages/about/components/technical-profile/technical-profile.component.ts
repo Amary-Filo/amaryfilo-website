@@ -15,15 +15,15 @@ export class TechnicalProfileSection {
   readonly list: { title: string; text: string }[] = [
     {
       title: 'Core stack',
-      text: 'Angular, TypeScript, JavaScript, Signals, RxJS, Node.js, Ionic, and frontend rendering strategy including SSR and prerendered delivery.',
+      text: 'Angular, (RxJS, Signals, SSR), TypeScript, JavaScript, React / Next.js, Node.js.',
     },
     {
-      title: 'System design on the frontend',
-      text: 'Reusable UI foundations, design systems, localization, rendering decisions, product structure, consistency, and maintainability across growing codebases.',
+      title: 'Web3 Ecosystems',
+      text: 'Ethers.js, Wagmi, WalletConnect, Account Abstraction (Biconomy / ZeroDev), Smart Contract Interaction, Blockchain Integration.',
     },
     {
-      title: 'Product implementation areas',
-      text: 'Dashboards, admin interfaces, wallet-connected flows, contract-facing UI, tables, filters, forms, themes, feedback states, and transaction-heavy product surfaces.',
+      title: 'Architecture & Systems',
+      text: 'Feature-Sliced Design (FSD), Backend-For-Frontend (BFF), Headless UI, REST API, a11y / ARIA, Component Systems, State Management.',
     },
   ];
 }

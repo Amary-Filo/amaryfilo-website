@@ -25,7 +25,7 @@ const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.png`;
 const DEFAULT_SEO: AppRouteSeo = {
   title: 'Nikita S. · Senior Frontend Engineer / Frontend Lead',
   description:
-    'Senior Frontend Engineer / Frontend Lead focused on Angular, frontend architecture, reusable UI systems, and fintech / Web3 product interfaces.',
+    'Senior Product-Minded Frontend Engineer. I specialize in Angular, scalable architectures, and turning complex business requirements into seamless Enterprise and Web3 interfaces.',
   robots: DEFAULT_ROBOTS,
   image: DEFAULT_OG_IMAGE,
   url: SITE_URL,
@@ -139,9 +139,12 @@ export class SeoService {
             'Angular',
             'TypeScript',
             'Frontend Architecture',
+            'Product Engineering',
+            'Enterprise Interfaces',
+            'Web3 Ecosystems',
+            'End-to-End Delivery',
+            'Backend-For-Frontend (BFF)',
             'Reusable UI Systems',
-            'Fintech Frontend',
-            'Web3 Interfaces',
           ],
         },
         {

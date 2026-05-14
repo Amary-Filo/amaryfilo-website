@@ -4,6 +4,56 @@ import { IWorkItem } from './work.types';
 
 export const WORK_ITEMS: IWorkItem[] = [
   {
+    id: 'kyb-onboarding-portal',
+    title: 'B2B KYB/KYC Onboarding Portal',
+    meta: 'Banking platform · Frontend delivery · 2025',
+    summary:
+      'Role-based onboarding platform featuring automated identity verification, dynamic document uploads, and multi-user invitation flows.',
+    description:
+      'A mission-critical B2B onboarding platform rescued and launched in just 4 weeks. Delivered a role-based frontend handling complex workflows: company stakeholder invitations, secure document uploads, and automated Sumsub KYC integration. Replaced monolithic forms with streamlined Angular Material interfaces, cutting manual processing overhead by 90% and successfully onboarding 300+ corporate clients.',
+    tags: ['KYB / KYC', 'B2B Onboarding', 'Role-based routing', 'Sumsub', 'Angular'],
+    liveUrl: 'https://kyb.unlimit.com',
+    group: 'featured',
+    year: '2024',
+  },
+  {
+    id: 'ibanking-platform',
+    title: 'iBanking Client Platform',
+    meta: 'Banking product · Frontend architecture · 2023',
+    summary:
+      'High-load banking interface for corporate clients, focusing on account management, secure chats, and complex operational workflows.',
+    description:
+      'Led the frontend modernization and delivery of a core banking platform handling high daily active users (DAU). Focused on critical product domains including accounts management, secure client-bank chat interfaces, and transaction history. Prevented a high-risk framework rewrite by standardizing the Angular architecture and streamlining cross-team feature delivery.',
+    tags: ['Banking UI', 'Accounts & Chat', 'Complex Data Grids', 'Angular', 'BFF'],
+    liveUrl: 'https://onlinebank.unlimit.com',
+    group: 'featured',
+    year: '2024',
+  },
+  {
+    id: 'web3-wallet-extension',
+    title: 'Web3 Non-Custodial Extension',
+    meta: 'Wallet product · Frontend owner · 2023',
+    summary:
+      'Browser-based crypto wallet featuring a custom QR-based connection model, cross-tab state syncing, and external dApp interaction APIs.',
+    description:
+      'Engineered a non-custodial browser wallet extension from scratch to production in 3 months. Bypassed traditional password-entry friction by implementing a seamless QR-based connection model. Delivered cross-tab synchronization for security states and developed custom browser APIs to bridge the wallet with external Web3 ecosystems, enabling MetaMask-like connection behaviors.',
+    tags: ['Browser Extension', 'Web3 Wallet', 'QR-based Auth', 'State Sync', 'dApp API'],
+    group: 'featured',
+    year: '2023',
+  },
+  {
+    id: 'internal-admin',
+    title: 'Internal Banking Admin Panel',
+    meta: 'Internal tool · Rapid delivery & modernization · 2025',
+    summary:
+      'Operational dashboard for managing banking entities, accounts, permissions, and internal workflows.',
+    description:
+      'An internal banking admin panel built under tight deadlines during a core system migration. Delivered the initial usable MVP in just one week, implementing complex data grids, entity linking, and filtering without full specifications. Later autonomously refactored the entire application to Angular 19 and Signals, eliminating 70% of duplicate logic and drastically improving UI maintainability.',
+    tags: ['Internal Tools', 'Angular 19', 'Signals', 'Complex Tables', 'Rapid Delivery'],
+    group: 'featured',
+    year: '2024',
+  },
+  {
     id: 'amfi-connect',
     title: 'AMFI Connect',
     meta: 'Wallet connection package · Integration layer · 2022',
@@ -14,7 +64,7 @@ export const WORK_ITEMS: IWorkItem[] = [
     tags: ['Wallet entry', 'Connection UX', 'Network handling', 'Reusable layer'],
     codeUrl: 'https://github.com/amaryfilo/connect-wallet',
     liveUrl: 'https://www.npmjs.com/package/@amfi/connect-wallet',
-    group: 'featured',
+    group: 'product',
     year: '2022',
   },
   {
@@ -28,9 +78,10 @@ export const WORK_ITEMS: IWorkItem[] = [
     tags: ['Wallet UX', 'Mobile/web product surfaces', 'Swap & deposit flows', 'Transactions'],
     codeUrl: 'https://github.com/DucatusX/ducatus-copay',
     liveUrl: 'https://apps.apple.com/ru/app/ducatus-wallet-2-0/id1489722627',
-    group: 'featured',
+    group: 'product',
     year: '2021',
   },
+
   {
     id: 'axion-dashboard',
     title: 'Axion Dashboard',
@@ -38,9 +89,9 @@ export const WORK_ITEMS: IWorkItem[] = [
     summary:
       'Frontend dashboard for managing cryptocurrency balances, wallet-connected interactions, and account-facing token flows.',
     description:
-      'Axion Dashboard was a frontend dashboard product focused on account-facing token operations, cryptocurrency balances, wallet-connected interactions, and product-facing dashboard UX. The work included Angular frontend implementation, product structure, theming, API and Web3 integration, and practical dashboard delivery for a crypto-oriented environment.',
+      'Axion Dashboard was a frontend dashboard product focused on account-facing token operations, cryptocurrency balances, wallet-connected interactions, and product-facing dashboard UX. Processing significant token volumes, the work included Angular frontend implementation, product structure, theming, API and Web3 integration.',
     tags: ['Dashboard UI', 'Wallet-connected flows', 'Theming', 'API and Web3 integration'],
-    group: 'featured',
+    group: 'product',
     year: '2021',
   },
   {
@@ -53,7 +104,7 @@ export const WORK_ITEMS: IWorkItem[] = [
       'Rocknblock Website was a company platform and marketing website with multiple landing pages, structured content delivery, lead-oriented forms, SEO-focused frontend implementation, and support for ongoing publishing. The work reflects commercial frontend delivery beyond pure UI — including content structure, form flows, and practical website scalability.',
     tags: ['SEO', 'Content structure', 'Forms', 'Publishing flows', 'Multi-page delivery'],
     liveUrl: 'https://rocknblock.io/',
-    group: 'featured',
+    group: 'commercial',
     year: '2022',
   },
   {
@@ -63,10 +114,10 @@ export const WORK_ITEMS: IWorkItem[] = [
     summary:
       'Token-oriented crypto product with staking flows, chart integration, account connection, and smart contract-facing interactions.',
     description:
-      'Minto was a crypto product built with React and Web3-oriented frontend flows. The work included staking interactions, account connection, contract-facing actions, chart integration, and token-related product surfaces. It represents practical product delivery in a crypto environment with real user-facing wallet and staking scenarios.',
+      'Minto was a crypto product built with React and Web3-oriented frontend flows. The work included staking interactions, account connection, contract-facing actions, chart integration, and token-related product surfaces.',
     tags: ['Staking', 'Wallet connection', 'Chart integration', 'Contract-facing frontend'],
     liveUrl: 'http://minto.finance',
-    group: 'featured',
+    group: 'product',
     year: '2021',
   },
   {
@@ -80,10 +131,9 @@ export const WORK_ITEMS: IWorkItem[] = [
     tags: ['Exchange UI', 'Wallet flows', 'Launch delivery', 'Multi-chain direction'],
     codeUrl: 'https://github.com/Cryptorubic/rubic-app',
     liveUrl: 'https://rubic.exchange',
-    group: 'featured',
+    group: 'product',
     year: '2020',
   },
-
   {
     id: 'algovest',
     title: 'Algovest',
@@ -171,7 +221,6 @@ export const WORK_ITEMS: IWorkItem[] = [
     group: 'product',
     year: '2021',
   },
-
   {
     id: 'wallarm',
     title: 'Wallarm',

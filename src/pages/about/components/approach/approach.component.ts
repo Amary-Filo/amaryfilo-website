@@ -12,20 +12,20 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ApproachSection {
   readonly list: { title: string; text: string }[] = [
     {
-      title: 'Reusable over one-off',
-      text: 'I prefer systems that can be extended and reused instead of local solutions that solve one screen and create long-term maintenance cost.',
+      title: 'Practical Tech Decisions',
+      text: 'I evaluate technical choices based on cost, time, and stability, aligning engineering efforts with business goals to keep development efficient and maintenance predictable.',
     },
     {
-      title: 'Clarity before abstraction',
-      text: 'I value clear structure and practical implementation over unnecessary abstraction introduced too early.',
+      title: 'AI-Accelerated Workflow',
+      text: 'I leverage AI to explore architectural ideas and speed up routine tasks. It acts as a powerful accelerator, but I always maintain absolute control over the final code quality and system integrity.',
     },
     {
-      title: 'Product structure matters',
-      text: 'A good frontend is not just UI. It is routing, states, reuse, rendering strategy, maintainability, and a structure that helps a team move faster.',
+      title: 'Balancing Speed and Quality',
+      text: 'Speed and quality are not always opposites. I prioritize shipping first versions quickly to validate business needs, while keeping the core architecture stable and ready for future growth.',
     },
     {
-      title: 'Simplicity scales better',
-      text: 'The easier a frontend is to understand, the easier it is to grow, debug, hand over, and improve over time.',
+      title: 'Built for the Team',
+      text: 'A system is only good if others can work with it. I value clear, straightforward code over unnecessary complexity, making sure any new engineer can jump in, understand it, and easily maintain the project.',
     },
   ];
 }

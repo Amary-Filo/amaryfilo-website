@@ -16,33 +16,28 @@ export class WhatIDoSection {
   readonly list: { icon: IconName; title: string; text: string }[] = [
     {
       icon: 'stackFill',
-      title: 'Frontend Architecture',
-      text: 'Scalable product structure for teams that need a frontend that stays maintainable as scope grows.',
+      title: 'Product Engineering',
+      text: 'Driving features from vague concepts to production. I align cross-functional teams, clarify requirements, and take full ownership of delivery.',
     },
     {
-      icon: 'layoutGridFill',
-      title: 'Reusable UI Systems',
-      text: 'Token-based foundations, reusable components, and consistent product surfaces built for long-term use.',
-    },
-    {
-      icon: 'expandHorizontalSLine',
-      title: 'Wallet & Transaction Flows',
-      text: 'Product interfaces for wallet connection, stateful transactions, network switching, and user-facing blockchain actions.',
-    },
-    {
-      icon: 'spaceShip2Fill',
-      title: 'Product Delivery',
-      text: 'From prototype and validation to MVP-ready frontend structure that does not need to be rebuilt from scratch.',
+      icon: 'expandDiagonalLine',
+      title: 'Scalable Architecture',
+      text: 'Building modular frontend foundations with clear boundaries. Designed to keep codebases clean and maintainable as products and teams grow.',
     },
     {
       icon: 'equalizer2Fill',
-      title: 'Admin & Internal Tools',
-      text: 'Clear interfaces for data-heavy workflows, actions, filters, states, and operational surfaces.',
+      title: 'Enterprise-Grade Interfaces',
+      text: 'Handling high-density data, multi-step workflows, and strict business rules. I translate heavy operational requirements into secure, performant, and intuitive product surfaces.',
     },
     {
-      icon: 'dashboard2Fill',
-      title: 'Performance & Maintainability',
-      text: 'Practical frontend systems focused on clarity, controlled complexity, and long-term support.',
+      icon: 'foldersFill',
+      title: 'Reusable Systems',
+      text: 'Building architectural leverage for the entire team. I design reusable system foundations from shared product logic to consistent design patterns that multiply development speed and keep the product cohesive as it scales.',
+    },
+    {
+      icon: 'expandHorizontalSLine',
+      title: 'End-to-End Integration',
+      text: 'Working across frontend and API boundaries to translate complex business rules into seamless interfaces. I shape data models and manage application states to ensure reliable product experiences.',
     },
   ];
 }

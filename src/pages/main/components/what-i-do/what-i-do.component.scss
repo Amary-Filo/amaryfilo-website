@@ -1,13 +1,12 @@
 @use 'styles/mixins' as mx;
 
 .list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--cp-wid-width, 290px), 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--ui-spacing-lg);
   margin-top: var(--ui-spacing-5xl);
 
   @include mx.down(tablet) {
-    --cp-wid-width: 230px;
     gap: var(--ui-spacing-md);
   }
 
@@ -18,6 +17,8 @@
 
 .item {
   --cp-wid-icon-size: 35px;
+  flex: 1 30%;
+  min-width: 270px;
   padding: var(--ui-spacing-2xl);
   border-radius: var(--ui-radius-2xl);
   background-color: var(--ui-sem-accent-0);

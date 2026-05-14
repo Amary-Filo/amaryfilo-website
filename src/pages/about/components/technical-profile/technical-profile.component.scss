@@ -34,7 +34,7 @@
   max-width: 550px;
 
   @include mx.down(desktop) {
-    max-width: 750px;
+    max-width: max-content;
   }
 
   @include mx.down(mobile) {
