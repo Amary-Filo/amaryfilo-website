@@ -1,5 +1,5 @@
 @for (item of list(); track $index; let last = $last) {
-  <experience-item [item]="item" [variant]="variant()" />
+  <experience-item [item]="item" [isFull]="isFull()" />
 
   @if (!last) {
     <div ui-separator></div>

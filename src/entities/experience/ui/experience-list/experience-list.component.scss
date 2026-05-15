@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--ui-spacing-lg);
-  margin-top: var(--ui-spacing-4xl);
+  margin-top: var(--ui-spacing-3xl);
 
   @include mx.down(mobile) {
     margin-top: var(--ui-spacing-2xl);

@@ -8,6 +8,7 @@ export interface IExperienceItem {
   period?: string;
   location?: string;
 
+  text?: string;
   bullets?: string[];
   featured?: boolean;
 }

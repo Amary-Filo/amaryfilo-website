@@ -2,14 +2,15 @@
 
 <h4 class="title">{{ item().title }}</h4>
 
-<div class="meta" [hidden]="variant() !== 'full'">
+<div class="meta" [hidden]="!isFull()">
   <span [hidden]="!item().period">{{ item().period }}</span>
   <span [hidden]="!item().location">{{ item().location }}</span>
 </div>
 
 <p class="text">{{ item().summary }}</p>
+<p class="text" [hidden]="!isFull()">{{ item().text }}</p>
 
-<ul class="bullets" [hidden]="variant() !== 'full' && item().bullets?.length">
+<ul class="bullets" [hidden]="!isFull() && item().bullets?.length">
   @for (bullet of item().bullets; track $index) {
     <li>{{ bullet }}</li>
   }

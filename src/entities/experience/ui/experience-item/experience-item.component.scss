@@ -31,7 +31,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: var(--ui-spacing-2xs);
-  margin-bottom: var(--ui-spacing-md);
 }
 
 .text,
@@ -40,8 +39,12 @@
   font-weight: var(--ui-fw-medium);
 }
 
-.bullets {
+.bullets,
+.text {
   margin: var(--ui-spacing-xs) 0 0 0;
+}
+
+.bullets {
   padding: 0;
   list-style: none;
 }

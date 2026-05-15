@@ -5,14 +5,11 @@ import { IExperienceItem } from './experience.types';
 export const EXPERIENCE_ITEMS: IExperienceItem[] = [
   {
     title: 'Independent Frontend Consultant',
-    summary: 'Web3 architecture, DeFi product modules, and advanced Angular foundations.',
+    summary:
+      'Designed production-ready Angular boilerplates that reduce architecture setup time by 70% across Fintech, Web3, and Enterprise ecosystems.',
     period: 'Sep 2025 – Present',
     location: 'Valencia, Spain',
-    bullets: [
-      'Built reusable Angular/Web3 demo foundations covering staking, auctions, marketplace logic, and DeFi liquidity pools.',
-      'Created scalable frontend architecture patterns for transaction-heavy products, optimizing wallet connections, API boundaries, and state handling.',
-      'Advised on product direction, UI structure, SSR strategies, and maintainable frontend delivery for complex Web3 systems.',
-    ],
+    text: 'Architected production-ready Angular boilerplates for Enterprise, Fintech, and Web3 ecosystems, covering 10+ complex product modules. Designed scalable frontend foundations to reduce architecture setup time by 70%, standardizing SSR configurations, strict API boundaries, predictable data flows, and secure blockchain integrations.',
     featured: true,
   },
   {
