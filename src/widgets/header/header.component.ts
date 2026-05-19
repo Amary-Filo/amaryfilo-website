@@ -44,7 +44,7 @@ export class WidgetHeader extends HeaderBase implements AfterViewInit, OnDestroy
       id: 'resume',
       label: 'Resume',
       type: 'file',
-      href: '/Nikita-Syreishchikov-Senior-Frontend-Engineer.pdf',
+      href: '/CV-Senior-Frontend-Engineer.pdf',
     },
     { id: 'contact', label: 'Contact', type: 'anchor', anchorId: 'contact' },
   ];

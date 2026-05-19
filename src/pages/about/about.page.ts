@@ -31,7 +31,7 @@ export class AboutPage {
   readonly heroActions: IHeroAction[] = [
     {
       label: 'View resume',
-      href: '/Nikita-Syreishchikov-Senior-Frontend-Engineer.pdf',
+      href: '/CV-Senior-Frontend-Engineer.pdf',
       target: '_blank',
       rel: 'noopener noreferrer',
       icon: 'arrowRightUpLine',
