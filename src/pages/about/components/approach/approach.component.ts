@@ -16,8 +16,8 @@ export class ApproachSection {
       text: 'I evaluate technical choices based on cost, time, and stability, aligning engineering efforts with business goals to keep development efficient and maintenance predictable.',
     },
     {
-      title: 'AI-Accelerated Workflow',
-      text: 'I leverage AI to explore architectural ideas and speed up routine tasks. It acts as a powerful accelerator, but I always maintain absolute control over the final code quality and system integrity.',
+      title: 'Tool-Assisted Engineering Workflow',
+      text: 'I use modern engineering tools, including AI-assisted workflows, to speed up exploration and routine tasks while keeping full ownership of architecture, implementation quality, and final technical decisions.',
     },
     {
       title: 'Balancing Speed and Quality',

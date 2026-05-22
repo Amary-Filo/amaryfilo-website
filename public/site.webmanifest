@@ -1,8 +1,9 @@
 {
   "name": "Nikita Syreishchikov",
   "short_name": "Nikita S.",
-  "description": "Senior Frontend Engineer / Frontend Lead focused on Angular, frontend architecture, reusable UI systems, and fintech / Web3 product interfaces.",
+  "description": "Senior Frontend Engineer / Angular Developer / Frontend Lead focused on Angular, TypeScript, RxJS, frontend architecture, data-heavy UI, fintech, banking, B2B platforms, and Web3 integrations.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
@@ -11,13 +12,13 @@
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ]
 }
