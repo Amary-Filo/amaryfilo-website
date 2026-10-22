@@ -40,12 +40,7 @@ export class WidgetHeader extends HeaderBase implements AfterViewInit, OnDestroy
     { id: 'about', label: 'About', type: 'route', route: '/about' },
     { id: 'demos', label: 'Demos', type: 'route', route: '/demos' },
     { id: 'work', label: 'Work', type: 'route', route: '/works' },
-    {
-      id: 'resume',
-      label: 'Resume',
-      type: 'file',
-      href: '/CV-Senior-Frontend-Engineer.pdf',
-    },
+    { id: 'experience', label: 'Experience', type: 'route', route: '/about' },
     { id: 'contact', label: 'Contact', type: 'anchor', anchorId: 'contact' },
   ];
 
