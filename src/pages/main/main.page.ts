@@ -4,7 +4,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import {
   HeroSection,
   WhatIDoSection,
-  HowIWorkSection,
   DemoSection,
   WorkSection,
   ContactsSection,
@@ -18,7 +17,6 @@ import { UISeparator } from '@ui/kit';
   imports: [
     HeroSection,
     WhatIDoSection,
-    HowIWorkSection,
     DemoSection,
     WorkSection,
     ContactsSection,
