@@ -38,5 +38,8 @@ export class AboutPage {
     },
   ];
 
-  readonly heroMeta = ['TypeScript', 'Angular / React', 'Node.js / NestJS', 'PostgreSQL', 'Product Engineering', 'Fintech / Web3'];
+  readonly heroMeta = [
+    'TypeScript', 'Angular / React', 'Node.js / NestJS',
+    'PostgreSQL', 'Product Engineering', 'Fintech / Web3',
+  ];
 }

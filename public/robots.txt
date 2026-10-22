@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /privacy
+Disallow: /terms
+Disallow: /404
+Sitemap: https://amaryfilo.com/sitemap.xml

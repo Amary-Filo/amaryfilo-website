@@ -37,10 +37,9 @@ export class WidgetHeader extends HeaderBase implements AfterViewInit, OnDestroy
   private observer?: IntersectionObserver;
 
   readonly navItems: NavItem[] = [
-    { id: 'about', label: 'About', type: 'route', route: '/about' },
+    { id: 'about', label: 'About / Experience', type: 'route', route: '/about' },
     { id: 'demos', label: 'Demos', type: 'route', route: '/demos' },
     { id: 'work', label: 'Work', type: 'route', route: '/works' },
-    { id: 'experience', label: 'Experience', type: 'route', route: '/about' },
     { id: 'contact', label: 'Contact', type: 'anchor', anchorId: 'contact' },
   ];
 

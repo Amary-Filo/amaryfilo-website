@@ -19,13 +19,13 @@ export interface AppRouteSeo {
 export const DEFAULT_ROBOTS = 'index, follow';
 
 const SITE_URL = 'https://amaryfilo.com';
-const SITE_NAME = 'Nikita S.';
+const SITE_NAME = 'Nikita Syreishchikov';
 const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.png`;
 
 const DEFAULT_SEO: AppRouteSeo = {
-  title: 'Nikita S. · Senior Frontend Engineer / Frontend Lead',
+  title: 'Nikita Syreishchikov | Senior Software Engineer',
   description:
-    'Senior Product-Minded Frontend Engineer. I specialize in Angular, scalable architectures, and turning complex business requirements into seamless Enterprise and Web3 interfaces.',
+    'Senior Software Engineer building web and mobile applications with TypeScript, Angular, React, Node.js and PostgreSQL across fintech and Web3.',
   robots: DEFAULT_ROBOTS,
   image: DEFAULT_OG_IMAGE,
   url: SITE_URL,
@@ -130,21 +130,15 @@ export class SeoService {
         {
           '@type': 'Person',
           '@id': `${SITE_URL}/#person`,
-          name: 'Nikita S.',
+          name: 'Nikita Syreishchikov',
           url: SITE_URL,
-          image: imageUrl,
-          jobTitle: 'Senior Frontend Engineer / Frontend Lead',
+          jobTitle: 'Senior Software Engineer',
           sameAs: ['https://github.com/amaryfilo', 'https://www.linkedin.com/in/amary-filo'],
           knowsAbout: [
-            'Angular',
-            'TypeScript',
-            'Frontend Architecture',
-            'Product Engineering',
-            'Enterprise Interfaces',
-            'Web3 Ecosystems',
-            'End-to-End Delivery',
-            'Backend-For-Frontend (BFF)',
-            'Reusable UI Systems',
+            'TypeScript', 'JavaScript', 'Angular', 'React', 'Next.js', 'Node.js',
+            'NestJS', 'PostgreSQL', 'Prisma', 'MongoDB', 'PHP/Laravel',
+            'Frontend Architecture', 'REST APIs', 'Mobile Development',
+            'Fintech', 'Non-custodial Wallets', 'Web3 Integrations',
           ],
         },
         {
