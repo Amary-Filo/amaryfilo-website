@@ -22,7 +22,7 @@ export class HeroSection {
     this.scroll.scrollTo('contact');
   }
 
-  openDemos(): void {
-    this.router.navigateByUrl('/demos');
+  openWork(): void {
+    this.router.navigateByUrl('/works');
   }
 }
