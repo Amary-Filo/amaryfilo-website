@@ -20,27 +20,9 @@ interface ITechnicalAreas {
 })
 export class TechnicalAreasSection {
   readonly list: ITechnicalAreas[] = [
-    {
-      icon: 'cpuLine',
-      title: 'Core',
-      list: ['Angular', 'TypeScript', 'RxJS', 'Signals', 'SSR', 'React', 'Next.js', 'Node.js'],
-    },
-    {
-      icon: 'flowChart',
-      title: 'Systems',
-      list: [
-        'Backend-For-Frontend',
-        'REST API',
-        'Ethers.js',
-        'Wagmi',
-        'WalletConnect',
-        'Smart Contract UI',
-      ],
-    },
-    {
-      icon: 'paletteFill',
-      title: 'UI & Architecture',
-      list: ['Headless UI', 'a11y', 'ARIA', 'Component Systems', 'State Management'],
-    },
+    { icon: 'cpuLine', title: 'Frontend', list: ['TypeScript', 'JavaScript', 'Angular', 'React', 'Next.js', 'RxJS', 'Signals', 'MobX', 'Redux', 'TanStack Query', 'SSR', 'SCSS'] },
+    { icon: 'flowChart', title: 'Backend & Data', list: ['Node.js', 'Express', 'NestJS', 'REST', 'GraphQL', 'PostgreSQL', 'Prisma', 'MongoDB', 'PHP / Laravel', 'MySQL', 'gRPC'] },
+    { icon: 'paletteFill', title: 'Architecture & Quality', list: ['API Contracts', 'Design Systems', 'Headless UI', 'Accessibility', 'SSR / Hydration', 'Vitest', 'Playwright', 'CI/CD', 'Code Review'] },
+    { icon: 'stackFill', title: 'Mobile & Web3', list: ['Ionic', 'Cordova', 'Capacitor', 'Web3.js', 'wagmi', 'viem', 'WalletConnect', 'EVM', 'TronWeb', 'Wallet SDKs', 'NFC'] },
   ];
 }

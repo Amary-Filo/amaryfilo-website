@@ -20,10 +20,5 @@ export class WorksPage {
   readonly additional = this.workFacade.getByGroup('product');
   readonly earlier = this.workFacade.getByGroup('commercial');
 
-  readonly heroMeta = [
-    'Fintech & Banking',
-    'Web3 Ecosystems',
-    'Enterprise Dashboards',
-    'B2B Platforms',
-  ];
+  readonly heroMeta = ['Software Engineering', 'Angular / React', 'Node.js / PostgreSQL', 'Fintech & Web3'];
 }

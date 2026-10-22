@@ -38,14 +38,8 @@ export class WidgetHeader extends HeaderBase implements AfterViewInit, OnDestroy
 
   readonly navItems: NavItem[] = [
     { id: 'about', label: 'About', type: 'route', route: '/about' },
-    { id: 'demos', label: 'Demos', type: 'route', route: '/demos' },
     { id: 'work', label: 'Work', type: 'route', route: '/works' },
-    {
-      id: 'resume',
-      label: 'Resume',
-      type: 'file',
-      href: '/CV-Senior-Frontend-Engineer.pdf',
-    },
+    { id: 'demos', label: 'Demos', type: 'route', route: '/demos' },
     { id: 'contact', label: 'Contact', type: 'anchor', anchorId: 'contact' },
   ];
 

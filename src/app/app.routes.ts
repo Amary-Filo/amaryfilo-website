@@ -1,75 +1,58 @@
-// src/app/app.routes.ts
-
 import { Routes } from '@angular/router';
 import { AppRouteSeo } from '@lib/seo.service';
 
+// Route-level metadata feeds the canonical, Open Graph, Twitter and JSON-LD tags.
 const landingSeo: AppRouteSeo = {
-  title: 'Nikita S. · Senior Frontend Engineer / Frontend Lead',
-  description:
-    'Senior Product-Minded Frontend Engineer. I specialize in Angular, scalable architectures, and turning complex business requirements into seamless Enterprise and Web3 interfaces.',
+  title: 'Nikita Syreishchikov | Senior Software Engineer',
+  description: 'Senior Software Engineer with 10+ years building TypeScript, Angular and React applications, Node.js services, mobile products and fintech/Web3 systems.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-main.png',
 };
-
 const aboutSeo: AppRouteSeo = {
-  title: 'About · Nikita S.',
-  description:
-    'About Nikita S. — Senior Frontend Engineer driving features from vague concepts to production. Explore my engineering approach, technical profile, and focus on product delivery.',
+  title: 'About & Experience | Nikita Syreishchikov',
+  description: 'Engineering experience across Angular, React, Node.js, NestJS, PostgreSQL, mobile wallets, fintech, Web3 and technical leadership.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-about.png',
 };
-
 const demosSeo: AppRouteSeo = {
-  title: 'Demos · Nikita S.',
-  description:
-    'Interactive showcases demonstrating production-grade Angular architecture, Web3 mechanics, and complex UI systems in practice. Not just visual mockups.',
+  title: 'Engineering Demos | Nikita Syreishchikov',
+  description: 'Angular SSR UI foundation, reusable B2B dashboard components and interactive Web3 wallet and DeFi frontend demonstrations.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-demos.png',
 };
-
 const worksSeo: AppRouteSeo = {
-  title: 'Work · Nikita S.',
-  description:
-    'A curated selection of flagship products and platforms across Fintech, Enterprise B2B, and Web3 ecosystems built for scale and reliability.',
+  title: 'Selected Software Projects | Nikita Syreishchikov',
+  description: 'Selected software work including NestJS fitness APIs, Angular and React fintech products, mobile wallets, banking tools and Web3 integrations.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-works.png',
 };
-
 const termsSeo: AppRouteSeo = {
-  title: 'Terms of Use · Nikita S.',
-  description:
-    'Terms of Use for the Nikita S. website, including information about content usage, materials, and general site terms.',
+  title: 'Terms of Use | Nikita Syreishchikov',
+  description: 'Terms of use for amaryfilo.com.',
   robots: 'noindex, follow',
   image: 'https://amaryfilo.com/og-main.png',
 };
-
 const privacySeo: AppRouteSeo = {
-  title: 'Privacy Policy · Nikita S.',
-  description:
-    'Privacy Policy for the Nikita S. website, including information about contact form data, communication, and data handling.',
+  title: 'Privacy Policy | Nikita Syreishchikov',
+  description: 'Contact form privacy and data handling information for amaryfilo.com.',
   robots: 'noindex, follow',
   image: 'https://amaryfilo.com/og-main.png',
 };
-
 const notFoundSeo: AppRouteSeo = {
-  title: 'Page Not Found · Nikita S.',
-  description: 'The page you are looking for could not be found.',
+  title: 'Page Not Found | Nikita Syreishchikov',
+  description: 'The requested page was not found.',
   robots: 'noindex, nofollow',
   image: 'https://amaryfilo.com/og-main.png',
 };
-
 const walletToolsSeo: AppRouteSeo = {
-  title: 'Wallet Tools · Nikita S.',
-  description:
-    'Technical demo showcasing a scalable Angular and Web3 architecture for staking, decentralized auctions, marketplace logic, and robust wallet connections.',
+  title: 'Wallet & Staking Demo | Nikita Syreishchikov',
+  description: 'Angular/Web3 interactive wallet, staking, marketplace and auction demo with transaction states and testnet integrations.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-wallet-tools.png',
 };
-
 const dexToolsSeo: AppRouteSeo = {
-  title: 'DEX Tools · Nikita S.',
-  description:
-    'Technical demo highlighting advanced AMM mechanics in Angular, including automated swaps, liquidity pools, yield farming, and state-heavy DeFi product flows.',
+  title: 'DEX Interaction Demo | Nikita Syreishchikov',
+  description: 'Angular DeFi interface demo for swap, liquidity and farming interactions, with wallet state and amount validation.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-dex-tools.png',
 };

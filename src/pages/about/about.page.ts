@@ -30,10 +30,8 @@ import { UISeparator } from '@shared/ui/kit';
 export class AboutPage {
   readonly heroActions: IHeroAction[] = [
     {
-      label: 'View resume',
-      href: '/CV-Senior-Frontend-Engineer.pdf',
-      target: '_blank',
-      rel: 'noopener noreferrer',
+      label: 'Selected work',
+      href: '/works',
       icon: 'arrowRightUpLine',
       variant: 'secondary',
       size: 'extra-lg',
@@ -41,11 +39,7 @@ export class AboutPage {
   ];
 
   readonly heroMeta = [
-    'Angular',
-    'React',
-    'Frontend Architecture',
-    'Product Delivery',
-    'Fintech / Web3',
-    'Product Engineering',
+    'TypeScript', 'Angular / React', 'Node.js / NestJS',
+    'PostgreSQL', 'Product Engineering', 'Fintech / Web3',
   ];
 }
