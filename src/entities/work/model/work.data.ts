@@ -25,16 +25,15 @@ export const WORK_ITEMS: IWorkItem[] = [
     "id": "angular-foundation",
     "title": "Reusable Angular SSR Foundation",
     "meta": "Independent · Frontend architecture · 2025–Present",
-    "summary": "A reusable Angular 21 foundation with headless UI, data-heavy admin blocks and an optional Web3 transaction layer.",
-    "description": "Built an Angular 21 standalone/Signals SSR and hydration foundation with design tokens, accessible UI primitives, table and filter patterns, chart/dashboard compositions and themes. An optional Web3 layer uses wagmi/viem for wallet connections, approvals, staking and transaction-state handling. Authentication and admin endpoints in the showcase are mocked: this is a technical foundation and demo, not a launched SaaS product.",
+    "summary": "Reusable Angular 21 SSR foundation with headless UI, admin dashboards and optional interactive modules.",
+    "description": "Built an Angular 21 standalone/Signals SSR and hydration foundation with design tokens, accessible primitives, data tables, filters, charts and dashboards. Optional interactive modules demonstrate external connections, approval workflows and asynchronous states. Authentication/admin endpoints are mocked; this is a technical showcase, not a launched SaaS product.",
     "tags": [
       "Angular 21",
       "SSR",
       "Signals",
       "Headless UI",
       "Design Tokens",
-      "Data Tables",
-      "wagmi / viem"
+      "Data Tables"
     ],
     "liveUrl": "https://demo.amaryfilo.com/",
     "group": "featured",
@@ -76,10 +75,10 @@ export const WORK_ITEMS: IWorkItem[] = [
   },
   {
     "id": "ducatus-wallet",
-    "title": "Ducatus Wallet Ecosystem",
+    "title": "Ducatus Cross-Platform Applications",
     "meta": "Rock’n’Block · Web, mobile & backend · 2019–2022",
-    "summary": "Non-custodial wallet across web, iOS and Android, combining product delivery, native integrations and selected backend work.",
-    "description": "Owned Angular/Ionic wallet frontend and mobile releases for a product with approximately 10,000 users. Worked on vouchers, locked deposits, token integrations, transaction signing and cross-platform incidents. Implemented selected Node.js/Express and MongoDB-backed wallet APIs and client SDK methods and a Cordova bridge for Tangem NFC hardware-card signing.",
+    "summary": "Financial applications across web, iOS and Android with product releases, native integrations and backend features.",
+    "description": "Owned Angular/Ionic frontend and app releases for Ducatus (~10,000 users). Implemented vouchers, time-based deposits, asset integrations and transaction status flows. Extended Node.js/Express services with MongoDB-backed REST endpoints and SDK methods; developed a Cordova NFC hardware-card bridge.",
     "tags": [
       "Angular",
       "Ionic",
@@ -87,7 +86,6 @@ export const WORK_ITEMS: IWorkItem[] = [
       "Node.js",
       "Express",
       "MongoDB",
-      "Wallets",
       "NFC"
     ],
     "group": "featured",
@@ -96,16 +94,15 @@ export const WORK_ITEMS: IWorkItem[] = [
   {
     "id": "minto-finance",
     "title": "Minto Finance",
-    "meta": "Rock’n’Block · React / DeFi · 2021",
-    "summary": "Production React/TypeScript/MobX application for token presales, staking, rewards and wallet transactions.",
-    "description": "Built the core React frontend and UI/UX, including MobX app state, wallet connection, USDT-based token purchases, allowance/approval transactions, locked and unlocked staking, withdrawals, reward calculations and user statistics. The app was launched; additional contributors later maintained contract-address configuration.",
+    "meta": "Rock’n’Block · React application · 2021",
+    "summary": "Production React/TypeScript/MobX application with account operations, purchasing, time-based positions and rewards.",
+    "description": "Built a commercial React frontend and UI/UX using MobX for account connections, purchasing, approvals, time-based positions, withdrawals, reward calculations and statistics. The app launched; later contributors maintained external integration configuration.",
     "tags": [
       "React",
       "TypeScript",
       "MobX",
-      "Web3.js",
-      "Staking",
-      "Token Approvals"
+      "Account Flows",
+      "State Management"
     ],
     "group": "featured",
     "year": "2021"
@@ -128,15 +125,15 @@ export const WORK_ITEMS: IWorkItem[] = [
   },
   {
     "id": "unlimit-extension",
-    "title": "Internal Browser Wallet Extension",
-    "meta": "Unlimit · Wallet engineering · 2022–2023",
-    "summary": "Working internal prototype for a non-custodial browser wallet and custom dApp interface; not publicly released.",
-    "description": "Built an internal browser extension with injected scripts, service workers, origin-based permissions, session state and QR/WebSocket mobile pairing. Designed the custom dApp-facing API and cross-context synchronization. The initiative was not publicly launched.",
+    "title": "Internal Browser Extension",
+    "meta": "Unlimit · Browser engineering · 2022–2023",
+    "summary": "Internal prototype for secure browser-based account connections, custom APIs and mobile pairing; not publicly released.",
+    "description": "Built an internal browser extension with injected scripts, service workers, origin-based permissions, session state and QR/WebSocket mobile pairing. Designed browser-facing integration APIs and cross-context synchronization. The initiative was not publicly launched.",
     "tags": [
       "TypeScript",
       "Browser APIs",
-      "Web3",
-      "Wallet Connection",
+      "Service Workers",
+      "Permissions",
       "WebSockets"
     ],
     "group": "product",
@@ -145,33 +142,33 @@ export const WORK_ITEMS: IWorkItem[] = [
   {
     "id": "less-bridge",
     "title": "LESS Bridge",
-    "meta": "Rock’n’Block · React / Web3 · 2021",
-    "summary": "Production React/Redux cross-chain transfer UI with EVM and Tron wallets, token approvals and transaction states.",
-    "description": "Developed frontend network selection and provider adapters for Ethereum-compatible networks and Tron, integrating balances, allowance checks, fee calculation, transaction submission, pending/error handling and a backend API client. Worked with Redux and Web3.js; this repository contains frontend integrations, not the blockchain protocol backend.",
+    "meta": "Rock’n’Block · React application · 2021",
+    "summary": "Production React/Redux frontend for multi-network account operations, fee validation and asynchronous transfer states.",
+    "description": "Built network selection, external provider adapters, balances, authorization checks, fee calculation, operation submission and pending/error handling using React/Redux. Integrated existing backend APIs; my role was frontend engineering, not implementation of the underlying protocol.",
     "tags": [
       "React",
       "Redux",
-      "Web3.js",
-      "EVM",
-      "TronWeb",
-      "Cross-chain"
+      "TypeScript",
+      "Integration",
+      "Form Validation",
+      "Async State"
     ],
     "group": "product",
     "year": "2021"
   },
   {
     "id": "axion-dapps",
-    "title": "Axion Staking & Auctions",
-    "meta": "Rock’n’Block · Angular / Web3 · 2020–2021",
-    "summary": "Production Angular staking, auctions and claim flows connected to MetaMask and smart contracts.",
-    "description": "Developed Angular/TypeScript transaction interfaces for deposits, staking terms, token claims, auction participation and withdrawals. Integrated account and contract states using RxJS, Web3.js and BigNumber calculations; the role was frontend and smart-contract integration rather than Solidity contract authoring.",
+    "title": "Axion Interactive Platform",
+    "meta": "Rock’n’Block · Angular frontend · 2020–2021",
+    "summary": "Production Angular user journeys for financial positions, auctions, approvals and multi-step transaction states.",
+    "description": "Developed Angular/TypeScript interfaces for deposits, time-based positions, claims, auctions and withdrawals. Integrated external account and operation states with RxJS and precision-safe calculations. The role involved frontend integrations rather than implementation of the underlying protocol.",
     "tags": [
       "Angular",
       "RxJS",
-      "Web3.js",
-      "MetaMask",
-      "BigNumber",
-      "Staking"
+      "TypeScript",
+      "State Management",
+      "Auctions",
+      "BigNumber"
     ],
     "group": "product",
     "year": "2020–2021"
@@ -180,8 +177,8 @@ export const WORK_ITEMS: IWorkItem[] = [
     "id": "axion-dashboard",
     "title": "Axion Analytics Dashboard",
     "meta": "Rock’n’Block · Angular / REST · 2020–2021",
-    "summary": "Separate production Angular application with financial charts, staking profiles, market statistics and news administration.",
-    "description": "Built a data-heavy Angular app with API-driven financial charts and overview widgets, user staking histories, BigNumber normalization, profile and market views, periodic refresh and an administrative news editor. Consumed existing REST services; this was a separate application from the Axion transaction frontend.",
+    "summary": "Separate production Angular application with REST-driven financial charts, account profiles and news administration.",
+    "description": "Built a data-heavy Angular application with API-driven charts, market widgets, user histories, numerical formatting, profiles, scheduled refresh and an admin news editor. This was separate from Axion's transactional frontend.",
     "tags": [
       "Angular",
       "TypeScript",
@@ -195,48 +192,48 @@ export const WORK_ITEMS: IWorkItem[] = [
   },
   {
     "id": "token-protector",
-    "title": "TokenProtector",
-    "meta": "Rock’n’Block · Angular / Web3 · 2019–2020",
-    "summary": "Angular/Web3 frontend built from first requirements through release for token protection and contract workflows.",
-    "description": "Implemented the frontend from an initial product brief, including wallet connection, contract-creation UI, token approval, status presentation, transaction progress and localization. The work involved integration with existing smart contracts, not writing the underlying protocol.",
+    "title": "Angular Approval Workflow Application",
+    "meta": "Rock’n’Block · Angular application · 2019–2020",
+    "summary": "Angular frontend delivered from requirements through release, with multi-step configuration and approval workflows.",
+    "description": "Implemented an Angular frontend from an initial product brief through release, including account connection, configuration screens, approval steps, operation status and localization. Integrated existing service interfaces rather than authoring the underlying protocol.",
     "tags": [
       "Angular",
-      "Web3",
-      "WalletConnect",
-      "Token Approvals",
-      "Product Delivery"
+      "TypeScript",
+      "Product Delivery",
+      "Approval Flows",
+      "Integration"
     ],
     "group": "product",
     "year": "2019–2020"
   },
   {
     "id": "connect-wallet-sdk",
-    "title": "AMFI Connect Wallet SDK",
+    "title": "AMFI Connection SDK",
     "meta": "Rock’n’Block / Open source · TypeScript library · 2021",
-    "summary": "Reusable TypeScript/RxJS wallet provider connection library used by commercial Web3 applications.",
-    "description": "Created a wallet-connection abstraction for applications using browser wallets and WalletConnect, including provider availability, connection state and chain/account handling. The library was integrated into Minto Finance and designed to reduce repeated wallet setup across projects.",
+    "summary": "Reusable TypeScript/RxJS provider-connection library used across commercial frontend applications.",
+    "description": "Created a TypeScript/RxJS abstraction for external provider availability, connection state, account handling and network state. Integrated in Minto Finance and designed to reduce repeated provider-setup work.",
     "tags": [
       "TypeScript",
       "RxJS",
-      "Web3",
-      "WalletConnect",
-      "SDK"
+      "SDK",
+      "State Management",
+      "Reusable Integrations"
     ],
     "group": "product",
     "year": "2021"
   },
   {
     "id": "nodamatics-platform",
-    "title": "Staking Frontend Platform",
-    "meta": "Nodamatics · Angular / infrastructure integration · 2022",
-    "summary": "Angular/Nx monorepo and gRPC integrations for staking-oriented Ethereum services.",
-    "description": "Restructured an Nx frontend workspace into modules and shared packages, integrated generated gRPC clients and worked with backend services connected to an Ethereum-related node. Coordinated a two-person team and supported CI delivery.",
+    "title": "Angular Integration Platform",
+    "meta": "Nodamatics · Angular integration · 2022",
+    "summary": "Angular/Nx monorepo architecture and generated gRPC client integration for a financial frontend.",
+    "description": "Restructured an Nx frontend workspace into application modules and shared packages. Integrated generated gRPC clients for typed backend communication, led a two-person frontend team and supported CI delivery.",
     "tags": [
       "Angular",
       "Nx",
       "gRPC",
       "TypeScript",
-      "Ethereum"
+      "CI/CD"
     ],
     "group": "product",
     "year": "2022"
@@ -280,7 +277,7 @@ export const WORK_ITEMS: IWorkItem[] = [
     "title": "Gravity Hub Website",
     "meta": "Rock’n’Block · Vue / Nuxt · 2020",
     "summary": "Client website delivered with Nuxt/Vue, reusable sections, responsive layouts and informational registration flows.",
-    "description": "Built the Nuxt/Vue site from supplied designs and tasks with responsive page sections, navigation and community-related interactions. This commercial project complements the larger transactional Web3 applications; its registration surface is primarily informational.",
+    "description": "Built a Nuxt/Vue website from supplied designs and tasks, with responsive sections, navigation and community-facing interactions. The commercial project complements larger transactional products; its registration surface was primarily informational.",
     "tags": [
       "Vue",
       "Nuxt",
