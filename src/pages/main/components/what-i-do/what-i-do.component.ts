@@ -17,7 +17,7 @@ export class WhatIDoSection {
     { icon: 'stackFill', title: 'Product Engineering', text: 'Building features across web clients, APIs and data models, from requirements through integration, testing, releases and maintenance.' },
     { icon: 'expandDiagonalLine', title: 'Frontend Architecture', text: 'Angular and React applications with reusable UI systems, SSR, accessible components and complex state management.' },
     { icon: 'equalizer2Fill', title: 'Backend & Integrations', text: 'Commercial Node.js/Express features, current NestJS/PostgreSQL development and REST, GraphQL and gRPC integrations.' },
-    { icon: 'foldersFill', title: 'Web & Mobile', text: 'Delivering browser and mobile applications, including Ionic/Cordova wallets, native integrations and app-store releases.' },
+    { icon: 'foldersFill', title: 'Web & Mobile', text: 'Delivering browser and mobile applications, including Ionic/Cordova projects, native integrations and app-store releases.' },
     { icon: 'expandHorizontalSLine', title: 'Technical Leadership', text: 'Planning, code review, mentoring and practical architecture decisions that support predictable product delivery.' },
   ];
 }
