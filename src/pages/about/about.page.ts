@@ -30,8 +30,10 @@ import { UISeparator } from '@shared/ui/kit';
 export class AboutPage {
   readonly heroActions: IHeroAction[] = [
     {
-      label: 'Selected work',
-      href: '/works',
+      label: 'Download resume',
+      href: '/Nikita_Syreishchikov_Senior_Software_Engineer.pdf',
+      target: '_blank',
+      rel: 'noopener noreferrer',
       icon: 'arrowRightUpLine',
       variant: 'secondary',
       size: 'extra-lg',
@@ -40,6 +42,6 @@ export class AboutPage {
 
   readonly heroMeta = [
     'TypeScript', 'Angular / React', 'Node.js / NestJS',
-    'PostgreSQL', 'Product Engineering', 'Fintech / Web3',
+    'PostgreSQL', 'Product Engineering', 'Technical Leadership',
   ];
 }
