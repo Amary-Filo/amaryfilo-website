@@ -21,7 +21,7 @@ export const DEMO_ITEMS: IDemoItem[] = [
   },
   {
     "slug": "transaction-workflows",
-    "img": "/transaction-workflows.png",
+    "img": "/transaction-workflows.svg",
     "title": "Transaction Workflows",
     "text": "Interactive Angular UI examples with account connections, state transitions, auctions and marketplace screens.",
     "summary": "Complex user journeys, asynchronous status updates and browser integration patterns.",
@@ -38,7 +38,7 @@ export const DEMO_ITEMS: IDemoItem[] = [
   },
   {
     "slug": "financial-workflows",
-    "img": "/financial-workflows.png",
+    "img": "/financial-workflows.svg",
     "title": "Financial UI Workflows",
     "text": "Angular interactive forms with dynamic calculations, validation and multi-step operation states.",
     "summary": "A frontend-focused showcase of complex financial forms and state-management patterns.",
