@@ -20,5 +20,5 @@ export class WorksPage {
   readonly additional = this.workFacade.getByGroup('product');
   readonly earlier = this.workFacade.getByGroup('commercial');
 
-  readonly heroMeta = ['Software Engineering', 'Angular / React', 'Node.js / PostgreSQL', 'Fintech & Web3'];
+  readonly heroMeta = ['Software Engineering', 'Angular / React', 'Node.js / PostgreSQL', 'Product Delivery'];
 }
