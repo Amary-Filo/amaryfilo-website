@@ -4,25 +4,25 @@ import { AppRouteSeo } from '@lib/seo.service';
 // Route-level metadata feeds the canonical, Open Graph, Twitter and JSON-LD tags.
 const landingSeo: AppRouteSeo = {
   title: 'Nikita Syreishchikov | Senior Software Engineer',
-  description: 'Senior Software Engineer with 10+ years building TypeScript, Angular and React applications, Node.js services, mobile products and fintech/Web3 systems.',
+  description: 'Senior Software Engineer with 10+ years building web and mobile products using TypeScript, Angular, React, Node.js and modern backend technologies.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-main.png',
 };
 const aboutSeo: AppRouteSeo = {
   title: 'About & Experience | Nikita Syreishchikov',
-  description: 'Engineering experience across Angular, React, Node.js, NestJS, PostgreSQL, mobile wallets, fintech, Web3 and technical leadership.',
+  description: 'Hands-on software engineering across frontend architecture, backend services, mobile applications, product delivery and technical leadership.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-about.png',
 };
 const demosSeo: AppRouteSeo = {
   title: 'Engineering Demos | Nikita Syreishchikov',
-  description: 'Angular SSR UI foundation, reusable B2B dashboard components and interactive Web3 wallet and DeFi frontend demonstrations.',
+  description: 'Interactive Angular demonstrations of reusable UI, application state, API integration and complex user workflows.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-demos.png',
 };
 const worksSeo: AppRouteSeo = {
   title: 'Selected Software Projects | Nikita Syreishchikov',
-  description: 'Selected software work including NestJS fitness APIs, Angular and React fintech products, mobile wallets, banking tools and Web3 integrations.',
+  description: 'Selected commercial and independent projects across Angular, React, Node.js, banking tools, web platforms and mobile development.',
   robots: 'index, follow',
   image: 'https://amaryfilo.com/og-works.png',
 };
@@ -45,16 +45,16 @@ const notFoundSeo: AppRouteSeo = {
   image: 'https://amaryfilo.com/og-main.png',
 };
 const walletToolsSeo: AppRouteSeo = {
-  title: 'Wallet & Staking Demo | Nikita Syreishchikov',
-  description: 'Angular/Web3 interactive wallet, staking, marketplace and auction demo with transaction states and testnet integrations.',
+  title: 'Transaction Workflows Demo | Nikita Syreishchikov',
+  description: 'Angular interactive demo exploring account connections, multi-step transaction states, auctions and marketplace interface patterns.',
   robots: 'index, follow',
-  image: 'https://amaryfilo.com/og-wallet-tools.png',
+  image: 'https://amaryfilo.com/og-demos.png',
 };
 const dexToolsSeo: AppRouteSeo = {
-  title: 'DEX Interaction Demo | Nikita Syreishchikov',
-  description: 'Angular DeFi interface demo for swap, liquidity and farming interactions, with wallet state and amount validation.',
+  title: 'Financial Workflows Demo | Nikita Syreishchikov',
+  description: 'Angular interface demo featuring dynamic forms, financial calculations, asynchronous states and validation workflows.',
   robots: 'index, follow',
-  image: 'https://amaryfilo.com/og-dex-tools.png',
+  image: 'https://amaryfilo.com/og-demos.png',
 };
 
 export const routes: Routes = [
@@ -74,16 +74,16 @@ export const routes: Routes = [
     loadComponent: () => import('../pages/demos/demos.page').then((m) => m.DemosPage),
   },
   {
-    path: 'demos/wallet-tools',
+    path: 'demos/transaction-workflows',
     data: { seo: walletToolsSeo },
     loadComponent: () =>
-      import('../pages/demos/wallet-tools/wallet-tools.page').then((m) => m.WalletToolsPage),
+      import('../pages/demos/transaction-workflows/transaction-workflows.page').then((m) => m.TransactionWorkflowsPage),
   },
   {
-    path: 'demos/dex-tools',
+    path: 'demos/financial-workflows',
     data: { seo: dexToolsSeo },
     loadComponent: () =>
-      import('../pages/demos/dex-tools/dex-tools.page').then((m) => m.DexToolsPage),
+      import('../pages/demos/financial-workflows/financial-workflows.page').then((m) => m.FinancialWorkflowsPage),
   },
   {
     path: 'works',
