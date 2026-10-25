@@ -18,5 +18,5 @@ export class DemosPage {
 
   readonly list = this.demoFacade.getAll();
 
-  readonly heroMeta = ['Angular 21', 'SSR', 'UI Foundations', 'Web3 Integrations'];
+  readonly heroMeta = ['Angular 21', 'SSR', 'UI Foundations', 'Complex Workflows'];
 }

@@ -3,5 +3,17 @@
     "api/contact.ts": {
       "maxDuration": 10
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/demos/wallet-tools",
+      "destination": "/demos/transaction-workflows",
+      "permanent": true
+    },
+    {
+      "source": "/demos/dex-tools",
+      "destination": "/demos/financial-workflows",
+      "permanent": true
+    }
+  ]
 }

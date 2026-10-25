@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Illustration of a multi-step transaction interface">
+<rect width="1200" height="675" fill="#f5f6f8"/>
+<rect x="42" y="42" width="1116" height="591" rx="24" fill="#ffffff" stroke="#e2e4e9" stroke-width="2"/>
+<rect x="42" y="42" width="1116" height="70" rx="24" fill="#f9fafb"/>
+<circle cx="86" cy="77" r="8" fill="#d2d6dd"/><circle cx="111" cy="77" r="8" fill="#d2d6dd"/><circle cx="136" cy="77" r="8" fill="#d2d6dd"/>
+<text x="90" y="178" font-family='Arial, Helvetica, sans-serif' font-size="18" fill="#6b7280" font-weight="600" letter-spacing="2">ANGULAR / INTERACTIVE DEMO</text>
+<text x="90" y="245" font-family='Arial, Helvetica, sans-serif' font-size="48" font-weight="700" fill="#16181d">Transaction Workflows</text>
+<text x="90" y="293" font-family='Arial, Helvetica, sans-serif' font-size="23" fill="#6b7280">Connections, validation and asynchronous operation states</text>
+<g font-family='Arial, Helvetica, sans-serif' font-size="23" font-weight="600" text-anchor="middle">
+<rect x="90" y="363" width="210" height="116" rx="16" fill="#eff4ff" stroke="#c6d7fc" stroke-width="2"/>
+<text x="195" y="429" fill="#3e5677">Connect</text>
+<path d="M309 421 H351" stroke="#9ca3af" stroke-width="3" stroke-linecap="round"/>
+<path d="M341 412 L353 421 341 430" fill="none" stroke="#9ca3af" stroke-width="3"/>
+<rect x="360" y="363" width="210" height="116" rx="16" fill="#f5f6f8" stroke="#d6d9de" stroke-width="2"/>
+<text x="465" y="429" fill="#3d4757">Validate</text>
+<path d="M579 421 H621" stroke="#9ca3af" stroke-width="3"/>
+<path d="M611 412 L623 421 611 430" fill="none" stroke="#9ca3af" stroke-width="3"/>
+<rect x="630" y="363" width="210" height="116" rx="16" fill="#f5f6f8" stroke="#d6d9de" stroke-width="2"/>
+<text x="735" y="429" fill="#3d4757">Submit</text>
+<path d="M849 421 H891" stroke="#9ca3af" stroke-width="3"/>
+<path d="M881 412 L893 421 881 430" fill="none" stroke="#9ca3af" stroke-width="3"/>
+<rect x="900" y="363" width="210" height="116" rx="16" fill="#eaf7f0" stroke="#c4e5d1" stroke-width="2"/>
+<text x="1005" y="429" fill="#36624b">Track</text>
+</g>
+<text x="90" y="563" font-family='Arial, Helvetica, sans-serif' font-size="22" fill="#727a86">Browser APIs</text>
+<circle cx="258" cy="557" r="4" fill="#a8afb9"/>
+<text x="279" y="563" font-family='Arial, Helvetica, sans-serif' font-size="22" fill="#727a86">State Management</text>
+<circle cx="510" cy="557" r="4" fill="#a8afb9"/>
+<text x="532" y="563" font-family='Arial, Helvetica, sans-serif' font-size="22" fill="#727a86">Complex UI Flows</text>
+</svg>

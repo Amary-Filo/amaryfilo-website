@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Illustration of validated financial forms and calculations">
+<rect width="1200" height="675" fill="#f5f6f8"/>
+<rect x="42" y="42" width="1116" height="591" rx="24" fill="#ffffff" stroke="#e2e4e9" stroke-width="2"/>
+<rect x="42" y="42" width="1116" height="70" rx="24" fill="#f9fafb"/>
+<circle cx="86" cy="77" r="8" fill="#d2d6dd"/><circle cx="111" cy="77" r="8" fill="#d2d6dd"/><circle cx="136" cy="77" r="8" fill="#d2d6dd"/>
+<text x="90" y="178" font-family='Arial, Helvetica, sans-serif' font-size="18" fill="#6b7280" font-weight="600" letter-spacing="2">ANGULAR / UI ENGINEERING</text>
+<text x="90" y="245" font-family='Arial, Helvetica, sans-serif' font-size="48" font-weight="700" fill="#16181d">Financial UI Workflows</text>
+<text x="90" y="293" font-family='Arial, Helvetica, sans-serif' font-size="23" fill="#6b7280">Dynamic forms, calculations, validation and state handling</text>
+<rect x="90" y="338" width="565" height="238" rx="17" fill="#fafbfc" stroke="#dfe3e8" stroke-width="2"/>
+<text x="121" y="379" font-family='Arial, Helvetica, sans-serif' font-size="21" fill="#495363" font-weight="600">Amount</text>
+<rect x="121" y="395" width="502" height="63" rx="12" fill="white" stroke="#cdd4df" stroke-width="2"/>
+<text x="145" y="435" font-family='Arial, Helvetica, sans-serif' font-size="26" fill="#3f4650">1,250.00</text>
+<text x="121" y="501" font-family='Arial, Helvetica, sans-serif' font-size="18" fill="#657080">Calculated fees and limits</text>
+<rect x="121" y="523" width="365" height="17" rx="8.5" fill="#e5eaf1"/>
+<rect x="121" y="523" width="244" height="17" rx="8.5" fill="#b9cbe6"/>
+<rect x="691" y="338" width="419" height="238" rx="17" fill="#fafbfc" stroke="#dfe3e8" stroke-width="2"/>
+<text x="721" y="379" font-family='Arial, Helvetica, sans-serif' font-size="21" fill="#495363" font-weight="600">Operation status</text>
+<g font-family='Arial, Helvetica, sans-serif' font-size="22" fill="#48515f">
+<circle cx="742" cy="423" r="12" fill="#c1e7d1"/><path d="M736 422 l5 5 9 -11" fill="none" stroke="#276e47" stroke-width="3"/>
+<text x="770" y="430">Input validated</text>
+<circle cx="742" cy="475" r="12" fill="#c1e7d1"/><path d="M736 474 l5 5 9 -11" fill="none" stroke="#276e47" stroke-width="3"/>
+<text x="770" y="482">Fees calculated</text>
+<circle cx="742" cy="527" r="12" fill="#dce6f8" stroke="#98adcf"/><circle cx="742" cy="527" r="4" fill="#5678a9"/>
+<text x="770" y="534">Ready for review</text>
+</g>
+</svg>

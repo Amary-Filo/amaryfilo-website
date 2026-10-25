@@ -25,7 +25,7 @@ const DEFAULT_OG_IMAGE = `${SITE_URL}/og-main.png`;
 const DEFAULT_SEO: AppRouteSeo = {
   title: 'Nikita Syreishchikov | Senior Software Engineer',
   description:
-    'Senior Software Engineer building web and mobile applications with TypeScript, Angular, React, Node.js and PostgreSQL across fintech and Web3.',
+    'Senior Software Engineer building scalable web and mobile products with TypeScript, Angular, React, Node.js and PostgreSQL.',
   robots: DEFAULT_ROBOTS,
   image: DEFAULT_OG_IMAGE,
   url: SITE_URL,
@@ -138,7 +138,7 @@ export class SeoService {
             'TypeScript', 'JavaScript', 'Angular', 'React', 'Next.js', 'Node.js',
             'NestJS', 'PostgreSQL', 'Prisma', 'MongoDB', 'PHP/Laravel',
             'Frontend Architecture', 'REST APIs', 'Mobile Development',
-            'Fintech', 'Non-custodial Wallets', 'Web3 Integrations',
+            'Product Engineering', 'Cross-Platform Integrations', 'Technical Leadership',
           ],
         },
         {

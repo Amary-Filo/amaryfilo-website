@@ -1,4 +1,4 @@
-// src/pages/demos/dex-tools/dex-tools.page.ts
+// src/pages/demos/financial-workflows/financial-workflows.page.ts
 
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
@@ -7,7 +7,7 @@ import { DEX_TOOLS_CONFIG, DexToolsShellComponent } from '@features/dex-tools';
 import { AccountFacade, AccountStore, CryptoBalanceFacade, CryptoBalanceService } from '@entities';
 
 @Component({
-  selector: 'page-dex-tools',
+  selector: 'page-financial-workflows',
   standalone: true,
   imports: [DexToolsShellComponent],
   template: `<dex-tools-shell />`,
@@ -23,4 +23,4 @@ import { AccountFacade, AccountStore, CryptoBalanceFacade, CryptoBalanceService 
     CryptoBalanceFacade,
   ],
 })
-export class DexToolsPage {}
+export class FinancialWorkflowsPage {}

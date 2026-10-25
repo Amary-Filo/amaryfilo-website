@@ -1,4 +1,4 @@
-// src/pages/demos/wallet-tools/wallet-tools.page.ts
+// src/pages/demos/transaction-workflows/transaction-workflows.page.ts
 
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 
@@ -7,7 +7,7 @@ import { WALLET_TOOLS_CONFIG, WalletToolsShellComponent } from '@features/wallet
 import { AccountFacade, AccountStore, CryptoBalanceFacade, CryptoBalanceService } from '@entities';
 
 @Component({
-  selector: 'page-wallet-tools',
+  selector: 'page-transaction-workflows',
   standalone: true,
   imports: [WalletToolsShellComponent],
   template: `<wallet-tools-shell />`,
@@ -23,4 +23,4 @@ import { AccountFacade, AccountStore, CryptoBalanceFacade, CryptoBalanceService 
     CryptoBalanceFacade,
   ],
 })
-export class WalletToolsPage {}
+export class TransactionWorkflowsPage {}
