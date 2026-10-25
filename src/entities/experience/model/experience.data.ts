@@ -8,7 +8,7 @@ export const EXPERIENCE_ITEMS: IExperienceItem[] = [
     "location": "Valencia, Spain / Remote",
     "bullets": [
       "Developing a fitness product with a NestJS/Prisma/PostgreSQL backend, Next.js/React authentication client and early Expo/React Native app; the product is still in development.",
-      "Built an Angular 21 SSR frontend foundation with reusable headless UI, design tokens, tables, filters, charts, wallet integrations and transaction workflows.",
+      "Built an Angular 21 SSR frontend foundation with reusable headless UI, design tokens, tables, filters, charts and optional interactive modules.",
       "Working hands-on with AI coding agents while owning architecture, code review, local integration testing and technical decisions."
     ],
     "featured": true
@@ -29,11 +29,11 @@ export const EXPERIENCE_ITEMS: IExperienceItem[] = [
   {
     "company": "Unlimit",
     "title": "Senior Frontend Engineer",
-    "summary": "Built complex Angular product flows and an internal browser wallet extension.",
+    "summary": "Built complex Angular product flows and an internal browser extension.",
     "period": "Aug 2022 – Nov 2023",
     "location": "Remote",
     "bullets": [
-      "Developed an internal non-custodial browser wallet extension and custom dApp API, using injected scripts, service workers, origin permissions and QR/WebSocket pairing. The extension was not publicly launched.",
+      "Developed an internal browser extension and custom integration API using injected scripts, service workers, origin permissions and QR/WebSocket mobile pairing. The prototype was not publicly launched.",
       "Implemented banking and KYC interfaces with RxJS-driven asynchronous verification, sequential document uploads, API contracts and mock API services."
     ],
     "featured": false
@@ -41,7 +41,7 @@ export const EXPERIENCE_ITEMS: IExperienceItem[] = [
   {
     "company": "Nodamatics",
     "title": "Frontend Team Lead",
-    "summary": "Angular/Nx delivery for staking and Ethereum-related applications.",
+    "summary": "Angular/Nx delivery for financial web applications and backend integrations.",
     "period": "Feb 2022 – May 2022",
     "location": "Remote",
     "bullets": [
@@ -53,26 +53,26 @@ export const EXPERIENCE_ITEMS: IExperienceItem[] = [
   {
     "company": "Rock’n’Block",
     "title": "Frontend Team Lead",
-    "summary": "Led engineers while remaining hands-on with crypto wallets, React/Angular dApps and reusable SDKs.",
+    "summary": "Led frontend engineers while remaining hands-on with React/Angular applications and reusable TypeScript SDKs.",
     "period": "Feb 2021 – Jan 2022",
     "location": "St. Petersburg, Russia / Hybrid",
     "bullets": [
       "Led a frontend team of up to 13 developers and participated in hiring 11 engineers.",
-      "Built Minto Finance's core React/TypeScript/MobX staking and presale frontend; delivered LESS Bridge's React/Redux EVM/Tron transaction flows.",
-      "Created a reusable TypeScript/RxJS wallet connector SDK used across commercial Web3 applications."
+      "Built Minto Finance's React/TypeScript/MobX frontend for purchasing and account operations, and LESS Bridge's React/Redux cross-network transaction interface.",
+      "Created a reusable TypeScript/RxJS connection SDK used across commercial frontend projects."
     ],
     "featured": true
   },
   {
     "company": "Rock’n’Block",
     "title": "Software Engineer",
-    "summary": "Commercial web, mobile and backend contributions to non-custodial wallets and token platforms.",
+    "summary": "Commercial web, mobile and backend contributions to cross-platform financial applications.",
     "period": "Dec 2019 – Feb 2021",
     "location": "St. Petersburg, Russia / Hybrid",
     "bullets": [
-      "Owned Angular/Ionic development for Ducatus across web, iOS and Android (approximately 10,000 users), including local signing, voucher/deposit workflows and app-store releases.",
-      "Extended Bitcore-derived Node.js/Express wallet services with REST endpoints, MongoDB address lookups and client SDK methods.",
-      "Built the native Ionic/Cordova integration for Tangem NFC signing and developed Angular/Web3 token apps and separate Axion staking and analytics interfaces."
+      "Owned Angular/Ionic development for Ducatus across web, iOS and Android (approximately 10,000 users), including vouchers, time-based deposits, operation states and app-store releases.",
+      "Extended Node.js/Express services with REST endpoints, MongoDB queries and client SDK methods.",
+      "Built a native Ionic/Cordova bridge for NFC hardware-card integration, plus Angular transaction and analytics interfaces."
     ],
     "featured": false
   },
