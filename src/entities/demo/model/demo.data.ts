@@ -5,52 +5,52 @@ export const DEMO_ITEMS: IDemoItem[] = [
     "slug": "angular-ui-architecture-showcase",
     "img": "/enterprise-ui.png",
     "title": "Angular SSR & UI Foundation",
-    "text": "Angular 21 reusable UI system with admin dashboards and optional wallet/transaction modules.",
-    "summary": "A working technical foundation, not a publicly launched SaaS platform.",
-    "description": "Built with Angular 21 standalone components, Signals, SSR/hydration, design tokens and headless UI patterns. The showcase contains reusable tables, filters, charts and admin layouts, plus wagmi/viem wallet and staking transaction examples. The admin and authentication APIs use mock data; the independent demo is not a production backend or customer system.",
+    "text": "Angular 21 reusable SSR, headless UI and data-rich admin components with optional interactive modules.",
+    "summary": "A working technical foundation and UI showcase; not a publicly launched SaaS product.",
+    "description": "Built with Angular 21 standalone components, Signals, SSR/hydration, design tokens and headless UI patterns. Includes reusable tables, filters, charts and admin layouts, alongside optional interactive connection and transaction examples. Authentication and admin APIs use mock data; the showcase is not a production customer system.",
     "tags": [
       "Angular 21",
       "SSR",
       "Signals",
       "UI Components",
-      "Tables",
-      "wagmi / viem"
+      "Data Tables",
+      "State Management"
     ],
     "link": "https://demo.amaryfilo.com/",
     "featured": true
   },
   {
-    "slug": "wallet-tools",
-    "img": "/wallet-tools.png",
-    "title": "Wallet & Staking Tools",
-    "text": "Interactive Angular/Web3 examples for staking, auctions, marketplace and transaction states.",
-    "summary": "Hands-on demonstrations of wallet integration and contract-facing UI.",
-    "description": "Interactive examples of Angular wallet-connected product flows, including staking, auction and marketplace screens, network handling and asynchronous transaction states. The examples are intended for technical exploration and are not a production wallet or security-audited protocol.",
+    "slug": "transaction-workflows",
+    "img": "/transaction-workflows.png",
+    "title": "Transaction Workflows",
+    "text": "Interactive Angular UI examples with account connections, state transitions, auctions and marketplace screens.",
+    "summary": "Complex user journeys, asynchronous status updates and browser integration patterns.",
+    "description": "Hands-on Angular examples of connected-account journeys, multi-step transaction states, auction interfaces and marketplace UI. Demonstrations are for technical exploration; they are not customer financial systems or independently audited services.",
     "tags": [
       "Angular",
-      "Web3",
-      "Wallet States",
-      "Staking",
-      "Transactions"
+      "TypeScript",
+      "State Management",
+      "Browser APIs",
+      "Complex Workflows"
     ],
-    "liveUrl": "https://amaryfilo.com/demos/wallet-tools",
+    "liveUrl": "https://amaryfilo.com/demos/transaction-workflows",
     "featured": true
   },
   {
-    "slug": "dex-tools",
-    "img": "/dex-tools.png",
-    "title": "DEX Interaction Tools",
-    "text": "Angular demo for swap forms, liquidity, fee and farming interaction flows.",
-    "summary": "A frontend-oriented AMM interface and state-management showcase.",
-    "description": "Demonstrates swap, liquidity and farming interaction patterns, wallet-connected controls, amount validation and transaction progress. These are illustrative demo flows rather than an independently audited or financially operational DEX protocol.",
+    "slug": "financial-workflows",
+    "img": "/financial-workflows.png",
+    "title": "Financial UI Workflows",
+    "text": "Angular interactive forms with dynamic calculations, validation and multi-step operation states.",
+    "summary": "A frontend-focused showcase of complex financial forms and state-management patterns.",
+    "description": "Demonstrates conditional form state, dynamic amount and fee calculations, validation, connection-dependent UI and asynchronous operation progress. The interactive examples are illustrative rather than a standalone production financial service.",
     "tags": [
       "Angular",
-      "AMM",
-      "Liquidity",
-      "DeFi",
-      "Form State"
+      "TypeScript",
+      "Complex Forms",
+      "Validation",
+      "Async State"
     ],
-    "liveUrl": "https://amaryfilo.com/demos/dex-tools",
+    "liveUrl": "https://amaryfilo.com/demos/financial-workflows",
     "featured": true
   }
 ];
